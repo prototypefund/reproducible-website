@@ -1,0 +1,62 @@
+---
+layout: page
+title: Tools
+permalink: /tools/
+---
+<div class="row">
+  <div class="four columns">&nbsp;</div>
+  <div class="eight columns text">
+    <p>
+      Several tools are now available to make your life easier when working on
+      <em>reproducible builds</em>:
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="four columns title">
+    <h2>diffoscope</h2>
+  </div>
+  <div class="eight columns text">
+    <p>
+      <a href="http://diffoscope.org/">diffoscope</a> will try to <strong>get
+      to the bottom of what makes files or directories different</strong>. It
+      will recursively unpack archives of many kinds and transform various
+      binary formats into more human readable form to compare them. It can
+      compare two tarballs, ISO images, or PDF just as easily. 
+    </p>
+    <p>
+      See an <a href="http://diffoscope.org/examples/igerman98_20131206-5.txt">example text output</a>.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="four columns title">
+    <h2>disorderfs</h2>
+  </div>
+  <div class="eight columns text">
+    <p>
+      Problems with <a href="/docs/stable-inputs/">unstable order of inputs</a>
+      or other variations introduced by filesystems can sometimes be hard to track down.
+      <a href="https://packages.debian.org/sid/disorderfs">disorderfs</a> is
+      <strong>an overlay FUSE filesystem that introduces non-determinism into
+      filesystem metadata</strong>. For example, it can randomize the order in
+      which directory entries are read.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="four columns title">
+    <h2>strip-nondeterminism</h2>
+  </div>
+  <div class="eight columns text">
+    <p>
+      Some tools used in build systems might introduce non-determinism in ways
+      difficult to fix at the source <strong>requiring
+      post-processing</strong>. <a
+      href="https://packages.debian.org/sid/strip-nondeterminism">strip-nondeterminism</a>
+      knows how to <strong>normalize various file formats</strong> such as gzipped files, ZIP
+      archives, and Jar files. It is written in Perl with extensibility in
+      mind.
+    </p>
+  </div>
+</div>

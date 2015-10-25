@@ -1,0 +1,35 @@
+- title: Best practices
+  docs:
+  - plans
+  - buy-in
+  - test-bench
+- title: Get deterministic builds
+  docs:
+  - deterministic-build-systems
+  - volatile-inputs
+  - stable-inputs
+  - value-initialization
+  - version-information
+  - timestamps
+  - timezones
+  - locales
+  - archives
+  - stable-outputs
+  - randomness
+  - build-path
+- title: Define a build environment
+  docs:
+  - perimeter
+  - recording
+  - definition-strategies
+  - proprietary-os
+- title: Distribute the environment
+  docs:
+  - build-toolchain-from-source
+  - virtual-machine-drivers
+  - formal-definition
+- title: Comparison protocol
+  docs:
+  - checksums
+  - embedded-signatures
+  - sharing-certifications

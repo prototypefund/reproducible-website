@@ -1,0 +1,54 @@
+- name: Debian
+  url: https://www.debian.org/
+  logo: debian.png
+  resources:
+  - name: Wiki pages
+    url: https://wiki.debian.org/ReproducibleBuilds
+  - name: Continuous tests
+    url: https://reproducible.debian.net/
+- name: Tor Browser
+  url: https://www.torproject.org/
+  logo: tor.png
+  resources:
+  - name: Building guide
+    url: https://trac.torproject.org/projects/tor/wiki/doc/TorBrowser/Hacking#BuildingOfficialTorBrowserReleaseBinaries
+- name: Bitcoin
+  url: https://github.com/bitcoin/bitcoin
+  logo: bitcoin.png
+  resources:
+  - name: Gitian building guide
+    url: https://github.com/bitcoin/bitcoin/blob/master/doc/gitian-building.md
+- name: FreeBSD
+  url: https://www.freebsd.org/
+  logo: freebsd.png
+  resources:
+  - name: Base system
+    url: https://wiki.freebsd.org/ReproducibleBuilds
+  - name: Ports
+    url: https://wiki.freebsd.org/PortsReproducibleBuilds
+  - name: Continuous tests
+    url: https://reproducible.debian.net/freebsd/
+- name: Coreboot
+  url: http:///www.coreboot.org/
+  logo: coreboot.png
+  resources:
+  - name: Continuous tests
+    url: https://reproducible.debian.net/coreboot/
+- name: OpenWrt
+  url: https://openwrt.org/
+  logo: openwrt.png
+  resources:
+  - name: Continuous tests
+    url: https://reproducible.debian.net/openwrt/
+- name: NetBSD
+  url: https://www.netbsd.org/
+  logo: netbsd.png
+  resources:
+  - name: Continuous tests
+    url: https://reproducible.debian.net/netbsd/
+- name: Arch Linux
+  url: https://www.archlinux.org/
+  logo: archlinux.png
+  resources:
+  - name: Continuous tests
+    url: https://reproducible.debian.net/archlinux/

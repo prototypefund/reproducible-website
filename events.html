@@ -1,0 +1,30 @@
+---
+layout: page
+title: Events
+permalink: /events/
+---
+
+<div class="row">
+  <div class="four columns">&nbsp;</div>
+  <div class="eight columns text">
+    <p>
+      Irregular events are organize to exchange ideas about “reproducible
+      builds”, get a better understanding or cooperate on improving code
+      or specifications.
+    </p>
+  </div>
+</div>
+
+{% assign sorted_events = site.events | sort: 'event_date' | reverse %}
+{% for page in sorted_events %}
+<div class="row">
+  <div class="four columns title">
+    <h2>{{ page.title }}</h2>
+  </div>
+  <div class="eight columns text">
+    <p><em>{{ page.event_date_string }}</em>, {{ page.event_location }}</p>
+    <p>{{ page.event_summary }}</p>
+    <p><a href="{{ page.permalink | prepend: site.baseurl }}">Read more…</a></p>
+  </div>
+</div>
+{% endfor %}

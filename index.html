@@ -1,0 +1,111 @@
+---
+layout: home
+---
+
+<nav>
+  <div class="hide-on-mobiles">
+    {% for page in site.pages %}
+      {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+    {% endfor %}
+  </div>
+  <div class="show-on-mobiles">
+    <select onchange="if (this.value) window.location.href=this.value">
+      <option value="">reproducible-builds.org</option>
+      {% for page in site.pages %}
+        {% if page.title %}<option value="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</option>{% endif %}
+      {% endfor %}
+    </select>
+  </div>
+</nav>
+<div class="row">
+  <div class="four columns title">
+    <h2 id="what">What is it about?</h1>
+  </div>
+  <div class="eight columns text">
+    <p>
+      <strong>Reproducible builds</strong> are a set of software development practices which
+      create a <strong>verifiable path from</strong> human readable
+      <strong>source code to</strong> the <strong>binary</strong> code used by
+      computers.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="four columns title">
+    <h2 id="why">Why does it matter?</h1>
+  </div>
+  <div class="eight columns text">
+    <p>
+      Most aspect of software verification is done on source code, as that is
+      what humans can reasonably understand. But most of the time, computers
+      require software to be first built into long string of numbers to be
+      used. With <em>reproducible builds</em>, multiple parties can
+      <strong>redo this process independently</strong> and ensure they
+      <strong>all get <em>exactly</em> the same result</strong>. We can thus
+      <strong>grow confidence</strong> than a distributed binary code is indeed
+      coming from a given source code.
+    </p>
+    <p>
+      What made the recent <a style="text-decoration: none;"
+      href="https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal">Volkswagen
+      emissions scandal</a> possible is software that has been designed to lie
+      about its sensors in a lab environment. If the source code had been under
+      public scrutiny, it would have been hard to add such a misfeature… or?
+      Without <em>reproducible builds</em>, it is hard to attest than the
+      binary code running in the car was actually made using the source code
+      that has been verified.
+    </p>
+    <p>
+      <a href="/who/"><strong>Several free software projects</strong></a>
+      already or will soon provide reproducible builds.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="four columns title">
+    <h2 id="how">How?</h1>
+  </div>
+  <div class="eight columns text">
+    <p>
+      There are two main aspects to <em>reproducible builds</em>:
+    </p>
+    <p>
+      First, the <strong>build system needs to be made entirely
+      deterministic</strong>: transforming a given source must always
+      create the same result. Typically, the current date and time must not be
+      recorded and outputs has to always be written in the same order.
+    </p>
+    <p>
+      Second, the set of tools used to perform the build and more generally
+      the <strong>build environment</strong> should either be <strong>recorded
+      or pre-defined</strong>.
+    <p>
+      Third, users should be given a way to recreate a close enough build
+      environment, perform the build process, and <strong>verify that the output
+      match the original build</strong>.
+    </p>
+    <p>
+      Learn more on <a href="/docs/"><strong>how to make your software build
+      reproducibly…</strong></a>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="four columns title">
+    <h2 id="news">News</h1>
+  </div>
+  <div class="eight columns">
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe via RSS</a>.</p>
+  </div>
+</div>

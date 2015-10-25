@@ -1,0 +1,22 @@
+markdown: kramdown
+highlighter: pygments
+permalink: /news/:year/:month/:day/:title/
+
+# Site settings
+title: reproducible-builds.org
+email: contact@reproducible-builds.org
+description: |
+  “Reproducible builds” aim to provide a verifiable path from software source code to its compiled binary form.
+baseurl: ""
+url: "https://reproducible-builds.org/"
+
+collections:
+  docs:
+    output: true
+  events:
+    output: true
+
+exclude:
+- README
+- .git
+- .gitignore

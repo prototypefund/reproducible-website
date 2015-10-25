@@ -1,0 +1,55 @@
+Source for the reproducible-builds.org website
+==============================================
+
+The website for reproducible-builds.org is made with [Jekyll]. It has
+been initially created and tested with version 2.2.0 in Debian unstable
+available in the `jekyll` package.
+
+The boilerplate CSS is provided by [Skeleton].
+
+[Jekyll]: http://jekyllrb.com/
+[Skeleton]: http://www.getskeleton.com/
+
+Viewing the website
+-------------------
+
+It's possible to view the website while making changes:
+
+    $ jekyll serve --watch
+
+A local webserver will be started which can be accessed using a browser
+to see changes as they are made.
+
+Build the website
+-----------------
+
+Building the website is made by running:
+
+    $ jekyll build
+
+The result will be available in the `_site` directory.
+
+News
+----
+
+News are made using Jekyll blog posts. Adding news is a matter of
+creating new pages in th `_posts` directory.
+
+Documentation
+-------------
+
+The documentation homepage is in `docs.html`. Individual pages are kept
+in the `_docs` folder.
+
+The order in the index and the title of subsection is defined in
+`_data/docs.yml`. The order defined using permalinks (and not
+file names).
+
+Projects
+--------
+
+The list of project involved in reproducible builds is kept as YAML
+in `_data/projects.yml`.
+
+Logos must be in the `images/logos` folder. Images should be 124×124
+pixels large.
