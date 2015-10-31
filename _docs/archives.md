@@ -27,8 +27,8 @@ $ tar --mtime='2015-10-21 00:00Z' -cf product.tar build
 [timezone]({{ "/docs/timezones/" | prepend: site.baseurl }}).)
 
 For other achive formats, it is always possible to use `touch` to reset
-the modification times to a [predefined value]({{ "/docs/timestamps/" |
-prepend: site.baseurl }}) before creating the archive:
+the modification times to a [predefined value]({{ "/docs/timestamps/" | prepend: site.baseurl }})
+before creating the archive:
 
 {% highlight sh %}
 $ find build -print0 |
@@ -65,8 +65,7 @@ File ordering
 
 When asked to record directories, most archive formats will read their
 content in the order returned by the filesystem which is [likely to be
-different on every run]({{ "/docs/stable-inputs/" | prepend:
-site.baseurl }}).
+different on every run]({{ "/docs/stable-inputs/" | prepend: site.baseurl }}).
 
 With version 1.28, GNU Tar has gained `--sort=name` option which will
 sort filenames in a locale independent manner:

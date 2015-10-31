@@ -19,11 +19,10 @@ Building using external resources
 
 The source for the different components can be retrieved from online
 repository. Using release tarballs might be preferable as they are
-easier to cache, [mirror, checksum and verify]({{
-"/docs/volatile-inputs/" | prepend: site.baseurl }}). When retrieving
-the source from a version control system repository, it's best to have a
-precise reference to the code version. With Git, using a tag with a
-verified signature or a commit hash will work best.
+easier to cache, [mirror, checksum and verify]({{ "/docs/volatile-inputs/" | prepend: site.baseurl }}).
+When retrieving the source from a version control system repository,
+it's best to have a precise reference to the code version. With Git,
+using a tag with a verified signature or a commit hash will work best.
 
 The compilation itself can be driven by shell scripts or an extra target
 in the project `Makefile`.

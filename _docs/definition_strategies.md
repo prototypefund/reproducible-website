@@ -29,9 +29,9 @@ tools from source.
 Using `make` or any other compilation driver, the required tools will be
 downloaded, built, and locally installed before compiling the software.
 
-Like any other [inputs from the network]({{ "/docs/volatile-inputs/" |
-prepend: site.baseurl }}), the content of the archive should be backed
-up and verified using cryptographic checksums.
+Like any other [inputs from the network]({{ "/docs/volatile-inputs/" | prepend: site.baseurl }}),
+the content of the archive should be backed up and verified using
+cryptographic checksums.
 
 Reference distribution
 ----------------------

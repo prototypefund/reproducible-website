@@ -20,8 +20,7 @@ For the specific case of [DWARF
 symbols](https://en.wikipedia.org/wiki/DWARF), there is currently no good
 tool to
 change them after a build to a pre-determined value[^debugedit]. A work-around is to
-[define the build path as part of the build environment]({{
-"/docs/perimeter/" | prepend: site.baseurl }}).
+[define the build path as part of the build environment]({{ "/docs/perimeter/" | prepend: site.baseurl }}).
 
 [^debugedit]: [debugedit](https://fedoraproject.org/wiki/Releases/FeatureBuildId) can replace the path used at build time by a predefined one but it will do it by rewriting bytes in place. As this does not reorder the hash table of strings, the resulting bytes will still be different depending on the original build path.
 

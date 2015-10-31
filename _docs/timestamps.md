@@ -6,8 +6,8 @@ permalink: /docs/timestamps/
 
 Timestamps make the biggest source of reproducibility issues. Many build
 tools fancy recording the current date and time. The filesystem does,
-and [most archive formats]({{ "/docs/archives/" | prepend: site.baseurl
-}}) will happily record modification times on top of their own
+and [most archive formats]({{ "/docs/archives/" | prepend: site.baseurl }})
+will happily record modification times on top of their own
 timestamps. It is also customary to record the date of the build in the
 software itself…
 
@@ -24,9 +24,9 @@ needs to be defined or extensively recorded.
 If a date is required to give users an idea on when the software was
 made, it is better to use a date that is relevant to the source code
 instead of the build: old software can always be built later. Like
-[version information]({{ "/docs/version-information/" | prepend:
-site.baseurl }}), it's best to extract such a date from the revision
-control system or from a *changelog*.
+[version information]({{ "/docs/version-information/" | prepend: site.baseurl }}),
+it's best to extract such a date from the revision control system or
+from a *changelog*.
 
 External tools
 --------------

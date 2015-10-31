@@ -14,10 +14,10 @@ of the build environment irrelevant to the build output, or ensure they
 are mandatory to rebuild the software exactly as it distributed.
 
 Any irrelevant information should not be recorded. This depends on what
-has been made [part of the build environment]({{ "/docs/perimeter/" |
-prepend: site.baseurl }}), but likely includes information such as date
-and time of the build, build system hostname, path, network
-configuration, CPU type, memory size, environment variables…
+has been made [part of the build environment]({{ "/docs/perimeter/" | prepend: site.baseurl }}),
+but likely includes information such as date and time of the build,
+build system hostname, path, network configuration, CPU type, memory
+size, environment variables…
 
 The rest of the build environment should either be defined as part of
 the development process or recorded during the build process.

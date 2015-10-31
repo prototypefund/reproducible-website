@@ -41,8 +41,7 @@ XXX: Not really happy with this section. Please help!
 
 What is exactly defined as the build environment needs to be properly
 specified as this will determine how much of the build system will need
-to be [made deterministic]({{ "/docs/deterministic-build-systems/" |
-prepend: site.baseurl }}).
+to be [made deterministic]({{ "/docs/deterministic-build-systems/" | prepend: site.baseurl }}).
 
 The defined environment will have the list of the tools used by the
 build process and versions that must be used.

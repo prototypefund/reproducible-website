@@ -4,9 +4,9 @@ layout: docs
 permalink: /docs/timezones/
 ---
 
-Unless the build timezone is [made part of the build environment]({{
-"/docs/perimeter/" | prepend: site.baseurl }}), care must be taken to
-get the build output when the build is run in two different timezones.
+Unless the build timezone is [made part of the build environment]({{ "/docs/perimeter/" | prepend: site.baseurl }}),
+care must be taken to get the build output when the build is run in two
+different timezones.
 
 Avoid writing the current timezone
 ----------------------------------
