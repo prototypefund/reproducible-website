@@ -5,7 +5,7 @@ permalink: /docs/stable-inputs/
 ---
 
 If building your software requires processing several inputs at once,
-make sure the order is stable accross builds.
+make sure the order is stable across builds.
 
 A typical example is creating an archive from the content of a
 directory. Most filesystems do not guarantee that listing files in a
@@ -53,8 +53,8 @@ Watch out for locale-related issues
 -----------------------------------
 
 When sorting inputs, one must ensure that the sorting order is not affected by
-the system locale settings. For example, some locale will not make differences
-between uppercase and lowercase.
+the system locale settings. Some locales will not distinguish between uppercase
+and lowercase characters.
 
 For example, `tar` will by default use the filesystem order when
 descending directories:
@@ -86,5 +86,4 @@ $ find src -print0 | LC_ALL=C sort -z |
 
 This might not be the only changes required for [Tar and other archive
 formats]({{ "/docs/archives/" | prepend: site.baseurl }}) as they
-usually embed more metadata.
-problems.
+usually embed more metadata problems.

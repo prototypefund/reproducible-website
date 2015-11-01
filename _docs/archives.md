@@ -5,19 +5,19 @@ permalink: /docs/archives/
 ---
 
 Most archive formats record metadata that will capture details about the
-build environment if care is not taken. File last modification time is
+build environment if no care is taken. File last modification time is
 obvious, but file ordering, users, groups, numeric ids, and permissions
-can also be concerns. Tar is going to be used as the main example but
-these tips should apply to other archive formats as well.
+can also be concerns. Tar will be used as the main example but these tips
+should apply to other archive formats as well.
 
 File modification times
 -----------------------
 
-Most archive formats will, be default, record file last modification
-times. Some will also record file creation times.
+Most archive formats will, by default, record file last modification
+times, while some will also record file creation times.
 
-Tar has a way to specify the modification time that must be used for all
-files:
+Tar has a way to specify the modification time that is used for all
+archive members:
 
 {% highlight sh %}
 $ tar --mtime='2015-10-21 00:00Z' -cf product.tar build
@@ -26,7 +26,7 @@ $ tar --mtime='2015-10-21 00:00Z' -cf product.tar build
 (Notice how `Z` is used to specify that time is in the UTC
 [timezone]({{ "/docs/timezones/" | prepend: site.baseurl }}).)
 
-For other achive formats, it is always possible to use `touch` to reset
+For other archive formats, it is always possible to use `touch` to reset
 the modification times to a [predefined value]({{ "/docs/timestamps/" | prepend: site.baseurl }})
 before creating the archive:
 
@@ -36,7 +36,7 @@ $ find build -print0 |
 $ zip -r product.zip build
 {% endhighlight %}
 
-In some cases, it can be preferable to keep the original times for files
+In some cases, it is preferable to keep the original times for files
 that have not been created or modified during the build process:
 
 {% highlight sh %}
@@ -45,12 +45,12 @@ $ find build -newermt "@${SOURCE_DATE_EPOCH}" -print0 |
 $ zip -r product.zip build
 {% endhighlight %}
 
-A patch has been written to make the latter operation easier with GNU
+A patch has been written to simplify the latter operation with GNU
 Tar. It is currently available in Debian since
 [tar](https://packages.qa.debian.org/tar) version 1.28-1. Hopefully it
-will be integrated upstream soon but you might want to use it with
-caution. It adds a new `--clamp-mtime` flag which will only set time
-when the file is more recent than what was given with `--mtime`:
+will be integrated upstream soon, but you might want to use it with
+caution. It adds a new `--clamp-mtime` flag which will only set the time
+when the file is more recent than the value specified with `--mtime`:
 
 {% highlight sh %}
 # Only in Debian unstable for now
@@ -67,7 +67,7 @@ When asked to record directories, most archive formats will read their
 content in the order returned by the filesystem which is [likely to be
 different on every run]({{ "/docs/stable-inputs/" | prepend: site.baseurl }}).
 
-With version 1.28, GNU Tar has gained `--sort=name` option which will
+With version 1.28, GNU Tar has gained the `--sort=name` option which will
 sort filenames in a locale independent manner:
 
 {% highlight sh %}
@@ -94,7 +94,7 @@ can be recorded. Sometimes it will be using a string, sometimes using
 the associated numeric ids.
 
 When files belong to predefined system groups, this is not a problem,
-but builds most often are made using regular users. Recording of the
+but builds are often performed with regular users. Recording of the
 account name or its associated ids might be a source of reproducibility
 issues.
 
@@ -147,17 +147,17 @@ mode* which will use zero for UIDs, GIDs, timestamps, and use consistent
 file modes for all files. It can be made the default by passing the
 `--enable-deterministic-archives` option to `./configure`. It is already
 enabled by default for some distributions[^distros-with-default] and so
-far it seemed to be pretty safe [except for
+far it seems to be pretty safe [except for
 Makefiles](https://bugs.debian.org/798804) using targets like
 `archive.a(foo.o)`.
 
 When binutils is not built with deterministic archives by default, build
 systems have to be changed to pass the right options to `ar` and
 friends. `ARFLAGS` can be set to `Dcvr` with many build systems to turn on the
-deterministic mode. Care must be also taken to pass `-D` if `ranlib` is
+deterministic mode. Care must also be taken to pass `-D` if `ranlib` is
 used to create the function index.
 
-Another option is to do post-processing by using
+Another option is post-processing with
 [strip-nondeterminism](https://packages.debian.org/sid/strip-nondeterminism)
 or `objcopy`:
 

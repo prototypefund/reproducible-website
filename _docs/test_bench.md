@@ -7,7 +7,7 @@ permalink: /docs/test-bench/
 It is important to detect reproducibility problems in the build system
 before users to avoid any false alarms.
 
-The method is usually as follow:
+The method is usually as followed:
 
  1. Build a first time.
  2. Save the result.
@@ -39,8 +39,8 @@ far:
  * CPU type,
  * number of CPU cores.
 
-[disorderfs](https://packages.debian.org/sid/disorderfs) can help to
-test variations due to the filesystem in a deterministic manner.
+[disorderfs](https://packages.debian.org/sid/disorderfs) can help in
+testing variations due to filesystems in a deterministic manner.
 
 The list of [variations tested for
 Debian](https://reproducible.debian.net/reproducible.html#variation) is
