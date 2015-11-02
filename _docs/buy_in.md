@@ -4,7 +4,7 @@ layout: docs
 permalink: /docs/buy-in/
 ---
 
-Working on reproducible builds might look like a lot of effort with
+Working on *reproducible builds* might look like a lot of effort with
 little gain at first. While [this applies to many types of work related to
 security](https://www.schneier.com/blog/archives/2008/09/security_roi_1.html),
 there are already some good arguments and testimonies
@@ -35,7 +35,7 @@ embedded in iOS applications. Palo Alto Networks
 > Baidu’s cloud file sharing service for used by Chinese iOS/OS X
 > developers
 
-The purpose of reproducible builds is exactly to resist such attacks.
+The purpose of *reproducible builds* is exactly to resist such attacks.
 Recompiling these applications with a clean compiler would have made
 the problem easily visible, especially given the size of the added
 payload.
@@ -83,7 +83,7 @@ in production.
 “But how can I trust my compiler?”
 ----------------------------------
 
-A common question related to reproducible builds is how is it possible
+A common question related to *reproducible builds* is how is it possible
 to know if the build environment is not compromised if everyone is using
 the same binaries? Or how can I trust that the compiler I just built
 was not compromised by a backdoor in the compiler I used to build it?
@@ -95,13 +95,13 @@ Ken Thompson published in 1984. It's the paper mentioned in the
 description of the talk about “Strawhorse” mentioned earlier.
 
 The technique known as [Diverse
-Double-Compilation](http://www.dwheeler.com/trusting-trust/) formally
-defined and researched by David A. Wheeler can answer this question.
+Double-Compilation](http://www.dwheeler.com/trusting-trust/), formally
+defined and researched by David A. Wheeler, can answer this question.
 To sum up quickly how it works: given two compilers, one trusted and
 one under test, the compiler under test is built twice,
 once with each compiler. Using the compilers created from this build,
 the compiler under test is built again. If the output is the same, then
 we have a proof that no backdoors have been inserted during the
 compilation. For this scheme to work, the output of the final
-compilations need to be the same. And that's exactly where reproducible
-builds are useful.
+compilations need to be the same. And that's exactly where *reproducible
+builds* are useful.

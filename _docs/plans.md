@@ -4,11 +4,11 @@ layout: docs
 permalink: /docs/plans/
 ---
 
-The idea of “reproducible” builds is to empower anyone to verify that no
+The idea of *reproducible builds* is to empower anyone to verify that no
 flaws have been introduced during the build process by reproducing
 byte-for-byte identical binary packages from a given source.
 
-Achieving reproducible builds require cooperation from multiple roles
+Achieving reproducible builds requires cooperation from multiple roles
 involved in software production. On small projects, all these roles
 might be carried by a single person, but it helps to differentiate the
 responsibilities.
@@ -35,7 +35,7 @@ toolchain[^toolchain] itself is byte-for-byte identical, but its
 output has to stay the same.
 
 The build environment can either be defined while the software is being
-developed or recorded at build time.
+developed or it can be recorded at build time.
 
 Distributing the build environment
 ----------------------------------
@@ -66,4 +66,4 @@ ignore specific parts. Such operations must be both documented and
 scripted. The rationale and code must be easy to understand by
 reviewers.
 
-[^toolchain]: By *toolchain*, we mean any piece of software needed to create the build output.
+[^toolchain]: By *toolchain*, we mean all pieces of software needed to create the build output.

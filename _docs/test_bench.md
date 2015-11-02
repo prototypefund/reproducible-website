@@ -5,7 +5,7 @@ permalink: /docs/test-bench/
 ---
 
 It is important to detect reproducibility problems in the build system
-before users to avoid any false alarms.
+before the users do, to avoid any false alarms.
 
 The method is usually as followed:
 
