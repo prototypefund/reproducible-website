@@ -52,7 +52,7 @@ Use date string with timezone information
 -----------------------------------------
 
 Time strings like “Wed, 21 Oct 2015 11:18:50” are inherently ambigious.
-For which timezone does it apply? How should it be understood?
+Which timezone does it use? How should it be understood?
 
 In the context of reproducible builds, it's best if time strings all
 contain timezone information. A fallback option is to assume they are all
