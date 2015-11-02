@@ -12,7 +12,7 @@ generator](https://en.wikipedia.org/wiki/Pseudorandom_number_generator). This
 value can be read from some file, a changelog or the version control system.
 
 When Link-Time Optimizations are turned on, GCC users will write random
-identifiers to binary objects it creates. Using `-frandom-seed` can be used for
+identifiers to binary objects they create. Using `-frandom-seed` can be used for
 this particular case. As it will hash arbitrary data, passing the file name
 should work in most cases.
 

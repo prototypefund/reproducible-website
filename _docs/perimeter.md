@@ -5,8 +5,8 @@ permalink: /docs/perimeter/
 ---
 
 Reproducible builds does not mandate that a given piece of source code
-be turned into the same bytes in all situations. This would be
-infeasible. The output of a compiler is likely to be different from one
+is turned into the same bytes in all situations. This would be
+unfeasible. The output of a compiler is likely to be different from one
 version to another as better optimizations are integrated all the time.
 
 Instead, reproducible builds happen in the context of a *build
@@ -18,7 +18,7 @@ any distributed binary package.
 Requirements
 ------------
 
-What exactly makes the build environment is going to be different for
+What exactly makes up the build environment is going to be different for
 each project. There might even be several build environments for a
 single release to accommodate different target operating systems.
 But there are some important aspects common to all environments.
@@ -28,8 +28,9 @@ system. Ideally it should only be made of free software available on
 public Internet sites. The best way to provide the environment is
 probably using a documented and easily understood script.
 
-It should be **auditable**. It must be easy to understand what tools
-are part of the build environment, and ideally review and rebuild them.
+It should be **auditable**. It must be easy to understand what tools are part
+of the build environment. And ideally it must be easy to review and rebuild
+them.
 
 Content
 -------
@@ -39,12 +40,12 @@ XXX: Not really happy with this section. Please help!
 -- Lunar
 {% endcomment %}
 
-What is exactly defined as the build environment needs to be properly
-specified as this will determine how much of the build system will need
-to be [made deterministic]({{ "/docs/deterministic-build-systems/" | prepend: site.baseurl }}).
+The scope of the build environment needs to be properly
+specified as this will determine how much of the build system needs
+to be [deterministic]({{ "/docs/deterministic-build-systems/" | prepend: site.baseurl }}).
 
-The defined environment will have the list of the tools used by the
-build process and versions that must be used.
+At least the defined environment has a list of the tools used by the
+build process and their versions.
 
 The rest can be different from one project to the next, as long as it
 can be reproduced by interested users. To give some examples:

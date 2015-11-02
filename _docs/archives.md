@@ -7,8 +7,8 @@ permalink: /docs/archives/
 Most archive formats record metadata that will capture details about the
 build environment if no care is taken. File last modification time is
 obvious, but file ordering, users, groups, numeric ids, and permissions
-can also be concerns. Tar will be used as the main example but these tips
-should apply to other archive formats as well.
+can also be of concern. Tar will be used as the main example but these tips
+apply to other archive formats as well.
 
 File modification times
 -----------------------
