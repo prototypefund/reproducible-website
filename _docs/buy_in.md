@@ -105,3 +105,11 @@ we have a proof that no backdoors have been inserted during the
 compilation. For this scheme to work, the output of the final
 compilations need to be the same. And that's exactly where *reproducible
 builds* are useful.
+
+Other resources
+---------------
+
+The following articles might contain even more arguments:
+
+ * [Cyberwar and Global Compromise](https://blog.torproject.org/blog/deterministic-builds-part-one-cyberwar-and-global-compromise) by Mike Perry from the Tor Project, 2013-08-20
+ * [Software Transparency: Part 1](https://zyan.scripts.mit.edu/blog/software-transparency/) by yan, 2014-07-11.
