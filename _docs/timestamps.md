@@ -43,7 +43,7 @@ variable has been [formally
 defined](https://reproducible-builds.org/specs/source-date-epoch/) in
 the hope of wider adoption.
 
-[^list]: As of 2015-10-26, the following tools are known to support `SOURCE_DATE_EPOCH`: help2man, Sphinx. And [more where modified in Debian](https://wiki.debian.org/ReproducibleBuilds/TimestampsProposal#Reading_the_variable) already.
+[^list]: As of 2015-10-26, the following tools are known to support `SOURCE_DATE_EPOCH`: help2man, Sphinx. Also, [others have been modified locally in Debian](https://wiki.debian.org/ReproducibleBuilds/TimestampsProposal#Reading_the_variable) already to support this.
 
 Changes required to support `SOURCE_DATE_EPOCH` are usually fairly
 small and easy to write. Patches for tools which don't yet support the
