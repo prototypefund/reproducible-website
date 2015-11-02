@@ -22,6 +22,6 @@ size, environment variables…
 The rest of the build environment should either be defined as part of
 the development process or recorded during the build process.
 
-Anything recorded is best recorded as a separate build product that can
+Anything recorded is best stored as a separate build product that can
 be easily ignored or distributed separately. This will help identify
 which variation is irrelevant to the software itself.
