@@ -56,11 +56,11 @@ For which timezone does it apply? How should it be understood?
 
 In the context of reproducible builds, it's best if time strings all
 contain timezone information. A fallback option is to assume they are all
-specificied as UTC.
+specified as UTC.
 
-If times trings without timezone specification are parsed in the
+If time strings without timezone specification are parsed in the
 timezone of the build system, hard to understand behavior might happen.
-An example is extra hours when doing time computations accross two days
+An example is extra hours when doing time computations across two days
 with different daylight saving changes. As different timezones have
 different policies, one user might get different results depending on
 the timezone used to perform the build.

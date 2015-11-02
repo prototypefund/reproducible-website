@@ -49,8 +49,8 @@ build process and versions that must be used.
 The rest can be different from one project to the next, as long as it
 can be reproduced by interested users. To give some examples:
 
- * specific operating system if cross-compiling is not supported),
- * build system architecture if cross-compiling is not supported),
+ * specific operating system (if cross-compiling is not supported),
+ * build system architecture (if cross-compiling is not supported),
  * directory where the build must happen,
  * name of the user running the build,
  * locale,

@@ -5,7 +5,7 @@ permalink: /docs/recording/
 ---
 
 It is been customary in user facing software to provide a way for
-developpers investigating bugs to learn how the software has been
+developers investigating bugs to learn how the software has been
 built. The “about dialog” or output of `--version` would contain
 information about the build environment.
 

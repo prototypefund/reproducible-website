@@ -4,7 +4,7 @@ layout: docs
 permalink: /docs/value-initialization/
 ---
 
-In languages which don't initialize values, this needs to be explicitely
+In languages which don't initialize values, this needs to be explicitly
 done in order to avoid capturing what random bytes are in memory when
 run.
 

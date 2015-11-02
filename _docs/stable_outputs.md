@@ -21,7 +21,7 @@ foreach my $package (keys %deps) {
 {% endhighlight %}
 </div>
 
-To get a deterministic output, the easiest way is to explicitely sort the keys:
+To get a deterministic output, the easiest way is to explicitly sort the keys:
 
 <div class="correct">
 {% highlight perl %}

@@ -27,7 +27,7 @@ tool: $(SRCS:.c=.o)
 
 Solutions:
 
-a) List all inputs explicitely and ensure they will be processed in that order.
+a) List all inputs explicitly and ensure they will be processed in that order.
 
 <div class="correct">
 {% highlight makefile %}
@@ -84,6 +84,6 @@ $ find src -print0 | LC_ALL=C sort -z |
 {% endhighlight %}
 </div>
 
-This might not be the only changes required for [Tar and other archive
+This might not be the only change required for [Tar and other archive
 formats]({{ "/docs/archives/" | prepend: site.baseurl }}) as they
 usually embed more metadata problems.

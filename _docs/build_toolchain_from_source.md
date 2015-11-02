@@ -37,7 +37,7 @@ Another approach is to check the source of the entire toolchain in the
 project's version control system.
 
 This is how several integrated operating systems like *BSD are
-developped. “Building the world” will start by building the toolchain in
+developed. “Building the world” will start by building the toolchain in
 the version control system before building the rest of the system.
 
 It's also how it is done for Google's internal projects. They have

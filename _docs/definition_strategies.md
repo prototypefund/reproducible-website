@@ -37,7 +37,7 @@ Reference distribution
 ----------------------
 
 Using a specific version of free software distribution is another viable
-options for a build environment.
+option for a build environment.
 
 Ideally, it should offer stable releases (like Debian, CentOS, or
 FreeBSD) to avoid having constant updates to the documentation or
