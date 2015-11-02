@@ -14,12 +14,12 @@ software itself…
 Timestamps are best avoided
 ---------------------------
 
-The time of the build has usually been used as an approximate way
-to know which version of the source has been built, and which tools had
-been used to do it. With reproducible builds, recording the time of the
-build becomes meaningless: on one side, the source code needs to be
-tracked more accurately that just a time, and the build environment
-needs to be defined or extensively recorded.
+Often the time of the build was used as an approximate way to know which
+version of the source has been built, and which tools had been used to do
+it. With reproducible builds, recording the time of the build becomes
+meaningless: on one side, the source code needs to be tracked more accurately
+that just a timestamp, and on the other side, the build environment needs to be
+defined or extensively recorded.
 
 If a date is required to give users an idea on when the software was
 made, it is better to use a date that is relevant to the source code
@@ -32,13 +32,13 @@ External tools
 --------------
 
 Some tools used in build processes, like code or documentation
-generator, write timestamps which will create unreproducible build
+generators, write timestamps which will create unreproducible build
 products.
 
 The Debian reproducible builds effort proposed the
 `SOURCE_DATE_EPOCH` environment variable to address the problem. Tools
 that support it[^list] will use its value—a number of seconds since January 1st
-1970, 00:00 UTC—when set instead of the current date and time. The
+1970, 00:00 UTC—instead of the current date and time (when set). The
 variable has been [formally
 defined](https://reproducible-builds.org/specs/source-date-epoch/) in
 the hope of wider adoption.
@@ -50,21 +50,21 @@ small and easy to write. Patches for tools which don't yet support the
 environment variable have been usually well received and help all users
 wanting *reproducible builds*.
 
-In case where that's not possible, an option is to do post processing on
-the outputs. The idea is either to remove the timestamps entirely or
+In case where that is not possible, an option is to do post-processing on
+the output. The idea is to either remove the timestamps entirely or to
 normalize them to a predetermined date and time.
 [strip-nondeterminism](https://packages.debian.org/sid/strip-nondeterminism)
-was designed as an extensible program to perform such normalizations on
-a various file formats.
+was designed as an extensible program to perform such normalization on
+various file formats.
 
 Another option is to run these tools using
 [libfaketime](http://www.code-wizards.com/projects/libfaketime/).
 This library is loaded through the `LD_PRELOAD` environment variable and
-will intercept function calls retrieving the current time of day to
-reply instead a predefined date and time. In some cases, it works
+it will intercept function calls retrieving the current time of day. It will
+reply instead with a predefined date and time. In some cases, it works
 just fine and can solve problems without requiring many
 changes to a given build system. But if any part of the build process is
-relying on time differences, things will start to go wrong. One case
-of a bad interaction between `libfaketime` and parallel
+relying on time differences, things will go wrong. One case
+of bad interaction between `libfaketime` and parallel
 compilation has been identified as a source of [reproducibility issue in
 the Tor Browser](https://bugs.torproject.org/12240). So beware.

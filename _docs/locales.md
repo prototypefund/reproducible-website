@@ -7,18 +7,17 @@ permalink: /docs/locales/
 The locale of the build system might affect the build products. While
 it is important that developers have access to error messages in the
 language of their choice, tools which output is influenced by the
-current locale can make locale source of reproducibility issues.
+current locale can make locale a source of reproducibility issues.
 
 There are many aspects regarding locales (see [GNU libc locale(1)
-manpage](http://manpages.debian.org/locale)). The ones that follow are those
-who have most often been important to consider in the context of
-reproducible builds.
+manpage](http://manpages.debian.org/locale)). The ones that follow are the
+most important ones to consider in the context of reproducible builds.
 
 Time format
 -----------
 
-Several common time formatting functions will have an output depending
-on the current locale. On POSIX system the formatting will be depend on
+Several common time formatting functions will have output depending
+on the current locale. On POSIX system the formatting will depend on
 the `LC_CTIME` environment variable, which can be overriden by
 `LC_ALL`.
 
@@ -83,8 +82,8 @@ LC_ALL=fr_FR lynx -dump -width 72 docs.html | file -
 {% endhighlight %}
 </div>
 
-The `C.UTF-8` pseudo-locale always to get the default strings with UTF-8
-output:
+The `C.UTF-8` pseudo-locale can always be used to get the default strings with
+UTF-8 output:
 
 <div class="correct">
 {% highlight sh %}

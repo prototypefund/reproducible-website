@@ -60,7 +60,7 @@ specified as UTC.
 
 If time strings without timezone specification are parsed in the
 timezone of the build system, hard to understand behavior might happen.
-An example is extra hours when doing time computations across two days
+An example is doing time difference computations in timezones
 with different daylight saving changes. As different timezones have
-different policies, one user might get different results depending on
+different policies, a user might get more or less hours depending on
 the timezone used to perform the build.

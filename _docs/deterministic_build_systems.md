@@ -54,5 +54,5 @@ in a build process might require fixes to become non-deterministic. The
 Debian effort keep a list of [all issues
 found](https://reproducible.debian.net/index_issues.html) while
 investigating reproducibility problems in its 22,000+ source packages.
-While some requires changes in the package source itself, some can be
+While some require changes in the package source itself, some can be
 fixed by improving or fixing the tools used to perform the builds.
