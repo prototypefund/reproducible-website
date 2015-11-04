@@ -58,3 +58,9 @@
   resources:
   - name: Continuous tests
     url: https://reproducible.debian.net/archlinux/
+- name: Baserock
+  url: http://baserock.org/
+  logo: baserock.png
+  resources:
+  - name: Bit-for-bit reproducibility in Baserock systems
+    url: http://wiki.baserock.org/projects/deterministic-builds/
