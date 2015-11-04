@@ -64,3 +64,9 @@
   resources:
   - name: Bit-for-bit reproducibility in Baserock systems
     url: http://wiki.baserock.org/projects/deterministic-builds/
+- name: Guix
+  url: https://www.gnu.org/software/guix/
+  logo: guix.png
+  resources:
+  - name: Guix features
+    url: https://gnu.org/software/guix/manual/html_node/Features.html
