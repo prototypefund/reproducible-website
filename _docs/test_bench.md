@@ -15,7 +15,7 @@ The method is usually as followed:
  4. Build a second time.
  5. Compare the results.
 
-[diffoscope](http://diffoscope.org/) is a tool that has been initially
+[diffoscope](https://diffoscope.org/) is a tool that has been initially
 designed to help understand issues when comparing build results.
 
 Here is a list of interesting variations that have been identified so
