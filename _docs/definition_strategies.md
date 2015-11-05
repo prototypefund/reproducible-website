@@ -4,39 +4,40 @@ layout: docs
 permalink: /docs/definition-strategies/
 ---
 
-They are multiple ways to define the build environment in a way that it
+There are multiple ways to define the build environment in a way that it
 can be distributed. The following methods are not exclusive and multiple
-aspects can be used for a single project. One can specify a reference
-Linux distribution and build a specific compiler version from source.
+aspects can be used for a single project.
 
 Defining the build environment as part of the development process has a
 very desirable aspect: changes in the build environment can be vetted
 like any other changes. Updating to a new compiler version can be
-subject to reviews, automatic testing, and in case things
-break, rollback.
+subject to reviews, automatic testing, and—in case things
+break—rollback.
 
 {% comment %}
 XXX: maybe we want to add examples?
+Orig example in first paragraph One can specify a reference
+Linux distribution and build a specific compiler version from source.
 {% endcomment %}
 
 Build from source
 -----------------
 
-One way to have users reproduce the tools used to perform the build
-is simply to have them start by building the right version of these
-tools from source.
+One simple way to have users reproduce the tools that are used to perform the
+build is making them start building the right version of these tools from
+source.
 
 Using `make` or any other compilation driver, the required tools will be
 downloaded, built, and locally installed before compiling the software.
 
 Like any other [inputs from the network]({{ "/docs/volatile-inputs/" | prepend: site.baseurl }}),
-the content of the archive should be backed up and verified using
-cryptographic checksums.
+the content of the archive where the required source for the tools is stored
+should be backed up and verified using cryptographic checksums.
 
 Reference distribution
 ----------------------
 
-Using a specific version of free software distribution is another viable
+Using a specific version of a free software distribution is another viable
 option for a build environment.
 
 Ideally, it should offer stable releases (like Debian, CentOS, or
@@ -62,4 +63,4 @@ trusted somehow. For example, it's currently not possible to install
 Debian in a reproducible manner[^reproducible-install]. This makes it
 harder to compare different installations.
 
-[^reproducible-install]: Some [preliminary work](https://wiki.debian.org/ReproducibleInstalls) has been done, mainly to identify the issues. Having byte-for-byte identical installations is a requirement to make *live* distributions build in a reproducible manner, so there is some interest by multiple parties in fixing the problem.
+[^reproducible-install]: Some [preliminary work](https://wiki.debian.org/ReproducibleInstalls) has been done, mainly to identify the issues. Having byte-for-byte identical installations is a requirement to make *live* distributions build in a reproducible manner, so there is interest by multiple parties in fixing the problem.
