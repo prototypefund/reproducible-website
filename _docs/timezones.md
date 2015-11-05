@@ -51,7 +51,7 @@ modification times.
 Use date string with timezone information
 -----------------------------------------
 
-Time strings like “Wed, 21 Oct 2015 11:18:50” are inherently ambigious.
+Time strings like “Wed, 21 Oct 2015 11:18:50” are inherently ambiguous.
 Which timezone does it use? How should it be understood?
 
 In the context of reproducible builds, it's best if time strings all

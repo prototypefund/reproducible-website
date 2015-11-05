@@ -4,7 +4,7 @@ layout: docs
 permalink: /docs/volatile-inputs/
 ---
 
-Inputs from the network—even if it doesn’t seem like
+Inputs from the network—even if it doesn't seem like
 it—are volatile. It's best to make a build system not rely
 on remote data.
 

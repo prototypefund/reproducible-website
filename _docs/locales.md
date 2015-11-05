@@ -18,7 +18,7 @@ Time format
 
 Several common time formatting functions will have output depending
 on the current locale. On POSIX system the formatting will depend on
-the `LC_CTIME` environment variable, which can be overriden by
+the `LC_CTIME` environment variable, which can be overridden by
 `LC_ALL`.
 
 For build systems, it's thus best to use `LC_ALL` directly:
@@ -38,7 +38,7 @@ Collation order
 ---------------
 
 Common sorting functions are affected by the `LC_COLLATE` environment
-variable, which can which can be overriden by `LC_ALL`. Some locales can
+variable, which can which can be overridden by `LC_ALL`. Some locales can
 be quite surprising:
 
 This typically shows when using `sort`. The `fr_FR` locale will sort
@@ -70,7 +70,7 @@ Default character encoding
 
 The default system character encoding will affect both the input and
 output of many tools. It is defined using the `LC_CTYPE` environment
-variable, and can also be overriden using `LC_ALL`.
+variable, and can also be overridden using `LC_ALL`.
 
 Here's an example when using `lynx` to convert HTML documentation into
 text:

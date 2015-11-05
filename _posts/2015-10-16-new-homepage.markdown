@@ -11,7 +11,7 @@ developers from Bitcoin and the Tor Project. Since then, [several major free
 software projects]({{ "/who/" | prepend: site.baseurl }}) are now actively
 working on supporting reproducible builds.
 
-It was time to increase the visibility of the various initiatives and establigh a
+It was time to increase the visibility of the various initiatives and establish a
 common ground to share general information, specifications, and tutorials. So here's a
 new homepage!
 

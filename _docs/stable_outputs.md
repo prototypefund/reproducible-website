@@ -35,9 +35,9 @@ For Perl, it is possible to set `PERL_HASH_SEED=0` in the environment. This
 will result in hash keys always being in the same order. See
 [perlrun(1)](http://perldoc.perl.org/perlrun.html) for more information.
 
-Python users can similarily set the environment variable
+Python users can similarly set the environment variable
 [PYTHONHASHSEED](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONHASHSEED).
-When set to a given integer value, orders in dictionnaries will be the same on
+When set to a given integer value, orders in dictionaries will be the same on
 every run.
 
 Beware that the [locale settings]({{ "/docs/locales/ | prepend: site.baseurl }})
