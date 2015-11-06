@@ -10,9 +10,9 @@ run.
 
 An
 [example](http://review.coreboot.org/gitweb?p=coreboot.git;a=commitdiff;h=2d119a3f01eee6c4e86248b17b4c9ce14ab77836)
-taken from Coreboot:
+taken from coreboot:
 
-![diffoscope output of the two different builds of the same Coreboot image]({{ "/images/docs/uninitialized_memory.png" | prepend: site.basurl }})
+![diffoscope output of the two different builds of the same coreboot image]({{ "/images/docs/uninitialized_memory.png" | prepend: site.basurl }})
 
 The code used to write a data structure directly without initializing
 all its fields. The fix was pretty simple once identified:

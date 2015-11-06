@@ -27,8 +27,8 @@ using a tag with a verified signature or a commit hash will work best.
 The compilation itself can be driven by shell scripts or an extra target
 in the project `Makefile`.
 
-Coreboot is a good example. The build documentation mandates to first run
-`make crossgcc` before building Coreboot itself.
+coreboot is a good example. The build documentation mandates to first run
+`make crossgcc` before building coreboot itself.
 
 Check-in everything
 -------------------
