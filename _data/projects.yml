@@ -36,6 +36,14 @@
   resources:
   - name: Reproducibility status
     url: https://www.fabiankeil.de/gehacktes/electrobsd/#reproducible-electrobsd
+- name: F-Droid
+  url: https://www.f-droid.org/
+  logo: f-droid.png
+  resources:
+  - name: Building Guide
+    url: https://f-droid.org/wiki/page/Deterministic,_Reproducible_Builds
+  - name: Verification Server
+    url: https://f-droid.org/wiki/page/Verification_Server
 - name: FreeBSD
   url: https://www.freebsd.org/
   logo: freebsd.png
