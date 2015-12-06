@@ -40,6 +40,14 @@
     url: https://wiki.freebsd.org/PortsReproducibleBuilds
   - name: Continuous tests
     url: https://reproducible.debian.net/freebsd/
+- name: Fedora
+  url: https://fedoraproject.org/wiki/Fedora_Project_Wiki
+  logo: fedora.png
+  resources:
+  - name: Wiki pages
+    url: https://fedoraproject.org/wiki/Reproducible_Builds
+  - name: Helper scripts
+    url: https://github.com/kholia/ReproducibleBuilds
 - name: Guix
   url: https://www.gnu.org/software/guix/
   logo: guix.png
