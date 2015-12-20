@@ -14,7 +14,7 @@ of the build environment irrelevant to the build output, or ensure they
 are mandatory to rebuild the software exactly as distributed.
 
 All irrelevant information should not be recorded. What information is
-irrelevant depends on what defined to be
+irrelevant depends on what is defined to be
 [part of the build environment]({{ "/docs/perimeter/" | prepend: site.baseurl }}),
 but it likely includes information such as date and time of the build, build
 system hostname, path, network configuration, CPU type, memory size,

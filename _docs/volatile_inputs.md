@@ -21,6 +21,6 @@ contain a list of
 [`MASTER_SITES`](https://www.freebsd.org/doc/en/books/porters-handbook/makefile-distfiles.html#makefile-master_sites),
 a list of files to be retrieved in `DISTFILES`, and a `distinfo` file
 with cryptographic checksums for each of these files. The FreeBSD
-infrastructure ensure that a copy of all *distfiles* are kept available
+infrastructure ensures that a copy of all *distfiles* are kept available
 on a mirror network. When building a port, the files will be downloaded
 from there if the original *master site* is unreachable.

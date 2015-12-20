@@ -17,7 +17,7 @@ Time format
 -----------
 
 Several common time formatting functions will have output depending
-on the current locale. On POSIX system the formatting will depend on
+on the current locale. On a POSIX system the formatting will depend on
 the `LC_CTIME` environment variable, which can be overridden by
 `LC_ALL`.
 
@@ -38,8 +38,8 @@ Collation order
 ---------------
 
 Common sorting functions are affected by the `LC_COLLATE` environment
-variable, which can which can be overridden by `LC_ALL`. Some locales can
-be quite surprising:
+variable, which can be overridden by `LC_ALL`. Some locales can
+be quite surprising.
 
 This typically shows when using `sort`. The `fr_FR` locale will sort
 independently of the character case:

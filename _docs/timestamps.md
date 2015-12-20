@@ -18,7 +18,7 @@ Often the time of the build was used as an approximate way to know which
 version of the source has been built, and which tools had been used to do
 it. With reproducible builds, recording the time of the build becomes
 meaningless: on one side, the source code needs to be tracked more accurately
-that just a timestamp, and on the other side, the build environment needs to be
+than just a timestamp, and on the other side, the build environment needs to be
 defined or extensively recorded.
 
 If a date is required to give users an idea on when the software was

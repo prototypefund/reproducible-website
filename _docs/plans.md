@@ -40,7 +40,7 @@ developed or it can be recorded at build time.
 Distributing the build environment
 ----------------------------------
 
-Users need to be able to know what build environment needs to be setup
+Users need to be able to know what build environment needs to be set up
 to rebuild the software.
 
 If the build environment is defined ahead and part of the source code,
@@ -59,7 +59,7 @@ source code, perform the build, and compare the results.
 
 Ideally, the comparison protocol should be simple to see if resulting
 binaries are identical. Comparing bytes or cryptographic hash
-functions is easy to do and understand.
+values is easy to do and understand.
 
 Other technologies might require removing cryptographic signatures or
 ignore specific parts. Such operations must be both documented and

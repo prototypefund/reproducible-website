@@ -5,7 +5,7 @@ permalink: /docs/build-toolchain-from-source/
 ---
 
 Building the tools that make the environment from source is one way to
-allow user to reproduce it. Using source directly makes it easier to
+allow user to reproduce it. Using the source code directly makes it easier to
 rely on new features, and easily works on a variety of platforms. It
 might not scale well for a long list of dependencies, and asking users
 to rebuild GCC for every piece of software they use might make them
@@ -18,7 +18,7 @@ Building using external resources
 ---------------------------------
 
 The source for the different components can be retrieved from online
-repository. Using release tarballs might be preferable as they are
+repositories. Using release tarballs might be preferable as they are
 easier to cache, [mirror, checksum and verify]({{ "/docs/volatile-inputs/" | prepend: site.baseurl }}).
 When retrieving the source from a version control system repository,
 it's best to have a precise reference to the code version. With Git,
@@ -36,7 +36,7 @@ Check-in everything
 Another approach is to check the source of the entire toolchain in the
 project's version control system.
 
-This is how several integrated operating systems like *BSD are
+This is how several integrated operating systems like \*BSD are
 developed. “Building the world” will start by building the toolchain in
 the version control system before building the rest of the system.
 
@@ -45,7 +45,7 @@ released [Bazel](http://bazel.io/) which is based on their
 internal compilation tool. Bazel is designed to drive large scale
 builds with speed and reproducibility in mind.
 
-Outside of fully integrated operating systems or corporate environment,
+Outside of fully integrated operating systems or corporate environments,
 it might be hard to push the idea of adding ten or more times the actual
 code base in the toolchain…
 

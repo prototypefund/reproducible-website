@@ -4,8 +4,8 @@ layout: docs
 permalink: /docs/formal-definition/
 ---
 
-Most free software distribution are self-contained: all tools required
-to build its component are part of the distribution. In such cases, it's
+Most free software distributions are self-contained: all tools required
+to build their components are part of the distribution. In such cases, it's
 possible to specify the build environment in a machine readable format
 that can be later used to reinstall the environment.
 

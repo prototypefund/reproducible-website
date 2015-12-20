@@ -21,7 +21,7 @@ from the Snowden leaks the abstract of a talk at an
 [Strawhorse: Attacking the MacOS and iOS Software Development
 Kit](https://theintercept.com/document/2015/03/10/strawhorse-attacking-macos-ios-software-development-kit/).
 The abstract clearly explains how unnamed researchers have been creating
-modified version of XCode that would — without any knowledge of the
+a modified version of XCode that would — without any knowledge of the
 developer — watermark or insert spyware in the compiled applications.
 
 A few months later, a malware dubbed “XcodeGhost” has been found

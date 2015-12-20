@@ -20,7 +20,7 @@ Tue, 19 Jan 2038 04:14:07 +0100
 {% endhighlight %}
 </div>
 
-Despite being given a pre-determined time in the form of an [Unix
+Despite being given a pre-determined time in the form of a [Unix
 time](https://en.wikipedia.org/wiki/Unix_time) (also called *epoch*),
 this output would fail to be reproducible in a different timezone
 than UTC+0100. The easy solution is to set the required environment

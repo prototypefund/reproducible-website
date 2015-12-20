@@ -7,11 +7,11 @@ permalink: /docs/checksums/
 How can users know that the build they just made has successfully
 reproduced the original build?
 
-The easiest way is to make sure that the build output are always
-byte-for-byte identical. Byte for byte comparison is a trivial operation
+The easiest way is to make sure that the build outputs are always
+byte-for-byte identical. Byte-for-byte comparison is a trivial operation
 and can be performed in many different environments.
 
-The other benefit of having identical bytes is that it makes possible to
+The other benefit of having identical bytes is that it makes it possible to
 use [cryptographic
 checksums](https://en.wikipedia.org/wiki/Cryptographic_hash_function).
 Such checksums are really tiny compared to the full build products. They

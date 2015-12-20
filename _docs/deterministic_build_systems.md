@@ -4,7 +4,7 @@ layout: docs
 permalink: /docs/deterministic-build-systems/
 ---
 
-A software cannot be easily be built reproducibly if the source varies
+A software cannot easily be built reproducibly if the source varies
 depending on factors that are hard or impossible to control like the
 ordering of files on a filesystem or the current time.
 
@@ -24,7 +24,7 @@ or `sed` where the requirement for the environment can be as loose as
 
 But it's hardly a good idea to mandate that the system pseudo-random
 number generator be initialized with a given value before performing a
-build, so better not have randomness affect a build output.
+build, so better not having randomness affect a build output.
 
 Another concrete example on where to draw the line: there is no need to
 care about making the build system give constant output when run in
@@ -43,15 +43,15 @@ as:
  * Capture as little as possible from the environment.
 
 What follows are some advices on common issues that can affect source
-code or build systems that makes multiple builds from the exact same
+code or build systems that make multiple builds from the exact same
 source different.
 
 Disclaimer
 ----------
 
-Not all problems currently have solutions. Some tools that might be used
+Not all problems have solutions currently. Some tools that might be used
 in a build process might require fixes to become non-deterministic. The
-Debian effort keep a list of [all issues
+Debian effort keeps a list of [all issues
 found](https://reproducible.debian.net/index_issues.html) while
 investigating reproducibility problems in its 22,000+ source packages.
 While some require changes in the package source itself, some can be

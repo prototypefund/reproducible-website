@@ -58,7 +58,7 @@ easily perform the build in a more controlled environment. The build
 user, system hostname, network configuration, or other aspects can be
 enforced easily on all systems.
 
-The downside is that it can introduce a lot of software that has be
+The downside is that it can introduce a lot of software that has to be
 trusted somehow. For example, it's currently not possible to install
 Debian in a reproducible manner[^reproducible-install]. This makes it
 harder to compare different installations.

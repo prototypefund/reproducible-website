@@ -9,8 +9,8 @@ Some tools will record the path of the source files in their output.
 Most compilers write the path of the source in the debug
 information in order to locate the associated source files.
 
-Some tools have flags (like gzip's `-n`) that prevent them to write
-the path in their output. Proposing patches to add similar feature in
+Some tools have flags (like gzip's `-n`) that prevent them from writing
+the path in their output. Proposing patches to add a similar feature in
 other tools might be sufficiently easy.
 
 In most cases however, post-processing is required to either remove the

@@ -10,7 +10,7 @@ get the same build results?
 
 Debian is thinking of allowing [multiple Debian Developers to upload
 signatures](https://wiki.debian.org/ReproducibleBuilds/BuildinfoSpecification#buildinfo_signatures)
-attesting that they have been to reproduce a build.
+attesting that they have been able to reproduce a build.
 
 The question is also related to the work lead by Ben Laurie on [binary
 transparency](https://groups.google.com/forum/#!forum/binary-transparency).
