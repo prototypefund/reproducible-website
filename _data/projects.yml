@@ -30,6 +30,12 @@
     url: https://wiki.debian.org/ReproducibleBuilds
   - name: Continuous tests
     url: https://reproducible.debian.net/
+- name: ElectroBSD
+  url: https://www.fabiankeil.de/gehacktes/electrobsd/
+  logo: electrobsd.png
+  resources:
+  - name: Reproducibility status
+    url: https://www.fabiankeil.de/gehacktes/electrobsd/#reproducible-electrobsd
 - name: FreeBSD
   url: https://www.freebsd.org/
   logo: freebsd.png
