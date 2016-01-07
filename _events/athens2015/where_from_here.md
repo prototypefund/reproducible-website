@@ -1,0 +1,191 @@
+---
+layout: event_detail
+title: Where from here?
+event: athens2015
+order: 210
+permalink: /events/athens2015/where-from-here/
+---
+
+> Participants are invited to write statements starting with “I Will”, “We
+> should” and “Don't Forget”. Names have been omitted from the website.
+
+I will…
+-------
+
+ - I will make OpenWrt more reproducible
+ - I will make more coreboot payloads reproducible
+ - I will push squashfs patches upstream
+ - I will share a report to my fellow students back to the uni so maybe I can get them interested
+ - I will write a deign doc for different types of reproducibility + build info files
+ - I will upload koji to Debian
+ - I will make it easier to use Nix's –repeat/--check flags with diffoscope
+ - I will finish wiki content migration
+ - I will add tests to diffoscope image diff patch + resubmit
+ - I will make reproducible packages for Qubes OS
+ - I will make Hydra do repeated builds for NixOS
+ - I will start the “share the issues” database
+ - I will improve the code behind reproducible.d.n to test better other project
+ - I will send a r-b trip report to an appropriate FreeBSD mailing list
+ - I will write aor solicit a r-b article for the FreeBSD journal
+ - I will submit a r-b talk to BSDCon and/or other BSD conferences
+ - I will document reproducibility policy/mechanisms in the Nix pkgs manual
+ - I will send a report to the nix-dev mailing list
+ - I will update wtherpad with stuff I have done
+ - I will post my analysis of diffoscope “Too much info for diff” errors
+ - I will bring wip FreeBSD kernel reproducible patch into the tree
+ - I will document how to contribute to r-b.org website
+ - I will contact universities around my place to discuss r-b in CS curriculum
+ - I will cut a new diffoscope release
+ - I will follow upon getting ftp.master (debian) to accept & distribute .buildinfo files
+ - I will contact upstream tracker about reproducible builds
+ - I will work on reporting reproducibility in ccache, waf
+ - I will set up continuous reprodubility reports on Baserock
+ - I will upstream reproducibility fixes for NetHack
+ - I will continue to verify Debian results
+ - I will continue looking for unreproducible packages in Debian and patch them if I can
+ - I will continue looking at untagged non-repro. Packages in Debian and tag issues I recognize
+ - I will look into parsing ELF files as containers in diffoscope
+ - I will send `SOURCE_DATA_EPOCH RPM` patch pull request
+ - I will implement Qubes OS testing for jenkins.d.n
+ - I will report my srebuild experiment to the ML
+ - I will try to get some buildinfo for Qubes
+ - I will start working on making pkgsrc build reproducibly
+ - I will continue working on NetBSD to build reproducibly
+ - I will report to NetBSD about the summit
+ - I will report on the outcome of r-b Athens 2015 to macports-dev@
+ - I will implement `SOURCE_DATE_APOCH` support/tarball timestamp fixes in MacPorts (using `findnewest(1)`)
+ - I will figure out how to get a reproducibility patch into zipalign
+ - I will try to get some Googles to work on Bazel-on-Debian
+ - I will tell my co-workers that there is actually interest in making builds reproducible
+ - I will eat less on the next conference I go to
+ - I will work on reprotest
+ - I will take this Sunday off
+ - I will get RPMs tested by the end of 2015
+ - I will cleanup the jenkins.d.n. codebase so others can jump in more easily
+ - I will work a funding with Ed & Chris
+ - I will sort my ToDo
+ - I will write a blog post on Bazel website
+ - I will write a report to my team
+ - I will continue improving s(re)build
+ - I will not use `__DATE__`
+ - I will write a Tor blog post about the meeting
+ - I will look closer at Diverse Double Compilation
+ - I will upstream GHC patches
+ - I will investigate how possible it is to have the next meeting in Lisboa or elsewhere in Portugal
+ - I will make Qubes OS RPM build using the same tools as Fedora 
+ - I will work on the reproducible builds to make them portable
+ - I will work on the FreeBSD package building tools to make them reproducible
+ - I will continue making Arch Linux reproducible and extend the pipeline and toolchain
+ - I will inform the Arch linux community about this event and progress
+ - I will continue contributing to cross distribution tools for reproducible builds
+ - I will get myself an account on alioth.d.o (issue database)
+ - I will email the GNU & Guix hackers to report back
+ - I will push for reproducibility in the GNU coding standards, and for repro. fixes
+ - I will start a discussion on how to sign code in GNU Guix
+ - I will email Holger to set up Guix on the ProfitBricks machines
+ - I will do a repro talk in a hackerspace
+ - I will report back to coreboot and OpenWrt
+ - I will inform Fedora community about this event
+ - I will keep the Fedora reproducible machinery updated, and working
+ - I will help upstream patches to RPM, cpio, gcc etc.
+ - I will help get packages in Fedora
+
+We should…
+----------
+
+ - We should invite key people from Fedora's release/build team
+ - We should push the idea rep. Into universities
+ - We should add source-sha256 to .deb and dpkg-buildpackage
+ - We should get buildinfo files in Debian already and fix dpkg
+ - We should have another rb meeting to share our progress
+ - We should find a simple way of signing each commit in Guix
+ - We should automate the way we compare the binaries between build servers and users in Guix
+ - We should attract more projects to work on reproducible builds
+ - We should have another reproducibility summit
+ - We should have a cross-distro wiki/database of common reproducibility issues
+ - We should find hardware sponsors so we can have multiple servers building packages so we can compare them
+ - We should have another reproducible meeting IRL
+ - We should organize another rb event
+ - We should encourage upstreams and mantainers to sign their source code
+ - We should hold another R.B. summit in about 6 months
+ - We should meet way more often than the proposed every 6 months
+ - We should actively invite Fedora people
+ - We should have another r-b summit (in NA)
+ - We should have publicly documented r-b build resources (hardware/ CPU time)
+ - We should invite OpenBSD to the next summit
+ - We should prepare flyers for FOSDEM
+ - We should decide how to get this shared database of issues running
+ - We should publish a buildinfo specification
+ - We should ship a “reproducible” debian subset as a suite
+ - We should develop buildinfo comparator tools. input: multiple .buildinfo w/ some out put artifacts. output: “these artifacts are reproducible when X & Y vary”
+ - We should develop clear stories for getting activists & civil liberties folks excited about r-b
+ - We should investigate reproducible cross-building e.g. freebsd on debian & viceversa
+ - We should write a cross-distro .buildinfo “translator”
+ - We should make reproducible builds the norm – also upstream
+ - We should continue to work on getting buildinfo into the debian archive
+ - We should make it easy for upstreams to check for reproducibility (e.g. make, waf integration)
+ - We should create tools for making reproducibility visible to users
+ - We should invite toolchain people from OpenBSD & DragonflyBSD (choose carefully!)
+ - We should have r-b whitepapers (for mgrs)
+ - We should commit publicly to r-b efforts (on mailing lists for example)
+ - We should have another reproducible builds summit
+ - We should keep in touch and share knowledge on the solutions and tools to solve reproducibility issues
+ - We should invite OpenSUSE at next meeting
+ - We should encourage more users to reproduce builds
+ - We should think about multi-sigs for reprod.software
+ - We should encourage source code signing
+ - We should get more Fedora/rpm people on board
+ - We should have another summit
+ - We should compare isues resulting from buildsystems (was on post-it)
+ - We should increase adoption of findnewest
+ - We should finish use case docs telling companies/managers why investing in r-b is a good thing
+ - We should work on getting tarbaV timestamp clamp support implemented upstream
+ - We should do this again
+ - We should figure out how to make Bazel interact with Debian better
+ - We should stay synchronized via mailing list
+ - We should have another reproducible builds conference
+ - We should add `SOURCE_DATE_EPOCH` to LLVM
+ - We should get (more) Fedora, Suse, Microsoft, Apple, Twitter, Facebook, Oracle people involved & to the next meeting
+ - We should write a blog post and a post to debian-devel-announce @ l.d.o
+ - We should have more meetings
+ - We should make software (esp. compilers) bootstrappable (DCC)
+ - We should invest time in tools that everybody is benefitting from
+ - We should have a follow-up meeting (face-to-face)
+ - We should have another reproducible builds meetup
+ - We should have a monthly meeting in IRC that is moderated
+ - We should really have a cross distribution exchange about patches and infos to not dupllicate efforts
+ - We should hold another r-b meeting!
+ - We should contribute to the shared issue database
+
+Don't forget…
+--------------
+
+ - Don't forget to take a stab and try pushing patches from Debian elsewhere too
+ - Don't forget to invite OpenSuse and Fedora/RM people next time
+ - Don't forget to send some practical details pior to event e.g. at least be @ “x” at “y” am a week before
+ - Don't forget to confirm hotel sponsorship!
+ - Don't forget to buy stock in 3M & sharpie
+ - Don't forget to invite Fedora people to the summit (CentOS, SL, OpJ, SUSE, gentoo)
+ - Don't forget about documenting how different projects are regarding r-b
+ - Don't forget we need lots of Internet
+ - Don't forget to invite `xorriso` upstream
+ - Don't forget to invite OpenSuse people next time
+ - Don't forget to invite cloud (e.g. docker, rocket) people next time
+ - Don't forget to solve verification of multiple identical builds by users
+ - Don't forget to thank Holger, Lunar, Gunner & all organizers & facilitators
+ - Don't forget updating r-b.org website
+ - Don't forget to build a database of non-deterministic tools and workarounds
+ - Don't forget thanking the organizers & sponsors
+ - Don't forget to invite people familiar with r-b on Windows
+ - Don't forget to invite Facebook/Buck team
+ - Don't forget that events like this need interwebs
+ - Don't forget to have stable WLAN at the next meeting
+ - Don't forget to invite Apple folks
+ - Don't forget to invite Microsoft folks
+ - Don't forget about addressing installation images creation reprod.
+ - Don't forget to define a clear threat model for reproducible builds so we can articulate by how much they raise the bar
+ - Don't forget to invite more people from industry (FB, Intel?, Twitter) and possibly academia
+ - Don't forget to bring a powerful router or two to the next event
+ - Don't forget to add to the website any new projects used in the real world that derive an articulable and clear benefit from reproducible builds
+ - Don't forget to communicate between projects
+ - Don't forget to keep thinking about how to reduce the set of bootstrap binaries
