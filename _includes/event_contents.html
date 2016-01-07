@@ -1,0 +1,44 @@
+{% for site_page in site.events %}
+  {% assign event_name = site_page.url | split: "/" | last %}
+  {% if event_name == page.event %}
+    {% assign event_page = site_page %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% assign sorted_events = site.events | sort: 'order' %}
+<div class="hide-on-mobiles">
+  <aside>
+    <h4><a href="{{ event_page.url | prepend: site.baseurl }}">{{ event_page.title }}</a></h4>
+    <p>{{ event_page.event_date_string }}</p>
+    <ul>
+      {% for site_page in sorted_events %}
+        {% if site_page.order %}
+          {% assign dirs = site_page.url | split: "/" %}
+          {% if dirs[2] == event_name %}
+            {% if site_page.url == page.url %}
+              {% assign c = "current" %}
+            {% else %}
+              {% assign c = "" %}
+            {% endif %}
+            <li class="{{ c }}"><a href="{{ site_page.url | prepend: site.baseurl }}">{{ site_page.title }}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+</div>
+<div class="show-on-mobiles">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Navigate…</option>
+    <optgroup label="{{ event_page.title }}">
+      {% for site_page in sorted_events %}
+        {% if site_page.order %}
+          {% assign dirs = site_page.url | split: "/" %}
+          {% if dirs[2] == event_name %}
+            <option value="{{ site_page.url | prepend: site.baseurl }}">{{ site_page.title }}</option>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </optgroup>
+  </select>
+</div>
