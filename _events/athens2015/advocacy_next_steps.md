@@ -1,6 +1,6 @@
 ---
 layout: event_detail
-title: Advocacy: next steps
+title: "Advocacy: next steps"
 event: athens2015
 order: 140
 permalink: /events/athens2015/advocacy-next-steps/
