@@ -3,7 +3,7 @@
   logo: archlinux.png
   resources:
   - name: Continuous tests
-    url: https://reproducible.debian.net/archlinux/
+    url: https://tests.reproducible-builds.org/archlinux/
 - name: Baserock
   url: http://baserock.org/
   logo: baserock.png
@@ -21,7 +21,7 @@
   logo: coreboot.png
   resources:
   - name: Continuous tests
-    url: https://reproducible.debian.net/coreboot/
+    url: https://tests.reproducible-builds.org/coreboot/
 - name: Debian
   url: https://www.debian.org/
   logo: debian.png
@@ -29,7 +29,7 @@
   - name: Wiki pages
     url: https://wiki.debian.org/ReproducibleBuilds
   - name: Continuous tests
-    url: https://reproducible.debian.net/
+    url: https://tests.reproducible-builds.org/debian/
 - name: ElectroBSD
   url: https://www.fabiankeil.de/gehacktes/electrobsd/
   logo: electrobsd.png
@@ -45,7 +45,7 @@
   - name: Ports
     url: https://wiki.freebsd.org/PortsReproducibleBuilds
   - name: Continuous tests
-    url: https://reproducible.debian.net/freebsd/
+    url: https://tests.reproducible-builds.org/freebsd/
 - name: Fedora
   url: https://fedoraproject.org/wiki/Fedora_Project_Wiki
   logo: fedora.png
@@ -65,7 +65,7 @@
   logo: netbsd.png
   resources:
   - name: Continuous tests
-    url: https://reproducible.debian.net/netbsd/
+    url: https://tests.reproducible-builds.org/netbsd/
 - name: NixOS
   url: https://nixos.org/
   logo: nixos.png
@@ -77,7 +77,7 @@
   logo: openwrt.png
   resources:
   - name: Continuous tests
-    url: https://reproducible.debian.net/openwrt/
+    url: https://tests.reproducible-builds.org/openwrt/
 - name: Tor Browser
   url: https://www.torproject.org/
   logo: tor.png
