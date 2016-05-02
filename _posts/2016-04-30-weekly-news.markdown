@@ -13,6 +13,5 @@ this is a team effort and credits the many people who help towards our goals.
 The [weekly reports are published as a blog](https://reproducible.alioth.debian.org/blog/) so you can subscribe via the usual means. 
 
 Also, while this was started by the Debian reproducible builds folks and
-mainly still is a report about the progress in Debian, we do cover developments
-upstream projects and other distributions too.
+mainly still is a report about the progress in Debian, it also covers developments in upstream projects and other distributions.
 
