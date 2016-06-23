@@ -74,6 +74,12 @@
   resources:
   - name: "PR#2281: deterministic build"
     url: https://github.com/NixOS/nixpkgs/pull/2281
+- name: openSUSE
+  url: https://opensuse.org/
+  logo: opensuse.png
+  resources:
+  - name: Presentation at openSUSEconf 2016
+    url: https://events.opensuse.org/conference/oSC16/program/proposal/838
 - name: OpenWrt
   url: https://openwrt.org/
   logo: openwrt.png
