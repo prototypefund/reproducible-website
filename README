@@ -3,7 +3,8 @@ Source for the reproducible-builds.org website
 
 The website for reproducible-builds.org is made with [Jekyll]. It has
 been initially created and tested with version 2.2.0 in Debian unstable
-available in the `jekyll` package.
+available in the `jekyll` package. It is known to work with jekyll from
+Jessie too.
 
 The boilerplate CSS is provided by [Skeleton].
 
