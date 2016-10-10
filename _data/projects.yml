@@ -76,7 +76,7 @@
     url: https://github.com/NixOS/nixpkgs/pull/2281
 - name: openSUSE
   url: https://opensuse.org/
-  logo: opensuse.png
+  logo: openSUSE.png
   resources:
   - name: Presentation at openSUSEconf 2016
     url: https://events.opensuse.org/conference/oSC16/program/proposal/838
