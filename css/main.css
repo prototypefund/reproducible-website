@@ -64,6 +64,10 @@
   margin-bottom: 1rem;
 }
 
+a {
+    color: #188fb4;
+}
+
 .text p {
   text-align: justify;
 }
@@ -117,6 +121,7 @@
 
 .site-nav a, .home nav a {
   text-decoration: none;
+  font-weight: 700;
 }
 
 .site-nav a:hover, .home nav a:hover {
@@ -353,7 +358,7 @@ aside li a {
 .site-footer p {
   font-size: 15px;
   letter-spacing: -.3px;
-  color: #828282;
+  color: #424242;
   margin-bottom: 0;
 }
 
@@ -385,7 +390,7 @@ aside li a {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: local('Raleway'), url(Raleway/Raleway-Regular.ttf) format('truetype');
+  src: url(Raleway/Raleway-Regular.ttf) format('truetype'), local('Raleway');
 }
 @font-face {
   font-family: 'Raleway';
