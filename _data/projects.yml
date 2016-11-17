@@ -110,5 +110,5 @@
   url: http://webconverger.org/
   logo: webconverger.png
   resources:
-  - name: Homepage
-    url: http://webconverger.org/
+  - name: Introducing Reproducible Builds
+    url: https://www.youtube.com/watch?v=FaBFbkBhnXI
