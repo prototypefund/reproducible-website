@@ -100,6 +100,14 @@
   resources:
   - name: Continuous tests
     url: https://tests.reproducible-builds.org/openwrt/
+- name: Tails
+  url: https://tails.boum.org/
+  logo: tails.png
+  resources:
+  - name: Blueprint
+    url: https://tails.boum.org/blueprint/reproducible_builds/
+  - name: Ticket
+    url: https://labs.riseup.net/code/issues/5630
 - name: Tor Browser
   url: https://www.torproject.org/
   logo: tor.png
