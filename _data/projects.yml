@@ -106,7 +106,7 @@
   resources:
   - name: Building guide
     url: https://trac.torproject.org/projects/tor/wiki/doc/TorBrowser/Hacking#BuildingOfficialTorBrowserReleaseBinaries
-- name: WebConverger
+- name: Webconverger
   url: http://webconverger.com/
   logo: webconverger.png
   resources:
