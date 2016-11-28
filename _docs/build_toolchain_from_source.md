@@ -41,7 +41,7 @@ developed. “Building the world” will start by building the toolchain in
 the version control system before building the rest of the system.
 
 Also Google's internal projects operate in this way. They have
-released [Bazel](http://bazel.io/) which is based on their
+released [Bazel](https://bazel.io/) which is based on their
 internal compilation tool. Bazel is designed to drive large scale
 builds with speed and reproducibility in mind.
 

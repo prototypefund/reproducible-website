@@ -7,7 +7,7 @@ permalink: /docs/stable-outputs/
 Data structures such as [Perl
 hashes](http://perldoc.perl.org/functions/keys.html), [Python
 dictionaries](https://docs.python.org/2/library/stdtypes.html#mapping-types-dict),
-or [Ruby Hash objects](http://ruby-doc.org/core/Hash.html) will list their keys
+or [Ruby Hash objects](https://ruby-doc.org/core/Hash.html) will list their keys
 in a different order on every run to limit [algorithmic complexity
 attacks](http://perldoc.perl.org/perlsec.html#Algorithmic-Complexity-Attacks).
 

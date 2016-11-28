@@ -48,7 +48,7 @@ To be sure that the base compiler is the same, one could use the fact
 that Docker images can actually be addressed by a hash of their content.
 Another option is to build the Docker image oneself in a reproducible
 manner, something that can be done using
-[Bazel](http://bazel.io/docs/be/docker.html).
+[Bazel](https://bazel.io/docs/be/docker.html).
 
 Vagrant
 -------

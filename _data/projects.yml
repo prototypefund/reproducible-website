@@ -5,11 +5,11 @@
   - name: Continuous tests
     url: https://tests.reproducible-builds.org/archlinux/
 - name: Baserock
-  url: http://baserock.org/
+  url: https://baserock.org/
   logo: baserock.png
   resources:
   - name: Bit-for-bit reproducibility in Baserock systems
-    url: http://wiki.baserock.org/projects/deterministic-builds/
+    url: https://wiki.baserock.org/projects/deterministic-builds/
 - name: Bitcoin
   url: https://github.com/bitcoin/bitcoin
   logo: bitcoin.png
@@ -17,7 +17,7 @@
   - name: Gitian building guide
     url: https://github.com/bitcoin/bitcoin/blob/master/doc/gitian-building.md
 - name: coreboot
-  url: http:///www.coreboot.org/
+  url: https://www.coreboot.org/
   logo: coreboot.png
   resources:
   - name: Continuous tests
@@ -115,7 +115,7 @@
   - name: Building guide
     url: https://trac.torproject.org/projects/tor/wiki/doc/TorBrowser/Hacking#BuildingOfficialTorBrowserReleaseBinaries
 - name: Webconverger
-  url: http://webconverger.com/
+  url: https://webconverger.com/
   logo: webconverger.png
   resources:
   - name: Introducing Reproducible Builds

@@ -17,7 +17,7 @@ the technique to build their Windows and Mac OS X versions.
 Windows
 -------
 
-For Windows, [mingw-w64](http://mingw-w64.org/) will build Windows
+For Windows, [mingw-w64](https://mingw-w64.org/) will build Windows
 binaries on POSIX compatible operating systems.
 
 [NSIS](http://nsis.sourceforge.net/) can be used to create integrated

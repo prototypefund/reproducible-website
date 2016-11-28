@@ -10,7 +10,7 @@ language of their choice, tools which output is influenced by the
 current locale can make locale a source of reproducibility issues.
 
 There are many aspects regarding locales (see [GNU libc locale(1)
-manpage](http://manpages.debian.org/locale)). The ones that follow are the
+manpage](https://manpages.debian.org/locale)). The ones that follow are the
 most important ones to consider in the context of reproducible builds.
 
 Time format

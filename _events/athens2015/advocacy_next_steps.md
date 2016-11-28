@@ -13,7 +13,7 @@ Brainstorm how and where to distribute the idea of reproducible builds.
 ## Events
 
  - [FOSDEM’16](https://fosdem.org/2016/schedule/event/reproducible_ecosystem/), January 30-31st 2016
- - [FLOCK](http://www.flocktofedora.org/), date and location for 2016 unknown
+ - [FLOCK](https://www.flocktofedora.org/), date and location for 2016 unknown
  - Organise a Google Tech Talk
 
 ## Applications to reach
