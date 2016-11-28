@@ -43,7 +43,7 @@ far:
 testing variations due to filesystems in a deterministic manner.
 
 The list of [variations tested for
-Debian](https://reproducible.debian.net/reproducible.html#variation) is
+Debian](https://tests.reproducible-builds.org/debian/index_variations.html) is
 available as an actual example.
 
 {% comment %}
