@@ -5,15 +5,15 @@ date:   2016-12-13 09:23:42
 categories: org
 ---
 
-People from various projects interested in reproducible builds will meet again! Following the [December 2015 summit in Athens]({{ "/events/athens2015/" | prepend: site.baseurl }}), the three day [event in Berlin]({{ "/events/berlin2016/" | prepend: site.baseurl }}) welcomes previous attendees and new projects. The participants will discuss, connect and exchange ideas in order to grow the reproducible builds effort.
+People interested in reproducible builds will meet again! Following on from our [December 2015 summit in Athens]({{ "/events/athens2015/" | prepend: site.baseurl }}), a [three-day event in Berlin]({{ "/events/berlin2016/" | prepend: site.baseurl }}) will welcome both previous attendees and new projects alike. The participants will discuss, connect and exchange ideas in order to grow the reproducible builds effort.
 
-The exact content of the meeting will be shaped by the participants, but here are the main goals:
+Whilst the exact content of the meeting will be shaped by the participants, the main goals will include:
 
-  * Update & exchange about the status of reproducible builds in various projects.
-  * Improve collaboration both between and inside projects.
-  * Expand the scope and reach of reproducible builds to more projects.
-  * Work together and hack on solutions.
-  * Brainstorm designs on tools enabling end-users to get the most benefits from reproducible builds.
+  * Updating & exchanging the status of reproducible builds in various projects.
+  * Improving collaboration both between and inside projects.
+  * Expanding the scope and reach of reproducible builds to more projects.
+  * Working and hacking together on solutions.
+  * Brainstorming designs for tools enabling end-users to get the most benefits from reproducible builds.
 
 Logs and minutes will be published after the meeting.
 
