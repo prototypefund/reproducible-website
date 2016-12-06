@@ -15,3 +15,6 @@ The exact content of the meeting will be shaped by the participants, but here ar
   * Work together and hack on solutions.
   * Brainstorm designs on tools enabling end-users to get the most benefits from reproducible builds.
 
+Logs and minutes will be published after the meeting.
+
+Please [reach out](https://reproducible-builds.org/events/berlin2016) if you'd like to participate in hopefully interesting, inspiring and intense technical sessions about reproducible builds and beyond!
