@@ -59,7 +59,7 @@
   }
 }
 
-.home .text p, .post-content .text p {
+.home .text p, .post-content .text p, .home .text ul, .home .text ol, .post-content .text ul, .post-content .text ol {
   max-width: 60ex;
   margin-bottom: 1rem;
 }
