@@ -9,7 +9,7 @@ Like in [December 2015 in Athens]({{ "/events/athens2015/" | prepend: site.baseu
 
 The exact content of the meeting will be shaped by the participants, but here are the main goals:
 
-  * Update &amp; exchange about the status of reproducible builds in various projects.
+  * Update & exchange about the status of reproducible builds in various projects.
   * Improve collaboration both between and inside projects.
   * Expand the scope and reach of reproducible builds to more projects.
   * Work together and hack on solutions.
