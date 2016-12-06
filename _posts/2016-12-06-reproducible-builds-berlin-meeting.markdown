@@ -5,7 +5,7 @@ date:   2016-12-13 09:23:42
 categories: org
 ---
 
-Like in [December 2015 in Athens](https://reproducible-builds.org/events/athens2015/), this year a group of people from various projects will [meet in Berlin](https://reproducible-builds.org/events/berlin2016/) for three days to discuss, connect and exchange ideas and grow the reproducible builds effort.
+Like in [December 2015 in Athens]({{ "/events/athens2015/" | prepend: site.baseurl }}), this year a group of people from various projects will [meet in Berlin]({{ "/events/berlin2016/" | prepend: site.basurl }}) for three days to discuss, connect and exchange ideas and grow the reproducible builds effort.
 
 The exact content of the meeting will be shaped by the participants, but here are the main goals:
 
