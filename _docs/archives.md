@@ -80,7 +80,7 @@ For older versions or other archive formats, it is possible to use
 
 {% highlight sh %}
 $ find build -print0 | LC_ALL=C sort -z |
-    tar --null -T - --no-recursion -cf product.tar
+    tar --no-recursion --null -T - -cf product.tar
 {% endhighlight %}
 
 Care must be taken to ensure that `sort` is called in the context of the

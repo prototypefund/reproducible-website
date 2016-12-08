@@ -71,7 +71,7 @@ have differences when run under different locales:
 <div class="wrong">
 {% highlight sh %}
 $ find src -print0 | sort -z |
-    tar --null -T - --no-recursion -cf archive.tar
+    tar --no-recursion --null -T - -cf archive.tar
 {% endhighlight %}
 </div>
 
@@ -80,7 +80,7 @@ The locale used to sort files must be specified to avoid any surprises:
 <div class="correct">
 {% highlight sh %}
 $ find src -print0 | LC_ALL=C sort -z |
-    tar --null -T - --no-recursion -cf archive.tar
+    tar --no-recursion --null -T - -cf archive.tar
 {% endhighlight %}
 </div>
 
