@@ -68,12 +68,18 @@
     url: https://tests.reproducible-builds.org/fedora/
   - name: Helper scripts
     url: https://github.com/kholia/ReproducibleBuilds
-- name: Guix
+- name: GNU Guix
   url: https://www.gnu.org/software/guix/
   logo: guix.png
   resources:
+  - name: Build verification tool
+    url: https://gnu.org/software/guix/manual/html_node/Invoking-guix-challenge.html
   - name: Guix features
     url: https://gnu.org/software/guix/manual/html_node/Features.html
+  - name: Statement on reproducible builds
+    url: https://www.gnu.org/software/guix/news/reproducible-builds-a-means-to-an-end.html
+  - name: Package submission guidelines
+    url: https://gnu.org/software/guix/manual/html_node/Submitting-Patches.html
 - name: LEDE
   url: https://lede-project.org/
   logo: lede.png
