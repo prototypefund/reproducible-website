@@ -30,6 +30,8 @@
     url: https://wiki.debian.org/ReproducibleBuilds
   - name: Continuous tests
     url: https://tests.reproducible-builds.org/debian/
+  - name: Mailing list
+    url: mailto:reproducible-builds@lists.alioth.debian.org
 - name: ElectroBSD
   url: https://www.fabiankeil.de/gehacktes/electrobsd/
   logo: electrobsd.png
