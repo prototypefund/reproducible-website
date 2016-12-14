@@ -30,6 +30,8 @@
     url: https://wiki.debian.org/ReproducibleBuilds
   - name: Continuous tests
     url: https://tests.reproducible-builds.org/debian/
+  - name: Mailing list
+    url: mailto:reproducible-builds@lists.alioth.debian.org
 - name: ElectroBSD
   url: https://www.fabiankeil.de/gehacktes/electrobsd/
   logo: electrobsd.png
@@ -55,7 +57,7 @@
   - name: Continuous tests
     url: https://tests.reproducible-builds.org/freebsd/
   - name: Mailing list
-    url: reproducibility[AT]freebdsd.org
+    url: mailto:reproducibility@freebdsd.org
 - name: Fedora
   url: https://fedoraproject.org/wiki/Fedora_Project_Wiki
   logo: fedora.png
@@ -66,12 +68,18 @@
     url: https://tests.reproducible-builds.org/fedora/
   - name: Helper scripts
     url: https://github.com/kholia/ReproducibleBuilds
-- name: Guix
+- name: GNU Guix
   url: https://www.gnu.org/software/guix/
   logo: guix.png
   resources:
+  - name: Build verification tool
+    url: https://gnu.org/software/guix/manual/html_node/Invoking-guix-challenge.html
   - name: Guix features
     url: https://gnu.org/software/guix/manual/html_node/Features.html
+  - name: Statement on reproducible builds
+    url: https://www.gnu.org/software/guix/news/reproducible-builds-a-means-to-an-end.html
+  - name: Package submission guidelines
+    url: https://gnu.org/software/guix/manual/html_node/Submitting-Patches.html
 - name: LEDE
   url: https://lede-project.org/
   logo: lede.png
