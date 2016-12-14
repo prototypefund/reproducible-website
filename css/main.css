@@ -478,3 +478,7 @@ aside li a {
 dl.talks dd {
   margin-bottom: 20px;
 }
+
+nav select {
+  margin-top: 20px;
+}
