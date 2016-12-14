@@ -108,6 +108,8 @@
     url: https://tails.boum.org/blueprint/reproducible_builds/
   - name: Ticket
     url: https://labs.riseup.net/code/issues/5630
+  - name: Mailing list
+    url: https://mailman.boum.org/listinfo/tails-dev/
 - name: Tor Browser
   url: https://www.torproject.org/
   logo: tor.png
