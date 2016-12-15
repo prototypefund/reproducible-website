@@ -97,6 +97,17 @@ Changes to the build system can be tested easily with reproducible
 builds: If the output artifacts are identical, the changes will not
 affect runtime behavior.
 
+Increased Development Speed
+---------------------------
+Dependent packages do not need to be rebuilt and dependent tasks do not
+need to be rerun if a rebuild of a package does not yield different
+results. This can significantly reduce build times and lead to faster
+development speeds and lower cost.
+
+Build speeds can also be improved by showing that cross-compilation
+produces the same result as native compilation and then doing the
+mojority of builds with cross-compilation on faster machines.
+
 “But how can I trust my compiler?”
 ----------------------------------
 
