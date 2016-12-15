@@ -81,6 +81,18 @@ symbols](https://en.wikipedia.org/wiki/Debugging_data_format) for a
 distributed build which can help understanding issues in software used
 in production.
 
+Smaller Binary Differences
+--------------------------
+Having reproducible builds means that only changes in source code or
+build environment (such as the compiler version) will lead to
+differences in the generated binaries. This minimizes the changes in
+artifacts which reduces storage requirements and network traffic for
+delta updates.
+
+With similar artifacts, testing can focus on parts that changed while
+still preserving confidence about unchanged code. This can speed up
+quality assurance and development speed.
+
 “But how can I trust my compiler?”
 ----------------------------------
 
