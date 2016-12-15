@@ -58,7 +58,8 @@ Regular tests are required to make sure that the software can be built
 reproducibly in various environments. Debian and other free software
 distributions require that their users must be able to build the
 software they distribute. Such regular tests help in avoiding *fail to
-build from source* bugs.
+build from source* bugs and can uncover rare build problems such as
+timing problems, race conditions, or builds affected by locale.
 
 Build environments may evolve after a project is no longer receiving
 major developments. While working on Debian, several high impact but
