@@ -93,6 +93,10 @@ With similar artifacts, testing can focus on parts that changed while
 still preserving confidence about unchanged code. This can speed up
 quality assurance and development speed.
 
+Changes to the build system can be tested easily with reproducible
+builds: If the output artifacts are identical, the changes will not
+affect runtime behavior.
+
 “But how can I trust my compiler?”
 ----------------------------------
 
