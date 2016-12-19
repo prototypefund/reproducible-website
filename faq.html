@@ -1,0 +1,47 @@
+---
+layout: page
+title: FAQ
+permalink: /faq/
+---
+
+<div class="row">
+  <div class="four columns title">
+    <h2>General</h2>
+  </div>
+  <div class="eight columns text doc-index">
+	<h4>What is a "reproducible build"?</h4>
+    <p>
+      Example answer: See definition here [link]
+    </p>
+	<h4>Have we achieved reproducible build?</h4>
+    <p>
+      Example answer: Yes! Many projects have. If you would like to see specific details for projects see here: (link)
+    </p>
+	<h4>How can I help reproducible builds?</h4>
+    <p>
+      Example answer: You can donate money somehow! Or if your are developer, check out the these things.
+    </p>
+  </div>
+</div>
+
+<div class="row" style="margin-top: 1rem;">
+  <div class="four columns title">
+    <h2>I am a developer</h2>
+  </div>
+  <div class="eight columns text doc-index">
+    {% for section in site.data.faq.developer %}
+    <h4><a href="{{ section.link | prepend: site.baseurl }}">{{ section.title }}</a></h4>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="row" style="margin-top: 1rem;">
+  <div class="four columns title">
+    <h2>I am a user</h2>
+  </div>
+  <div class="eight columns text doc-index">
+    {% for section in site.data.faq.user %}
+    <h4><a href="{{ section.link | prepend: site.baseurl }}">{{ section.title }}</a></h4>
+    {% endfor %}
+  </div>
+</div>

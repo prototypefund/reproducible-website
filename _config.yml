@@ -15,6 +15,9 @@ collections:
     output: true
   events:
     output: true
+  faq:
+    output: true
+
 
 exclude:
 - README

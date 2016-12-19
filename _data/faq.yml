@@ -1,0 +1,12 @@
+developer:
+  - title: ...and I want to make my software reproducible.
+    link: upstream
+  - title: ...and I want to distribute reproducible binaries.
+    link: distributor
+  - title: ...and I want to test reproduciblity in continious integration.
+    link: testing
+  - title: ...and I am worried about retaining build information in my binaries.
+    link: myths
+user:
+  - title: ...and I want to learn about the benefits of reproducibility.
+    link: user
