@@ -21,7 +21,7 @@ a source code archive.
 **Relevant attributes of the build environment** would usually include dependencies
 and their versions, build configuration flags and environment variables as
 far as they are used by the build system (eg. the locale). It is
-preferable to reduce the set of relevant attributes of the build environment.
+preferable to reduce this set of attributes.
 
 **Artifacts** would include executables, distribution packages or
 filesystem images. They would not usually include a build log or similar
