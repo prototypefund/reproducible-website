@@ -23,7 +23,7 @@ and their versions, build configuration flags and environment variables as
 far as they are used by the build system (eg. the locale). It is
 preferable to reduce the set of relevant attributes of the build environment.
 
-**Artifacts**, for example, would include executables, distribution packages or
+**Artifacts** would include executables, distribution packages or
 filesystem images. They would usually not include a build log or similar
 secondary outputs.
 
