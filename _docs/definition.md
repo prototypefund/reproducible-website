@@ -15,7 +15,7 @@ the authors or distributors. The artifacts of a build are the parts of the
 build results that are the desired primary output.
 
 ## Explanations
-**Source code** is usually a version control checkout at a specific revision or
+**Source code** is usually a checkout from version control at a specific revision or
 a source code archive.
 
 **Relevant attributes of the build environment** would usually include dependencies
