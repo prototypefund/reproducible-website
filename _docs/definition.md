@@ -28,7 +28,7 @@ filesystem images. They would not usually include a build log or similar
 ancillary outputs.
 
 The reproducibility of artifacts is **verified** by bit-by-bit comparison. This is
-usually achieved using cryptographically secure hash functions.
+usually performed using cryptographically secure hash functions.
 
 **Authors or distributors** means parties that claim reproducibility of a set of
 artifacts. These may be upstream authors, distribution maintainers or any other
