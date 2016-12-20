@@ -19,7 +19,7 @@ build results that are the desired primary output.
 a source code archive.
 
 **Relevant attributes of the build environment** would usually include dependencies
-and their versions, build configuration flags and some environment variables as
+and their versions, build configuration flags and environment variables as
 far as they are used by the build system such as, for example, the locale. It is
 preferable to reduce the set of relevant attributes of the build environment.
 
