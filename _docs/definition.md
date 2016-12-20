@@ -24,7 +24,7 @@ far as they are used by the build system (eg. the locale). It is
 preferable to reduce the set of relevant attributes of the build environment.
 
 **Artifacts** would include executables, distribution packages or
-filesystem images. They would usually not include a build log or similar
+filesystem images. They would not usually include a build log or similar
 secondary outputs.
 
 The reproducibility of artifacts is **verified** by bit-by-bit comparison. This is
