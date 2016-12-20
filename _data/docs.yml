@@ -1,10 +1,10 @@
-- title: Best practices
+- title: Introduction
   docs:
   - definition
-  - plans
   - buy-in
+  - plans
   - test-bench
-- title: Get deterministic builds
+- title: Achieve deterministic builds
   docs:
   - deterministic-build-systems
   - volatile-inputs
