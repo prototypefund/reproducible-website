@@ -8,6 +8,10 @@ permalink: /faq/testing/
 
 TODO: answer
 
-## How can I do it?
+## Who else is doing it?
 
 TODO: answer
+
+## Which parts of the build environment should be varied between builds?
+
+See the [test bench documentation](/docs/test-bench/).
