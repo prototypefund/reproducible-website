@@ -5,12 +5,12 @@ permalink: /docs/definition/
 ---
 
 ## When is a build reproducible?
-A build is **reproducible** if, given the same source code, build environment and
+A build is **reproducible** if given the same source code, build environment and
 build instructions, any party can recreate bit-by-bit identical copies of all
 specified artifacts.
 
 The relevant attributes of the build environment, the build instructions and
-the source code, as well as the expected reproducible artifacts, are defined by
+the source code as well as the expected reproducible artifacts are defined by
 the authors or distributors. The artifacts of a build are the parts of the
 build results that are the desired primary output.
 
@@ -20,7 +20,7 @@ a source code archive.
 
 **Relevant attributes of the build environment** would usually include dependencies
 and their versions, build configuration flags and some environment variables as
-far as they are used by the build system, such as for example, locale. It is
+far as they are used by the build system such as, for example, the locale. It is
 preferable to reduce the set of relevant attributes of the build environment.
 
 **Artifacts**, for example, would include executables, distribution packages or
