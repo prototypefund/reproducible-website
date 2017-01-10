@@ -14,11 +14,11 @@ and the pad for Meeting N was created.
 
 2. Three days before the meeting, post a call for agenda items (to be added to the pad).
 
-    Use the previous such email as a template.
+    Use the previous email as a template.
 
 3. One day before the meeting, post a date reminder.
 
-    Use the previous such email as a template.
+    Use the previous email as a template.
 
 4. On meeting day, one hour before the meeting:
 
@@ -47,7 +47,7 @@ and the pad for Meeting N was created.
 
     - Post the meeting summary email to `rb-general@`.  
 
-      Use the previous such email as a template.
+      Use the previous email as a template.
 
     - Update the /topic of #reproducible-builds with the date of Meeting N+1.
 
