@@ -30,7 +30,7 @@ and the pad for Meeting N was created.
 
 5. At meeting time:
 
-    - Call the meeting to order on the hour (sharp), using `#startmeeting`.
+    - Call the meeting to order on the hour (sharp), using `#startmeeting Reproducible Builds Meeting #N`.
 
     - Call the topics off the agenda.
 
