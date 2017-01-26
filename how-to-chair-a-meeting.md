@@ -49,8 +49,12 @@ and the pad for Meeting N was created.
 
       Use the previous email as a template.
 
+    - Add any `#help` items from the meeting summary to [tasks.git][tasks.git].
+
     - Update the /topic of #reproducible-builds with the date of Meeting N+1.
 
     - Have somebody volunteer to chair Meeting N+1.
 
         - Point them to this file.
+
+[tasks.git]: https://anonscm.debian.org/git/reproducible/tasks.git
