@@ -9,7 +9,7 @@ Meetings are run using meetbot:
 Using meetbot requires no special permissions.
 
 0. At the end of Meeting N-1,
-the meeting summary and the date of Meeting N were posted,
+its meeting summary and the date of Meeting N were posted,
 and the pad for Meeting N was created.
 
 2. Three days before the meeting, post a call for agenda items (to be added to the pad).
