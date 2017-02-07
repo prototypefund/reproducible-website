@@ -132,3 +132,11 @@
   resources:
   - name: Introducing Reproducible Builds
     url: https://www.youtube.com/watch?v=FaBFbkBhnXI
+- name: Yocto Project
+  url: https://www.yoctoproject.org/
+  logo: yocto-project.png
+  resources:
+  - name: Reproducible builds overview
+    url: https://wiki.yoctoproject.org/wiki/Reproducible_Builds
+  - name: Mailing list
+    url: https://lists.yoctoproject.org/listinfo/yocto
