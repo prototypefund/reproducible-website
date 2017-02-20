@@ -92,6 +92,8 @@
   resources:
   - name: Continuous tests
     url: https://tests.reproducible-builds.org/netbsd/
+  - name: Notes on Reproducible Builds of NetBSD
+    url: https://blog.netbsd.org/tnf/entry/netbsd_fully_reproducible_builds
 - name: NixOS
   url: https://nixos.org/
   logo: nixos.png
