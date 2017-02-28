@@ -99,11 +99,11 @@ account name or its associated ids might be a source of reproducibility
 issues.
 
 Tar offers a way to specify the user and group owning the file. Using
-`root`/`root` and `--numeric-owner` is a safe bet, as it will effectively
+`0`/`0` and `--numeric-owner` is a safe bet, as it will effectively
 record 0 as values:
 
 {% highlight sh %}
-$ tar --owner=root --group=root --numeric-owner -cf product.tar build
+$ tar --owner=0 --group=0 --numeric-owner -cf product.tar build
 {% endhighlight %}
 
 Full example
@@ -116,7 +116,7 @@ The recommended way to create a Tar archive is thus:
 # requires GNU Tar 1.28+
 $ tar --sort=name \
       --mtime="@${SOURCE_DATE_EPOCH}" \
-      --owner=root --group=root --numeric-owner \
+      --owner=0 --group=0 --numeric-owner \
       -cf product.tar build
 {% endhighlight %}
 </div>
