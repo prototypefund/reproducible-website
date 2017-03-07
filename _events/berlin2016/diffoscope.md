@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: diffoscope
-event: athens2015
+event: berlin2016
 order: 30
 permalink: /events/berlin/2016/diffoscope/
 ---

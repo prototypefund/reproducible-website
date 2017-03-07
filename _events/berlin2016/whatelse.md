@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: whatelse
-event: athens2015
+event: berlin2016
 order: 160
 permalink: /events/berlin/2016/whatelse/
 ---

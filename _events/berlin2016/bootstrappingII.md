@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: bootstrappingII
-event: athens2015
+event: berlin2016
 order: 260
 permalink: /events/berlin/2016/bootstrappingII/
 ---

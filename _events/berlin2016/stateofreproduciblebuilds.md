@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: stateofreproduciblebuilds
-event: athens2015
+event: berlin2016
 order: 290
 permalink: /events/berlin/2016/stateofreproduciblebuilds/
 ---

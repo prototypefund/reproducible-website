@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: embedded
-event: athens2015
+event: berlin2016
 order: 70
 permalink: /events/berlin/2016/embedded/
 ---

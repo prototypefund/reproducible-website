@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: SOURCE_PREFIX_MAP
-event: athens2015
+event: berlin2016
 order: 180
 permalink: /events/berlin/2016/SOURCE_PREFIX_MAP/
 ---

@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: diffoscopedebug
-event: athens2015
+event: berlin2016
 order: 300
 permalink: /events/berlin/2016/diffoscopedebug/
 ---

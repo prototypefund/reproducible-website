@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: binarytransparencyII
-event: athens2015
+event: berlin2016
 order: 280
 permalink: /events/berlin/2016/binarytransparencyII/
 ---

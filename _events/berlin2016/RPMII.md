@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: RPMII
-event: athens2015
+event: berlin2016
 order: 100
 permalink: /events/berlin/2016/RPMII/
 ---

@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: enduserpolicies
-event: athens2015
+event: berlin2016
 order: 130
 permalink: /events/berlin/2016/enduserpolicies/
 ---

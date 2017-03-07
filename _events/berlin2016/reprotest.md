@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: reprotest
-event: athens2015
+event: berlin2016
 order: 40
 permalink: /events/berlin/2016/reprotest/
 ---

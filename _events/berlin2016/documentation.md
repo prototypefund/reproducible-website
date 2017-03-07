@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: documentation
-event: athens2015
+event: berlin2016
 order: 50
 permalink: /events/berlin/2016/documentation/
 ---

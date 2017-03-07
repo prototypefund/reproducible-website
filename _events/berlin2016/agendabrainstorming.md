@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: agendabrainstorming
-event: athens2015
+event: berlin2016
 order: 20
 permalink: /events/berlin/2016/agendabrainstorming/
 ---

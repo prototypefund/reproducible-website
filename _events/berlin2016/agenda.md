@@ -1,9 +1,9 @@
 ---
 layout: event_detail
 title: Agenda
-event: athens2015
+event: berlin
 order: 10
-permalink: /events/athens2015/agenda/
+permalink: /events/berlin2016/agenda/
 ---
 
 Reproducible Builds Summit II

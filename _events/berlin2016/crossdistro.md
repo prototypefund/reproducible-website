@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: crossdistro
-event: athens2015
+event: berlin2016
 order: 250
 permalink: /events/berlin/2016/crossdistro/
 ---

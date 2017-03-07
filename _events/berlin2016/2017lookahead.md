@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: 2017lookahead
-event: athens2015
+event: berlin2016
 order: 310
 permalink: /events/berlin/2016/2017lookahead/
 ---
