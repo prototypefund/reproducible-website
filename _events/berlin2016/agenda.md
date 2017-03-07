@@ -1,7 +1,7 @@
 ---
 layout: event_detail
 title: Agenda
-event: berlin
+event: berlin2016
 order: 10
 permalink: /events/berlin2016/agenda/
 ---
