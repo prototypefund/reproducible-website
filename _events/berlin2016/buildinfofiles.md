@@ -3,7 +3,7 @@ layout: event_detail
 title: buildinfofiles
 event: berlin2016
 order: 90
-permalink: /events/berlin/2016/buildinfofiles/
+permalink: /events/berlin2016/buildinfofiles/
 ---
 
 = early work

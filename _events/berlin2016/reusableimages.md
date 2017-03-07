@@ -3,7 +3,7 @@ layout: event_detail
 title: reusableimages
 event: berlin2016
 order: 110
-permalink: /events/berlin/2016/reusableimages/
+permalink: /events/berlin2016/reusableimages/
 ---
 
 agreed points:

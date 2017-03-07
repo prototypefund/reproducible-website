@@ -3,7 +3,7 @@ layout: event_detail
 title: agendabrainstorming
 event: berlin2016
 order: 20
-permalink: /events/berlin/2016/agendabrainstorming/
+permalink: /events/berlin2016/agendabrainstorming/
 ---
 
 AGENDA BRAINSTORMING

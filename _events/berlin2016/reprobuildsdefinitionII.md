@@ -3,7 +3,7 @@ layout: event_detail
 title: reprobuildsdefinitionII
 event: berlin2016
 order: 200
-permalink: /events/berlin/2016/reprobuildsdefinitionII/
+permalink: /events/berlin2016/reprobuildsdefinitionII/
 ---
 
 # When is a build "reproducible"?

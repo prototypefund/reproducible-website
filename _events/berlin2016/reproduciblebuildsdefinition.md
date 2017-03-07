@@ -3,7 +3,7 @@ layout: event_detail
 title: reproduciblebuildsdefinition
 event: berlin2016
 order: 120
-permalink: /events/berlin/2016/reproduciblebuildsdefinition/
+permalink: /events/berlin2016/reproduciblebuildsdefinition/
 ---
 
 What's the definition of a reproducible build?

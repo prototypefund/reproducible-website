@@ -3,7 +3,7 @@ layout: event_detail
 title: userverification
 event: berlin2016
 order: 60
-permalink: /events/berlin/2016/userverification/
+permalink: /events/berlin2016/userverification/
 ---
 
 user-facing reproduciblity interactions

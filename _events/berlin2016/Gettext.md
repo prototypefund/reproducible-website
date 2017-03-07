@@ -3,7 +3,7 @@ layout: event_detail
 title: Gettext
 event: berlin2016
 order: 150
-permalink: /events/berlin/2016/Gettext/
+permalink: /events/berlin2016/Gettext/
 ---
 
 The problem is that timestamps end up in binaries because of Gettext ([[http://savannah.gnu.org/bugs/?49654][bug 49654]] discusses this issue).  The timestamps originate with =xgettext=, which writes them into the header of =.pot= (the template for translations, extracted from source code strings).  =msgmerge= preserves these timestamps when merging actual translations (=.po= files) with translation templates (=.pot= file).  =msgfmt= preserves timestamps when it builds a binary =.mo= file from a =.po= file.  The =.mo= file ends up being a part of the build artifacts.

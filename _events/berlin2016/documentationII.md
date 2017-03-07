@@ -3,7 +3,7 @@ layout: event_detail
 title: documentationII
 event: berlin2016
 order: 190
-permalink: /events/berlin/2016/documentationII/
+permalink: /events/berlin2016/documentationII/
 ---
 
 riseup notepad for facillitating feedback: 

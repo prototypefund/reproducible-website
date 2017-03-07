@@ -3,7 +3,7 @@ layout: event_detail
 title: binarytransparencyII
 event: berlin2016
 order: 280
-permalink: /events/berlin/2016/binarytransparencyII/
+permalink: /events/berlin2016/binarytransparencyII/
 ---
 
 Can we use the same idea as certificate transparency for the packages?

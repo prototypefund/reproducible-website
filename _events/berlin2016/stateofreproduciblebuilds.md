@@ -3,7 +3,7 @@ layout: event_detail
 title: stateofreproduciblebuilds
 event: berlin2016
 order: 290
-permalink: /events/berlin/2016/stateofreproduciblebuilds/
+permalink: /events/berlin2016/stateofreproduciblebuilds/
 ---
 
 

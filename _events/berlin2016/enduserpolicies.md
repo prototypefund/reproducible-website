@@ -3,7 +3,7 @@ layout: event_detail
 title: enduserpolicies
 event: berlin2016
 order: 130
-permalink: /events/berlin/2016/enduserpolicies/
+permalink: /events/berlin2016/enduserpolicies/
 ---
 
 NOTES #1

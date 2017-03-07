@@ -3,7 +3,7 @@ layout: event_detail
 title: diffoscope
 event: berlin2016
 order: 30
-permalink: /events/berlin/2016/diffoscope/
+permalink: /events/berlin2016/diffoscope/
 ---
 
 # diffoscope plan for the meeting

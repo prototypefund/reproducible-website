@@ -3,7 +3,7 @@ layout: event_detail
 title: diffoscopedebug
 event: berlin2016
 order: 300
-permalink: /events/berlin/2016/diffoscopedebug/
+permalink: /events/berlin2016/diffoscopedebug/
 ---
 
 Latest outcome update:

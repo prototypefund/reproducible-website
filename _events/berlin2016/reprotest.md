@@ -3,7 +3,7 @@ layout: event_detail
 title: reprotest
 event: berlin2016
 order: 40
-permalink: /events/berlin/2016/reprotest/
+permalink: /events/berlin2016/reprotest/
 ---
 
 Platforms in the group: Debian, FreeBSD, Window River (RPM), Ubuntu/Mint

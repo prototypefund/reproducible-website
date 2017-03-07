@@ -3,7 +3,7 @@ layout: event_detail
 title: gpl-compliance-20161214
 event: berlin2016
 order: 230
-permalink: /events/berlin/2016/gpl-compliance-20161214/
+permalink: /events/berlin2016/gpl-compliance-20161214/
 ---
 
 

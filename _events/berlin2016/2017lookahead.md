@@ -3,7 +3,7 @@ layout: event_detail
 title: 2017lookahead
 event: berlin2016
 order: 310
-permalink: /events/berlin/2016/2017lookahead/
+permalink: /events/berlin2016/2017lookahead/
 ---
 
 1)

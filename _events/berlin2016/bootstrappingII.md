@@ -3,7 +3,7 @@ layout: event_detail
 title: bootstrappingII
 event: berlin2016
 order: 260
-permalink: /events/berlin/2016/bootstrappingII/
+permalink: /events/berlin2016/bootstrappingII/
 ---
 
 From email sent to the list on 12/16/2016:

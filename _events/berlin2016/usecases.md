@@ -3,7 +3,7 @@ layout: event_detail
 title: usecases
 event: berlin2016
 order: 220
-permalink: /events/berlin/2016/usecases/
+permalink: /events/berlin2016/usecases/
 ---
 
 old list: https://reproducible-builds.org/docs/buy-in/

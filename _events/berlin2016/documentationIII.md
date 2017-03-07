@@ -3,7 +3,7 @@ layout: event_detail
 title: documentationIII
 event: berlin2016
 order: 270
-permalink: /events/berlin/2016/documentationIII/
+permalink: /events/berlin2016/documentationIII/
 ---
 
 Todo:

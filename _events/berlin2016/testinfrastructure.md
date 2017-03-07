@@ -3,7 +3,7 @@ layout: event_detail
 title: testinfrastructure
 event: berlin2016
 order: 140
-permalink: /events/berlin/2016/testinfrastructure/
+permalink: /events/berlin2016/testinfrastructure/
 ---
 
 who is here?

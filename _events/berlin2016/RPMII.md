@@ -3,7 +3,7 @@ layout: event_detail
 title: RPMII
 event: berlin2016
 order: 100
-permalink: /events/berlin/2016/RPMII/
+permalink: /events/berlin2016/RPMII/
 ---
 
 Plan:

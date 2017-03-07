@@ -3,7 +3,7 @@ layout: event_detail
 title: securegit
 event: berlin2016
 order: 240
-permalink: /events/berlin/2016/securegit/
+permalink: /events/berlin2016/securegit/
 ---
 
 We discussed:

@@ -3,7 +3,7 @@ layout: event_detail
 title: embedded
 event: berlin2016
 order: 70
-permalink: /events/berlin/2016/embedded/
+permalink: /events/berlin2016/embedded/
 ---
 
 Coreboot/ Embedded session

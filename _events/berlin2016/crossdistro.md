@@ -3,7 +3,7 @@ layout: event_detail
 title: crossdistro
 event: berlin2016
 order: 250
-permalink: /events/berlin/2016/crossdistro/
+permalink: /events/berlin2016/crossdistro/
 ---
 
 see https://pad.riseup.net/p/rb-thu-cross-distro

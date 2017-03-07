@@ -3,7 +3,7 @@ layout: event_detail
 title: whatelse
 event: berlin2016
 order: 160
-permalink: /events/berlin/2016/whatelse/
+permalink: /events/berlin2016/whatelse/
 ---
 
 what Else for the Auditable Ecosystem?
