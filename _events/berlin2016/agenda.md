@@ -25,16 +25,16 @@ Day 1
      -   **F-Droid. Reproducible Adroid apps**
      -   **Building reproducible Tails ISO images [work in progress]**
 *    11.50 Break
-*    12.15 [Agenda Brainstorming]({{ "/events/berlin2016/agendabrainstorming/" | prepend: site.baseurl }})
+*    12.15 **[Agenda Brainstorming]({{ "/events/berlin2016/agendabrainstorming/" | prepend: site.baseurl }})**
 
 *    13.20 Lunch Break
 *    14.30 Working Sessions I
-     -   **diffoscope https://pad.riseup.net/p/reproduciblebuildsII-diffoscop**
-     -   **reprotest https://pad.riseup.net/p/reproduciblebuildsII-reprotest**
-     -   **Documentation https://pad.riseup.net/p/reproduciblebuildsII-documentation**
-     -   **User verification https://pad.riseup.net/p/reproduciblebuildsII-userverification**
-     -   **Embedded https://pad.riseup.net/p/reproduciblebuildsII-embedded**
-     -   **RPM https://pad.riseup.net/p/reproduciblebuildsII-RPM**
+     -   **[diffoscope]({{ "/events/berlin2016/diffoscope/" | prepend: site.baseurl }})**
+     -   **[reprotest]({{ "/events/berlin2016/reprotest/" | prepend: site.baseurl }})**
+     -   **[Documentation]({{ "/events/berlin2016/documentation/" | prepend: site.baseurl }})**
+     -   **[User verification]({{ "/events/berlin2016/userverification/" | prepend: site.baseurl }})**
+     -   **[Embedded]({{ "/events/berlin2016/embedded/" | prepend: site.baseurl }})**
+     -   **[RPM]({{ "/events/berlin2016/RPM/" | prepend: site.baseurl }})**
 
 *    16.00 Closing Session
 
