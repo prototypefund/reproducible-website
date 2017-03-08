@@ -25,7 +25,7 @@ Day 1
      -   **F-Droid. Reproducible Adroid apps**
      -   **Building reproducible Tails ISO images [work in progress]**
 *    11.50 Break
-*    12.15 Agenda Brainstorming https://pad.riseup.net/p/reproduciblebuildsII-agendabrainstorming
+*    12.15 [Agenda Brainstorming]({{ "/events/berlin2016/agendabrainstorming/" | prepend: site.baseurl }})
 
 *    13.20 Lunch Break
 *    14.30 Working Sessions I
