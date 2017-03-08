@@ -6,9 +6,8 @@ order: 30
 permalink: /events/berlin2016/diffoscope/
 ---
 
-# diffoscope plan for the meeting
-
-## Reviewing the Post-Its
+### diffoscope plans for the meeting
+- Reviewing the Post-Its:
 
 ### Improve Platform Support
 - Portability to different platforms should improve. Some tools or used abstractions (like /dev/fd) might not be available.
@@ -20,10 +19,10 @@ permalink: /events/berlin2016/diffoscope/
 - Should we replace debdiff with diffoscope completely? What features of debdiff would diffoscope still need?
 - It's not really clear what the post-it author wants.
 
-### Parallel diffoscope (#842837)
+### Parallel diffoscope ([#842837](https://bugs.debian.org/842837)
 - Execution time is a serious issue, diffoscope should get faster.
 - It is not clear how well parallel Python is going to work for diffoscope due to the global interpreter lock.
-- Prior work by nomeata might exist somewhere (FIXME where?).
+- Prior work by nomeata might exist somewhere.
 - We should have a hack session on parallel diffoscope.
 
 ### Marketing/Docs/Undebianization
