@@ -1,6 +1,6 @@
 ---
 layout: event_detail
-title: documentation
+title: Documentation
 event: berlin2016
 order: 50
 permalink: /events/berlin2016/documentation/
@@ -14,45 +14,47 @@ this, or if it's not a name, then we still miss somebody to do it.
 
 Previously
 ----------
+
 wiki.debian.org -> everyone could edit it
 
 Current doc on reproducible-builds.org
 
--> One issue with the website is also that there is not a lt of structure.
--> Doc was not edited since 1 year
--> it might be nice to edit 1 PDF generated from 20 pages currently
+ - One issue with the website is also that there is not a lot of structure.
+ - Doc was not edited since 1 year
+ - it might be nice to edit 1 PDF generated from 20 pages currently
 
 Problem currently
 -----------------
 RB repo / website - not enough people do have access to the git repo
 How do we give access to more people / how can they contribute?
 
-What's missing? -> we do not want a webpage, we want documentation
+What's missing? We do not want a webpage, we want documentation.
 
 Discussion
 -----------
 
 Who is the audience of the current documentation?
--> Package maintainers for example
--> OpenBSD and other people who have not started making their stuff
-reproducible
+
+ - Package maintainers for example
+ - OpenBSD and other people who have not started making their stuff reproducible
 
 Documentation should not be only for Debian but cross-distro
--> does this constitute a barrier or can it be done cross-distro?
+
+ - does this constitute a barrier or can it be done cross-distro?
 
 Distros or build tools?
--> In Debian = easy to define how many percent of the repo are
+
+ - In Debian = easy to define how many percent of the repo are
 reproducible, because we have official repos. With Android apps it
 mightbe different, because there is no central build infrastructure. But
 one might just look at F-Droid, Holger answers to this. So, how many out
 of these are reproducible?
--> As an example, one could also want to build a browser on Windows
+ - As an example, one could also want to build a browser on Windows
 reproducibly and want to look into how TorBrowser did it.
-
-- Patches applied to Debian are not easily applied upstream, and are
+ - Patches applied to Debian are not easily applied upstream, and are
 hard to find for other distros/projects.
--> document stuff which is only patched in Debian and not upstream
--> this could be done automatically (scanning through debian/patches
+ - document stuff which is only patched in Debian and not upstream
+ - this could be done automatically (scanning through debian/patches
 meta headers)
 
 - Best practices documentation, but this needs to be ordered somehow.
