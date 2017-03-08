@@ -6,20 +6,22 @@ order: 20
 permalink: /events/berlin2016/agendabrainstorming/
 ---
 
-
 SQUASHFS
+
  - fix for once SQUASHFS (1)
  - fix the mksquashfs file ordering (7)
  - have reproducible SQUASHFS
  - hack on squashfs (2)
 
 RPM
+
  - Removing timestamps from RPM packages (3)
  - How to make repm-build produce repr. rpms (upstream)
  - Discuss RPM metadata reproduc... issues and solutions (2)
  - How to reproduce RPM metadata?
 
 REPRODUCIBLE FILESYSTEM IMAGES (SEE ALSO: SQUASHFS)
+
  - What is a (cruft-free) way to save filesystems reproducibly? (defined order, etc.) (1)
  - Check/improve/update the makefs reproducibility patch in FreeBSD (1)
  - Learn how to generate filesystem images reproducibly (ISO, hybridUSB ...)
@@ -30,6 +32,7 @@ REPRODUCIBLE FILESYSTEM IMAGES (SEE ALSO: SQUASHFS)
  - What do we use for base images? (2)
 
 BUILDINFO (GENERAL, DOC, ADVOCACY)
+
  - What is the current status of .buildinfo files? Who uses them, for what reason? (1)
  - How do we use .buildinfo? (1)
  - Disucss .buildinfo service use cases, open questions etc. (7)
@@ -38,6 +41,7 @@ BUILDINFO (GENERAL, DOC, ADVOCACY)
  - If an executable buildinfo file is good for one precise/pinned version... How do we make the same thing easy to use for future versions?
 
 TOOL SUPPORT
+
  - Would like to work on security tools that can be used corss distro/platform. (3)
  - We need tools to find who has reproduced a build? (1)
  - What tooling is out there to help everyone determine reproducibility? (3)
@@ -51,12 +55,14 @@ TOOL SUPPORT
  - How should we explain package relationships OVER TIME? (1)
 
 SOURCE CODE
+
  - reproducible path from upstream VSC tag to downstream package
  - referencing source state from binaries (1)
  - static analysis scripts/tools to detect possible reproducibility bugs
  - how to address with the timestamp merge
 
 PROJECT STATUS
+
  - collect status on all projects that are trying to become reproducible (1)
  - I am using Mint; is it reproducible?
  - What about Ubuntu; is it reproducible?
@@ -66,12 +72,14 @@ PROJECT STATUS
  - How about fixing legacy/ unmaintained software? (1)
 
 DEFINITION
+
  - there is a perception / accusation amongst the “opponents” of reproducible builds that “we” disagree amongst ourselves what “reproducible” means.
  - which parts of the environment have to change for a repr. build to be allowed to generate a different output? (6)
  - how/what do we hash? (2)
  - can we produce an official definition of r-b?
 
 BUILD INFO (IMPLEMENTATION) / DEBIAN INFRASTRUCTURE
+
  - (debian only) can we do anything productive to get =.buildinfo= files in ftp.debian.org?
  - how to patch dak (Debian Archive Kit) in 2016? (4)
  - implement/help with buildinfo distribution in Debian’s FTP (dak software)
@@ -87,6 +95,7 @@ BUILD INFO (IMPLEMENTATION) / DEBIAN INFRASTRUCTURE
  - scaling reproducibility testing problems and experiences
 
 DIFFOSCOPE
+
  - hack diffoscope to make tests less hard linked to specific tool versions (1)
  - what is the state of parallel diffoscope? (7)
  - we need parallel diffoscope
@@ -100,17 +109,20 @@ DIFFOSCOPE
  - automatic classification of reproducibility issues in diffoscope (2)
 
 FUNDING
+
  - Sustained funding
  - How to keep funding sustained & fair (5)
  - Where do we get (more) funding for reproducible builds work? (1)
 
 ADVOCACY TO PROJECTS
+
  - Discuss/advocacy how reproducible builds can improve binary diff (1)
  - Help Mozilla prioritize R.B. HIGHER (2)
  - How to get more upstreams to care
  - How do we socialize benefits of reproducible builds? (overcome developer aversion) (1)
 
 SKILL SHARE
+
  - Share how Tails takes snapshots of Debian archive
  - How can I address a snapshot of e.g. the Debian archives?
  - Request for skill sharing: vagrant ???? common problems for reproducibility
@@ -120,11 +132,13 @@ SKILL SHARE
  - https://maintainer.zq1.de/
 
 LEGAL AND LAW
+
  - Using reproducible builds to improve GPL compliance (4)
  - Are there any legal implications or obstacles to reproducible builds? If so, which jurisdictions are affected? Can we somehow influence the law? In what direction? (2)
  - discuss reproducible builds benefit for GPL enforcement
 
 OUTREACH / COMMUNICATIONS (NON TECHNICAL PEOPLE)
+
  - What's the business case for reproducible builds? (A.K.A. How do I convince non-technical people?)
  - Explaining r-b to non-technical people (2)
  - What can we do to persuade the world that reproducibility really is important?
@@ -135,6 +149,7 @@ OUTREACH / COMMUNICATIONS (NON TECHNICAL PEOPLE)
  - How to raise awareness about reproducible builds?
 
 OUTREACH / COMMUNICATIONS (DEVELOPERS)
+
  - Documenting non-obvious benefits of reproducible builds (7)
  - How do we explain with repro.builds are "GOOD"?
  - Are there any projects important for RB, which (we feel) are not cooperative enough? What can we do to address their issues? (1)
@@ -150,11 +165,13 @@ OUTREACH / COMMUNICATIONS (DEVELOPERS)
  - Outrach to potential reproducers: Who can we get to run build farms?
 
 BINARY TRANSPARENCY
+
  - Figure out how binary artifact transparency fits into reproducible builds
  - semi OT: What's the status of binary transparency? (4)
  - What strategies exist for reproducing binaries without build metadata? (1)
 
 USER VERIFICATION
+
  - Design methods for end-user verification of reproducible builds (1)
  - How do we push these benefits to end users? (e.g. apt config to require reproducibility)
  - How can we _expose_ reproducibility to _end users_? (.e.g user can configure pkg manager to only install pkgs that have been built by >= N people) (1)
@@ -170,6 +187,7 @@ USER VERIFICATION
  - Discuss _user interfaces_ to repro builds: - ways to _check_ 3rd-party binaries, - ways to _choose binaries_ coming from different orgs
 
 REPROTEST
+
  - Discuss how reprotest could benefit outside Debian
  - Hack on reprotest (2)
  - Make reprotest great & cross-distro (1)
@@ -177,6 +195,7 @@ REPROTEST
  - How can we simplify finding reproducible build problems?
 
 TEST-R-B.ORG (GENERIC)
+
  - Rebuild everything sytsematically?  Can we?  Should we?  Who is "we?" (1)
  - Drop iframes, how? (2)
  - Make t.r-b.org more accessible to screen readers
@@ -185,6 +204,7 @@ TEST-R-B.ORG (GENERIC)
  - *Executable* reproduce instructions? (2)
 
 TEST.R-B-ORG CROSS DISTRO
+
  - Hack the site for easier extendability to other tested projects (2)
  - Adding GNU Guix to t.r-b.org (1)
  - Adding openSUSE to t.r-b.org
@@ -196,6 +216,7 @@ TEST.R-B-ORG CROSS DISTRO
  - Create a centralized approach/place to share reproducible build patches across distros
 
 CROSS DISTRO
+
  - Easy to use build environment ot make "stand-alone" apps reproducible (2)
  - Talking about reproducibility across very different domains: Android apps, GNU/Linux distctros, JavaEE, ROMs (1)
  - Hack/share issues regarding package systems and format and tools (rpm/deb/freebsd) (5)
@@ -207,6 +228,7 @@ CROSS DISTRO
  - Can we make builds verifiable below the distro package level?
 
 DOCS
+
  - How do we share reproduce instructions?
  - Get safe hashes everywhere (5)
  - Plan to facilitate collaborative redaction of documentation online (r-b.org)
@@ -217,11 +239,13 @@ DOCS
  - FAQ: Best practices on website
 
 SOURCE_DATE_EPOCH
+
  - Encourage other toolchains (clang) to adopt SOURCE_DATE_EPOCH and similar approaches (3)
  - Why do we want a SOURCE_DATE_EPOCH other than 1 Jan 1970? (2)
  - Hack Bazel to work with SOURCE_DATE_EPOCH (1)
 
 BUILD PATHS / SOURCE_PREFIX_MAP
+
  - Get GCC build path patches accepted
  - Turn -fdebug-prefix-map environment variable into a standard like SOURCE_DATE_EPOCH
  - Write specification for SOURCE_PREFIX_MAP and promote it (8)
@@ -230,6 +254,7 @@ BUILD PATHS / SOURCE_PREFIX_MAP
  - Look at using debugedit in strip-nondeterminism (1)
 
 COMPILERS
+
  - Hack on LLVM/clang/non-GNU toolchains (3)
  - Reproducing binaries with clang (5)
  - Compilers output reproducibility: What's the current state?  Hack on rustc (2)
