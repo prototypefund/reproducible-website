@@ -6,9 +6,9 @@ order: 40
 permalink: /events/berlin2016/reprotest/
 ---
 
-Platforms in the group: Debian, FreeBSD, Window River (RPM), Ubuntu/Mint
+Platforms present in the group: Debian, FreeBSD, Window River (RPM), Ubuntu/Mint
 
-reporotest was a project that Lunar proposed, and was started as a GSoC project
+[reprotest](https://tracker.debian.org/reprotest) was a project that Lunar proposed, and was started as a GSoC project
 in Summer 2017.  It builds a package in different kinds of environment to check
 if it's reproducible.
 
