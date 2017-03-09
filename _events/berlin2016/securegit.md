@@ -1,6 +1,6 @@
 ---
 layout: event_detail
-title: securegit
+title: Secure GIT
 event: berlin2016
 order: 240
 permalink: /events/berlin2016/securegit/
@@ -21,7 +21,8 @@ We discussed:
 - What would it take to begin a migration, if we did want to move smoothly to a system with SHA-384 (or other stronger hash)?
 
 
-More about it on Hacker News at https://news.ycombinator.com/item?id=13195849.
+More about it on Hacker News at [https://news.ycombinator.com/item?id=13195849](https://news.ycombinator.com/item?id=13195849).
+
 
 Overall, this whole desire for an Ecosystem Janitor Team again, which would keep an eye on all of these upstream contents and make sure their changes are publicly logged and visible so everyone is always getting the same view of upstreams, so upstream sources can be downloaded and checksummed against the public log, etc.
 
