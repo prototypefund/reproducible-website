@@ -6,22 +6,16 @@ order: 80
 permalink: /events/berlin2016/RPM/
 ---
 
-brainstorming notes:
-    
-Open build service ( http://openbuildservice.org/ ) that runs various configuration for RPM. Vary environment / ... easy.
-Build service sign the binaries that get published to the mirror infrastructure
-~
-Discussion point: signatures, you can copy signatures to on the newly built package to obtain the same package.
-~
-OpenSUSE might still have MD5 in some places, Fedora has switched to SHA-256.
-~
-for fedora "Mock" creates the environment and chroot, install build dependencies and build. So build is failing when missing depenency.
-(END)
-Needs to set SOURCE_DATE_EPOCH? Timestamp will be different, but timestamp is in the spec file? A end-user might want to download a source package from anywhere.
+### brainstorming notes:
+- Open build service ( http://openbuildservice.org/ ) that runs various configuration for RPM. Vary environment / ... easy.
+- Build service sign the binaries that get published to the mirror infrastructure
+- Discussion point: signatures, you can copy signatures to on the newly built package to obtain the same package.
+- OpenSUSE might still have MD5 in some places, Fedora has switched to SHA-256.
+- for fedora "Mock" creates the environment and chroot, install build dependencies and build. So build is failing when missing depenency.
+- Needs to set SOURCE_DATE_EPOCH? Timestamp will be different, but timestamp is in the spec file? A end-user might want to download a source package from anywhere.
 
-Problems in RPM?
-  - What is the base level of info to have a reproducible build? Is RPM sufficient?
-
+### Problems in RPM?
+* What is the base level of info to have a reproducible build? Is RPM sufficient?
 * srpm does not specify the actual dependencies that will be used to build (gcc x.y.z). Maybe need a build-info file.
 * not custom field in rpm metadata? No, cannot add arbitrary build metadata to RPM
   Can the metadata extended? Potentially
@@ -59,7 +53,7 @@ Problems in RPM?
   Capture uname is easy but capturing mock or similar fake environment builder.
   take idea from the debian build infos files.
 
-Report:
-  What info on build info file to be reproducible and what kind of tool to make it easy.
+### Report:
+* What info on build info file to be reproducible and what kind of tool to make it easy.
 
--
+

@@ -31,9 +31,9 @@ Day 1
 *    14.30 Working Sessions I
      -   **[diffoscope]({{ "/events/berlin2016/diffoscope/" | prepend: site.baseurl }})**
      -   **[reprotest]({{ "/events/berlin2016/reprotest/" | prepend: site.baseurl }})**
-     -   **[Documentation]({{ "/events/berlin2016/documentation/" | prepend: site.baseurl }})**
+     -   **[Documentation I]({{ "/events/berlin2016/documentation/" | prepend: site.baseurl }})**
      -   **[User verification]({{ "/events/berlin2016/userverification/" | prepend: site.baseurl }})**
-     -   **[Embedded]({{ "/events/berlin2016/embedded/" | prepend: site.baseurl }})**
+     -   **[Embedded / Coreboot]({{ "/events/berlin2016/embedded/" | prepend: site.baseurl }})**
      -   **[RPM]({{ "/events/berlin2016/RPM/" | prepend: site.baseurl }})**
 
 *    16.00 Closing Session
