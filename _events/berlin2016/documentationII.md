@@ -1,18 +1,18 @@
 ---
 layout: event_detail
-title: documentationII
+title: Documentation II
 event: berlin2016
 order: 190
 permalink: /events/berlin2016/documentationII/
 ---
 
 riseup notepad for facillitating feedback: 
-    https://pad.riseup.net/p/reproduciblebuildsII-FAQfeedback
+    [FAQ Feedback]({{ "/events/berlin2016/FAQfeedback/" | prepend: site.baseurl }})
 
 
-https://reproducible-builds.org/
-https://wiki.debian.org/ReproducibleBuilds - should deprecate / eventually delete this
-https://tests.reproducible-builds.org/ - surprisingly hard to find yet it has the most interesting and current info, not just for Debian but other projects' package sets
+* https://reproducible-builds.org/
+* https://wiki.debian.org/ReproducibleBuilds - should deprecate / eventually delete this
+* https://tests.reproducible-builds.org/ - surprisingly hard to find yet it has the most interesting and current info, not just for Debian but other projects' package sets
 
 Personas
 --------

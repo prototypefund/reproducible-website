@@ -1,6 +1,6 @@
 ---
 layout: event_detail
-title: Documentation
+title: Documentation I
 event: berlin2016
 order: 50
 permalink: /events/berlin2016/documentation/
@@ -114,14 +114,14 @@ and ensure it is bit by bit identic."
  - because "there is a lot of things we actually agree on"
 
 ### Which tools can be used to verify reproducibility?
- - we don't use special diff tools to see if something is the same. We
+
+* we don't use special diff tools to see if something is the same. We
 need to have the same way of verifying and we need to include this into
 the definition or a subsection of this definition.
- - Why? : problem with apk (android), contains jar signature, same with
+* Why? : problem with apk (android), contains jar signature, same with
 rpm which includes signatures inside the rpm. In Debian, we have the
 idea to use SHA-sums. OTOH, iOS binaries are all different, because each
 one uses a special device key
-        -  that's an attack factor.
-        -  Signal i.e. has a specific tool to compare two signal builds. That's
-very wrong.
+  - that's an attack factor.
+  - Signal i.e. has a specific tool to compare two signal builds. That's very wrong.
 

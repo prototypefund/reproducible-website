@@ -1,6 +1,6 @@
 ---
 layout: event_detail
-title: documentationIII
+title: Documentation III
 event: berlin2016
 order: 270
 permalink: /events/berlin2016/documentationIII/
