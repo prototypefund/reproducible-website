@@ -1,6 +1,6 @@
 ---
 layout: event_detail
-title: 2017lookahead
+title: 2017 Look ahead
 event: berlin2016
 order: 310
 permalink: /events/berlin2016/2017lookahead/
@@ -343,5 +343,22 @@ Push SOURCE_PREFIX_MAP into other build tools
 Achieve 97%+ reproducibility with build-path independence
 Government should require r-b by law for critical infrastructure SW
 
-_
+
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_01.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_02.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_03.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_04.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_05.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_06.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_07.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_08.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_09.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_10.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_11.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_12.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_13.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_14.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/2017lookahead_15.JPG" | prepend: site.baseurl }}" alt="2017 Look ahead Post-It notes" />
+
+
 
