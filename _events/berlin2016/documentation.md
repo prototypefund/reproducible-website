@@ -121,7 +121,7 @@ the definition or a subsection of this definition.
 rpm which includes signatures inside the rpm. In Debian, we have the
 idea to use SHA-sums. OTOH, iOS binaries are all different, because each
 one uses a special device key
-        - that's an attack factor.
-        - Signal i.e. has a specific tool to compare two signal builds. That's
+        -  that's an attack factor.
+        -  Signal i.e. has a specific tool to compare two signal builds. That's
 very wrong.
 
