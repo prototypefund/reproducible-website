@@ -6,62 +6,60 @@ order: 310
 permalink: /events/berlin2016/2017lookahead/
 ---
 
-1)
-ADVOCACY / OUTREACH / POLICY / EDUCATION
+## 1) ADVOCACY / OUTREACH / POLICY / EDUCATION
 
-* Documentation
+### Documentation
 
-** teaching people to write reproducible code
-** SOURCE_PREFIX_MAP spec done
-** document all indirect highly valuable side-effcts of reproducible-builds
+* teaching people to write reproducible code
+* SOURCE_PREFIX_MAP spec done
+* document all indirect highly valuable side-effcts of reproducible-builds
 
-* policy & law
+### policy & law
 
-** uk demands reproducible firmware by law from HUAWEI
-** china asks the same from cisco
+* uk demands reproducible firmware by law from HUAWEI
+* china asks the same from cisco
 
-* outreach
+### outreach
 
-** reproducible summit 3 2017
-** more talks at conferences around the world
-** reproducible hacking sprint 2017 (hackotlaw)
-** whitepapers and academic research
-** explain r-b to my grandmother/grandparent/grandchild in 5 sentences
-** all conferences have r-b tracks
-** start outreach to embedded device manufacturers
-** "reproducibility" is discussed as a new aspect of software trust (e.g., in security/privacy circles)
+* reproducible summit 3 2017
+* more talks at conferences around the world
+* reproducible hacking sprint 2017 (hackotlaw)
+* whitepapers and academic research
+* explain r-b to my grandmother/grandparent/grandchild in 5 sentences
+* all conferences have r-b tracks
+* start outreach to embedded device manufacturers
+* "reproducibility" is discussed as a new aspect of software trust (e.g., in security/privacy circles)
 
-* distro specific
+### distro specific
 
-** debian-policy packages should be reproducible
-
-
-* generic/all distro
-
-** members from all distros
-** all distro package managers know about reproducible builds
-** post list of funded reproducibility projects
+* debian-policy packages should be reproducible
 
 
-* upstream/elsewhere
+### generic/all distro
+
+* members from all distros
+* all distro package managers know about reproducible builds
+* post list of funded reproducibility projects
+
+
+### upstream/elsewhere
   
-** shouting loudly to upstreams
-** interest outside floss projects (closed software, internal development)
-** we will have convinced industry reproducibility is important
-** "ecosystem janitor team": group to make sure upstream sources remain available & mirrored with checksum
-** collaboration between industry and community much more significant
-** google chrome is reproducible and user verifyable
-** upstreams should be encouraged to issue a statement about reproducibility of their systems
+* shouting loudly to upstreams
+* interest outside floss projects (closed software, internal development)
+* we will have convinced industry reproducibility is important
+* "ecosystem janitor team": group to make sure upstream sources remain available & mirrored with checksum
+* collaboration between industry and community much more significant
+* google chrome is reproducible and user verifyable
+* upstreams should be encouraged to issue a statement about reproducibility of their systems
 
 
-* misc
+### misc
 
-** get as many people supporting bootstrapping efforts as we have reproducible people now
-** reproducible builds is explained in CS courses
-** we have a logo
+* get as many people supporting bootstrapping efforts as we have reproducible people now
+* reproducible builds is explained in CS courses
+* we have a logo
 
-2)
-COMMUNITY / DOCUMENTATION
+## 2) COMMUNITY / DOCUMENTATION
 
 COMMUNITY
 
