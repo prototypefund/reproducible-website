@@ -61,23 +61,23 @@ permalink: /events/berlin2016/2017lookahead/
 
 ## 2) COMMUNITY / DOCUMENTATION
 
-COMMUNITY
+### COMMUNITY
 
-** meetings
-- regular 2-month IRC/voice meeting
-- more reproducible builds cross-project in person meetings
-- small 3-5 person hack sessions targeting specific goals
-** network tooling/services
-- a community of “rebuilers”(?) publishing logs about rebuilds exists
-- central webservice for submitting/retrieval of =.buildinfo= files
-** untitled column
-- more embedded dev work in the community
-** collaboration
-- =notes.git= will be more widely shared among distros
-- have more reproducibility teams in other distros
-- cross-distro outreach
+* meetings
+ - regular 2-month IRC/voice meeting
+ - more reproducible builds cross-project in person meetings
+ - small 3-5 person hack sessions targeting specific goals
+* network tooling/services
+ - a community of “rebuilers”(?) publishing logs about rebuilds exists
+ - central webservice for submitting/retrieval of =.buildinfo= files
+* untitled column
+ - more embedded dev work in the community
+* collaboration
+ - =notes.git= will be more widely shared among distros
+ - have more reproducibility teams in other distros
+ - cross-distro outreach
 
-DOCUMENTATION
+### DOCUMENTATION
 ** reproducible-builds.org
 - move content from debian pages to r-b.org
 - common place for all repro builds talks that everyone uses
