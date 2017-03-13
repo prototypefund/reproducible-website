@@ -64,44 +64,44 @@ permalink: /events/berlin2016/2017lookahead/
 ### COMMUNITY
 
 * meetings
- - regular 2-month IRC/voice meeting
- - more reproducible builds cross-project in person meetings
- - small 3-5 person hack sessions targeting specific goals
+ * regular 2-month IRC/voice meeting
+ * more reproducible builds cross-project in person meetings
+ * small 3-5 person hack sessions targeting specific goals
 * network tooling/services
- - a community of “rebuilers”(?) publishing logs about rebuilds exists
- - central webservice for submitting/retrieval of =.buildinfo= files
+ * a community of “rebuilers”(?) publishing logs about rebuilds exists
+ * central webservice for submitting/retrieval of =.buildinfo= files
 * untitled column
- - more embedded dev work in the community
+ * more embedded dev work in the community
 * collaboration
- - =notes.git= will be more widely shared among distros
- - have more reproducibility teams in other distros
- - cross-distro outreach
+ * =notes.git= will be more widely shared among distros
+ * have more reproducibility teams in other distros
+ * cross-distro outreach
 
 ### DOCUMENTATION
-** reproducible-builds.org
-- move content from debian pages to r-b.org
-- common place for all repro builds talks that everyone uses
-- there will be a “get involved” section
-- common (cross-distro) =.buildinfo= format specification written
-- blog planet/aggregator
-- we built a standard base for =.buildinfo= files
-- all cross-project tools documented not in specific projects only
-** projects or distributions
-- fedora reproducible docs on how to reproduce builds
-- produce a template for projects that wish to make a public statement about reproducibility
-- link to Nix docs from r-b.org
-- improved RB-related doc on Bazel website
-- how to attach signatures without disrupting reproduce? guidelines for packagers.
-** untitled columns
-- searchable database of reproducibility issues (e.g. manpages)
-- examples of non-reproducibility problems explained (3-4 package examples — what did it cause?)
-- the FAQ section will be full of tips on how to use various tools in a reproducible way
-- Encyclopedia for working around common non-repro issues
-- index collection with repro issues and solutions with search
-- reproducible docs as manpages
-- HOWTO about creating reproducible packages
-- teach people how to easily build and test existing software
-- document setting up tests.r-b.org type infrastructure
+* reproducible-builds.org
+ * move content from debian pages to r-b.org
+ * common place for all repro builds talks that everyone uses
+ * there will be a “get involved” section
+ * common (cross-distro) =.buildinfo= format specification written
+ * blog planet/aggregator
+ * we built a standard base for =.buildinfo= files
+ * all cross-project tools documented not in specific projects only
+* projects or distributions
+ * fedora reproducible docs on how to reproduce builds
+ * produce a template for projects that wish to make a public statement about reproducibility
+ * link to Nix docs from r-b.org
+ * improved RB-related doc on Bazel website
+ * how to attach signatures without disrupting reproduce? guidelines for packagers.
+* untitled columns
+ * searchable database of reproducibility issues (e.g. manpages)
+ * examples of non-reproducibility problems explained (3-4 package examples — what did it cause?)
+ * the FAQ section will be full of tips on how to use various tools in a reproducible way
+ * Encyclopedia for working around common non-repro issues
+ * index collection with repro issues and solutions with search
+ * reproducible docs as manpages
+ * HOWTO about creating reproducible packages
+ * teach people how to easily build and test existing software
+ * document setting up tests.r-b.org type infrastructure
 
 
 3)
