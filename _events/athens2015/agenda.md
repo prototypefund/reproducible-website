@@ -17,11 +17,11 @@ Day 1
 *   10.40 **Where are we at today (in Debian)?**
 *   11.20 Break
 *   11.40 *Speed Geeking* (interactive project showcase)
- * **Binary Transparency**
- * **Tor Browser**
- * **Bazel**
- * **Guix/Nix**
- * **F-Droid**
+    -   **Binary Transparency**
+    -   **Tor Browser**
+    -   **Bazel**
+    -   **Guix/Nix**
+    -   **F-Droid**
 *   12.35 What do you want to work on during the summit?
 
     Participants are invited to identify 3 to 5 statements or questions
