@@ -6,7 +6,7 @@ order: 90
 permalink: /events/berlin2016/buildinfofiles/
 ---
 
-# Early work
+## Early work
 
 A goal was to minimise the conditions needed to reproduce a binary.
 
@@ -25,12 +25,11 @@ as more builders provide buildinfo files, we can look for intersections (reprodu
 
 buildinfo files should:
 
-- contain the minimal information needed to produce a given binary
+ - contain the minimal information needed to produce a given binary
+ - be small, compact, and easily distributable
 
-- be small, compact, and easily distributable
 
-
-# buildinfo files might contain:
+## buildinfo files might contain:
 
 - source package (name, version, hash?)
 - binaries produced (name, arch, checksums)
@@ -43,7 +42,7 @@ In Debian, buildinfo is a separate file.
 In Arch Linux, buildinfo is included in the package files (but signatures are detached).
 
 
-# Consuming and aggregating buildinfo files:
+## Consuming and aggregating buildinfo files:
 
 in Debian, buildinfo files are used when:
 
@@ -57,14 +56,14 @@ and now we also realised:
   * buildinfo distributors
 
 
-# Further work
+## Further work
 
 We want to collate and distribute buildinfo files from external parties too;
 not just those from Debian developers and the official builds.
 
 Collecting and distributing those, is a quite different task than just distributing buildinfo from Debian's official builds.
 
-lamby's buildinfo.debian.net already collects and distributes some non-official buildinfo files.
+[buildinfo.debian.net](https://buildinfo.debian.net) already collects and distributes some non-official buildinfo files.
 
 We will need to write tools making it easy to test [reproducibility] and submit buildinfo,
 and tools to retrieve buildinfo files/signatures when installing.
@@ -73,7 +72,7 @@ Signed buildinfos save people from having to build every package themselves:
 it gives them sufficient confidence to trust pre-built binaries.
 
 
-# Ongoing concerns
+## Ongoing concerns
 
 buildinfo files should to be detailed enough to explain the causes of non-reproducibility;
 but too much information ($HOME, hostname, installed packaged versions)
@@ -87,4 +86,4 @@ when a build-dependency affects an output binary,
 we may need to generate a new set of buildinfo files
 describing that situation.
 
--
+
