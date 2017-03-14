@@ -61,7 +61,7 @@ Day 2
 
      -   **[.buildinfo files]({{ "/events/berlin2016/buildinfofiles/" | prepend: site.baseurl }})**
      -   **[RPM II]({{ "/events/berlin2016/RPMII/" | prepend: site.baseurl }})**
-     -   **Reproducible images https://pad.riseup.net/p/reproduciblebuildsII-reusableimages**
+     -   **[Reproducible images]({{ "/events/berlin2016/images/" | prepend: site.baseurl }})**
      -   **Defining reproducible builds I https://pad.riseup.net/p/reproduciblebuildsII-reproduciblebuildsdefinition**
      -   **End user policies https://pad.riseup.net/p/reproduciblebuildsII-userpolicies**
      -   **Test infrastructure https://pad.riseup.net/p/reproduciblebuildsII-testinfrastructure**
