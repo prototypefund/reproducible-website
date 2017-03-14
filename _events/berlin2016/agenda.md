@@ -48,7 +48,7 @@ Day 1
 
 *    16:20 Adjourn
 *    16:30 Hacking
-     -   **http://pkgsrc.se/files.php?messageId=20161213154459.CB044FBA6@cvs.NetBSD.org**
+     -   **[http://pkgsrc.se/files.php?messageId=20161213154459.CB044FBA6@cvs.NetBSD.org](http://pkgsrc.se/files.php?messageId=20161213154459.CB044FBA6@cvs.NetBSD.org)**
 
 Day 2
 -----
@@ -112,7 +112,6 @@ Proposals for hacking sessions to take place later in the afternoon:
      -   **Embedded images cross-distro**
 
 *    16:30 Adjourn
-*    
 *    16.40 Hacking
 
 
@@ -152,11 +151,10 @@ Proposals for hacking sessions to take place today:
 
 *    12:30 Hacking
 
-     -   ** F-droid and append-only publication log (documented through pictured sketch: reproduciblebuildsII-FDroidpublicationlog_01.jpg)**
+     -   ** F-droid and append-only publication log** (documented through [pictured sketch](/images/berlin2016/FDroidpublicationlog_01.JPG))
 
 *    13:15 Lunch Break
 *    14:30 2017 Look Ahead Session  https://pad.riseup.net/p/reproduciblebuildsII-2017lookahead
 *    15.00 Closing Session
 *    15.30 Adjourn
 
--
