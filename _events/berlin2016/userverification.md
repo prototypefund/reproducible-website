@@ -62,3 +62,5 @@ raw post-it content
 - reporting non-reproducibility
 - cross-platform build sepcs
 
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/userverification_01.JPG" | prepend: site.baseurl }}" alt="User verification Post-It notes" />
+
