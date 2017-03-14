@@ -1,6 +1,6 @@
 ---
 layout: event_detail
-title: `.buildinfo` files
+title: .buildinfo files
 event: berlin2016
 order: 90
 permalink: /events/berlin2016/buildinfofiles/
