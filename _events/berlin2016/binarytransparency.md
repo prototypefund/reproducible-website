@@ -6,4 +6,6 @@ order: 170
 permalink: /events/berlin2016/binarytransparency/
 ---
 
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/binarytransparency_01.JPG" | prepend: site.baseurl }}" alt="Binary Transparency Post-It notes" />
+
 
