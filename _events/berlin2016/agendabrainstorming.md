@@ -278,3 +278,15 @@ BOOTSTRAPPING
  - Reproducible binaries vs. host dependencies: what is the limit?
  - Are we okay with self-hosted languages? (2)
 
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/agendabrainstorming_01.JPG" | prepend: site.baseurl }}" alt="Agenda brainsorming Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/agendabrainstorming_02.JPG" | prepend: site.baseurl }}" alt="Agenda brainsorming Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/agendabrainstorming_03.JPG" | prepend: site.baseurl }}" alt="Agenda brainsorming Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/agendabrainstorming_04.JPG" | prepend: site.baseurl }}" alt="Agenda brainsorming Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/agendabrainstorming_05.JPG" | prepend: site.baseurl }}" alt="Agenda brainsorming Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/agendabrainstorming_06.JPG" | prepend: site.baseurl }}" alt="Agenda brainsorming Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/agendabrainstorming_07.JPG" | prepend: site.baseurl }}" alt="Agenda brainsorming Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/agendabrainstorming_08.JPG" | prepend: site.baseurl }}" alt="Agenda brainsorming Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/agendabrainstorming_09.JPG" | prepend: site.baseurl }}" alt="Agenda brainsorming Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/agendabrainstorming_10.JPG" | prepend: site.baseurl }}" alt="Agenda brainsorming Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/agendabrainstorming_11.JPG" | prepend: site.baseurl }}" alt="Agenda brainsorming Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/agendabrainstorming_12.JPG" | prepend: site.baseurl }}" alt="Agenda brainsorming Post-It notes" />
