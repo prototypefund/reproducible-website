@@ -281,7 +281,7 @@ Bootstrapping
 
 ### Dev helping
 * Maintainers can upload packegs for repro. testing
-* Create a "fuzzing" tool to modify time|date|hostname|cwd etc. so that devs can test whether that affects them
+* Create a "fuzzing" tool to modify time/date/hostname/cwd etc. so that devs can test whether that affects them
 
 ### Deploy
 * Testing infra should be reproducible
