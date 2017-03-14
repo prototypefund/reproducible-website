@@ -1,9 +1,9 @@
 ---
 layout: event_detail
-title: reprobuildsdefinitionII
+title: Reproducible Builds definition II
 event: berlin2016
 order: 200
-permalink: /events/berlin2016/reprobuildsdefinitionII/
+permalink: /events/berlin2016/reproduciblebuildsdefinitionII/
 ---
 
 # When is a build "reproducible"?
@@ -48,4 +48,5 @@ Update 20 Decmeber 2016:
 
 Definition published at https://reproducible-builds.org/docs/definition/
 
--
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/reproduciblebuildsdefinitionII_01.JPG" | prepend: site.baseurl }}" alt="Reproducible Builds definition II Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/reproduciblebuildsdefinitionII_02.JPG" | prepend: site.baseurl }}" alt="Reproducible Builds definition II Post-It notes" />

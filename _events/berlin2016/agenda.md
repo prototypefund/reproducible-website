@@ -63,7 +63,7 @@ Day 2
      -   **RPM II https://pad.riseup.net/p/reproduciblebuildsII-RPMII https://github.com/woju/rpmbuildinfo**
      -   **Reproducible images https://pad.riseup.net/p/reproduciblebuildsII-reusableimages**
      -   **Defining reproducible builds I https://pad.riseup.net/p/reproduciblebuildsII-reproduciblebuildsdefinition**
-     -   **End user policies https://pad.riseup.net/p/reproduciblebuildsII-enduserpolicies**
+     -   **End user policies https://pad.riseup.net/p/reproduciblebuildsII-userpolicies**
      -   **Test infrastructure https://pad.riseup.net/p/reproduciblebuildsII-testinfrastructure**
      -   **Gettext https://pad.riseup.net/p/reproduciblebuildsII-Gettext**
 
@@ -93,7 +93,7 @@ Day 2
      -   **What Else for the Auditable Ecosystem? https://pad.riseup.net/p/reproduciblebuildsII-whatelse (was https://pad.riseup.net/p/reproduciblebuildsII-binarytransparency )**
      -   **SOURCE_PREFIX_MAP https://pad.riseup.net/p/reproduciblebuildsII-SOURCE_PREFIX_MAP**
      -   **Documentation II https://pad.riseup.net/p/reproduciblebuildsII-documentationII**
-     -   **Defining reproducible builds II https://pad.riseup.net/p/reproduciblebuildsII-reprobuildsdefinitionII**
+     -   **Defining reproducible builds II https://pad.riseup.net/p/reproduciblebuildsdefinitionII**
      -   **Bootstrapping https://pad.riseup.net/p/reproduciblebuildsII-bootstrapping**
      -   **Reproducible builds use cases https://pad.riseup.net/p/reproduciblebuildsII-usecases**
      -   **Reproducible builds and License/GPL compliance https://pad.riseup.net/p/rb-gpl-compliance-20161214**

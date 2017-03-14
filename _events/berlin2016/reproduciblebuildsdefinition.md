@@ -1,6 +1,6 @@
 ---
 layout: event_detail
-title: reproduciblebuildsdefinition
+title: Reproducible Builds definition
 event: berlin2016
 order: 120
 permalink: /events/berlin2016/reproduciblebuildsdefinition/
@@ -76,4 +76,5 @@ The ideal reproducible build
 * dependencies and their versions
 * locations where dependencies are installed
 
--
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/reproduciblebuildsdefinition_01.JPG" | prepend: site.baseurl }}" alt="Reproducible Builds definition Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/reproduciblebuildsdefinition_02.JPG" | prepend: site.baseurl }}" alt="Reproducible Builds definition Post-It notes" />

@@ -1,9 +1,9 @@
 ---
 layout: event_detail
-title: enduserpolicies
+title: User policies
 event: berlin2016
 order: 130
-permalink: /events/berlin2016/enduserpolicies/
+permalink: /events/berlin2016/userpolicies/
 ---
 
 NOTES #1
@@ -127,5 +127,4 @@ Questions:
 * What happens if a package stops meeting policy after it has been installed previously?
 * How many builders can we provide per architecture?
 
--
-
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/userpolicies_01.JPG" | prepend: site.baseurl }}" alt="User policies Post-It notes" />
