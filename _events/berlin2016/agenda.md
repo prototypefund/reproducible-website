@@ -91,6 +91,7 @@ Day 2
 *    14.20 Working Sessions III
 
      -   **What Else for the Auditable Ecosystem? https://pad.riseup.net/p/reproduciblebuildsII-whatelse (was https://pad.riseup.net/p/reproduciblebuildsII-binarytransparency )**
+     -   **[What else]({{ "/events/berlin2016/whatelse/" | prepend: site.baseurl }})** instead of **[Binary Transparency]({{ "/events/berlin2016/binarytransparency/" | prepend: site.baseurl }})**
      -   **SOURCE_PREFIX_MAP https://pad.riseup.net/p/reproduciblebuildsII-SOURCE_PREFIX_MAP**
      -   **Documentation II https://pad.riseup.net/p/reproduciblebuildsII-documentationII**
      -   **Defining reproducible builds II https://pad.riseup.net/p/reproduciblebuildsdefinitionII**

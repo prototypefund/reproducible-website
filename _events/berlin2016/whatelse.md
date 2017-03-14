@@ -1,12 +1,12 @@
 ---
 layout: event_detail
-title: whatelse
+title: What else…
 event: berlin2016
 order: 160
 permalink: /events/berlin2016/whatelse/
 ---
 
-what Else for the Auditable Ecosystem?
+### What Else for the Auditable Ecosystem?
 --------------------------------------
 
 What other gaps from Upstream code to User-facing binary artifacts?
@@ -21,9 +21,9 @@ benefits of trust in the code by running stuff that was made from it.
   * repo to tarball
   * server to user
 
-multiple builders is not the same as binary transparency.
+Multiple builders is not the same as binary transparency.
 
-does binary-transparency-style logging perform the same functionality as trusting n of k ?
+Does binary-transparency-style logging perform the same functionality as trusting n of k ?
 
 "append-only" is the feature we want from publication.
 
@@ -75,4 +75,3 @@ we might need an "ecosystem janitor" team:
 Eric Mehyre suggests considering IPFS or other content-addressable
 store.
 
--
