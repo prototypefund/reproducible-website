@@ -26,6 +26,6 @@ More about it on Hacker News at [https://news.ycombinator.com/item?id=13195849](
 
 Overall, this whole desire for an Ecosystem Janitor Team again, which would keep an eye on all of these upstream contents and make sure their changes are publicly logged and visible so everyone is always getting the same view of upstreams, so upstream sources can be downloaded and checksummed against the public log, etc.
 
-<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/securegit_01.JPG" | prepend: site.baseurl }}" alt="Secure GIT Post-It notes" />
-<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/securegit_02.JPG" | prepend: site.baseurl }}" alt="Secure GIT Post-It notes" />
-<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/securegit_03.JPG" | prepend: site.baseurl }}" alt="Secure GIT Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/securegit_01.jpg" | prepend: site.baseurl }}" alt="Secure GIT Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/securegit_02.jpg" | prepend: site.baseurl }}" alt="Secure GIT Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/securegit_03.jpg" | prepend: site.baseurl }}" alt="Secure GIT Post-It notes" />

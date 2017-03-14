@@ -31,4 +31,4 @@ TODO:
 - (infinity0, doko) research passing newlines through shell, m4, autoconf
 - look how gdb parse and loads symbol paths to source code paths
 
-<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/SOURCE_PREFIX_MAP_01.JPG" | prepend: site.baseurl }}" alt="SOURCE_PREFIX_MAP Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/SOURCE_PREFIX_MAP_01.jpg" | prepend: site.baseurl }}" alt="SOURCE_PREFIX_MAP Post-It notes" />

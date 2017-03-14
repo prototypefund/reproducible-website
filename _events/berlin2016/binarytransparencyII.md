@@ -52,7 +52,7 @@ The fact that buildinfo captures output hash gives us the opportunity to look up
 Outcome:
 Just agree to log, then everyone can choose how to interpret them.
 
-<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/binarytransparencyII_01.JPG" | prepend: site.baseurl }}" alt="Binary Transparency II Post-It notes" />
-<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/binarytransparencyII_02.JPG" | prepend: site.baseurl }}" alt="Binary Transparency II Post-It notes" />
-<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/binarytransparencyII_03.JPG" | prepend: site.baseurl }}" alt="Binary Transparency II Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/binarytransparencyII_01.jpg" | prepend: site.baseurl }}" alt="Binary Transparency II Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/binarytransparencyII_02.jpg" | prepend: site.baseurl }}" alt="Binary Transparency II Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/binarytransparencyII_03.jpg" | prepend: site.baseurl }}" alt="Binary Transparency II Post-It notes" />
 -

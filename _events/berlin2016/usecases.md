@@ -67,4 +67,4 @@ For mobile development, developers are often downloading the toolchains and libr
 Find developers who are using unofficial or bad versions of tools and/or libraries.  This also isolates the release process from all of the problems and risks associated with the developers' own machines.
   cl: I think this is sufficiently documented in https://reproducible-builds.org/docs/buy-in/ with the 'Resisting Attacks' section on Xcode Ghost.
 
-<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/usecases_01.JPG" | prepend: site.baseurl }}" alt="Usecases Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/usecases_01.jpg" | prepend: site.baseurl }}" alt="Usecases Post-It notes" />

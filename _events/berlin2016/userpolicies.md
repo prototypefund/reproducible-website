@@ -127,4 +127,4 @@ Questions:
 * What happens if a package stops meeting policy after it has been installed previously?
 * How many builders can we provide per architecture?
 
-<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/userpolicies_01.JPG" | prepend: site.baseurl }}" alt="User policies Post-It notes" />
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/userpolicies_01.jpg" | prepend: site.baseurl }}" alt="User policies Post-It notes" />
