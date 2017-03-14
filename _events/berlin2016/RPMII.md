@@ -1,29 +1,34 @@
 ---
 layout: event_detail
-title: RPMII
+title: RPM II
 event: berlin2016
 order: 100
 permalink: /events/berlin2016/RPMII/
 ---
 
 Plan:
-	* create a tool to generate buildinfo files similar to Debian's
-	* later create or extend a tool to use buildinfo to create a similar environment to rebuild a package later
+
+ * create a tool to generate buildinfo files similar to Debian's
+ * later create or extend a tool to use buildinfo to create a similar environment to rebuild a package later
 
 Next steps:
-	* put the pieces together
-	* test it
-	* add it to a git repo
 
-- buildinfo spec (Debian): https://wiki.debian.org/ReproducibleBuilds/BuildinfoFiles
-                           https://manpages.debian.org/cgi-bin/man.cgi?query=deb-buildinfo&apropos=0&sektion=0&manpath=Debian+unstable+sid&format=html&locale=en
-- RPM file format (draft?): http://rpm.org/devel_doc/file_format.html
+ * put the pieces together
+ * test it
+ * add it to a git repo
 
-example buildinfo files at https://buildinfo.debian.net/
+
+- buildinfo spec (Debian): 
+  * [https://wiki.debian.org/ReproducibleBuilds/BuildinfoFiles](https://wiki.debian.org/ReproducibleBuilds/BuildinfoFiles)
+  * [https://manpages.debian.org/cgi-bin/man.cgi?query=deb-buildinfo&apropos=0&sektion=0&manpath=Debian+unstable+sid&format=html&locale=en](https://manpages.debian.org/cgi-bin/man.cgi?query=deb-buildinfo&apropos=0&sektion=0&manpath=Debian+unstable+sid&format=html&locale=en)
+- RPM file format (draft?): [http://rpm.org/devel_doc/file_format.html](http://rpm.org/devel_doc/file_format.html)
+
+example buildinfo files at [https://buildinfo.debian.net/](https://buildinfo.debian.net/)
 
 to be run at the end of rpmbuild or after it, run by the tool calling rpmbuild or both (second one appending extra information)
 
-#buildinfo generator code snippet:
+### buildinfo generator code snippet:
+<pre>
 echo Installed-Build-Depends:
 # might need to run outside the build chroot, because it might have an incompatible rpm version that cannot read the DB created by a newer rpm
 rpm -qa | sed -e 's/-\([^-]*-[^-]*\)\.\([^.]*\)$/:\2 (= \1)/; s/^/ /'
@@ -59,17 +64,20 @@ Binary: $(find $(rpm --eval %{_rpmdir}) -name *rpm|xargs rpm -qp --qf "%{name} "
 Version: $(rpmspec -q --queryformat '%{version}-%{release}' "$specfile")
 
 Architecture: $(rpm -q --queryformat '%{arch}' -p "$srcrpm")
+</pre>
 
-# other:
+### other:
+<pre>
 Checksum-*: ... sha256sum $rpm $specfile $srcrpm # and rpm size # omit MD5+SHA1 because nobody should use that anymore
 size=$(stat -c '%s' $rpm)
 # https://anonscm.debian.org/git/dpkg/dpkg.git/tree/scripts/Dpkg/Checksums.pm
 
 Build-Path: $(rpm --eval '%{_builddir}')
+</pre>
 
-# 
-Example looking at
-https://buildinfo.debian.net/44a20123ce26786d43af72a14aa684dade5ee927/gnome-clocks_3.22.1-1_i386.buildinfo
-https://koji.fedoraproject.org/koji/buildinfo?buildID=823737
+### Examples
 
--
+ * [https://buildinfo.debian.net/44a20123ce26786d43af72a14aa684dade5ee927/gnome-clocks_3.22.1-1_i386.buildinfo](https://buildinfo.debian.net/44a20123ce26786d43af72a14aa684dade5ee927/gnome-clocks_3.22.1-1_i386.buildinfo)
+ * [https://koji.fedoraproject.org/koji/buildinfo?buildID=823737](https://koji.fedoraproject.org/koji/buildinfo?buildID=823737)
+
+

@@ -60,7 +60,7 @@ Day 2
 *    10:20 Working Sessions II
 
      -   **[.buildinfo files]({{ "/events/berlin2016/buildinfofiles/" | prepend: site.baseurl }})**
-     -   **RPM II https://pad.riseup.net/p/reproduciblebuildsII-RPMII https://github.com/woju/rpmbuildinfo**
+     -   **[RPM II]({{ "/events/berlin2016/RPMII/" | prepend: site.baseurl }})**
      -   **Reproducible images https://pad.riseup.net/p/reproduciblebuildsII-reusableimages**
      -   **Defining reproducible builds I https://pad.riseup.net/p/reproduciblebuildsII-reproduciblebuildsdefinition**
      -   **End user policies https://pad.riseup.net/p/reproduciblebuildsII-userpolicies**
