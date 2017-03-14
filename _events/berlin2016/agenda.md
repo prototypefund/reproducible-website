@@ -59,7 +59,7 @@ Day 2
 *    10.00 Opening Session
 *    10:20 Working Sessions II
 
-     -   **build info files https://pad.riseup.net/p/reproduciblebuildsII-buildinfofiles**
+     -   **build info files [RPM]({{ "/events/berlin2016/RPM/" | prepend: site.baseurl }})**
      -   **RPM II https://pad.riseup.net/p/reproduciblebuildsII-RPMII https://github.com/woju/rpmbuildinfo**
      -   **Reproducible images https://pad.riseup.net/p/reproduciblebuildsII-reusableimages**
      -   **Defining reproducible builds I https://pad.riseup.net/p/reproduciblebuildsII-reproduciblebuildsdefinition**
