@@ -62,7 +62,7 @@ Day 2
      -   **[.buildinfo files]({{ "/events/berlin2016/buildinfofiles/" | prepend: site.baseurl }})**
      -   **[RPM II]({{ "/events/berlin2016/RPMII/" | prepend: site.baseurl }})**
      -   **[Reproducible images]({{ "/events/berlin2016/images/" | prepend: site.baseurl }})**
-     -   **Defining reproducible builds I https://pad.riseup.net/p/reproduciblebuildsII-reproduciblebuildsdefinition**
+     -   **[Defining Reproducible Builds I]({{ "/events/berlin2016/reproduciblebuildsdefinition/" | prepend: site.baseurl }})**
      -   **End user policies https://pad.riseup.net/p/reproduciblebuildsII-userpolicies**
      -   **Test infrastructure https://pad.riseup.net/p/reproduciblebuildsII-testinfrastructure**
      -   **Gettext https://pad.riseup.net/p/reproduciblebuildsII-Gettext**
@@ -94,7 +94,7 @@ Day 2
      -   **[What else]({{ "/events/berlin2016/whatelse/" | prepend: site.baseurl }})** instead of **[Binary Transparency]({{ "/events/berlin2016/binarytransparency/" | prepend: site.baseurl }})**
      -   **SOURCE_PREFIX_MAP https://pad.riseup.net/p/reproduciblebuildsII-SOURCE_PREFIX_MAP**
      -   **Documentation II https://pad.riseup.net/p/reproduciblebuildsII-documentationII**
-     -   **Defining reproducible builds II https://pad.riseup.net/p/reproduciblebuildsdefinitionII**
+     -   **[Defining Reproducible Builds definition II]({{ "/events/berlin2016/reproduciblebuildsdefinitionII/" | prepend: site.baseurl }})**
      -   **Bootstrapping https://pad.riseup.net/p/reproduciblebuildsII-bootstrapping**
      -   **Reproducible builds use cases https://pad.riseup.net/p/reproduciblebuildsII-usecases**
      -   **Reproducible builds and License/GPL compliance https://pad.riseup.net/p/rb-gpl-compliance-20161214**
