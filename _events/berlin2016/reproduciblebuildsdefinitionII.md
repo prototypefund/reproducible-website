@@ -33,8 +33,6 @@ secondary outputs.
 The reproducibility of artifacts is verified by bit-by-bit comparison. This is
 usually achieved using checksums (better: strong/cryptographically secure hash functions such as implemented in sha256sum; thanks, added. I don't want to specifically mention an algorithm, though).
 
-TODO Hyperlink me to other parts of the website!1!!
-
 #### Notes
 
 We've looked at the GNU discussion on the r-b@ list; we think our definition is
