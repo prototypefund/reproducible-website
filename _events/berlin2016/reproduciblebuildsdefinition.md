@@ -30,6 +30,9 @@ must still be usable)
 
 We've set up an axis to define INPUTS (source and build environments).
 
+<img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/drawing.png" | prepend: site.baseurl }}" alt="drawing, shown as ASCII below" />
+
+
 <pre>
 Axis
 ----
