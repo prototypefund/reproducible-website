@@ -6,14 +6,14 @@ order: 130
 permalink: /events/berlin2016/userpolicies/
 ---
 
-NOTES #1
+## NOTES #1
 
-User Policy
+### User Policy
 
 The aim of the discussion was to work out the user policy we could put in front of an average user.
 Though we did have diversions into what a power user would want.
 
-We realise that a power user may well want morecomplex tools - but if users need to make complex decisions as to suitible values for multiple factors they are likely to decide it is too dificult and not bother.
+We realise that a power user may well want more complex tools - but if users need to make complex decisions as to suitible values for multiple factors they are likely to decide it is too dificult and not bother.
 
 It is assumed that the user has made the decision that they only want reproducible builds.
 We assumed the machinery needed would be in its own package which the user could install
@@ -56,31 +56,30 @@ This indicates that the build is not reproducible. The second version acts as th
 The re-builder should inform the maintainer that there is a failure.
 
 
-When the user wants to install a binary package.
-For the purpose of this discussion a package is the smallest intallable unit. 
-A single collection of source may produce different binary packages.
-The user wants to knwo the one they are installing is reproducilbe.
-They do not need to worry about the reproducibility of other outputs.
-For example it may be that the standard version is reproducilbe but the debug version isn't.
-Unless the user needs debug - this should not be an issue for them.
+ * When the user wants to install a binary package.
+ * For the purpose of this discussion a package is the smallest intallable unit. 
+ * A single collection of source may produce different binary packages.
+ * The user wants to know the one they are installing is reproducilbe.
+ * They do not need to worry about the reproducibility of other outputs.
+ * For example it may be that the standard version is reproducilbe but the debug version isn't.
+ * Unless the user needs debug - this should not be an issue for them.
 
-It downloads the binary package and checks the hash.
-It then looks for all published signed buildinfos.
-Find those for this package and version.
+ * It downloads the binary package and checks the hash.
+ * It then looks for all published signed buildinfos.
+ * Find those for this package and version.
 
-Set the count to zero
-For each builder
-If the builder is not in the known builder list
-        Ignore them
-        This means that an attacker cannot influence the process by publishing there own signed buildinfos as they will be ignored
-If there is a single signed buildinfo and it matches this hash 
-        Increment the count 
-If there are multiple signed buildinfos
-        Ignore buildinfos that do not match the one specified for the package to be installed
-	        If there is only left increment the count
-	        If there are still multiple buildinfos ignore it
-
-If the count is greater than the threshold the build is deemed reproducible and should be installed
+ * Set the count to zero
+ * For each builder
+ * If the builder is not in the known builder list
+   * Ignore them
+   * This means that an attacker cannot influence the process by publishing there own signed buildinfos as they will be ignored
+ * If there is a single signed buildinfo and it matches this hash 
+   * Increment the count 
+ * If there are multiple signed buildinfos
+   * Ignore buildinfos that do not match the one specified for the package to be installed
+      * If there is only left increment the count
+      * If there are still multiple buildinfos ignore it
+ * If the count is greater than the threshold the build is deemed reproducible and should be installed
 
 It is possible that the user will install a version that builds to a different version with a newer tool chain.
 This should cause the package to be updated, and the new version will be installed once it is released.
@@ -95,7 +94,8 @@ It does not need to generate any extra log messages.
 
 We expect it to only generate log messages if there is a failure - which should be rare.
 
-Value of K
+### Value of K
+
 In the discussion we assumed the default would be N/2
 However, a lax implementation may decide that a low number,e.g 2 or 3 is sufficient to demonstrate that the build is reproducible. 
 The value depends how paranoid you are that the builders are not independent.
@@ -103,9 +103,9 @@ The value depends how paranoid you are that the builders are not independent.
 Rebuilders will take time to issue their signed buildinfos.
 The higher the number, the longer the wait before sufficent signatures have been issued.
 
-//////////////////////////////////////////
+----
 
-NOTES #2
+## NOTES #2
 
 Simplest possible thing: the distribution only publishes packages that meet its own internal definition of reproducibility (e.g., it builds the same way on three different build servers)
 
@@ -115,16 +115,16 @@ Key inputs considered from the builder's buildinfo: the pair of binary package+v
 
 Complications:
 
-* What happens if a builder can't reproduce their own result?  Should probably be equivalent to revocation.
-* Do builders *have* to build with *exactly* the library versions used in the published package?  For current Debian infrastructure this might require downgrading security updates.
+ * What happens if a builder can't reproduce their own result?  Should probably be equivalent to revocation.
+ * Do builders *have* to build with *exactly* the library versions used in the published package?  For current Debian infrastructure this might require downgrading security updates.
 
 Questions:
 
-* Is there a privileged buildinfo, i.e., one that other builders are expected to match?  Is this the distro's own buildinfo?
-* If builders see a situation where most users would run the package in a configuration that's different than what the archive built (e.g., because of a library security upgrade), should that be sent as a signal back upstream to trigger a rebuild of the package?
-* Can power users build the package themselves and use that to help satisfy K, or override completely?
-* How should we communicate that there are dissenting results when K agree?
-* What happens if a package stops meeting policy after it has been installed previously?
-* How many builders can we provide per architecture?
+ * Is there a privileged buildinfo, i.e., one that other builders are expected to match?  Is this the distro's own buildinfo?
+ * If builders see a situation where most users would run the package in a configuration that's different than what the archive built (e.g., because of a library security upgrade), should that be sent as a signal back upstream to trigger a rebuild of the package?
+ * Can power users build the package themselves and use that to help satisfy K, or override completely?
+ * How should we communicate that there are dissenting results when K agree?
+ * What happens if a package stops meeting policy after it has been installed previously?
+ * How many builders can we provide per architecture?
 
 <img style="margin-top: 10px; vertical-align: top;" src="{{ "/images/berlin2016/userpolicies_01.jpg" | prepend: site.baseurl }}" alt="User policies Post-It notes" />

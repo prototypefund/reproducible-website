@@ -63,7 +63,7 @@ Day 2
      -   **[RPM II]({{ "/events/berlin2016/RPMII/" | prepend: site.baseurl }})**
      -   **[Reproducible images]({{ "/events/berlin2016/images/" | prepend: site.baseurl }})**
      -   **[Defining Reproducible Builds I]({{ "/events/berlin2016/reproduciblebuildsdefinition/" | prepend: site.baseurl }})**
-     -   **End user policies https://pad.riseup.net/p/reproduciblebuildsII-userpolicies**
+     -   **[User policies]({{ "/events/berlin2016/userpolicies/" | prepend: site.baseurl }})**
      -   **Test infrastructure https://pad.riseup.net/p/reproduciblebuildsII-testinfrastructure**
      -   **Gettext https://pad.riseup.net/p/reproduciblebuildsII-Gettext**
 
