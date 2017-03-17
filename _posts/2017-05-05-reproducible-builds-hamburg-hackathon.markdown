@@ -13,6 +13,5 @@ The aims of the meeting are:
  * to concentrate on hacking on reproducible builds,
  * to have some fun together! 
 
-This meeting is open for any interested on working on Reproducible Builds issues in any distro or project, please just add yourself to the 
-[Hackathon wiki page](https://wiki.debian.org/ReproducibleBuilds/HamburgHackathon2017) (or ask Holger to do that for you).
+This meeting is open for any interested on working on Reproducible Builds issues in any distro or project. We're looking forward to hack together with *you*!
 
