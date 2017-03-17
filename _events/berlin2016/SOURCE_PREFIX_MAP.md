@@ -12,6 +12,7 @@ permalink: /events/berlin2016/SOURCE_PREFIX_MAP/
  * how to support multiple mappings
 
 one or multiple mappings?
+
  * multiple is better, allows for more intuitive overrides by child processes
 
 env variable preferred over cli
@@ -19,14 +20,17 @@ env variable preferred over cli
 separator character, space or newline?
 
 how to apply the mappings when eventually set?
+
  * multiple ordered mappings, child build processes append to this map (to the end)
  * child build tools apply the mapping last to first
 
 the exact format of the envvar
+
  * expressings multiple paths into a single string is hard
  * "common things easy, uncommon things possible"
 
 TODO:
+
  * (infinity0, doko) research passing newlines through shell, m4, autoconf
  * look how gdb parse and loads symbol paths to source code paths
 
