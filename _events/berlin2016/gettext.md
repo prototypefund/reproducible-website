@@ -21,8 +21,7 @@ In addition, we are preparing patches for other approaches such as omitting the 
 Post event email update (12/16/2016):
     
 The maintainers of gettext have applied the patches we sent to remove timestamps from the
-output of gettext generated .mo files.
+output of gettext generated `.mo` files.
 
-See [http://git.savannah.gnu.org/cgit/gettext.git/commit/?id`d13f165b83701dffc14f7151419e0c00c00c0d1b](http://git.savannah.gnu.org/cgit/gettext.git/commit/?id`d13f165b83701dffc14f7151419e0c00c00c0d1b)
-
+See [commit d13f165b83701dffc14f7151419e0c00c00c0d1b](http://git.savannah.gnu.org/cgit/gettext.git/commit/?id=d13f165b83701dffc14f7151419e0c00c00c0d1b).
 -
