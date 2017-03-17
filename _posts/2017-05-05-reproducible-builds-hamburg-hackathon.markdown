@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reproducible Builds Hamburg Hackathon
+title:  "Reproducible Builds Hamburg Hackathon"
 date:   2017-05-05 13:37:42
 categories: org
 ---
