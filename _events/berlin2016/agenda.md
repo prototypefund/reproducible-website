@@ -95,13 +95,13 @@ Day 2
      -   **[SOURCE_PREFIX_MAP]({{ "/events/berlin2016/SOURCE_PREFIX_MAP/" | prepend: site.baseurl }})**
      -   **[Documentation II]({{ "/events/berlin2016/documentationII/" | prepend: site.baseurl }})**
      -   **[Defining Reproducible Builds definition II]({{ "/events/berlin2016/reproduciblebuildsdefinitionII/" | prepend: site.baseurl }})**
-     -   **Bootstrapping https://pad.riseup.net/p/reproduciblebuildsII-bootstrapping**
+     -   **[Bootstrapping I]({{ "/events/berlin2016/bootstrapping/" | prepend: site.baseurl }})**
      -   **Reproducible builds use cases https://pad.riseup.net/p/reproduciblebuildsII-usecases**
      -   **Reproducible builds and License/GPL compliance https://pad.riseup.net/p/rb-gpl-compliance-20161214**
 
 *    16.00 Closing Session
 
-Proposals for hacking sessions to take place later in the afternoon:
+* Proposals for hacking sessions to take place later in the afternoon:
      -   **is git acceptably secure? https://pad.riseup.net/p/reproduciblebuildsII-securegit**
      -   **Make build images reproducible**
      -   **diffoscope**

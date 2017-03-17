@@ -1,6 +1,6 @@
 ---
 layout: event_detail
-title: bootstrapping
+title: Bootstrapping I
 event: berlin2016
 order: 210
 permalink: /events/berlin2016/bootstrapping/
@@ -8,89 +8,89 @@ permalink: /events/berlin2016/bootstrapping/
 
 
 * plan (written before the session)
-** discussion
-- opaque binaries in the dependency graph ought to be minimised
-- discuss problems of trusting binary blobs for compilers
-- we need diverse language implementations and actually use them to build compilers
-** maintaining GCC 4.7
-- last version to be implemented in C only, needed to build later GCC versions that require a C++ compiler
-** maintaining GCJ
-- it’s abandoned by upstream but necessary to bootstrap OpenJDK from source
-** bootstrapping GHC
-** rustc + cargo
-** Java: maven build environment
-** ocaml?
-** building GCC without GCC
-- investigate if tinycc (or similar) could be used to build an older/simpler version of GCC
+  * discussion
+    * opaque binaries in the dependency graph ought to be minimised
+    * discuss problems of trusting binary blobs for compilers
+    * we need diverse language implementations and actually use them to build compilers
+  * maintaining GCC 4.7
+    * last version to be implemented in C only, needed to build later GCC versions that require a C++ compiler
+  * maintaining GCJ
+    * it’s abandoned by upstream but necessary to bootstrap OpenJDK from source
+  * bootstrapping GHC
+  * rustc + cargo
+  * Java: maven build environment
+  * ocaml?
+  * building GCC without GCC
+    * investigate if tinycc (or similar) could be used to build an older/simpler version of GCC
 
 * expected outcome
-- agree on the problem
-- make a public statement as to why bootstrapping is a problem and provide best practises for compiler writers
+    * agree on the problem
+    * make a public statement as to why bootstrapping is a problem and provide best practises for compiler writers
 
 * participants
-- members of Guix, NixOS, NetBSD, Qubes, and Bazel
+    * members of Guix, NixOS, NetBSD, Qubes, and Bazel
 
 * NetBSD
-- Go: build 1.4 first then 1.6
-- many compiler packages are in the pkgsrc source tree, but it’s not clear how all of them are bootstrapped
-- the system can be built from many other systems.  It first builds the toolchain (pseudo cross-compiler).  It’s a bug if you cannot build NetBSD on OSX, Linux, *BSD, etc.
+    * Go: build 1.4 first then 1.6
+    * many compiler packages are in the pkgsrc source tree, but it’s not clear how all of them are bootstrapped
+    * the system can be built from many other systems.  It first builds the toolchain (pseudo cross-compiler).  It’s a bug if you cannot build NetBSD on OSX, Linux, *BSD, etc.
 
 * NixOS
-- Java is bootstrapped with a custom maintainer build of the JDK
-- Haskell: chain of three different builds to get to the latest version: https://github.com/NixOS/nixpkgs/issues/19926
+    * Java is bootstrapped with a custom maintainer build of the JDK
+    * Haskell: chain of three different builds to get to the latest version: https://github.com/NixOS/nixpkgs/issues/19926
 
 * Guix
-- Java is bootstrapped from GCJ -> IcedTea 6 –> IcedTea7 –> IcedTea8
+    * Java is bootstrapped from GCJ -> IcedTea 6 –> IcedTea7 –> IcedTea8
 
 * Problems
-- depending on binaries for building compilers and/or build systems is bad for trust
-- the scale of the problem is getting larger as time passes: we started with just having GCC as a problem, but as time passed we got more and more new languages that are self-hosted (i.e. need an older version of themselves to be built).
-- having a long chain of builds means that build systems have to be kept alive in modern environments.
-- Go has its own linker, so to keep the bootstrap working patches have to be backported
-- later versions of GCC are written in C++
-- if you’re going to maintain an old version GCC just for a bootstrap chain you’ll have to backport new architectures.  This means that our bootstrap chain is forever tied to x86 (PowerPPC users cannot bootstrap on their own).
-- generated C code is not source — it may make portability possible, but it’s not trustworthy
-- bootstrapping is not a *functional* feature, so the value isn’t immediately obvious (very much like reproducible builds)
-- the whole toolchain has bootstrapping issues (including linker and kernel…)
+    * depending on binaries for building compilers and/or build systems is bad for trust
+    * the scale of the problem is getting larger as time passes: we started with just having GCC as a problem, but as time passed we got more and more new languages that are self-hosted (i.e. need an older version of themselves to be built).
+    * having a long chain of builds means that build systems have to be kept alive in modern environments.
+    * Go has its own linker, so to keep the bootstrap working patches have to be backported
+    * later versions of GCC are written in C++
+    * if you’re going to maintain an old version GCC just for a bootstrap chain you’ll have to backport new architectures.  This means that our bootstrap chain is forever tied to x86 (PowerPPC users cannot bootstrap on their own).
+    * generated C code is not source — it may make portability possible, but it’s not trustworthy
+    * bootstrapping is not a *functional* feature, so the value isn’t immediately obvious (very much like reproducible builds)
+    * the whole toolchain has bootstrapping issues (including linker and kernel…)
 
 * Ideas
-** Consensus
-- languages with multiple implementations are great, because diversity makes bootstrapping easier.  For single-implementation languages we need alternative ways to get started (even if it’s inefficient)
-** Rather than depend on more binary blobs, throw more CPU time at it, e.g. by emulating an x86 CPU with qemu and then work from there.
-** Need to reach out to compiler developers: make sure that there’s a non-self-hosted path to build the first compiler — find cooperative people in compiler projects to “bootstrap” a bootstrapping project
-** try to depend only on the smallest C compiler possible
-- e.g. [[http://www.landley.net/code/tinycc/][tinycc]], [[http://pcc.ludd.ltu.se/][pcc]], [[http://www.landley.net/qcc/][qcc]]
-- coreboot folks have a simple C compiler RAMCC(?)
-** register http://bootstrappable.org, collect stories there!
+  * Consensus
+    * languages with multiple implementations are great, because diversity makes bootstrapping easier.  For single-implementation languages we need alternative ways to get started (even if it’s inefficient)
+  * Rather than depend on more binary blobs, throw more CPU time at it, e.g. by emulating an x86 CPU with qemu and then work from there.
+  * Need to reach out to compiler developers: make sure that there’s a non-self-hosted path to build the first compiler — find cooperative people in compiler projects to “bootstrap” a bootstrapping project
+  * try to depend only on the smallest C compiler possible
+    * e.g. [[http://www.landley.net/code/tinycc/][tinycc]], [[http://pcc.ludd.ltu.se/][pcc]], [[http://www.landley.net/qcc/][qcc]]
+    * coreboot folks have a simple C compiler RAMCC(?)
+  * register http://bootstrappable.org, collect stories there!
 *** motivation: collect examples of backdoored compilers
-- toy example: https://manishearth.github.io/blog/2016/12/02/reflections-on-rusting-trust/
-- ken thompson: reflections on trusting trust
-- "Defending Against Compiler-Based Backdoors"
+    * toy example: https://manishearth.github.io/blog/2016/12/02/reflections-on-rusting-trust/
+    * ken thompson: reflections on trusting trust
+    * "Defending Against Compiler-Based Backdoors"
 http://blog.regehr.org/archives/1241
-- PoC||GTFO
+    * PoC||GTFO
 https://www.alchemistowl.org/pocorgtfo/pocorgtfo08.pdf
 
-- TODO: need more!
+    * TODO: need more!
 *** Examples
  - e.g. the bootstrap chain for GCC –> GCJ –> IcedTea 6 –> IcedTea7 in Guix
  - GNU Make doesn’t need make but just a bash script
  - Cook
  - Guile Scheme: includes an interpreter written in C.
  - Bazel needs Bazel to build itself, *but* you can build a minimal variant of Bazel with a shell script that runs =javac= on all Java sources, etc
-- Ant, needs itself but can be build with plain Java
+    * Ant, needs itself but can be build with plain Java
 *** best practises
-- don’t throw old code away (to allow for a bootstrapping chain)
-- have an alternative implementation backend (e.g. written in C or in a language that traces back to C eventually) — simplifies porting
+    * don’t throw old code away (to allow for a bootstrapping chain)
+    * have an alternative implementation backend (e.g. written in C or in a language that traces back to C eventually) — simplifies porting
 *** Call for Action!
-- target it to different audiences: “if you’re a compiler writer, do this…”, “if you’re a free software dev, consider …”
+    * target it to different audiences: “if you’re a compiler writer, do this…”, “if you’re a free software dev, consider …”
 
 
  
 * Notes for the manifesto
-- Don't give "bad" examples, since we don't want to piss off upstreams. Only give "good" examples.
+    * Don't give "bad" examples, since we don't want to piss off upstreams. Only give "good" examples.
 
 
-== Website structure
+### Website structure
 
 * Homepage / overview of problem
 
@@ -126,7 +126,7 @@ the amount of bootstrap binaries should be minimized.
 
 * Best Practices (incl. examples, success stories?)
 
-** For compiler writers...
+  * For compiler writers...
 
 If you're working on a compiler that is written in a language other than
 the one it's compiling, you're all set!
@@ -163,7 +163,7 @@ Examples include:
 
 Please let us know if you’d like to add your compiler to this list!
 
-** For build systems writers...
+  * For build systems writers...
 
 Build systems sometimes have chicken-and-egg problems: they may
 need a version of themselves to get built.  If you are developing
@@ -187,7 +187,7 @@ unefficient build written in shell script or another older
 build system (Ant, GNU Make) can generate a minimal version of the
 build system to bootstrap a complete version of it. 
 
-** For distros
+  * For distros
 
 It is unavoidable that distributions use some binaries as part of
 their bootstrap chain. However, distributions should endeavour to
@@ -225,7 +225,7 @@ http://git.savannah.gnu.org/cgit/guix.git/commit/?id=062134985802d85066418f6ee2f
 
 * Collaboration projects
 
-** Continued maintenance of the GNU Compiler for Java (GCJ)
+  * Continued maintenance of the GNU Compiler for Java (GCJ)
 
 Until recently the latest Java Development Kit (JDK) could be
 bootstrapped in a chain starting with GCJ (the GNU Compiler for Java)
@@ -235,7 +235,7 @@ JDK in future. To ensure that the JDK can be built from sources
 without the need for an existing installation of the OpenJDK we
 propose to continue maintaining GCJ.
 
-** Collectively maintaining GCC 4.7
+  * Collectively maintaining GCC 4.7
 
 The C and C++ compilers of the GNU Compiler Collection make up the
 foundation of many free software distributions.  Current versions of
@@ -253,7 +253,7 @@ a simple C compiler (such as tinyCC, pcc, etc).
 This is nice, but what are the actual benefits of “bootstrappable”
 implementations?
 
-** For users
+  * For users
 
 As a user, bootstrappable implementations, together with [[https://reproducible-builds.org][reproducible
 builds]], provide confidence that you are running the code you expect to
@@ -261,13 +261,13 @@ be running.  Its source code is auditable by the developer community,
 which in turns provides reassurance that the code you’re running does
 not have backdoors.
 
-** For distributors
+  * For distributors
 
 Bootstrappable implementations provide clear provenance tracking: the
 dependency graph of your distribution packages shows how each binary was
 obtained.
 
-** For developers
+  * For developers
 
 If you are a compiler writer, making your compiler bootstrappable from a
 different language will simplify the development process (no need to
