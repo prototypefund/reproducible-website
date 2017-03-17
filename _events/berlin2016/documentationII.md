@@ -10,9 +10,9 @@ riseup notepad for facillitating feedback:
     [FAQ Feedback]({{ "/events/berlin2016/FAQfeedback/" | prepend: site.baseurl }})
 
 
-* https://reproducible-builds.org/
-* https://wiki.debian.org/ReproducibleBuilds - should deprecate / eventually delete this
-* https://tests.reproducible-builds.org/ - surprisingly hard to find yet it has the most interesting and current info, not just for Debian but other projects' package sets
+* [https://reproducible-builds.org/](ttps://reproducible-builds.org/)
+* [https://wiki.debian.org/ReproducibleBuilds](https://wiki.debian.org/ReproducibleBuilds)  - should deprecate / eventually delete this
+* [https://tests.reproducible-builds.org/](https://tests.reproducible-builds.org/) - surprisingly hard to find yet it has the most interesting and current info, not just for Debian but other projects' package sets
 
 Personas
 --------
@@ -34,12 +34,14 @@ Involved Projects
 -----------------
 
 Current status?  no, it will get out of date quicker than anyone can update it
+
   * Debian - 92% of source packages are reproducible (link to tests.r-b.o ?)
   * FreeBSD - base is mostly ok, loader not, kernel not (but some patch/flag exists), ports (80% with external patch on the framework)
 
-  distro / project-specific pages!
-    - find a list of contacts for these projects and propose them to add information to the website or to send a link to their documentation,
-      also ask them to add a contact for RB who people can talk to
+distro / project-specific pages!
+
+  * find a list of contacts for these projects and propose them to add information to the website or to send a link to their documentation,
+  *  also ask them to add a contact for RB who people can talk to
 
   * Debian:  https://lists.reproducible-builds.org/listinfo/rb-general, #debian-reproducible @ OFTC
   * ArchLinux
