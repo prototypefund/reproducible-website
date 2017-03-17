@@ -126,7 +126,7 @@ Day 3
 *    10:20 Working Sessions VI
 
      -   **[Cross-distro collaboration]({{ "/events/berlin2016/crossdistro/" | prepend: site.baseurl }})**
-     -   **Boostrapping II https://pad.riseup.net/p/reproduciblebuildsII-bootstrappingII**
+     -   **[Bootstrapping II]({{ "/events/berlin2016/bootstrappingII/" | prepend: site.baseurl }})**
      -   **Documentation III https://pad.riseup.net/p/reproduciblebuildsII-documentationIII**
      -   **Binary transparency II https://pad.riseup.net/p/reproduciblebuildsII-binarytransparencyII**
      -   **State of Reproducible Builds https://pad.riseup.net/p/reproduciblebuildsII-stateofreproduciblebuilds**

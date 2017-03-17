@@ -1,17 +1,16 @@
 ---
 layout: event_detail
-title: bootstrappingII
+title: Bootstrapping II
 event: berlin2016
 order: 260
 permalink: /events/berlin2016/bootstrappingII/
 ---
 
-From email sent to the list on 12/16/2016:
-    
+From an email sent to the list on 12/16/2016:
     
 Hello there!
 
-Here’s a WIP preview of what will soon/eventually be available at https://bootstrappable.org (once the domain has been assigned and
+Here’s a WIP preview of what will soon/eventually be available at [https://bootstrappable.org](https://bootstrappable.org) (once the domain has been assigned and
 mapped).  It’s the website for our new “bootstrappable builds” project
 that was born during the Reproducible Builds summit 2016
 (i.e. yesterday).
