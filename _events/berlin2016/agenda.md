@@ -102,7 +102,7 @@ Day 2
 *    16.00 Closing Session
 
 * Proposals for hacking sessions to take place later in the afternoon:
-     -   **is git acceptably secure? https://pad.riseup.net/p/reproduciblebuildsII-securegit**
+     -   **[Secure GIT]({{ "/events/berlin2016/securegit/" | prepend: site.baseurl }})**
      -   **Make build images reproducible**
      -   **diffoscope**
      -   **Documentation**
