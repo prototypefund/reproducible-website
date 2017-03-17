@@ -127,7 +127,7 @@ Day 3
 
      -   **[Cross-distro collaboration]({{ "/events/berlin2016/crossdistro/" | prepend: site.baseurl }})**
      -   **[Bootstrapping II]({{ "/events/berlin2016/bootstrappingII/" | prepend: site.baseurl }})**
-     -   **Documentation III https://pad.riseup.net/p/reproduciblebuildsII-documentationIII**
+     -   **[Documentation III]({{ "/events/berlin2016/documentationIII/" | prepend: site.baseurl }})**
      -   **Binary transparency II https://pad.riseup.net/p/reproduciblebuildsII-binarytransparencyII**
      -   **State of Reproducible Builds https://pad.riseup.net/p/reproduciblebuildsII-stateofreproduciblebuilds**
 
