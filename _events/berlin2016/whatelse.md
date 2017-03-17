@@ -7,7 +7,6 @@ permalink: /events/berlin2016/whatelse/
 ---
 
 ### What Else for the Auditable Ecosystem?
---------------------------------------
 
 What other gaps from Upstream code to User-facing binary artifacts?
 
@@ -37,8 +36,7 @@ what would a "git2" look like?
 
 git commit IDs -- how do we leverage existing deployment?
 
-git issues:
------------
+### git issues:
 
   * {transfer,fetch,receive} fsckobjects on by default -- what happens
     to existing broken git repos?  can we say "only fsck after commit
@@ -56,10 +54,8 @@ git issues:
 
  1) do we know the full history of the source tree at commit X?
 
----------------------
 
-VCS -> tarball problems
-=======================
+###  VCS -> tarball problems
 
 Why are people using tarballs or other distribution mechanisms other
 than strong VCSen?
