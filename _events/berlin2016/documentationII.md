@@ -76,11 +76,13 @@ Projects
 FAQ sections (instead of personified personas, let's ask concrete questions!)
 ------------
 introduction to faq: to add things/links that does fit into five sections
+
  * "what is reproducible builds?"
  * "what is the status of reproducible builds?"
  * "why should I (as a user) care about reproducible builds?"
 
 (single page so it is easier to search everything at once)
+
  * I'm interested in verifying the reproducibility of software I use
  * I'm interested in making reproducible software
  * I'm interested in packaging/distributing software in a reproducible way
