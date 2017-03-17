@@ -108,8 +108,8 @@ Day 2
      -   **Documentation**
      -   **Funding and CII**
      -   **RPM and hacking**
-     -   **Nix build stuff to be incorporated with test at https://tests.reproducible-builds.org**
-     -   **Boostrap test jenkins to replicate https://tests.reproducible-builds.org**
+     -   **Nix build stuff to be incorporated with tests at [https://tests.reproducible-builds.org](https://tests.reproducible-builds.org)**
+     -   **Boostrap test jenkins to replicate [https://tests.reproducible-builds.org](https://tests.reproducible-builds.org)**
      -   **Embedded images cross-distro**
 
 *    16:30 Adjourn
@@ -125,7 +125,7 @@ Day 3
 *    10.00 Opening Session
 *    10:20 Working Sessions VI
 
-     -   **Cross-distro collaboration on reproducible builds https://pad.riseup.net/p/reproduciblebuildsII-crossdistro**
+     -   **[Cross-distro collaboration]({{ "/events/berlin2016/crossdistro/" | prepend: site.baseurl }})**
      -   **Boostrapping II https://pad.riseup.net/p/reproduciblebuildsII-bootstrappingII**
      -   **Documentation III https://pad.riseup.net/p/reproduciblebuildsII-documentationIII**
      -   **Binary transparency II https://pad.riseup.net/p/reproduciblebuildsII-binarytransparencyII**
