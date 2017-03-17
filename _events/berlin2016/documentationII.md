@@ -30,9 +30,6 @@ Homepage
 --------
    * Definition for RB (to be defined)
 
-DOCUMENTATION MOVED TO: https://pad.riseup.net/p/reproduciblebuildsII-documentationII
-
-
 Involved Projects
 -----------------
 
@@ -44,28 +41,22 @@ Current status?  no, it will get out of date quicker than anyone can update it
     - find a list of contacts for these projects and propose them to add information to the website or to send a link to their documentation,
       also ask them to add a contact for RB who people can talk to
 
-		  * Debian
-			 https://lists.reproducible-builds.org/listinfo/rb-general, #debian-reproducible @ OFTC
-       * ArchLinux
-       * Baserock
-       * Bitcoin
-       * Coreboot
-         ask lynxis
-       * ElectroBSD
-	       https://archive.fosdem.org/2016/schedule/event/electrobsd/
-       * F-Droid
-       * FreeBSD:
-         --> email alias or ML to be provided (reproducibility@FreeBSD.org)
-       * Fedora
-       * Guix
-       * LEDE
-       * NetBSD
-       * NixOS
-       * openSuSe
-       * OpenWRT
-		    ask lynxis
-       * Tails: Public development list: tails-dev@boum.org
-       *
+  * Debian:  https://lists.reproducible-builds.org/listinfo/rb-general, #debian-reproducible @ OFTC
+  * ArchLinux
+  * Baserock
+  * Bitcoin
+  * Coreboot: ask lynxis
+  * ElectroBSD: https://archive.fosdem.org/2016/schedule/event/electrobsd/
+  * F-Droid
+  * FreeBSD: -> email alias or ML to be provided (reproducibility@FreeBSD.org)
+  * Fedora
+  * Guix
+  * LEDE
+  * NetBSD
+  * NixOS
+  * openSuSe
+  * OpenWRT: ask lynxis
+  * Tails: Public development list: tails-dev@boum.org
 
 Debian-related
 --------------
@@ -85,33 +76,33 @@ Projects
 FAQ sections (instead of personified personas, let's ask concrete questions!)
 ------------
 introduction to faq: to add things/links that does fit into five sections
-"what is reproducible builds?"
-"what is the status of reproducible builds?"
-"why should I (as a user) care about reproducible builds?"
+ * "what is reproducible builds?"
+ * "what is the status of reproducible builds?"
+ * "why should I (as a user) care about reproducible builds?"
 
 (single page so it is easier to search everything at once)
-* I'm interested in verifying the reproducibility of software I use
-* I'm interested in making reproducible software
-  - is it possible?
-* I'm interested in packaging/distributing software in a reproducible way
-* But it still doesnt work! -> link to Currently unresolved issues
-* What are the benefits of reproducible builds
+ * I'm interested in verifying the reproducibility of software I use
+ * I'm interested in making reproducible software
+ * I'm interested in packaging/distributing software in a reproducible way
+ * But it still doesnt work! -> link to Currently unresolved issues
+ * What are the benefits of reproducible builds
   - how can help with license compliance
   - (take the work on use cases and side-benefits and put it here)
-* I don't think reproducible builds are actually useful
+ * I don't think reproducible builds are actually useful
   - here we need to answer all the questions like "I want to hardcode paths" etc.
   - why can't we just normalise the <build path, environment, dependencies, whatever>?
   - I really like <timestamps, machine/person who built the binary>!
-* how to build your how build farm?
+ * how to build your how build farm?
 
 
 Get involved page
 -----------------
-* A "Get involved" page should be created
-* it should link to Currently Unresolved Issues
-* see https://wiki.debian.org/ReproducibleBuilds/Contribute for an out-of-date list of stuff we had before
+ * A "Get involved" page should be created
+ * it should link to Currently Unresolved Issues
+ * see https://wiki.debian.org/ReproducibleBuilds/Contribute for an out-of-date list of stuff we had before
 
---- FAQ ---
+FAQ
+---
 1/ how to deal with compression tools?
   * GZIP: use gzip -n
 	* how do I make (GZIP, etc...) give reproducible output?
@@ -148,17 +139,16 @@ How to get involved?
 
 Talks
 -----
-http://www.bsdcan.org/2016/schedule/events/714.en.html
-https://archive.fosdem.org/2016/schedule/event/reproducible_freebsd_packages/
-
-https://osem.seagl.org/conference/seagl2016/program/proposal/166
-OpenWrt/LEDE: video: https://www.youtube.com/watch?v=Y1D706JCISw, slides: https://people.debian.org/~holger/2016-10-13-OpenWrt-Summit.pdf
-DebConf16: https://debconf16.debconf.org/talks/7/
-LibrePlanet: https://media.libreplanet.org/u/libreplanet/collection/beyond-reproducable-builds/
+ * http://www.bsdcan.org/2016/schedule/events/714.en.html
+ * https://archive.fosdem.org/2016/schedule/event/reproducible_freebsd_packages/
+ * https://osem.seagl.org/conference/seagl2016/program/proposal/166
+ * OpenWrt/LEDE: video: https://www.youtube.com/watch?v=Y1D706JCISw, slides: https://people.debian.org/~holger/2016-10-13-OpenWrt-Summit.pdf
+ * DebConf16: https://debconf16.debconf.org/talks/7/
+ * LibrePlanet: https://media.libreplanet.org/u/libreplanet/collection/beyond-reproducable-builds/
 
 
 tools
 ------
 * where to find the tools
 
--
+
