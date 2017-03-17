@@ -97,8 +97,7 @@ Day 2
      -   **[Defining Reproducible Builds definition II]({{ "/events/berlin2016/reproduciblebuildsdefinitionII/" | prepend: site.baseurl }})**
      -   **[Bootstrapping I]({{ "/events/berlin2016/bootstrapping/" | prepend: site.baseurl }})**
      -   **[Use cases]({{ "/events/berlin2016/usecases/" | prepend: site.baseurl }})**
-     -   **Reproducible builds use cases https://pad.riseup.net/p/reproduciblebuildsII-usecases**
-     -   **Reproducible builds and License/GPL compliance https://pad.riseup.net/p/rb-gpl-compliance-20161214**
+     -   **[GPL compliance]({{ "/events/berlin2016/gpl-compliance/" | prepend: site.baseurl }})**
 
 *    16.00 Closing Session
 

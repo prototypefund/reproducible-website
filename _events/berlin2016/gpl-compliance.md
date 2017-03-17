@@ -1,13 +1,13 @@
 ---
 layout: event_detail
-title: gpl-compliance-20161214
+title: GPL compliance
 event: berlin2016
 order: 230
-permalink: /events/berlin2016/gpl-compliance-20161214/
+permalink: /events/berlin2016/gpl-compliance/
 ---
 
 
-# Using reproducible build information to help GPL compliance
+## Using reproducible build information to help GPL compliance
 
 * spectrum of violations in the wild:
   * didn't include license or source - beyond help
