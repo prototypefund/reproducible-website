@@ -155,7 +155,7 @@ Proposals for hacking sessions to take place today:
      -   ** F-droid and append-only publication log** (documented through [pictured sketch](/images/berlin2016/FDroidpublicationlog_01.JPG))
 
 *    13:15 Lunch Break
-*    14:30 2017 Look Ahead Session  https://pad.riseup.net/p/reproduciblebuildsII-2017lookahead
+*    14:30 **[2017 Look Ahead]({{ "/events/berlin2016/2017lookahead/" | prepend: site.baseurl }})**
 *    15.00 Closing Session
 *    15.30 Adjourn
 
