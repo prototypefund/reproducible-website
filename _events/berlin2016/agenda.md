@@ -92,7 +92,7 @@ Day 2
 
      -   **[What else for the Auditable Ecosystem?]({{ "/events/berlin2016/whatelse/" | prepend: site.baseurl }})**
      -   **[What else]({{ "/events/berlin2016/whatelse/" | prepend: site.baseurl }})** instead of **[Binary Transparency]({{ "/events/berlin2016/binarytransparency/" | prepend: site.baseurl }})**
-     -   **SOURCE_PREFIX_MAP https://pad.riseup.net/p/reproduciblebuildsII-SOURCE_PREFIX_MAP**
+     -   **[SOURCE_PREFIX_MAP]({{ "/events/berlin2016/SOURCE_PREFIX_MAP/" | prepend: site.baseurl }})**
      -   **Documentation II https://pad.riseup.net/p/reproduciblebuildsII-documentationII**
      -   **[Defining Reproducible Builds definition II]({{ "/events/berlin2016/reproduciblebuildsdefinitionII/" | prepend: site.baseurl }})**
      -   **Bootstrapping https://pad.riseup.net/p/reproduciblebuildsII-bootstrapping**
