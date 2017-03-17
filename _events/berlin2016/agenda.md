@@ -135,23 +135,23 @@ Day 3
 *    12:05 Reporting session outcomes
 
 Proposals for hacking sessions to take place today:
-     -   **diffoscope debug https://pad.riseup.net/p/reproduciblebuildsII-diffoscopedebug**
-     -   **diffoscope everything**
-     -   **RPM**
-     -   **Documentation**
-     -   **buildinfo**
-     -   **looking at buildinfo coming from different architectures**
-     -   **Gettext**
-     -   **FreeBSD filesystems**
-     -   **Android documentation**
-     -   **Reproducing the test environment and documenting it**
-     -   **bootstrapped.org**
-     -   **Debian infrastructure**
-     -   **Binary transparency log**
-     -   **Android infrastructure**
+
+* **[Diffoscope Debugging]({{ "/events/berlin2016/diffoscopedebug/" | prepend: site.baseurl }})**
+* **diffoscope everything**
+* **RPM**
+* **Documentation**
+* **buildinfo**
+* **looking at buildinfo coming from different architectures**
+* **Gettext**
+* **FreeBSD filesystems**
+* **Android documentation**
+* **Reproducing the test environment and documenting it**
+* **bootstrapped.org**
+* **Debian infrastructure**
+* **Binary transparency log**
+* **Android infrastructure**
 
 *    12:30 Hacking
-
      -   ** F-droid and append-only publication log** (documented through [pictured sketch](/images/berlin2016/FDroidpublicationlog_01.JPG))
 
 *    13:15 Lunch Break
