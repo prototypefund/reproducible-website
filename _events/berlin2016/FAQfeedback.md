@@ -3,44 +3,45 @@ layout: event_detail
 title: FAQ Feedback
 event: berlin2016
 order: 195
-permalink: /events/berlin2016/FAQfeedback
+permalink: /events/berlin2016/FAQfeedback/
 ---
 
 Please add questions you would like to see answered in the following FAQs!
 
-=============
 FAQ QUESTIONS
 =============
-Instructions: Add questions and/or answers in markdown! Questions are headers and can be nested (use "#"). Answers can be listed below.
-
-# Top level category
 
 ## What are reproducible builds?
-   -> Link to definition?
-   https://pad.riseup.net/p/reproduciblebuildsII-reprobuildsdefinitionII
+ *  -> Link to definition?
+ *  https://pad.riseup.net/p/reproduciblebuildsII-reprobuildsdefinitionII
 
 ## Why should I care?
-   -> Give one example for each persona (user, dev/packager, non-technical ppl) and link to [buy-in](/docs/buy-in/) for details.
-   -> Integrate info from https://pad.riseup.net/p/reproduciblebuildsII-usecases
+ *  -> Give one example for each persona (user, dev/packager, non-technical ppl) and link to [buy-in](/docs/buy-in/) for details.
+ *  -> Integrate info from [Use cases]({{ "/events/berlin2016/usecases/" | prepend: site.baseurl }}) session
 
 ## Is there any reproducible distribution that I can use today?
-Sadly we are not there yet, but multiple distributions are putting a lot of effort to reach that goal.
+
+* Sadly we are not there yet, but multiple distributions are putting a lot of effort to reach that goal.
 
 ## What is the current status of reproducible builds?
 
+* [answer missing]
 
 # I am interested in making my software reproducible - FAQ
 
 ## When did the reproducible builds project start?
+
 Some of the earliest public work on reproducible builds started in [Bitcoin (2011)](https://gitian.org/) and [TorBrowser (2013) ](https://blog.torproject.org/blog/deterministic-builds-part-one-cyberwar-and-global-compromise).
 
 ## How do I make my software reproducible?
+
 Check that your software is reproducible (see [#check]), then look at the differences and modify your build to avoid this difference. A number of general guidelines are available in the "Get deterministic builds" section of [the documentation](/docs/).
 
 ## Is it possible?
-Yes it is possible and actually rather simple by following some best practices. see (tips & helps in https://reproducible-builds.org/docs/) 
 
-## How do I check that my software is reproducible? #check
+Yes it is possible and actually rather simple by following some best practices. see (tips & helps in [https://reproducible-builds.org/docs/](https://reproducible-builds.org/docs/)) 
+
+## How do I check that my software is reproducible?
 
 Build your software once. Add a variation to the build environment which should not influence the output, for example by moving it to another path and create a second build. Then compare the resulting binaries using the [@diffoscope@](/tools/) tool. Make sure there are no differences. See the [test bench documentation](/docs/test-bench/) for a number of parameters that can be varied.
 
@@ -52,10 +53,10 @@ During the build, many different programs might be executed, for example compile
 
 #### For a C program
 
- * Avoid __FILE___.
- * Avoid __DATE__, __TIME__, and __TIMESTAMP__ (you can also disable them using the flag -D in gcc/clang).
+ * Avoid `__FILE___`.
+ * Avoid `__DATE__`, `__TIME__`, and `__TIMESTAMP__` (you can also disable them using the flag -D in gcc/clang).
  * Do not read uninitialized memory (msan, asan) /!\ not in openssl /!\ (if your tool is part of a toolchain)
- * Ensure to not rely on readdir() order (if your tool is part of a toolchain) - e.g. similar to how find | cpio -o needs a sort in the middle
+ * Ensure to not rely on readdir() order (if your tool is part of a toolchain) - e.g. similar to how `find | cpio -o needs` a sort in the middle
 
 #### For a Python program
 
@@ -69,7 +70,9 @@ During the build, many different programs might be executed, for example compile
   * elc files
 
 ## How do I make compression tools produce reproducible output?
+
 ### gzip
+
  * use "gzip -n"
  * `ziptime` resets timestamps in ZIP files to 2008-01-01, meant for Android APKs
  
@@ -114,7 +117,7 @@ Most multi-threaded software provides non predictable output which results in no
 # Common concerns about reproducible builds
 
 ## When I debug I'd like to see the full path of the sources my binary was built from
- (Why? maybe for editing source files before compiling and testing again)
+ * (Why? maybe for editing source files before compiling and testing again)
  * SOURCE_MAP_... PATH/PREFIX? is optional?
 
 ## I really need to know where and when the binary used by users has been built
@@ -130,14 +133,14 @@ How to get involved?
 * how can I sponsor the effort?
 
 
-===============
 OTHER QUESTIONS
 ===============
+
 Instructions: Please add answers to the below questions
 
 # What are the benefits of reproducible builds?
 
-* see also https://pad.riseup.net/p/reproduciblebuildsII-usecases or rather the refined outcome from it
+* see also [Use cases]({{ "/events/berlin2016/usecases/" | prepend: site.baseurl }}) session or rather the refined outcome from it
 
 
 # What are yet unsolved problems in reproducible builds?
@@ -145,17 +148,18 @@ Instructions: Please add answers to the below questions
 
 
 
-======================
 UNSORTED FAQ QUESTIONS
 ======================
+
 Instructions: If you have a question you'd like to see in a Reproducible FAQ, but don't know where to add it, please write the question here.
 
 
 
 set up website mirror on github:
-    * create account on github for automatic pushes from alioth
-    * setup post-receive hook to push to github mirror
-      * include username/password of auto-push account
-    * push to https://github.com/reproducible-builds/website
-    * https://www.chiliproject.org/projects/chiliproject/wiki/howto_mirror_your_git_repository_on_github
+
+ * create account on github for automatic pushes from alioth
+ * setup post-receive hook to push to github mirror
+   * include username/password of auto-push account
+ * push to https://github.com/reproducible-builds/website
+ * https://www.chiliproject.org/projects/chiliproject/wiki/howto_mirror_your_git_repository_on_github
 
