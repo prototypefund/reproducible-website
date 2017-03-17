@@ -64,7 +64,7 @@ Day 2
      -   **[Reproducible images]({{ "/events/berlin2016/images/" | prepend: site.baseurl }})**
      -   **[Defining Reproducible Builds I]({{ "/events/berlin2016/reproduciblebuildsdefinition/" | prepend: site.baseurl }})**
      -   **[User policies]({{ "/events/berlin2016/userpolicies/" | prepend: site.baseurl }})**
-     -   **Test infrastructure https://pad.riseup.net/p/reproduciblebuildsII-testinfrastructure**
+     -   **[Test infrastructure]({{ "/events/berlin2016/testinfrastructure/" | prepend: site.baseurl }})**
      -   **Gettext https://pad.riseup.net/p/reproduciblebuildsII-Gettext**
 
 *    11.45 Break
