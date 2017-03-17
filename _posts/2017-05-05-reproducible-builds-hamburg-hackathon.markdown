@@ -5,7 +5,7 @@ date:   2017-05-05 13:37:42
 categories: org
 ---
 
-The Reproducible Builds Hamburg Hackathon 2017 is a 3 day hacking event happening from May 5 to May 7 2017 in northern Germany in the CCC Hamburg Hackerspace which is located inside an collective art space located in a historical monument.
+The [Reproducible Builds Hamburg Hackathon 2017](https://wiki.debian.org/ReproducibleBuilds/HamburgHackathon2017) is a 3 day hacking event happening from May 5 to May 7 2017 in northern Germany in the CCC Hamburg Hackerspace which is located inside an collective art space located in a historical monument.
 
 The aims of the meeting are:
 
