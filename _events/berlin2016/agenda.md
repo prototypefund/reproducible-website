@@ -129,7 +129,7 @@ Day 3
      -   **[Bootstrapping II]({{ "/events/berlin2016/bootstrappingII/" | prepend: site.baseurl }})**
      -   **[Documentation III]({{ "/events/berlin2016/documentationIII/" | prepend: site.baseurl }})**
      -   **[Binary Transparency II]({{ "/events/berlin2016/binarytransparencyII/" | prepend: site.baseurl }})**
-     -   **State of Reproducible Builds https://pad.riseup.net/p/reproduciblebuildsII-stateofreproduciblebuilds**
+     -   **[State of Reproducible Builds]({{ "/events/berlin2016/stateofreproduciblebuilds/" | prepend: site.baseurl }})**
 
 *    11:50 Break
 *    12:05 Reporting session outcomes
