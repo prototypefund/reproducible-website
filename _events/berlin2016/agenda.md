@@ -81,7 +81,7 @@ Day 2
      -   **How to use emacs**
      -   **How to run a start-up**
      -   **How to apply for funding from CII**
-     -   **How to improve cross-distro packaging https://maintainer.zq1.de**
+     -   **How to improve cross-distro packaging [https://maintainer.zq1.de](https://maintainer.zq1.de)**
      -   **How (not) to use iframes on awesome webpages *reproducible-bla.org**
      -   **How to sign code in git (and correctly verify the signatures)**
      -   **Ask me anything about building on OSX**

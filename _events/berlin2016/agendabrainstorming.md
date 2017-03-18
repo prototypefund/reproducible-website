@@ -129,7 +129,8 @@ SKILL SHARE
  - What variables are (surprising) variables affecting builds? (3)
  - Find argument for/against different ways how pkgs built
  - Find the best way of making various packages reproducible
- - https://maintainer.zq1.de/
+ - [https://maintainer.zq1.de/](https://maintainer.zq1.de/)
+
 
 LEGAL AND LAW
 

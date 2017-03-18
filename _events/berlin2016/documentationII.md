@@ -43,12 +43,12 @@ distro / project-specific pages!
   * find a list of contacts for these projects and propose them to add information to the website or to send a link to their documentation,
   *  also ask them to add a contact for RB who people can talk to
 
-  * Debian:  https://lists.reproducible-builds.org/listinfo/rb-general, #debian-reproducible @ OFTC
+  * Debian:  [https://lists.reproducible-builds.org/listinfo/rb-general](https://lists.reproducible-builds.org/listinfo/rb-general), IRC: #debian-reproducible @ OFTC
   * ArchLinux
   * Baserock
   * Bitcoin
   * Coreboot: ask lynxis
-  * ElectroBSD: https://archive.fosdem.org/2016/schedule/event/electrobsd/
+  * ElectroBSD: [https://archive.fosdem.org/2016/schedule/event/electrobsd/](https://archive.fosdem.org/2016/schedule/event/electrobsd/)
   * F-Droid
   * FreeBSD: -> email alias or ML to be provided (reproducibility@FreeBSD.org)
   * Fedora
@@ -103,7 +103,7 @@ Get involved page
 -----------------
  * A "Get involved" page should be created
  * it should link to Currently Unresolved Issues
- * see https://wiki.debian.org/ReproducibleBuilds/Contribute for an out-of-date list of stuff we had before
+ * see [https://wiki.debian.org/ReproducibleBuilds/Contribute](https://wiki.debian.org/ReproducibleBuilds/Contribute) for an out-of-date list of stuff we had before
 
 FAQ
 ---
@@ -143,15 +143,15 @@ How to get involved?
 
 Talks
 -----
- * http://www.bsdcan.org/2016/schedule/events/714.en.html
- * https://archive.fosdem.org/2016/schedule/event/reproducible_freebsd_packages/
- * https://osem.seagl.org/conference/seagl2016/program/proposal/166
- * OpenWrt/LEDE: video: https://www.youtube.com/watch?v=Y1D706JCISw, slides: https://people.debian.org/~holger/2016-10-13-OpenWrt-Summit.pdf
- * DebConf16: https://debconf16.debconf.org/talks/7/
- * LibrePlanet: https://media.libreplanet.org/u/libreplanet/collection/beyond-reproducable-builds/
+ * [http://www.bsdcan.org/2016/schedule/events/714.en.html](http://www.bsdcan.org/2016/schedule/events/714.en.html)
+ * [https://archive.fosdem.org/2016/schedule/event/reproducible_freebsd_packages/](https://archive.fosdem.org/2016/schedule/event/reproducible_freebsd_packages/)
+ * [https://osem.seagl.org/conference/seagl2016/program/proposal/166](https://osem.seagl.org/conference/seagl2016/program/proposal/166)
+ * OpenWrt/LEDE: video: [https://www.youtube.com/watch?v=Y1D706JCISw](https://www.youtube.com/watch?v=Y1D706JCISw), slides: [https://people.debian.org/~holger/2016-10-13-OpenWrt-Summit.pdf](https://people.debian.org/~holger/2016-10-13-OpenWrt-Summit.pdf)
+ * DebConf16: [https://debconf16.debconf.org/talks/7/](https://debconf16.debconf.org/talks/7/)
+ * LibrePlanet: [https://media.libreplanet.org/u/libreplanet/collection/beyond-reproducable-builds/](https://media.libreplanet.org/u/libreplanet/collection/beyond-reproducable-builds/)
 
 
-tools
+Tools
 ------
 * where to find the tools
 

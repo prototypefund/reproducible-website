@@ -37,7 +37,7 @@ r-b-general seems to be OK - but needs to be more widely advertised.
 
  * Docs are going to include a "Get Involved" page aimed at distro folks.  This needs to be part of that.
 
-Problem that all the current r-b infrastructure is hosted on Debian.  In order to get involved, you need to know Debian process: what channels to use, how to file bugs.  It's a barrier to entry.  Documentation could also help with this - although that still leaves a perceptual barrier to entry.  Something Forge-like would be more friendly - Something that consolidates all the work in a single place.  Fedora used to have FedoraHosted; now it has https://pagure.io/.
+Problem that all the current r-b infrastructure is hosted on Debian.  In order to get involved, you need to know Debian process: what channels to use, how to file bugs.  It's a barrier to entry.  Documentation could also help with this - although that still leaves a perceptual barrier to entry.  Something Forge-like would be more friendly - Something that consolidates all the work in a single place.  Fedora used to have FedoraHosted; now it has [https://pagure.io/](https://pagure.io/).
 
 Some discussion about the usability of bugs.debian.org - Submitting bugs is too hard.
 
@@ -60,7 +60,7 @@ Can share the buildinfo database.  e.g., generalize buildinfo.debian.net.  This 
 ## Cross-distro patch tracking
 
 issues-and-notes.yaml - Stored in a Git repository that lists distro-specific issues
-https://maintainer.zq1.de - Bernhard's site that shows the version of a package in each distro, with links to source repos and patch trackers (todo: bug-trackers?)
+[https://maintainer.zq1.de](https://maintainer.zq1.de) - Bernhard's site that shows the version of a package in each distro, with links to source repos and patch trackers (todo: bug-trackers?)
 
 Unrelated cross-distro MLs
 [https://lists.linaro.org/mailman/listinfo/cross-distro](https://lists.linaro.org/mailman/listinfo/cross-distro) ARM-specific?

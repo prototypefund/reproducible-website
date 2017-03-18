@@ -37,7 +37,7 @@ permalink: /events/berlin2016/bootstrapping/
 
 * NixOS
     * Java is bootstrapped with a custom maintainer build of the JDK
-    * Haskell: chain of three different builds to get to the latest version: https://github.com/NixOS/nixpkgs/issues/19926
+    * Haskell: chain of three different builds to get to the latest version: [https://github.com/NixOS/nixpkgs/issues/19926](https://github.com/NixOS/nixpkgs/issues/19926)
 
 * Guix
     * Java is bootstrapped from GCJ -> IcedTea 6 –> IcedTea7 –> IcedTea8
@@ -59,26 +59,25 @@ permalink: /events/berlin2016/bootstrapping/
   * Rather than depend on more binary blobs, throw more CPU time at it, e.g. by emulating an x86 CPU with qemu and then work from there.
   * Need to reach out to compiler developers: make sure that there’s a non-self-hosted path to build the first compiler — find cooperative people in compiler projects to “bootstrap” a bootstrapping project
   * try to depend only on the smallest C compiler possible
-    * e.g. [[http://www.landley.net/code/tinycc/][tinycc]], [[http://pcc.ludd.ltu.se/][pcc]], [[http://www.landley.net/qcc/][qcc]]
+    * e.g. [tinycc](http://www.landley.net/code/tinycc/), [pcc](http://pcc.ludd.ltu.se/), [qcc](http://www.landley.net/qcc/)
     * coreboot folks have a simple C compiler RAMCC(?)
-  * register http://bootstrappable.org, collect stories there!
+  * register [http://bootstrappable.org](http://bootstrappable.org), collect stories there!
 *** motivation: collect examples of backdoored compilers
-    * toy example: https://manishearth.github.io/blog/2016/12/02/reflections-on-rusting-trust/
-    * ken thompson: reflections on trusting trust
-    * "Defending Against Compiler-Based Backdoors"
-http://blog.regehr.org/archives/1241
-    * PoC||GTFO
-https://www.alchemistowl.org/pocorgtfo/pocorgtfo08.pdf
-
+    * toy example: [https://manishearth.github.io/blog/2016/12/02/reflections-on-rusting-trust/](https://manishearth.github.io/blog/2016/12/02/reflections-on-rusting-trust/)
+    * Ken Thompson: reflections on trusting trust
+    * "Defending Against Compiler-Based Backdoors" [http://blog.regehr.org/archives/1241](http://blog.regehr.org/archives/1241)
+    * PoC/GTFO [https://www.alchemistowl.org/pocorgtfo/pocorgtfo08.pdf](ttps://www.alchemistowl.org/pocorgtfo/pocorgtfo08.pdf)
     * TODO: need more!
-*** Examples
- - e.g. the bootstrap chain for GCC –> GCJ –> IcedTea 6 –> IcedTea7 in Guix
- - GNU Make doesn’t need make but just a bash script
- - Cook
- - Guile Scheme: includes an interpreter written in C.
- - Bazel needs Bazel to build itself, *but* you can build a minimal variant of Bazel with a shell script that runs =javac= on all Java sources, etc
+
+* Examples
+  - e.g. the bootstrap chain for GCC –> GCJ –> IcedTea 6 –> IcedTea7 in Guix
+  - GNU Make doesn’t need make but just a bash script
+  - Cook
+  - Guile Scheme: includes an interpreter written in C.
+  - Bazel needs Bazel to build itself, *but* you can build a minimal variant of Bazel with a shell script that runs =javac= on all Java sources, etc
     * Ant, needs itself but can be build with plain Java
-*** best practises
+
+* best practises
     * don’t throw old code away (to allow for a bootstrapping chain)
     * have an alternative implementation backend (e.g. written in C or in a language that traces back to C eventually) — simplifies porting
 *** Call for Action!
@@ -137,14 +136,13 @@ If your compiler is written in the language that it's compiling
 If other implementations of this programming language exist, please make
 sure your compiler can be built with one of these.  Examples include:
 
-  - The Go programming language has two implementations: [[https://golang.org/][the reference
-    implementation]] is self-hosted, and that in [[https://gcc.gnu.org][GCC]] is written in C++.
+  - The Go programming language has two implementations: [the reference implementation](https://golang.org/) is self-hosted, and that in [GCC](https://gcc.gnu.org) is written in C++.
     (TODO: check if we can build one with the other)  Furthermore,
     version 1.4 of the reference implementation was written in a
     different language and can be used to build version 1.5.
-  - Common Lisp has several implementations.  Notably [[http://www.clisp.org/][GNU clisp]] is
+  - Common Lisp has several implementations.  Notably [GNU Clisp](http://www.clisp.org/) is
     written and C and can be used to build self-hosted implementations
-    such as [[http://www.sbcl.org/][SBCL]].
+    such as [SBCL](http://www.sbcl.org/).
 
 If your compiler targets a language for which no other implementation
 exists, then please consider maintaining a (minimal) implementation of
@@ -157,9 +155,7 @@ simple—it does not need to be optimized.
 
 Examples include:
 
-  - [[https://gnu.org/software/guile][GNU Guile]], a Scheme implementation with a self-hosted compiler,
-    relies on an [[http://git.savannah.gnu.org/cgit/guile.git/tree/libguile/eval.c][Scheme interpreter written in C]] for bootstrapping
-    purposes.
+  - [GNU Guile](https://gnu.org/software/guile), a Scheme implementation with a self-hosted compiler, relies on an [Scheme interpreter written in C](http://git.savannah.gnu.org/cgit/guile.git/tree/libguile/eval.c) for bootstrapping purposes.
 
 Please let us know if you’d like to add your compiler to this list!
 
@@ -172,14 +168,10 @@ provide an alternative way to build your build system.
 
 Examples include:
 
-  - [[https://gnu.org/software/make][GNU Make]] does not require a ‘make’ implementation.  It can be built
-    using a [[http://git.savannah.gnu.org/cgit/make.git/tree/build.template][shell script]].
-  - [[http://ant.apache.org/][Apache Ant]] can bootstrap with a [[https://git-wip-us.apache.org/repos/asf?p=ant.git;a=blob;f=bootstrap.sh;h=60b6ece03ce78716bc036a44226f4934b541f326;hb=HEAD][shell script]]
-    that only relies on the Java compiler.
-  - [[https://bazel.build/][Bazel]] does not require Bazel to build itself but
-    can be boostrapped with a [[https://github.com/bazelbuild/bazel/blob/master/compile.sh][shell script]].
-  - [[https://buckbuild.com/][Buck]] does not require Buck to build itself.  Instead, it can be
-    built using [[https://github.com/facebook/buck/blob/master/build.xml][Ant]].
+  - [GNU Make](https://gnu.org/software/make) does not require a ‘make’ implementation.  It can be built using a [shell script](http://git.savannah.gnu.org/cgit/make.git/tree/build.template).
+  - [Apache Ant](http://ant.apache.org/) can bootstrap with a [shell script](https://git-wip-us.apache.org/repos/asf?p=ant.git;a=blob;f=bootstrap.sh;h=60b6ece03ce78716bc036a44226f4934b541f326;hb=HEAD) that only relies on the Java compiler.
+  - [Bazel](https://bazel.build/) does not require Bazel to build itself but     can be boostrapped with a [shell script](https://github.com/bazelbuild/bazel/blob/master/compile.sh).
+  - [Buck](https://buckbuild.com/) does not require Buck to build itself.  Instead, it can be built using [Ant](https://github.com/facebook/buck/blob/master/build.xml).
 
 Build system, compared to compiler, do not need to write a full
 language compiler of its language to bootstrap. A really slow and
@@ -221,7 +213,7 @@ https://upstream-compiler.example.org/upstream-compiler-20161211-x86_64-linux.ta
 TODO: provide an example of how we do this / are going to do this in
 Nixpkgs / Guix / ...?
 
-http://git.savannah.gnu.org/cgit/guix.git/commit/?id=062134985802d85066418f6ee2f327122166a567
+[http://git.savannah.gnu.org/cgit/guix.git/commit/?id=062134985802d85066418f6ee2f327122166a567](http://git.savannah.gnu.org/cgit/guix.git/commit/?id=062134985802d85066418f6ee2f327122166a567)
 
 * Collaboration projects
 
@@ -255,11 +247,7 @@ implementations?
 
   * For users
 
-As a user, bootstrappable implementations, together with [[https://reproducible-builds.org][reproducible
-builds]], provide confidence that you are running the code you expect to
-be running.  Its source code is auditable by the developer community,
-which in turns provides reassurance that the code you’re running does
-not have backdoors.
+As a user, bootstrappable implementations, together with [https://reproducible-builds.org](https://reproducible-builds.org) provide confidence that you are running the code you expect to be running.  Its source code is auditable by the developer community, which in turns provides reassurance that the code you’re running does not have backdoors.
 
   * For distributors
 
@@ -280,4 +268,3 @@ binaries exist yet.
 Try building gcc using gcc-4.7 <-- this already works (we used GCC 4.7 some months ago in Guix, but updated later for unrelated reasons)
 Try building GCC 4.7 with TinyCC
 
--

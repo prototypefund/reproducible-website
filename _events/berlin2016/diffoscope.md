@@ -26,7 +26,7 @@ permalink: /events/berlin2016/diffoscope/
 - We should have a hack session on parallel diffoscope.
 
 ### Marketing/Docs/Undebianization
-- https://try.diffoscope.org should be more well-known; it helpfully has a number of optional stuff for uncommon formats installed already.
+- [https://try.diffoscope.org](https://try.diffoscope.org) should be more well-known; it helpfully has a number of optional stuff for uncommon formats installed already.
 - Get the word out for non-reproducibility use cases like comparing across versions for updates or due diligence before deployment.
 - The bug tracking happens at the Debian bugtracker. That should be more visible. The website should have a "how to report bugs" section for people not familiar with the Debian bug tracker.
 
