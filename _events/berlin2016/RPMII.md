@@ -38,7 +38,7 @@ for var in LANG LC_ALL SOURCE_DATE_EPOCH ; do
   eval value=\$$var
   [ -n "$value" ] && echo " $var=\"$value\""
 done
-# whitelist in dpkg: https://anonscm.debian.org/git/dpkg/dpkg.git/tree/scripts/Dpkg/Build/Info.pm#n50
+# whitelist in dpkg: [https://anonscm.debian.org/git/dpkg/dpkg.git/tree/scripts/Dpkg/Build/Info.pm#n50](https://anonscm.debian.org/git/dpkg/dpkg.git/tree/scripts/Dpkg/Build/Info.pm#n50)
 
 function getos
 {
@@ -67,10 +67,11 @@ Architecture: $(rpm -q --queryformat '%{arch}' -p "$srcrpm")
 </pre>
 
 ### other:
+[https://anonscm.debian.org/git/dpkg/dpkg.git/tree/scripts/Dpkg/Checksums.pm](https://anonscm.debian.org/git/dpkg/dpkg.git/tree/scripts/Dpkg/Checksums.pm)
+
 <pre>
 Checksum-*: ... sha256sum $rpm $specfile $srcrpm # and rpm size # omit MD5+SHA1 because nobody should use that anymore
 size=$(stat -c '%s' $rpm)
-# https://anonscm.debian.org/git/dpkg/dpkg.git/tree/scripts/Dpkg/Checksums.pm
 
 Build-Path: $(rpm --eval '%{_builddir}')
 </pre>

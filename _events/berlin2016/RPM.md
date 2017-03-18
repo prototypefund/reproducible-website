@@ -7,7 +7,7 @@ permalink: /events/berlin2016/RPM/
 ---
 
 ### brainstorming notes:
-- Open build service ( http://openbuildservice.org/ ) that runs various configuration for RPM. Vary environment / ... easy.
+- Open build service ( [http://openbuildservice.org/](http://openbuildservice.org/) ) that runs various configuration for RPM. Vary environment / ... easy.
 - Build service sign the binaries that get published to the mirror infrastructure
 - Discussion point: signatures, you can copy signatures to on the newly built package to obtain the same package.
 - OpenSUSE might still have MD5 in some places, Fedora has switched to SHA-256.

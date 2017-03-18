@@ -13,7 +13,7 @@ FAQ QUESTIONS
 
 ## What are reproducible builds?
  *  -> Link to definition?
- *  https://pad.riseup.net/p/reproduciblebuildsII-reprobuildsdefinitionII
+ *  see [Defining Reproducible Builds definition II]({{ "/events/berlin2016/reproduciblebuildsdefinitionII/" | prepend: site.baseurl }}) session
 
 ## Why should I care?
  *  -> Give one example for each persona (user, dev/packager, non-technical ppl) and link to [buy-in](/docs/buy-in/) for details.
@@ -93,21 +93,22 @@ Most multi-threaded software provides non predictable output which results in no
 
 # I'm a developer of a distribution and would like to make my distribution reproducible. - FAQ
 * sign up for the the mailing list:
-    * https://lists.reproducible-builds.org/listinfo/rb-general
+    * [https://lists.reproducible-builds.org/listinfo/rb-general](https://lists.reproducible-builds.org/listinfo/rb-general)
+
 * talk to us on irc:
     irc.oftc.net #reproducible-builds
 * link to documentation:
-    * https://reproducible-builds.org/docs/
+    * [https://reproducible-builds.org/docs/](https://reproducible-builds.org/docs/)
 * link to tools:
-    * https://reproducible-builds.org/tools/
+    * [https://reproducible-builds.org/tools/](https://reproducible-builds.org/tools/)
     ** update to be non-debian-specific links
 * documented known issues, bugs, etc. (currently very debian, plans to generalize for cross-distro)
-    * https://anonscm.debian.org/cgit/reproducible/notes.git/
+    * [https://anonscm.debian.org/cgit/reproducible/notes.git](https://anonscm.debian.org/cgit/reproducible/notes.git)
 
 
 # I'm interested in creating a build farm that tests the reproducibility of my distribution/project - FAQ
 * how to best run the tests (parallelized?)
-  * example of some imperfect helper scripts https://github.com/bmwiedemann/reproducibleopensuse
+  * example of some imperfect helper scripts [https://github.com/bmwiedemann/reproducibleopensuse](https://github.com/bmwiedemann/reproducibleopensuse)
 * where to report results, in what format?
 * how frequent should tests be?
 * Which parts of the build environment should be varied between builds?
@@ -160,6 +161,6 @@ set up website mirror on github:
  * create account on github for automatic pushes from alioth
  * setup post-receive hook to push to github mirror
    * include username/password of auto-push account
- * push to https://github.com/reproducible-builds/website
- * https://www.chiliproject.org/projects/chiliproject/wiki/howto_mirror_your_git_repository_on_github
+ * push to [https://github.com/reproducible-builds/website](https://github.com/reproducible-builds/website)
+ * [https://www.chiliproject.org/projects/chiliproject/wiki/howto_mirror_your_git_repository_on_github](https://www.chiliproject.org/projects/chiliproject/wiki/howto_mirror_your_git_repository_on_github)
 
