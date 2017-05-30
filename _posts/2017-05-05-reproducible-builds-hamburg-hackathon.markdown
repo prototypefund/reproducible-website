@@ -15,4 +15,4 @@ The aims of the meeting are:
 
 This meeting is open for any interested on working on Reproducible Builds issues in any distro or project. We're looking forward to hack together with *you*!
 
-We covered a summary of what we did at the meeting in [issue 107 of our weekly news](https://reproducible.alioth.debian.org/blog/posts/107/).
+_Post hackathon update_: we covered a summary of what we did at the meeting in [issue 107 of our weekly news](https://reproducible.alioth.debian.org/blog/posts/107/).
