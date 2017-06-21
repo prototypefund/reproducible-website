@@ -142,3 +142,6 @@
     url: https://wiki.yoctoproject.org/wiki/Reproducible_Builds
   - name: Mailing list
     url: https://lists.yoctoproject.org/listinfo/yocto
+- name: OpenEmbedded
+  url: https://www.openembedded.org/wiki/Main_Page
+  logo: oe-logo.png
