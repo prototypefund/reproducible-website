@@ -100,6 +100,9 @@
   resources:
   - name: "PR#2281: deterministic build"
     url: https://github.com/NixOS/nixpkgs/pull/2281
+- name: OpenEmbedded
+  url: https://www.openembedded.org/wiki/Main_Page
+  logo: oe-logo.png
 - name: openSUSE
   url: https://opensuse.org/
   logo: openSUSE.png
@@ -142,6 +145,3 @@
     url: https://wiki.yoctoproject.org/wiki/Reproducible_Builds
   - name: Mailing list
     url: https://lists.yoctoproject.org/listinfo/yocto
-- name: OpenEmbedded
-  url: https://www.openembedded.org/wiki/Main_Page
-  logo: oe-logo.png
