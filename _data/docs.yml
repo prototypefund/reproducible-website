@@ -18,6 +18,7 @@
   - stable-outputs
   - randomness
   - build-path
+  - system-images
 - title: Define a build environment
   docs:
   - perimeter
