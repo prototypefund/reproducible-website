@@ -104,7 +104,7 @@
   url: https://www.openembedded.org/wiki/Main_Page
   logo: oe-logo.png
 - name: openSUSE
-  url: https://opensuse.org/
+  url: https://www.opensuse.org/
   logo: openSUSE.png
   resources:
   - name: Presentation at openSUSEconf 2016
