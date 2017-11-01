@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/normalize.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/skeleton.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/normalize.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}">
+    <link rel="stylesheet" href="{{ "/css/skeleton.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}">
 
 </head>
