@@ -58,7 +58,8 @@ Regular tests are required to make sure that the software can be built
 reproducibly in various environments. Debian and other free software
 distributions require that their users must be able to build the
 software they distribute. Such regular tests help in avoiding *fail to
-build from source* bugs.
+build from source* bugs and can uncover rare build problems such as
+timing problems, race conditions, or builds affected by locale.
 
 Build environments may evolve after a project is no longer receiving
 major developments. While working on Debian, several high impact but
@@ -79,6 +80,33 @@ Reproducible builds also enable the recreation of matching [debug
 symbols](https://en.wikipedia.org/wiki/Debugging_data_format) for a
 distributed build which can help understanding issues in software used
 in production.
+
+Smaller Binary Differences
+--------------------------
+Having reproducible builds means that only changes in source code or
+build environment (such as the compiler version) will lead to
+differences in the generated binaries. This minimizes the changes in
+artifacts which reduces storage requirements and network traffic for
+delta updates.
+
+With similar artifacts, testing can focus on parts that changed while
+still preserving confidence about unchanged code. This can speed up
+quality assurance and development speed.
+
+Changes to the build system can be tested easily with reproducible
+builds: If the output artifacts are identical, the changes will not
+affect runtime behavior.
+
+Increased Development Speed
+---------------------------
+Dependent packages do not need to be rebuilt and dependent tasks do not
+need to be rerun if a rebuild of a package does not yield different
+results. This can significantly reduce build times and lead to faster
+development speeds and lower cost.
+
+Build speeds can also be improved by showing that cross-compilation
+produces the same result as native compilation and then doing the
+mojority of builds with cross-compilation on faster machines.
 
 “But how can I trust my compiler?”
 ----------------------------------

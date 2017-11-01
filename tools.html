@@ -2,13 +2,15 @@
 layout: page
 title: Tools
 permalink: /tools/
+order: 3
 ---
 <div class="row">
   <div class="four columns">&nbsp;</div>
   <div class="eight columns text">
     <p>
       Several tools are available to make your life easier when working on
-      <em>reproducible builds</em>:
+      <em>reproducible builds</em>.
+      <a href="http://reproducible.alioth.debian.org/releases/">Signed tarballs are available</a>.
     </p>
   </div>
 </div>
@@ -27,6 +29,25 @@ permalink: /tools/
     <p>
       See an <a href="https://diffoscope.org/examples/igerman98_20131206-5.txt">example text output</a>.
     </p>
+    <p>
+      diffoscope is also <a href="https://pypi.python.org/pypi/diffoscope">available on PyPI</a>.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="four columns title">
+    <h2>trydiffoscope</h2>
+  </div>
+  <div class="eight columns text">
+    <p>
+      If you wish to just experiment with
+      <a href="https://diffoscope.org/">diffoscope</a> without installing a large
+      number of run-time dependencies, you can use the
+      <a href="https://try.diffoscope.org/">try.diffoscope.org</a> service directly
+      from your web browser. A lightweight command-line client is also
+      <a href="https://packages.debian.org/sid/diffoscope">available in Debian</a> and
+      <a href="https://pypi.python.org/pypi/trydiffoscope">on PyPI</a>.
+    </p>
   </div>
 </div>
 <div class="row">
@@ -38,9 +59,9 @@ permalink: /tools/
       Problems with <a href="/docs/stable-inputs/">unstable order of inputs</a>
       or other variations introduced by filesystems can sometimes be hard to track down.
       <a href="https://packages.debian.org/sid/disorderfs">disorderfs</a> is
-      <strong>an overlay FUSE filesystem that introduces non-determinism into
-      filesystem metadata</strong>. For example, it can randomize the order in
-      which directory entries are read.
+      <strong>an overlay FUSE filesystem that deliberately introduces
+      non-determinism into filesystem metadata</strong>. For example, it can
+      randomize the order in which directory entries are read.
     </p>
   </div>
 </div>

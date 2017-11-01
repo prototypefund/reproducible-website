@@ -17,4 +17,4 @@ Whilst the exact content of the meeting will be shaped by the participants, the 
 
 Logs and minutes will be published after the meeting.
 
-Please [reach out](https://reproducible-builds.org/events/berlin2016) if you'd like to participate in hopefully interesting, inspiring and intense technical sessions about reproducible builds and beyond!
+Please [reach out]({{ "/events/berlin2016" | prepend: site.baseurl }}) if you'd like to participate in hopefully interesting, inspiring and intense technical sessions about reproducible builds and beyond!

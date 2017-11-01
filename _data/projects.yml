@@ -92,14 +92,19 @@
   resources:
   - name: Continuous tests
     url: https://tests.reproducible-builds.org/netbsd/
+  - name: Notes on Reproducible Builds of NetBSD
+    url: https://blog.netbsd.org/tnf/entry/netbsd_fully_reproducible_builds
 - name: NixOS
   url: https://nixos.org/
   logo: nixos.png
   resources:
   - name: "PR#2281: deterministic build"
     url: https://github.com/NixOS/nixpkgs/pull/2281
+- name: OpenEmbedded
+  url: https://www.openembedded.org/wiki/Main_Page
+  logo: oe-logo.png
 - name: openSUSE
-  url: https://opensuse.org/
+  url: https://www.opensuse.org/
   logo: openSUSE.png
   resources:
   - name: Presentation at openSUSEconf 2016
@@ -132,3 +137,11 @@
   resources:
   - name: Introducing Reproducible Builds
     url: https://www.youtube.com/watch?v=FaBFbkBhnXI
+- name: Yocto Project
+  url: https://www.yoctoproject.org/
+  logo: yocto-project.png
+  resources:
+  - name: Reproducible builds overview
+    url: https://wiki.yoctoproject.org/wiki/Reproducible_Builds
+  - name: Mailing list
+    url: https://lists.yoctoproject.org/listinfo/yocto
