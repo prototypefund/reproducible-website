@@ -4,6 +4,9 @@
   - buy-in
   - plans
   - test-bench
+- title: Specifications
+  docs:
+  - source-date-epoch
 - title: Achieve deterministic builds
   docs:
   - deterministic-build-systems
