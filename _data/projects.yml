@@ -57,7 +57,7 @@
   - name: Continuous tests
     url: https://tests.reproducible-builds.org/freebsd/
   - name: Mailing list
-    url: mailto:reproducibility@freebdsd.org
+    url: mailto:reproducibility@freebsd.org
 - name: Fedora
   url: https://fedoraproject.org/wiki/Fedora_Project_Wiki
   logo: fedora.png
