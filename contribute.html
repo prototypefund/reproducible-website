@@ -1,0 +1,398 @@
+---
+layout: page
+title: Contribute
+permalink: /contribute/
+order: 4
+---
+
+<div class="row">
+  <div class="four columns title">
+    <h2>Stay in touch</h2>
+  </div>
+  <div class="eight columns">
+    <p>
+      First, please join the <a href="https://lists.reproducible-builds.org/listinfo/rb-general">rb-general general mailing-list</a>.
+    </p>
+    <p>
+      IRC discussions happen in the <code>#reproducible-builds</code> channel on <a href="https://www.oftc.net/">irc.oftc.net</a>.
+    </p>
+    <ul>
+     <li>Subscribe to the <a href="https://lists.alioth.debian.org/mailman/listinfo/reproducible-builds">reproducible-builds@lists.alioth.debian.org mailing list</a> and/or other <a href="https://lists.reproducible-builds.org/">reproducible builds</a> oriented lists.</li>
+     <li>Join the <a href="https://webchat.oftc.net/?channels=#reproducible-builds">#reproducible-builds IRC channel on OFTC</a> and possibly <a href="https://webchat.oftc.net/?channels=#debian-reproducible">#debian-reproducible</a> too.</li>
+     <li>You can also subscribe to <a href="https://lists.alioth.debian.org/mailman/listinfo/reproducible-commits">commit notifications</a>.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="four columns title">
+    <h2>Task suggestions</h2>
+  </div>
+  <div class="eight columns">
+    <ol>
+       <li>
+        If you maintain a package for Debian, you can make sure that your
+        package uses a <a
+        href="http://anonscm.debian.org/cgit/debhelper/debhelper.git/tree/dh#n77">modern
+        debhelper style</a> (e.g. one-liner <code>debian/rules</code> with
+        overrides as needed).  We aim to fix many causes of non-deterministic
+        builds in the debhelper suite directly, so packages that use debhelper
+        will be much easier to make reproducible with just an upgrade of the
+        toolchain.
+       </li>
+       <li><a href="#Inventorying_issues">Inventory issues</a> found by the continuous integration platform.</li>
+       <li><a href="#Fixing_issues">Fix known reproducibility issues</a>. See the <a href="https://reproducible.debian.net/index_issues.html">inventory of identified issues</a>.</li>
+       <li>Improve our common tools: DebianPts:diffoscope, DebianPts:strip-nondeterminism, DebianPts:disorderfs.</li>
+       <li>Redesign <a href="https://reproducible.debian.net/">reproducible.debian.net</a> status pages using a CSS toolkit like Bootstrap.</li>
+       <li>Enhance DebianPts:dak <a href="Bug:763822">support for .buildinfo</a>.</li>
+       <li>Research how to run rebuilds on ''buildd''s.</li>
+       <li>Research on how change dak to only accept packages after multiple matching builds.</li>
+       <li>Hack binNMU infrastructure (dak?) so .dsc for binNMUs are kept in the archive instead of being thrown away.</li>
+       <li>We need a <a href="ReproducibleBuilds/Logo">logo</a>! Please send suggestions and/or proposals to the mailing list.</li>
+    </ol>
+
+    <p>
+      To get help, feel free to ask on the IRC channel or the mailing list. We
+      want to be friendly, supportive, and have fun experimenting together.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="four columns title">
+    <h2>How to report bugs in Debian</h2>
+  </div>
+  <div class="eight columns">
+    <p>
+      <a href="http://bugs.debian.org/cgi-bin/pkgreport.cgi?usertag=reproducible-builds@lists.alioth.debian.org">Overview of all bug reports concerning reproducible builds</a>
+    </p>
+
+    <p>
+      All bugs relevant to the reproducible builds project should use <a href="https://bugs.debian.org/usertags">usertags</a> with user <code>reproducible-builds@lists.alioth.debian.org</code>. Also use <code>X-Debbugs-Cc</code> to notify the list, but please use our <code>reproducible-bugs@lists.alioth.debian.org</code> list for this header.
+    </p>
+
+    <p>
+      To usertag a bug after it has been submitted use:
+    </p>
+
+    <pre>
+      bts user reproducible-builds@lists.alioth.debian.org . usertag XXXXXX + timestamps toolchain
+    </pre>
+
+    <p>Current usertags in use:</p>
+
+    <dl>
+      <dt>toolchain</dt>
+      <dd>affects a tool used by other package build systems</dd>
+
+      <dt>infrastructure</dt>
+      <dd>affects the whole Debian infrastructure or policies</dd>
+
+      <dt>timestamps</dt>
+      <dd>time of build in recorded during the build process</dd>
+
+      <dt>fileordering</dt>
+      <dd>build output varies with readdir() order</dd>
+
+      <dt>buildpath</dt>
+      <dd>path of sources is recorded during the build process</dd>
+
+      <dt>username</dt>
+      <dd>username is recorded during the build process</dd>
+
+      <dt>hostname</dt>
+      <dd>hostname is recorded during the build process</dd>
+
+      <dt>uname</dt>
+      <dd>uname output is recorded during the build process</dd>
+
+      <dt>environment</dt>
+      <dd>environment variables are recorded during the build process</dd>
+
+      <dt>randomness</dt>
+      <dd>some build aspects are dependent on (pseudo-)randomness</dd>
+
+      <dt>cpu</dt>
+      <dd>some build aspects are dependent on CPU features or computation speed</dd>
+
+      <dt>signatures</dt>
+      <dd>uses a cryptographic signatures as part of the build process</dd>
+
+      <dt>umask</dt>
+      <dd>permissions depend on current umask</dd>
+
+      <dt>buildinfo</dt>
+      <dd>issues related to .buildinfo control files</dd>
+
+      <dt>ftbfs</dt>
+      <dd>fails to build from source</dd>
+
+      <dt>locale</dt>
+      <dd>varying locales lead to differing behavior (e.g. sorting)</dd>
+    </dl>
+
+    <h3>
+      Example email to submit a patch:
+    </h3>
+
+    <pre>
+From: J. Random Hacker &lt;jrhacker@example.org&gt;
+To: submit@bugs.debian.org
+Subject: <PACKAGE>: please make the build reproducible (timestamps, fileordering)
+
+Source: <PACKAGE>
+Version: <VERSION>
+Severity: wishlist
+Tags: patch
+User: reproducible-builds@lists.alioth.debian.org
+Usertags: timestamps fileordering
+X-Debbugs-Cc: reproducible-bugs@lists.alioth.debian.org
+
+Hi!
+
+While working on the “reproducible builds” effort [1], we have noticed
+that <PACKAGE> could not be built reproducibly.
+
+The attached patch removes extra timestamps from the build system and
+ensure a stable file order when creating the source archive. Once applied,
+<PACKAGE> can be built reproducibly in our current experimental framework.
+
+ [1]: https://wiki.debian.org/ReproducibleBuilds
+    </pre>
+  </div>
+</div>
+
+<div class="row">
+  <div class="four columns title">
+    <h2 id="Inventorying_issues">Inventorying issues</h2>
+  </div>
+  <div class="eight columns">
+    <p>
+      The easiest way to find issues is to examine the list of <a
+      href="https://reproducible.debian.net/index_FTBR.html">packages failing
+      to build reproducibly</a> as found by continuous integration. The first
+      packages in the list are the one who have been tried most recently.
+    </p>
+    <p>
+      Notes about packages are kept in the <a
+      href="https://anonscm.debian.org/cgit/reproducible/notes.git">notes</a>
+      Git repository in <code>packages.yml</code>.  The list of <a
+      href="https://reproducible.debian.net/index_issues.html">known common
+      issues</a> is kept in the <code>issues.yml</code> file.
+    </p>
+    <p>
+      The page for a given package should open on the DebianPts:diffoscope
+      output. Read the list of known issues to get an idea of what you may
+      found. Here are some more advices:
+    </p>
+
+    <ul>
+      <li>
+        When a binary has mismatching mtimes for files in
+        <code>control.tar.gz</code>, it means that they are <a
+        href="https://reproducible.debian.net/issues/not_using_dh_builddeb_issue.html">not
+        adjusted before creating the binary package</a>.
+      </li>
+      <li>
+        <a href="https://reproducible.debian.net/issues/timestamps_in_gzip_headers_issue.html">Timestamps in gzip headers</a> are a no-brainer.
+      </li>
+      <li>
+        When there's a mismatching ''Build ID'' in an executable, it means a
+        variation happens during the compilation. Investigation can be done
+        using <a href="https://sources.debian.org/">sources.debian.org</a> (see
+        link at the top).
+      </li>
+      <li>
+        First step should be a search for the
+        <a href="https://reproducible.debian.net/issues/timestamps_from_cpp_macros_issue.html">__DATE__, __TIME__ or __TIMESTAMP__</a>
+        using <a href="https://codesearch.debian.net/">codesearch</a>.
+        Otherwise, try to locate calls to <code>date</code> in <code>configure.ac</code>,
+        <code>Makefile.am</code>, etc.
+    </p>
+    <p>
+      The <a
+      href="https://anonscm.debian.org/cgit/reproducible/misc.git/tree/clean-notes">clean-notes</a>
+      script in the <code>misc</code> repository will detect outdated notes and
+      re-order packages by alphabetical order. It should be run before
+      committing changes to the <code>notes</code> repository.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="four columns title">
+    <h2 id="Fixing_issues">Fixing issues</h2>
+  </div>
+  <div class="eight columns">
+    <p>
+      Fixing reproducibility issues falls into two categories: either the
+      problem is specific to a single package or the cause is the output of
+      another package (then referenced as “toolchain” package).
+    </p>
+
+    <h3>Fixing a single package</h3>
+
+    <p>
+      The usual steps are:
+    </p>
+
+    <ol>
+      <li>
+        Use <code>debcheckout</code> or <code>apt-get source</code> to retrieve the source code.
+      </li>
+      <li>
+        Do the changes. With packages using the <code>3.0 (quilt)</code>
+        format, <code>dpkg-source --commit</code> can be useful.
+      </li>
+      <li>
+        Update <code>debian/changelog</code>. New version is usually original
+        version with <code>.0~reproducible1</code>.
+      </li>
+      <li>
+        Use <code>dpkg-buildpackage -S</code> to create source package.
+      </li>
+      <li>
+        Use the <a
+        href="ReproducibleBuilds/ExperimentalToolchain#Usage_example">prebuilder</a>
+        script to test reproducibility. If the package is not reproducible,
+        examine DebianPts:diffoscope output
+        <code>logs/PACKAGE.diffoscope.html</code> or compare build logs
+        <code>logs/PACKAGE.build1</code> and <code>logs/PACKAGE.build2</code>,
+        then repeat from step 2 unless the issue comes from another package. In
+        that case, see about “toolchain” packages below.
+      </li>
+      <li>
+        Use <code>debdiff</code> or <code>git format-patch</code> to create
+        patches.
+      </li>
+      <li>
+        <a href="ReproducibleBuilds/Contribute#How_to_report_bugs">Create a new
+        bug report</a>, and don't forget to attach the patch!
+      </li>
+      <li>
+        Add an entry or reference the bug in <code>packages.yml</code> in
+        <code>notes.git</code>.
+      </li>
+    </ol>
+
+    <h3>Fixing a toolchain package</h3>
+
+    <p>
+      Fixing an issue in a package that affects the reproducibility of other
+      packages requires some more steps, but the general process is the same:
+    </p>
+
+    <ol>
+      <li>
+        Use <code>debcheckout</code> or <code>apt-get source</code> to retrieve
+        the source code.
+      </li>
+      <li>
+        Do the changes. With packages using the <code>3.0 (quilt)</code>
+        format, <code>dpkg-source --commit</code> can be useful.
+      </li>
+      <li>
+        Update <code>debian/changelog</code>. New version is usually original
+        version with <code>.0~reproducible1</code>.
+      </li>
+      <li>
+        Use <code>pdebuild</code> or <code>gbp buildpackage</code> to build the
+        package.
+      </li>
+      <li>
+        Backup <code>base-reproducible.tgz</code>.
+      </li>
+      <li>
+        Use <code>pbuilder --login --save-after-exec --basetgz
+        base-reproducible.tgz</code> to install the newly built package.
+      </li>
+      <li>
+        Test a package affected with <code>prebuilder</code>. If the issue is
+        still not fixed, repeat from step 2.
+      </li>
+      <li>
+        If the package is in Git, use SSH to login on <a
+        href="https://alioth.debian.org/projects/reproducible/">alioth.debian.org</a>.
+        Go to <code>/git/reproducible</code>. Use
+        <code>./setup-repository</code> to create a new repository. Push your
+        changes to a (rebasable) <code>pu/reproducible_builds</code> branch.
+      </li>
+      <li>
+        Subscribe to the <code>upload-source</code> notification for the
+        package on the <a href="https://packages.qa.debian.org/">Package
+        Tracking System</a>. This is needed so you don't forget to update the
+        custom package when a new version hits the archive.
+      </li>
+      <li>
+        <a
+        href="https://wiki.debian.org/ReproducibleBuilds/ExperimentalToolchain#Adding_a_package_to_the_APT_archive">Upload</a>
+        the package to the reproducible APT repository.
+      </li>
+      <li>
+        Document the changes on the <a
+        href="https://wiki.debian.org/ReproducibleBuilds/ExperimentalToolchain#Modified_packages">wiki</a>.
+      </li>
+      <li>
+        Reference the bug in <code>issues.yml</code> in <code>notes.git</code>
+        and on the wiki page about the issue if there's one.
+      </li>
+      <li>
+        Everybody in the reproducible builds team can schedule source packages
+        to be rebuilt by running the script <code>reschedule.sh</code> in
+        <code>/srv/home/groups/reproducible/</code> on alioth. If you are not
+        part of the team you can find somebody in the #debian-reproducible IRC
+        channel.
+      </li>
+      <li>
+        If the changes don't break anything,  <a
+        href="https://wiki.debian.org/ReproducibleBuilds/Contribute#How_to_report_bugs">create
+        a new bug report</a>. Don't forget to attach patches and to use the
+        <code>toolchain</code> usertag.
+      </li>
+    </ol>
+  </div>
+</div>
+
+<div class="row">
+  <div class="four columns title">
+    <h2>Continuous integration platform</h2>
+  </div>
+  <div class="eight columns">
+    <p>
+      Several jobs have been created to regularly test packages (from sid main) on <a href="https://jenkins.debian.net">jenkins.debian.net</a>. As a result there is the <a href="https://reproducible.debian.net">reproducible build overview of packages</a>.
+    </p>
+    <p>
+      The setup is explained in <a href="http://layer-acht.org/thinking/blog/20140925-reproducible-builds/">this blog post</a> only, but this post is somewhat outdated by now and needs to be amended.
+    </p>
+    <p>
+      See the various <code>reproducible_*</code> scripts in the <a href="http://anonscm.debian.org/cgit/qa/jenkins.debian.net.git/tree/bin/">Jenkins Git repository</a>.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="four columns title">
+    <h2>Working on installation media or live systems</h2>
+  </div>
+  <div class="eight columns">
+    <p>
+      Having installation and live systems which can be built reproducibly would also be great. There is an <code>analyze_image</code> bash script that creates sha512 hashes of all files included within an image, access rights, symlinks, partition table, bootloader and more. Doing this with two images that should match and comparing the reports the script creates can help to identify sources of non-determinism in images.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="four columns title">
+    <h2>External links</h2>
+  </div>
+  <div class="eight columns">
+    <ul>
+      <li><a href="https://wiki.debian.org/ReproducibleBuilds/ReproducibleInstalls">Reproducible installs</a></li>
+      <li><a href="http://lists.alioth.debian.org/pipermail/reproducible-builds/Week-of-Mon-20131209/000009.html">Announcing Whonix's First Implementation of Verifiable Builds</a></li>
+      <li><a href="https://www.whonix.org/wiki/Verifiable_Builds">Whonix Verifiable Builds</a></li>
+      <li><a href="https://github.com/adrelanos/Whonix/blob/master/help-steps/analyze_image">analyze_image bash script</a>: Does not have iso support yet. The author (Patrick Schleizer) is interested to generalize the script for more generic, Debian use cases.</li>
+      <li><a href="https://tails.boum.org/blueprint/reproducible_builds/">Tails reproducible builds blueprint</a></li>
+      <li><a href="https://github.com/lamby/debootstrap/commits/pu/source-date-epoch">reproducible debootstrap</a></li>
+    </ul>
+  </div>
+</div>
