@@ -252,10 +252,8 @@ ensure a stable file order when creating the source archive. Once applied,
         Use <code>dpkg-buildpackage -S</code> to create source package.
       </li>
       <li>
-        Use the <a
-        href="ReproducibleBuilds/ExperimentalToolchain#Usage_example">prebuilder</a>
-        script to test reproducibility. If the package is not reproducible,
-        examine DebianPts:diffoscope output
+        Use <a href="/tools/">reprotest</a> to test reproducibility. If the
+        package is not reproducible, examine the diffoscope output
         <code>logs/PACKAGE.diffoscope.html</code> or compare build logs
         <code>logs/PACKAGE.build1</code> and <code>logs/PACKAGE.build2</code>,
         then repeat from step 2 unless the issue comes from another package. In
@@ -307,7 +305,7 @@ ensure a stable file order when creating the source archive. Once applied,
         base-reproducible.tgz</code> to install the newly built package.
       </li>
       <li>
-        Test a package affected with <code>prebuilder</code>. If the issue is
+        Test a package affected with <code>reprotest</code>. If the issue is
         still not fixed, repeat from step 2.
       </li>
       <li>
