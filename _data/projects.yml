@@ -115,6 +115,14 @@
   resources:
   - name: Continuous tests
     url: https://tests.reproducible-builds.org/openwrt/
+- name: Qubes OS
+  url: https://www.qubes-os.org/
+  logo: qubes.png
+  resources:
+  - name: GitHub Issue
+    url: https://github.com/QubesOS/qubes-issues/issues/816
+  - name: Mailing lists
+    url: https://www.qubes-os.org/mailing-lists/
 - name: Tails
   url: https://tails.boum.org/
   logo: tails.png
