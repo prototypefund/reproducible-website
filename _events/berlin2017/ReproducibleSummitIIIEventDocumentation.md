@@ -1975,8 +1975,30 @@ not as part of the installation process
 ==== {{anchor|RefHeadingToc4112118152727}} Mapping out archive formats ====
 
 
-
-[[Image:]]
+| | | tar | zip | cpio | git | casync | ostree | squashfs | ar (text) | iso |
+|--|--|--|--|--|--|--|--|--|--|--|
+| | has canonical packed form (e.g. no implicit traversal order) | not by default | yes (not sure how stable) | yes | N/A | | | | | 
+| | Can be canonicalized (with enough flags) | yes (with arbitrary choices | | | | | | | no | |
+| | seekable | no | yes | | sorta (packs: no, and don't ask) | catar | | | yes | |
+| | sparse files (kernel API is very recent) | yes | | | | long story (will store zeros efficiently and…) | | yes | no | |
+| abilities: | mmap'able | yes, but not useful due to no seek | | | | catar is | | | | |
+| abilities: | unpack related trees can conserve disk space | no | no | | no | hardlink or reflinks | hardlink | | no | |
+| abilities: | pack related tree can dedup | no | no | | yes (it's complicated) | rabin blocking (very good) | file-scale (no chunking) | | | |
+| abilities: | SPECIAL applications | popular for src releases | | | source | | | | | |
+| | dev (maj/min) | yes | | yes | no | yes | | yes | | |
+| | fifo | yes | | | no | yes | | | no | |
+| | sockets | yes | | | no | yes | | | no | |
+| | posix &0111 bits (\|x) | yes | yes | yes | yes | yes | | yes | yes | |
+| | posix &0777 (rwx) | yes | yes | yes | no | yes | | yes | yes | |
+| | mtime (any? nano? 1sec? 2sec?) mtime ZONEs? | 1s (unix) *gz may add another | 2s (timezones) * per file compression may have another | 1s | no | yes | | 1s | 1s | |
+| | xattr | yes | not | no (patches floating) | not | yes | | yes | no | |
+| | arbitrarily long filenames | yes, but three or more encoding variations | | | yes | yes (to linux's max…dissent) | | | no | |
+| metadata: | symlinks | yes | yes (extension) | | yes | yes | | | no | |
+| metadata: | hardlinks | yes (but weird) | | | not | no (maybe someday) | | | no | |
+| metadata: | uid/gid (int) | yes (BOTH‽) | yes (extension) | | yes | yes | | yes | yes | |
+| metadata: | user/group name | yes (BOTH‽) | yes (extension) | | not | yes | | not | not | |
+| metadata: | suid bit | yes | yes (extension) | | not | yes | | | yes | |
+| metadata: | expanded file size | | | | | yes | | | | |
 
 ==== {{anchor|RefHeadingToc4114118152727}} Building a system image from existing binaries ====
 
