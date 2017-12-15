@@ -1,0 +1,366 @@
+<html><head></head>
+  <body>
+<table border="1" class="docutils">
+<colgroup>
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"></th>
+<th class="head"></th>
+<th class="head">tar</th>
+<th class="head">zip</th>
+<th class="head">cpio</th>
+<th class="head">git</th>
+<th class="head">casync</th>
+<th class="head">ostree</th>
+<th class="head">squashfs</th>
+<th class="head">ar (text)</th>
+<th class="head">iso</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td></td>
+<td>has canonical
+packed form
+(e.g. no
+implicit
+traversal
+order)</td>
+<td>not by
+default!</td>
+<td>yes (not
+sure how
+stable)</td>
+<td>yes</td>
+<td>N/A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td>Can be
+canonicalized
+(with enough
+flags)</td>
+<td>yes (with
+some
+arbitrary
+choices)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>no</td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td>seekable</td>
+<td>no</td>
+<td>yes</td>
+<td></td>
+<td>sorta
+(packs: no,
+and don't
+ask)</td>
+<td>catar</td>
+<td></td>
+<td></td>
+<td>yes</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td>sparse files
+(kernel API
+is very
+recent)</td>
+<td>yes</td>
+<td></td>
+<td></td>
+<td></td>
+<td>long story
+(will store
+zeros
+efficiently
+and...)</td>
+<td></td>
+<td>yes</td>
+<td>no</td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="4">abilities</td>
+<td>mmap'able</td>
+<td>yes, but
+not
+useful
+due to no
+seek</td>
+<td></td>
+<td></td>
+<td></td>
+<td>catar is</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td>unpack
+related trees
+can conserve
+disk space</td>
+<td>no</td>
+<td>no</td>
+<td></td>
+<td>no</td>
+<td>hardlink or
+reflinks</td>
+<td>hardlink</td>
+<td></td>
+<td>no</td>
+<td></td>
+</tr>
+<tr class="row-even"><td>pack related
+tree can
+dedup</td>
+<td>no</td>
+<td>no</td>
+<td></td>
+<td>yes (it's
+complicated)</td>
+<td>rabin
+blocking
+(very good)</td>
+<td>file-scale
+(no
+chunking)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td>SPECIAL
+applications</td>
+<td>popular
+for src
+releases</td>
+<td></td>
+<td></td>
+<td>source</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td>dev (maj/min)</td>
+<td>yes</td>
+<td></td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td></td>
+<td>yes</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td>fifo</td>
+<td>yes</td>
+<td></td>
+<td></td>
+<td>no</td>
+<td>yes</td>
+<td></td>
+<td></td>
+<td>no</td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td>sockets</td>
+<td>yes</td>
+<td></td>
+<td></td>
+<td>no</td>
+<td>yes</td>
+<td></td>
+<td></td>
+<td>no</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td>posix &amp;0111
+bits (+x)</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td></td>
+<td>yes</td>
+<td>yes</td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td>posix &amp;0777
+bits (rwx)</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td></td>
+<td>yes</td>
+<td>yes</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td>mtime (any?
+nano? 1sec?
+2sec?) mtime
+ZONEs?</td>
+<td>1s (unix)
+* gz may
+add
+another</td>
+<td>2s
+(timezones)
+* per file
+compression
+may have
+another</td>
+<td>1s</td>
+<td>not</td>
+<td>yes</td>
+<td></td>
+<td>1s</td>
+<td>1s</td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td>xattr</td>
+<td>yes</td>
+<td>not</td>
+<td>no
+(patches
+floating)</td>
+<td>not</td>
+<td>yes</td>
+<td></td>
+<td>yes</td>
+<td>no</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td>arbitrarily
+long
+filenames</td>
+<td>yes, but
+three or
+more
+encoding
+variations</td>
+<td></td>
+<td></td>
+<td>yes</td>
+<td>yes (to
+linux's
+max...dissent)</td>
+<td></td>
+<td></td>
+<td>no</td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="6">metadata</td>
+<td>symlinks</td>
+<td>yes</td>
+<td>yes
+(extension)</td>
+<td></td>
+<td>yes</td>
+<td>yes</td>
+<td></td>
+<td></td>
+<td>no</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td>hardlinks</td>
+<td>yes (but
+weird)</td>
+<td></td>
+<td></td>
+<td>not</td>
+<td>no (maybe
+someday)</td>
+<td></td>
+<td></td>
+<td>no</td>
+<td></td>
+</tr>
+<tr class="row-even"><td>uid/gid (int)</td>
+<td>yes
+(BOTH!?)</td>
+<td>yes
+(extension)</td>
+<td></td>
+<td>yes</td>
+<td>yes</td>
+<td></td>
+<td>yes</td>
+<td>yes</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td>user/group
+name</td>
+<td>yes
+(BOTH!?)</td>
+<td>yes
+(extension)</td>
+<td></td>
+<td>not</td>
+<td>yes</td>
+<td></td>
+<td>not</td>
+<td>not</td>
+<td></td>
+</tr>
+<tr class="row-even"><td>suid bit</td>
+<td>yes</td>
+<td>yes
+(extension)</td>
+<td></td>
+<td>not</td>
+<td>yes</td>
+<td></td>
+<td></td>
+<td>yes</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td>expanded file
+size</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>yes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+  </body>
+  </html>
