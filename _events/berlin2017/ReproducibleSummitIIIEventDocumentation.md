@@ -2,17 +2,16 @@
 layout: event_detail
 title: Reproducible Summit III event documentation
 event: berlin2017
-order: 1000
+order: 05
 permalink: /events/berlin2017/ReproducibleSummitIIIEventDocumentation/
 ---
 
+*Berlin, Germany. October 31 – November 2, 2017*
 
+Event documentation
+-------------------
 
-'''Reproducible Builds Summit III'''
-
-'''Berlin, Germany. October 31 – November 2, 2017'''
-
-'''Event Documentation'''
+[agenda]({{ "/events/berlin2017/agenda/" | prepend: site.baseurl }})**
 
 [[#RefHeadingToc57621733262122|Session Notes]]
 
