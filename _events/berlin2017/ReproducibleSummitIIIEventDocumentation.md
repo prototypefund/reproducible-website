@@ -93,8 +93,7 @@ Event documentation
 
 :::[[#RefHeadingToc4152118152727|Discussing current status and potential improvements in regards to .buildinfo files for rpm and iso]]
 
-:::[[#RefHeadingToc4154118152727|Brainstorming the reproducible builds logo design]]
-
+[Brainstorming the reproducible builds logo design]({{ "/events/berlin2017/logodesign/" | prepend: site.baseurl }})**
 
 
 = {{anchor|RefHeadingToc57621733262122}} Session Notes =
@@ -3900,75 +3899,6 @@ The iso contains of:
 
 means -> .buildinfo must contains all 3 sets
 
-
-==== {{anchor|RefHeadingToc4154118152727}} Brainstorming the reproducible builds logo design ====
-
-
-
-Transcription of notes on poster
-
-
-Style guide
-
-Font ?!
-
-Stickers
-
-tshirt (Hoodie)
-
-Logo "urgent" for 34C3
-
-CSS, styleguide not so urgent
-
-CSS
-
-fav ico
-
-color palette, r-b.o vs tests.r-b.o
-
-Logo on webpage
-
-
-
-
-(un)reproducible Logo/Icon
-
-0% - partial - 100% (differents logos for grades of reproducibility)
-
-black background
-
-Dec 1st 2017, "nice to have"
-
-free license
-
-good logo more important than 34c3
-
-
-
-
-timely feedback
-
-Budget for tshirts
-
-Budget for Logo
-
-Announce steps via email, include announcement for IRC 30min meeting 3 days later
-
-3 step process:
-
-- First ideas
-
-- Changes/Choice
-
-- Final
-
-1st Step:
-
-3-4 choices
-
-1 list of deliverables
-
-Reviews by Open Design Community too
 
 
 
