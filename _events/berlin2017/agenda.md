@@ -3,7 +3,7 @@ layout: event_detail
 title: Agenda
 event: berlin2017
 order: 10
-permalink: /events/berlin2017/agenda
+permalink: /events/berlin2017/agenda/
 ---
 
 
