@@ -32,12 +32,12 @@ Transcription of notes on poster
 * Announce steps via email, include announcement for IRC 30min meeting 3 days later
 
 * 3 step process:
- - First ideas
- - Changes/Choice
- - Final
+    - First ideas
+    - Changes/Choice
+    - Final
 
 * 1st Step:
- - 3-4 choices
- - 1 list of deliverables
- - Reviews by Open Design Community too
+    - 3-4 choices
+    - 1 list of deliverables
+    - Reviews by Open Design Community too
 
