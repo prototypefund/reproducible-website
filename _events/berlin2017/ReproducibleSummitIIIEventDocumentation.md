@@ -11,11 +11,11 @@ permalink: /events/berlin2017/ReproducibleSummitIIIEventDocumentation/
 Event documentation
 -------------------
 
-[agenda]({{ "/events/berlin2017/agenda/" | prepend: site.baseurl }})**
+[Agenda]({{ "/events/berlin2017/agenda/" | prepend: site.baseurl }})
 
 Session Notes - Day 1
 
-[agenda brainstorming]({{ "/events/berlin2017/agendabrainstorming/" | prepend: site.baseurl }})**
+[Agenda brainstorming]({{ "/events/berlin2017/agendabrainstorming/" | prepend: site.baseurl }})
 
 ::[[#RefHeadingToc4080118152727|Working sessions I]]
 
@@ -91,7 +91,7 @@ Session Notes - Day 1
 
 :::[[#RefHeadingToc4152118152727|Discussing current status and potential improvements in regards to .buildinfo files for rpm and iso]]
 
-[Brainstorming the reproducible builds logo design]({{ "/events/berlin2017/logodesign/" | prepend: site.baseurl }})**
+[Brainstorming the reproducible builds logo design]({{ "/events/berlin2017/logodesign/" | prepend: site.baseurl }})
 
 
 = {{anchor|RefHeadingToc57621733262122}} Session Notes =
