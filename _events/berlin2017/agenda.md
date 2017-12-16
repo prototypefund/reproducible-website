@@ -32,7 +32,7 @@ Participants gathered in small groups. The talking points suggested for their di
 11:00 Break
 
 
-11:15 Agenda brainstorming (Session notes start on p<span style="background-color:transparent;">age </span><span style="background-color:transparent;">10</span><span style="background-color:transparent;">)</span>
+11:15 [agenda brainstorming]({{ "/events/berlin2017/agendabrainstorming/" | prepend: site.baseurl }})**
 
 Participants generated a list of topics and questions that they wanted to discuss at the meeting. The result of the brainstorming was then taken into account to identify the working sessions that had emerged as the most compelling for those in attendance.
 
