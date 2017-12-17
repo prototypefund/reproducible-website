@@ -9,15 +9,11 @@ permalink: /events/berlin2017/agenda/
 
 = Agenda =
 
-
-
 Day 1 – Tuesday, October 31
-
 
 9:45 Opening session (No notes taken in this session)
 
 The Summit started with participant introductions, a welcome message from the event co-organizers, and an overview of the meeting agenda.
-
 
 10:10 Sharing knowledge about reproducible builds (No notes taken in this session)
 
@@ -25,22 +21,16 @@ Participants gathered in small groups. The talking points suggested for their di
 * Ask Me Anything: Ask any question you have about repoducible builds
 * How do you think reproducible builds are already working well today, and where do you see that there is still work to be done?
 
-
-
-
-
 11:00 Break
-
 
 11:15 [Agenda brainstorming]({{ "/events/berlin2017/agendabrainstorming/" | prepend: site.baseurl }})
 
 Participants generated a list of topics and questions that they wanted to discuss at the meeting. The result of the brainstorming was then taken into account to identify the working sessions that had emerged as the most compelling for those in attendance.
 
-
 12:45 Lunch
 
-
-13:45 Working sessions I (Session notes start on page 17)* Reviewing existing reproducible builds tools – Chris
+13:45 Working sessions I
+*[Reviewing existing reproducible builds tools]({{ "/events/berlin2017/existingtools/" | prepend: site.baseurl }}) – Chris
 * Discussing the current status of .buildinfo files – Mattia
 * What is the ecosystem around rpm? – Bernhard
 * End user tools: What does exist, what is still needed – dkg
