@@ -11,6 +11,8 @@ permalink: /events/berlin2017/ReproducibleSummitIIIEventDocumentation/
 Event documentation
 -------------------
 
+<b>This is work in progress: currently this very document still contains notes, which shall all be moved to seperate pages at which point this URL will vanish and everything will be accessable via the [Agenda]({{ "/events/berlin2017/agenda/" | prepend: site.baseurl }}).</b>
+
 [Agenda]({{ "/events/berlin2017/agenda/" | prepend: site.baseurl }})
 
 Session Notes - Day 1
@@ -19,8 +21,9 @@ Session Notes - Day 1
 
 Working sessions I
 
-[Agenda brainstorming]({{ "/events/berlin2017/agendabrainstorming/" | prepend: site.baseurl }})
-[Reviewing existing reproducible builds tools]({{ "/events/berlin2017/existingtools/" | prepend: site.baseurl }})
+* [Agenda brainstorming]({{ "/events/berlin2017/agendabrainstorming/" | prepend: site.baseurl }})
+* [Reviewing existing reproducible builds tools]({{ "/events/berlin2017/existingtools/" | prepend: site.baseurl }})
+* [Discussing the current status of .buildinfo files]({{ "/events/berlin2017/statusbuildinfofiles/" | prepend: site.baseurl }})
 
 :::[[#RefHeadingToc4084118152727|Discussing the current status of .buildinfo files]]
 
