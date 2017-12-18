@@ -32,16 +32,14 @@ Participants generated a list of topics and questions that they wanted to discus
 * [Reviewing existing reproducible builds tools]({{ "/events/berlin2017/existingtools/" | prepend: site.baseurl }}) – Chris
 * [Discussing the current status of .buildinfo files]({{ "/events/berlin2017/statusbuildinfofiles/" | prepend: site.baseurl }}) – Mattia
 * [What is the ecosystem around rpm?]({{ "/events/berlin2017/ecosystemrpm/" | prepend: site.baseurl }}) – Bernhard
-* End user tools: What does exist, what is still needed – dkg
-
-
-
-
+* [End user tools: What does exist, what is still needed]({{ "/events/berlin2017/usertools/" | prepend: site.baseurl }}) – dkg
 
 15:05 Break
 
 
-15: 25 Working sessions II (Session notes start on page 27)* How to fix the current issues with BUILD_PATH_PREFIX_MAP? – Ximin
+15: 25 Working sessions II 
+
+* How to fix the current issues with BUILD_PATH_PREFIX_MAP? – Ximin
 * How bootstrapping relates to reproducible builds and how to improve it – Ricardo
 * What documentation is still to be created for developers who are new to reproducible builds? – Holger
 

@@ -24,8 +24,7 @@ Working sessions I
 * [Reviewing existing reproducible builds tools]({{ "/events/berlin2017/existingtools/" | prepend: site.baseurl }})
 * [Discussing the current status of .buildinfo files]({{ "/events/berlin2017/statusbuildinfofiles/" | prepend: site.baseurl }})
 * [What is the ecosystem around rpm?]({{ "/events/berlin2017/ecosystemrpm/" | prepend: site.baseurl }})
-
-:::[[#RefHeadingToc4088118152727|End user tools: What does exist, what is still needed]]
+* [End user tools: What does exist, what is still needed]({{ "/events/berlin2017/usertools/" | prepend: site.baseurl }})
 
 Working sessions II
 
@@ -97,96 +96,7 @@ Working sessions VII
 = Session Notes =
 == Day 1 ==
 === Working sessions I ===
-
-
-==== {{anchor|RefHeadingToc4088118152727}} End user tools: What does exist, what is still needed ====
-
-
-
-which users are we talking about?
-
-- people who are installing software
-
-- admins who maintain systems for users
-
-
-user stories are good
-
-- scientific users: if you want to write reproducible papers, you must use reproducible software.
-
-- doctors (and lawyers) are faced with the mandate to encrypt user data. with r-b they can have more confidence the software is untampered with.
-
-- developers who want a trustworthy base to develop software on.
-
-- verify software build or installed on systems one is not allowed to touch. useful for admins to support (external or internal) users.
-
-- users who want confirmation they run free software!
-
-- users who want confirmation they run the software they intend to run
-
-
-the apt-hook (exist)
-
-gnome software center (doesnt exist)
-
-
-what might the user want to know, what problem they want solve?
-
-
-is it helpful to show that a software is unreproducible to the user? is that meaningful information?
-
-
-the user wants to set a policy on their device: only reproducible software. they dont care much about individiual unreproducible software…
-
-
-there will be different policies: (incomplete list)
-
-- only install reproducible software which all rebuilders agreed on
-
-- fine if one rebuilder disagrees
-
-- fine if two rebuilder disagrees
-
-- rebuild locally in case of conflict
-
-- always rebuild locally
-
-- i only want reproducible software with the exception of my wifi driver and i need flash in the webbrowser - and i love that 3d tetris game too
-
-
-it should be possible to upgrade to a stricter policy.
-
-
-could be opt-in, people who are not interested in reproducible builds (who have not opted in) should never be informed that/if software is unreproducible.
-
-because cavevat:
-
-- warning fatigue. too many warnings can scare users away.
-
-
-users dont care about reproducbility, its a technical detail. they care that they run the "right" software.
-
-
-denial of service by malicious rebuilder
-
-
-unrelated
-
-<nowiki>---------</nowiki>
-
-we need rebuilder howtos
-
-
-outcome
-
-<nowiki>-------</nowiki>
-
-another session to enumerate possible policies
-
-another session to write user stories
-
-=== {{anchor|RefHeadingToc4090118152727}} Working sessions II ===
-
+=== Working sessions II ===
 
 
 ==== {{anchor|RefHeadingToc4092118152727}} How to fix the current issues with BUILD_PATH_PREFIX_MAP? ====
@@ -237,11 +147,11 @@ of them.
 
 We had some brief discussion around the similarity of the BUILD_PATH_PREFIX_MAP proposal with SOURCE_DATE_EPOCH:
 
-<nowiki>* they're both environment variables</nowiki>
+* they're both environment variables
 
-<nowiki>* they both have clearly established semantics of how we want build systems to transform/stabilize certain forms of ephemeral data</nowiki>
+* they both have clearly established semantics of how we want build systems to transform/stabilize certain forms of ephemeral data
 
-<nowiki>* in many situations, the goal is for the build system to not need either env var, because the ephemeral data in question simply isn't a part of the build process at all.</nowiki>
+* in many situations, the goal is for the build system to not need either env var, because the ephemeral data in question simply isn't a part of the build process at all.
 
 
 We currently have patches oustanding for gcc and golang. We don't think that anyone has even asked clang for support yet.
@@ -317,7 +227,7 @@ Vagrant proposes putting literal string '$VARNAME' as argument for
 Followup discussions/hacking proposed:
 
 
-<nowiki>* investigate what netbsd is doing.</nowiki>
+* investigate what netbsd is doing.
 
 ==== {{anchor|RefHeadingToc4094118152727}} How bootstrapping relates to reproducible builds and how to improve it ====
 
@@ -338,7 +248,7 @@ Why should we care?
 We need to trust binaries used during build. If build binaries are not trustworthy, this makes build results less trustworthy.
 
 
-<nowiki>#If we have a exe at the top and a lib it depends on, do we call the exe reproducible even if the lib is not reproducible?</nowiki>
+#If we have a exe at the top and a lib it depends on, do we call the exe reproducible even if the lib is not reproducible?
 
 
 is trust binary / black&white? no...
@@ -440,7 +350,7 @@ more to be discussed
 
 newbee docs
 
-<nowiki>===========</nowiki>
+===========
 
 
 - entrypoint of https://r-b.org good.
@@ -539,7 +449,7 @@ Grovy 2.0 depends on gradle 1.0, which depends on groovy 1.8.4 which has a maven
 
 Problem with java projects which have tests which depend on the parent project. --> dependency cycles
 
-<nowiki>-----------</nowiki>
+-----------
 
 
 Javadoc --> produces unreproducable output based on filesystem order
@@ -645,7 +555,7 @@ Partial dependecy graph of a ghc bootstrap path, early boostsrapping information
 One idea to consolidate the approach in the link was proposed, is to use nhc98 to build a 32 version of ghc, then crosscompile ghc to x86_64.
 
 
-<nowiki>----- Transcription of the poster</nowiki>
+----- Transcription of the poster
 
 
 A node in this graph represents a particular compiler. Edges are "can build" relationships.
@@ -789,23 +699,23 @@ e.g. Qt, google, GNU, facebook, python
 How can the end user define what they want in terms of reproducibility?
 
 
-<nowiki># Policies</nowiki>
+# Policies
 
 
-<nowiki>* there is no one size fits all policy</nowiki>
+* there is no one size fits all policy
 
-<nowiki>* can you verify using a checkbox that the software is the one we want to install?</nowiki>
+* can you verify using a checkbox that the software is the one we want to install?
 
-<nowiki>* but we want the computer to verify that many people have reproduced the same software.</nowiki>
+* but we want the computer to verify that many people have reproduced the same software.
 
-<nowiki>* how to handle exceptions to the policy?</nowiki>
+* how to handle exceptions to the policy?
 
-<nowiki>* providing these policies to users is a different question than to provide this kind of information to developers/researchers</nowiki>
+* providing these policies to users is a different question than to provide this kind of information to developers/researchers
 
-<nowiki>* after the installation, we should also be able to verify the software we installed on the computer</nowiki>
+* after the installation, we should also be able to verify the software we installed on the computer
 
 
-<nowiki>* question: what if the news arrives via Twitter, should this be part of the policy?</nowiki>
+* question: what if the news arrives via Twitter, should this be part of the policy?
 
 
 Questions:
@@ -819,32 +729,32 @@ Questions:
 - What are the downsides of these policies?
 
 
-<nowiki># Example policies</nowiki>
+# Example policies
 
 
 EXAMPLE 1
 
 REBUILDERS BUILD INFO FILES
 
-<nowiki>========== </nowiki><nowiki>================</nowiki>
+========== ================
 
-<nowiki>---------------</nowiki>
+---------------
 
 | rebuilder A | -------→ pkgX matches digest N
 
-<nowiki>---------------</nowiki>
+---------------
 
-<nowiki>---------------</nowiki>
+---------------
 
 | rebuilder B | -------→ pkgX matches digest N
 
-<nowiki>---------------</nowiki>
+---------------
 
-<nowiki>---------------</nowiki>
+---------------
 
 | rebuilder C | -------→ pkgX matches digest N
 
-<nowiki>---------------</nowiki>
+---------------
 
 |
 
@@ -855,7 +765,7 @@ v
 
 MACHINE
 
-<nowiki>=======</nowiki>
+=======
 
 policy configured to
 
@@ -1001,23 +911,23 @@ Rebuilders
 
 EASY GUI:
 
-<nowiki>---------------------------------------------------------</nowiki>
+---------------------------------------------------------
 
 Policy Chooser per repository
 
-<nowiki>---------------------------------------------------------</nowiki>
+---------------------------------------------------------
 
 x default (none)
 
-<nowiki>---------------------------------------------------------</nowiki>
+---------------------------------------------------------
 
 o Debian
 
-<nowiki>---------------------------------------------------------</nowiki>
+---------------------------------------------------------
 
 o Debian stricter
 
-<nowiki>---------------------------------------------------------</nowiki>
+---------------------------------------------------------
 
 Advanced button
 
@@ -1026,33 +936,33 @@ ADVCANCED GUI:
 
 REPOSITORY X
 
-<nowiki>----------------------------------------------------------</nowiki>
+----------------------------------------------------------
 
 Trusted rebuilders INCLUDED REQUIRED
 
-<nowiki>----------------------------------------------------------</nowiki>
+----------------------------------------------------------
 
 Rebuilder A x
 
-<nowiki>----------------------------------------------------------</nowiki>
+----------------------------------------------------------
 
 Rebuilder B
 
-<nowiki>----------------------------------------------------------</nowiki>
+----------------------------------------------------------
 
 Rebuilder C x
 
-<nowiki>----------------------------------------------------------</nowiki>
+----------------------------------------------------------
 
 Number of rebuilders needed for consensus (m out of n): 2
 
-<nowiki>----------------------------------------------------------</nowiki>
+----------------------------------------------------------
 
 → by default weight is binary (0/1), and...
 
 ..in advanced mode we could use non-binary weights.
 
-<nowiki>----------------------------------------------------------</nowiki>
+----------------------------------------------------------
 
 Consensus fail policy
 
@@ -1488,7 +1398,7 @@ TOP THREE AUDIENCES TO FOCUS ON:
 
 Pad1
 
-<nowiki>====</nowiki>
+====
 
 
 Directed graph we came up with in dot:
@@ -1565,7 +1475,7 @@ isolation of external failure causes
 
 Pad2
 
-<nowiki>====</nowiki>
+====
 
 
 Reproducible, deterministic:
@@ -1602,7 +1512,7 @@ Bootstrappable
 
 SOURCE_DATE_EPOCH
 
-<nowiki>==============================================</nowiki>
+==============================================
 
 
 - current spec talks about "current time of system";
@@ -1830,7 +1740,7 @@ What do we need to have/run rebuilders?
 
 Who does rebuilds already?
 
-<nowiki>==========================</nowiki>
+==========================
 
 
 - One attendee runs a rebuilder for GUIX (~1k packages).
@@ -1846,7 +1756,7 @@ published `buildinfo`.
 
 Example scenario
 
-<nowiki>================</nowiki>
+================
 
 
 What's the simplest, cheapest and useful rebuilder?
@@ -1901,7 +1811,7 @@ the `buildinfo` we don't leak much.
 
 What does the concept of rebuilding mean?
 
-<nowiki>=========================================</nowiki>
+=========================================
 
 
 For example, do we try to reproduce a previous build in a build env.
@@ -1926,7 +1836,7 @@ this package with a different version of `libfoo` than what's in the
 
 How do we rebuild?
 
-<nowiki>==================</nowiki>
+==================
 
 
 Do we want a centralized/generic rebuilding infrastructure?
@@ -1936,7 +1846,7 @@ Or specific to the project we're rebuilding?
 
 How/where do we store results of rebuilds?
 
-<nowiki>==========================================</nowiki>
+==========================================
 
 
 (both matching and non-matching)
@@ -1970,7 +1880,7 @@ we need access to all such databases?
 
 How do we lookup reports?
 
-<nowiki>-------------------------</nowiki>
+-------------------------
 
 
 Lookup by hash? This only tells us that someone reproduced a build,
@@ -1985,7 +1895,7 @@ e.g. distro + (package, arch, version)?
 
 Marketing
 
-<nowiki>=========</nowiki>
+=========
 
 
 How do we convince orgs to run rebuilders?
@@ -2000,7 +1910,7 @@ can each explain their own reasons.
 
 Bonus features & ideas
 
-<nowiki>======================</nowiki>
+======================
 
 
 - Reuse this for the "I want to rebuild all packages locally before
@@ -2057,7 +1967,7 @@ rebuilder publishes diffoscope output for non-matching builds.
 
 One year
 
-<nowiki>========</nowiki>
+========
 
 
 - Reproducible hackaton #2
@@ -2079,7 +1989,7 @@ One year
 
 Two years
 
-<nowiki>=========</nowiki>
+=========
 
 
 - rebuilder run by recognized organizations
@@ -2119,7 +2029,7 @@ community worldwide
 
 Distant goals
 
-<nowiki>=============</nowiki>
+=============
 
 
 - 100% reproducible packages (verifiable)
@@ -2149,7 +2059,7 @@ non-reproducible is considered as a bug by a broad community
 
 Unknown
 
-<nowiki>=======</nowiki>
+=======
 
 
 - reproducible Lineage OS
@@ -2175,18 +2085,18 @@ want: web-page with "gzip" in red and "gzip -n" in green
 
 want: find the reproducibility status of packages in other distributions => is it reproducible, what patches are required?
 
-<nowiki>=> make rb status pages more discoverable</nowiki>
+=> make rb status pages more discoverable
 
-<nowiki>=> needs UI designer to make tiny hidden links more visible</nowiki>
+=> needs UI designer to make tiny hidden links more visible
 
-<nowiki>=> FAQ how to find information about status of a package in a distribution ; also past rb bugs + patches relating to that package - if possible also tools patches</nowiki>
+=> FAQ how to find information about status of a package in a distribution ; also past rb bugs + patches relating to that package - if possible also tools patches
 
-<nowiki>=> more advertising of toolchain patches</nowiki>
+=> more advertising of toolchain patches
 
 
 For developers, wanting to get reproducible results from make
 
-<nowiki>=> describe your build environment</nowiki>
+=> describe your build environment
 
 
 Q: how to make my software reproducible?
@@ -2215,9 +2125,9 @@ How to ask for help with the above?
 
 ML, IRC, useful information to include
 
-<nowiki>=> add call for action</nowiki>
+=> add call for action
 
-<nowiki>=> add "for developers" / "how to get involved" page to r-b.org</nowiki>
+=> add "for developers" / "how to get involved" page to r-b.org
 
 "Resources" is wrong for ML => Community/Communication channels
 
@@ -2226,9 +2136,9 @@ People without own software:
 
 What can I do to help?
 
-<nowiki>=> work on r-b tools, fix debian packages and FLOSS upstream projects, work on test infrastructure</nowiki>
+=> work on r-b tools, fix debian packages and FLOSS upstream projects, work on test infrastructure
 
-<nowiki>=> use "reproducible-check" on your Debian system</nowiki>
+=> use "reproducible-check" on your Debian system
 
 
 
@@ -2238,7 +2148,7 @@ Good: want to discover about the subject with direct links to videos, link to ev
 
 News blog under debian.org instead of r-b.org, news on r-b.o is not updated, can appear orphaned
 
-<nowiki>=> move ?</nowiki>
+=> move ?
 
 separate marketing updates from developer information?
 
@@ -2250,7 +2160,7 @@ Next steps: add "get involved", "for developers", "for distributors" page
 
 Tools section: links to debian package of reprotest, disorderfs, strip-nondeterminism instead of generic project website
 
-<nowiki>=> de-debianize, have tarballs discoverable </nowiki><nowiki># pypi is outdated anyway and not as useful</nowiki>
+=> de-debianize, have tarballs discoverable # pypi is outdated anyway and not as useful
 
 
 ==== {{anchor|RefHeadingToc4138118152727}} Identifying next actionable steps for marketing outreach ====
@@ -2300,7 +2210,7 @@ For each audience we want to identify:
 
 Developers in general
 
-<nowiki>=========</nowiki>
+=========
 
 
 Developers:
@@ -2328,7 +2238,7 @@ Action items:
 
 Toolchain developers
 
-<nowiki>=========</nowiki>
+=========
 
 
 They have 2 key issues:
@@ -2377,7 +2287,7 @@ Table: even better espec. for folks who don't know rb yet
 
 Academics
 
-<nowiki>=========</nowiki>
+=========
 
 
 We're focussing on scientist, and particularly on disciplines whose
@@ -2434,7 +2344,7 @@ and reproducibility.
 
 Companies
 
-<nowiki>=========</nowiki>
+=========
 
 
 We focused on companies that produce and/or distribute software.
@@ -2442,7 +2352,7 @@ We focused on companies that produce and/or distribute software.
 
 Value of RBs to them
 
-<nowiki>--------------------</nowiki>
+--------------------
 
 
 
@@ -2495,7 +2405,7 @@ software works here too.
 
 Success stories
 
-<nowiki>---------------</nowiki>
+---------------
 
 
 - We're told that Microsoft has shortened a lot their feedback loop
@@ -2654,7 +2564,7 @@ Recomendation: gcc 4.7 (which doesn't require C++ support to compile)
 For a canonical TOR, you need to agree on library versions.
 
 
-<nowiki>-----</nowiki>
+-----
 
 Goal:
 
@@ -2691,7 +2601,7 @@ Current state:
 At some point Suse had a non-polished reproducibly building gcc patch. This patch was not submitted.
 
 
-<nowiki>----</nowiki>
+----
 
 
 New goal:
@@ -2699,13 +2609,13 @@ New goal:
 Don't solve the build dependency comparison problem yet, because we don't know how to solve it. Solve the SIMPLIST case. Try to create a golden tinycc.
 
 
-<nowiki>----</nowiki>
+----
 
 
 How much work can we share in a canonical build process for a bootstrapped binary identical tinycc?
 
 
-<nowiki>----</nowiki>
+----
 
 
 Should we have a shared build system or a shared recipe and multiple build systems?
@@ -2717,13 +2627,13 @@ This recipe should work with any c compiler/multiple compilers.
 We want to specify only the parts of the recipe which actually effect the output. But not specify the entire "hash" of the exact system used to build.
 
 
-<nowiki>-------------------------------------------------------</nowiki>
+-------------------------------------------------------
 
 
 This is DDC (Diverse double compilation)
 
 
-|-------------| |-------------| |-------------||tinycc source| <nowiki>== |tinycc source| </nowiki><nowiki>== |tinycc source|</nowiki>
+|-------------| |-------------| |-------------||tinycc source| == |tinycc source| == |tinycc source|
 
 |-------------| |-------------| |-------------|
 
@@ -2746,10 +2656,10 @@ This is DDC (Diverse double compilation)
 |-------------| |-------------| |-------------|
 
 
-<nowiki>-------------------------------------------------------</nowiki>
+-------------------------------------------------------
 
 
-|-------------| |-------------| |-------------||tinycc source| <nowiki>== |tinycc source| </nowiki><nowiki>== |tinycc source|</nowiki>
+|-------------| |-------------| |-------------||tinycc source| == |tinycc source| == |tinycc source|
 
 |-------------| |-------------| |-------------|
 
@@ -2769,7 +2679,7 @@ This is DDC (Diverse double compilation)
 
 |-------------| |-------------| |-------------|
 
-| tinycc bin | <nowiki>== | tinycc bin </nowiki>| <nowiki>== | tinycc bin </nowiki>|
+| tinycc bin | == | tinycc bin | == | tinycc bin |
 
 |-------------| |-------------| |-------------|
 
@@ -2794,7 +2704,7 @@ Try on many computers even running the same system.
 
 
 
-<nowiki>----</nowiki>
+----
 
 
 End goal: Create a common bootstrap method and start comparing hashes.
@@ -2850,9 +2760,9 @@ Apple doesn't seem to care about Reproducible Software. They use their own toolc
 
 However, it is possible to:
 
-<nowiki>* cross-compile for Mac OS X with clang;</nowiki>
+* cross-compile for Mac OS X with clang;
 
-<nowiki>* use Xcode to build reproducibly for iOS (except when signing)</nowiki>
+* use Xcode to build reproducibly for iOS (except when signing)
 
 
 In the same repository as above, there are also instructions for cross-building for Mac OS X. It downloads and leverages the official SDK for Mac OS X.
@@ -2880,7 +2790,7 @@ real-world use-case brought up involves computer clusters shared among many user
 
 code signing
 
-<nowiki>============================================</nowiki>
+============================================
 
 
 General area of this session: source code
@@ -3085,15 +2995,15 @@ k = 2x signed buildinfo
 
 Signed .buildinfos coccia.debian.org (ftp master mirror)
 
-<nowiki>================== </nowiki><--- buildinfo.debian.net?
+================== <--- buildinfo.debian.net?
 
-<nowiki>* signed statement: (?)</nowiki>
+* signed statement: (?)
 
-<nowiki>* reproduced by: 6</nowiki>
+* reproduced by: 6
 
-<nowiki>* dissent by: 2</nowiki>
+* dissent by: 2
 
-<nowiki>* not found/not built yet 2</nowiki>
+* not found/not built yet 2
 
 ^
 
@@ -3111,16 +3021,16 @@ Signed .buildinfos coccia.debian.org (ftp master mirror)
 
 buildinfo query
 
-<nowiki>===============</nowiki>
+===============
 
 
-<nowiki>* by hash - only finds _agreements_, not dissent</nowiki>
+* by hash - only finds _agreements_, not dissent
 
-<nowiki>* by domain-specific unique ID:</nowiki>
+* by domain-specific unique ID:
 
 - debian: $pkg, $vers, $arch
 
-<nowiki>* by buildingo! (contains the above)</nowiki>
+* by buildingo! (contains the above)
 
 
 
@@ -3129,17 +3039,17 @@ buildinfo query
 
 Debian main Rebuilders
 
-<nowiki>=========== </nowiki><nowiki>==========</nowiki>
+=========== ==========
 
-archive/mirror <nowiki>* ccc</nowiki>
+archive/mirror * ccc
 
-.deb -------------> <nowiki>* k of n agree on hash? <--- * nsa</nowiki>
+.deb -------------> * k of n agree on hash? <--- * nsa
 
-(n = fixed number) <nowiki>* aclu</nowiki>
+(n = fixed number) * aclu
 
-<nowiki>* all must agree?</nowiki>
+* all must agree?
 
-<nowiki>* signed .buildinfo</nowiki>
+* signed .buildinfo
 
 ==== {{anchor|RefHeadingToc4152118152727}} Discussing current status and potential improvements in regards to .buildinfo files for rpm and iso ====
 
@@ -3179,7 +3089,7 @@ We discussed about where to put .buildinfo file. We suggest to have a seperate f
 
 iso
 
-<nowiki>###</nowiki>
+###
 
 
 The iso contains of:
