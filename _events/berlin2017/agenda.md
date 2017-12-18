@@ -7,8 +7,6 @@ permalink: /events/berlin2017/agenda/
 ---
 
 
-= Agenda =
-
 Day 1 – Tuesday, October 31
 
 9:45 Opening session (No notes taken in this session)
@@ -30,8 +28,9 @@ Participants generated a list of topics and questions that they wanted to discus
 12:45 Lunch
 
 13:45 Working sessions I
-*[Reviewing existing reproducible builds tools]({{ "/events/berlin2017/existingtools/" | prepend: site.baseurl }}) – Chris
-* Discussing the current status of .buildinfo files – Mattia
+
+* [Reviewing existing reproducible builds tools]({{ "/events/berlin2017/existingtools/" | prepend: site.baseurl }}) – Chris
+* [Discussing the current status of .buildinfo files]({{ "/events/berlin2017/statusbuildinfofiles/" | prepend: site.baseurl }}) – Mattia
 * What is the ecosystem around rpm? – Bernhard
 * End user tools: What does exist, what is still needed – dkg
 
