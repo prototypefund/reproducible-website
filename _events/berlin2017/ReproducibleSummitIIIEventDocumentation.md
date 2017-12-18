@@ -21,17 +21,13 @@ Session Notes - Day 1
 
 Working sessions I
 
-* [Agenda brainstorming]({{ "/events/berlin2017/agendabrainstorming/" | prepend: site.baseurl }})
 * [Reviewing existing reproducible builds tools]({{ "/events/berlin2017/existingtools/" | prepend: site.baseurl }})
 * [Discussing the current status of .buildinfo files]({{ "/events/berlin2017/statusbuildinfofiles/" | prepend: site.baseurl }})
-
-:::[[#RefHeadingToc4084118152727|Discussing the current status of .buildinfo files]]
-
-:::[[#RefHeadingToc4086118152727|What is the ecosystem around rpm?]]
+* [What is the ecosystem around rpm?]({{ "/events/berlin2017/ecosystemrpm/" | prepend: site.baseurl }})
 
 :::[[#RefHeadingToc4088118152727|End user tools: What does exist, what is still needed]]
 
-::[[#RefHeadingToc4090118152727|Working sessions II]]
+Working sessions II
 
 :::[[#RefHeadingToc4092118152727|How to fix the current issues with BUILD_PATH_PREFIX_MAP?]]
 
@@ -39,9 +35,9 @@ Working sessions I
 
 :::[[#RefHeadingToc4096118152727|What documentation is still to be created for developers who are new to reproducible builds?]]
 
-:[[#RefHeadingToc4098118152727|Day 2]]
+Day 2
 
-::[[#RefHeadingToc4100118152727|Working sessions III]]
+Working sessions III
 
 :::[[#RefHeadingToc4102118152727|Improving reproducible builds in Java]]
 
@@ -51,7 +47,7 @@ Working sessions I
 
 :::[[#RefHeadingToc4108118152727|How can policies help the end user to define what they want in terms of reproducibility?]]
 
-::[[#RefHeadingToc4110118152727|Working sessions IV]]
+Working sessions IV
 
 :::[[#RefHeadingToc4112118152727|Mapping out archive formats]]
 
@@ -61,9 +57,9 @@ Working sessions I
 
 :::[[#RefHeadingToc4118118152727|Marketing: Why is it valuable to support the reproducible builds work and who is our audience?]]
 
-:[[#RefHeadingToc4120118152727|Day 3]]
+Day 3
 
-::[[#RefHeadingToc4122118152727|Working sessions V]]
+Working sessions V
 
 :::[[#RefHeadingToc4124118152727|Defining terminology: reproducible, bootstrappable, reliable]]
 
@@ -73,7 +69,7 @@ Working sessions I
 
 :::[[#RefHeadingToc4130118152727|What is needed to run rebuilders?]]
 
-::[[#RefHeadingToc4132118152727|Working sessions VI]]
+Working sessions VI
 
 :::[[#RefHeadingToc4134118152727|Mapping out our short- and long-term goals]]
 
@@ -83,7 +79,7 @@ Working sessions I
 
 :::[[#RefHeadingToc4140118152727|Funding reproducible builds work]]
 
-::[[#RefHeadingToc4142118152727|Working sessions VII]]
+Working sessions VII
 
 :::[[#RefHeadingToc4144118152727|Enabling cross-distro reproducibility]]
 
@@ -102,69 +98,6 @@ Working sessions I
 == Day 1 ==
 === Working sessions I ===
 
-
-==== {{anchor|RefHeadingToc4086118152727}} What is the ecosystem around rpm? ====
-
-
-
-two types of rpm: source and binary
-
-src.rpm: tarball, build instruction, etc
-
-
-rpm packages are signed; one can take signature from one rpm to another, as long as other part is the same
-
-also, for comparing one can strip signature
-
-
-package itself is reproducible already, patches already included upstream:
-
-- %_hostname macro
-
-- $SOURCE_DATE_EPOCH as build date
-
-- use topmost changelog entry as $SOURCE_DATE_EPOCH (%source_date_epoch_from_changelog macro)
-
-- clamp file timestamps to $SOURCE_DATE_EPOCH (%source_date_epoch_from_changelog macro)
-
-- size of directories included in cpio inside of rpm -> zero
-
-- ghost files (files owned by package, but not included in actual archive),
-
-rpm include hash of such file (from build environment) -> fixed; file size
-
-is still included (it is a feature)
-
-
-
-
-rpm include compiled python files, which contains timestamp of source files;
-
-clamping mtime (of source files) may in some cases break this - if mtime does
-
-not match here, python recompile the file each run
-
-PEP 552 - use source hash instead of mtime
-
-
-
-
-OpenSUSE: open build service, produce "buildenv file", including hashes of build inputs
-
-osc - client tool to build package locally; this tool is also packaged for Debian
-
-build path doesn't matter, it is constant (chroot env)
-
-
-interesting topic: use reprotest for rpm packages
-
-
-reproducibility testing in OpenSUSE: not automatically, but there are manual results
-
-
-further tasks:
-
-- document current status, environment
 
 ==== {{anchor|RefHeadingToc4088118152727}} End user tools: What does exist, what is still needed ====
 

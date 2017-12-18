@@ -31,7 +31,7 @@ Participants generated a list of topics and questions that they wanted to discus
 
 * [Reviewing existing reproducible builds tools]({{ "/events/berlin2017/existingtools/" | prepend: site.baseurl }}) – Chris
 * [Discussing the current status of .buildinfo files]({{ "/events/berlin2017/statusbuildinfofiles/" | prepend: site.baseurl }}) – Mattia
-* What is the ecosystem around rpm? – Bernhard
+* [What is the ecosystem around rpm?]({{ "/events/berlin2017/ecosystemrpm/" | prepend: site.baseurl }}) – Bernhard
 * End user tools: What does exist, what is still needed – dkg
 
 
