@@ -3,7 +3,7 @@ layout: event_detail
 title: End user tools: What does exist, what is still needed
 event: berlin2017
 order: 60
-permalink: /events/berlin2017/ReproducibleSummitIIIEventDocumentation/
+permalink: /events/berlin2017/usertools/
 ---
 
 which users are we talking about?
