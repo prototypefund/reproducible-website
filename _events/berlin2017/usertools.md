@@ -1,6 +1,6 @@
 ---
 layout: event_detail
-title: End user tools: What does exist, what is still needed
+title: End user tools - Which exist, which are still needed
 event: berlin2017
 order: 60
 permalink: /events/berlin2017/usertools/
