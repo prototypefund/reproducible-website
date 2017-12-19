@@ -20,9 +20,10 @@ So we have the BUILD_PATH_PREFIX_MAP proposal: an environment variable with a li
 
 For example:
 
-----
+<code>
 BUILD_PATH_PREFIX_MAP=$(pwd)=. make
-----
+<code>
+
 Would strip the top-level directory from all stored paths, and replace it with "."
 
 maps are proposed as colon-delimited, so you can provide more than one of them.
@@ -52,9 +53,9 @@ some discussion on why we don't just fix the build path during build: we want pe
 
 Current plan is for Ximin to submit a series of three patches to gcc:
 
-1) patch for command line flag that has map (exactly what they asked for)
-2) second command-line flag that says "read this env var" and use it for the value of the flag
-3) default flag to true.
+1. patch for command line flag that has map (exactly what they asked for)
+2. second command-line flag that says "read this env var" and use it for the value of the flag
+3. default flag to true.
 
 then if they accept only (1) then we can ship a wrapper around gcc that reads the env var, and we can configure dpkg to invoke the
 wrapper. this setting would need to be done specifically for the packages that need it (<1800 packages). We'd do that by modifying $PATH for those specific packages.
