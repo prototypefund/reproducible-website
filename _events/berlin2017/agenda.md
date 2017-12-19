@@ -39,7 +39,7 @@ Participants generated a list of topics and questions that they wanted to discus
 
 15: 25 Working sessions II 
 
-* How to fix the current issues with BUILD_PATH_PREFIX_MAP? – Ximin
+* [How to fix the current issues with BUILD_PATH_PREFIX_MAP]({{ "/events/berlin2017/buildpathprefixmap/" | prepend: site.baseurl }}) – Ximin
 * How bootstrapping relates to reproducible builds and how to improve it – Ricardo
 * What documentation is still to be created for developers who are new to reproducible builds? – Holger
 
