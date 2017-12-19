@@ -1,6 +1,6 @@
 ---
 layout: event_detail
-title: Reproducible Summit III event documentation
+title: What is the ecosystem around rpm?
 event: berlin2017
 order: 50
 permalink: /events/berlin2017/ecosystemrpm/
