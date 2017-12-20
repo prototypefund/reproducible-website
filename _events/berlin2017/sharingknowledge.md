@@ -2,7 +2,7 @@
 layout: event_detail
 title: Sharing knowledge about reproducible builds
 event: berlin2017
-order: 20
+order: 15
 permalink: /events/berlin2017/sharingknowledge/
 ---
 
