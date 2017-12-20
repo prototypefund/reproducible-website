@@ -6,7 +6,9 @@ order: 20
 permalink: /events/berlin2017/agendabrainstorming/
 ---
 
-In this session we individually wrote the following questions on pieces of paper, then sorted them by topic as shown below and then everybody had 4 green dots to mark topics we wanted to further work on.
+Participants generated a list of topics and questions that they wanted to discuss at the meeting. The result of the brainstorming was then taken into account to identify the working sessions that had emerged as the most compelling for those in attendance.
+
+Participants individually wrote questions of their interest on pieces of paper, then sorted them by topic as shown below and then everybody had 4 green dots to mark topics we wanted to further work on.
 
 
 ### Marketing, etc. 1
