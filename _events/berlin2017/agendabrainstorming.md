@@ -9,7 +9,7 @@ permalink: /events/berlin2017/agendabrainstorming/
 In this session we individually wrote the following questions on pieces of paper, then sorted them by topic as shown below and then everybody had 4 green dots to mark topics we wanted to further work on.
 
 
-# Marketing, etc. 1
+### Marketing, etc. 1
 
 - how can we better communicate our progress to the public? ** green
 - are we making t-shirts ** green
@@ -20,7 +20,7 @@ In this session we individually wrote the following questions on pieces of paper
 - how can we let even more developers know & care about reproducible builds?
 
 
-# Marketing, etc. 2
+### Marketing, etc. 2
 
 - what made you see the value of repr. builds?
 - I do not see much commercial interest in RB, why? *** red
@@ -29,7 +29,7 @@ In this session we individually wrote the following questions on pieces of paper
 - feedback results of tests.r-b.org to the developer
 
 
-# Funding
+### Funding
 
 - how can we become rich with Reproducible Builds? (or: Funding?) * green
 - Funding our work in 2019 + 2020 *** green
@@ -38,7 +38,7 @@ In this session we individually wrote the following questions on pieces of paper
 - Create formal/legal organizational structure for R-B projects
 
 
-# Code Signing & meta-data
+### Code signing & metadata
 
 - embedded signatures best practices **** green
 - signing packages vs. signing metadata * green
@@ -46,7 +46,7 @@ In this session we individually wrote the following questions on pieces of paper
 - how to verify sources ** green
 
 
-# (tech) end users
+### Technical end users
 
 - Develop user-interface to check for reproducibility **** green
 - other usertools than "do you really want to install that unreproducible package" * green
@@ -59,7 +59,7 @@ In this session we individually wrote the following questions on pieces of paper
 - who should be trusted when reproducible package is not actually reproducible? where to report suspicious build results? * green
 
 
-# End Users (not necessarily tech end users)
+### End users (not necessarily technical end users)
 
 - Why is reprobuilds important for the end user?
 - what RB means for end users
@@ -67,7 +67,7 @@ In this session we individually wrote the following questions on pieces of paper
 - what's the gain for the non-tech end user? * green
 
 
-# Newbie docs
+### Newbie docs
 
 - Let's have a "hello world!" tutorial! * green
 - Let's make the documentation noob-friendy! ** green
@@ -78,7 +78,7 @@ In this session we individually wrote the following questions on pieces of paper
 - How do we help projects define the SCOPE of their R.B. efforts? (e.g. inputs, build system variations...)
 
 
-# debian
+### Debian
 
 - What parts of RB are too specific to Debian? is it worth changing them? * green
 - Rebuild Debian packages from the archive. * green
@@ -88,21 +88,21 @@ In this session we individually wrote the following questions on pieces of paper
 - Compatibility with signed .debs
 
 
-# what is reproducibility
+### What is reproducibility
 
 - can we do something about communities that cannot build dependencies from source? (npm, java, compiler builders?) : 1 green
 - if we make an image by deterministically composing snapshots of unreproducibly built data... do we call that image reproducible? : 1 green
 - how can we ensure the term "reproducible builds" is used consistantly across the internet
 
 
-# Portability
+### Portability
 
 - make sure more computer architectures are supported
 - do we want/need reproducibility cross distributions? ("the i386 binary")
 - reproducible cross-compiling (i.e. do we get the same as native compiling?) : 4 green
 
 
-# Tools
+### Tools
 
 - what tools can we all SHARE?
 - session/list/introduction about all tools/methods RB works with : 3 green
@@ -113,7 +113,7 @@ In this session we individually wrote the following questions on pieces of paper
 - overview/walkthrough of the Reproducible Builds tools landscape. (diffoscope/reprotest/disorderfs/s-nd) : 3 green
 
 
-# Java
+### Java
 
 - making Java software reproducible : 5 green
 - improve Maven packaging in Debian
@@ -122,8 +122,7 @@ In this session we individually wrote the following questions on pieces of paper
 - Tor Browser latest make it available in F-Droid
 
 
-
-# binary artifact formats
+### Binary artifact formats
 
 - let's make comparison table of filesystem pack formats! (tar vs squashFS vs Ostree vs zip, cpio, etc) : 1 green
 - binary artifact explainer workshop : 1 green
@@ -132,7 +131,7 @@ In this session we individually wrote the following questions on pieces of paper
 - what should be the source of reproducible build? tarball, repository, something else...? : 3 green
 
 
-# Buildinfo
+### Buildinfo
 
 - create an overview of projects doing .buildinfo files : 1 green
 - should all distributions agree on the same buildinfo format, so that we can provide tools to work with them? : 4 green
@@ -143,7 +142,7 @@ In this session we individually wrote the following questions on pieces of paper
 - what's the current status? what are solved problems / hard challenges?
 
 
-# System image
+### System image
 
 - status of generating reproducible system images? : 4 green
 - reproducible debootstrap (basic OS image)
@@ -153,7 +152,7 @@ In this session we individually wrote the following questions on pieces of paper
 - are reproducible packages = reproducible OS? What about configuration?
 
 
-# Distributions
+### Distributions
 
 - merging/moving away from being "Debian" specific, e.g. 2 mailing lists, 2 IRC rooms, etc. : 3 green
 - How to make SLES join our party? (SLES = commercial SUSE)
@@ -162,9 +161,7 @@ In this session we individually wrote the following questions on pieces of paper
 - what is the status and future plans for RPM packages? : 1 green
 
 
-
-
-# Encouraging upstreams 1
+### Encouraging upstreams 1
 
 - how could we encourage developers to write self-sustained test suites for sub-projects? *** green
 - how easy it is for a dev to make a project reproducible? * green
@@ -174,17 +171,19 @@ In this session we individually wrote the following questions on pieces of paper
 - let other systems up on T.R-B.O * green
 
 
-# Encouraging upstreams 2
+### Encouraging upstreams 2
 
 - best practices for submitting patches upstream *** green
 - explore alternate solutions for lost metrics (as s/w becomes mirrored)
 - develop legal guidance for developers / distributors facing pressure to ship malware * green
 
-# Web apps :)
+
+### Web apps :)
 
 - how do we verify reproducibility of web applications * green
 
-# Distribute
+
+### Distribute
 
 - is there a list of similarities / differences between operating systems reproducibility? * green
 - which could be better ways to distribute / check package signatures * green
@@ -196,8 +195,7 @@ In this session we individually wrote the following questions on pieces of paper
 - where should we collect reproducibility instructions / checksums of results?
 
 
-
-# Bootstrap 1
+### Bootstrap 1
 
 - how acceptable is a not fully from source bootstrappable GCC
 - what do we call black boxes in boostrap?
@@ -207,7 +205,7 @@ In this session we individually wrote the following questions on pieces of paper
 - find a way to reduce the number of binaries we need to trust when building compilers. * green
 
 
-# Bootstrap 2
+### Bootstrap 2
 
 - who wants to help: C compiler in Scheme, Scheme interpreter in simple assembly? * green
 - realize diverse-double compilation in the real world ** green
@@ -215,15 +213,13 @@ In this session we individually wrote the following questions on pieces of paper
 - what is a good bootstrap vs a bad bootstrap?
 
 
-# BUILD_PATH_PREFIX_MAP
+### BUILD_PATH_PREFIX_MAP
 
-- what can we do to get GCC to accept SOURCE_PATH_PREFIX_MAP? * green
-- B_P_P_M and and WTH is wrong with GCC
-- how to convince GCC to support BUILD_PATH_PREFIX_MAP? *** green
-- final specification for BUILD_MAP_PREFIX * green
+- how to convince GCC to support BUILD_PATH_PREFIX_MAP? **** green
+- final specification for BUILD_MAP_PREFIX_MAP * green
 
 
-# build environment
+### Build environment
 
 - are Flatpak, Snapd etc the right way to build
 - how can we convince people that application bundles (like Docker images) are inferior to building software reproducibly? *** green
@@ -232,5 +228,4 @@ In this session we individually wrote the following questions on pieces of paper
 - Is Bazel compatible with ReproBuild specs? (SOURCE_DATE_EPOCH, .buildinfo file...)
 - what should be done to make not only builds but system state reproducible?
 - why to use standardized build environments or not? * green
-
 
