@@ -54,12 +54,14 @@ Day 2
 *   09:45 Opening session (No notes taken in this session)
 
     The second day of the Summit opened with a summary of the work done during the previous day, and a brief overview of the plan for the day ahead.
-*   09:55 Working Sessions III (Session notes start on page 36)* Improving reproducible builds in Java – Gábor
+*   09:55 Working Sessions III (Session notes start on page 36)
+    * Improving reproducible builds in Java – Gábor
     * Bootstrapping: Mapping the problem space – Ricardo
     * Best practices and open issues in regards to engaging upstreams – Chris
     * How can policies help the end user to define what they want in terms of reproducibility? – dkg
 *   11:30 Break
-*   12:00 Skill share sessions (No notes taken in these sessions)* How to rebuild a specific .deb from its .buildinfo
+*   12:00 Skill share sessions (No notes taken in these sessions)
+    * How to rebuild a specific .deb from its .buildinfo
     * How to do everything* in Emacs (<nowiki>*conditions apply</nowiki>)
     * Ask Me Anything coreboot
     * Binwalk arbitrary firmware images
@@ -71,7 +73,8 @@ Day 2
     * AMA F-Droid
     * How to integrate with Travis CI
 *   12:30 Lunch
-*   13:30 Working sessions IV (Session notes start on page 49)* Mapping out archive formats – Eric
+*   13:30 Working sessions IV (Session notes start on page 49)
+    * Mapping out archive formats – Eric
     * Building a system image from existing binaries – intrigeri
     * How to preserve software integrity in different legal contexts? – dkg
     * Marketing: Why is it valuable to support the reproducible builds work and who is our audience? – Beatrice
@@ -91,17 +94,20 @@ Day 3
 *   09:45 Opening session (No notes taken in this session)
 
     The final day of the Summit opened with the encouragement to focus the last day of the meeting on drafting action plans to be carried out during the following weeks and months.
-*   10:05 Working sessions V (Session notes start on page 58)* Defining terminology: reproducible, bootstrap<span style="background-color:transparent;">pable, reliable – Timothy</span>
+*   10:05 Working sessions V (Session notes start on page 58)
+    * Defining terminology: reproducible, bootstrap<span style="background-color:transparent;">pable, reliable – Timothy</span>
     * SOURCE_DATE_EPOCH specification: Overview and improvements needed – Ximin
     * Setting up build environments for reproducibility – Marcus
     * What is needed to run rebuilders? – dkg
 *   11:05 Break
-*   11:20 Working sessions VI (Session notes start on page 71)* Mapping out our short- and long-term goals – Holger
+*   11:20 Working sessions VI (Session notes start on page 71)
+    * Mapping out our short- and long-term goals – Holger
     * How to onboard new contributors – Mattia
     * Identifying next actionable steps for marketing outreach – Beatrice
     * Funding reproducible builds work – Elisa, Chris
 *   12:40 Lunch
-*   13:40 working sessions VII (Session notes start on page 84)* Enabling cross-distro reproducibility – Janneke
+*   13:40 Working sessions VII (Session notes start on page 84)
+    * Enabling cross-distro reproducibility – Janneke
     * Exploring reproducibility for Mac and Windows – Nicolas
     * What does code-signing means in terms of reproducibility? – Chris, dkg
     * Prioritizing the minimum viable set of tools needed for end users – Ricardo, intrigeri
