@@ -269,11 +269,11 @@ aside li a {
 }
 
 @media (min-width: 750px) {
-  .post-content h2 { font-size: 3.6rem; }
-  .post-content h3 { font-size: 3.0rem; }
-  .post-content h4 { font-size: 2.4rem; }
-  .post-content h5 { font-size: 1.8rem; }
-  .post-content h6 { font-size: 1.5rem; }
+  .post-content h2 { font-size: 3.6rem; font-weight: bold; }
+  .post-content h3 { font-size: 3.0rem; font-weight: bold; }
+  .post-content h4 { font-size: 2.4rem; font-weight: bold; }
+  .post-content h5 { font-size: 1.8rem; font-weight: bold; }
+  .post-content h6 { font-size: 1.5rem; font-weight: bold; }
 }
 
 .post-header { margin: 0px 0 30px; }
