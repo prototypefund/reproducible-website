@@ -6,130 +6,199 @@ order: 05
 permalink: /events/berlin2017/ReproducibleSummitIIIEventDocumentation/
 ---
 
-*Berlin, Germany. October 31 – November 2, 2017*
+#### Berlin, Germany. October 31 – November 2, 2017 ####
 
-Event documentation
--------------------
+### Event documentation
 
-<b>This is work in progress: currently this very document still contains notes, which shall all be moved to seperate pages at which point this URL will vanish and everything will be accessable via the [Agenda]({{ "/events/berlin2017/agenda/" | prepend: site.baseurl }}).</b>
+This is work in progress: currently this very document still contains notes, which shall all be moved to seperate pages at which point this URL will vanish and everything will be accessable via the **Agenda**
 
-[Agenda]({{ "/events/berlin2017/agenda/" | prepend: site.baseurl }})
+#### Session Notes
+####  Day 1
 
-Session Notes - Day 1
+Agenda brainstormin
 
-[Agenda brainstorming]({{ "/events/berlin2017/agendabrainstorming/" | prepend: site.baseurl }})
+###### Working sessions I:
 
-Working sessions I
+- Reviewing existing reproducible builds tools
+- Discussing the current status of `.buildinfo` files
+- What is the ecosystem around RPM?
+- End user tools: What does exist, what is still needed
 
-* [Reviewing existing reproducible builds tools]({{ "/events/berlin2017/existingtools/" | prepend: site.baseurl }})
-* [Discussing the current status of .buildinfo files]({{ "/events/berlin2017/statusbuildinfofiles/" | prepend: site.baseurl }})
-* [What is the ecosystem around rpm?]({{ "/events/berlin2017/ecosystemrpm/" | prepend: site.baseurl }})
-* [End user tools: What does exist, what is still needed]({{ "/events/berlin2017/usertools/" | prepend: site.baseurl }})
+- ------------------------------------------------------------
 
-Working sessions II
+###### Working sessions II
 
-* [How to fix the current issues with BUILD_PATH_PREFIX_MAP]({{ "/events/berlin2017/buildpathprefixmap/" | prepend: site.baseurl }})
-* [How bootstrapping relates to reproducible builds and how to improve it]({{ "/events/berlin2017/bootstrapping/" | prepend: site.baseurl }})
+- How to fix the current issues with **BUILD_PATH_PREFIX_MAP**
 
-:::[[#RefHeadingToc4096118152727|What documentation is still to be created for developers who are new to reproducible builds?]]
+#### Day 2
 
-Day 2
+###### Working sessions III
 
-Working sessions III
+- Improving reproducible builds in Java
+- Bootstrapping: Mapping the problem best practices and open issues in
+- How can policies help the end user to define what they want in terms of -reproducibility?
 
-:::[[#RefHeadingToc4102118152727|Improving reproducible builds in Java]]
+###### Working sessions IV
 
-:::[[#RefHeadingToc4104118152727|Bootstrapping: Mapping the problem space]]
+- Mapping out archive formats
+- Building a system image from existing binaries
+- How to preserve software integrity in different legal contexts?
+- Marketing: Why is it valuable to support the reproducible builds work and who is our audience?
 
-:::[[#RefHeadingToc4106118152727|Best practices and open issues in regards to engaging upstreams]]
+##### Day 3
 
-:::[[#RefHeadingToc4108118152727|How can policies help the end user to define what they want in terms of reproducibility?]]
+###### Working sessions V
 
-Working sessions IV
+- Defining terminology: reproducible, bootstrappable, reliable
+- SOURCE\_DATE\_EPOCH specification: Overview and improvements needed
+- Setting up build environments for reproducibility
+- What is needed to run rebuilders?
 
-:::[[#RefHeadingToc4112118152727|Mapping out archive formats]]
+--------------------------------------
 
-:::[[#RefHeadingToc4114118152727|Building a system image from existing binaries]]
+###### Working sessions VI
 
-:::[[#RefHeadingToc4116118152727|How to preserve software integrity in different legal contexts?]]
+- Mapping out our short- and long-term goals
+- How to onboard new contributors
+- Identifying next actionable steps for marketing outreach
+- Funding reproducible builds work
 
-:::[[#RefHeadingToc4118118152727|Marketing: Why is it valuable to support the reproducible builds work and who is our audience?]]
+--------------------------------------
+####### Working sessions VII
 
-Day 3
+- Enabling cross-distro reproducibility
+- Exploring reproducibility for Mac and Windows
+- What does code-signing means in terms of reproducibility?
+- Prioritizing the minimum viable set of tools needed for end users
+- Discussing current status and potential improvements in regards to `.buildinfo` files for RPM and iso.
 
-Working sessions V
+--------------------------------------------------------------------
 
-:::[[#RefHeadingToc4124118152727|Defining terminology: reproducible, bootstrappable, reliable]]
+##### Brainstorming the reproducible builds logo design
 
-:::[[#RefHeadingToc4126118152727|SOURCE_DATE_EPOCH specification: Overview and improvements needed]]
+#### Session Notes
 
-:::[[#RefHeadingToc4128118152727|Setting up build environments for reproducibility]]
+###### Day 1
 
-:::[[#RefHeadingToc4130118152727|What is needed to run rebuilders?]]
+- Working sessions I
+- Working sessions II
 
-Working sessions VI
+**How bootstrapping relates to reproducible builds and how to improve it**
 
-:::[[#RefHeadingToc4134118152727|Mapping out our short- and long-term goals]]
+- Bootstrappable.org
 
-:::[[#RefHeadingToc4136118152727|How to onboard new contributors]]
+- Bootstrappable builds
 
-:::[[#RefHeadingToc4138118152727|Identifying next actionable steps for marketing outreach]]
+- Open questions:
 
-:::[[#RefHeadingToc4140118152727|Funding reproducible builds work]]
+- What is the relationship to reproducibility?
 
-Working sessions VII
+- Why should we care?
 
-:::[[#RefHeadingToc4144118152727|Enabling cross-distro reproducibility]]
+- We need to trust binaries used during build. If build binaries are not trustworthy, this makes build results less trustworthy.
 
-:::[[#RefHeadingToc4146118152727|Exploring reproducibility for Mac and Windows]]
+##### If we have a exe at the top and a lib it depends on, do we call the exe reproducible even if the lib is not reproducible? is trust binary / black & white? no…
 
-:::[[#RefHeadingToc4148118152727|What does code-signing means in terms of reproducibility?]]
+**overlap:**
 
-:::[[#RefHeadingToc4150118152727|Prioritizing the minimum viable set of tools needed for end users]]
+- Build as much from source to need less trust in binaries, and to be able to read/review the source
 
-:::[[#RefHeadingToc4152118152727|Discussing current status and potential improvements in regards to .buildinfo files for rpm and iso]]
+- Increase trust in the software we build
 
-[Brainstorming the reproducible builds logo design]({{ "/events/berlin2017/logodesign/" | prepend: site.baseurl }})
+- Trust gets added with every way you can build a software from source
+
+**diff:** reproducible builds: done when 100% of packages are building reproducibly
+
+**bootstrappable:** (C-part) done when one can take any C-compiler and compile the production C-compiler and with that get bit-identical binaries of anything
+
+###### Requirement for doing bootstrappable builds:
+
+- A **“seed set”** of bootstrap binaries has to be declared by a project (e.g. see f-droid below or a binary with a specific checksum), must not be implicit (e.g. previous version of myself)
+
+- For build use a limited build environment containing only those binaries and nothing more.
+
+- Large complex source can still be hard to read, understand, verify => reduce amount of trusted software
+
+- Backdoors in built source code are out of scope of bootstrappable builds
+
+- Is it a software freedom problem? maybe, maybe not
+
+- Long chains of A->B->C may bitrot and break over time, give less trust than A->C ; but we have archives, and containers
+
+- Obsolete hardware needs to be emulated and the emulator becomes part of the binaries we need to trust.
+
+- Have build scripts that are fully specified about versions of compilers, etc to use in a boostrap-chain.
+
+**Note:** Trust is not transitive **(unlike a=b=c meaning a=c)** so if the sister of a friend knows someone who verified this it is not as much trust as **“I verified this”**. Possibly also beacause trusting someone very much translates to a factor of 0.9x thus for every level of indirection you lose some trust.
+
+**F-Droid:** using Debian binaries as much as possible because they are built from source and thus more trustworthy.
+
+**guix:** build archive with checksums of everything with 218MB bootstrap binaries
+
+**openSUSE:** FIXME link to Ring-0
+
+**Goal:** come up with very small set of auditable binaries+sources
+
+  <https://gitlab.com/janneke/mes> is close
+
+  <https://savannah.nongnu.org/projects/stage0>
+
+**Goal:** need zero trust in the seed set of binaries - cannot be fully reached, but we can get to very small (maybe infinitessimal) values of trust needed.
 
 
-= Session Notes =
-== Day 1 ==
-=== Working sessions I ===
-=== Working sessions II ===
+###### How to distinguish trusted bootstrap binaries from other binaries?
+
+- Tools/compilers that depend on themselves:
+
+- Gradle
+
+- GHC (Haskell)
+
+- Tust
+
+- Maven
 
 
-==== {{anchor|RefHeadingToc4096118152727}} What documentation is still to be created for developers who are new to reproducible builds? ====
+###### Identify important next steps:
+
+- Collect list of bootstrappable and non-bootstrappable tools
+
+- Convert notes to proper doc
+
+- Identify high-importance targets to achive bootstrappability
+
+- More to be discussed
 
 
-
-newbee docs
-
-===========
+###### What documentation is still to be created for developers who are new to reproducible builds?
 
 
-- entrypoint of https://r-b.org good.
+**Newbie docs**
 
-- webpage alone is not enough
+--------------------------------------
 
-- debian wiki is needed
+- Entrypoint of <https://r-b.org> good
 
-- found a theoretical explanation
+- Webpage alone is not enough
 
-- missing: hands-on-guide, good examples
+- Debian wiki is needed
 
-- example -> `gzip` vs. `gzip -n`
+- Found a theoretical explanation
 
-- reprotest is helpful
+**Missing:** hands-on-guide, good examples
 
+- Example -> `gzip` vs. `gzip -n`
 
-- guide:
-
-- 1st: build a binary reproducible
-
-- 2nd: build the debian package reproducible
+- Reprotest is helpful
 
 
-- good examples:
+**Guide:**
+
+- **1st:** build a binary reproducible
+
+- **2nd:** build the Debian package reproducible
+
+###### Good examples:
 
 - the unreproducible go packages
 
@@ -140,16 +209,15 @@ newbee docs
 - should cover each type of reproducibility and each language
 
 - we need documentation for every language including all specialities
-
 also build systems should be explained e.g. autotools, cmake, [..]
 
 
-- what's reproducible?
+###### what's reproducible?
 
-- append the "definition of r-b" with a paragraph "confusions about the term reproducible" and then explain that
+- append the **"definition of r-b"** with a paragraph "confusions about the term reproducible" and then explain that
 
 
-- new document (wanted): "how to contribute"
+###### new document (wanted): "how to contribute"
 
 - wiki should go away? yes!
 
@@ -160,214 +228,188 @@ also build systems should be explained e.g. autotools, cmake, [..]
 
 - create a docker container with all tools
 
-
-
-
 - video tutorial how to make a package reproducible? the easy packages
-
 are getting rare, so it's hard to learn. (maybe an ascii video)
 
-== {{anchor|RefHeadingToc4098118152727}} Day 2 ==
+###### Day 2
+
+###### Working sessions III
 
 
-
-=== {{anchor|RefHeadingToc4100118152727}} Working sessions III ===
-
+Improving reproducible builds in Java
 
 
-==== {{anchor|RefHeadingToc4102118152727}} Improving reproducible builds in Java ====
+- Java Bootstrap path --> working for guix
 
 
-
-Java Bootstrap path --> working for guix
-
-
-Bazel has less problems because they always use bazel to build
+- Bazel has less problems because they always use bazel to build
 
 
-Bootstrapping maven and especially gradle is still challenging
-
+- Bootstrapping maven and especially gradle is still challenging
 bootstrapping maven from older versions of maven, requires a few steps.
 
-For gradle it's harder because it depends on really recent (nightly) versions of gradle.
-
---> idea to bootstrap with groovyc
-
-BUT: Gradle since version 3.0 depends on groovy >= 2.0 which depends on gradle.
-
-Grovy 2.0 depends on gradle 1.0, which depends on groovy 1.8.4 which has a maven build-system.
+- For gradle it's harder because it depends on really recent (nightly) versions of gradle.
 
 
---> same idea with maven but easier
+
+**BUT:** Gradle since version 3.0 depends on groovy >= 2.0 which depends on gradle.
+
+- Grovy 2.0 depends on gradle 1.0, which depends on groovy 1.8.4 which has a maven build-system.
 
 
-Problem with java projects which have tests which depend on the parent project. --> dependency cycles
+
+
+
+- Problem with java projects which have tests which depend on the parent project. --> dependency cycles
 
 -----------
 
 
 Javadoc --> produces unreproducable output based on filesystem order
 
--> Fix at source when read from filesystem
+- Fix at source when read from filesystem
 
-There might be a debian patch: javadoc-sort-enum-and-annotation-types.diff
+- There might be a Debian patch: javadoc-sort-enum-and-annotation-types.diff
 
-
-Gradle - groovy bootsrap chain:
-
+- Gradle - groovy bootstrap chain:
 
 maven 3->groovy
 
-
 groovy -> gradle
 
-1.8.7 1.2
+- 1.8.7 1.2
 
-2.0.5 1.12
+- 2.0.5 1.12
 
-2.3.6 2.3
+- 2.3.6 2.3
 
-2.4.12 4.3
-
-
-Gradle depends on over 300 previous versions of itself.
-
-Try to go the if we can compile ourself corretly after skipping trough several steps. Git tags seems to be good indicators.
-
-==== {{anchor|RefHeadingToc4104118152727}} Bootstrapping: Mapping the problem space ====
+- 2.4.12 4.3
 
 
+###### Gradle depends on over 300 previous versions of itself.
 
-- two possibilities: minimize the binary seed; eliminate the importance of the binary seed (diverse double compilation)
+- Try to go the if we can compile ourself corretly after skipping trough several steps. Git tags seems to be good indicators.
 
-- usually diverse double compilation is only feasible for C compilers (because other languages and build systems often only have a single implementation)
+Bootstrapping: Mapping the problem space
 
+- **Two possibilities:** minimize the binary seed; eliminate the importance of the binary seed (diverse double compilation)
 
-Timothy showed his build-dependency graph, an informal generalisation of diverse compilation to projects with more than one bootstrapped dependency. Different/diverse "seed sets with no shared binaries".
+- Usually diverse double compilation is only feasible for C compilers (because other languages and build systems often only have a single implementation)
 
-
-- debian currently doesn't declare an exact set of bootstrap dependencies; f-droid assumes many binaries from debian; projects should be specific about these assumptions in general. Ricardo showed us the Guix bootstrapping diagram, a formal explicit bootstrapping specification. Seed set includes things like "mkdir", could be made further abstract e.g. pointing to POSIX spec
-
-
-- reducing binaries is a goal in itself: the number of binaries we need to carry around to get started should be small; it is not necessarily about increasing trust (there are other ways to get there: diverse double compilation, long chains of rebuilding, etc)
+- Timothy showed his build-dependency graph, an informal generalisation of diverse compilation to projects with more than one bootstrapped dependency. Different/diverse "seed sets with no shared binaries".
 
 
-- Definition of "diverse", i.e. not coming from the same authors. Golang 1.4 is not "diverse" from golang 1.6, for DDC purposes
+- Debian currently doesn't declare an exact set of bootstrap dependencies; f-droid assumes many binaries from Debian; projects should be specific about these assumptions in general. Ricardo showed us the Guix bootstrapping diagram, a formal explicit bootstrapping specification. Seed set includes things like **"mkdir"**, could be made further abstract e.g. pointing to POSIX spec
+
+- **Reducing binaries is a goal in itself:** the number of binaries we need to carry around to get started should be small; it is not necessarily about increasing trust (there are other ways to get there: diverse double compilation, long chains of rebuilding, etc)
 
 
-- how can we encourage compiler writers to keep around a bootstrappable implementation? there are disincentives for developers: maintaining a bootstrap path is expensive. by setting a good example of a pretty bootstrap we could demonstrate the benefits
+- Definition of **"diverse"**, i.e. not coming from the same authors. Golang 1.4 is not "diverse" from golang 1.6, for DDC purposes
 
 
-- sharing bootstrap paths, e.g. from a C compiler, lowers the bootstrapping cost across the whole ecosystem, reduces attack surface. harder for compiler writers however, who want to write in their own language.
+- How can we encourage compiler writers to keep around a bootstrappable implementation? there are disincentives for developers: maintaining a bootstrap path is expensive. by setting a good example of a pretty bootstrap we could demonstrate the benefits
 
 
-- one strategy is to find a binary-reduced bootstrap path to a C compiler that can build GCC; any language that can be built with GCC would thus benefit (including Guile, Hugs, etc); another path is to build a C compiler in another language that itself has a short binary-reduced bootstrap path; another path is to revive ancient compilers (but that's hard)
+- Sharing bootstrap paths, e.g. from a C compiler, lowers the bootstrapping cost across the whole ecosystem, reduces attack surface. harder for compiler writers however, who want to write in their own language.
 
 
-- brief digression into the fact that GCC does not distribute its own binaries
-
-- maybe makes it harder for compiler writers to bootstrap themselves
-
-- OTOH, independent distros supply "independent binaries", maybe diverse enough for DDC (unsure if totally solidargument)
+- One strategy is to find a binary-reduced bootstrap path to a C compiler that can build GCC; any language that can be built with GCC would thus benefit (including Guile, Hugs, etc); another path is to build a C compiler in another language that itself has a short binary-reduced bootstrap path; another path is to revive ancient compilers (but that's hard)
 
 
-- identify "checkpoints" (i.e. verified binaries), possible ways to verify a binary: 
+- Brief digression into the fact that GCC does not distribute its own binaries
+
+- Maybe makes it harder for compiler writers to bootstrap themselves
+
+- OTOH, independent distros supply **"independent binaries"**, maybe diverse enough for DDC (unsure if totally solidargument)
+
+- Identify **"checkpoints"** (i.e. verified binaries), possible ways to verify a binary:
 
 - DDC with multiple independent bootstrap compilers
 
-- human verification that binary matches source code (for small enough codebases)
+- Human verification that binary matches source code (for small enough codebases)
 
-- allows us to confidently use the binary to bootstrap future stuff
+- Allows us to confidently use the binary to bootstrap future stuff
 
-- can also be used to verify future checkpoints more directly, using 1 single normal build
+- Can also be used to verify future checkpoints more directly, using 1 single normal build
 
-- (assumes all these processes are reproducible)
+- (Assumes all these processes are reproducible)
 
-- keep a record of which checkpoints generated which other checkpoints
-
-
-Rest of the session was about constructing the build-dependency graph between compilers
+- Keep a record of which checkpoints generated which other checkpoints
 
 
-Partial dependecy graph of a ghc bootstrap path, early boostsrapping information at: https://elephly.net/posts/2017-01-09-bootstrapping-haskell-part-1.html
+- Rest of the session was about constructing the build-dependency graph between compilers
 
-8.2.1
+- Partial dependecy graph of a GHC bootstrap path, early boostsrapping information at: <https://elephly.net/posts/2017-01-09-bootstrapping-haskell-part-1.html>
 
-8.0.1
-
-7.8.1
-
-7.4.1
-
-6.12
-
-6.6
-
-5.0.4
+- 8.2.1
+- 8.0.1
+- 7.8.1
+- 7.4.1
+- 6.12
+- 6.6
+- 5.0.4
 
 
-One idea to consolidate the approach in the link was proposed, is to use nhc98 to build a 32 version of ghc, then crosscompile ghc to x86_64.
+- One idea to consolidate the approach in the link was proposed, is to use nhc98 to build a 32 version of GHC, then crosscompile GHC to x86_64.
 
 
------ Transcription of the poster
+ **Transcription of the poster**
 
 
-A node in this graph represents a particular compiler. Edges are "can build" relationships.
+- A node in this graph represents a particular compiler. Edges are **"can build"** relationships.
 
-Short chains are preferred.
+- Short chains are preferred.
 
-Checkpoints are binaries with a specific hash---the graph above and including the checkpoint
+- Checkpoints are binaries with a specific hash---the graph above and including the checkpoint
 
-could be replaced with that very binary. Ambitious projects may want to increase the number of
+- could be replaced with that very binary. Ambitious projects may want to increase the number of
 
-checkpoints that are reached trhough compilation from source.
+- checkpoints that are reached trhough compilation from source.
 
 
-[Graph:
+**Graph:**
 
-In th emiddle there is a node gcc-4.7 and annotations "Diverse double compilation";
+- In the middle there is a node gcc-4.7 and annotations **"Diverse double compilation"**;
 
-can be built from and can build may other compilers, in particular clang and tinyCC ("25,000 loc").
+- Can be built from and can build may other compilers, in particular clang and tinyCC ("25,000 loc").
 
-from gcc-4.7 there is an edge to ggc-5. From gcc-5 there are many outgoing edges: cpython, ruby
+- From gcc-4.7 there is an edge to ggc-5. From gcc-5 there are many outgoing edges: cpython, ruby
 
-interpreter, jikes, hugs, llvm. golang can self-build and also be built from gcc-5.
+- Interpreter, jikes, hugs, llvm. golang can self-build and also be built from gcc-5.
 
-3 nodes are marked in red (indicating "not cool"): ocamls requires gcc-5 *and* ocaml,
+- 3 nodes are marked in red (indicating **"not cool"**): ocamls requires gcc-5 *and* ocaml,
 
-ghc requires ghc itself to build, rutst requrest clang, llvm, python interpreter *and*
+- GHC requires GHC itself to build, Rust requrest clang, LLVM, Python interpreter *and* Rust itself.
 
-rust itself.
+- For GHC there is incoming edge from hugs, marked with a quesiton mark.
 
-For ghc there is incoming edge from hugs, marked with a quesiton mark.
+- For tinyCC there is an incombing dotted line chain indicating a possible bootstrap path:
 
-For tinyCC there is an incombing dotted line chain indicating a possible bootstrap path:
-
-slow simple lisp -> messcc -> tinnyCC. Another dotted-line bootstrap path drawn is
+- slow simple lisp -> messcc -> tinnyCC. Another dotted-line bootstrap path drawn is
 
 slow simple lisp -> mes -> guile -> nyac + mescc.]
 
 
-This graph may require
+**This graph may require:**
 
-- "or" inbound links (somewhat rare... but desirable! Tends to suggest a good checkpoint)
+- **"or"** inbound links (somewhat rare... but desirable! Tends to suggest a good checkpoint)
 
-- "and" inbound links (typical: srcs and compiler, etc)
+- **"and"** inbound links (typical: srcs and compiler, etc)
 
 - probably use a different color for textual sources
 
-- optonal useful node annotaitons: binary size (smaller tends to suggest a good checkpoint)
+- **optonal useful node annotaitons:** binary size (smaller tends to suggest a good checkpoint)
 
-- should we highlight loops? (again: probably good checkpoints)
+- should we highlight loops? (**gain:** probably good checkpoints)
 
 - mabye a giant elipsis for where $language has a whole huge tree (we mostly care about compilers here)
 
 
-==== {{anchor|RefHeadingToc4106118152727}} Best practices and open issues in regards to engaging upstreams ====
+**Best practices and open issues in regards to engaging upstreams**
 
 
 
-. follow upstream processes
+- follow upstream processes
 
 - difficulty finding .any. place to contribute
 
@@ -375,638 +417,531 @@ This graph may require
 
 - github, gitlab, sourceforge, devel mailing list, bugtracker cover 90+% of cases
 
-solution: ask on IRC or via direct mail on how to contribute
+**solution:** ask on IRC or via direct mail on how to contribute
 
-. difficulties in relying on package maintainer to forward etc
+- difficulties in relying on package maintainer to forward etc
 
 - ask distribution maintainer to forward your patch upstream
 
-. patches rejected
+- patches rejected
 
-. they want to keep their timestamps
+- they want to keep their timestamps
 
-. suggestion: "ask why the current status quo exists", not just assume they are °wrong°
+- **suggestion:** *"ask why the current status quo exists"*, not just assume they are °wrong°
 
-. discuss how to solve the problem differently in a way the maintainers like
+- discuss how to solve the problem differently in a way the maintainers like
 
-. rejected (or not merged) due to lack of ability to test code paths or regressions
+- rejected (or not merged) due to lack of ability to test code paths or regressions.
 
-. add tests
+- add tests.
 
-. find a different reviewer with a saner view of the world
+- find a different reviewer with a saner view of the world.
 
-. try to be friendly and not push too much - might trigger defensive behaviour of maintainers
+- try to be friendly and not push too much - might trigger defensive behaviour of maintainers.
 
-. gentle pings
+- gentle pings
 
-. "what can I do to help you merge this" in the case of unmerged or untouched patches
+**"what can I do to help you merge this"** in the case of unmerged or untouched patches.
 
-. wait 1 month at least, exponential backoff to not be annoying e.g. wait 1, 2, 4, 8
+- wait 1 month at least, exponential backoff to not be annoying e.g. wait 1, 2, 4, 8.
 
-. "I will do it on the weekend" or "next month" - follow up after that
+- **"I will do it on the weekend"** or **"next month"** - follow up after that.
 
-. keep track of patches to ping - e.g. keep URLs in an etherpad, script to send emails
+- keep track of patches to ping - e.g. keep URLs in an etherpad, script to send emails.
 
-- If there is a patch in debian that is not forwarded to upstream, when forwarding upstream mention that Debian already has that patch and you want it in your project as well to signal that there is more than 1 interested party. for bugs.debian.org update forwarded status
+- If there is a patch in Debian that is not forwarded to upstream, when forwarding upstream mention that Debian already has that patch and you want it in your project as well to signal that there is more than 1 interested party. for <https://bugs.Debian.org> update forwarded status.
 
-- link back to debian/other distribution's bugreport in upstream one
-
-
+- link back to **Debian/other** distribution's bugreport in upstream one.
 
 
-problem: deprecated branches
+**problem:** deprecated branches.
 
 - when patches do not apply to master because it has been rewritten
 
 - try to get an review/approval from upstream - makes it easier to get it merged into distributions
 
-- adopt in https://github.com/distropatches/
+-> adopt in <https://github.com/distropatches/>
 
 
-problem: patch sent during deep freeze, so patch is ignored/delayed
+**problem:** patch sent during deep freeze, so patch is **ignored/delayed**
 
-solution: need to ping at the right time
-
-
-idea: keep and share template-snippets of well formulated commit messages or bug report, include reference to documentation so it can be more verbose and useful to upstreams than when writing from scratch every time.
-
-e.g. https://wiki.debian.org/ReproducibleBuilds/Contribute#How_to_report_bugs
+**solution:** need to ping at the right time
 
 
-problem: have to sign CLA
+**idea:** keep and share template-snippets of well formulated commit messages or bug report, include reference to documentation so it can be more verbose and useful to upstreams than when writing from scratch every time.
 
-- argue that it is not copyrightable
-
-- declare patch to be MIT licensed so it can be integrated anywhere
-
-- bots can be very strict, so signing the CLA is often the easiest solution
-
-e.g. Qt, google, GNU, facebook, python
-
-- send bad patch, so maintainer has to rewrite it and it is his copyright
+- e.g. <https://wiki.Debian.org/ReproducibleBuilds/Contribute # How_to_report_bugs>
 
 
-==== {{anchor|RefHeadingToc4108118152727}} How can policies help the end user to define what they want in terms of reproducibility? ====
+**problem:** have to sign CLA.
+
+- argue that it is not copyrightable.
+
+- Declare patch to be MIT licensed so it can be integrated anywhere.
+
+- Bots can be very strict, so signing the CLA is often the easiest solution.
+
+-e.g. Qt, google, GNU, facebook, python
+
+- Send bad patch, so maintainer has to rewrite it and it is his copyright.
 
 
+ **How can policies help the end user to define what they want in terms of reproducibility?**
 
-How can the end user define what they want in terms of reproducibility?
 
-
-# Policies
+#### Policies:
 
 
 * there is no one size fits all policy
 
-* can you verify using a checkbox that the software is the one we want to install?
+* can you verify using a checkbox that the software is the one we want to install?.
 
 * but we want the computer to verify that many people have reproduced the same software.
 
-* how to handle exceptions to the policy?
+* how to handle exceptions to the policy?.
 
-* providing these policies to users is a different question than to provide this kind of information to developers/researchers
+* providing these policies to users is a different question than to provide this kind of information to **developers/researchers**.
 
-* after the installation, we should also be able to verify the software we installed on the computer
+* after the installation, we should also be able to verify the software we installed on the computer.
+
+* **question:** what if the news arrives via Twitter, should this be part of the policy?.
 
 
-* question: what if the news arrives via Twitter, should this be part of the policy?
+**Questions:**
 
+- What is the range of reasonable policies?.
 
-Questions:
-
-- What is the range of reasonable policies?
-
-- How can we communicate these policies to machine adminstrators?
+- How can we communicate these policies to machine adminstrators?.
 
 - How can we implement this in the backend.
 
-- What are the downsides of these policies?
+- What are the downsides of these policies?.
 
 
-# Example policies
+### Example policies
 
 
-EXAMPLE 1
+**Example 1:**
 
-REBUILDERS BUILD INFO FILES
+**REBUILDERS BUILD INFO FILES**
 
-========== ================
+rebuilder A :pkgX matches digest N.
 
----------------
+rebuilder B:pkgX matches digest N.
 
-| rebuilder A | -------→ pkgX matches digest N
+rebuilder C:pkgX matches digest N.
 
----------------
 
----------------
 
-| rebuilder B | -------→ pkgX matches digest N
+**MACHINE:**
 
----------------
+---------------------------------
 
----------------
+policy configured to:
 
-| rebuilder C | -------→ pkgX matches digest N
+- Fetch build info files from three rebuilders.
 
----------------
+- For example Debian, ACLU, CCC, some army :)
 
-|
 
-|
+Local admin could pick a set of rebuilders and pick build info files from the 3 and check if they match.
 
-v
+If the three build info files don't match we could.
 
+- Not install the package.
 
-MACHINE
+- Try to rebuild it ourselves.
 
-=======
+This is what we would need to define in the policy.
 
-policy configured to
 
-- fetch build info files from three rebuilders
+- How many rebuilders do we want to match (m out of n)?.
 
-for example Debian, ACLU, CCC, some army :)
+- Where does the list of rebuilders come from in first place?.
 
+- Think big, maybe we need 500 rebuilders, not only 10. like universities for example.
 
-local admin could pick a set of rebuilders and pick build info files from the 3 and check if they match.
+    - we could have a rebuilder consensus.
 
-If the three build info files don't match we could
+    - it would be harder to attack such a network of rebuilders.
 
-- not install the package
+- How is the redistribution gonna work?.
 
-- try to rebuild it ourselves
+- Backup mechanism for policies.
 
-→ This is what we would need to define in the policy.
+- There is a time when packages would appear as being unreproducible, for ex. when security updates are published, tthe rebuild will take time.
 
+- Have an admin specified rebuilder, for example a local rebuilder.
 
-- how many rebuilders do we want to match (m out of n)?
+- Have a weighted builders (i trust my friends more than XYZ).
 
-- where does the list of rebuilders come from in first place?
+- We want to be able to say that some rebuilders cannot block consensus for us.
 
-- think big, maybe we need 500 rebuilders, not only 10. like universities for example.
+- How do we ensure that our failure modes are not failing?.
 
-→ we could have a rebuilder consensus
+- What if corroboration fails, is missing, is insufficient?.
 
-→ it would be harder to attack such a network of rebuilders
+    - install anyway
 
-- How is the redistribution gonna work?
+    - don't install
 
-- Backup mechanism for policies
+    - local log
 
-- there is a time when packages would appear as being unreproducible, for ex. when security updates are published, tthe rebuild will take time
+    - external log: `report.`
 
-- have an admin specified rebuilder, for example a local rebuilder
+- On a distributed architecture, how and where do we report it?
 
-- have a weighted builders (i trust my friends more than XYZ)
+- Rebuild it ourselves and then? it could match one of the rebuilders, none, the majority, the minority which `.buildinfo` file will we use?
 
-- we want to be able to say that some rebuilders cannot block consensus for us
+    - what if the OS rebuild does not correspond to the consensus' checksums/buildinfo files?.
 
-- how do we ensure that our failure modes are not failing?
+- Policy for rebuilds: always rebuild and then check the consensus, or never build because i don't have resources, or build only in specific cases, like if checksums don't match
 
-- what if corroboration fails, is missing, is insufficient?
 
-→ install anyway
+**Rebuilders:**
 
-→ don't install
+- Architectures?
 
-→ local log
+    - for some archs, m out of n will be different.**
 
-→ external log: report
+- For n out of m:
 
-- on a distributed architecture, how and where do we report it?
+    - default = "the majority", ex: for 10 known rebuilders the strict majority would be 6. majority of potential rebuilders.
 
-- rebuild it ourselves
+    - time -> "not having rebuilt" does not count towards your majority, unless you have a local on demand rebuilder.**
 
-- and then? it could match one of the rebuilders, none, the majority, the minority
+- We don't challenge the idea that we download the `.buildinfo` files from somewhere.
 
-- which buildinfo file will we use?
+- For ex, we could be able to specify the download from a local machine, in case of a company.
 
-→ what if the OS rebuild does not correspond to the consensus' checksums/buildinfo files?
+- Right now, for user policy, the question is not that much where we get the `.buildinfo` files from, but what we do with it.
 
-- policy for rebuilds: always rebuild and then check the consensus, or never build because i don't have resources, or build only in specific cases, like if checksums don't match
+- Could be a sudo rebuilder daemon which publishes `.buildinfo` files (proxy policy)
 
+- Let's put aside the question where we get the info from right now
 
-Rebuilders
+- Currently admins have to have /etc/apt/sources.list or a similar file
 
-- architectures?
+    - we could have a rebuilders.list.**
 
-→ for some archs, m out of n will be different
+- **question:** m out of n → is this per package, per repository, per combination?.
 
-- for n out of m:
+- Policy per repository.
 
-→ default = "the majority", ex: for 10 known rebuilders the strict majority would be 6. majority of potential rebuilders
+- Rebuilders then have to commit to rebuild the contents of the entire repository.
 
-→ time -> "not having rebuilt" does not count towards your majority, unless you have a local on demand rebuilder
+- Weight.
 
+    - what do to if corroboration is insufficient.
 
-- we don't challenge the idea that we download the buildinfo files from somewhere.
+- Log/loglevel.
 
-- for ex, we could be able to specify the download from a local machine, in case of a company.
+- What if my rebuild fails.
 
-- right now, for user policy, the question is not that much where we get the buildinfo files from, but what we do with it.
+- Exception handling.
 
-- could be a sudo rebuilder daemon which publishes buildinfo files (proxy policy)
+    - default policy
 
-- let's put aside the question where we get the info from right now
+- Maybe we could turn this on with sensible exception handling at least.
 
-- currently admins have to have /etc/apt/sources.list or a similar file
+    - for example report externally, warn/log.
 
-→ we could have a rebuilders.list
+- Exception handling for packages which are currently known the be unreproducible
 
-- question: m out of n → is this per package, per repository, per combination?
+    - example GCC.
 
-- policy per repository
+- Turn it on for packages which are supposed to be reproducible (since n times)
 
-- rebuilders then have to commit to rebuild the contents of the entire repository
+    - have one default policy for Debian/etc repositories, one per PPA.
 
-- weight
+    - repositories themselves should state what their default policy is.
 
-- what do to if corroboration is insufficient
+- **"sensible default"**
 
-- log/loglevel
+- Don't blindly trust changes of this policy / compromise
 
-- what if my rebuild fails
+- Policy shipped in a package
 
-- exception handling
+- There should be a list of rebuilders
 
-→ default policy
+- But admins should also be able to manually select the rebuilders
 
-- maybe we could turn this on with sensible exception handling at least
+    - user specified policy.
 
-→ for example report externally, warn/log
 
-- exception handling for packages which are currently known the be unreproducible
-
-→ example GCC
-
-- turn it on for packages which are supposed to be reproducible (since n times)
-
-→ have one default policy for Debian/etc repositories, one per PPA
-
-→ repositories themselves should state what their default policy is
-
-- "sensible default"
-
-- don't blindly trust changes of this policy / compromise
-
-- policy shipped in a package
-
-- there should be a list of rebuilders
-
-- but admins should also be able to manually select the rebuilders
-
-→ user specified policy
-
-
-- this is still very complicated, we should break it down to 3 options.
+- This is still very complicated, we should break it down to 3 options.
 
 - GUI where we could check "Debian as rebuilt by the CCC"
 
 
-EASY GUI:
-
----------------------------------------------------------
-
-Policy Chooser per repository
-
----------------------------------------------------------
-
-x default (none)
-
----------------------------------------------------------
-
-o Debian
-
----------------------------------------------------------
-
-o Debian stricter
-
----------------------------------------------------------
-
-Advanced button
+**EASY GUI:**
 
 
-ADVCANCED GUI:
+- Policy Chooser per repository:
+- X default (none)
+-  o Debian
+-  o Debian stricter
 
-REPOSITORY X
+**ADVCANCED GUI:**
+
+###### REPOSITORY X
 
 ----------------------------------------------------------
 
-Trusted rebuilders INCLUDED REQUIRED
+**Trusted rebuilders INCLUDED REQUIRED**
+
+- Rebuilder A x
+- Rebuilder B
+- Rebuilder C x
 
 ----------------------------------------------------------
 
-Rebuilder A x
+**Number of rebuilders needed for consensus (m out of n):** 2
 
 ----------------------------------------------------------
 
-Rebuilder B
+By default weight is binary (0/1), and in advanced mode we could use non-binary weights.
 
-----------------------------------------------------------
+**Consensus fail policy**
 
-Rebuilder C x
+###### Log policy
 
-----------------------------------------------------------
+**It seems doable! But what's the cost/benefit ratio of it?**
 
-Number of rebuilders needed for consensus (m out of n): 2
+- User stories.
 
-----------------------------------------------------------
+- "Running Debian as rebuilt by the CCC".
 
-→ by default weight is binary (0/1), and...
-
-..in advanced mode we could use non-binary weights.
-
-----------------------------------------------------------
-
-Consensus fail policy
-
-Log policy
-
-
-
-
-
-
-It seems doable! But what's the cost/benefit ratio of it?
-
-- User stories
-
-- "Running Debian as rebuilt by the CCC"
-
-- Snapshot maintenance
+- Snapshot maintenance.
 
 - Rebuild service -> just send a queue to a local or whatever rebuilder
 
-not as part of the installation process
+**not as part of the installation process**
+
+###### → Let's extract the smallest useful subset of this in another session!
+
+- Minimum shippable piece
+
+- **outside of policy questions:** how do we ensure we don't add more privacy concerns for users with this.
+
+### Working sessions IV
 
 
-→ Let's extract the smallest useful subset of this in another session!
+###### **Mapping out archive formats**
 
-<3 Minimum shippable piece
+----------------------------------------
 
+    | | | tar | zip | cpio | git | casync | ostree | squashfs | ar (text) | iso |
+    |--|--|--|--|--|--|--|--|--|--|--|
+    | | has canonical packed form (e.g. no implicit traversal order) | not by default | yes (not sure how stable) | yes | N/A | | | | |
+    | | Can be canonicalized (with enough flags) | yes (with arbitrary choices | | | | | | | no | |
+    | | seekable | no | yes | | sorta (packs: no, and don't ask) | catar | | | yes | |
+    | | sparse files (kernel API is very recent) | yes | | | | long story (will store zeros efficiently and…) | | yes | no | |
+    | abilities: | mmap'able | yes, but not useful due to no seek | | | | catar is | | | | |
+    | abilities: | unpack related trees can conserve disk space | no | no | | no | hardlink or reflinks | hardlink | | no | |
+    | abilities: | pack related tree can dedup | no | no | | yes (it's complicated) | rabin blocking (very good) | file-scale (no chunking) | | | |
+    | abilities: | SPECIAL applications | popular for src releases | | | source | | | | | |
+    | | dev (maj/min) | yes | | yes | no | yes | | yes | | |
+    | | fifo | yes | | | no | yes | | | no | |
+    | | sockets | yes | | | no | yes | | | no | |
+    | | posix &0111 bits (\|x) | yes | yes | yes | yes | yes | | yes | yes | |
+    | | posix &0777 (rwx) | yes | yes | yes | no | yes | | yes | yes | |
+    | | mtime (any? nano? 1sec? 2sec?) mtime ZONEs? | 1s (unix) *gz may add another | 2s (timezones) * per file compression may have another | 1s | no | yes | | 1s | 1s | |
+    | | xattr | yes | not | no (patches floating) | not | yes | | yes | no | |
+    | | arbitrarily long filenames | yes, but three or more encoding variations | | | yes | yes (to linux's max…dissent) | | | no | |
+    | metadata: | symlinks | yes | yes (extension) | | yes | yes | | | no | |
+    | metadata: | hardlinks | yes (but weird) | | | not | no (maybe someday) | | | no | |
+    | metadata: | uid/gid (int) | yes (BOTH‽) | yes (extension) | | yes | yes | | yes | yes | |
+    | metadata: | user/group name | yes (BOTH‽) | yes (extension) | | not | yes | | not | not | |
+    | metadata: | suid bit | yes | yes (extension) | | not | yes | | | yes | |
+    | metadata: | expanded file size | | | | | yes | | | | |
 
+### Building a system image from existing binaries
 
+**Building a system image from existing binaries**
 
-(outside of policy questions: how do we ensure we don#'t add more privacy concerns for users with this)
+- Binaries = build dependencies, like in static linking.
 
-=== {{anchor|RefHeadingToc4110118152727}} Working sessions IV ===
+- Source code = scripts used to create the image, independent of specific
 
-
-
-==== {{anchor|RefHeadingToc4112118152727}} Mapping out archive formats ====
-
-
-| | | tar | zip | cpio | git | casync | ostree | squashfs | ar (text) | iso |
-|--|--|--|--|--|--|--|--|--|--|--|
-| | has canonical packed form (e.g. no implicit traversal order) | not by default | yes (not sure how stable) | yes | N/A | | | | | 
-| | Can be canonicalized (with enough flags) | yes (with arbitrary choices | | | | | | | no | |
-| | seekable | no | yes | | sorta (packs: no, and don't ask) | catar | | | yes | |
-| | sparse files (kernel API is very recent) | yes | | | | long story (will store zeros efficiently and…) | | yes | no | |
-| abilities: | mmap'able | yes, but not useful due to no seek | | | | catar is | | | | |
-| abilities: | unpack related trees can conserve disk space | no | no | | no | hardlink or reflinks | hardlink | | no | |
-| abilities: | pack related tree can dedup | no | no | | yes (it's complicated) | rabin blocking (very good) | file-scale (no chunking) | | | |
-| abilities: | SPECIAL applications | popular for src releases | | | source | | | | | |
-| | dev (maj/min) | yes | | yes | no | yes | | yes | | |
-| | fifo | yes | | | no | yes | | | no | |
-| | sockets | yes | | | no | yes | | | no | |
-| | posix &0111 bits (\|x) | yes | yes | yes | yes | yes | | yes | yes | |
-| | posix &0777 (rwx) | yes | yes | yes | no | yes | | yes | yes | |
-| | mtime (any? nano? 1sec? 2sec?) mtime ZONEs? | 1s (unix) *gz may add another | 2s (timezones) * per file compression may have another | 1s | no | yes | | 1s | 1s | |
-| | xattr | yes | not | no (patches floating) | not | yes | | yes | no | |
-| | arbitrarily long filenames | yes, but three or more encoding variations | | | yes | yes (to linux's max…dissent) | | | no | |
-| metadata: | symlinks | yes | yes (extension) | | yes | yes | | | no | |
-| metadata: | hardlinks | yes (but weird) | | | not | no (maybe someday) | | | no | |
-| metadata: | uid/gid (int) | yes (BOTH‽) | yes (extension) | | yes | yes | | yes | yes | |
-| metadata: | user/group name | yes (BOTH‽) | yes (extension) | | not | yes | | not | not | |
-| metadata: | suid bit | yes | yes (extension) | | not | yes | | | yes | |
-| metadata: | expanded file size | | | | | yes | | | | |
-
-==== {{anchor|RefHeadingToc4114118152727}} Building a system image from existing binaries ====
+**versions of the external packages that are used.**
 
 
-
-Building a system image from existing binaries
-
-- binaries = build dependencies, like in static linking
-
-- source code = scripts used to create the image, independent of specific
-
-versions of the external packages that are used
-
-
-Downloading binaries from remote places
+###### **Downloading binaries from remote places**
 
 - Bootstrapping processes need a similar thing, download upstream bootstrapping
 
-binaries
+#### **Binaries**
 
-- Declaring binary dependencies is the main thing, c.f. buildinfo files
+- Declaring binary dependencies is the main thing, c.f. `.buildinfo` files
 
-- What one does with it during the build is not material, as long as it's
-
-reproducible
+- What one does with it during the build is not material, as long as it's reproducible.
 
 
-Build environment
+**Build environment**
 
-- distribute description of a VM, e.g. gitian
+- Distribute description of a VM, e.g. gitian
 
-similar concept to buildinfo, which describes build-dependencies
+###### similar concept to `.buildinfo`, which describes build-dependencies
 
-- doesn't have to be the exact same VM or environment (and shouldn't be) but
-
+- Doesn't have to be the exact same VM or environment (and shouldn't be) but
 similar enough to express the build dependencies, and reproduce the build.
 
-- if it's easier for users to recreate the build-environment -> more
+- If it's easier for users to recreate the build-environment -> more
+reproducers, better for everyone
 
-reproducers, better for everyone 
+- Ideal for each project to have a one-liner shell script to run that outputs
 
-- ideal for each project to have a one-liner shell script to run that outputs
-
-"is this reproducible"
+**"is this reproducible"**
 
 
-FS images
+**FS images**
 
-- mk_ext4, deterministic tool to create a reproducible ext4 filesystem
+- `mk_ext4`, deterministic tool to create a reproducible `ext4` filesystem `mkfs` for BSD should be reproducible
 
-mkfs for BSD should be reproducible
-
-- might be dependent on ordering of input operations, etc, but still
-
+- Might be dependent on ordering of input operations, etc, but still
 reproducible if that is reproduced
 
-- isofs, reproducible upstream
+- Isofs, reproducible upstream
 
-- squashfs, have patches, but upstream uncooperative
+- Squashfs, have patches, but upstream uncooperative
 
-- libguestfs, run a image in a VM, but not reproducible
+- Libguestfs, run a image in a VM, but not reproducible
 
 
-Setting SOURCE_DATE_EPOCH / timestamps
+#### Setting SOURCE\_DATE\_EPOCH / timestamps
 
-- SOURCE_DATE_EPOCH can be set to the latest modtime of all packages
+- SOURCE\_DATE\_EPOCH can be set to the latest modtime of all packages
 
-(i.e. build-dependencies), communicates some info about how recent the
+- (i.e. build-dependencies), communicates some info about how recent the
 
-image is
+**image is**
 
 
-Cache files / other post-installation products:
+#### Cache files / other post-installation products:
 
-- drop if not necessary
+- Drop if not necessary
 
-- fix if necessary to be static
+- Fix if necessary to be static
 
-- generate at boot time, if necessary to be random or system-specific (like
+- Generate at boot time, if necessary to be random or system-specific (like UUIDs or RNG seeds)
 
-UUIDs or RNG seeds)
 
+**Other sources of unreproducibility**
 
-Other sources of unreproducibility
+- DNF has dependency resolution depending on configured priority of remote repost => need to store this config with the source code.
 
-- DNF has dependency resolution depending on configured priority of remote
+- Debootstrap should be more or less reproducible, testing required
 
-repos => need to store this config with the source code
 
-- debootstrap should be more or less reproducible, testing required
+**Use hash information in `.buildinfo` to reproduce d-installer output (images)**
 
+###### How to preserve software integrity in different legal contexts?
 
-Use hash information in buildinfo to reproduce d-installer output (images)
 
 
-==== {{anchor|RefHeadingToc4116118152727}} How to preserve software integrity in different legal contexts? ====
+**Where we're coming from**
 
 
+- Dkg works for ACLU (but is not a lawyer)
 
-Where we're coming from
+- **concerns:** government forces devs to ship malware, with gag orders (not allowed to talk about it)
 
+- **solution:** make systems where it's impossible for devs to comply (every change has to be visible and accounted for)
 
-- dkg works for ACLU (but is not a lawyer)
+- We have at least four legal jurisdictions represented in our small group (US, Brazil, European countries)
 
-- concerns: government forces devs to ship malware, with gag orders (not allowed to talk about it)
+- One way to market RB is to mention the mafia, but in some places law enforcement can be perceived as the mafia and can be used instead
 
-- solution: make systems where it's impossible for devs to comply (every change has to be visible and accounted for)
 
-- we have at least four legal jurisdictions represented in our small group (US, Brazil, European countries)
+#### What can law enforcement force you to do?
 
-- one way to market RB is to mention the mafia, but in some places law enforcement can be perceived as the mafia and can be used instead
 
+- **example:** [Apple vs FBI](https://en.wikipedia.org/wiki/FBI%E2%80%93Apple_encryption_dispute) but doesn't really work because we do not have the source code.
 
-What can law enforcement force you to do?
+- The same example could apply to the maintainer of tails though (baseball bat kind of threat to flip a bit)
 
+- **another example mentioned;** gag order against [archive.org rescinded](https://archive.org/details/GagOrderRescinded)
 
-- example: Apple vs FBI (https://en.wikipedia.org/wiki/FBI%E2%80%93Apple_encryption_dispute) but doesn't really work because we do not have the source code
+- Depending on context we might agree willingly (catching child abducters...)
 
-- the same example could apply to the maintainer of tails though (baseball bat kind of threat to flip a bit)
+- Typical gag order does not allow you to talk to your lawyer (probably not true)
 
-- another example mentioned; gag order against archive.org rescinded (https://archive.org/details/GagOrderRescinded)
 
-- depending on context we might agree willingly (catching child abducters...)
+**Side question:**
 
-- typical gag order does not allow you to talk to your lawyer (probably not true)
+- What is the prior art of gag orders? (eg before computers and Reproducible Builds)
 
+**How can we defend ourselves?**
 
-Side question:
 
-- what is the prior art of gag orders? (eg before computers and Reproducible Builds)
+- Employment (google...)
 
+- 501c foundations for our OSS projects, either directly (NetBSD Foundation) or indirectly (FreeBSD Foundation, SPI for Debian...)
 
-How can we defend ourselves?
+- Foundations like ACLU (1.5M members in the USA)
 
+- Not being the single point of failure
 
-- employment (google...)
+- Having a lawyer, or going to a journalist? (if not fully detained)
 
-- 501c foundations for our OSS projects, either directly (NetBSD Foundation) or indirectly (FreeBSD Foundation, SPI for debian...)
+- Revoking our own accesses (private keys, destroying second factors...)
 
-- foundations like ACLU (1.5M members in the USA)
 
-- not being the single point of failure
+###### Dealing with jurisdictions is very difficult, and many of us live in countries with a passport issued in another, making it even more complex.
 
-- having a lawyer, or going to a journalist? (if not fully detained)
 
-- revoking our own accesses (private keys, destroying second factors...)
+- Take from the session
 
+- Are Reproduble Builds really a deterrent?
 
-Dealing with jurisdictions is very difficult, and many of us live in countries with a passport issued in another, making it even more complex.
+- Can we technically make it difficult or expensive for threats against us thanks to Reproducible Builds?
 
+- Can we ask foundations what would happen if a developer is under (legal) pressure to insert a backdoor, and reaches out to them?
 
-Take from the session
+- Can we come up with a guide gathering ways we have to defend ourselves?
 
 
-Are Reproduble Builds really a deterrent?
-
-
-Can we technically make it difficult or expensive for threats against us thanks to Reproducible Builds?
-
-
-Can we ask foundations what would happen if a developer is under (legal) pressure to insert a backdoor, and reaches out to them?
-
-
-Can we come up with a guide gathering ways we have to defend ourselves?
-
-
-Report
-
+**Report**
 
 Very complex topic, which raised more questions than answers - for now at least. We focused on which situations we can individually be pushed to do things detrimental to the integrity of software projects, and ways to defend ourselves. Besides being employed by big companies, foundations may manage biggest projects, but not always. We need to ask them which steps they would and could take for us. With this we could or should come up with a more general guide on how to defend ourselves?
 
-==== {{anchor|RefHeadingToc4118118152727}} Marketing: Why is it valuable to support the reproducible builds work and who is our audience? ====
+**Marketing:** Why is it valuable to support the reproducible builds work and who is our audience?
+
+- **1st brainstorming session:** what are the reasons why you think marketing is a good idea (or not)? (see first post-it board)
 
 
+We identified four clusters that marketing relates to: users, developers, management, and the free software community. There is agreement that marketing is important to become visible, thereby moving the burden of discovering RB from the audience to us. It is also important to increase diversity in the RB community.
 
-1st brainstorming session: what are the reasons why you think marketing is a good idea (or not)? (see first post-it board)
+- **2nd brainstorming session:** who would be the targets for marketing efforts? (see second post-it board)
 
+- **Observation:** there’s a lot of overlap e.g. NPM (the company), NPM (the package manager developers), NPM (developers publishing JavaScript packages via NPM), etc.
 
-we identified four clusters that marketing relates to: users, developers, management, and the free software community. There is agreement that marketing is important to become visible, thereby moving the burden of discovering RB from the audience to us. It is also important to increase diversity in the RB community.
+- Interestingly, only few votes went to individual users, because their individual power is limited. Targeting organisations might be better, because *they* can reach many more people that are all similar. It makes more sense to target “user groups” (e.g. via Amnesty International, or HPC users) than individual users (through individual user stories).
 
-
-
-
-
-
-2nd brainstorming session: who would be the targets for marketing efforts? (see second post-it board)
+###### what is the message we have for them?
 
 
-observation: there’s a lot of overlap e.g. NPM (the company), NPM (the package manager developers), NPM (developers publishing JavaScript packages via NPM), etc.
+- **“Compiler builders”** are a target, because compilers are crucial to all software. The message to them is: you don’t want your compilers to produce random results. Appeal to their pride in creating something beautiful and accurate that produces deterministic results.
 
 
-Interestingly, only few votes went to individual users, because their individual power is limited. Targeting organisations might be better, because *they* can reach many more people that are all similar. It makes more sense to target “user groups” (e.g. via Amnesty International, or HPC users) than individual users (through individual user stories).
+- **“Software distributing companies”:** reproducible builds generates user trust. Give your users a reason to trust you even more. Also tell them that the compiler builders are helping us to get deterministic results and increase trust; pass that on to your users.
 
 
+- **“Academics”** includes scientists who want to fully describe their software environment in a reproducible fashion in order to get published (e.g. to comply with journal requirements); it also includes scientists / reviewers who need to reproduce or verify published results, which includes reproducing the software environment.
 
 
+- **Journals have reproducibility requirements that are sometimes satisfied by shipping a binary blob (e.g. a Docker image). Repro builds is a more principled and thus more scientific approach to satisfying these requirements. Strategy:** publish an academic paper introducing best practices that include a motivation for reproducible builds.
 
 
-what is the message we have for them?
+###### People often follow scientists, so publishing something on RB in journals might help motivate compiler builders as well.
 
 
-“Compiler builders” are a target, because compilers are crucial to all software. The message to them is: you don’t want your compilers to produce random results. Appeal to their pride in creating something beautiful and accurate that produces deterministic results.
+**Transcription of posters:**
 
+### Marketing
 
-“Software distributing companies”: reproducible builds generates user trust. Give your users a reason to trust you even more. Also tell them that the compiler builders are helping us to get deterministic results and increase trust; pass that on to your users.
-
-
-“Academics” includes scientists who want to fully describe their software environment in a reproducible fashion in order to get published (e.g. to comply with journal requirements); it also includes scientists / reviewers who need to reproduce or verify published results, which includes reproducing the software environment.
-
-
-Journals have reproducibility requirements that are sometimes satisfied by shipping a binary blob (e.g. a Docker image). Repro builds is a more principled and thus more scientific approach to satisfying these requirements. Strategy: publish an academic paper introducing best practices that include a motivation for reproducible builds.
-
-
-People often follow scientists, so publishing something on RB in journals might help motivate compiler builders as well.
-
-
-
-
-Transcription of posters:
-
-
-Marketing
-
-
-
-
-Poster 1: WHY?
+**Poster 1:** WHY?
 
 
 - Users:
@@ -1019,7 +954,7 @@ Poster 1: WHY?
 
 + Users seem to be unaware that reproducibility even exits, we should show how we can benefit
 
-+ get more users exited / use our work
++ get more users exited / use our work.
 
 + The world needs secure software, the world needs to know this
 
@@ -1031,13 +966,13 @@ Poster 1: WHY?
 
 + It can be very hard to explains the importance of RB
 
-- Developers:
+- **Developers:**
 
 + Sustainability of R-B
 
-+ Get more developers involved
+    + Get more developers involved
 
-+ Needs more contributor -> progress
+    + Needs more contributor -> progress
 
 + There is a lot of software with RB problems -- We need to encourage more people to care and help
 
@@ -1045,7 +980,7 @@ Poster 1: WHY?
 
 + Improve buy-in from other devs
 
-- Managemnent:
+ **Managemnent:**
 
 + Get upper management care more about R-B so devs can work on it
 
@@ -1064,8 +999,7 @@ Poster 1: WHY?
 + RB can strengthen the free software movement / effort
 
 
-Poster 2: WHO?
-
+**Poster 2:** WHO?
 
 - Scientists depending on reproducible software environments for reproducible research. (5 votes)
 
@@ -1075,272 +1009,224 @@ Poster 2: WHO?
 
 - Industry (e.g. aeronautics)
 
-- ... who (as a user) would greatly benefit from RB?
-
+- Who (as a user) would greatly benefit from RB?
 
 - Computer sciences / academy people
-
 
 - Upstream developers, especially if we already have a simple patch.
 
 - Compiler builders (2 votes)
 
-+ gcc developers (1 vote)
+- Gcc developers (1 vote)
 
-+ go developers
+- Go developers
 
-+ Free software (upstream) devs so them get the relevance for their whole project
+- Free software (upstream) devs so them get the relevance for their whole project
 
 - Free software developers (1 vote)
 
 - GNU maintainers
 
-- npm developers
+- Npm developers
 
-- developers who want to be sure to have the exact same build environment across a team
-
+- Developers who want to be sure to have the exact same build environment across a team
 
 - Free software user (1 vote)
 
-+ Security conscious floss users
+- Security conscious floss users
 
-+ User who are enthusiastic about free software, who want to be sure that the sources they have really correspond to their binaries (1 vote)
+- User who are enthusiastic about free software, who want to be sure that the sources they have really correspond to their binaries (1 vote)
 
-+ Users of medical devices
+- Users of medical devices
 
-+ Security conscious users who want to avoid running backdoored software
+- Security conscious users who want to avoid running backdoored software
 
-+ Political activists
-
+- Political activists
 
 - Funders who support repprobuilds work (1 vote)
 
 - Free Software foundations and companies
 
-
 - Distributions (both os and source binary software ones) (2 votes)
 
-+ Canonical (1 vote)
+- Canonical (1 vote)
 
-+ RedHat Management (1 vote)
+- RedHat Management (1 vote)
 
-+ Microsoft, Oracle, Apple
+- Microsoft, Oracle, Apple
 
-+ Github, Gitlab, ... companies
-
-
-TOP THREE AUDIENCES TO FOCUS ON:
+- Github, Gitlab, ... companies
 
 
-1. Compiler builders
-
-2. Software distributing companies
-
-3. Academics
-
-== {{anchor|RefHeadingToc4120118152727}} Day 3 ==
+##### TOP THREE AUDIENCES TO FOCUS ON:
 
 
+- Compiler builders
 
-=== {{anchor|RefHeadingToc4122118152727}} Working sessions V ===
+- Software distributing companies
 
+- Academics
 
+### Day 3
 
-==== {{anchor|RefHeadingToc4124118152727}} Defining terminology: reproducible, bootstrappable, reliable ====
-
-
-
-Pad1
-
-====
+**Working sessions V**
 
 
-Directed graph we came up with in dot:
+**Defining terminology:** reproducible, bootstrappable, reliable
+
+##### Pad1
+
+**Directed graph we came up with in dot:**
 
 
-digraph concept_relations {
+- digraph concept_relations {
 
-reproducible -> practical
+- reproducible -> practical
 
-reproducible -> tamper_proof
+- reproducible -> tamper_proof
 
-reproducible -> zero_trust
+- reproducible -> zero_trust
 
-bootstrappable -> zero_trust
+- bootstrappable -> zero_trust
 
-bootstrappable -> tamper_proof
+- bootstrappable -> tamper_proof
 
-reliable -> practical
+- reliable -> practical
 
-reliable -> tamper_proof
+- reliable -> tamper_proof
 
-reliable -> bootstrappable
+- reliable -> bootstrappable
 
-reliable -> build_failure_is_tampering
+- reliable -> build_failure_is_tampering
 
-build_failure_is_tampering -> isolate_external_failures
+- build_failure_is_tampering -> isolate_external_failures
 
-practical -> bootstrappable
+- practical -> bootstrappable
 
-practical -> reproducible
+- practical -> reproducible
 
-zero_trust -> security
+- zero_trust -> security
 
-zero_trust -> scientific_soundness
+- zero_trust -> scientific_soundness
 
-zero_trust -> resource_sharing
+- zero_trust -> resource_sharing
 
-zero_trust -> proven_good_result_without_rebuilding
+- zero_trust -> proven_good_result_without_rebuilding
 
-resource_sharing -> practical
+- resource_sharing -> practical
 
-proven_good_result_without_rebuilding -> practical 
+- proven_good_result_without_rebuilding -> practical
 
 }
 
 
-We had concepts:
+**We had concepts:**
 
-reproducible: bit by bit identical results
+- **reproducible:** bit by bit identical results.
 
-reliable: build instructions either work or fail consistently
+- **reliable:** build instructions either work or fail consistently
 
-booststrappable: bootstrappable from source, or bootstrappable to identical binaries trough different bootstrap paths.
-
-
-We identified goals:
-
-security
-
-zero trust
-
-scientific soundness
-
-practicality
-
-tampering detection
-
-isolation of external failure causes
+- **booststrappable:** bootstrappable from source, or bootstrappable to identical binaries trough different bootstrap paths.
 
 
+**We identified goals:**
+
+- Security.
+
+- Zero trust.
+
+- Scientific soundness.
+
+- Practicality.
+
+- Tampering detection.
+
+- Isolation of external failure causes.
 
 
+#### Pad2
+
+**Reproducible, deterministic:**
+
+- Binary identical outputs
+
+**Replicability:**
+
+- Strict replicability, get the same result even using different methods
+
+- Does this exist in build systems?
+
+**Reliable:**
+
+- The build instructions always work
+
+#### Trust
+
+- **Good:** Not needing to trust, zero trust, trust less
+
+- **Bad:** needing to trust
 
 
-Pad2
+#### Bootstrappable
 
-====
+- Reduce the set of blindly trusted inputs
 
+**SOURCE\_DATE\_EPOCH specification:** Overview and improvements needed
 
-Reproducible, deterministic:
-
-- binary identical outputs
-
-
-Replicability:
-
-- strict replicability, get the same result even using different methods
-
-- does this exist in build systems?
-
-
-Reliable
-
-- the build instructions always work
-
-
-Trust
-
-- Good: Not needing to trust, zero trust, trust less
-
-- Bad: needing to trust
-
-
-Bootstrappable
-
-- reduce the set of blindly trusted inputs
-
-==== {{anchor|RefHeadingToc4126118152727}} SOURCE_DATE_EPOCH specification: Overview and improvements needed ====
-
-
-
-SOURCE_DATE_EPOCH
-
-==============================================
-
-
-- current spec talks about "current time of system";
+##### SOURCE\_DATE\_EPOCH
+-----------------------------------
+- Current spec talks about **"current time of system";**
 
 however generated files that end up in final output
 
---> clamping: old files stay old, but newer files
+-> clamping: old files stay old, but newer files
 
 get set to source date epoch
 
+#### This is existing practise already, so we should.
 
-This is existing practise already, so we should
-
-update the spec to reflect this.
+##### Update the spec to reflect this.
 
 
-+ Note that this is can also be considered as following
-
-from the currect specification; but not everyone agrees,
-
+- Note that this is can also be considered as following from the currect specification; but not everyone agrees,
 so clarification might be helpful.
 
+- Discussions on if the following one-sentence mathematical summary is useful as guiding idea
 
-+ Discussions on if the following one-sentence mathematical
+**"The output of the build should look as if the build**
 
-summary is useful as guiding idea
-
-
-"The output of the build should look as if the build
-
-had happened instantly at SOURCE_DATE_EPOCH."
+**had happened instantly at SOURCE\_DATE\_EPOCH."**
 
 
---> Will use that sentence as motivational summary
-
-in the introduction (but not as part of the definition)
+-> Will use that sentence as motivational summary in the introduction (but not as part of the definition)
 
 
-+ git not setting the time of checked-out files to that
+- Git not setting the time of checked-out files to that
+of the last commit that changed them (**---> clamping**
 
-of the last commit that changed them (---> clamping
+**is a problem here; forbidding clamping would make**
 
-is a problem here; forbidding clamping would make
-
-this a non-problem)
+**this a non-problem**)
 
 
-- Debian and Suse take SOURCE_DATE_EPOCH from dates in
-
+- Debian and SuSUE take SOURCE\_DATE\_EPOCH from dates in
 Changelogs; Archlinux doesn't have souch a canonical
-
 source.
 
 
 What they do is take current time, but store the value
-
-in their buildinfo file; so the buildinfo file effectively
-
+in their `.buildinfo` file; so the `.buildinfo` file effectively
 becomes part of the source file.
 
-
 Discussion on whether this seems fine (the spec allows
-
-a buildinfo file to be considered source; but the majority
-
+a `.buildinfo` file to be considered source; but the majority
 of this discussion group considers it preferable to take the
-
 time from version control).
 
 
 - discussions on the overwriting change.
 
-
-+ "newer" value should not be in the future for clamping
++ **"newer"** value should not be in the future for clamping
 
 to still work
 
@@ -1352,428 +1238,306 @@ to still work
 
 have better caching. OK? Does the spec have to allow
 
-it? (Technically, a suprocess does not see a value
+it? **(Technically, a suprocess does not see a value**
 
-set to a parent process, nor a newer value)
+**set to a parent process, nor a newer value).**
 
 
-+ subprocesses with modified SOURCE_DATE_EPOCH not
++ subprocesses with modified SOURCE\_DATE\_EPOCH not
 
 properly insolated
 
-
-- Setting SOURCE_DATE_EPOCH in the presence of newer dependencies
-
-
---> set to the maximum of all dependencies?
-
-==== {{anchor|RefHeadingToc4128118152727}} Setting up build environments for reproducibility ====
+- Setting SOURCE\_DATE\_EPOCH in the presence of newer dependencies
 
 
+-> set to the maximum of all dependencies?.
 
-Complex Build Environments
+##### Setting up build environments for reproducibility
 
 
+###### Complex Build Environments
 
 
-fdroid is building android apps. requires lots of software to
-
+- fdroid is building android apps. requires lots of software to
 build. for every different app it needs a different set of sdks. each
-
-app defines it's own build environment requirements. metadata gets out
-
-of sync. provides a build server VM that includes most of the
-
+app defines it's own build environment requirements. metadata gets out of sync. provides a build server VM that includes most of the
 potential versions that each app might require (~30GB
-
 image). loosening strict dependencies might be too much work, and more
 
-divergent from upstream could lead to specific bugs. app itself may
-
+- divergent from upstream could lead to specific bugs. app itself may
 not specify all necessary build dependencies; fdroid meta-data is
-
 needed to specify this additional information.
 
-
-automated integration tests against newer versions compared against
-
+- automated integration tests against newer versions compared against
 the specific versions.
 
+- fdroid currently uses a single build server VM.
 
-fdroid currently uses a single build server VM.
-
-
-goal: reduce the set of implicit dependencies in the base image. move
-
-more into the app-specific metadata. this could reduce the size of the
-
-base image, and have more people using it to test builds.
+- **goal:** reduce the set of implicit dependencies in the base image. move more into the app-specific metadata. this could reduce the size of the base image, and have more people using it to test builds.
 
 
-build a minimal build environment and require more explicit build
-
+- build a minimal build environment and require more explicit build
 dependencies in the fdroid metadata. this allows to detect implicit
-
 dependencies when builds fail.
+- explore containers instead of virtual machines.
+- some of options such as Debian have a base environment in a chroot,
+
+-which installs build-dependencies at build time(sbuild, schroot,
+pbuilder). **guix/nix** have a similar concept by design.
 
 
-explore containers instead of virtual machines.
-
-
-some of options such as debian have a base environment in a chroot,
-
-which installs build-dependencies at build time(sbuild, schroot,
-
-pbuilder). guix/nix have a similar concept by design.
-
-
-containers are good for doing the environment setup, and virtual
-
+- containers are good for doing the environment setup, and virtual
 machines are a possible implementation, but most expensive. the
-
 software provided by the virtual machine may not need to be the same
-
 software used in the build environment.
 
-
-issue of isolation for security vs. clean build environment are
-
+- issue of isolation for security vs. clean build environment are
 separate issues.
 
+- get rid of a single monolithic image.
 
-get rid of a single monolithic image.
+- containers make it easy to do builds with network isolation.
 
+- definiting a **"seed set"** for the virtual machine by splitting parts of the build environment into different **"packages".**
 
-containers make it easy to do builds with network isolation.
-
-
-definiting a "seed set" for the virtual machine by splitting parts of
-
-the build environment into different "packages".
-
-
-fdroid has manifest metadata for packages. can tell gradle what flavor
-
+- fdroid has manifest metadata for packages. can tell gradle what flavor
 of app to build, fields tells if there are any pre-built binaries in
-
 the build, some binaries in the source tree may need to be ignored
 
-(verified built from source elsewhere).
+**(verified built from source elsewhere).**
 
 
-focusing on gradle would handle most of the packages in fdroid; it's
-
+- focusing on gradle would handle most of the packages in fdroid; it's
 easy to extract various metadata using gradle plugins. only a handful
-
 use maven. quite a few use ant.
 
-
-
-
-need a way to get a list of build-dependencies for an offline
-
+- need a way to get a list of build-dependencies for an offline
 mode. this is difficult for android applications, because the
-
 dependencies are gotten from gradle.
 
-
-
-
-build environments should be a minimal build environment indepdendent
-
+- build environments should be a minimal build environment indepdendent
 of the host system. It is recommended to have no network access, in
-
 order to ensure network inputs do not result in irreproducibility.
 
-==== {{anchor|RefHeadingToc4130118152727}} What is needed to run rebuilders? ====
+#### What is needed to run rebuilders?
 
+- What do we need to have/run rebuilders?
 
+- Who does rebuilds already?
 
-What do we need to have/run rebuilders?
-
-
-Who does rebuilds already?
-
-==========================
-
-
+------------------------------------------------
 - One attendee runs a rebuilder for GUIX (~1k packages).
 
 - One attendee has rebuilt individual packages.
 
 - One attendee has rebuilt individual Debian packages using the
-
 published `buildinfo`.
 
 - Tails developers rebuild Tails ISO images before they are released.
 
 
-Example scenario
+##### Example scenario
+-----------------------------------------
 
-================
-
-
-What's the simplest, cheapest and useful rebuilder?
+- What's the simplest, cheapest and useful rebuilder?
 
 
-- Documentation:
+Documentation:
+------------------------------
 
-- required hardware resources (per architecture)
+- required hardware resources **(per architecture)**
 
 - constraints on rebuilders (e.g. to protect against malicious code
-
 in the build rules)
 
+- It should be as simple as **(for a Debian rebuilder):**
 
-- It should be as simple as (for a Debian rebuilder):
+- `apt install debian-rebuilder`
 
+- **By default:** try to rebuild Debian unstable **(⇒ actionable feedback),**
 
-apt install debian-rebuilder
-
-
-- By default: try to rebuild Debian unstable (⇒ actionable feedback),
-
-generate & publish `buildinfo` files.
+- Generate & publish `.buildinfo` files.
 
 
-We need canonical ("official") `buildinfo` files published by
+- We need canonical **("official")** `buildinfo` files published by Debian and we'll use them to rebuild.
 
-Debian and we'll use them to rebuild.
+- We will likely need to use snapshots.Debian.org to get the desired version of the build-dependencies.
 
+- In the future building stable might be good too but right now it's not useful **(we know it's not reproducible and we can't fix it).**
 
-We will likely need to use snapshots.debian.org to get the desired
-
-version of the build-dependencies.
-
-
-In the future building stable might be good too but right now it's
-
-not useful (we know it's not reproducible and we can't fix it).
-
-
-- What if I have N systems I want to turn into rebuilders?
-
-Will they coordinate to share the work or duplicate it?
-
+- What if I have N systems I want to turn into rebuilders? Will they coordinate to share the work or duplicate it?
 
 - Is it OK to broadcast by default the fact you're rebuilding Debian?
 
-Actually we don't need this: apart of the signing key and stuff in
-
-the `buildinfo` we don't leak much.
+**Actually we don't need this:** apart of the signing key and stuff in  the `buildinfo` we don't leak much.
 
 
-What does the concept of rebuilding mean?
-
-=========================================
-
+##### What does the concept of rebuilding mean?
+-------------------------------------------------
 
 For example, do we try to reproduce a previous build in a build env.
-
-that's as close as possible to the previous one, or do we "just"
-
+that's as close as possible to the previous one, or do we **"just"**
 rebuild and compare the results? Or do we do the latter and then if it
-
 doesn't match, we retry with a build env. closer to the `buildinfo`?
 
 
-Pie in the sky option: encode in the source (e.g. `debian/control`)
-
+- Pie in the sky option: encode in the source (e.g. `Debian/control`)
 the requirements for building reproducibly? E.g. having source package
-
 X declare `X-Repro-Build-Dep-Same: libfoo` specifies that a rebuild of
-
 this package with a different version of `libfoo` than what's in the
-
 `buildinfo` file likely won't be reproducible.
 
 
-How do we rebuild?
+###### How do we rebuild?
 
-==================
-
-
-Do we want a centralized/generic rebuilding infrastructure?
-
-Or specific to the project we're rebuilding?
+-----------------------------------
 
 
-How/where do we store results of rebuilds?
+- Do we want a centralized/generic rebuilding infrastructure?
 
-==========================================
+- Or specific to the project we're rebuilding?
 
+
+##### How/where do we store results of rebuilds?
+
+-----------------------------
 
 (both matching and non-matching)
 
+**Prior art:**
 
-Prior art:
 
-
-- https://buildinfo.debian.net/ received `buildinfo` files from
-
-some Debian package developers & automated builders
+- [Debian:info](https://buildinfo.Debian.net/) received `buildinfo` files fromsome Debian package developers & automated builders
 
 - Fedora has a system where developers can confirm a package works
-
-(e.g. on N architectures); this is not about build reproducibility
-
+**(e.g. on N architectures)**; this is not about build reproducibility
 but it is an example of multi-party validation
 
 
-Do we want a shared database of rebuilds? Standardize? Centralize?
+##### Do we want a shared database of rebuilds? Standardize? Centralize?
 
 
 - SPOF is a problem. Each rebuilding org could publish their own
-
 `buildinfo`.
 
 - For complex queries like "what package was built by package X"
-
 we need access to all such databases?
 
 
-How do we lookup reports?
+##### How do we lookup reports?
 
--------------------------
-
-
-Lookup by hash? This only tells us that someone reproduced a build,
-
-but it doesn't tell if someone got a non-matching build.
+--------------------------------
 
 
-Lookup by project namespace + project-specific info,
+- Lookup by hash? This only tells us that someone reproduced a build,
 
+- but it doesn't tell if someone got a non-matching build.
+
+
+- Lookup by project namespace + project-specific info,
 e.g. distro + (package, arch, version)?
 
 
-Marketing
+##### Marketing
+---------------------------------------
 
-=========
-
-
-How do we convince orgs to run rebuilders?
+##### How do we convince orgs to run rebuilders?
 
 
-- Have a few high-profile rebuilders (e.g. CCC, Wikimedia, ACLU) who
-
+- Have a few high-profile rebuilders **(e.g. CCC, Wikimedia, ACLU)** who
 can each explain their own reasons.
 
 - The argument can be tailored to every potential rebuilder.
 
 
-Bonus features & ideas
+##### Bonus features & ideas
+----------------------------------------------
 
-======================
+- Reuse this for the **"I want to rebuild all packages locally before**
+**installing"** policy.
 
-
-- Reuse this for the "I want to rebuild all packages locally before
-
-installing" policy.
-
-- Reuse this for the "if rebuilders don't agree, then rebuild
-
-locally" policy.
+- Reuse this for the **"if rebuilders don't agree, then rebuild**
+**locally"** policy.
 
 - Publish the metadata for a partial mirror that only contains
-
 packages I could successfully reproduce. But the actual packages
-
 would not be hosted here, they would be fetched from
-
 regular mirrors.
 
 - Is it OK to rebuild only subset of the packages? In the discussion
-
-about end-user/sysadmin policy we simplified and assumed rebuilders
-
+about `end-user/sysadmin policy` we simplified and assumed rebuilders
 would build all packages. OTOH every rebuilder will start from
-
 having rebuilt 0 packages.
 
-Build every package once, or potentially more than once (e.g.
-
+- Build every package once, or potentially more than once (e.g.
 building random packages)?
 
 - Allow rebuilding only package uploaded signed by a specified list
-
 of DDs.
 
 - When local build does not match, publish binary artifacts or at
-
 least diffoscope. They could be garbage-collected based on how much
-
 disk space was allocated to the rebuilder by the sysadmin. F-Droid
-
 rebuilder publishes diffoscope output for non-matching builds.
 
+##### Working sessions VI
 
-=== {{anchor|RefHeadingToc4132118152727}} Working sessions VI ===
+-------------------------------------------------------
 
-
-
-==== {{anchor|RefHeadingToc4134118152727}} Mapping out our short- and long-term goals ====
-
+** Mapping out our short- and long-term goals **
 
 
-(by decreasing order of priority)
+**(by decreasing order of priority)**
+
+####### One year
+
+-----------------------------------------------------
 
 
-One year
+- Reproducible hackaton # 2
 
-========
+- Reproducible summit # 4
 
+- ``.buildinfo`` files published by Debian
 
-- Reproducible hackaton #2
-
-- Reproducible summit #4
-
-- `.buildinfo` files published by Debian
-
-- tools to compare & aggregate `.buildinfo` files
+- tools to compare & aggregate ``.buildinfo`` files
 
 - cross-distro <https://tests.reproducible-builds.org/>
-
-- cross-distro `issues.git`
+ cross-distro `issues.git`
 
 - The Unreproducible Package™ covers more than 42 issues and 10 languages
+ we have a logo, stickers and t-shirts
 
-- we have a logo, stickers and t-shirts
 
+###### Two years
 
-Two years
-
-=========
-
+-----------------
 
 - rebuilder run by recognized organizations
 
-- Debian Policy says "packages MUST be reproducible"
+- Debian Policy says **"packages MUST be reproducible"**
 
 - 99% of Debian Buster is reproducible
 
-- we are recognized as a trusted organization by official projects
+- We are recognized as a trusted organization by official projects
 
-- OS installation images are reproducible 
+- OS installation images are reproducible
 
 - Qubes OS is reproducible
 
-- users can set their r-b policy in a Debian release
+- Users can set their r-b policy in a Debian release
 
-- easy to rebuild packages from Debian stable
+- Easy to rebuild packages from Debian stable
 
 - Debian wiki pages are obsolete
 
-- easy to answer "where was this binary built" from, by whom, how?
-
+- Easy to answer **"where was this binary built"**from, by whom, how?
 (souce code, build environment)
 
-- change of paradign of the "free software" definition → software is
-
+- change of paradign of the **"free software"** definition → software is
 only free if it can be rebuilt reproducibly
 
 - the reproducible builds project is very well-known in the FOSS
-
 community worldwide
 
 - FLROSS ?
@@ -1781,176 +1545,142 @@ community worldwide
 - GPL v4 requires reproducible builds
 
 
-Distant goals
-
-=============
-
-
+###### Distant goals
+-------------------------------------------
 - 100% reproducible packages (verifiable)
 
 - proper bootstrapping i.e. guaranteed reproduciblity from scratch
-
 without binary blobs
 
 - a commercial interest in reproduciblity builds (expressed as
-
 requirement for procurements)
 
 - reproduciblity non-free sofware?
 
 - expand reproduciblity builds to more distros and systems, more
-
 adoption, reproduciblity packages are the default, being
-
 non-reproducible is considered as a bug by a broad community
 
 - secure building networks / decentralized and community building
 
-- no talk with "reproducible" in the title at FOSDEM
+- No talk with **"reproducible"** in the title at FOSDEM
 
-- reproducible Debian in space
-
-
-Unknown
-
-=======
+- Reproducible Debian in space
 
 
-- reproducible Lineage OS
+###### Unknown
 
-==== {{anchor|RefHeadingToc4136118152727}} How to onboard new contributors ====
+- Reproducible Lineage OS
+
+###### How to onboard new contributors
 
 
 
-related: https://pad.riseup.net/p/reproduciblebuildsIII-newcomerdocumentation
+**Related:** <https://pad.riseup.net/p/reproduciblebuildsIII-newcomerdocumentation>
+
+- What are the goals of a newbie?
+
+- What problems do newbies have to get started?
+
+-> problem: spread out resources ML, git, alioth, wiki
+
+- **want:** web-page with **"gzip"** in red and **"gzip -n"** in green
 
 
-What are the goals of a newbie?
+- **want:** find the reproducibility status of packages in other distributions
+
+- is it reproducible, what patches are required?
+
+- Make RB status pages more discoverable
+
+- Needs UI designer to make tiny hidden links more visible
+
+- FAQ how to find information about status of a package in a distribution ; also past rb bugs + patches relating to that package - if possible also tools patches
 
 
-What problems do newbies have to get started?
-
-
-problem: spread out resources ML, git, alioth, wiki
-
-
-want: web-page with "gzip" in red and "gzip -n" in green
-
-
-want: find the reproducibility status of packages in other distributions => is it reproducible, what patches are required?
-
-=> make rb status pages more discoverable
-
-=> needs UI designer to make tiny hidden links more visible
-
-=> FAQ how to find information about status of a package in a distribution ; also past rb bugs + patches relating to that package - if possible also tools patches
-
-=> more advertising of toolchain patches
+###### more advertising of toolchain patches
 
 
 For developers, wanting to get reproducible results from make
 
-=> describe your build environment
+###### describe your build environment
 
 
-Q: how to make my software reproducible?
+**Q:** how to make my software reproducible?
 
-How to check if my software is reproducible?
+- How to check if my software is reproducible?
 
-reprotest, tests.r-b.o, reproducibleopensuse tools, describe manual process
+- Reprotest, tests.r-b.o, reproducible-opensuse tools, describe manual process
 
-How to find out why not?
+- How to find out why not?
 
-look at diffoscope output for relevant strings and use them to locate relevant source: grep -r "Build date: %s"
+- Look at diffoscope output for relevant strings and use them to locate relevant source: grep -r "Build date: %s"
 
-investigate where output files come from and if any of the inputs differ, recursively
+- Investigate where output files come from and if any of the inputs differ, recursively
 
-check for other sources listed in theunreproduciblepackage
+- Check for other sources listed in `theunreproduciblepackage`
 
-How to fix?
+- How to fix?
 
-refer to README files in theunreproduciblepackage and other rb docs
+- Refer to `README` files in theunreproduciblepackage and other rb docs
 
-Maybe: How to make sure that it remains fixed?
+**Maybe:** How to make sure that it remains fixed?
 
-(e.g. re-test every month)
+- (e.g. re-test every month)
 
-How to ask for help with the above?
+- How to ask for help with the above?
 
-ML, IRC, useful information to include
+- ML, IRC, useful information to include
 
-=> add call for action
+- Add call for action
 
-=> add "for developers" / "how to get involved" page to r-b.org
+###### Add **"for developers"** / **"how to get involved"** page to r-b.org
 
-"Resources" is wrong for ML => Community/Communication channels
+- **"Resources"** is wrong for ML **(Community/Communication channels)**
 
-
-People without own software:
+###### People without own software:
 
 What can I do to help?
 
-=> work on r-b tools, fix debian packages and FLOSS upstream projects, work on test infrastructure
+- work on r-b tools, fix Debian packages and FLOSS upstream projects, work on test infrastructure
 
-=> use "reproducible-check" on your Debian system
-
-
+- use **"reproducible-check"** on your Debian system
 
 
-Good: want to discover about the subject with direct links to videos, link to event page
+- **Good:** want to discover about the subject with direct links to videos, link to event page
 
 
-News blog under debian.org instead of r-b.org, news on r-b.o is not updated, can appear orphaned
+News blog under Debian.org instead of r-b.org, news on r-b.o is not updated, can appear orphaned move ? separate marketing updates from developer information?
 
-=> move ?
+- r-b.o/docs are read and somewhat useful, but maybe too theoretical or not well-ordered.
+- **Next steps:** add **"get involved"**, **"for developers"**, **"for distributors"** page
 
-separate marketing updates from developer information?
+- **Tools section:** links to Debian package of reprotest, disorderfs, strip-nondeterminism instead of generic project website
 
-
-r-b.o/docs are read and somewhat useful, but maybe too theoretical or not well-ordered.
-
-
-Next steps: add "get involved", "for developers", "for distributors" page
-
-Tools section: links to debian package of reprotest, disorderfs, strip-nondeterminism instead of generic project website
-
-=> de-debianize, have tarballs discoverable # pypi is outdated anyway and not as useful
+- de-Debianize, have tarballs discoverable #  PyPI is outdated anyway and not as useful
 
 
-==== {{anchor|RefHeadingToc4138118152727}} Identifying next actionable steps for marketing outreach ====
+###### Identifying next actionable steps for marketing outreach
 
 
 
-Overall marketing goal: Get more people to embrace, support and implement reproducible builds
+- **Overall marketing goal:** Get more people to embrace, support and implement reproducible builds
 
 
-Audiences we had identified in the Marketing I session:* Compiler builders
-* Software distributing companies
-* Academics
-* Developers (added post-session)
+- **Audiences we had identified in the Marketing I session:** Compiler builders
+    - Software distributing companies
+    - Academics
+    - Developers (added post-session)
+    - we expand on the audiences we previously identified:
 
+- Toolchain developers
+- Companies that produce and distribute software
+- Universities / academics
+- Developers in general
+- Governments and policy makers
+- Powerful users (software consumers)
 
-
-
-
-we expand on the audiences we previously identified:
-
-- toolchain developers
-
-- companies that produce and distribute software
-
-- universities / academics
-
-- developers in general
-
-- governments and policy makers
-
-- powerful users (software consumers)
-
-
-
-
-For each audience we want to identify:
+###### For each audience we want to identify:
 
 
 * Why reproducible builds are valuable to them, from their perspective
@@ -1959,426 +1689,317 @@ For each audience we want to identify:
 * Next steps and action items
 
 
-
-
-
-Developers in general
-
-=========
-
-
-Developers:
+###### Developers in general
+-----------------------------
+###### Developers:
 
 - those who develop their own software
 
 - those working with other software
 
 
-Values:
+###### Values:
 
-Here is my software, it build reproducibly, and I am proud of it.
+- Here is my software, it build reproducibly, and I am proud of it.
 
-Higer quality, interest of the user and interest of other developers. User pressure is a good makreting value point.
+- Higer quality, interest of the user and interest of other developers. User pressure is a good makreting value point.
 
-I am a dev I didn't know how to prove that my work is rb. With reprotest I can achieve that.
+- I am a dev I didn't know how to prove that my work is rb. With reprotest I can achieve that.
 
 
-Action items:
+###### Action items:
 
 - get documentation to support devs to know how to use reprotest in this regard.
 
 - documentation re sending patches to upstream
 
 
-Toolchain developers
-
-=========
+###### Toolchain developers
 
 
-They have 2 key issues:
+**They have 2 key issues:**
 
-- toolchain is not reproducible
+- Toolchain is not reproducible
 
-- it doesnt work deterministically
-
-
-Values:
-
-- trustworthiness from other developers
-
-- it's easier to debug a toolchain that is well defined
-
-- reproducibility improves resource sharing (because all resources are equal)
-
-- benefit to their users
+- It doesn't work deterministically
 
 
-Example of success story:
+###### Values:
 
-- continuous integration systems
+- Trustworthiness from other developers
+
+- It's easier to debug a toolchain that is well defined
+
+- Reproducibility improves resource sharing (because all resources are equal)
+
+- Benefit to their users
 
 
-Action items
+###### Example of success story:
+
+- Continuous integration systems
+
+
+###### Action items
 
 
 - Find instances in which something bad happened and could have been prevented. Search for bug reports to find these cases and write a post-mortem of the bug report.
 
-
-- GUIX: direct outreach with upstreams. reach sevral language communities
-
-
-- Conferences: FOSDEM, also small ones
-
-
-Talk: good for ppl who already know about rb
+- **GUIX:** direct outreach with upstreams. reach sevral language communities.
+- **Conferences:** FOSDEM, also small ones.
+    - **Talk:** good for ppl who already know about rb.
+    - **Table:** even better espec. for folks who don't know rb yet
+- Have a logo and get a banner for booths.
 
 
-Table: even better espec. for folks who don't know rb yet
+###### Academics
+
+-----------------------------
 
 
-- Have a logo and get a banner for booths
-
-
-Academics
-
-=========
-
-
-We're focussing on scientist, and particularly on disciplines whose
-
+- We're focussing on scientist, and particularly on disciplines whose
 published results rely a lot on software.
-
-
-There's an ongoing "reproducibility crisis" in science.
-
-
-Some leading journals (e.g. Nature) now require software that a paper
-
+- There's an ongoing **"reproducibility crisis"** in science.
+- Some leading journals (e.g. Nature) now require software that a paper
 relies upon to be FOSS.
-
-
-These people already have a concept of "reproducibility", which is
-
+- These people already have a concept of **"reproducibility"**, which is
 good. Sadly it doesn't match ours. How do we bridge these 2 concepts?
 
 We have some scare stories that prove that non-reproducible software
-
 can lead to non-reproducible papers:
 
 
-- benchmarks are only reproducible if the benchmarking software can
-
-itself be built reproducibly
-
-
-- a version string is not enough to describe what software one shall
-
-use to reproduce results: e.g. two R binaries built from the same
-
-source, but with different versions of build-dependencies, can
-
-produce different results
+Benchmarks are only reproducible if the benchmarking software can itself be
+built reproducibly a version string is not enough to describe what software one
+shall use to reproduce results: e.g. two R binaries built from the same source,
+but with different versions of build-dependencies, can produce different
+results
 
 
-ACTION: write "The Unreproducible Paper" (similar to "the
-
-unreproducible package") that shows how so-called reproducible
-
+**ACTION:** write **"The Unreproducible Paper"** (similar to **"the**
+**unreproducible package"**) that shows how so-called reproducible
 research results can't be actually reproduced if they rely on
-
 non-reproducible software.
 
 
-Where to find interested people who can have some leverage: computer
-
-science, ACM, fields that already care a lot about FOSS
-
+- Where to find interested people who can have some leverage: computer
+science, ACM, fields that already care a lot about FOSS.
 and reproducibility.
 
 
-Companies
+###### Companies
 
-=========
-
-
-We focused on companies that produce and/or distribute software.
+------------------------------------------------------------
 
 
-Value of RBs to them
+- We focused on companies that produce and/or distribute software.
+
+
+###### Value of RBs to them
 
 --------------------
 
-
-
-
 - Save costs and time to remediation for security problems
-
 (interestingly, these arguments work for internal and proprietary
+software as well) reduce scope of QA upon incremental changes: why are you testing
 
-software as well)
-
-
-- reduce scope of QA upon incremental changes: why are you testing
-
-what has not changed?
+What has not changed?
 
 - faster builds and automated tests ⇒ shorter feedback loop for
-
 developers ⇒ more enjoyable and productive workplace
-
-
-
-
 - Increase trust existing & future consumers can put into your
 
-software i.e. competitive argument vs. other FOSS vendors
-
+Software i.e. competitive argument vs. other FOSS vendors
 (this requires the software to be FOSS in the first place)
-
-
 E.g. RHEL vs. CentOS: why should I trust the RHEL binaries if
-
 I can't reproduce them?
 
 
 - Lower the incentive for adversaries to target your build systems
-
 and the people who run them. Incidentally, this allows you to allow
-
 less trusted people (e.g. junior sysadmins) to manage your
-
 build system.
 
 
 - Companies that produce/distribute software also consume some
-
-⇒ the marketing speech tailored for companies that don't produce
-
-software works here too.
+ the marketing speech tailored for companies that don't produce software works here too.
 
 
-Success stories
+###### Success stories
 
 ---------------
 
 
 - We're told that Microsoft has shortened a lot their feedback loop
-
 and time to remediation thanks to RBs.
 
+**ACTION:** quotable reference needed
 
-ACTION: quotable reference needed
 
+- Bazel (Google) and the many companies that use it.
 
-- Bazel (Google) and the many companies that use it
+- Turn high-profile organizations (NASA, Tesla, Google etc.) into success stories / advocates:
 
+**ACTION:** find out if they use reproducible builds; if yes, why?
 
-- Turn high-profile organizations (NASA, Tesla, Google etc.) into
+We get a success story and probably new selling points; if not, then it's a good case for arguing in favor of RBs.
 
-success stories / advocates:
+###### Funding reproducible builds work
 
+**Funding for RB - Mapping Session**
 
-ACTION: find out if they use reproducible builds; if yes, why?
 
-⇒ we get a success story and probably new selling points;
+**3 steps:** Mapping the status quo of resources currently flowing into RB; identifying what is working well and where there is room for improvement, finding solutions to the needs that need to be addressed
 
-if not, then it's a good case for arguing in favor of RBs.
 
+###### Funding consists of 4 major groups:
 
-==== {{anchor|RefHeadingToc4140118152727}} Funding reproducible builds work ====
 
+- Material and infrastructure (sponsored hardware: servers/cpu, free tools: CI, repositories)
 
 
-Funding for RB - Mapping Session
+- **money:** one-off funding and sustained funding, travel support for conferences and meetings.
 
 
-3 steps: Mapping the status quo of resources currently flowing into RB; identifying what is working well and where there is room for improvement, finding solutions to the needs that need to be addressed
+- **Time:** Volunteer work; paid interns through Summer of Code programs, Outreachy etc; convince your boss to let you spend some of your working hours to work on RB; fix a client's/company's problem and get paid for it
 
 
-Funding consists of 4 major groups:
+- **Community:** Working on documentation, advertising & spreading the word, mindshare; offload work from Debian maintainers to upstream and get them involved in the idea
 
 
-material and infrastructure (sponsored hardware: servers/cpu, free tools: CI, repositories)
+- Material and infrastructure is working well.
 
+- Money is somewhat erratic, it's not certain how sustained funding will and can be.
 
-money: one-off funding and sustained funding, travel support for conferences and meetings.
+- Time is the most scarce resource, and it's closely interconnected to Community, to which there hasn't been a large effort so fart.
 
 
-Time: Volunteer work; paid interns through Summer of Code programs, Outreachy etc; convince your boss to let you spend some of your working hours to work on RB; fix a client's/company's problem and get paid for it
+###### Solutions:
 
+- Material/infrastructure:
 
-Community: Working on documentation, advertising & spreading the word, mindshare; offload work from Debian maintainers to upstream and get them involved in the idea
 
+- get the donor to maintain
 
 
+###### Money:
 
-Material and infrastructure is working well. 
 
-Money is somewhat erratic, it's not certain how sustained funding will and can be.
+- form a task group to focus efforts for fundraising > frees up developers' time
 
-Time is the most scarce resource, and it's closely interconnected to Community, to which there hasn't been a large effort so fart. 
 
+- funding might be easier to get for a formal organizational entity/structure like a foundation - lots of work
 
-Solutions:
 
+###### Bounty Hunters
 
 
+**Time & Community**
 
-Material/infrastructure:
 
+###### delegate
 
-get the donor to maintain
 
+- Call for volunteers > explicitly ask for time (vs. implicit in the project)
 
+- Ask employers to donate time explicitly and implicitly (e.g. through making their software reproducible)
 
+- Focus on practical benefits for RB
+- Spin software scandals caused by non-RB software practices, make use of public exposure of the topic
 
+- Find a person to coordinate volunteers, build a community (esp. GSoC interns, they need more than being allowed to work to support you afterwards)
 
+- Sell RB to government advisory groups - do the beer drinking hand shaking thing
 
-Money:
-
-
-form a task group to focus efforts for fundraising > frees up developers' time
-
-
-funding might be easier to get for a formal organizational entity/structure like a foundation - lots of work
-
-
-Bounty Hunters
-
-
-
-
-
-
-Time & Community
-
-
-delegate
-
-
-call for volunteers > explicitly ask for time (vs. implicit in the project)
-
-
-ask employers to donate time explicitly and implicitly (e.g. through making their software reproducible)
-
-
-focus on practical benefits for RB
-
-
-spin software scandals caused by non-RB software practices, make use of public exposure of the topic
-
-
-find a person to coordinate volunteers, build a community (esp. GSoC interns, they need more than being allowed to work to support you afterwards)
-
-
-Sell RB to government advisory groups - do the beer drinking hand shaking thing
-
-
-Explain RB - don't say what it is technically, but what it wants to achieve and what its impacts will be
-
-
-badges for projects to display their reproducible pride
-
-
+- Explain RB - don't say what it is technically, but what it wants to achieve and what its impacts will be
+- Badges for projects to display their reproducible pride
 be present at events, do meetups, to engage a wider audience
 
 
-
-
-=== {{anchor|RefHeadingToc4142118152727}} Working sessions VII ===
-
-
-
-==== {{anchor|RefHeadingToc4144118152727}} Enabling cross-distro reproducibility ====
+###### Working sessions VII
 
 
 
-repro-builds
-
-DDC: Diverse Double Compilation
-
-We have a failing test case for reproducibilly build GCC via DDC on guix
+**Enabling cross-distro reproducibility**
 
 
-The ultimate DDC would be being able to do cross distro DDC
+###### repro-builds
+
+**DDC:** Diverse Double Compilation
+
+- We have a failing test case for reproducibilly build GCC via DDC on guix
+
+- The ultimate DDC would be being able to do cross distro DDC
+
+- Why do we want to have the same binary for gcc on Debian?
 
 
-Why do we want to have the same binary for gcc on debian?
+- Golden bootstrap compiler that everyone agrees on. This **"golden bootstrap"** compiler becomes the root of the software compilation DAG.
 
 
-Golden bootstrap compiler that everyone agrees on. This "golden bootstrap" compiler becomes the root of the software compilation DAG.
+- Other binaries may be bit identical universaly. For example a bit identical TOR would be lovely. However, gcc is a good start.
 
 
-Other binaries may be bit identical universaly. For example a bit identical TOR would be lovely. However, gcc is a good start.
+**ecomendation:** gcc 4.7 (which doesn't require C++ support to compile)
 
 
-Recomendation: gcc 4.7 (which doesn't require C++ support to compile)
+- For a canonical TOR, you need to agree on library versions.
 
 
-For a canonical TOR, you need to agree on library versions.
+-------------------------
+
+###### Goal:
 
 
------
-
-Goal:
+- For equal build infos do we get equal binaries? We should have a script for comparing `.buildinfo` files and determining if they are equal.
 
 
-For equal build infos do we get equal binaries? We should have a script for comparing buildinfo files and determining if they are equal.
+###### Current state:
+
+- At the moment, `.buildinfo` is not a meaningful cross distro data format.
 
 
-Current state:
+###### Goal:
 
-At the moment, buildinfo is not a meaningful cross distro data format.
-
-
-Goal:
-
-Rather then declaring build-info the defacto shared standard. We should define the semantic space that any given build-info like format needs to store and the create tools for converting between the formats.
+- Rather then declaring build-info the defacto shared standard. We should define the semantic space that any given build-info like format needs to store and the create tools for converting between the formats.
 
 
-Current state:
+######  Current state:
 
-Buildinfo currently specifies some of the data, but not all of the data, required to define a build environment.
+- `.buildinfo` currently specifies some of the data, but not all of the data, required to define a build environment.
 
 
-Current state:
+###### Current state:
 
-Things are worse then they seem cross distro. Even if we specify the build environment percisly in terms of which library version was used. We still need to normalize the builds of all build dependencies.
+- Things are worse then they seem cross distro. Even if we specify the build environment percisly in terms of which library version was used. We still need to normalize the builds of all build dependencies.
 
 
 ---
 
 
-Current state:
+###### Current state:
 
 
-At some point Suse had a non-polished reproducibly building gcc patch. This patch was not submitted.
-
-
-----
-
-
-New goal:
-
-Don't solve the build dependency comparison problem yet, because we don't know how to solve it. Solve the SIMPLIST case. Try to create a golden tinycc.
+- At some point Suse had a non-polished reproducibly building gcc patch. This patch was not submitted.
 
 
 ----
 
 
-How much work can we share in a canonical build process for a bootstrapped binary identical tinycc?
+###### New goal:
 
+- Don't solve the build dependency comparison problem yet, because we don't know how to solve it. Solve the SIMPLIST case. Try to create a golden tinycc.
 
-----
+---------------------------
 
+- How much work can we share in a canonical build process for a bootstrapped binary identical tinycc?
 
-Should we have a shared build system or a shared recipe and multiple build systems?
+--------------------------------------
 
+- Should we have a shared build system or a shared recipe and multiple build systems?
 
-This recipe should work with any c compiler/multiple compilers.
-
-
-We want to specify only the parts of the recipe which actually effect the output. But not specify the entire "hash" of the exact system used to build.
+- This recipe should work with any c **compiler/multiple compiler**s.
+- We want to specify only the parts of the recipe which actually effect the output. But not specify the entire **"hash"** of the exact system used to build.
 
 
 -------------------------------------------------------
@@ -2387,73 +2008,65 @@ We want to specify only the parts of the recipe which actually effect the output
 This is DDC (Diverse double compilation)
 
 
-|-------------| |-------------| |-------------||tinycc source| == |tinycc source| == |tinycc source|
+	|-------------| |-------------| |-------------|
+	|tinycc source| == |tinycc source| == |tinycc source|
+	|-------------| |-------------| |-------------|
 
-|-------------| |-------------| |-------------|
+	↓ ↓ ↓
 
-
-↓ ↓ ↓
-
-
-|-------------| |-------------| |-------------||any c compile| != |any c compile| != |any c compile| (any c compiler)
-
-|-------------| |-------------| |-------------|
+	|-------------| |-------------| |-------------|
+	|any c compile| != |any c compile| != |any c compile| (any c compiler)
+	|-------------| |-------------| |-------------|
 
 
-↓ ↓ ↓
+	↓ ↓ ↓
 
 
-|-------------| |-------------| |-------------|
-
-|tinycc bin 1 | != |tinycc bin 2 | != |tinycc bin 3 |
-
-|-------------| |-------------| |-------------|
+	|-------------| |----------------| |----------------|
+	|tinycc bin 1 | != |tinycc bin 2 | != |tinycc bin 3 |
+	|-------------| |----------------| |----------------|
 
 
 -------------------------------------------------------
 
 
-|-------------| |-------------| |-------------||tinycc source| == |tinycc source| == |tinycc source|
-
-|-------------| |-------------| |-------------|
-
-
-↓ ↓ ↓
+	|-------------| |-------------| |-------------|
+	tinycc source| == |tinycc source| == |tinycc source|
+	|-------------| |-------------| |-------------|
 
 
-|-------------| |-------------| |-------------|
-
-|tinycc bin 1 | != |tinycc bin 2 | != |tinycc bin 3 |
-
-|-------------| |-------------| |-------------|
+	↓ ↓ ↓
 
 
-↓ ↓ ↓
+	|-------------| |-------------| |-------------|
+	|tinycc bin 1 | != |tinycc bin 2 | != |tinycc bin 3 |
+	|-------------| |-------------| |-------------|
 
 
-|-------------| |-------------| |-------------|
+	↓ ↓ ↓
 
-| tinycc bin | == | tinycc bin | == | tinycc bin |
 
-|-------------| |-------------| |-------------|
+	|-------------| |-------------| |-------------|
+	| tinycc bin | == | tinycc bin | == | tinycc bin |
+	|-------------| |-------------| |-------------|
 
 
 ---
 
 
-We want to create a reproducible build path for tinycc which works on any POSIX environment.
+- We want to create a reproducible build path for tinycc which works on any POSIX environment.
 
 
 ---
 
 
-We want to make the paths hyperdiverse. Basically fuzz testing on this process.
+- We want to make the paths hyperdiverse. Basically fuzz testing on this process.
 
 
 ---
 
 
-Try on many computers even running the same system.
+- Try on many computers even running the same system.
 
 
 
@@ -2461,58 +2074,50 @@ Try on many computers even running the same system.
 ----
 
 
-End goal: Create a common bootstrap method and start comparing hashes.
+**End goal:** Create a common bootstrap method and start comparing hashes.
 
-Create a bootstrap@home project where anyone with some spare CPU cycles can run the script and report back the hash they got.
+- Create a bootstrap@home project where anyone with some spare CPU cycles can run the script and report back the hash they got.
 
-==== {{anchor|RefHeadingToc4146118152727}} Exploring reproducibility for Mac and Windows ====
+###### Exploring reproducibility for Mac and Windows
 
-
-
-Cross-building reproducibly
+**Cross-building reproducibly**
 
 
-For Windows
+###### For Windows
 
 
-For Windows, it is possible to use the mingw-w64 toolchain. There are packages in debian (and more distributions), but it is quite old and therefore more
-
-recommended to build it from source (from the Git repository).
+- For Windows, it is possible to use the mingw-w64 toolchain. There are packages in Debian (and more distributions), but it is quite old and therefore more recommended to build it from source (from the Git repository).
 
 
-possible action item: update the debian package
+- **possible action item:** update the Debian package
 
 
+- This toolchain is still actively maintained, and notably used to build Firefox for Windows. It is possible to build against the official MSVC run-time from Microsoft, which can be freely downloaded from the Windows website.
 
 
-This toolchain is still actively maintained, and notably used to build Firefox for Windows. It is possible to build against the official MSVC run-time from Microsoft, which can be freely downloaded from the Windows website.
+###### Instructions can be found at:
+
+<https://git-rw.torproject.org:builders/tor-browser-build.git>
+
+(there is a `README` file)
 
 
-Instructions can be found at:
-
-https://git-rw.torproject.org:builders/tor-browser-build.git
-
-(there is a README file)
+- There is a configuration file for each component, written in YAML. A tool called "rbm" parses the YAML and takes the steps required to build (and is already capable to create containers).
 
 
-There is a configuration file for each component, written in YAML. A tool called "rbm" parses the YAML and takes the steps required to build (and is already capable to create containers).
+- (I can picture some sort of integration with Salt to auto-create build VMs)
 
 
-(I can picture some sort of integration with Salt to auto-create build VMs)
+- This toolchain can apparently also be built through pkgsrc (the NetBSD packages) on a number of different platforms (cross/mingw).
 
 
+###### For Mac OS X and iOS
 
 
-This toolchain can apparently also be built through pkgsrc (the NetBSD packages) on a number of different platforms (cross/mingw).
+- Apple doesn't seem to care about Reproducible Software. They use their own toolchains internally, which they do not distribute.
 
 
-For Mac OS X and iOS
-
-
-Apple doesn't seem to care about Reproducible Software. They use their own toolchains internally, which they do not distribute.
-
-
-However, it is possible to:
+###### However, it is possible to:
 
 * cross-compile for Mac OS X with clang;
 
@@ -2525,338 +2130,227 @@ In the same repository as above, there are also instructions for cross-building 
 It is technically possible to run Mac OS X in a VM, although it is apparently illegal. The Mac OS X installer can be leveraged to generate bootable removable media to install it. VirtualBox supports it explicitly: there is a host profile for Mac OS X on Intel 64-bits.
 
 
-A container technology is also available for Mac OS X.
+###### A container technology is also available for Mac OS X.
 
 
-General notes
+**General notes**
 
 
-The path to the toolchain used can end up in the final binaries (eg GCC).
+- The path to the toolchain used can end up in the final binaries (eg GCC).
 
 
-Reproducibility can be useful for performance, eg if people can more easily share binaries because they know they are generated identical (caching). The
+- Reproducibility can be useful for performance, eg if people can more easily share binaries because they know they are generated identical (caching). The
 
-real-world use-case brought up involves computer clusters shared among many users.
+- real-world use-case brought up involves computer clusters shared among many users.
 
-==== {{anchor|RefHeadingToc4148118152727}} What does code-signing means in terms of reproducibility? ====
+######  What does code-signing means in terms of reproducibility?
 
+###### **code signing**
+--------------------------------------------
 
-
-code signing
-
-============================================
-
-
-General area of this session: source code
-
+- General area of this session: source code
 signing, e.g., signing tar balls, git
-
 commits, etc.
 
 
-Summary of ideas that came up; no definite
-
-conclusions of the session unfortunately.
+- Summary of ideas that came up; no definite conclusions of the session unfortunately.
 
 
-- Goal: know that this code comes from upstream
-
+- **Goal:** know that this code comes from upstream
 (i.e., I have the same code as upstream)
 
-
-- besides upstream there are also the steps
-
+- Besides upstream there are also the steps
 by packaging; also an upstream has more than
-
-one developer
-
-
-- F-droid is building from git commits, so
-
-commit/tag signing does a good job there
-
-
-
-
+one developer.
+- F-droid is building from git commits, so commit/tag signing does a good job there
 - reproducible builds is about getting things
-
 in the open (backdoors now have to be backdoors
-
-in source), so provinence could be a next steps
-
-
+in source), so provinence could be a next steps.
 - Packages can ship upstream tarballs and upstream
-
-signatures; should that be part of the buildinfo
-
+signatures; should that be part of the `.buildinfo`
 file?
-
-
-+ useful for a rebuilders if they detect malicious
-
+    - Useful for a rebuilders if they detect malicious
 things in the code
 
-
 - Management of key? (I.e., what do all the signatures
-
 buy me if I don't know how are those persons?)
-
-
-+ at least maintainers etc can show where they got
-
-the code from
-
-
-- Using it in the update process? (I.e., only automatic
-
-updates for upstream signing releases?)
-
+    - At least maintainers etc can show where they got
+the code from Using it in the update process? (I.e., only automatic
+updates for upstream signing releases?).
 
 - Useful for sharing the load of maintenance (e.g.
-
 maintainer hand-over explaining in a formalized way
-
 what the upstream signatures are supposed to look
-
 like)
 
 
-- trust chain from upstream to the binary on my machine
-
-- reproducible builds bridges the gap between the binary
-
+- Trust chain from upstream to the binary on my machine
+- Reproducible builds bridges the gap between the binary
 and the source package
-
-- code signing can bridge the gap from upstream to the
-
+- Code signing can bridge the gap from upstream to the
 source package
 
 
-- cross distro comparision? "Is the upstream source of
-
+- Cross distro comparision? "Is the upstream source of
 XYZ version ABC the same as that in all other distros"
-
-
-- only trust keys that have been around some time (new
-
+ only trust keys that have been around some time (new
 keys a cheap, so people can always restart a new identity
-
 under a new key)
 
 
-- non-distributable binary blobs make distribution upstream
+- Non-distributable binary blobs make distribution upstream
+signatures useles.
 
-signatures useles
 
-
-- upstream tarball rerolls... *sigh*
-
+- Upstream tarball rerolls... **sigh**
 (should be a hit on upstream reputation!)
-
 (Maybe an argument to distribute signatures in source
-
-packages)
-
-
-- whole different project: chains of signatures (i.e.,
-
+packages).
+- Whole different project: chains of signatures (i.e.,
 releases signatures should also sign the signature
-
-of the previous release)
-
-
-- buildinfo are already necessary for forensics; so
-
+of the previous release) `.buildinfo` are already necessary for forensics; so
 why not add the remaining things used for forensics
-
 (singatures allowing to get source code provinence)
-
-Optional field in buildinfo files for the
-
+Optional field in `.buildinfo` files for the
 content of an upstream signature?
 
 
-==== {{anchor|RefHeadingToc4150118152727}} Prioritizing the minimum viable set of tools needed for end users ====
+###### Prioritizing the minimum viable set of tools needed for end users
 
 
+- User-provided list of reproducers (represeted by URL, name, signing key)
 
-- user-provided list of reproducers (represeted by URL, name, signing key)
+- A reproducer provides signed statements for each package they have built reproducibly
 
-- a reproducer provides signed statements for each package they have built reproducibly
+- APT queries each reproducer with these bits: origin, name, architecture, version (this is unique across all versions of Debian)
 
-- apt queries each reproducer with these bits: origin, name, architecture, version (this is unique across all versions of debian)
+- Lookup by hash is problematic because we cannot distinguish between **"failure to reproduce"**, **"FTBFS"**, and **"not tried/built yet"**
 
-- lookup by hash is problematic because we cannot distinguish between "failure to reproduce", "FTBFS", and "not tried/built yet"
-
-- reproducers return either a signed statement of "not tried/built yet" or a signed hash of the output (e.g. their buildinfo file)
-
-
-Even nicer:
-
-- upload the .buildinfo file, because it contains origin, name, architecture, version, and hash; this avoids the problem of looking up by hash alone. Downside: more bandwidth used. ¯\_(ツ)_/¯
+- Reproducers return either a signed statement of **"not tried/built yet"** or a signed hash of the output (e.g. their `.buildinfo` file)
 
 
-OPEN QUESTIONS:
+###### Even nicer:
 
-- can we mirror the signed buildinfo files to avoid centralising this?
+- Upload the `.buildinfo` file, because it contains origin, name, architecture, version, and hash; this avoids the problem of looking up by hash alone. Downside: more bandwidth used.
+
+
+###### OPEN QUESTIONS:
+
+- Can we mirror the signed `.buildinfo` files to avoid centralising this?
 
 - What happens if the reproducibility status changes over time?
 
-- can we (eventually) avoid these rebuilder servers by looking up .buildinfo files on buildinfo.debian.net that are signed by entities the user trusts?
+- Can we (eventually) avoid these rebuilder servers by looking up `.buildinfo` files on `buildinfo.debian.net` that are signed by entities the user trusts?
 
 
-ACTION ITEMS:
+###### ACTION ITEMS:
 
-- mock up a simple web server that always returns the hash + reproducibility status; this requires either read-access to the binaries or access to a database with records of binaries + hashes (e.g. the debian archive) ---> do this on localhost with access to the local deb cache (obviously on localhost that's going to be an exact match, each time)
+- Mock up a simple web server that always returns the hash + reproducibility status; this requires either read-access to the binaries or access to a database with records of binaries + hashes (e.g. the Debian archive) do this on localhost with access to the local deb cache (obviously on localhost that's going to be an exact match, each time)
 
-- set up a second web server that returns a random hash once in a while
+- Set up a second web server that returns a random hash once in a while
 
-- write an apt-hook that contacts the simple services and verifies their responses --- unless the package is in the blacklist.
+- Write an apt-hook that contacts the simple services and verifies their responses unless the package is in the blacklist.
 
-- design the API the web server ought to implement and through which the client communicates with the service.
+- Design the API the web server ought to implement and through which the client communicates with the service.
 
-- do this over TLS so that installation details are not leaked to the limited number of reproducers.
-
-
-- for proper testing we really should have an actual rebuilder, but until then we can download the buildinfo files from coccia.debian.org (FTP master mirror) and serve them when queried by hash (or buildinfo)
+- Do this over TLS so that installation details are not leaked to the limited number of reproducers.
 
 
+- For proper testing we really should have an actual rebuilder, but until then we can download the `.buildinfo` files from coccia.Debian.org (FTP master mirror) and serve them when queried by hash (or `.buildinfo`).
 
 
-Transcription of poster notes
+
+###### Transcription of poster notes
 
 
-day 3 PM
+**day 3 PM**
 
 
-User Policy/Implementation
+###### User Policy/Implementation
 
 
 (@left top)
 
-n = 3 trusted rebuilders
+- N = 3 trusted rebuilders
 
-k = 2x signed buildinfo
-
-
-
-
-
-
+- K = 2x signed `.buildinfo`
 
 
 (@middle) (@right top)
 
-Signed .buildinfos coccia.debian.org (ftp master mirror)
+[Signed `.buildinfo`s](coccia.Debian.org) (ftp master mirror)
 
-================== <--- buildinfo.debian.net?
+ [buildinfo.Debian.net](buildinfo.Debian.net)
 
 * signed statement: (?)
 
-* reproduced by: 6
+* **reproduced by:** 6
 
-* dissent by: 2
+* **dissent by:** 2
 
 * not found/not built yet 2
 
-^
 
-| X NO!
-
-|
-
-|
-
-|
-
-|
-
-(@left corner)
+###### (@left corner)
 
 buildinfo query
 
-===============
+--------------------------------------
 
 
 * by hash - only finds _agreements_, not dissent
 
 * by domain-specific unique ID:
 
-- debian: $pkg, $vers, $arch
+- Debian: $pkg, $vers, $arch
 
 * by buildingo! (contains the above)
 
 
 
 
-(@right corner) (@also right corner)
+###### (@right corner) (@also right corner)
 
-Debian main Rebuilders
+----------------------------------------
+- Debian main Rebuilders
+- Archive/mirror * ccc
+- Deb -------------> * k of n agree on hash? <--- * nsa
+- (n = fixed number) * aclu
+    * all must agree?
+    * signed `.buildinfo`
 
-=========== ==========
-
-archive/mirror * ccc
-
-.deb -------------> * k of n agree on hash? <--- * nsa
-
-(n = fixed number) * aclu
-
-* all must agree?
-
-* signed .buildinfo
-
-==== {{anchor|RefHeadingToc4152118152727}} Discussing current status and potential improvements in regards to .buildinfo files for rpm and iso ====
+###### Discussing current status and potential improvements in regards to `.buildinfo` files for RPM and iso
 
 
+- Fedora has multiple `.buildinfo` files which can be fetched by a webservice
 
-fedora has multiple .buildinfo files which can be fetched by a webservice
+- OpenSUSE build system has a file with list of installed packages and their version. **"buildenv"**
 
-opensusebuildsystem has a file with list of installed packages and their version. "buildenv"
+- `.buildinfo` files are to new, so RPM build utilities doesn't create it.
 
-.buildinfo files are to new, so rpm build utilities doesn't create it.
+- There is an upstream of RPM, but every distribution applies additional patches.
 
-
-There is an upstream of RPM, but every distribution applies additional patches.
-
-rpm should create .buildinfo.
+- RPM should create `.buildinfo`.
 
 
-There is a starting point at https://github.com/woju/rpmbuildinfo as shell script which
+- There is a starting point at <https://github.com/woju/RPMbuildinfo> as shell script which produce similiar files than Debian.
 
-produce similiar files than debian.
-
-
-Debian .buildinfo can be found at https://manpages.debian.org/unstable/dpkg-dev/deb-buildinfo.5.en.html
+- Debian `.buildinfo` can be found at <https://manpages.Debian.org/unstable/dpkg-dev/deb-buildinfo.5.en.html>
 
 
-Task: find someone who do RPM development or someone from redhat, fedora, opensuse
+**Task:** find someone who do RPM development or someone from redhat, Fedora, opensuse
 
-Task: show `rpmbuildinfo`
+**Task:** show RPM `.buildinfo`.Add checksums (sha256) of the inputs into the `.buildinfo` files.
 
-
-Add checksums (sha256) of the inputs into the .buildinfo files.
-
-We discussed about where to put .buildinfo file. We suggest to have a seperate file, but it could be controversal for the rpm project.
+- We discussed about where to put `.buildinfo` file. We suggest to have a seperate file, but it could be controversal for the RPM project.
 
 
+###### iso
 
+**The iso contains of:**
 
-iso
-
-###
-
-
-The iso contains of:
-
-- "classic" Build Environment
+**"Classic"** Build Environment
 
 - Packages which are part of the installer (bootloader, installer binary, dependencies of the installer)
 
 - Packages which are on the disk as part of the Repository, which the installer will use to install.
-
-
-means -> .buildinfo must contains all 3 sets
-
-
-
-
