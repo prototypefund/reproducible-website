@@ -123,6 +123,12 @@
     url: https://github.com/QubesOS/qubes-issues/issues/816
   - name: Mailing lists
     url: https://www.qubes-os.org/mailing-lists/
+- name: Symfony
+  url: https://symfony.com
+  logo: symfony.png
+  resources:
+  - name: 'New in Symfony: Reproducible Builds'
+    url: https://symfony.com/blog/new-in-symfony-reproducible-builds
 - name: Tails
   url: https://tails.boum.org/
   logo: tails.png
