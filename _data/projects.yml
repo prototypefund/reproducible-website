@@ -159,3 +159,5 @@
     url: https://wiki.yoctoproject.org/wiki/Reproducible_Builds
   - name: Mailing list
     url: https://lists.yoctoproject.org/listinfo/yocto
+  - name: Binary Reproducibility is a feature
+    url: https://www.yoctoproject.org/software-overview/features/
