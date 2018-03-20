@@ -18,9 +18,9 @@ Gitian
 ------
 
 [Gitian](https://gitian.org/) is the tool [used by
-Bitcoin](https://github.com/bitcoin/bitcoin/blob/master/doc/gitian-building.md)
-and the Tor Browser. It either runs in a Linux container using LXC, or in a
-virtual machine using KVM.
+Bitcoin](https://github.com/bitcoin/bitcoin/blob/master/doc/gitian-building.md).
+It either runs in a Linux container using LXC, or in a virtual machine
+using KVM.
 
 Gitian takes
 “[descriptors](https://github.com/bitcoin/bitcoin/blob/master/contrib/gitian-descriptors/)”
@@ -30,6 +30,16 @@ files to use, and a build script to be run with all of that. As explained
 earlier, using a virtual machine helps to get rid of several extra
 variations that can happen from one system to the next.  But this is
 more complicated to setup for users.
+
+rbm
+---
+
+In the [Tor Browser build process](https://trac.torproject.org/projects/tor/wiki/doc/TorBrowser/Hacking#BuildingOfficialTorBrowserReleaseBinaries),
+[rbm](https://rbm.torproject.org/) is the tool responsible for
+figuring out the components that need to be (re)built, downloading
+dependencies, verifying their signatures or checksums, creating container
+images with selected packages and starting the build of each component
+inside containers using [runc](https://runc.io/).
 
 Docker
 ------
