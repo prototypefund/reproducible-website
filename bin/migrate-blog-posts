@@ -95,9 +95,9 @@ def re_plugins_callback(m):
         'pkgset': ('https://tests.reproducible-builds.org/debian/unstable/amd64/pkg_set_{}.html', '{}'),
     }[m.group('key')]
 
-    return '<a href="{}">{}</a>'.format(
-        url.format(m.group('value')),
+    return '[{}]({})'.format(
         value.format(m.group('value')),
+        url.format(m.group('value')),
     )
 
 
