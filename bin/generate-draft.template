@@ -1,0 +1,48 @@
+---
+layout: blog
+week: {{ week }}
+---
+
+Here's what happened in the [Reproducible Builds](https://reproducible-builds.org) effort between {{ week_start.strftime('%A %B') }} {{ week_start.day }} and {{ week_end.strftime('%A %B') }} {{ week_end.day }} {{ week_end.year }}:
+
+* FIXME
+
+Packages reviewed and fixed, and bugs filed
+-------------------------------------------
+
+FIXME: prune the below list so it doesn't duplicate the information above, and perhaps also run bin/review-bugs to see if anything was missed.
+
+{% for x, ys in patches.items()|sort %}* {{ x }}:
+{% for y in ys %}    * [#{{ y['id'] }}](https://bugs.debian.org/{{ y['id'] }}) filed against [{{ y['source'] }}](https://tracker.debian.org/pkg/{{ y['source'] }}).
+{% endfor %}{% endfor %}
+
+In addition, build failure bugs were reported by:
+{% for k, v in ftbfs_bugs.items()|sort %}
+* {{ k }} ({{ v|length }}){% endfor %}
+
+{% for project in projects %}
+{{ project }} development
+------------{{ "-" * project|length }}
+{% for x in uploads[project] %}
+Version [{{ x['version'] }}](https://tracker.debian.org/news/FIXME) was uploaded to {{ x['distribution'] }} by {{ x['signed_by_name'] }}. It [includes contributions lready convered by posts in previous weeks](https://anonscm.debian.org/git/reproducible/{{ project }}.git/log/?h={% if project != 'diffoscope' %}debian/{% endif %}{{ x['version'] }}) as well as new ones from:
+
+{% endfor %}
+{% for x, ys in commits[project].items() %}* {{ x }}:{% for y in ys %}
+    * [{{ y['title'] }}]({% if project == "jenkins.debian.net" %}https://salsa.debian.org/qa/jenkins.debian.net/commit/{{ y['sha'] }}{% else %}https://anonscm.debian.org/git/reproducible/{{ project }}.git/commit/?id={{ y['sha'] }}{% endif %}){% endfor %}
+{% endfor %}
+{% endfor %}
+
+Reviews of unreproducible packages
+----------------------------------
+
+{{ packages_stats['added'] }} package reviews have been added, {{ packages_stats['updated'] }} have been updated and {{ packages_stats['removed'] }} have been removed in this week, adding to our [knowledge about identified issues](https://tests.reproducible-builds.org/debian/index_issues.html).
+
+FIXME issue types have been updated:
+{% for _, xs in issues_yml.items()|sort %}{% for x in xs %}
+* [{{ x['title'] }}](https://anonscm.debian.org/git/reproducible/notes.git/commit/?id={{ x['sha'] }}){% endfor %}{% endfor %}
+
+
+Misc.
+-----
+
+This week's edition was written by {{ author }} & reviewed by a bunch of Reproducible Builds folks on IRC & the mailing lists.
