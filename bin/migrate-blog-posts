@@ -48,7 +48,7 @@ def generate_week(src, dst, week):
     metadata = (
         ('layout', 'blog'),
         ('week', week),
-        ('date', parser.parse(date).strftime('%Y-%m-%d %H:%m:%S')),
+        ('published', parser.parse(date).strftime('%Y-%m-%d %H:%m:%S')),
     )
 
     for x, y in (
