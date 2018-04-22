@@ -12,7 +12,8 @@ layout: none
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
 
-    {% for page in site.blog limit:10 %}
+    {% assign sorted = site.blog | sort: 'date' | reverse %}
+    {% for page in sorted limit:10 %}
       <item>
         <title>Reproducible Builds: Weekly report #{{ page.week }}</title>
         <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
