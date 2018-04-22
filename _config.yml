@@ -4,7 +4,7 @@ permalink: /news/:year/:month/:day/:title/
 
 # Site settings
 title: reproducible-builds.org
-email: contact@reproducible-builds.org
+email: rb-general@lists.reproducible-builds.org
 description: |
   “Reproducible builds” aim to provide a verifiable path from software source code to its compiled binary form.
 baseurl: ""
