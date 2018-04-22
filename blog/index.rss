@@ -1,0 +1,26 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}/blog/</link>
+    <atom:link href="{{ "/blog/index.rss" | prepend: site.url }}" rel="self" type="application/rss+xml" />
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+
+    {% for page in site.blog limit:10 %}
+      <item>
+        <title>Reproducible Builds: Weekly report #{{ page.week }}</title>
+        <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
+        <link>{{ page.url | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ page.url | prepend: site.url }}</guid>
+        <description>{{ page.content | xml_escape }}</description>
+      </item>
+    {% endfor %}
+
+  </channel>
+</rss>

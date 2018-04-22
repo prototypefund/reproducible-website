@@ -11,6 +11,8 @@ baseurl: ""
 url: https://reproducible-builds.org
 
 collections:
+  blog:
+    output: true
   docs:
     output: true
   events:
