@@ -14,13 +14,15 @@ layout: none
 
     {% assign sorted = site.blog | sort: 'date' | reverse %}
     {% for page in sorted limit:10 %}
+    {% if page.published %}
       <item>
         <title>Reproducible Builds: Weekly report #{{ page.week }}</title>
-        <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
+        <pubDate>{{ page.published | date_to_rfc822 }}</pubDate>
         <link>{{ page.url | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ page.url | prepend: site.url }}</guid>
         <description>{{ page.content | xml_escape }}</description>
       </item>
+    {% endif %}
     {% endfor %}
 
   </channel>
