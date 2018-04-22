@@ -1,0 +1,105 @@
+#!/usr/bin/env python3
+
+import os
+import re
+import sys
+import glob
+import click
+import shutil
+
+from dateutil import parser
+
+re_date = re.compile(r'^\[\[!meta date="([^\"]+)"\]\]$', re.MULTILINE)
+re_meta = re.compile(r'^\[\[!(meta|tag) .*\]\]$', re.MULTILINE)
+re_tabs = re.compile(r'\t')
+re_links = re.compile(r'\[\[(?P<text>[^\|]+)\|(?P<url>[^\]]+)\]\]')
+re_plugins = re.compile(r'\[\[!(?P<key>\S+)\s+(?P<value>[^\]]+)\]\]', re.MULTILINE)
+re_filename = re.compile(r'/(?P<week>\d+).mdwn$')
+
+
+@click.command()
+@click.argument('original_blog_dir')
+@click.argument('target_dir', default='_blog/posts')
+def main(original_blog_dir, target_dir):
+
+    log("Removing and recreating {}".format(target_dir))
+    shutil.rmtree(target_dir, ignore_errors=True)
+    os.makedirs(target_dir)
+
+    for x in glob.glob(os.path.join(original_blog_dir, 'posts', '*.mdwn')):
+        m = re_filename.search(x)
+        if m is None:
+            log("Ignoring file {}".format(x))
+            continue
+        week = int(m.group('week'))
+
+        generate_week(x, os.path.join(target_dir, '{}.md'.format(week)), week)
+
+
+def generate_week(src, dst, week):
+    with open(src, 'r') as f:
+        body = f.read()
+
+    m = re_date.search(body)
+    if m is None:
+        raise ValueError("Could not parse date date from {}".format(src))
+    date = m.group(1)
+
+    metadata = (
+        ('layout', 'blog'),
+        ('week', week),
+        ('date', parser.parse(date).strftime('%Y-%m-%d %H:%m:%S')),
+    )
+
+    for x, y in (
+        # Strip leading meta
+        (re_meta, ''),
+
+        # We don't have plugins in Jekyll
+        (re_plugins, re_plugins_callback),
+
+        # We don't have [[text|target]] links in Jekyll. Last in list)
+        (re_links, re_links_callback),
+
+        # Replace tabs
+        (re_tabs, '    '),
+    ):
+        body = x.sub(y, body)
+
+    with open(dst, 'w') as f:
+        print("---", file=f)
+        print('\n'.join('{}: {}'.format(x, y) for x, y in metadata), file=f)
+        print("---\n", file=f)
+        print(body.strip(), file=f)
+
+    log("Wrote {}".format(dst))
+
+
+def log(*args, **kwargs):
+    print("I: {}".format(*args, **kwargs), file=sys.stderr)
+
+
+def re_links_callback(m):
+    return '<a href="{}">{}</a>'.format(
+        m.group('url'),
+        m.group('text'),
+    )
+
+
+def re_plugins_callback(m):
+    url, value = {
+        'bug': ('https://bugs.debian.org/{}', '#{}'),
+        'pkg': ('https://tracker.debian.org/pkg/{}', '{}'),
+        'patch': ('https://bugs.debian.org/{}', '#{}'),
+        'issue': ('https://tests.reproducible-builds.org/issues/unstable/{}_issue.html', '{}'),
+        'pkgset': ('https://tests.reproducible-builds.org/debian/unstable/amd64/pkg_set_{}.html', '{}'),
+    }[m.group('key')]
+
+    return '<a href="{}">{}</a>'.format(
+        url.format(m.group('value')),
+        value.format(m.group('value')),
+    )
+
+
+if __name__ == '__main__':
+    main()
