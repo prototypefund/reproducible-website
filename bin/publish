@@ -5,7 +5,7 @@ set -eu
 WEEK="${1}"
 
 URL="https://reproducible-builds.org/blog/posts/${WEEK}/"
-DATE="$(date --utc +'%Y-%m-%d %M:%M:%S')"
+DATE="$(date --utc +'%Y-%m-%d %H:%M:%S')"
 
 if ! shift 1
 then
