@@ -1,0 +1,39 @@
+#!/bin/sh
+
+set -eu
+
+WEEK="${1}"
+
+URL="https://reproducible-builds.org/blog/posts/${WEEK}/"
+DATE="$(date --utc +'%Y-%m-%d %M:%M:%S')"
+
+if ! shift 1
+then
+	echo "${0}: usage: ${0} <week>" >&2
+	exit 2
+fi
+
+FILENAME="_blog/posts/${WEEK}.md"
+
+if grep -qs FIXME "${FILENAME}"
+then
+	echo "${0}: ${FILENAME} contains FIXME statements; refusing to publish." >&2
+	exit 2
+fi
+
+if ! grep -qs 'published: ' "${FILENAME}"
+then
+	sed -i -e "s@^\(week: ${WEEK}\)@\1\npublished: ${DATE}@g" "${FILENAME}"
+fi
+
+git add "${FILENAME}"
+git commit -m "published as ${URL}"
+git log -1
+git tag -s "${WEEK}" -m "Publish week ${WEEK}"
+
+echo
+echo "Now verify the results and run git push && git push --tags."
+echo
+echo "After publishing, Tweet this via:"
+echo
+echo "  %tweet What happened in the @ReproBuilds effort between $(tr '\n' ' ' < "${FILENAME}" | sed -n -e 's@.* effort between \([^:]*\):.*@\1@p'): https://reproducible-builds.org/blog/posts/${WEEK}/"
