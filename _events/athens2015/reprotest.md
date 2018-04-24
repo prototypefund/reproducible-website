@@ -46,7 +46,7 @@ To control which variations are being tested:
 
     $ reprotest --variations=date build.sh
     # fail with something like:
-    #     Sorry, date is not suported in direct mode
+    #     Sorry, date is not supported in direct mode
     # (or do we want to use libfaketime?)
 
     $ reprotest --variations=date --runner=virtualbox build.sh
@@ -143,7 +143,7 @@ Run build twice, reproducing `$DEFAULT` set of information from build environmen
 
     $ reprotest make
 
-Run build once, reproducing `$DEFAULT` set of infomation from `xxx.buildinfo`:
+Run build once, reproducing `$DEFAULT` set of information from `xxx.buildinfo`:
 
     $ reprotest --buildinfo=bash_amd64.buildinfo make
 

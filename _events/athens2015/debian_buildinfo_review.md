@@ -34,7 +34,7 @@ dependencies, so the package name, arch and version do not uniquely identify an
 exact dependency binary.
 
 Installation order of dependency packages doesn't *appear* to be recorded—the
-list of depedencies is in alphabetical order, and there are ways the
+list of dependencies is in alphabetical order, and there are ways the
 installation order of dependency packages could affect the build environment.
 
 There are two camps here—either we fix the order (to make reproduction easier)

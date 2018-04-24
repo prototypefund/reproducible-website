@@ -12,7 +12,7 @@ benefits from collaboration
 ---------------------------
 
  - learning from each other
- - not duplicating the work (not reinventing the wheel, like producing identical tools, debugging the same issues agains)
+ - not duplicating the work (not reinventing the wheel, like producing identical tools, debugging the same issues again)
  - larger userbase that gets exposed to reproducible builds (good for shaking out bugs)
  - different communities coming together can help to think out-of-the-box
  - sharing infrastructure
@@ -26,7 +26,7 @@ what do we have
  - mailing lists
  - twitter account (ReproBuilds)
 
-issues and challenges in collaboration (competative advantages)
+issues and challenges in collaboration (competitive advantages)
 ---------------------------------------------------------------
 
  - specific project information too specific
