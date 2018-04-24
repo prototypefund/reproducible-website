@@ -12,7 +12,7 @@ layout: none
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
 
-    {% assign sorted = site.blog | sort: 'date' | reverse %}
+    {% assign sorted = site.blog | sort: 'published' | reverse %}
     {% for page in sorted limit:10 %}
     {% if page.published %}
       <item>
