@@ -57,4 +57,4 @@ and the pad for Meeting N was created.
 
         - Point them to this file.
 
-[tasks.git]: https://anonscm.debian.org/git/reproducible/tasks.git
+[tasks.git]: https://salsa.debian.org/reproducible-builds/reproducible-tasks
