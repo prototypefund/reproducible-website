@@ -20,7 +20,7 @@ contains some more stuff.
 
 One can actually read these files by hand using `Rscript`, see the diffoscope
 code in
-[rdata.py](https://anonscm.debian.org/cgit/reproducible/diffoscope.git/tree/diffoscope/comparators/rdata.py?h=04e39d7cb5dc2a3f9f48823bd36e531ee8428b32#n34).
+[rdata.py](https://salsa.debian.org/reproducible-builds/diffoscope.git/tree/diffoscope/comparators/rdata.py?h=04e39d7cb5dc2a3f9f48823bd36e531ee8428b32#n34).
 If you run that, you can see that `path.rds` contains some obvious paths, but
 the other files contain less obvious stuff, and in fact these scripts give
 identical output for the `.rdb` files, even though they are bitwise different.

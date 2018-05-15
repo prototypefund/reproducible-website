@@ -17,7 +17,7 @@ new homepage!
 
 **Everyone is welcome to contribute!** To get a copy of the website, just type:
 
-    git clone https://anonscm.debian.org/git/reproducible/reproducible-website.git/
+    git clone https://salsa.debian.org/reproducible-builds/reproducible-website.git/
 
 Most of the currently available documentation has been written with the
 experience and the perspective of the work done in the Debian project. We are

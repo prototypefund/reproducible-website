@@ -117,7 +117,7 @@ at the cause for every project that uses these programs.
 For example such problems were fixed in:
 
  - `/etc/kernel/postinst.d/apt-auto-removal`:
-   <https://anonscm.debian.org/cgit/apt/apt.git/commit/?id=a9b56a0>
+   <https://salsa.debian.org/apt-team/apt/commit/a9b56a0>
  - `/etc/shadow`: <https://github.com/shadow-maint/shadow/pull/71>
  - fontconfig cache: <https://bugs.debian.org/864082>,
    <https://bugs.debian.org/863427>

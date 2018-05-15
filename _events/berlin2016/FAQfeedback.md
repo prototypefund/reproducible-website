@@ -103,7 +103,7 @@ Most multi-threaded software provides non predictable output which results in no
     * [https://reproducible-builds.org/tools/](https://reproducible-builds.org/tools/)
     ** update to be non-debian-specific links
 * documented known issues, bugs, etc. (currently very debian, plans to generalize for cross-distro)
-    * [https://anonscm.debian.org/cgit/reproducible/notes.git](https://anonscm.debian.org/cgit/reproducible/notes.git)
+    * [https://salsa.debian.org/reproducible-builds/notes.git](https://salsa.debian.org/reproducible-builds/notes.git)
 
 
 # I'm interested in creating a build farm that tests the reproducibility of my distribution/project - FAQ

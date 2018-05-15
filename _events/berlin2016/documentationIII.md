@@ -22,7 +22,7 @@ permalink: /events/berlin2016/documentationIII/
 
 ### FAQ
  * Collecting FAQ points from lamby's specific "how to make x tool reproducible" 
-   * [https://anonscm.debian.org/cgit/reproducible/presentations.git/tree/2015-08-20-DebConf15/2015-08-20-DebConf15.tex#n534](https://anonscm.debian.org/cgit/reproducible/presentations.git/tree/2015-08-20-DebConf15/2015-08-20-DebConf15.tex#n534)
+   * [https://salsa.debian.org/reproducible-builds/presentations.git/tree/2015-08-20-DebConf15/2015-08-20-DebConf15.tex#n534](https://salsa.debian.org/reproducible-builds/presentations.git/tree/2015-08-20-DebConf15/2015-08-20-DebConf15.tex#n534)
  * Add link under revelant questions in the FAQ to existing parts of the reproducible-builds.org documentation page
  *  Under each "persona" add a "why should I care?" with a brief answer that relates to them and a link to the "buy-in" page of the documentation
 	

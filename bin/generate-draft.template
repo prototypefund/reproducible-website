@@ -24,11 +24,11 @@ In addition, build failure bugs were reported by:
 {{ project }} development
 ------------{{ "-" * project|length }}
 {% for x in uploads[project] %}
-Version [{{ x['version'] }}](https://tracker.debian.org/news/FIXME) was uploaded to {{ x['distribution'] }} by {{ x['signed_by_name'] }}. It [includes contributions already convered by posts in previous weeks](https://anonscm.debian.org/git/reproducible/{{ project }}.git/log/?h={% if project != 'diffoscope' %}debian/{% endif %}{{ x['version'] }}) as well as new ones from:
+Version [{{ x['version'] }}](https://tracker.debian.org/news/FIXME) was uploaded to {{ x['distribution'] }} by {{ x['signed_by_name'] }}. It [includes contributions already convered by posts in previous weeks](https://salsa.debian.org/reproducible-builds/{{ project }}/commits/{% if project != 'diffoscope' %}debian/{% endif %}{{ x['version'] }}) as well as new ones from:
 
 {% endfor %}
 {% for x, ys in commits[project].items() %}* {{ x }}:{% for y in ys %}
-    * [{{ y['title'] }}]({% if project == "jenkins.debian.net" %}https://salsa.debian.org/qa/jenkins.debian.net/commit/{{ y['sha'] }}{% else %}https://anonscm.debian.org/git/reproducible/{{ project }}.git/commit/?id={{ y['sha'] }}{% endif %}){% endfor %}
+    * [{{ y['title'] }}]({% if project == "jenkins.debian.net" %}https://salsa.debian.org/qa/jenkins.debian.net/commit/{{ y['sha'] }}{% else %}https://salsa.debian.org/reproducible-builds/{{ project }}.git/commit/?id={{ y['sha'] }}{% endif %}){% endfor %}
 {% endfor %}
 {% endfor %}
 
@@ -39,7 +39,7 @@ Reviews of unreproducible packages
 
 FIXME issue types have been updated:
 {% for _, xs in issues_yml.items()|sort %}{% for x in xs %}
-* [{{ x['title'] }}](https://anonscm.debian.org/git/reproducible/notes.git/commit/?id={{ x['sha'] }}){% endfor %}{% endfor %}
+* [{{ x['title'] }}](https://salsa.debian.org/reproducible-builds/reproducible-notes/commit/{{ x['sha'] }}){% endfor %}{% endfor %}
 
 
 Misc.
