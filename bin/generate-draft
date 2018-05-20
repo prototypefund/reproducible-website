@@ -26,7 +26,7 @@ PROJECTS = (
 
 
 def main(*args):
-    for x in PROJECTS + ('notes',):
+    for x in PROJECTS + ('reproducible-notes',):
         ensure_dir(sibling_repo_gitdir(x))
 
     week = int(args[0]) if len(args) > 0 else prev_week()
@@ -239,18 +239,18 @@ def get_commits(week_start, week_end):
 
 
 def get_issues_yml(week_start, week_end):
-    return commits(week_start, week_end, 'notes', 'issues.yml')
+    return commits(week_start, week_end, 'reproducible-notes', 'issues.yml')
 
 
 def get_packages_yml(week_start, week_end):
-    return commits(week_start, week_end, 'notes', 'packages.yml')
+    return commits(week_start, week_end, 'reproducible-notes', 'packages.yml')
 
 
 def open_packages_yml(date):
     return subprocess.Popen(
         "git show $(git rev-list -n1 --until @{0} origin/master):packages.yml".format(date),
         shell=True,
-        cwd=sibling_repo_gitdir("notes"),
+        cwd=sibling_repo_gitdir('reproducible-notes'),
         stdout=subprocess.PIPE).stdout
 
 
