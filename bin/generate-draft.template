@@ -24,7 +24,7 @@ In addition, build failure bugs were reported by:
 {{ project }} development
 ------------{{ "-" * project|length }}
 {% for x in uploads[project] %}
-Version [{{ x['version'] }}](https://tracker.debian.org/pkg/project?FIXME) was uploaded to {{ x['distribution'] }} by {{ x['signed_by_name'] }}. It [includes contributions already convered by posts in previous weeks](https://salsa.debian.org/reproducible-builds/{{ project }}/commits/{% if project != 'diffoscope' %}debian/{% endif %}{{ x['version'] }}) as well as new ones from:
+Version [{{ x['version'] }}](https://tracker.debian.org/pkg/project?FIXME) was uploaded to {{ x['distribution'] }} by {{ x['signed_by_name'] }}. It [includes contributions already covered by posts in previous weeks](https://salsa.debian.org/reproducible-builds/{{ project }}/commits/{% if project != 'diffoscope' %}debian/{% endif %}{{ x['version'] }}) as well as new ones from:
 
 {% endfor %}
 {% for x, ys in commits[project].items() %}* {{ x }}:{% for y in ys %}
