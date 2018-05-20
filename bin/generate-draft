@@ -48,7 +48,7 @@ def log(msg, *args, **kwargs):
 
 def prev_week():
     now = int(time.time())
-    return ((now - WEEK_1_END) // (7*24*3600) + 1)
+    return ((now - WEEK_1_END) // (7 * 24 * 3600) + 1)
 
 
 def sibling_repo_gitdir(path):
