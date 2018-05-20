@@ -28,7 +28,7 @@ Version [{{ x['version'] }}](https://tracker.debian.org/news/FIXME) was uploaded
 
 {% endfor %}
 {% for x, ys in commits[project].items() %}* {{ x }}:{% for y in ys %}
-    * [{{ y['title'] }}]({% if project == "jenkins.debian.net" %}https://salsa.debian.org/qa/jenkins.debian.net/commit/{{ y['sha'] }}{% else %}https://salsa.debian.org/reproducible-builds/{{ project }}.git/commit/?id={{ y['sha'] }}{% endif %}){% endfor %}
+    * [{{ y['title'] }}]({% if project == "jenkins.debian.net" %}https://salsa.debian.org/qa/jenkins.debian.net/commit/{{ y['sha'] }}{% else %}https://salsa.debian.org/reproducible-builds/{{ project }}/commit/{{ y['sha'] }}{% endif %}){% endfor %}
 {% endfor %}
 {% endfor %}
 
