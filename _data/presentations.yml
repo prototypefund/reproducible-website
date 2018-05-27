@@ -199,14 +199,41 @@
     location: Heidelberg, Germany
 
 - title: How to make your software build reproducibly
-  presented_by: Lunar, 2015-08-13
+  presented_by: Lunar
   event:
     url: https://events.ccc.de/camp/2015/
     name: Chaos Communication Camp 2015
     location: Zehdenick, Germany
   video:
     url: https://media.ccc.de/v/camp2015-6657-how_to_make_your_software_build_reproducibly
-  slides: https://reproducible.alioth.debian.org/presentations/2015-08-13-CCCamp15.pdf
+  slides: https://reproducible-builds.org/_lfs/presentations/2015-08-13-CCCamp15.pdf
+
+- title: Reproducible builds in Debian and everywhere
+  presented_by: Lunar
+  event:
+    url: https://2015.rmll.info/
+    name: Libre Software Meeting 2015
+    date: 2015-07-06
+    location: Beauvais, France
+  slides: https://reproducible-builds.org/_lfs/presentations/2015-07-06-LSM2015.pdf
+
+- title: Compilations reproductibles (French)
+  presented_by: Lunar
+  event:
+    url: https://neuros.fr/journal/pses-2015
+    date: 2015-06-19
+    name: PSES 2015
+    location: Paris, France
+  slides: https://reproducible-builds.org/_lfs/presentations/2015-06-19-PSES2015.pdf
+
+- title: Reproducible Builds, a year later
+  presented_by: Lunar
+  event:
+    url: https://debconf14.debconf.org/
+    date: 2014-08-26
+    name: DebConf14
+    location: Portland, Oregon, United States
+  slides: https://reproducible-builds.org/_lfs/presentations/2014-08-26-DebConf14.pdf
 
 - title: "Reproducible Builds: Moving Beyond Single Points of Failure for Software Distribution"
   presented_by: Mike Perry and Seth Schoen
@@ -216,3 +243,13 @@
     location: Hamburg, Germany
   video: https://media.ccc.de/v/31c3_-_6240_-_en_-_saal_g_-_201412271400_-_reproducible_builds_-_mike_perry_-_seth_schoen_-_hans_steiner
   slides: https://events.ccc.de/congress/2014/Fahrplan/system/attachments/2575/original/2014CCCReproducible.pdf
+
+- title: Reproducible builds for Debian... and more?
+  presented_by: Lunar
+  event:
+    url: https://archive.fosdem.org/2014/
+    name: FOSDEM 2014
+    date: 2014-02-01
+    location: Brussels, Belgium
+  slides: https://reproducible-builds.org/_lfs/presentations/2014-02-01-FOSDEM14.pdf
+
