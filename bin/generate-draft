@@ -15,6 +15,7 @@ WEEK_1_END = 1430611200  # May 3 2015, 00:00 UTC, Sunday
 
 PROJECTS = (
     'diffoscope',
+    'diffoscope-website',
     'strip-nondeterminism',
     'disorderfs',
     'reprotest',
