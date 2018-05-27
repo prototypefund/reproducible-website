@@ -1,0 +1,219 @@
+- title: You think you're not a target? A tale of 3 developers…
+  presented_by: Chris Lamb
+  event:
+   name: All Things Open
+   location: Raleigh, NC, United States
+   url: https://allthingsopen.org/
+
+- title: You think you're not a target? A tale of 3 developers…
+  presented_by: Chris Lamb
+  event:
+    url: https://freenode.live/
+    name: Freenode Live
+    location: Bristol, United Kingdom
+
+- title: Reproducible Builds status update
+  presented_by: Chris Lamb, Holger Levsen, Maria Glukhova, Steven Chamberlain, Vagrant Cascadian, Valerie Young & Ximin Luo
+  event:
+    url: https://debconf17.debconf.org.
+    name: DebConf17
+    location: Montreal, Quebec, Canada
+
+- title: Reproducible builds
+  presented_by: Chris Lamb
+  event:
+    url: https://www.lfasiallc.com/linuxcon-containercon-cloudopen-china
+    name: LinuxCon + ContainerCon + CloudOpen China
+    location: Beijing, People's Republic of China
+
+- title: Reproducible builds
+  presented_by: Chris Lamb
+  event:
+    url: http://hkoscon.org/2017/
+    name: HKOSCon 2017
+    location: Hong Kong
+
+- title: Reproducible builds
+  presented_by: Chris Lamb
+  event:
+    url: https://oscal.openlabs.cc
+    name: OSCAL'17
+    location: Tirana, Albania
+
+- title: Reproducible Builds everywhere
+  presented_by: Mattia Rizzolo
+  event:
+    url: https://www.ducc.it/
+    name: Debian-Ubuntu Community Conference — Italia 2017
+    location: Vicenza, Italy
+
+- title: Reproducible Builds everywhere
+  presented_by: Holger Levsen
+  event:
+    url: https://www.hamburg.ccc.de/
+    name: CCCHH
+    location: Hamburg, Germany
+
+- title: Reproducible Builds
+  presented_by: Chris Lamb
+  event:
+    url: http://foss-north.se/
+    name: foss-north 2017
+    location: Gothenburg, Sweden
+
+- title: You too can write reproducible software
+  presented_by: Ximin Luo, Vagrant Cascadian &amp; Valerie Young
+  event:
+    url: https://libreplanet.org/conference/
+    name: Libreplanet 2017
+    location: MIT, Cambridge, United States
+
+- title: Verifying Software Freedom with Reproducible Builds
+  presented_by: Vagrant Cascadian
+  event:
+    url: https://libreplanet.org/conference/
+    name: Libreplanet 2017
+    location: MIT, Cambridge, United States
+
+- title: Reproducible Builds everywhere
+  presented_by: Holger Levsen
+  event:
+    url: https://www.guug.de/veranstaltungen/ffg2017/
+    name: GUUG Frühjahrsfachgespräch 2017
+    location: Darmstadt, Germany
+
+- title: Introduction to Reproducible builds
+  presented_by: Vagrant Cascadian
+  event:
+    url: https://www.socallinuxexpo.org/
+    name: Scale 15X
+    location: Pasadena Convention Center, California, United States
+
+- title: Reproducible-Build-Zoo
+  presented_by: Vagrant Cascadian
+  event:
+    url: http://events.linuxfoundation.org/events/embedded-linux-conference
+    name: Embedded Linux Conference 2017
+    location: Portland, Oregon, United States
+
+- title: Reproducible Builds and Fedora
+  presented_by: Dennis Gilmore & Holger Levsen
+  event:
+    url: https://devconf.cz
+    name: DevConf.cz
+    location: Brno, Czech Republic
+
+- title: "Reproducible Builds: Two years in the trenches"
+  presented_by: Chris Lamb
+  event:
+    url: https://www.linux.conf.au/
+    name: linux.conf.au 2017
+    location: Hobart, Australia
+  video:
+    youtube: ooJXRBf72M0
+
+- title: Reproducible Builds for a Better Future
+  presented_by: Valerie Young
+  event:
+    url: https://www.linux.conf.au/
+    name: linux.conf.au 2017
+    location: Hobart, Australia
+  video:
+    youtube: -nMVfmZL8zk
+
+- title: Reproducible Builds
+  presented_by: Boyuan Yang
+  event:
+    url: https://lug.ustc.edu.cn/wiki/intro_english
+    name: LUG@USTC
+    location: University of Science and Technology of China, Hefei, Anhui, China
+
+- title: Reproducible builds status update
+  presented_by: Chris Lamb and Holger Levsen
+  event:
+    url: https://wiki.debian.org/DebianEvents/gb/2016/MiniDebConfCambridge
+    name: MiniDebConf Cambridge 2016
+    location: Cambridge, United Kingdom
+  slides: https://people.debian.org/~lamby/2016-11-13-MiniDebConfCambridge
+
+- title: Reproducible Builds
+  presented_by: Chris Lamb
+  event:
+    url: http://sfk.flossk.org/sfk16/
+    name: Software Freedom Kosova
+    location: Prishtina, Republic of Kosovo
+
+- title: Reproducible Builds status update
+  presented_by: Chris Lamb
+  event:
+    url: https://debconf16.debconf.org
+    name: DebConf16
+    location: Cape Town, South Africa
+
+- title: Reproducible Builds - fulfilling the original promise of free software
+  presented_by: Chris Lamb
+  event:
+    url: http://2016.fossasia.org/
+    name: FOSSASIA 2016
+    location: Singapore
+
+- title: Reproducible Builds in FreeBSD
+  presented_by: Ed Maste
+  event:
+    url: http://www.bsdcan.org/2016/schedule/events/714.en.html
+    name: BSDCan 2016
+    location: Ottawa, Canada
+  slides: http://www.bsdcan.org/2016/schedule/attachments/375_2016-06-11-BSDCan-2016-Reproducible-Builds.pdf
+  video:
+    youtube: MTPNB1lXKBQ
+
+- title: Reproducible builds in FreeBSD packages
+  presented_by: Baptiste Daroussin
+  event:
+    url: https://archive.fosdem.org/2016/schedule/event/reproducible_freebsd_packages/
+    name: FOSDEM 2016
+    location: Brussels, Belgium
+  video:
+    url: http://video.fosdem.org/2016/k4601/reproducible-builds-in-freebsd-packages.mp4
+  slides: https://archive.fosdem.org/2016/schedule/event/reproducible_freebsd_packages/attachments/slides/1170/export/events/attachments/reproducible_freebsd_packages/slides/1170/reproducible_builds_freebsd
+
+- title: Beyond Reproducible builds
+  presented_by: Chris Lamb
+  event:
+    url: https://skroutz.gr
+    name: Skroutz.gr
+    location: Athens, Greece
+
+- title: Reproducible builds status update
+  presented_by: Chris Lamb, Holger Levsen
+  event:
+    url: https://wiki.debian.org/DebianEvents/gb/2015/MiniDebConfCambridge
+    name: MiniDebConfCambridge 2015
+    location: Cambridge, United Kingdom
+
+- title: Reproducible Builds status update
+  presented_by: Lunar, Holger Levsen, Chris Lamb
+  event:
+    url: https://debconf15.debconf.org
+    name: DebConf15
+    location: Heidelberg, Germany
+
+- title: How to make your software build reproducibly
+  presented_by: Lunar, 2015-08-13
+  event:
+    url: https://events.ccc.de/camp/2015/
+    name: Chaos Communication Camp 2015
+    location: Zehdenick, Germany
+  video:
+    url: https://media.ccc.de/v/camp2015-6657-how_to_make_your_software_build_reproducibly
+  slides: https://reproducible.alioth.debian.org/presentations/2015-08-13-CCCamp15.pdf
+
+- title: "Reproducible Builds: Moving Beyond Single Points of Failure for Software Distribution"
+  presented_by: Mike Perry and Seth Schoen
+  event:
+    url: https://events.ccc.de/congress/2014/
+    name: Chaos Communication Congress 2014
+    location: Hamburg, Germany
+  video: https://media.ccc.de/v/31c3_-_6240_-_en_-_saal_g_-_201412271400_-_reproducible_builds_-_mike_perry_-_seth_schoen_-_hans_steiner
+  slides: https://events.ccc.de/congress/2014/Fahrplan/system/attachments/2575/original/2014CCCReproducible.pdf
+
