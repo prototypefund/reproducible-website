@@ -1,3 +1,97 @@
+- title: Reproducible buster?
+  presented_by: Chris Lamb, Holger Levsen, Jonathan Bustillos Osornio, Steven Chamberlain
+  event:
+    url: https://wiki.debian.org/DebianEvents/de/2018/MiniDebConfHamburg
+    name: MiniDebConf Hamburg 2018
+    date: 2018-05-20
+    location: Hamburg, Germany
+  slides: https://reproducible-builds.org/_lfs/presentations/2018-05-20-MiniDebConf-Hamburg.pdf
+  video: https://meetings-archive.debian.net/pub/debian-meetings/2018/miniconf-hamburg/2018-05-20/reproducible_buster.webm
+  youtube: jhHfA2sCIgw
+
+- title: Can your diff(1) do this?! Improving software review & QA with diffoscope
+  presented_by: Chris Lamb
+  event:
+    url: https://wiki.debian.org/DebianEvents/de/2018/MiniDebConfHamburg
+    name: MiniDebConf Hamburg 2018
+    date: 2018-05-19
+    location: Hamburg Germany
+  slides: https://reproducible-builds.org/_lfs/presentations/2018-05-19-minidebconf-hamburg-can-your-diff-do-this.pdf
+  video: https://meetings-archive.debian.net/pub/debian-meetings/2018/miniconf-hamburg/2018-05-19/diffoscope.webm
+  youtube: m9GN_f1WCAo
+
+- title: You think you're not a target? A tale of 3 developers…
+  presented_by: Chris Lamb
+  event:
+    url: https://www.flossuk.org/membership/spring-conference-2018/
+    name: FLOSSUK Spring Conference 2018
+    date: 2018-04-26
+    location: Edinburgh, Scotland
+  slides: https://reproducible-builds.org/_lfs/presentations/2018-04-26-flossuk.pdf
+
+- title: Can your diff(1) do this?! Improving software review & QA with diffoscope
+  presented_by: Chris Lamb
+  event:
+    url: http://foss-north.se/2018/
+    name: foss-north 2018
+    date: 2018-04-23
+    location: Gothenburg, Sweden
+  slides: https://reproducible-builds.org/_lfs/presentations/2018-04-23-foss-north-can-your-diff-do-this.pdf
+
+- title: You think you're not a target? A tale of 3 developers…
+  presented_by: Holger Levsen
+  event:
+    url: https://minidebconf.curitiba.br/en/
+    name: MiniDebConf Brasil
+    date: 2018-04-13
+    location: Curitiba, Brazil
+  slides: https://reproducible-builds.org/_lfs/presentations/2018-04-13-MiniDebConf-Curitiba.pdf
+
+- title: You think you're not a target? A tale of 3 developers…
+  presented_by: Holger Levsen
+  event:
+    url: https://events.ccc.de/2018/02/23/easterhegg-2018/
+    name: CCC Easterhegg
+    date: 2018-03-31
+    location: Wuerzburg, Germany
+  slides: https://reproducible-builds.org/_lfs/presentations/2018-03-31-CCC-easterhegg.pdf
+
+- title: You think you're not a target? A tale of 3 developers…
+  presented_by: Chris Lamb
+  event:
+    url: https://libreplanet.org/2018/
+    name: LibrePlanet 2018
+    date: 2018-03-24
+    location: MIT, Cambridge, United States
+  slides: https://reproducible-builds.org/_lfs/presentations/2018-03-24-libreplanet-2018.pdf
+
+- title: You think you're not a target? A tale of 3 developers…
+  presented_by: Chris Lamb
+  event:
+    url: https://www.meetup.com/nylug-meetings/events/248246544/
+    name: New York Linux Users Group (NYLUG)
+    date: 2018-30-20
+    location: Two Sigma Investments, New York, United States
+  slides: https://reproducible-builds.org/_lfs/presentations/2018-03-20-nylug.pdf
+
+- title: You think you're not a target? A tale of 3 developers…
+  presented_by: Chris Lamb
+  event:
+    url: https://www.socallinuxexpo.org/
+    name: Scale 16X
+    date: 2018-03-10
+    location: Pasadena Convention Center, California, United States
+  slides: https://reproducible-builds.org/_lfs/presentations/2018-03-10-scale-16x.pdf
+
+- title: Can your diff(1) do this?! Improving software review & QA with diffoscope
+  presented_by: Chris Lamb
+  event:
+    url: https://www.linux.conf.au/
+    name: linux.conf.au 2018
+    date: 2018-01-24
+    location: Sydney, Australia
+  slides: https://reproducible-builds.org/_lfs/presentations/2018-01-24-linuxconfau-can-your-diff-do-this.pdf
+
 - title: You think you're not a target? A tale of 3 developers…
   presented_by: Chris Lamb
   event:
@@ -91,6 +185,15 @@
     name: Scale 15X
     location: Pasadena Convention Center, California, United States
 
+- title: Reproducible Builds everywhere
+  presented_by: Holger Levsen
+  event:
+    url: https://ffg.guug.de/
+    name: GUUG Frühjahrsfachgespräch 2017
+    date: 2017-03-24
+    location: Darmstadt, Germany
+  slides: https://reproducible-builds.org/_lfs/presentations/2017-03-24-GUUG.pdf
+
 - title: Reproducible-Build-Zoo
   presented_by: Vagrant Cascadian
   event:
@@ -132,6 +235,15 @@
     name: LUG@USTC
     location: University of Science and Technology of China, Hefei, Anhui, China
 
+- title: About jenkins.debian.net
+  presented_by: Holger Levsen
+  event:
+    url: https://www.profitbricks.com/
+    name: Profitbricks private event
+    date: 2016-11-30
+    location: Berlin, Germany
+  slides: https://reproducible-builds.org/_lfs/presentations/2016-11-30-Profitbricks/
+
 - title: Reproducible builds status update
   presented_by: Chris Lamb and Holger Levsen
   event:
@@ -154,6 +266,15 @@
     url: https://debconf16.debconf.org
     name: DebConf16
     location: Cape Town, South Africa
+
+- title: Reproducible builds ecosystem
+  presented_by: Holger Levsen
+  event:
+    url: https://events.opensuse.org/conference/oSC16
+    name: openSUSE Conference 2016
+    date: 2016-06-23
+    location: Nürnberg, Germany
+  slides: https://reproducible-builds.org/_lfs/presentations/2016-06-23-openSUSE-Conference-2016.pdf
 
 - title: Reproducible Builds - fulfilling the original promise of free software
   presented_by: Chris Lamb
