@@ -30,6 +30,7 @@ order: 2
         by {{ x.presented_by }}<br/>
         <a href="{{ x.event.url }}">{{ x.event.name }}</a>
         &bull; {{ x.event.location }}
+        {% if x.event.date %}&bull; {{ x.event.date | date: "%B %-d %Y" }}{% endif %}
       </dt>
       <dd>
         {% if x.video.url %}
