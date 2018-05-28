@@ -28,8 +28,8 @@ order: 2
       <dt>
         <em>{{ x.title }}</em><br/>
         by {{ x.presented_by }}<br/>
-        <a href="{{ x.event.url }}">{{ x.event.name }}</a>,
-        {{ x.event.location }}.
+        <a href="{{ x.event.url }}">{{ x.event.name }}</a>
+        &bull; {{ x.event.location }}
       </dt>
       <dd>
         {% if x.video.url %}
