@@ -97,11 +97,13 @@
     location: Portland, Oregon, United States
 
 - title: Reproducible Builds and Fedora
-  presented_by: Dennis Gilmore & Holger Levsen
+  presented_by: Dennis Gilmore, Holger Levsen
   event:
-    url: https://devconf.cz
+    url: https://www.redhat.com/en/events/devconfcz-2017
     name: DevConf.cz
+    date: 2017-01-27
     location: Brno, Czech Republic
+  slides: https://reproducible-builds.org/_lfs/presentations/2017-01-27-devconf.cz-reproducible-builds+fedora.pdf
 
 - title: "Reproducible Builds: Two years in the trenches"
   presented_by: Chris Lamb
