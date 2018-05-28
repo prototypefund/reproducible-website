@@ -135,8 +135,9 @@
   event:
     url: https://wiki.debian.org/DebianEvents/gb/2016/MiniDebConfCambridge
     name: MiniDebConf Cambridge 2016
+    date: 2016-11-13
     location: Cambridge, United Kingdom
-  slides: https://people.debian.org/~lamby/2016-11-13-MiniDebConfCambridge
+  slides: https://reproducible-builds.org/_lfs/presentations/2016-11-13-MiniDebConfCambridge/
 
 - title: Reproducible Builds
   presented_by: Chris Lamb
