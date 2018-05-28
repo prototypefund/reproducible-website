@@ -129,6 +129,7 @@
   event:
     url: http://hkoscon.org/2017/
     name: HKOSCon 2017
+    date: 2017-06-20
     location: Hong Kong
 
 - title: Reproducible builds
@@ -290,6 +291,7 @@
   event:
     url: http://www.bsdcan.org/2016/schedule/events/714.en.html
     name: BSDCan 2016
+    date: 2016-06-11
     location: Ottawa, Canada
   slides: http://www.bsdcan.org/2016/schedule/attachments/375_2016-06-11-BSDCan-2016-Reproducible-Builds.pdf
   video:
