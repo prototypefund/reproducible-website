@@ -17,7 +17,9 @@
   event:
     url: https://debconf17.debconf.org.
     name: DebConf17
+    date: 2017-08-11
     location: Montreal, Quebec, Canada
+  slides: https://reproducible-builds.org/_lfs/presentations/2017-08-11-DebConf17/
 
 - title: Reproducible builds
   presented_by: Chris Lamb
