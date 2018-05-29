@@ -117,6 +117,17 @@
     location: Montreal, Quebec, Canada
   slides: https://reproducible-builds.org/_lfs/presentations/2017-08-11-DebConf17/
 
+- title: 2-minute pitch
+  presented_by: Arnout Engelen
+  event:
+    url: https://sha2017.org
+    name: SHA2017
+    date: 2017-08-08
+    location: Zeewolde, the Netherlands
+  video:
+    url: https://media.ccc.de/v/SHA2017-345-lightning_talks_day_5#t=2882
+    youtube: WCcYaaVnQhA&t=2882
+
 - title: Reproducible builds
   presented_by: Chris Lamb
   event:
