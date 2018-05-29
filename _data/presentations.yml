@@ -47,6 +47,9 @@
     name: MiniDebConf Brasil
     date: 2018-04-13
     location: Curitiba, Brazil
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2018/mini-debconf-curitiba/07-reproducible-builds-a-tale-of-three-developers.webm
+    youtube: veMJPoyxv5I
   slides: https://reproducible-builds.org/_lfs/presentations/2018-04-13-MiniDebConf-Curitiba.pdf
 
 - title: You think you're not a target? A tale of 3 developers…
