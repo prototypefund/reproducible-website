@@ -34,10 +34,13 @@ then
 	git tag -s "${WEEK}" -m "Publish week ${WEEK}"
 
 	echo
-	echo "Now verify the results and run git push && git push --tags."
+	echo "Now verify the results and run:"
+	echo
+	echo "  $ git push && git push --tags."
 fi
 
 echo
 echo
 echo "After publishing, Tweet this via:"
+echo
 echo "  %tweet What happened in the @ReproBuilds effort between $(tr '\n' ' ' < "${FILENAME}" | sed -n -e 's@.* effort between \([^:]*\):.*@\1@p'): https://reproducible-builds.org/blog/posts/${WEEK}/"
