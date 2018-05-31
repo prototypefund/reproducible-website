@@ -128,7 +128,7 @@ If tools do not support options to create reproducible archives, it is
 always possible to perform post-processing.
 
 [strip-nondeterminism](https://packages.debian.org/sid/strip-nondeterminism)
-already has support to normalize Zip and Jar archives. Custom scripts
+already has support to normalize Zip and Jar archives (with [limitations](https://bugs.debian.org/859103)). Custom scripts
 like Tor Browser's
 [re-dzip.sh](https://gitweb.torproject.org/builders/tor-browser-bundle.git/tree/gitian/build-helpers/re-dzip.sh)
 might also be an option.
@@ -163,4 +163,6 @@ or `objcopy`:
 
     objcopy --enable-deterministic-archives libfoo.a
 
-[^distros-with-default]: Debian since [version 2.25-6](https://tracker.debian.org/news/675691), Ubuntu since version 2.25-8ubuntu1. It is the default for Fedora 22 and Fedora 23, but it seems this will be [reverted in Fedora 24](https://bugzilla.redhat.com/show_bug.cgi?id=1195883).
+The above does not fix [file ordering]({{ "/docs/stable-inputs/" | prepend: site.baseurl }}).
+
+[^distros-with-default]: Debian since [version 2.25-6](https://tracker.debian.org/news/675691)/stretch, Ubuntu since version 2.25-8ubuntu1/artful 17.10. It is the default for Fedora 22 and Fedora 23, but it seems this will be [reverted in Fedora 24](https://bugzilla.redhat.com/show_bug.cgi?id=1195883).
