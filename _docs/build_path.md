@@ -28,3 +28,7 @@ This is also problematic because this will also apply to intermediate
 source files that other tools generate. As they typically will use [random
 file names]({{ "/docs/randomness/" | prepend: site.baseurl }}), having a
 fixed build path is not enough in such cases.
+
+A
+[build-path-prefix-map](https://reproducible-builds.org/specs/build-path-prefix-map/)
+specification is in discussion with the GCC developers.
