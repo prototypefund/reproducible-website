@@ -120,7 +120,7 @@
     location: Montreal, Quebec, Canada
   slides: https://reproducible-builds.org/_lfs/presentations/2017-08-11-DebConf17/
 
-- title: 2-minute pitch
+- title: A 2-minute pitch for Reproducible Builds
   presented_by: Arnout Engelen
   event:
     url: https://sha2017.org
