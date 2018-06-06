@@ -123,6 +123,18 @@
     youtube: Mzdm60pxdwI
   slides: https://reproducible-builds.org/_lfs/presentations/2017-08-11-DebConf17/
 
+- title: Fun with .buildinfo
+  presented_by: Steven Chamberlain
+  event:
+    url: https://debconf17.debconf.org/
+    name: DebConf17
+    date: 2017-08-10
+    location: Montreal, Quebec, Canada
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2017/debconf17/fun-with-buildinfo.vp9.webm
+    youtube: LN_P3aEBGR0
+  slides: https://annex.debconf.org/debconf-share/debconf17/slides/91-fun_with_buildinfo.md
+
 - title: A 2-minute pitch for Reproducible Builds
   presented_by: Arnout Engelen
   event:
