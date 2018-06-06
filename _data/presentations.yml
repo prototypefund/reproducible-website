@@ -114,10 +114,13 @@
 - title: Reproducible Builds status update
   presented_by: Chris Lamb, Holger Levsen, Maria Glukhova, Steven Chamberlain, Vagrant Cascadian, Valerie Young & Ximin Luo
   event:
-    url: https://debconf17.debconf.org.
+    url: https://debconf17.debconf.org/
     name: DebConf17
     date: 2017-08-11
     location: Montreal, Quebec, Canada
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2017/debconf17/reproducible-builds-status-update.vp9.webm
+    youtube: Mzdm60pxdwI
   slides: https://reproducible-builds.org/_lfs/presentations/2017-08-11-DebConf17/
 
 - title: A 2-minute pitch for Reproducible Builds
