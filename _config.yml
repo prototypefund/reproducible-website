@@ -9,6 +9,10 @@ description: |
   “Reproducible builds” aim to provide a verifiable path from software source code to its compiled binary form.
 baseurl: ""
 url: https://reproducible-builds.org
+logo: "/assets/images/logo-text-white.png"
+
+sass:
+  sass_dir: /assets/styles
 
 collections:
   blog:

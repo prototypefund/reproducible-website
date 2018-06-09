@@ -1,0 +1,15 @@
+<div class="sidebar {{ include.sidebarClassName }}" id="sidebar1">
+  <ul class="list-group">
+    {% assign sorted_pages = site.pages | sort:"order" %}
+    <li class="list-group-item rb-main-sidebar pt-4">
+      <a class="sidebar__link__darkGray" href="{{ '/' | prepend: site.baseurl }}">Home</a>
+    </li>
+    {% for page in sorted_pages %}
+    {% if page.title and page.order >= 0 %}
+      <li class="list-group-item rb-main-sidebar">
+        <a class="sidebar__link__darkGray" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
