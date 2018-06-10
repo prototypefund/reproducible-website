@@ -218,7 +218,7 @@ def get_uploads(week_start, week_end):
 
 def udd(query, fields):
     lines = subprocess.check_output("""
-        echo "{}" | ssh alioth.debian.org psql --no-psqlrc service=udd
+        echo "{}" | ssh quantz.debian.org psql --no-psqlrc service=udd
     """.format(query), shell=True)
 
     data = []
