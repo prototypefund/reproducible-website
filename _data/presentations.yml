@@ -5,6 +5,7 @@
     name: FOSS Backstage 2018
     date: 2018-06-13
     location: Berlin, Germany
+  slides: https://reproducible-builds.org/_lfs/presentations/2018-06-13-foss-backstage.pdf
 
 - title: Reproducible buster?
   presented_by: Chris Lamb, Holger Levsen, Jonathan Bustillos Osornio, Steven Chamberlain
