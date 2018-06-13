@@ -1,3 +1,11 @@
+- title: You think you're not a target? A tale of 3 developers…
+  presented_by: Chris Lamb
+  event:
+    url: https://foss-backstage.de/session/think-youre-not-target-tale-3-developers
+    name: FOSS Backstage 2018
+    date: 2018-06-13
+    location: Berlin, Germany
+
 - title: Reproducible buster?
   presented_by: Chris Lamb, Holger Levsen, Jonathan Bustillos Osornio, Steven Chamberlain
   event:
