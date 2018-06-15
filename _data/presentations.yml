@@ -285,6 +285,14 @@
     location: Berlin, Germany
   slides: https://reproducible-builds.org/_lfs/presentations/2016-11-30-Profitbricks/
 
+- title: Introduction to Reproducible Builds
+  presented_by: Vagrant Cascadian
+  event:
+    url: http://seagl.org/schedule/2016.html
+    name: SEAGL 2016
+    date: 2016-11-13
+    location: Seattle, WA, United States
+
 - title: Reproducible builds status update
   presented_by: Chris Lamb and Holger Levsen
   event:
