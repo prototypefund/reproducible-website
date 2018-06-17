@@ -10,21 +10,19 @@ Here's what happened in the [Reproducible Builds](https://reproducible-builds.or
 Packages reviewed and fixed, and bugs filed
 -------------------------------------------
 
-FIXME: prune the below list so it doesn't duplicate the information above, and perhaps also run bin/review-bugs to see if anything was missed.
-
 {% for x, ys in patches.items()|sort %}* {{ x }}:
 {% for y in ys %}    * [#{{ y['id'] }}](https://bugs.debian.org/{{ y['id'] }}) filed against [{{ y['source'] }}](https://tracker.debian.org/pkg/{{ y['source'] }}).
 {% endfor %}{% endfor %}
-
+{% if ftbfs_bugs %}
 In addition, build failure bugs were reported by:
 {% for k, v in ftbfs_bugs.items()|sort %}
-* {{ k }} ({{ v|length }}){% endfor %}
+* {{ k }} ({{ v|length }}){% endfor %}{% endif %}
 
 {% for project in projects %}
 {{ project }} development
 ------------{{ "-" * project|length }}
 {% for x in uploads[project] %}
-Version [{{ x['version'] }}](https://tracker.debian.org/pkg/{{ project }}?FIXME) was uploaded to {{ x['distribution'] }} by {{ x['signed_by_name'] }}. It [includes contributions already covered by posts in previous weeks](https://salsa.debian.org/reproducible-builds/{{ project }}/commits/{% if project != 'diffoscope' %}debian/{% endif %}{{ x['version'] }}) as well as new ones from:
+{{ project }} version `{{ x['version'] }}` was [uploaded to Debian {{ x['distribution'] }}](https://tracker.debian.org/pkg/{{ project }}?FIXME) by {{ x['signed_by_name'] }}. It [includes contributions already covered in previous weeks](https://salsa.debian.org/reproducible-builds/{{ project }}/commits/{% if project != 'diffoscope' %}debian/{% endif %}{{ x['version'] }}) as well as new ones from:
 
 {% endfor %}
 {% for x, ys in commits[project].items() %}* {{ x }}:{% for y in ys %}
