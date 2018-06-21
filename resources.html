@@ -25,8 +25,9 @@ order: 2
   <div class="eight columns text">
     <dl class="talks">
       {% for x in site.data.presentations %}
-      <dt>
-        <em>{{ x.title }}</em><br/>
+      {% assign slug = x.title | append: "-" | append: x.event.date | slugify %}
+      <dt id="{{ slug }}">
+        <em>{{ x.title }}</em> <a href="#{{ slug }}">&#182;</a><br/>
         by {{ x.presented_by }}<br/>
         <a href="{{ x.event.url }}">{{ x.event.name }}</a>
         &bull; {{ x.event.location }}
