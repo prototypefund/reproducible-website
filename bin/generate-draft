@@ -157,7 +157,8 @@ def bugs(week_start, week_end, extra="true"):
         AND
             {extra}
         AND
-            CAST(arrival AS DATE) BETWEEN to_timestamp(@{week_start}) AND to_timestamp(@{week_end})
+            CAST(arrival AS DATE) BETWEEN
+            to_timestamp(@{week_start}) AND to_timestamp(@{week_end})
     """.format(**{
         'fields': ', '.join(fields),
         'extra': extra,
@@ -197,7 +198,8 @@ def get_uploads(week_start, week_end):
         WHERE
             source IN ({sources})
         AND
-            CAST(date AS date) BETWEEN to_timestamp(@{week_start}) AND to_timestamp(@{week_end})
+            CAST(date AS date) BETWEEN
+            to_timestamp(@{week_start}) AND to_timestamp(@{week_end})
         ORDER BY
             date
     """.format(**{
@@ -248,7 +250,8 @@ def get_packages_yml(week_start, week_end):
 
 def open_packages_yml(date):
     return subprocess.Popen(
-        "git show $(git rev-list -n1 --until @{0} origin/master):packages.yml".format(date),
+        "git show $(git rev-list -n1 --until @{0} "
+        "origin/master):packages.yml".format(date),
         shell=True,
         cwd=sibling_repo_gitdir('reproducible-notes'),
         stdout=subprocess.PIPE).stdout
