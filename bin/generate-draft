@@ -291,6 +291,7 @@ def commits(week_start, week_end, project, path='.'):
         '--all',
         '--',
         path,
+        ':(exclude,glob)_blog/posts/*.md',
     ), cwd=git_dir).decode('utf-8')
 
     result = collections.defaultdict(list)
