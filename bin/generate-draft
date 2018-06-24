@@ -43,7 +43,6 @@ def main(*args):
     return 0
 
 
-
 def log(msg, *args, **kwargs):
     print("I: " + msg.format(*args, **kwargs), file=sys.stderr)
 
@@ -112,7 +111,6 @@ def get_data(week, max_age=3600):
         pickle.dump(data, f)
 
     return data
-
 
 
 def get_author(week_start, week_end):
