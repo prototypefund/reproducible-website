@@ -5,6 +5,8 @@
     name: FOSS Backstage 2018
     date: 2018-06-13
     location: Berlin, Germany
+  video:
+    youtube: m0FudIwSuzM
   slides: https://reproducible-builds.org/_lfs/presentations/2018-06-13-foss-backstage.pdf
 
 - title: Reproducible buster?
