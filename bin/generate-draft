@@ -19,7 +19,6 @@ PROJECTS = (
     'strip-nondeterminism',
     'disorderfs',
     'reprotest',
-    'buildinfo.debian.net',
     'trydiffoscope',
     'reproducible-website',
     'reproducible-lfs',
