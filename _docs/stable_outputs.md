@@ -40,5 +40,5 @@ Python users can similarly set the environment variable
 When set to a given integer value, orders in dictionaries will be the same on
 every run.
 
-Beware that the [locale settings]({{ "/docs/locales/ | prepend: site.baseurl }})
+Beware that the [locale settings]({{ "/docs/locales/" | prepend: site.baseurl }})
 might affect the output of some sorting functions or the `sort` command.
