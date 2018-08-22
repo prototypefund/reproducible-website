@@ -12,8 +12,9 @@ version to another as better optimizations are integrated all the time.
 Instead, reproducible builds happen in the context of a *build
 environment*. It usually comprises the set of tools, required versions,
 and other assumptions about the operating system and its configuration.
-A description of this environment should typically be provided alongside
-any distributed binary package.
+A description of this environment should typically be
+[recorded]({{ "/docs/recording/" | prepend: site.baseurl }}) and provided
+alongside any distributed binary package.
 
 Requirements
 ------------
