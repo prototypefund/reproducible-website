@@ -35,7 +35,7 @@ In addition, build failure bugs were reported by:
 Reviews of unreproducible packages
 ----------------------------------
 
-{{ packages_stats['added'] }} package reviews were added, {{ packages_stats['updated'] }} were updated and {{ packages_stats['removed'] }} were removed in this week, adding to [our knowledge about identified issues](https://tests.reproducible-builds.org/debian/index_issues.html).
+{{ packages_stats['added'] }} Debian package reviews were added, {{ packages_stats['updated'] }} were updated and {{ packages_stats['removed'] }} were removed in this week, adding to [our knowledge about identified issues](https://tests.reproducible-builds.org/debian/index_issues.html).
 
 FIXME issue types have been updated:
 {% for _, xs in issues_yml.items()|sort %}{% for x in xs %}
