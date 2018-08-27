@@ -1,3 +1,12 @@
+- title: https://www.froscon.de/news/froscon-2018/
+  presented_by: Jelle van der Waa
+  event:
+    url: https://www.froscon.de/news/froscon-2018/
+    name: FroSCon 2018
+    date: 2018-08-26
+    location: Bonn-Rhein-Sieg University, Sankt Augustin, Germany
+  slides: https://programm.froscon.de/2018/system/event_attachments/attachments/000/000/509/original/Arch_Linux_Reproducible_Builds.pdf
+
 - title: Reproducible Buster and beyond)" by the Reproducible Builds team.
   presented_by: Benjamin Hof, Chris Lamb, Holger Levsen, Steven Chamberlain, Vagrant Cascadian
   event:
