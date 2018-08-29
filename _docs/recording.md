@@ -26,7 +26,7 @@ variation is irrelevant to the software itself.
 This product is called the 'buildinfo', but its exact format and the way it is
 distributed differs across ecosystems.
 
-### Debian
+### [Debian](/who/#Debian)
 
 Debian shares its buildinfo files as plain text files following the
 [control file format](https://www.debian.org/doc/debian-policy/ch-controlfields.html),
@@ -36,7 +36,7 @@ fields and values, as well as conventions around naming, can be found under
 on the [Debian wiki](https://wiki.debian.org). Examples can be found on
 [buildinfo.debian.net](https://buildinfo.debian.net).
 
-### Arch Linux
+### [Arch Linux](/who/#Arch Linux)
 
 The Arch Linux [makepkg](https://wiki.archlinux.org/index.php/makepkg) build
 tool produces a `.BUILDINFO` file consisting of `<key> = <value>` pairs.
@@ -48,7 +48,7 @@ version of [makepkg](https://wiki.archlinux.org/index.php/makepkg), such as
 [archlinux-keyring](
 https://www.archlinux.org/packages/core/any/archlinux-keyring).
 
-### Tails
+### [Tails](/who/#Tails)
 
 Tails does not record a buildinfo file per se, but instead the
 [vagrant directory of the main git repo](

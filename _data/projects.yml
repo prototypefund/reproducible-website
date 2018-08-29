@@ -4,6 +4,8 @@
   resources:
   - name: Continuous tests
     url: https://tests.reproducible-builds.org/archlinux/
+  - name: Recording
+    url: /docs/recording/#arch-linux
 - name: Baserock
   url: https://baserock.org/
   logo: baserock.png
@@ -32,6 +34,8 @@
     url: https://tests.reproducible-builds.org/debian/
   - name: Mailing list
     url: mailto:reproducible-builds@lists.alioth.debian.org
+  - name: Recording
+    url: /docs/recording/#debian
 - name: ElectroBSD
   url: https://www.fabiankeil.de/gehacktes/electrobsd/
   logo: electrobsd.png
@@ -145,6 +149,8 @@
     url: https://labs.riseup.net/code/issues/5630
   - name: Mailing list
     url: https://mailman.boum.org/listinfo/tails-dev/
+  - name: Recording
+    url: /docs/recording/#tails
 - name: Tor Browser
   url: https://www.torproject.org/
   logo: tor.png

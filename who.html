@@ -18,6 +18,7 @@ order: 6
 {% for project in site.data.projects %}
 <div class="row">
   <div class="four columns title">
+    <a name="{{ project.name }}"></a>
     <a href="{{ project.url }}"><img src="{{ project.logo | prepend: "/images/logos/" | prepend: site.baseurl }}" /></a>
   </div>
   <div class="eight columns text">
