@@ -1,5 +1,5 @@
 .site-header {
-  background: #4682b4;
+  background: #1e5b96;
   color: #fff;
   width: 100%;
   min-height: 56px;
@@ -15,7 +15,7 @@
   padding-bottom: 2.0rem;
 }
 .site-header .punctuation {
-  color: #5fb0f3;
+  color: #2b89d6;
 }
 .home header .tagline {
   font-size: 2.0rem;
@@ -65,7 +65,7 @@
 }
 
 a {
-    color: #188fb4;
+    color: #1e5b96;
 }
 
 .text p {
@@ -186,11 +186,11 @@ a {
     position: fixed;
     z-index: 10;
     top: 10px; right: 8px;
-    background-color: #4682b4;
+    background-color: #1e5b96;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border: 1px solid #5fb0f3;
+    border: 1px solid #2b89d6;
   }
 
   .site-nav .menu-icon {
