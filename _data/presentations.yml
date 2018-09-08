@@ -1,4 +1,4 @@
-- title: https://www.froscon.de/news/froscon-2018/
+- title: Arch Linux Reproducible Builds
   presented_by: Jelle van der Waa
   event:
     url: https://www.froscon.de/news/froscon-2018/
@@ -7,15 +7,15 @@
     location: Bonn-Rhein-Sieg University, Sankt Augustin, Germany
   slides: https://programm.froscon.de/2018/system/event_attachments/attachments/000/000/509/original/Arch_Linux_Reproducible_Builds.pdf
 
-- title: Reproducible Buster and beyond)" by the Reproducible Builds team.
-  presented_by: Benjamin Hof, Chris Lamb, Holger Levsen, Steven Chamberlain, Vagrant Cascadian
+- title: Reproducible Buster and beyond
+  presented_by: "the Reproducible Builds team: Benjamin Hof, Chris Lamb, Holger Levsen, Steven Chamberlain, Vagrant Cascadian"
   event:
     url: https://debconf18.debconf.org/talks/80-reproducible-buster-and-beyond/
     name: DebConf 2018
     date: 2018-08-02
     location: Hsinshu, Taiwan
   video:
-    url: https://meetings-archive.debian.net/pub/debian-meetings/2018/DebConf18/2018-07-29/software-transparency-package-security-b.webm
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2018/DebConf18/2018-08-02/reproducible-buster-and-beyond.webm
     youtube: F8_wUWibrO8
 
 - title: "Software transparency: package security beyond signatures and reproducible builds"
