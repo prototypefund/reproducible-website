@@ -42,7 +42,7 @@ f-droid: using debian binaries as much as possible because they are built from s
 
 guix: build archive with checksums of everything with 218MB bootstrap binaries
 
-openSUSE: FIXME link to Ring-0
+openSUSE: uses [Ring-0](https://build.opensuse.org/project/show/openSUSE:Factory:Rings:0-Bootstrap)
 
 Goal: come up with very small set of auditable binaries+sources
 
