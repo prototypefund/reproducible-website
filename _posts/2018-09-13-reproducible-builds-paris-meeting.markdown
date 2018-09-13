@@ -5,7 +5,9 @@ date:   2018-09-13 18:37:42
 categories: org
 ---
 
-People interested in reproducible builds will meet again! This will be the fourth summit following our [November 2017 summit in Berlin]({{ "/events/berlin2017/" | prepend: site.baseurl }}), the [December 2016 summit in Berlin]({{ "/events/berlin2016/" | prepend: site.baseurl }}) and our [December 2015 summit in Athens]({{ "/events/athens2015/" | prepend: site.baseurl }}), a [three-day event in Paris]({{ "/events/paris2018/" | prepend: site.baseurl }}) will welcome both previous attendees and new projects alike. The participants will discuss, connect and exchange ideas in order to grow the reproducible builds effort. We will bring this space into life:
+People interested in reproducible builds will meet again! This will be the fourth summit following our [November 2017 summit in Berlin]({{ "/events/berlin2017/" | prepend: site.baseurl }}), the [December 2016 summit in Berlin]({{ "/events/berlin2016/" | prepend: site.baseurl }}) and our [December 2015 summit in Athens]({{ "/events/athens2015/" | prepend: site.baseurl }}).
+
+As this [three-day event in Paris]({{ "/events/paris2018/" | prepend: site.baseurl }}) we will welcome both previous attendees and new projects alike. The participants will discuss, connect and exchange ideas in order to grow the reproducible builds effort. We will bring this space into life:
 
 ![]({{ "/images/paris2018/salle-des-fetes.jpg" | prepend: site.baseurl }})
 
