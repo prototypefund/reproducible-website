@@ -117,8 +117,8 @@
   url: https://www.opensuse.org/
   logo: openSUSE.png
   resources:
-  - name: Presentation at openSUSEconf 2016
-    url: https://events.opensuse.org/conference/oSC16/program/proposal/838
+  - name: openSUSE Reproducible Builds
+    url: https://en.opensuse.org/openSUSE:Reproducible_Builds
 - name: OpenWrt
   url: https://openwrt.org/
   logo: openwrt.png
