@@ -36,7 +36,7 @@ then
 	echo
 	echo "Now verify the results and run:"
 	echo
-	echo "  $ git push && git push --tags"
+	echo "  $ git push origin master && git push origin ${WEEK}"
 fi
 
 echo
