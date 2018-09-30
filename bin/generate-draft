@@ -21,7 +21,6 @@ PROJECTS = (
     'reprotest',
     'trydiffoscope',
     'reproducible-website',
-    'reproducible-lfs',
     'jenkins.debian.net',
 )
 
