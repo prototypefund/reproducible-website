@@ -19,7 +19,7 @@ order: 4
     <ul>
      <li>Subscribe to the <a href="https://lists.alioth.debian.org/mailman/listinfo/reproducible-builds">reproducible-builds@lists.alioth.debian.org mailing list</a> and/or other <a href="https://lists.reproducible-builds.org/">reproducible builds</a> oriented lists.</li>
      <li>Join the <a href="https://webchat.oftc.net/?channels=#reproducible-builds">#reproducible-builds IRC channel on OFTC</a> and possibly <a href="https://webchat.oftc.net/?channels=#debian-reproducible">#debian-reproducible</a> too.</li>
-     <li>You can also subscribe to <a href="https://lists.alioth.debian.org/mailman/listinfo/reproducible-commits">commit notifications</a>.</li>
+     <li>You can also subscribe to <a href="https://lists.reproducible-builds.org/listinfo/rb-commits">commit notifications</a>.</li>
     </ul>
   </div>
 </div>
@@ -309,15 +309,14 @@ ensure a stable file order when creating the source archive. Once applied,
         still not fixed, repeat from step 2.
       </li>
       <li>
-        If the package is in Git, use SSH to login on <a
-        href="https://alioth.debian.org/projects/reproducible/">alioth.debian.org</a>.
-        Go to <code>/git/reproducible</code>. Use
-        <code>./setup-repository</code> to create a new repository. Push your
+        If the package is in Git, create a new repository on <a
+        href="https://salsa.debian.org/reproducible-builds/packages">salsa.debian.org</a>.
+        Push your
         changes to a (rebasable) <code>pu/reproducible_builds</code> branch.
       </li>
       <li>
         Subscribe to the <code>upload-source</code> notification for the
-        package on the <a href="https://packages.qa.debian.org/">Package
+        package on the <a href="https://tracker.debian.org/">Package
         Tracking System</a>. This is needed so you don't forget to update the
         custom package when a new version hits the archive.
       </li>
@@ -335,11 +334,17 @@ ensure a stable file order when creating the source archive. Once applied,
         and on the wiki page about the issue if there's one.
       </li>
       <li>
-        Everybody in the reproducible builds team can schedule source packages
-        to be rebuilt by running the script <code>reschedule.sh</code> in
-        <code>/srv/home/groups/reproducible/</code> on alioth. If you are not
-        part of the team you can find somebody in the #debian-reproducible IRC
-        channel.
+        Everybody with a <a href="https://sso.debian.org">Debian SSO</a> client
+        certificate (both DDs and guest/alioth) can schedule source packages
+        to be rebuilt by using the authenticated endpoint at
+        https://tests.reproducible-builds.org/cgi-bin/schedule.  There are handy
+        icons (<code>♻</code>)in every package page that links to that cgi-bin
+        script with the correct parameters.
+        If you don't have a valid client certificate or have any other trouble
+        you can find somebody in the #debian-reproducible IRC channel to help you.
+        Also, if you need to mass schedule many packages (even over the daily limit
+        imposed by the public scheduling script described here), you can find
+        the jenkins administrators in that channel that can do mass scheduling for you.
       </li>
       <li>
         If the changes don't break anything,  <a
