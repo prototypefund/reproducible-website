@@ -8,6 +8,14 @@
   video:
     youtube: kpRCfVk24m4
 
+- title: Diffoscope
+  presented_by: Holger Levsen
+  event:
+    url: http://retreat.mirage.io/
+    name: 6th MirageOS hack retreat
+    date: 2018-10-07
+    location: Marrakech, Morocco
+
 - title: Arch Linux Reproducible Builds
   presented_by: Jelle van der Waa
   event:
