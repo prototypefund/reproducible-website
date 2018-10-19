@@ -1,3 +1,13 @@
+- title: Reproducible Builds
+  presented_by: Mariusz Zaborski
+  event:
+    url: https://securitybsides.pl/
+    name: BSidesWarsaw 2018
+    date: 2018-10-13
+    location: Warsaw, Poland
+  video:
+    youtube: kpRCfVk24m4
+
 - title: Arch Linux Reproducible Builds
   presented_by: Jelle van der Waa
   event:
