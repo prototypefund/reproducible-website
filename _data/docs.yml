@@ -6,6 +6,7 @@
   - test-bench
 - title: Achieve deterministic builds
   docs:
+  - source-date-epoch
   - deterministic-build-systems
   - volatile-inputs
   - stable-inputs
