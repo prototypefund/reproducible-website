@@ -9,7 +9,7 @@ order: 4
 
 The Reproducible Builds project is using *Salsa* to host most of its infrastructure and Git repositories and you can find out more information about Salsa on the [Salsa](https://wiki.debian.org/Salsa) page of the [Debian Wiki](https://wiki.debian.org/).
 
-To contribute to the Reproducible Builds project, please follow the following instructions:
+To [contribute to the Reproducible Builds project](/contribute), please follow the following instructions:
 
 ### 1. Visit the Debian GitLab self-service pages
 
