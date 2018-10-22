@@ -51,7 +51,7 @@ Next, login to your new account. **Remember that your username will have be suff
 
 ### 5. Join the *Reproducible Builds* group
 
-On *Salsa*, development is split into groups. You will need to join the [reproducible-builds](https://salsa.debian.org/reproducible-builds) group before you can commit directly to our Git repositories, but you can submit [merge requests](https://docs.gitlab.com/ee/user/project/merge_requests/) without this step.
+On *Salsa*, development is split into groups. You will need to join the [reproducible-builds](https://salsa.debian.org/reproducible-builds) group before you can commit directly to our Git repositories. You can, however, submit [merge requests](https://docs.gitlab.com/ee/user/project/merge_requests/) without this step.
 
 To join the *Reproducible Builds* group, ensure you are logged into *Salsa* and then visit **[salsa.debian.org/reproducible-builds](https://salsa.debian.org/reproducible-builds)** and select **Request Access**:
 
