@@ -53,7 +53,7 @@ Next, login to your new account. **Remember that your username will have be suff
 
 On *Salsa*, development is split into groups. You will need to join the [reproducible-builds](https://salsa.debian.org/reproducible-builds) group before you can commit directly to our Git repositories. You can, however, submit [merge requests](https://docs.gitlab.com/ee/user/project/merge_requests/) without this step.
 
-To join the *Reproducible Builds* group, ensure you are logged into *Salsa* and then visit **[salsa.debian.org/reproducible-builds](https://salsa.debian.org/reproducible-builds)** and select **Request Access**:
+To join the *Reproducible Builds* group, ensure you are logged into *Salsa*, visit **[salsa.debian.org/reproducible-builds](https://salsa.debian.org/reproducible-builds)** and then select **Request Access**:
 
 ![](/images/contribute/salsa/06.png)
 
@@ -75,7 +75,7 @@ Unfortunately, you will have to wait for someone on the Reproducible Builds team
 
 ### 7. Add an SSH key
 
-Finally, to push directly to our repositories you will need to add your SSH key to your *Salsa* account settings. You can do this by visiting **[salsa.debian.org/profile/keys](https://salsa.debian.org/profile/keys)**:
+Finally, to push directly to our Git repositories you will need to add your SSH key to your *Salsa* account settings. You can do this by visiting **[salsa.debian.org/profile/keys](https://salsa.debian.org/profile/keys)**:
 
 ![](/images/contribute/salsa/09.png)
 
@@ -83,4 +83,4 @@ Finally, to push directly to our repositories you will need to add your SSH key 
 
 ### 8. Congratulations!
 
-Congratulations, you are now part of the *Reproducible Builds* group on *Salsa*! You should now be able to clone and push to our repositories via Git.
+Congratulations, you are now part of the *Reproducible Builds* group on *Salsa* and you should now be able to clone and push to our repositories via Git.
