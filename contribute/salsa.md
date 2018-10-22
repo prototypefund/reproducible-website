@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How to signup to Salsa
+title: How to join the Salsa group
 permalink: /contribute/salsa/
 order: 4
 ---
