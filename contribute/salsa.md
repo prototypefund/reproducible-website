@@ -67,7 +67,7 @@ After requesting access, you should see the following message:
 
 ### 6. Wait for confirmation
 
-Unfortunately, you will have to wait for someone on the Reproducible Builds team to accept your request. You should receive an email once this occurs:
+Unfortunately you will have to wait for someone on the Reproducible Builds team to accept your request. You should receive an email once this occurs:
 
 ![](/images/contribute/salsa/08.png)
 
