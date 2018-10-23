@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: simple
 title: How to join the Salsa group
 permalink: /contribute/salsa/
 order: 4
@@ -17,8 +17,6 @@ First, visit **[signup.salsa.debian.org](http://signup.salsa.debian.org)** and s
 
 ![](/images/contribute/salsa/01.png)
 
----
-
 ### 2. Create a guest account on Salsa
 
 Next, create your account. Note that your username will be suffixed with `-guest` to distinguish you from official Debian Developers.
@@ -31,23 +29,17 @@ After registering, you should see the following screen:
 
 ![](/images/contribute/salsa/03.png)
 
----
-
 ### 3. Check your email
 
 You will have to confirm your email address to proceed. Check your email inbox and follow the link provided:
 
 ![](/images/contribute/salsa/04.png)
 
----
-
 ### 4. Login to your new account
 
 Next, login to your new account. **Remember that your username will have be suffixed with `-guest`.**
 
 ![](/images/contribute/salsa/05.png)
-
----
 
 ### 5. Join the *Reproducible Builds* group
 
@@ -63,23 +55,17 @@ After requesting access, you should see the following message:
 
 ![](/images/contribute/salsa/07.png)
 
----
-
 ### 6. Wait for confirmation
 
 Unfortunately you will have to wait for someone on the Reproducible Builds team to accept your request. You should receive an email once this occurs:
 
 ![](/images/contribute/salsa/08.png)
 
----
-
 ### 7. Add an SSH key
 
 Finally, to push directly to our Git repositories you will need to add your SSH key to your *Salsa* account settings. You can do this by visiting **[salsa.debian.org/profile/keys](https://salsa.debian.org/profile/keys)**:
 
 ![](/images/contribute/salsa/09.png)
-
----
 
 ### 8. Congratulations!
 
