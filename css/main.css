@@ -482,3 +482,16 @@ dl.talks dd {
 nav select {
   margin-top: 20px;
 }
+
+.post-simple {
+  text-align: justify;
+  padding-bottom: 40px;
+}
+
+.post-simple img {
+  max-width: 100%;
+}
+
+.post-simple h3 {
+  margin-top: 50px;
+}
