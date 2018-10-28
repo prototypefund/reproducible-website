@@ -9,10 +9,7 @@ Here's what happened in the [Reproducible Builds](https://reproducible-builds.or
 
 * FIXME: Check https://lists.reproducible-builds.org/pipermail/rb-general/
 
-How you can help
-----------------
-
-* FIXME
+* {{ packages_stats['added'] }} Debian package reviews were added, {{ packages_stats['updated'] }} were updated and {{ packages_stats['removed'] }} were removed in this week, adding to [our knowledge about identified issues](https://tests.reproducible-builds.org/debian/index_issues.html). FIXME issue types have been updated: {% for _, xs in issues_yml.items()|sort %}{% for x in xs %}[{{ x['title'] }}](https://salsa.debian.org/reproducible-builds/reproducible-notes/commit/{{ x['sha'] }}){% endfor %}{% endfor %}
 
 Packages reviewed and fixed, and bugs filed
 -------------------------------------------
@@ -32,22 +29,11 @@ In addition, build failure bugs were reported by:
 {{ project }} version `{{ x['version'] }}` was [uploaded to Debian {{ x['distribution'] }}](https://tracker.debian.org/pkg/{{ project }}?FIXME) by {{ x['signed_by_name'] }}. It [included contributions already covered in previous weeks](https://salsa.debian.org/reproducible-builds/{{ project }}/commits/{% if project != 'diffoscope' %}debian/{% endif %}{{ x['version'] }}) as well as new ones from:
 
 {% endfor %}
-{% for x, ys in commits[project].items() %}* {{ x }}:{% for y in ys %}
+{% for x, ys in commits[project].items()|sort %}* {{ x }}:{% for y in ys %}
     * [{{ y['title'] }}]({% if project == "jenkins.debian.net" %}https://salsa.debian.org/qa/jenkins.debian.net/commit/{{ y['sha'] }}{% else %}https://salsa.debian.org/reproducible-builds/{{ project }}/commit/{{ y['sha'] }}{% endif %}){% endfor %}
 {% endfor %}
 {% endfor %}
 
-Reviews of unreproducible packages
-----------------------------------
-
-{{ packages_stats['added'] }} Debian package reviews were added, {{ packages_stats['updated'] }} were updated and {{ packages_stats['removed'] }} were removed in this week, adding to [our knowledge about identified issues](https://tests.reproducible-builds.org/debian/index_issues.html).
-
-FIXME issue types have been updated:
-{% for _, xs in issues_yml.items()|sort %}{% for x in xs %}
-* [{{ x['title'] }}](https://salsa.debian.org/reproducible-builds/reproducible-notes/commit/{{ x['sha'] }}){% endfor %}{% endfor %}
-
-
-Misc.
------
+---
 
 This week's edition was written by {{ author }} & reviewed by a bunch of Reproducible Builds folks on IRC & the mailing lists.
