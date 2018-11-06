@@ -41,6 +41,6 @@ fi
 
 echo
 echo
-echo "After publishing, Tweet this via:"
+echo "After ensuring this is 'live', Tweet this via:"
 echo
 echo "  %tweet What happened in the @ReproBuilds effort between $(tr '\n' ' ' < "${FILENAME}" | sed -n -e 's@.* effort between \([^:]*\):.*@\1@p'): https://reproducible-builds.org/blog/posts/${WEEK}/"
