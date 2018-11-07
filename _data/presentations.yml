@@ -1,6 +1,14 @@
 - title: Reproducible Builds
   presented_by: Chris Lamb
   event:
+    url: http://talks.cam.ac.uk/talk/index/114274
+    name: Computer Laboratory Security Seminar
+    date: 2018-11-06
+    location: William Gates Building, University of Cambridge, UK
+
+- title: Reproducible Builds
+  presented_by: Chris Lamb
+  event:
     url: https://engineering.nyu.edu/
     name: Tandon School of Engineering class
     date: 2018-10-16
