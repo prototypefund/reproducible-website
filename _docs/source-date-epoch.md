@@ -52,8 +52,9 @@ In Debian, this is automatically set to the same time as the latest entry in `de
 
 We are persuading upstream tools to support this directly. You may help by writing patches for these tools; please add links to the bug reports here so we know, and to act as an example resource for future patch writers.
 
- Pending:: [gettext](https://bugs.debian.org/792687), [qt4-x11](https://bugs.debian.org/794681) [cmake upstream](https://gitlab.kitware.com/cmake/cmake/merge_requests/432)
+ Pending:: [gettext](https://bugs.debian.org/792687), [qt4-x11](https://bugs.debian.org/794681)
  Complete::
+  * [cmake](https://gitlab.kitware.com/cmake/cmake/merge_requests/432) (>= 3.8.0)
   * [docbook-utils](https://bugs.debian.org/800797) (Debian >= 0.6.14-3.1, upstream TODO)
   * [doxygen](https://bugs.debian.org/792201) (>= [1.8.12](https://github.com/doxygen/doxygen/commit/9a2c7bbfb0c53b4532db7280e6804c7ce76d70a3), Debian pending)
   * [debhelper](https://bugs.debian.org/791823) (>= 9.20151004)
@@ -128,7 +129,8 @@ endif
 STRING(TIMESTAMP BUILD_DATE "%Y-%m-%d" UTC)
 ```
 
-or on unpatched cmake
+works with cmake >= 2.8.11 , but is only reproducible with cmake >= 3.8.0.
+If you do not have a modern cmake, but need reproducibility, you can use the less preferred variant:
 
 ```
 if (DEFINED ENV{SOURCE_DATE_EPOCH})
