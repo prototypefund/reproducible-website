@@ -5,7 +5,7 @@ date:   2018-11-08 13:00:00
 categories: org
 ---
 
-<h4 style="font-weight: normal;">&hellip; and receives US$300,000 Donation from Handshake</h4>
+<h4 style="font-weight: normal;">&hellip; and receives US$300,000 Donation from the Handshake Foundation</h4>
 
 We are excited to announce that our project is joining the [Software Freedom
 Conservancy](https://sfconservancy.org/about/) as a member project.
