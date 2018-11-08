@@ -35,7 +35,7 @@ responsibly and with care for those who further receive the software.
 The Reproducible Builds project is already working with [many
 crucial and well-known free software projects](https://reproducible-builds.org/who/)
 such as [Coreboot](https://www.coreboot.org/) (also a Conservancy project!),
-OpenSUSE OpenWrt, Tails, GNU Guix, bootstrapable.org, FreeBSD, Arch Linux and
+OpenSUSE OpenWrt, Tails, GNU Guix, bootstrappable.org, FreeBSD, Arch Linux and
 [Tor](https://www.torproject.org). In the past, the Core Infrastructure
 Initiative [generously funded](https://www.coreinfrastructure.org/announcements/the-linux-foundations-core-infrastructure-initiative-renews-funding-for-reproducible-builds-project/)
 work on the project but this has since ceased. The work has continued in the
