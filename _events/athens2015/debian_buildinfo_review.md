@@ -12,7 +12,7 @@ What we wanted to address:
 
  * What should we have in the build info file?
  * What currently affects the build but isn't documented?
- * What explictily shouldn't affect the build and should we record that?
+ * What explicitly shouldn't affect the build and should we record that?
 
 We ran through the existing `.buildinfo` specification and found a lot of terms
 which meant different things to different people. “Architecture” is assumed to

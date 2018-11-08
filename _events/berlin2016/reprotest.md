@@ -28,7 +28,7 @@ Ximin explains what diffoscope is, and shows us a demo.
 
 Ximin shows us the code of reprotest.  It's quite straight-forward.
 
-reprotest can work using different virtual enviroments (ssh, qemu, lxc).
+reprotest can work using different virtual environments (ssh, qemu, lxc).
 
 automatic detection to build packages is only supported for Debian.  More distro
 build systems need to be included.

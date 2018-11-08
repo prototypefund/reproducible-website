@@ -41,7 +41,7 @@ Day 1
 *    Proposals for hacking sessions to take place later in the afternoon:
      -   **SquashFS**
      -   **FreeBSD filesystems**
-     -   **Pyton packages in git**
+     -   **Python packages in git**
      -   **Gettext**
      -   **Make diffoscope deal with Android apks**
      -   **Markdowns**
@@ -109,7 +109,7 @@ Day 2
      -   **Funding and CII**
      -   **RPM and hacking**
      -   **Nix build stuff to be incorporated with tests at [https://tests.reproducible-builds.org](https://tests.reproducible-builds.org)**
-     -   **Boostrap test jenkins to replicate [https://tests.reproducible-builds.org](https://tests.reproducible-builds.org)**
+     -   **Bootstrap test jenkins to replicate [https://tests.reproducible-builds.org](https://tests.reproducible-builds.org)**
      -   **Embedded images cross-distro**
 
 *    16:30 Adjourn

@@ -87,7 +87,7 @@ this works
 :actionitem:
 
 ### proposal: document examples of projects that have worked on RB.
- - storytelling. What's the expected reponse: See that something is
+ - storytelling. What's the expected response: See that something is
 happening? Gives a sense of the scale of RB.
  - There should be talks and slides linked. Vagrant, Lunar, Torproject
 etc. :actionitem:

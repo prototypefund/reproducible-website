@@ -51,13 +51,13 @@ Better examples:
 
 *Wish*: Compiler implementors would provide a easily executable rewrite-semantics for their languages, for bootstrapping. But likely far too much effort. One selling point would be that it also helps bootstrapping on new architectures.
 
-Certifcation for compilers: is there a way to certify compilers? Can we create a standard procedure for bootstrapping a compiler and providing a hash of a known good GCC 4.8 (+ `libc`, Make) binary, for example?
+Certification for compilers: is there a way to certify compilers? Can we create a standard procedure for bootstrapping a compiler and providing a hash of a known good GCC 4.8 (+ `libc`, Make) binary, for example?
 
 Should we try to encourage languages:
 
  - To have two diverse compilers?
  - To have a compiler written in C (which can then be verified)?
- - To have an interpreter written in another lanuage? (This may be easier than a compiler)
+ - To have an interpreter written in another language? (This may be easier than a compiler)
  - To create a compiler ring (A compiles B compiles C compiles A)?
 
 **Task**: Investigate whether NetBSD can be fully diverse double-compiled.

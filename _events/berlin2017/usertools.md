@@ -26,7 +26,7 @@ what might the user want to know, what problem they want solve?
 
 is it helpful to show that a software is unreproducible to the user? is that meaningful information?
 
-the user wants to set a policy on their device: only reproducible software. they dont care much about individiual unreproducible software…
+the user wants to set a policy on their device: only reproducible software. they don't care much about individiual unreproducible software…
 
 there will be different policies: (incomplete list)
 - only install reproducible software which all rebuilders agreed on
@@ -43,7 +43,7 @@ could be opt-in, people who are not interested in reproducible builds (who have 
 because cavevat:
 - warning fatigue. too many warnings can scare users away.
 
-users dont care about reproducbility, its a technical detail. they care that they run the "right" software.
+users don't care about reproducbility, its a technical detail. they care that they run the "right" software.
 denial of service by malicious rebuilder
 
 unrelated

@@ -24,7 +24,7 @@ We assumed that for each distribution there would be a number of separate indepe
 A re-builder would attempt to build new releases and determine whether they were truly reproducible.
 A re-builder would need to have daemon that noticed new releases and built them and published signed build info
 
-We assumed that by default each distrobution would publish a list of known re-builders.
+We assumed that by default each distribution would publish a list of known re-builders.
 Builders will be identified by their public key.
 This list should be in the reproducible-only package.
 
@@ -101,7 +101,7 @@ However, a lax implementation may decide that a low number,e.g 2 or 3 is suffici
 The value depends how paranoid you are that the builders are not independent.
 
 Rebuilders will take time to issue their signed buildinfos.
-The higher the number, the longer the wait before sufficent signatures have been issued.
+The higher the number, the longer the wait before sufficient signatures have been issued.
 
 ----
 

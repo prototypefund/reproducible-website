@@ -10,7 +10,7 @@ permalink: /events/berlin2017/ReproducibleSummitIIIEventDocumentation/
 
 ### Event documentation
 
-This is work in progress: currently this very document still contains notes, which shall all be moved to seperate pages at which point this URL will vanish and everything will be accessable via the **Agenda**
+This is work in progress: currently this very document still contains notes, which shall all be moved to separate pages at which point this URL will vanish and everything will be accessible via the **Agenda**
 
 #### Session Notes
 ####  Day 1
@@ -129,7 +129,7 @@ Agenda brainstormin
 
 - Have build scripts that are fully specified about versions of compilers, etc to use in a boostrap-chain.
 
-**Note:** Trust is not transitive **(unlike a=b=c meaning a=c)** so if the sister of a friend knows someone who verified this it is not as much trust as **“I verified this”**. Possibly also beacause trusting someone very much translates to a factor of 0.9x thus for every level of indirection you lose some trust.
+**Note:** Trust is not transitive **(unlike a=b=c meaning a=c)** so if the sister of a friend knows someone who verified this it is not as much trust as **“I verified this”**. Possibly also because trusting someone very much translates to a factor of 0.9x thus for every level of indirection you lose some trust.
 
 **F-Droid:** using Debian binaries as much as possible because they are built from source and thus more trustworthy.
 
@@ -154,7 +154,7 @@ Agenda brainstormin
 
 - GHC (Haskell)
 
-- Tust
+- Trust
 
 - Maven
 
@@ -288,7 +288,7 @@ groovy -> gradle
 
 ###### Gradle depends on over 300 previous versions of itself.
 
-- Try to go the if we can compile ourself corretly after skipping trough several steps. Git tags seems to be good indicators.
+- Try to go the if we can compile ourself correctly after skipping trough several steps. Git tags seems to be good indicators.
 
 Bootstrapping: Mapping the problem space
 
@@ -339,7 +339,7 @@ Bootstrapping: Mapping the problem space
 
 - Rest of the session was about constructing the build-dependency graph between compilers
 
-- Partial dependecy graph of a GHC bootstrap path, early boostsrapping information at: <https://elephly.net/posts/2017-01-09-bootstrapping-haskell-part-1.html>
+- Partial dependency graph of a GHC bootstrap path, early boostsrapping information at: <https://elephly.net/posts/2017-01-09-bootstrapping-haskell-part-1.html>
 
 - 8.2.1
 - 8.0.1
@@ -379,7 +379,7 @@ Bootstrapping: Mapping the problem space
 
 - 3 nodes are marked in red (indicating **"not cool"**): ocamls requires gcc-5 *and* ocaml,
 
-- GHC requires GHC itself to build, Rust requrest clang, LLVM, Python interpreter *and* Rust itself.
+- GHC requires GHC itself to build, Rust request clang, LLVM, Python interpreter *and* Rust itself.
 
 - For GHC there is incoming edge from hugs, marked with a quesiton mark.
 
@@ -511,7 +511,7 @@ slow simple lisp -> mes -> guile -> nyac + mescc.]
 
 - What is the range of reasonable policies?.
 
-- How can we communicate these policies to machine adminstrators?.
+- How can we communicate these policies to machine administrators?.
 
 - How can we implement this in the backend.
 
@@ -569,7 +569,7 @@ This is what we would need to define in the policy.
 
 - Backup mechanism for policies.
 
-- There is a time when packages would appear as being unreproducible, for ex. when security updates are published, tthe rebuild will take time.
+- There is a time when packages would appear as being unreproducible, for ex. when security updates are published, the rebuild will take time.
 
 - Have an admin specified rebuilder, for example a local rebuilder.
 
@@ -988,7 +988,7 @@ We identified four clusters that marketing relates to: users, developers, manage
 
 + We need more "management buy-in"
 
-+ We should be able to aquire resources more easily if we are r-b ...: build farm
++ We should be able to acquire resources more easily if we are r-b ...: build farm
 
 + Publicity can provide a "professional" context to motivate projects dedicated to RB (e.g. academic publications)
 
@@ -1532,7 +1532,7 @@ rebuilder publishes diffoscope output for non-matching builds.
 - Debian wiki pages are obsolete
 
 - Easy to answer **"where was this binary built"**from, by whom, how?
-(souce code, build environment)
+(source code, build environment)
 
 - change of paradign of the **"free software"** definition → software is
 only free if it can be rebuilt reproducibly
@@ -1555,7 +1555,7 @@ without binary blobs
 - a commercial interest in reproduciblity builds (expressed as
 requirement for procurements)
 
-- reproduciblity non-free sofware?
+- reproduciblity non-free software?
 
 - expand reproduciblity builds to more distros and systems, more
 adoption, reproduciblity packages are the default, being
@@ -1702,7 +1702,7 @@ News blog under Debian.org instead of r-b.org, news on r-b.o is not updated, can
 
 - Here is my software, it build reproducibly, and I am proud of it.
 
-- Higer quality, interest of the user and interest of other developers. User pressure is a good makreting value point.
+- Higher quality, interest of the user and interest of other developers. User pressure is a good makreting value point.
 
 - I am a dev I didn't know how to prove that my work is rb. With reprotest I can achieve that.
 
@@ -2191,7 +2191,7 @@ and the source package
 source package
 
 
-- Cross distro comparision? "Is the upstream source of
+- Cross distro comparison? "Is the upstream source of
 XYZ version ABC the same as that in all other distros"
  only trust keys that have been around some time (new
 keys a cheap, so people can always restart a new identity
@@ -2333,7 +2333,7 @@ buildinfo query
 - RPM should create `.buildinfo`.
 
 
-- There is a starting point at <https://github.com/woju/RPMbuildinfo> as shell script which produce similiar files than Debian.
+- There is a starting point at <https://github.com/woju/RPMbuildinfo> as shell script which produce similar files than Debian.
 
 - Debian `.buildinfo` can be found at <https://manpages.Debian.org/unstable/dpkg-dev/deb-buildinfo.5.en.html>
 
@@ -2342,7 +2342,7 @@ buildinfo query
 
 **Task:** show RPM `.buildinfo`.Add checksums (sha256) of the inputs into the `.buildinfo` files.
 
-- We discussed about where to put `.buildinfo` file. We suggest to have a seperate file, but it could be controversal for the RPM project.
+- We discussed about where to put `.buildinfo` file. We suggest to have a separate file, but it could be controversial for the RPM project.
 
 
 ###### iso

@@ -36,7 +36,7 @@ backdoors in built source code are out of scope of bootstrappable builds
 * obsolete hardware needs to be emulated and the emulator becomes part of the binaries we need to trust.
 * Have build scripts that are fully specified about versions of compilers, etc to use in a boostrap-chain.
 
-Note: Trust is not transitive (unlike a=b=c meaning a=c) so if the sister of a friend knows someone who verified this it is not as much trust as "I verified this". Possibly also beacause trusting someone very much translates to a factor of 0.9x thus for every level of indirection you lose some trust.
+Note: Trust is not transitive (unlike a=b=c meaning a=c) so if the sister of a friend knows someone who verified this it is not as much trust as "I verified this". Possibly also because trusting someone very much translates to a factor of 0.9x thus for every level of indirection you lose some trust.
 
 f-droid: using debian binaries as much as possible because they are built from source and thus more trustworthy.
 

@@ -52,7 +52,7 @@ Participants individually wrote questions of their interest on pieces of paper, 
 
 - Develop user-interface to check for reproducibility **** green
 - other usertools than "do you really want to install that unreproducible package" * green
-- can users configure their system to only install verified reproducible pacakges? if not, what do we need? * green
+- can users configure their system to only install verified reproducible packages? if not, what do we need? * green
 - What INTERFACES to build reproducibility info do we give to USERS? ** green
 - What tools can we provide to _users_ to help them verify their software? **** green
 - End-user "prompts" re. unreproducible packages, interfaces, etc
@@ -94,7 +94,7 @@ Participants individually wrote questions of their interest on pieces of paper, 
 
 - can we do something about communities that cannot build dependencies from source? (npm, java, compiler builders?) : 1 green
 - if we make an image by deterministically composing snapshots of unreproducibly built data... do we call that image reproducible? : 1 green
-- how can we ensure the term "reproducible builds" is used consistantly across the internet
+- how can we ensure the term "reproducible builds" is used consistently across the internet
 
 
 ### Portability
@@ -200,7 +200,7 @@ Participants individually wrote questions of their interest on pieces of paper, 
 ### Bootstrap 1
 
 - how acceptable is a not fully from source bootstrappable GCC
-- what do we call black boxes in boostrap?
+- what do we call black boxes in bootstrap?
 - how far are we from diverse dual compilation?
 - find a way to bootstrap the Haskell compiler GHC without using a binary GHC. * green
 - find a complete bootstrap path for GCC. *** green

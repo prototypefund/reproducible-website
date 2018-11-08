@@ -8,7 +8,7 @@ permalink: /events/berlin2017/buildpathprefixmap/
 
 Problem: build paths get injected during compilation.
 
-* one commmon scenario is embedding debugging information in C.
+* one common scenario is embedding debugging information in C.
 * next most common are __FILE__ macros and assert()
 * gcc's -fdebug-prefix-map is almost a solution, but…
 * command line options used were also embedded in the debugging information, so the use of -fdebug-prefix-map with a path-specific string itself introduced a variation.
@@ -34,7 +34,7 @@ We had some brief discussion around the similarity of the BUILD_PATH_PREFIX_MAP 
 * they both have clearly established semantics of how we want build systems to transform/stabilize certain forms of ephemeral data
 * in many situations, the goal is for the build system to not need either env var, because the ephemeral data in question simply isn't a part of the build process at all.
 
-We currently have patches oustanding for gcc and golang. We don't think that anyone has even asked clang for support yet.
+We currently have patches outstanding for gcc and golang. We don't think that anyone has even asked clang for support yet.
 R (and some other compilers?) doesn't need BUILD_PATH_PREFIX_MAP because it already has a notion of the root of the source tree.
 
 gcc is reluctant to accept the patches for the environment variable -- they apparently don't want magic options to change the build! so their concerns align with ours in some way, but the thinking about how to address the concerns are different.

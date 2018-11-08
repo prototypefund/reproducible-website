@@ -127,7 +127,7 @@ permalink: /events/berlin2016/2017lookahead/
 - get gentoo on board!
 - more distros and FLOSS OSes join reproducible builds
 - OpenWrt & LEDE to 90% RB
-- propietary software incorporating reproduciblity
+- proprietary software incorporating reproduciblity
 - first 100% reproducible OS (with packages too)
 - reproducible pkg src packages
 
@@ -152,7 +152,7 @@ permalink: /events/berlin2016/2017lookahead/
 
 ### Arch Linux
 
-- write documention
+- write documentation
 - tools for users to verify reproducibility
 - 100% reproducible core repo
 

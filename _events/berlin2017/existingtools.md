@@ -56,7 +56,7 @@ reprotest
 ---------
 - tool to run the a build run twice
 - can use container
-- reprotest `make` will run it twice. but changing the environemnt like TZ
+- reprotest `make` will run it twice. but changing the environment like TZ
 
 tests.reproducible-builds.org
 -----------------------------

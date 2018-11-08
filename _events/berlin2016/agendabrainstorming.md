@@ -85,7 +85,7 @@ BUILD INFO (IMPLEMENTATION) / DEBIAN INFRASTRUCTURE
  - implement/help with buildinfo distribution in Debian’s FTP (dak software)
  - hack on debrebuild
  - reach 100% r.b. for Debian pkg-pal packages
- - how do debian bulid profiles and reproducibility fit together?
+ - how do debian build profiles and reproducibility fit together?
  - question/Debian: building pkgs in contrib[?] reproducibly? Why do we not do it? :)
  - collect remaining infrastructure issues for reprod. Debian
  - how to make reproducible Debian chroot (get rid of non-deterministic post-installation stuff)? (2)

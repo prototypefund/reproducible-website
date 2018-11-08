@@ -33,7 +33,7 @@ documentation currently available on `reproducible-builds.org` website.
    and how to resolve them. “If you use this tool, these are the things you
    need to think about”
    - **missing**
- * Contact opportunities/getting connected information on the website (mailling
+ * Contact opportunities/getting connected information on the website (mailing
    list and/or IRC channel)
    - *available*
  * Slidedeck for someone running a class with motivation/pitfalls/solutions

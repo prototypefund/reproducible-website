@@ -11,7 +11,7 @@ permalink: /events/berlin2016/RPM/
 - Build service sign the binaries that get published to the mirror infrastructure
 - Discussion point: signatures, you can copy signatures to on the newly built package to obtain the same package.
 - OpenSUSE might still have MD5 in some places, Fedora has switched to SHA-256.
-- for fedora "Mock" creates the environment and chroot, install build dependencies and build. So build is failing when missing depenency.
+- for fedora "Mock" creates the environment and chroot, install build dependencies and build. So build is failing when missing dependency.
 - Needs to set SOURCE_DATE_EPOCH? Timestamp will be different, but timestamp is in the spec file? A end-user might want to download a source package from anywhere.
 
 ### Problems in RPM?

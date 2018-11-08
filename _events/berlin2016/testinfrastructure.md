@@ -37,14 +37,14 @@ permalink: /events/berlin2016/testinfrastructure/
 
 6. other people doing reproducible tests and reporting back
 * Holger wants them to provide yaml files
-* lynxis thinks kernelci.org is cool -- has an API for accepting results of kernal builds and boots
+* lynxis thinks kernelci.org is cool -- has an API for accepting results of kernel builds and boots
 
 
 ## raw minutes
 
 * the other project problems using jenkins test set up
   * cannot reproduce the test set up?
-  * simplier to replicate the jenkins test environment -- too many debian dependencies?
+  * simpler to replicate the jenkins test environment -- too many debian dependencies?
   * bash scripts long and complicated -- maybe break out important parts so less intimidating to other potential contributors?
 
 * debian test.reproducible-builds.org
@@ -62,7 +62,7 @@ permalink: /events/berlin2016/testinfrastructure/
 * lots and lots of talk about wanting to test jenkins
 * what can we do right now:
   * external test set up to feed to postgres
-  * jernalci project? linux kernal testing? hardware set up for reporting things back? make can use similar style api?
+  * jernalci project? linux kernel testing? hardware set up for reporting things back? make can use similar style api?
   * other job: maybe create yaml and send tests.r-b.org to display. like tails? tails is builing iso twice and producing diffoscope result
 
 ### TAILS:
@@ -73,7 +73,7 @@ permalink: /events/berlin2016/testinfrastructure/
 * NOTES / YAML file
   * want: cross distro notes
   * currently SOME notes are debian specific
-  * CPE -- match names of packages accross distros -- unique idenfier of a package.
+  * CPE -- match names of packages across distros -- unique idenfier of a package.
 
 
 
