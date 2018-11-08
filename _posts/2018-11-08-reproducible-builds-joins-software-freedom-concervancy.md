@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reproducible Builds Joins the Software Freedom Concervancy"
+title:  "Reproducible Builds joins the Software Freedom Concervancy"
 date:   2018-11-08 13:00:00
 categories: org
 ---
