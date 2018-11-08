@@ -41,10 +41,14 @@ Initiative [generously funded](https://www.coreinfrastructure.org/announcements/
 work on the project but this has since ceased. The work has continued in the
 meantime thanks to the contributions of volunteers.
 
+<br>
+
 As Reproducible Builds joins Conservancy, it is also receiving a donation of
 US$300,000 from the [Handshake Foundation](https://handshake.org/) which will
 propel the project's efforts to ensure the future health and usability of free
 software.
+
+<br>
 
 Karen Sandler, Executive Director of the Software Freedom Conservancy, says
 "The work being done at Reproducible Builds is critical for both the trust and
