@@ -60,8 +60,8 @@ Holger Levsen, who will chair the project's Steering Committee, along with
 Bdale Garbee, Allen Gunn, Mattia Rizzolo, Keith Packard and Stefano Zacchiroli
 says, "I'm very happy that Reproducible Builds has become a Conservancy project
 and am much looking forward to see the results of this cooperation and the long
-term effects on the free software ecosystem. Reproducible Builds is on a long-
-term mission to change the way Free Software is distributed and used and I'm
+term effects on the free software ecosystem. Reproducible Builds is on a long-term
+mission to change the way Free Software is distributed and used and I'm
 glad we have a strong partner who shares our vision and has ties into the wider
 community."
 
