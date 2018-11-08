@@ -8,7 +8,8 @@ categories: org
 <h4 style="font-weight: normal;">&hellip; and receives US$300,000 Donation from the Handshake Foundation.</h4>
 
 We are excited to announce that our project is joining the [Software Freedom
-Conservancy](https://sfconservancy.org/about/) as a member project.
+Conservancy](https://sfconservancy.org/about/) as a member project!
+
 Conservancy is a 501(c)(3) not-for-profit organization based in New York that
 helps promote, develop and defend Free, Libre, and Open Source Software (FLOSS)
 projects.
