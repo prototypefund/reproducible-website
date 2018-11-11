@@ -9,7 +9,7 @@ Here's what happened in the [Reproducible Builds](https://reproducible-builds.or
 
 * FIXME: Check https://lists.reproducible-builds.org/pipermail/rb-general/
 
-* {{ packages_stats['added'] }} Debian package reviews were added, {{ packages_stats['updated'] }} were updated and {{ packages_stats['removed'] }} were removed in this week, adding to [our knowledge about identified issues](https://tests.reproducible-builds.org/debian/index_issues.html). FIXME issue types have been updated: {% for _, xs in issues_yml.items()|sort %}{% for x in xs %}[{{ x['title'] }}](https://salsa.debian.org/reproducible-builds/reproducible-notes/commit/{{ x['sha'] }}){% endfor %}{% endfor %}
+* {{ packages_stats['added'] }} Debian package reviews were added, {{ packages_stats['updated'] }} were updated and {{ packages_stats['removed'] }} were removed in this week, adding to [our knowledge about identified issues](https://tests.reproducible-builds.org/debian/index_issues.html). FIXME issue types have been updated: {% for _, xs in issues_yml.items()|sort %}{% for x in xs %}[{{ x['title'] }}](https://salsa.debian.org/reproducible-builds/reproducible-notes/commit/{{ x['sha'] }}), {% endfor %}{% endfor %}
 
 Packages reviewed and fixed, and bugs filed
 -------------------------------------------
