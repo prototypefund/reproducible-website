@@ -495,3 +495,8 @@ nav select {
 .post-simple h3 {
   margin-top: 50px;
 }
+
+img[src$="#center"] {
+  display:block;
+  margin: 0 auto;
+}
