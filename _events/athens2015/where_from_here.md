@@ -130,7 +130,7 @@ We should…
  - We should commit publicly to r-b efforts (on mailing lists for example)
  - We should have another reproducible builds summit
  - We should keep in touch and share knowledge on the solutions and tools to solve reproducibility issues
- - We should invite OpenSUSE at next meeting
+ - We should invite openSUSE at next meeting
  - We should encourage more users to reproduce builds
  - We should think about multi-sigs for reprod.software
  - We should encourage source code signing
@@ -161,7 +161,7 @@ Don't forget…
 --------------
 
  - Don't forget to take a stab and try pushing patches from Debian elsewhere too
- - Don't forget to invite OpenSuse and Fedora/RM people next time
+ - Don't forget to invite openSUSE and Fedora/RM people next time
  - Don't forget to send some practical details pior to event e.g. at least be @ “x” at “y” am a week before
  - Don't forget to confirm hotel sponsorship!
  - Don't forget to buy stock in 3M & sharpie
@@ -169,7 +169,7 @@ Don't forget…
  - Don't forget about documenting how different projects are regarding r-b
  - Don't forget we need lots of Internet
  - Don't forget to invite `xorriso` upstream
- - Don't forget to invite OpenSuse people next time
+ - Don't forget to invite openSUSE people next time
  - Don't forget to invite cloud (e.g. docker, rocket) people next time
  - Don't forget to solve verification of multiple identical builds by users
  - Don't forget to thank Holger, Lunar, Gunner & all organizers & facilitators

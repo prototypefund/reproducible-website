@@ -2324,7 +2324,7 @@ buildinfo query
 
 - Fedora has multiple `.buildinfo` files which can be fetched by a webservice
 
-- OpenSUSE build system has a file with list of installed packages and their version. **"buildenv"**
+- openSUSE build system has a file with list of installed packages and their version. **"buildenv"**
 
 - `.buildinfo` files are to new, so RPM build utilities doesn't create it.
 

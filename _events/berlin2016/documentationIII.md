@@ -9,7 +9,7 @@ permalink: /events/berlin2016/documentationIII/
 ### Todo
  * mirror on github [https://github.com/reproducible-builds](https://github.com/reproducible-builds))
    * Collecting talks on reproducible builds add to talk page (look at the tweet history)
- * E.g., the recent openSuSE talk, which isn't listed yet
+ * E.g., the recent openSUSE talk, which isn't listed yet
    * Organize talk page and add dates (organized by project and cronologically within)
    * Move information of the Debian wiki to the r-b.org page
    * Add more arguments to the "buy-in" page (update page using [Use cases]({{ "/events/berlin2016/usecases/" | prepend: site.baseurl }}))

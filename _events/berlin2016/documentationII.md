@@ -56,7 +56,7 @@ distro / project-specific pages!
   * LEDE
   * NetBSD
   * NixOS
-  * openSuSe
+  * openSUSE
   * OpenWRT: ask lynxis
   * Tails: Public development list: tails-dev@boum.org
 

@@ -32,7 +32,7 @@ not match here, python recompile the file each run
 
 PEP 552 - use source hash instead of mtime
 
-OpenSUSE: open build service, produce "buildenv file", including hashes of build inputs
+openSUSE: open build service, produce "buildenv file", including hashes of build inputs
 
 osc - client tool to build package locally; this tool is also packaged for Debian
 
@@ -40,7 +40,7 @@ build path doesn't matter, it is constant (chroot env)
 
 interesting topic: use reprotest for rpm packages
 
-reproducibility testing in OpenSUSE: not automatically, but there are manual results
+reproducibility testing in openSUSE: not automatically, but there are manual results
 
 further tasks:
 - document current status, environment
