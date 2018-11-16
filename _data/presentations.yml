@@ -1,3 +1,11 @@
+- title: You think you’re not a target? A tale of three developers…
+  presented_by: Chris Lamb
+  event:
+    url: https://www.sfscon.it
+    name: SFScon
+    date: 2018-11-16
+    location: Bolzano, Italy
+
 - title: Reproducible Builds
   presented_by: Chris Lamb
   event:
