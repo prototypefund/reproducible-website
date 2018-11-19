@@ -184,16 +184,18 @@
 - title: You think you're not a target? A tale of 3 developers…
   presented_by: Chris Lamb
   event:
-   name: All Things Open
-   location: Raleigh, NC, United States
-   url: https://allthingsopen.org/
+    url: https://freenode.live/
+    name: Freenode Live
+    date: 2017-10-28
+    location: Bristol, United Kingdom
 
 - title: You think you're not a target? A tale of 3 developers…
   presented_by: Chris Lamb
   event:
-    url: https://freenode.live/
-    name: Freenode Live
-    location: Bristol, United Kingdom
+   name: All Things Open
+   date: 2017-10-23
+   location: Raleigh, NC, United States
+   url: https://allthingsopen.org/
 
 - title: Reproducible Builds status update
   presented_by: Chris Lamb, Holger Levsen, Maria Glukhova, Steven Chamberlain, Vagrant Cascadian, Valerie Young & Ximin Luo
@@ -234,6 +236,7 @@
   presented_by: Chris Lamb
   event:
     url: https://www.lfasiallc.com/linuxcon-containercon-cloudopen-china
+    date: 2017-06-19
     name: LinuxCon + ContainerCon + CloudOpen China
     location: Beijing, People's Republic of China
 
@@ -249,6 +252,7 @@
   presented_by: Chris Lamb
   event:
     url: https://oscal.openlabs.cc
+    date: 2017-05-13
     name: OSCAL'17
     location: Tirana, Albania
 
@@ -271,6 +275,7 @@
   event:
     url: http://foss-north.se/
     name: foss-north 2017
+    date: 2017-04-26
     location: Gothenburg, Sweden
 
 - title: You too can write reproducible software
@@ -331,6 +336,7 @@
   event:
     url: https://www.linux.conf.au/
     name: linux.conf.au 2017
+    date: 2017-01-16
     location: Hobart, Australia
   video:
     youtube: ooJXRBf72M0
@@ -381,6 +387,7 @@
   presented_by: Chris Lamb
   event:
     url: http://sfk.flossk.org/sfk16/
+    date: 2016-10-22
     name: Software Freedom Kosova
     location: Prishtina, Republic of Kosovo
 
@@ -389,6 +396,7 @@
   event:
     url: https://debconf16.debconf.org
     name: DebConf16
+    date: 2016-07-07
     location: Cape Town, South Africa
 
 - title: Reproducible builds ecosystem
@@ -404,6 +412,7 @@
   presented_by: Chris Lamb
   event:
     url: http://2016.fossasia.org/
+    date: 2016-03-18
     name: FOSSASIA 2016
     location: Singapore
 
@@ -432,6 +441,7 @@
   presented_by: Chris Lamb
   event:
     url: https://skroutz.gr
+    date: 2015-12-10
     name: Skroutz.gr
     location: Athens, Greece
 
@@ -440,12 +450,14 @@
   event:
     url: https://wiki.debian.org/DebianEvents/gb/2015/MiniDebConfCambridge
     name: MiniDebConfCambridge 2015
+    date: 2015-11-08
     location: Cambridge, United Kingdom
 
 - title: Reproducible Builds status update
   presented_by: Lunar, Holger Levsen, Chris Lamb
   event:
     url: https://debconf15.debconf.org
+    date: 2015-08-20
     name: DebConf15
     location: Heidelberg, Germany
 
