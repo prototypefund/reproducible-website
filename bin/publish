@@ -37,6 +37,23 @@ then
 	echo "Now verify the results and run:"
 	echo
 	echo "  $ git push origin master && git push origin ${WEEK}"
+	echo
+
+	while true
+        do
+                printf "Do you want to run this now? [Y/n] "
+                read X
+
+		case "${X}" in
+		Y|"")
+			git push origin master && git push origin ${WEEK}
+			break
+			;;
+		N|n)
+			break
+			;;
+		esac
+	done
 fi
 
 echo
