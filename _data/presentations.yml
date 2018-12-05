@@ -14,6 +14,16 @@
     date: 2018-11-06
     location: William Gates Building, University of Cambridge, UK
 
+- title: The Reproducible Builds Project
+  presented_by: Muz
+  event:
+    url: https://thelongcon.ca
+    name: The Long Con 2018
+    date: 2018-11-03
+    location: Winnipeg, MB, Canada
+  video:
+    youtube: pAiSbpzUmU0
+
 - title: Reproducible Builds
   presented_by: Chris Lamb
   event:
