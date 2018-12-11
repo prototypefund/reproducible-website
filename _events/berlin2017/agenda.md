@@ -52,7 +52,7 @@ Day 2
     * How/why not reproducible tar format is
     * How to build NetBSD
     * How to use reprotest
-    * How to autoclassify indeterminism
+    * How to autoclassify nondeterminism
     * How to snapshot Debian to build reproducible system images
     * AMA F-Droid
     * How to integrate with Travis CI
