@@ -10,6 +10,9 @@ description: |
 baseurl: ""
 url: https://reproducible-builds.org
 
+sass:
+  sass_dir: /assets/styles
+
 collections:
   blog:
     output: true
