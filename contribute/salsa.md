@@ -35,9 +35,9 @@ You will have to confirm your email address to proceed. Check your email inbox a
 
 ![](/images/contribute/salsa/04.png)
 
-### 4. Login to your new account
+### 4. Log in to your new account
 
-Next, login to your new account. **Remember that your username will be suffixed with `-guest`.**
+Next, log in to your new account. **Remember that your username will be suffixed with `-guest`.**
 
 ![](/images/contribute/salsa/05.png)
 
