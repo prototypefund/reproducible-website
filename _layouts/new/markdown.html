@@ -3,22 +3,18 @@
   {% include new/head.html %}
   <body>
     {% include new/navbar.html %}
-    <div class="row">
-      <div class="col-md-3 col-sm-5 d-none d-md-block p-0">
-        <div class="row" style="height: 100%">
-          <div class="col-md-6 col-sm-6 col-xs-6 p-0">
-            {% include new/navbar_side.html sidebarClassName="rb-sidebar__1" %}
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6 p-0">
-            {% include new/sidebar.html sidebarClassName="rb-sidebar__2" %}
-          </div>
-        </div>
+
+    <div class="row" style="height: 100%">
+      <div class="col-md-2 col-sm-3 d-none d-sm-block p-0">
+        {% include new/navbar_side.html sidebarClassName="rb-sidebar__1" %}
       </div>
-        <div class="col-md-9 col-xl-9 col-sm-12 col-xs-12 p-5">
+      <div class="col-md-10 col-xs-12 col-sm-9 p-0">
+        <main role="main" class="content-scroll p-5 mt-2" data-spy="scroll" data-target="#components-nav" data-offset="0">
           {{ content }}
+        </main>
       </div>
     </div>
 
-  {% include new/scripts.html %}
+    {% include new/scripts.html %}
   </body>
 </html>
