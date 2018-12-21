@@ -1,6 +1,6 @@
 ---
 title: Test
-layout: new/markdown
+layout: new/default
 ---
 
 # h1 Heading 8-)

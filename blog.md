@@ -1,5 +1,5 @@
 ---
-layout: new/markdown
+layout: new/default
 title: Blog
 permalink: /blog/
 order: 5
