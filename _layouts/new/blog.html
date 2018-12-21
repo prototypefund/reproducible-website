@@ -1,0 +1,33 @@
+---
+layout: new/default
+title: Weekly report #{{ page.week }}
+---
+
+<p>&larr; <a href="{{ "/blog/" | prepend: site.baseurl }}">View all weekly reports</a></p>
+
+<h1>Reproducible Builds: Weekly report #{{ page.week }}</h1>
+
+{% if page.published %}
+<p class="text-muted">
+  Published: {{ page.published | date: "%b %-d, %Y" }}.
+</p>
+
+{% else %}
+<p class="text-center">
+  <strong>
+    This is an unpublished draft post.
+  </strong>
+</p>
+
+<p>
+  <a href="https://salsa.debian.org/reproducible-builds/reproducible-website.git/tree/_blog/posts/{{ page.week }}.md">(source)</a>
+</p>
+{% endif %}
+
+<hr>
+
+{{ content }}
+
+<hr>
+
+<p>&larr; <a href="{{ "/blog/" | prepend: site.baseurl }}">View all weekly reports</a></p>
