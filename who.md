@@ -24,16 +24,23 @@ their users.
 
 ## Projects
 
-{% for project in site.data.projects %}
-<a name="{{ project.name }}"></a>
+<div class="row bg-light p-md-5 p-sm-3 pt-5 pb-5">
+    {% for project in site.data.projects %}
+    <div class="col-xl-4 col-sm-6 col-xs-12 mb-4">
+        <div class="card" name="{{ project.name }}">
+            <a href="{{ project.url }}" >
+                <img class="card-img-top p-5" src="{{ project.logo | prepend: "/images/logos/" | prepend: site.baseurl }}" alt="{{ project.name }}">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title"><a href="{{ project.url }}">{{ project.name }}</a></h4>
 
-### [{{ project.name }}]({{ project.url }})
-
-![]({{ project.logo | prepend: "/images/logos/" | prepend: site.baseurl }}#right)
-
-{% for resource in project.resources %}
-* [{{ resource.name }}]({{ resource.url }})
-{% endfor %}
-
-<br>
-{% endfor %}
+                <p class="card-text">
+                {% for resource in project.resources %}
+                    <a href="{{ resource.url }}">{{ resource.name }}</a>{% unless forloop.last %} &bull;{% endunless %}
+                {% endfor %}
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
