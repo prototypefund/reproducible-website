@@ -17,7 +17,7 @@ order: 7
 
 {{ post.excerpt }}
 
-<a href="({{ post.url | prepend: site.baseurl }}" class="btn btn-outline-primary">
+<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-outline-primary">
     Read more…
 </a>
 {% endfor %}
