@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: new/post
 title:  "Reproducible Builds logo and styleguide"
 date:   2018-04-24 23:42:23
 categories: org

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: new/post
 title:  "Reproducible Builds joins the Software Freedom Conservancy"
 date:   2018-11-08 13:00:00
 categories: org

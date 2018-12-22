@@ -1,0 +1,13 @@
+---
+layout: new/default
+---
+
+<p>&larr; <a href="{{ "/news/" | prepend: site.baseurl }}">View all news</a></p>
+
+<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+
+<p class="text-muted">
+  {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+</p>
+
+{{ content }}
