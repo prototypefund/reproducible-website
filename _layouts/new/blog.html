@@ -11,17 +11,11 @@ title: Weekly report #{{ page.week }}
 <p class="text-muted">
   Published: {{ page.published | date: "%b %-d, %Y" }}.
 </p>
-
 {% else %}
-<p class="text-center">
-  <strong>
-    This is an unpublished draft post.
-  </strong>
-</p>
-
-<p>
+<div class="col-12 alert alert-warning" role="alert">
+  <strong>This is an unpublished draft post.</strong>
   <a href="https://salsa.debian.org/reproducible-builds/reproducible-website.git/tree/_blog/posts/{{ page.week }}.md">(source)</a>
-</p>
+</div>
 {% endif %}
 
 <hr>
