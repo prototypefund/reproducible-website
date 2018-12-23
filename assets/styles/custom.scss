@@ -16,6 +16,11 @@ main {
     display: block;
   }
 
+  blockquote {
+    font-style: italic;
+    margin-left: 2.5rem;
+  }
+
   .projects .card-title a {
     color: inherit;
   }
