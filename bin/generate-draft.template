@@ -26,7 +26,7 @@ In addition, build failure bugs were reported by:
 
 {% endfor %}
 {% for x, ys in commits[project].items()|sort %}* {{ x }}:{% for y in ys %}
-    * [{{ y['title'] }}]({% if project == "jenkins.debian.net" %}https://salsa.debian.org/qa/jenkins.debian.net/commit/{{ y['sha'] }}{% else %}https://salsa.debian.org/reproducible-builds/{{ project }}/commit/{{ y['sha'] }}{% endif %}){% endfor %}
+    * {{ y['title'] }}. [[...]({% if project == "jenkins.debian.net" %}https://salsa.debian.org/qa/jenkins.debian.net/commit/{{ y['sha'] }}{% else %}https://salsa.debian.org/reproducible-builds/{{ project }}/commit/{{ y['sha'] }}{% endif %})]{% endfor %}
 {% endfor %}
 {% endfor %}
 
