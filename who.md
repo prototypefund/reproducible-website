@@ -8,19 +8,38 @@ order: 6
 # Who is involved?
 
 Various free software projects are working on providing reproducible builds to
-their users.
+their users and developers.
 
-* Chris Lamb
-* Lunar
-* h01ger
-* Vagrant Cascadian
-* Ximin Luo
+## Core team
+
+* [Chris Lamb](https://chris-lamb.co.u) (*lamby*)
+* [Holger Levsen](http://layer-acht.org/thinking/) (*h01ger*)
+* [Mattia Rizzolo](https://mapreri.org/) (*mapreri*)
+* [Vagrant Cascadian](http://cascadia.debian.net/trenza/Journal/) (*vagrantc*)
 
 [Contact us!](mailto:contact@reproducible-builds.org)
 
 ## Sponsors
 
-[![ProfitBricks]({{ "/images/logos/profitbricks.png" | prepend: site.baseurl }})](https://www.profitbricks.co.uk/)
+<div class="row bg-light p-md-4 p-sm-2 pt-5 pb-5">
+    {% for x in site.data.sponsors %}
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="card text-center">
+            <a href="{{ x.url }}" >
+                <img class="p-5" src="{{ x.logo | prepend: "/assets/images/who/" | prepend: site.baseurl }}" alt="{{ x.name }}">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<br>
+
+Fiscal sponsor:
+
+[![Software Freedom Conservancy]({{ "/assets/images/who/conservancy.png" | prepend: site.baseurl }})](https://sfconservancy.org/)
+
+Previous sponsors: [Core Infrastructure Initiative](https://www.coreinfrastructure.org/).
 
 ## Projects
 
