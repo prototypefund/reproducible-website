@@ -1,5 +1,5 @@
 ---
-layout: new/default
+layout: new/no_sidebar
 title: Home
 title_head: Reproducible Builds &mdash; a set of software development practices that create an independently-verifiable path from source to binary code
 order: 0
@@ -20,6 +20,8 @@ order: 0
         </small>
     </p>
 </div>
+
+{% include new/nav_buttons.html %}
 
 ## Why does it matter?
 
@@ -95,3 +97,7 @@ Learn more about [how to make your software build reproducibly…]({{ "/docs" | 
     </li>
     {% endfor %}
 </ul>
+
+<br>
+
+{% include new/nav_buttons.html %}

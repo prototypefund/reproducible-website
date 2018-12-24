@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {% include new/head.html %}
+  <body>
+    {% include new/navbar.html %}
+
+    <div class="row" style="height: 100%">
+      <main role="main" class="content-scroll p-5">
+        {{ content }}
+
+        {% include new/footer.html %}
+      </main>
+      </div>
+    </div>
+
+    {% include new/scripts.html %}
+  </body>
+</html>
