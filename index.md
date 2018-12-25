@@ -10,7 +10,7 @@ order: 0
         <img class="img-fluid" src="{{ "/assets/images/index/header-logo.png" | prepend: site.baseurl }}" alt="Reproducible Builds" style="height: 150px;" />
     </a>
 
-    <p class="lead mt-sm-3 mt-md-5 mx-md-5 px-md-5">
+    <p class="lead mt-3 mt-md-5 mx-md-5 px-md-5">
         <strong>Reproducible builds</strong> are a set of software development
         practices that create an independently-verifiable path from source
         to binary&nbsp;code.
