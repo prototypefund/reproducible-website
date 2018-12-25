@@ -7,7 +7,7 @@ order: 0
 
 <div class="text-center mt-md-5">
     <a href="{{ "/" | prepend: site.baseurl }}">
-        <img class="img-fluid" src="{{ "/assets/images/logo-text.svg" | prepend: site.baseurl }}" alt="Reproducible Builds" style="height: 150px;" />
+        <img class="img-fluid" src="{{ "/assets/images/index/header-logo.png" | prepend: site.baseurl }}" alt="Reproducible Builds" style="height: 150px;" />
     </a>
 
     <p class="lead mt-sm-3 mt-md-5 mx-md-5 px-md-5">
