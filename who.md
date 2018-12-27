@@ -12,7 +12,7 @@ their users and developers.
 
 ## Core team
 
-* [Chris Lamb](https://chris-lamb.co.u) (*lamby*)
+* [Chris Lamb](https://chris-lamb.co.uk) (*lamby*)
 * [Holger Levsen](http://layer-acht.org/thinking/) (*h01ger*)
 * [Mattia Rizzolo](https://mapreri.org/) (*mapreri*)
 * [Vagrant Cascadian](http://cascadia.debian.net/trenza/Journal/) (*vagrantc*)
