@@ -30,9 +30,7 @@ artifactId=<artifactId as in pom.xml>
 version=<version as in pom.xml>
 
 # source information, as source tarball in repository and/or scm coordinates
-source=<groupId>:<artifactId>
-source.extension=<extension, usually zip>
-source.classifier=<classifier, usually source-release or src>
+source=<groupId>:<artifactId>:<version>:<classifier>:<extension>
 scm=<source control management url as in pom.xml>
 scm.tag=<source control management tag as in pom.xml>
 
@@ -44,9 +42,9 @@ sbt.version=1.2.3
 scala.version=2.12.6
 
 # output
-output.1.filename=<file name>
-output.1.length=<file size>
-output.1.sha512=<sha512>
+1.filename=<file name>
+1.length=<file size>
+1.sha512=<sha512>
 ```
 
 Notice that `${artifactId}-${version}-sources.jar` files published in Maven repositories are not buildable sources, but [sources for IDEs](https://central.sonatype.org/pages/requirements.html#supply-javadoc-and-sources).
