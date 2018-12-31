@@ -50,14 +50,14 @@ build-tool=<mvn|sbt|...>
 sbt.version=1.2.3
 scala.version=2.12.6
 
-# A buildinfo file can contain checksums for multiple files, for example for
-# the main jar and the accompanying pom.xml:
-files.0.filename=<file name>
-files.0.length=<file size>
-files.0.checksums.sha512=<sha512>
-files.1.filename=<file name>
-files.1.length=<file size>
-files.1.checksums.sha512=<sha512>
+# A buildinfo file can contain checksums for multiple output files, for
+# example for the main jar and the accompanying pom.xml:
+outputs.0.filename=<file name>
+outputs.0.length=<file size>
+outputs.0.checksums.sha512=<sha512>
+outputs.1.filename=<file name>
+outputs.1.length=<file size>
+outputs.1.checksums.sha512=<sha512>
 ...
 ```
 
