@@ -43,6 +43,7 @@ scm.tag=<source control management tag as in pom.xml>
 
 # build environment information
 java.version=<full Java version>
+os.name=<Operating system name>
 build-tool=<mvn|sbt|...>
 
 # Each build tool or plugin is free to add additional entries to the buildinfo.
@@ -51,7 +52,7 @@ sbt.version=1.2.3
 scala.version=2.12.6
 
 # A buildinfo file can contain checksums for multiple output files, for
-# example for the main jar and the accompanying pom.xml:
+# example for the main jar and the accompanying (generated) pom.xml:
 outputs.0.filename=<file name>
 outputs.0.length=<file size>
 outputs.0.checksums.sha512=<sha512>
