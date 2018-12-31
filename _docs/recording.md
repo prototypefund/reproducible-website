@@ -57,41 +57,13 @@ necessary to reproducibly rebuild that revision of Tails.
 
 ### JVM
 
-The buildinfo conventions for the JVM ecosystem are under active development.
-Join the discussion on the
-[mailinglist]({{ "/docs/contribute/" | prepend: site.baseurl }}).
+In the JVM ecosystem it is common to distribute libraries as binary (bytecode)
+jars uploaded to a repository like [Maven Central](https://search.maven.org/)
+or
+[Google's Android Repository](https://dl.google.com/dl/android/maven2/index.html).
 
-The format for buildinfo files in the JVM ecosystem is a
-[.properties file](https://en.wikipedia.org/wiki/.properties).
-For multi-module builds, each produced artifact will have its
-own buildinfo file.
-
-Common keys are:
-
-|key|meaning|
-|-|-|
-|name|Name of the packaged entity|
-|group-id|Corresponds to the Maven group id or Ivy organization|
-|artifact-id|Corresponds the the Maven artifact id or Ivy artifact name
-|version|Version of the software|
-|java.version|Version of Java used to build the software|
-|build-tool|Name of the build tool used to build the software, e.g. `maven` or `sbt`|
-
-Each build tool or plugin is free to add additional values to the buildinfo.
-For example, [sbt-reproducible-builds](https://github.com/raboof/sbt-reproducible-builds) adds:
-
-|key|meaning|
-|-|-|
-|sbt.version|Version of sbt used to build the software|
-|scala.version|Version of Scala used to build the software|
-
-A buildinfo file can contain checksums for multiple files, for example for the
-main jar and the accompanying pom.xml:
-
-|key|meaning|
-|-|-|
-|files.0.filename|Filename of the first file|
-|files.0.length|Length of the first file|
-|files.0.checksums.sha256|SHA-256 Checksum of the first file|
-|files.1.filename|Filename of the second file|
-|files.1.|Etc.|
+It is recommended that the buildinfo describing the build environment used for
+that official build is published alongside each artifact. Third party
+attestations can be shared in a separate sig-repo. For a detailed overview of
+the conventions so far see the separate
+[JVM page]({{ "/docs/jvm/" | prepend: site.baseurl }}).
