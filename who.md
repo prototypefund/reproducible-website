@@ -25,7 +25,7 @@ their users and developers.
     {% for x in site.data.sponsors %}
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-4">
         <div class="card text-center">
-            <a href="{{ x.url }}" >
+            <a href="{{ x.url }}" name="{{ x.name }}">
                 <img class="p-5" src="{{ x.logo | prepend: "/assets/images/who/" | prepend: site.baseurl }}" alt="{{ x.name }}">
             </a>
         </div>
