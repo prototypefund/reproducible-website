@@ -47,7 +47,7 @@ Previous sponsors: [Core Infrastructure Initiative](https://www.coreinfrastructu
     {% for project in site.data.projects %}
     <div class="col-xl-4 col-sm-6 col-xs-12 mb-4">
         <div class="card" name="{{ project.name }}">
-            <a href="{{ project.url }}" >
+            <a href="{{ project.url }}" name="{{ project.name }}">
                 <img class="card-img-top p-5" src="{{ project.logo | prepend: "/images/logos/" | prepend: site.baseurl }}" alt="{{ project.name }}">
             </a>
             <div class="card-body">
