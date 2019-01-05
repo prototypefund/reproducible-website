@@ -72,7 +72,11 @@ Source tarballs, intended for building, are not always published in repositories
 Reproducible Builds for Maven
 -----------------------------
 
-See [https://reproducible-maven-builds.github.io/](https://reproducible-maven-builds.github.io/).
+Getting reproducible builds with Maven is not immediate: see [https://reproducible-maven-builds.github.io/](https://reproducible-maven-builds.github.io/)
+for more details.
+
+To create a source release zip, see [Apache Source Release Assembly Descriptor](https://maven.apache.org/apache-resource-bundles/)
+that is commonly used. Nothing prevents you to create your own assembly descriptor or even use another plugin: don't hesitate to share recipes.
 
 Reproducible Builds for sbt
 ---------------------------
