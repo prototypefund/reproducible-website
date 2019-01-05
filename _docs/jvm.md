@@ -31,6 +31,8 @@ own buildinfo file:
 
 ```
 #### Work In Progress ####
+buildinfo.version=1.0-SNAPSHOT
+
 name=<name as in pom.xml>
 group-id=<groupId as in pom.xml>
 artifact-id=<artifactId as in pom.xml>
@@ -52,7 +54,7 @@ sbt.version=1.2.3
 scala.version=2.12.6
 
 # A buildinfo file can contain checksums for multiple output files, for
-# example for the main jar and the accompanying (generated) pom.xml:
+# example for the main jar and the accompanying pom.xml (when generated):
 outputs.0.filename=<file name>
 outputs.0.length=<file size>
 outputs.0.checksums.sha512=<sha512>
