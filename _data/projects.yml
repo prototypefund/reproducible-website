@@ -4,6 +4,8 @@
   resources:
   - name: Continuous tests
     url: https://tests.reproducible-builds.org/archlinux/
+  - name: Developer wiki page
+    url: https://wiki.archlinux.org/index.php/DeveloperWiki:ReproducibleBuilds
   - name: Recording
     url: /docs/recording/#arch-linux
 - name: Baserock
