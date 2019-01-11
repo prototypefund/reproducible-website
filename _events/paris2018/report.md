@@ -2995,6 +2995,8 @@ Specification of
 
 - Output
 
+![](/assets/images/events/paris2018/a202bfecb771aa35.png)
+
 TODO:
 
 - mainly depext: install pkg with version, retrieve installed package,
