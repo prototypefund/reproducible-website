@@ -38,10 +38,11 @@ group-id=<groupId as in pom.xml>
 artifact-id=<artifactId as in pom.xml>
 version=<version as in pom.xml>
 
-# source information, as source tarball in repository and/or scm coordinates
-source=<groupId>:<artifactId>:<version>:<classifier>:<extension>
-scm=<source control management url as in pom.xml>
-scm.tag=<source control management tag as in pom.xml>
+# source information, as source tarball artifact in repository and/or url and/or scm coordinates
+source.artifact=<groupId>:<artifactId>:<version>:<classifier>:<extension>
+source.url=<url where to download official source tarball>
+source.scm=<source control management url as in pom.xml>
+source.scm.tag=<source control management tag as in pom.xml>
 
 # build environment information
 java.version=<full Java version>
