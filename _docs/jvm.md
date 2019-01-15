@@ -44,12 +44,16 @@ source.url=<url where to download official source tarball>
 source.scm.uri=<source control management url as in pom.xml>
 source.scm.tag=<source control management tag as in pom.xml>
 
-# build environment information
-java.version=<full Java version>
-os.name=<Operating system name>
+# build instructions
 build-tool=<mvn|sbt|...>
 
-# Each build tool or plugin is free to add additional entries to the buildinfo.
+# effective build environment information
+java.version=<full Java version>
+os.name=<Operating system name>
+source.used=<artifact|url|scm, depending on which has been used for the build>
+
+# Each build tool or plugin is free to add additional entries to the buildinfo,
+# both for build instructions and effective build environment.
 # For example, the sbt plugin may add the following for Scala:
 sbt.version=1.2.3
 scala.version=2.12.6
