@@ -56,6 +56,7 @@ scala.version=2.12.6
 
 # and Maven could add:
 mvn.version=3.5.4
+mvn.rebuild-args=-Dmaven.test.skip package
 
 # A buildinfo file can contain checksums for multiple output files, for
 # example for the main jar and the accompanying pom.xml (when generated):
