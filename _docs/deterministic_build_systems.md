@@ -46,6 +46,24 @@ What follows are some advices on common issues that can affect source
 code or build systems that make multiple builds from the exact same
 source different.
 
+CMake notes
+-----------
+The default configuration of CMake makes the build directory part of the
+build environment. Here are some known issues and recommendations:
+
+ * CMake sets a `RPATH` for binaries that link to a library in the build
+   directory, containing the build directory. Even if this is stripped
+   at installation time, the build-id section will be different.
+   Possible workarounds:
+   * Set `CMAKE_BUILD_WITH_INSTALL_RPATH=ON` or `CMAKE_SKIP_RPATH=ON` to
+     ensure a deterministic RPATH. Disadvantage: programs from the build
+     directory cannot be run without setting `LD_LIBRARY_PATH`.
+   * Set
+     [`CMAKE_BUILD_RPATH_USE_ORIGIN=ON`](https://cmake.org/cmake/help/git-master/prop_tgt/BUILD_RPATH_USE_ORIGIN.html).
+     to enable the use of relative directories in RPATH (requires CMake
+     3.14). This is an appropriate option for both upstream projects
+     and downstream distributions.
+
 Disclaimer
 ----------
 
