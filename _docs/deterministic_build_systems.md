@@ -75,6 +75,9 @@ build environment. Here are some known issues and recommendations:
      [`CMAKE_AUTORCC_OPTIONS`](https://cmake.org/cmake/help/latest/variable/CMAKE_AUTORCC_OPTIONS.html)
      to `--format-version;1`. Upstream projects are encouraged to do
      this after checking that Qt 5.9 or newer is in use.
+   * (Since Qt 5.11) Set the `QT_RCC_SOURCE_DATE_OVERRIDE` environment
+     variable which behaves similar to
+     [`SOURCE_DATE_EPOCH`](https://reproducible-builds.org/specs/source-date-epoch/).
    * Ensure that generated source files are touched with a fixed
      timestamp before rcc is called. See also
      https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=894476
