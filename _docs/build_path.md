@@ -22,10 +22,20 @@ post-processing tool to
 change them to a pre-determined value[^debugedit]. A work-around is to
 [define the build path as part of the build environment]({{ "/docs/perimeter/" | prepend: site.baseurl }}),
 however `reprotest` changes it so this makes it harder to assess reproducibility.
-Another work-around is GCC's `-fdebug-prefix-map`, though it does not
-fix other sources of irreproducibility such as `__FILE__`, and in some
-packages the option itself is saved into other parts of the build
-output by another tool.
+Certain compiler flags can work around the issue:
+
+ * [`-fdebug-prefix-map=OLD=NEW`](https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html#index-fdebug-prefix-map)
+   can strip directory prefixes from debug info.
+   (available in all GCC versions, Clang 3.8)
+ * [`-fmacro-prefix-map=OLD=NEW`](https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html#index-fmacro-prefix-map)
+   is similar to `-fdebug-prefix-map`, but addresses irreproducibility due to
+   the use of `__FILE__` macros and alike.
+   (available since GCC 8, Clang support is [pending](https://bugs.llvm.org/show_bug.cgi?id=38135))
+ * `-ffile-prefix-map=OLD=NEW` is an alias for both `-fdebug-prefix-map` and
+   `-fmacro-prefix-map`.
+   (available since GCC 8, Clang support is [pending](https://bugs.llvm.org/show_bug.cgi?id=38135))
+
+Note that some packages save the compile options in the build output.
 
 [^debugedit]: [debugedit](https://fedoraproject.org/wiki/Releases/FeatureBuildId) can replace the path used at build time by a predefined one but it does that by rewriting bytes in place. As this does not reorder the hash table of strings, the resulting bytes are still depending on the original build path.
 
