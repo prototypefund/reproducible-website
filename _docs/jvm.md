@@ -24,9 +24,7 @@ which environment to setup to rebuild the artifacts.
 
 This is the puropse of JVM Buildinfo files that are expected to be published alongside artifacts
 as `${artifactId}-${version}.buildinfo`, in
-[Java properties format](https://en.wikipedia.org/wiki/.properties).
-For multi-module builds, each produced artifact will have its
-own buildinfo file:
+[Java properties format](https://en.wikipedia.org/wiki/.properties):
 
 
 ```
@@ -37,6 +35,8 @@ name=<name as in pom.xml>
 group-id=<groupId as in pom.xml>
 artifact-id=<artifactId as in pom.xml>
 version=<version as in pom.xml>
+# when multi-module build
+build-root=<groupId>:<artifactId>:<version>
 
 # source information, as source tarball artifact in repository and/or url and/or scm coordinates
 source.artifact=<groupId>:<artifactId>:<version>:<classifier>:<extension>
@@ -68,6 +68,10 @@ outputs.1.length=<file size>
 outputs.1.checksums.sha512=<sha512>
 ...
 ```
+
+For multi-module builds, each produced artifact will have its
+own buildinfo file with `build-root` property defined, to know the root from which the
+rebuild must happen.
 
 Notice that `${artifactId}-${version}-sources.jar` files published in Maven repositories are not buildable sources, but [sources for IDEs](https://central.sonatype.org/pages/requirements.html#supply-javadoc-and-sources).
 Source tarballs, intended for building, are not always published in repositories but only sometimes, with 2 classical naming conventions:
