@@ -14,7 +14,7 @@ First, please join the [rb-general general mailing-list](https://lists.reproduci
 
 IRC discussions happen in the `#reproducible-builds` channel on [irc.oftc.net](https://www.oftc.net/).
 
-* [Join the Reproducible Builds group]({{ "/contribute/salsa/" | prepend: site.baseurl }}")
+* [Join the Reproducible Builds group]({{ "/contribute/salsa/" | prepend: site.baseurl }})
   on [Salsa](https://salsa.debian.org/) to contribute directly on our Git
   repositories.
 
@@ -38,10 +38,10 @@ IRC discussions happen in the `#reproducible-builds` channel on [irc.oftc.net](h
    packages that use debhelper will be much easier to make reproducible with
    just an upgrade of the toolchain.
 
-1. [Inventory issues](#Inventorying_issues) found by the continuous integration
+1. [Inventory issues](#inventorying-issues) found by the continuous integration
    platform.
 
-1. [Fix known reproducibility issues](#Fixing_issues). See the
+1. [Fix known reproducibility issues](#fixing-issues). See the
    [inventory of identified issues](https://reproducible.debian.net/index_issues.html).
 
 1. Improve our common [tools]({{ "/tools/" | prepend: site.baseurl }}):
@@ -68,7 +68,7 @@ to be friendly, supportive, and have fun experimenting together.
 
 ## How to report bugs in Debian
 
-[Overview of all bug reports concerning reproducible builds](http://bugs.debian.org/cgi-bin/pkgreport.cgi?usertag=reproducible-builds@lists.alioth.debian.org)
+[Overview of all bug reports concerning reproducible builds](https://bugs.debian.org/cgi-bin/pkgreport.cgi?usertag=reproducible-builds@lists.alioth.debian.org)
 
 All bugs relevant to the reproducible builds project should use
 [usertags](https://bugs.debian.org/usertags) with user
@@ -275,10 +275,10 @@ Several jobs have been created to regularly test packages (from `main/sid`) on
 [reproducible build overview of packages](https://reproducible.debian.net).
 
 The setup is explained [in this blog post](http://layer-acht.org/thinking/blog/20140925-reproducible-builds/)
-onlya and this post is somewhat outdated by now and needs to be amended.
+only, but this post is somewhat outdated by now and needs to be amended.
 
 See the various `reproducible_*` scripts in the
-[Jenkins Git repository](http://salsa.debian.org/qa/jenkins.debian.net/tree/master/bin/)
+[Jenkins Git repository](https://salsa.debian.org/qa/jenkins.debian.net/tree/master/bin/)
 
 ## Working on installation media or live systems
 
@@ -298,7 +298,7 @@ script for more generic, Debian use cases
 ## External links
 
 * [Reproducible installs](https://wiki.debian.org/ReproducibleBuilds/ReproducibleInstalls)
-* [Announcing Whonix's First Implementation of Verifiable Builds](http://lists.alioth.debian.org/pipermail/reproducible-builds/Week-of-Mon-20131209/000009.html)
+* [Announcing Whonix's First Implementation of Verifiable Builds](https://lists.alioth.debian.org/pipermail/reproducible-builds/Week-of-Mon-20131209/000009.html)
 * [Whonix Verifiable Builds](https://www.whonix.org/wiki/Verifiable_Builds)
 * [Tails reproducible builds blueprint](https://tails.boum.org/blueprint/reproducible_builds/)
 * [reproducible debootstrap](https://github.com/lamby/debootstrap/commits/pu/source-date-epoch)
