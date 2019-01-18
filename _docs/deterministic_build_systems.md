@@ -79,8 +79,7 @@ build environment. Here are some known issues and recommendations:
      variable which behaves similar to
      [`SOURCE_DATE_EPOCH`](https://reproducible-builds.org/specs/source-date-epoch/).
    * Ensure that generated source files are touched with a fixed
-     timestamp before rcc is called. See also
-     https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=894476
+     timestamp before rcc is called. See also <https://bugs.debian.org/894476>.
  * Qt projects that use `Q_OBJECT` macros require
    [moc](https://doc.qt.io/qt-5/moc.html) to generate additional C++
    files. CMake will automatically do this when
@@ -93,7 +92,7 @@ build environment. Here are some known issues and recommendations:
    * Use the `-p` option to override the include prefix. This requires
      the prefix plus the header filename to be available from the
      include path.
-     See also https://gitlab.kitware.com/cmake/cmake/issues/18815
+     See also <https://gitlab.kitware.com/cmake/cmake/issues/18815>.
    * Ensure that the build directory and source directory remains fixed
      across builds. For example, if users always create a `build`
      directory in the source tree, then reproducibility won't be

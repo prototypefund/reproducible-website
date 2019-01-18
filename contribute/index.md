@@ -168,7 +168,7 @@ known issues to get an idea of what you may found. Here is some more advice:
   happens during the compilation. Investigation can be done using
   [sources.debian.org](https://sources.debian.org/) (see link at the top).
 
-* First step should be a search for the [`__DATE__`, `__TIME__` or `__TIMESTAMP__](https://reproducible.debian.net/issues/timestamps_from_cpp_macros_issue.html)
+* First step should be a search for the [`__DATE__`, `__TIME__` or `__TIMESTAMP__`](https://reproducible.debian.net/issues/timestamps_from_cpp_macros_issue.html)
   using [codesearch](https://codesearch.debian.net/).  Otherwise, try to locate
   calls to `date` in `configure.ac`, `Makefile.am`, etc.
 
@@ -255,7 +255,7 @@ requires some more steps, but the general process is the same:
 1. Everybody with a [Debian SSO](https://sso.debian.org) client certificate
    (both DDs and guests) can schedule source packages to be rebuilt by using
    the authenticated endpoint at
-   https://tests.reproducible-builds.org/cgi-bin/schedule. There are handy
+   <https://tests.reproducible-builds.org/cgi-bin/schedule>. There are handy
    icons (`♻`)in every package page that links to that cgi-bin script with the
    correct parameters.  If you don't have a valid client certificate or have
    any other trouble you can find somebody in the #debian-reproducible IRC
@@ -287,7 +287,7 @@ be great.
 
 In Debian, [#900918](https://bugs.debian.org/900918) is being used to track the
 progress of reproducible installation images. There is an
-`[analyze_image](https://github.com/adrelanos/Whonix/blob/master/help-steps/analyze_image)`
+[analyze_image](https://github.com/adrelanos/Whonix/blob/master/help-steps/analyze_image)
 Bash script that creates sha512 hashes of all files included within an image,
 access rights, symlinks, partition table, bootloader and more. Doing this with
 two images that should match and comparing the reports the script creates can
