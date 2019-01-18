@@ -51,18 +51,50 @@ CMake notes
 The default configuration of CMake makes the build directory part of the
 build environment. Here are some known issues and recommendations:
 
- * CMake sets a `RPATH` for binaries that link to a library in the build
-   directory, containing the build directory. Even if this is stripped
-   at installation time, the build-id section will be different.
-   Possible workarounds:
+ * CMake sets a `RPATH` for binaries that link to a library in the the
+   same project. Even when this is stripped at installation time, the
+   build-id section will be different. Possible workarounds:
    * Set `CMAKE_BUILD_WITH_INSTALL_RPATH=ON` or `CMAKE_SKIP_RPATH=ON` to
      ensure a deterministic RPATH. Disadvantage: programs from the build
      directory cannot be run without setting `LD_LIBRARY_PATH`.
    * Set
-     [`CMAKE_BUILD_RPATH_USE_ORIGIN=ON`](https://cmake.org/cmake/help/git-master/prop_tgt/BUILD_RPATH_USE_ORIGIN.html).
+     [`CMAKE_BUILD_RPATH_USE_ORIGIN=ON`](https://cmake.org/cmake/help/git-master/prop_tgt/BUILD_RPATH_USE_ORIGIN.html)
      to enable the use of relative directories in RPATH (requires CMake
      3.14). This is an appropriate option for both upstream projects
      and downstream distributions.
+ * Qt projects can use [rcc](https://doc.qt.io/qt-5/rcc.html) to embed
+   resources such as translations and images. Since Qt 5.8, rcc includes
+   the file modification time of source files in the build output.
+   This is especially problematic for translation files that are
+   generated at build time. Possible workarounds:
+   * (Since Qt 5.9) If a project does not rely on an accurate
+     [QFileInfo::lastModified](https://doc.qt.io/qt-5/qfileinfo.html#lastModified),
+     pass `--format-version 1` to `rcc`. If
+     [`AUTORCC`](https://cmake.org/cmake/help/latest/prop_tgt/AUTORCC.html)
+     is enabled, this can be done by setting
+     [`CMAKE_AUTORCC_OPTIONS`](https://cmake.org/cmake/help/latest/variable/CMAKE_AUTORCC_OPTIONS.html)
+     to `--format-version;1`. Upstream projects are encouraged to do
+     this after checking that Qt 5.9 or newer is in use.
+   * Ensure that generated source files are touched with a fixed
+     timestamp before rcc is called. See also
+     https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=894476
+ * Qt projects that use `Q_OBJECT` macros require
+   [moc](https://doc.qt.io/qt-5/moc.html) to generate additional C++
+   files. CMake will automatically do this when
+   [`AUTOMOC`](https://cmake.org/cmake/help/latest/prop_tgt/AUTOMOC.html)
+   is enabled, but then the relative path from the build directory to
+   the source directory will become part of the build environment.
+   For example, if the build directory is `/tmp/build` and the source
+   file is at `/tmp/foo/widget.h`, then the generated file will include
+   `../[...]/../foo/widget.h`. Possible workarounds:
+   * Use the `-p` option to override the include prefix. This requires
+     the prefix plus the header filename to be available from the
+     include path.
+     See also https://gitlab.kitware.com/cmake/cmake/issues/18815
+   * Ensure that the build directory and source directory remains fixed
+     across builds. For example, if users always create a `build`
+     directory in the source tree, then reproducibility won't be
+     affected.
 
 Disclaimer
 ----------
