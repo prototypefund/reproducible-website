@@ -150,7 +150,7 @@ as found by continuous integration. The first packages in the list are the one
 who have been tried most recently.
 
 Notes about packages are kept in the
-[notes](https://salsa.debian.org/reproducible-builds/notes.git). Git repository
+[notes](https://salsa.debian.org/reproducible-builds/reproducible-notes). Git repository
 in `packages.yml`. The list of [known common issues](https://reproducible.debian.net/index_issues.html)
 is kept in the `issues.yml` file.
 
@@ -172,7 +172,7 @@ known issues to get an idea of what you may found. Here is some more advice:
   using [codesearch](https://codesearch.debian.net/).  Otherwise, try to locate
   calls to `date` in `configure.ac`, `Makefile.am`, etc.
 
-The [clean-notes](https://salsa.debian.org/reproducible-builds/misc.git/tree/clean-notes)
+The [clean-notes](https://salsa.debian.org/reproducible-builds/reproducible-misc/blob/master/clean-notes)
 script in the `misc` repository will detect outdated notes and re-order
 packages by alphabetical order. It should be run before committing changes to
 the `notes` repository.
@@ -209,7 +209,8 @@ The usual steps are:
 1. [Create a new bug report](https://wiki.debian.org/ReproducibleBuilds/Contribute#How_to_report_bugs),
    and don't forget to attach the patch!
 
-1. Add an entry or reference the bug in `packages.yml` in `notes.git`.
+1. Add an entry or reference the bug in `packages.yml` in
+   [reproducible-notes](https://salsa.debian.org/reproducible-builds/reproducible-notes).
 
 ### Fixing a toolchain package
 
@@ -249,8 +250,9 @@ requires some more steps, but the general process is the same:
 1. Document the changes on the
    [wiki](https://wiki.debian.org/ReproducibleBuilds/ExperimentalToolchain#Modified_packages).
 
-1. Reference the bug in `issues.yml` in `notes.git` and on the wiki page about
-   the issue if there's one.
+1. Reference the bug in `issues.yml` in
+   [reproducible-notes](https://salsa.debian.org/reproducible-builds/reproducible-notes)
+   and on the wiki page about the issue if there is one.
 
 1. Everybody with a [Debian SSO](https://sso.debian.org) client certificate
    (both DDs and guests) can schedule source packages to be rebuilt by using
