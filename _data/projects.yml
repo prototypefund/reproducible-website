@@ -86,12 +86,6 @@
     url: https://www.gnu.org/software/guix/news/reproducible-builds-a-means-to-an-end.html
   - name: Package submission guidelines
     url: https://gnu.org/software/guix/manual/html_node/Submitting-Patches.html
-- name: LEDE
-  url: https://lede-project.org/
-  logo: lede.png
-  resources:
-  - name: Continuous tests
-    url: https://tests.reproducible-builds.org/lede/
 - name: Monero
   url: https://getmonero.org/
   logo: monero.png
