@@ -46,6 +46,7 @@ source.scm.tag=<source control management tag as in pom.xml>
 
 # build instructions
 build-tool=<mvn|sbt|...>
+build.setup=<optional url of documentation explaining specific additional setup when necessary: will be enhanced in a future buildinfo format version>
 
 # effective build environment information
 java.version=<full Java version>
