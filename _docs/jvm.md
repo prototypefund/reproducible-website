@@ -54,9 +54,9 @@ build-tool=<mvn|sbt|...>
 sbt.version=1.2.3
 scala.version=2.12.6
 
-# and Maven could add:
-mvn.version=3.5.4
+# and Maven could add data on rebuild instructions and effective environment:
 mvn.rebuild-args=-Dmaven.test.skip package
+mvn.version=3.5.4
 
 # A buildinfo file can contain checksums for multiple output files, for
 # example for the main jar and the accompanying pom.xml (when generated):
