@@ -79,6 +79,24 @@ Source tarballs, intended for building, are not always published in repositories
 - `${artifactId}-${version}-source-release.zip` (see [artifacts in Central providing such source tarballs](https://search.maven.org/search?q=l:source-release))
 - `${artifactId}-${version}-src.zip` (see [artifacts in Central providing such source tarballs](https://search.maven.org/search?q=l:src))
 
+Auditing a Build
+----------------
+
+As explained on top of this page, by default, jars  found in public repositories probably won't be reproducible. But you can try to rebuild them and
+measure how much they are not reproducible:
+
+1. download the jar from a public repository,
+2. determine which major version of JDK was used to produce it: usually, the full Java version is found in `META-INF/MANIFEST.MF` by running `unzip -p xxx.jar META-INF/MANIFEST.MF`
+3. find sources and build instruction on originating project site
+4. rebuild with a JDK of the same major version than the version found on step 2
+4. examine the differences using [diffoscope](https://diffoscope.org/)
+
+Usually, you'll find a few files that are different, in addition to zip content timestamp and order.
+Notice that if you didn't use the same JDK major version, you'll see many differences in .class files.
+
+Improving the build to get reproducible build will then be specific with each build tool.
+You may discuss issues and fixes on [Reproducible Builds mailinglist]({{ "/docs/contribute/" | prepend: site.baseurl }}).
+
 Reproducible Builds for Maven
 -----------------------------
 
