@@ -56,8 +56,24 @@ then
 	done
 fi
 
+
 echo
 echo
-echo "After ensuring this is 'live', Tweet this via:"
+echo "After ensuring this has been published, Tweet this via:"
 echo
-echo "  %tweet What happened in the @ReproBuilds effort between $(tr '\n' ' ' < "${FILENAME}" | sed -n -e 's@.* effort between \([^:]*\):.*@\1@p'): https://reproducible-builds.org/blog/posts/${WEEK}/"
+echo "%tweet What happened in the @ReproBuilds effort between $(tr '\n' ' ' < "${FILENAME}" | sed -n -e 's@.* effort between \([^:]*\):.*@\1@p'): https://reproducible-builds.org/blog/posts/${WEEK}/"
+echo
+printf "Waiting for page to be published "
+while :
+do
+	sleep 1
+	printf "."
+
+	if ! curl -qs "${URL}" | grep -qs "This is an unpublished draft post."
+	then
+		break
+	fi
+done
+echo
+echo
+echo "${URL} has been published"
