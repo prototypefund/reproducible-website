@@ -33,7 +33,7 @@ and [text](https://diffoscope.org/examples/igerman98_20131206-5.txt) output.
 If you wish to just experiment with [diffoscope](https://diffoscope.org/)
 without installing a large number of run-time dependencies, you can use the
 [try.diffoscope.org](https://try.diffoscope.org/) service directly from your
-web browser. A lightweight lient is also available as the `trydiffoscope`
+web browser. A lightweight client is also available as the `trydiffoscope`
 command-line utility.
 
 <a href="https://try.diffoscope.org/" class="btn btn-outline-primary btn-sm">Homepage</a>
