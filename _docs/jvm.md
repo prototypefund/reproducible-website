@@ -24,9 +24,7 @@ which environment to setup to rebuild the artifacts.
 
 This is the puropse of JVM Buildinfo files that are expected to be published alongside artifacts
 as `${artifactId}-${version}.buildinfo`, in
-[Java properties format](https://en.wikipedia.org/wiki/.properties).
-For multi-module builds, each produced artifact will have its
-own buildinfo file:
+[Java properties format](https://en.wikipedia.org/wiki/.properties):
 
 
 ```
@@ -61,6 +59,7 @@ scala.version=2.12.6
 
 # and Maven could add data on rebuild instructions and effective environment:
 mvn.rebuild-args=-Dmaven.test.skip package
+mvn.build-root=<groupId>:<artifactId>:<version>
 mvn.version=3.5.4
 
 # A buildinfo file can contain checksums for multiple output files, for
@@ -115,6 +114,11 @@ Classical arguments contain following patterns:
 - `-DskipTests`: avoid running tests, but still builds (necessary for some projects)
 - `-Dgpg.skip`: avoid pgp signing
 - `-Papache-release` or any release profile: activate release-specific tasks used by `maven-release-plugin`
+
+### multi-module build
+For multi-module builds, each produced artifact will have its
+own buildinfo file with `mvn.build-root` property defined, to know the root from which the
+rebuild must happen.
 
 Reproducible Builds for sbt
 ---------------------------
