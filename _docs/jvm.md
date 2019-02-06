@@ -114,6 +114,7 @@ Classical arguments contain following patterns:
 - `-DskipTests`: avoid running tests, but still builds (necessary for some projects)
 - `-Dgpg.skip`: avoid pgp signing
 - `-Papache-release` or any release profile: activate release-specific tasks used by `maven-release-plugin`
+- `-Dline.separator=$'\r\n'`: define Windows line endings from an Unix environmenent
 
 ### multi-module build
 For multi-module builds, each produced artifact will have its
