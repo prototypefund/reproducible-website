@@ -104,6 +104,8 @@
   url: https://nixos.org/
   logo: nixos.png
   resources:
+  - name: Continuous tests
+    url: https://r13y.com
   - name: "PR#2281: deterministic build"
     url: https://github.com/NixOS/nixpkgs/pull/2281
 - name: OpenEmbedded
