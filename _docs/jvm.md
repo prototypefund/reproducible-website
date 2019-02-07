@@ -4,9 +4,8 @@ layout: docs
 permalink: /docs/jvm/
 ---
 
-The conventions for the JVM ecosystem are under active development.
-Join the discussion on the
-[mailinglist]({{ "/docs/contribute/" | prepend: site.baseurl }}).
+The conventions for the JVM ecosystem are under active development, 
+see how-to [contribute]({{ "/contribute/" | prepend: site.baseurl }}).
 
 The JVM ecosystem provides many languages and build tools.
 Since the JVM is not reproducible-friendly from the beginning
