@@ -505,7 +505,7 @@ User
 -   Debian is 94% reproducible in theory and 0% in practice. How to fix
     that?
 
--   Conflict resolution/trust. How tdo we help people make good
+-   Conflict resolution/trust. How do we help people make good
     decisions when independent builds do not reproduce?
 
 -   How can we make it possible to know who and how many people have
@@ -560,7 +560,7 @@ Funding/sustainability
 
 Doc
 
--   Imrprove documentation for r-b testing dashboard
+-   Improve documentation for r-b testing dashboard
 
 -   Find, refine, document core concepts: rebuilders, buildinfo
 
@@ -830,9 +830,9 @@ Rebuilders
 
 -   Talk about the current state of rebuilders (w/ NYU)
 
--   (Think about) trust management forrebuilders
+-   (Think about) trust management for rebuilders
 
--   Reproducing packages in the Debian arcive
+-   Reproducing packages in the Debian archive
 
 -   How to ensure rebuilder operator diversity and create trust in their
     claims
@@ -852,7 +852,7 @@ End user/ Interfaces
 
 -   Verify reproducibility with package manager clients
 
--   Make verification of reproducibility accessible toend users
+-   Make verification of reproducibility accessible to end users
 
 -   How should the user-facing part of reproducible builds look like and
     what should it contain
@@ -1148,7 +1148,7 @@ TODO:
 
 - Define different trust models and architectures?
 
-- standardised way of verifying reproduciblity
+- standardised way of verifying reproducibility
 
 - Identify user stories
 
@@ -1230,14 +1230,14 @@ Words that we might want to define or that felt relevant for our work:
 
 Questions that arised from looking at these terms:
 
-* How much environemnt must you capture for a reproducible
+* How much environment must you capture for a reproducible
 NPM/Maven/Python (which are multiplatforms so the issues might be
 different than with distributions)?
 
 * If an environment variable is not in a .buildinfo, can it be set to
 anything or must it be unset?
 
-* How much can I vary the build environment and exepect to get the same
+* How much can I vary the build environment and expect to get the same
 results?
 
 * Must cross-copmilers yield the same results than same architecture
@@ -1247,12 +1247,12 @@ compilers?
 
 * Environment has two conflicting definitions: everything (which might
 include phase of the moon, order of directory entries) vs. (known-to-be)
-revelant (things we can and wil be set as inputs)
+relevant (things we can and wil be set as inputs)
 
-* \"degrees of freedom\" (are they enummerable?)
+* \"degrees of freedom\" (are they enumerable?)
 
 * \"the \_complement\_ of things you do specificy... is what \_must
-not\_ afect outputs.\"
+not\_ affect outputs.\"
 
 * What do we call a system composed of the actions of two package
 managers?
@@ -1265,7 +1265,7 @@ environment?
 * diverse compiler binaries? (from the same source, but build
 differently)
 
-* diverse compier (e.g. gcc vs clang)
+* diverse compiler (e.g. gcc vs clang)
 
 * Is an execution profile part of the source code? (for Profile Guided
 Optimization)
@@ -1277,7 +1277,7 @@ Optimization)
 
 * Does build results contain relationships to other packages?
 
-* WHat is the total set of dependencies being cosidered as candidates
+* What is the total set of dependencies being considered as candidates
 during resolution?
 
 * ... and can we snapshot it? (and address those snapshots?)
@@ -1410,7 +1410,7 @@ Growing
 
 Rust long boostrap chain
 
-Rust port tonew architecture
+Rust port to a new architecture
 
 Replay history vs create new route
 
@@ -1490,10 +1490,10 @@ Hash of package? buildinfo?
 
 Not all projects have buildinfo files
 
-are .buildinfo files without inary checksums useless? (Archlinux has
+Are .buildinfo files without binary checksums useless? (Archlinux has
 those)
 
-is it enough / useful if rebuilders publish a stripped down version of
+Is it enough / useful if rebuilders publish a stripped down version of
 .buildinfo files?
 
 Current Debian .buildinfo files are unreproducible
@@ -1736,7 +1736,7 @@ binaries.
 *\* Company employees installing internal software
 
 - For internal company software, being able to check the source/binary
-correspondance helps debugging ("reproducibility of bugs") and
+correspondence helps debugging ("reproducibility of bugs") and
 ensures you're running the right software.
 
 - Reproducible builds can help make license auditing because you can
@@ -1772,7 +1772,7 @@ they obtain.
 
 scheduler
 
-- schould have authority over the build queue - builders (the thing
+- should have authority over the build queue - builders (the thing
 inside chroot) should not have direct access to it
 
 builders (use fresh chroot)
@@ -1797,7 +1797,7 @@ attackers:
 - malicious/compromised packager → with reproducible builds we care
 about malicious binary package
 
-- random person submiting buildinfo file
+- random person submitting buildinfo file
 
 out of scope:
 
@@ -1913,7 +1913,7 @@ JMV languages bootstrap
 
 *\* empty classes build
 
-*\* inhertance all done
+*\* inheritance all done
 
 *\* ignore type checking \-- as far as we can
 
@@ -1960,7 +1960,7 @@ execution the race conditions may not be visible.
 
 - big cluster systems might have new big problems
 
-- wrong calculations, hardhare have bugs. r-b can find serious bugs
+- wrong calculations, hardware have bugs. r-b can find serious bugs
 
 [mfl\] I think incorrect results, or in other words undetected user
 level data corruption are extremely low probability. All CPU vendors are
@@ -1969,7 +1969,7 @@ no-go. The cache and memory sub-systems are probably most exposed to
 random bit-flips, but are protected through SECDED (Single Bit Error
 Correction Double Bit Error Detection). In addition the majority of
 external memories has a chip-kill feature, i.e. the ECC bits are laid
-out in way accross the multiple memory chips that an entire chip can
+out in way across the multiple memory chips that an entire chip can
 fail.
 
 RAS (Reliability Availability and Serviceability) have become common in
@@ -2002,7 +2002,7 @@ behaviour. E.g. the timing might be different, but still in the spec.
 But programs or build process require such behaviour
 
 [mfl\] The point here is that certain HW elemenents can have a
-life-cycle of decades. We need to pro-actively reserach potential
+life-cycle of decades. We need to pro-actively research potential
 pitfalls
 
 - fpga: are not reproducible because of place and route, which usually
@@ -2014,7 +2014,7 @@ operating when the VHDL/Verilog or whatever HDL has synthesized and
 placed&routed succesful. Any error there should probably be seen similar
 to a compiler error generating wrong code.
 
-Need to evaluate if it is feasable to create hashes for bitstreams.
+Need to evaluate if it is feasible to create hashes for bitstreams.
 
 - r-b become reproducible calculations. because some hardware does not
 guarantee reproducible calculations.
@@ -2025,8 +2025,8 @@ results on many different platforms.
 
 - everybody loves bitflips
 
-mfl again I don\'t see bitflips as soemthing which will show up at the
-user level. If there is other proof on this we obviosly need to
+mfl again I don\'t see bitflips as something which will show up at the
+user level. If there is other proof on this we obviously need to
 re-consider
 
 - it probably would be helpful to include low level HW details into
@@ -2165,7 +2165,7 @@ rebuilders
 
 - box could be package manager, could be around each rebuilder
 
-- who defines the treshold
+- who defines the threshold
 
 verification:
 
@@ -2180,7 +2180,7 @@ verification:
 - certificate transparency log
 
 if one of the signing keys gets compromised, with a CT you can see
-whether some pakcage was signed out of the official loop
+whether some package was signed out of the official loop
 
 for the n+1 threshold (n should be chosen by the user), the negative
 matters as well
@@ -2297,7 +2297,7 @@ what we\'re getting here
 
 - apt install a requires b
 
-- concern: treshold for 1.1 is not there, but 1.0 is there
+- concern: threshold for 1.1 is not there, but 1.0 is there
 
 - first resolve all the packages, then install something
 
@@ -2847,7 +2847,7 @@ where we reproduce stuff?
 
 * Check for special cases when they are found
 
-* Add a script for Arch JSON output, similiary to debian json output
+* Add a script for Arch JSON output, similarly to debian json output
 (bin/reproducible\_json.py)
 
 * Guix json output from guix-challenge to be coded to allow importing
@@ -2879,12 +2879,12 @@ opam package install → list of binaries and locations
 local reproducibility (storing hashes on the first run and check on the
 second round)
 
-check reproducibility w.r.t. hashes provided by independet rebuilders
+check reproducibility w.r.t. hashes provided by independent rebuilders
 
 opam should have a way to clearly specify the external dependencies in
 order to be able to exactly record and reproduce the
 
-build environement, including versions.
+build environment, including versions.
 
 - GCC
 
@@ -2981,7 +2981,7 @@ utility that modifies environment / build path / …
 From the first input, using cp / mirage-configure & opam (todo),
 generates all informations for the rebuild input. Once we get these,
 using \"simple\" commands, it is possible to generate the rebuild and
-then compare unikernal binary & hypervisor config
+then compare unikernel binary & hypervisor config
 
 Specification of
 
@@ -3186,13 +3186,13 @@ time is (not directly) a factor in getting a reproducible optimised
 binary. Since some 
 
 * Investigate if PGO is hardware dependend? Or is the issue how longer
-you run a Proifle how much different optimisations you get?
+you run a Profile how much different optimisations you get?
 
 A simple PGO example with a fixed input is reproducible on at least two
 different sets of hardware. The question is, if a more complicated
 program with different input is reproducible.
 
-Worked on identifing if grep can be PGO\'d and reproducible such as
+Worked on identifying if grep can be PGO\'d and reproducible such as
 openSUSE has achieved. The grep build isn\'t always reproducible but
 sometimes is. This might depend on how long it takes to run the test
 suite which is fed to the
@@ -3250,7 +3250,7 @@ Artefact/Artifact
 
 Opaque object (binary, ml model, bytes)
 
-Noun is reminescent of \"archeology\"!
+Noun is reminiscent of \"archeology\"!
 
 Generated Source?
 
@@ -3274,7 +3274,7 @@ Not subdivisble which has implications for debugging reproducibility
 
 Indicates dependencies (runtime/buildtime/install)?
 
-Organization unit with semntics
+Organization unit with semantics
 
 Docker images: they\'re files, but also have a mainfest.json which
 contains semantics. So is this a package? An application?
