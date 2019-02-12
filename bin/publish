@@ -69,7 +69,7 @@ do
 	sleep 1
 	printf "."
 
-	if ! curl -qs "${URL}" | grep -qs "This is an unpublished draft post."
+	if ! curl -qs "${URL}" 2>/dev/null | grep -qs "This is an unpublished draft post."
 	then
 		break
 	fi
