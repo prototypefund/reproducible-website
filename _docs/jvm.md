@@ -38,8 +38,8 @@ version=<version as in pom.xml>
 # source information, as source tarball artifact in repository and/or url and/or scm coordinates
 source.artifact=<groupId>:<artifactId>:<version>:<classifier>:<extension>
 source.url=<url where to download official source tarball>
-source.scm.uri=<source control management url as in pom.xml>
-source.scm.tag=<source control management tag as in pom.xml>
+source.scm.uri=<source control uri, typically corresponding to the project.scm.developerConnection or project.scm.connection in the pom.xml>
+source.scm.tag=<source control tag as in pom.xml>
 
 # build instructions
 build-tool=<mvn|sbt|...>
