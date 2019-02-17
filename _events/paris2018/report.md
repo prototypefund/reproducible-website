@@ -753,7 +753,7 @@ Sources
 
 Trust & Delivery
 
--   What constitutes a proff of reproducibility?
+-   What constitutes a proof of reproducibility?
 
 -   How do we distinguish or attest that an artifact was built on
     trusted hardware or in a trusted environment?
@@ -1490,7 +1490,7 @@ Hash of package? buildinfo?
 
 Not all projects have buildinfo files
 
-Are .buildinfo files without binary checksums useless? (Archlinux has
+Are .buildinfo files without binary checksums useless? (Arch Linux has
 those)
 
 Is it enough / useful if rebuilders publish a stripped down version of
@@ -2046,7 +2046,7 @@ become a problem
 <a name="Toc11382_331763073"></a>
 #### Cross distribution participation
 
-representatives from Archlinux, openSUSE, Guix, Nix, Alpine Linux,
+representatives from Arch Linux, openSUSE, Guix, Nix, Alpine Linux,
 Debian
 
 "package finder tool\" interface for searching infomation about
