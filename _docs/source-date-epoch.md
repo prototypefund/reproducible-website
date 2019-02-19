@@ -55,9 +55,9 @@ We are persuading upstream tools to support this directly. You may help by writi
  Pending:: [gettext](https://bugs.debian.org/792687), [qt4-x11](https://bugs.debian.org/794681)
  Complete::
   * [cmake](https://gitlab.kitware.com/cmake/cmake/merge_requests/432) (>= 3.8.0)
+  * [debhelper](https://bugs.debian.org/791823) (>= 9.20151004)
   * [docbook-utils](https://bugs.debian.org/800797) (Debian >= 0.6.14-3.1, upstream TODO)
   * [doxygen](https://bugs.debian.org/792201) (>= [1.8.12](https://github.com/doxygen/doxygen/commit/9a2c7bbfb0c53b4532db7280e6804c7ce76d70a3), Debian pending)
-  * [debhelper](https://bugs.debian.org/791823) (>= 9.20151004)
   * [epydoc](https://bugs.debian.org/790899) (>= 3.0.1+dfsg-8, upstream [pending](https://sourceforge.net/p/epydoc/bugs/368/))
   * [gcc](https://gcc.gnu.org/git/?p=gcc.git;a=commitdiff;h=e3e8c48c4a494d9da741c1c8ea6c4c0b7c4ff934) (>= 7, Debian >= 5.3.1-17, Debian >= 6.1.1-1)
   * [ghostscript](https://bugs.debian.org/794004) (Debian >= 9.16~dfsg-1, upstream [unfortunately rejected](http://bugs.ghostscript.com/show_bug.cgi?id=696765) due to additional constraints they have)
@@ -65,6 +65,7 @@ We are persuading upstream tools to support this directly. You may help by writi
   * [help2man](https://bugs.debian.org/787444) (>= 1.47.1)
   * [libxslt](https://bugs.debian.org/791815) (>= [1.1.29](https://bugzilla.gnome.org/show_bug.cgi?id=758148), Debian >= 1.1.28-3)
   * [man2html](https://bugs.debian.org/796130) (Debian >= 1.6g-8, [needs forwarding](https://sources.debian.net/src/man2html/1.6g-8/debian/patches/035-source-date-epoch.patch/))
+  * [mkdocs](https://bugs.debian.org/824266) (>= [0.16](https://github.com/mkdocs/mkdocs/pull/939/commits/8b006bd7fda55e47e29412896c511c7244398f82), Debian pending)
   * [ocamldoc](https://bugs.debian.org/794586) (>= [4.03.0](https://github.com/ocaml/ocaml/commit/0319173b7d02008e4ce6b81dceaf7c32cf5f8a6f), Debian >= 4.02.3-1)
   * [pydoctor](https://bugs.debian.org/807166) (>= 0.5+git20151204)
   * [rpm upstream](https://github.com/rpm-software-management/rpm/pull/144) (>4.13 other relevant patches linked in there)
@@ -72,9 +73,9 @@ We are persuading upstream tools to support this directly. You may help by writi
   * [texi2html](https://bugs.debian.org/783475) (Debian >= 1.82+dfsg1-4, [needs forwarding](https://sources.debian.net/src/texi2html/1.82%2Bdfsg1-5/debian/patches/05_reproducible-build/))
   * [texlive-bin](https://bugs.debian.org/792202) (>= 2016.20160512.41045)
   * [txt2man](https://bugs.debian.org/790801) (>= [1.5.7](https://github.com/mvertes/txt2man/pull/1), Debian >= 1.5.6-4)
-  * [mkdocs](https://bugs.debian.org/824266) (>= [0.16](https://github.com/mkdocs/mkdocs/pull/939/commits/8b006bd7fda55e47e29412896c511c7244398f82), Debian pending)
+  * [rcc](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=894476) (Qt5 >= [5.13.0](https://code.qt.io/cgit/qt/qtbase.git/commit/?id=1ffcca4cc208c48ddb06b6a23abf1756f9724351), Debian TODO)
 
-Or search in all Debian sources: https://codesearch.debian.net/search?perpkg=1&q=SOURCE_DATE_EPOCH
+Or search in all Debian sources: <https://codesearch.debian.net/search?perpkg=1&q=SOURCE_DATE_EPOCH>
 
 ### Python
 
