@@ -54,11 +54,18 @@ build environment. Here are some known issues and recommendations:
  * CMake sets a `RPATH` for binaries that link to a library in the the
    same project. Even when this is stripped at installation time, the
    build-id section will be different. Possible workarounds:
-   * Set `CMAKE_BUILD_WITH_INSTALL_RPATH=ON` or `CMAKE_SKIP_RPATH=ON` to
-     ensure a deterministic RPATH. Disadvantage: programs from the build
-     directory cannot be run without setting `LD_LIBRARY_PATH`.
+   * Users can set
+     [`CMAKE_SKIP_RPATH=ON`](https://cmake.org/cmake/help/latest/variable/CMAKE_SKIP_RPATH.html)
+     to disable the use of RPATH.
+     Disadvantage: programs from the build directory cannot be run without
+     setting `LD_LIBRARY_PATH`.
+   * Projects can set
+     [`CMAKE_BUILD_WITH_INSTALL_RPATH=ON`](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_WITH_INSTALL_RPATH.html)
+     to ensure a deterministic RPATH.
+     Disadvantage: programs from the build directory cannot be run without
+     setting `LD_LIBRARY_PATH`.
    * Set
-     [`CMAKE_BUILD_RPATH_USE_ORIGIN=ON`](https://cmake.org/cmake/help/git-master/prop_tgt/BUILD_RPATH_USE_ORIGIN.html)
+     [`CMAKE_BUILD_RPATH_USE_ORIGIN=ON`](https://cmake.org/cmake/help/latest/prop_tgt/BUILD_RPATH_USE_ORIGIN.html)
      to enable the use of relative directories in RPATH (requires CMake
      3.14). This is an appropriate option for both upstream projects
      and downstream distributions.
@@ -78,6 +85,7 @@ build environment. Here are some known issues and recommendations:
    * (Since Qt 5.11) Set the `QT_RCC_SOURCE_DATE_OVERRIDE` environment
      variable which behaves similar to
      [`SOURCE_DATE_EPOCH`](https://reproducible-builds.org/specs/source-date-epoch/).
+   * (Since Qt 5.13) Set the `SOURCE_DATE_EPOCH` environment variable.
    * Ensure that generated source files are touched with a fixed
      timestamp before rcc is called. See also <https://bugs.debian.org/894476>.
  * Qt projects that use `Q_OBJECT` macros require
