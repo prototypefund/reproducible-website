@@ -51,9 +51,9 @@ disorderfs is an overlay FUSE filesystem that deliberately introduces
 non-determinism into filesystem metadata. For example, it can randomize the
 order in which directory entries are read.
 
-<a href="https://salsa.debian.org/reproducible-builds/diffoscope" class="btn btn-outline-primary btn-sm">Git</a>
-<a href="https://salsa.debian.org/reproducible-builds/diffoscope/issues" class="btn btn-outline-primary btn-sm">Issues</a>
-<a href="https://salsa.debian.org/reproducible-builds/diffoscope/merge_requests" class="btn btn-outline-primary btn-sm">Merge requests</a>
+<a href="https://salsa.debian.org/reproducible-builds/disorderfs" class="btn btn-outline-primary btn-sm">Git</a>
+<a href="https://salsa.debian.org/reproducible-builds/disorderfs/issues" class="btn btn-outline-primary btn-sm">Issues</a>
+<a href="https://salsa.debian.org/reproducible-builds/disorderfs/merge_requests" class="btn btn-outline-primary btn-sm">Merge requests</a>
 <a href="https://packages.debian.org/sid/disorderfs" class="btn btn-outline-primary btn-sm">Debian package</a>
 
 ## strip-nondeterminism
