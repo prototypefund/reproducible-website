@@ -1,9 +1,11 @@
 ---
-layout: simple
+layout: new/default
 title: How to join the Salsa group
 permalink: /contribute/salsa/
 order: -1
 ---
+
+# How to join the Salsa group
 
 [Salsa](https://salsa.debian.org) is the name of the collaborative development server for [Debian](https://debian.org/) based on [GitLab](https://gitlab.com/). *Salsa* provides the necessary tools for package maintainers, packaging teams and other individuals and groups for collaborative development.
 
