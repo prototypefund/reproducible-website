@@ -2,7 +2,7 @@
 layout: new/default
 title:  Who is involved?
 permalink: /who/
-order: 6
+order: 7
 ---
 
 # Who is involved?

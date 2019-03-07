@@ -2,7 +2,7 @@
 layout: new/default
 title: Blog
 permalink: /blog/
-order: 5
+order: 6
 ---
 
 # Blog
