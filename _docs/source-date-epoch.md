@@ -247,7 +247,7 @@ SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)
 ### PHP
 
 ```
-date('Y', getenv('SOURCE_DATE_EPOCH') ?: time())
+\date('Y', (int)\getenv('SOURCE_DATE_EPOCH') ?: \time())
 ```
 
 ### Emacs-Lisp
