@@ -38,7 +38,6 @@ command-line utility.
 
 <a href="https://try.diffoscope.org/" class="btn btn-outline-primary btn-sm">Homepage</a>
 <a href="https://salsa.debian.org/reproducible-builds/trydiffoscope" class="btn btn-outline-primary btn-sm">Git</a>
-<a href="https://salsa.debian.org/reproducible-builds/trydiffoscope/issues" class="btn btn-outline-primary btn-sm">Issues</a>
 <a href="https://salsa.debian.org/reproducible-builds/trydiffoscope/merge_requests" class="btn btn-outline-primary btn-sm">Merge requests</a>
 <a href="https://packages.debian.org/sid/trydiffoscope" class="btn btn-outline-primary btn-sm">Debian package</a>
 <a href="https://pypi.python.org/pypi/trydiffoscope" class="btn btn-outline-primary btn-sm">PyPI</a>
@@ -75,7 +74,6 @@ the binaries produced by the builds to see if changing the environment, without
 changing the source code, changed the generated binaries.
 
 <a href="https://salsa.debian.org/reproducible-builds/reprotest" class="btn btn-outline-primary btn-sm">Git</a>
-<a href="https://salsa.debian.org/reproducible-builds/reprotest/issues" class="btn btn-outline-primary btn-sm">Issues</a>
 <a href="https://salsa.debian.org/reproducible-builds/reprotest/merge_requests" class="btn btn-outline-primary btn-sm">Merge requests</a>
 <a href="https://packages.debian.org/sid/reprotest" class="btn btn-outline-primary btn-sm">Debian package</a>
 
