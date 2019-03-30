@@ -19,6 +19,15 @@ their users and developers.
 
 [Contact us!](mailto:contact@reproducible-builds.org)
 
+## Steering Committee
+
+* [Allen Gunn](https://aspirationtech.org)
+* [Bdale Garbee](http://gag.com/bdale/)
+* [Holger Levsen](http://layer-acht.org/thinking/)
+* [Keith Packard](https://keithp.com)
+* [Mattia Rizzolo](https://mapreri.org/)
+* [Stefano Zacchiroli](https://upsilon.cc/)
+
 ## Sponsors
 
 <div class="row bg-light p-md-4 p-sm-2 pt-5 pb-5">
