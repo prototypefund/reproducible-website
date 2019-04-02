@@ -7,6 +7,8 @@ categories: org
 
 <h4 style="font-weight: normal;">… and proposes a patch to the Berne Convention on Copyright Law</h4>
 
+<span style='color: red; font-weight: bold'>Ed. Note: This was our April Fools' Day prank for 2019.</span>
+
 We are excited to launch a crowd-funded audit of Intel<sup>®</sup>'s classic desktop
 computer processor, the 1978-vintage 8086<sup>®</sup>!
 
