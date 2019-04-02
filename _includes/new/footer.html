@@ -4,7 +4,7 @@
       <span class="text-muted small d-none d-sm-block">
         Follow us on Twitter <a href="https://twitter.com/ReproBuilds">@ReproBuilds</a>.
 
-        <a href="{{ "/who/" | prepend: site.baseurl }}">Projects</a> working on reproducible builds:
+        <a href="{{ "/who/" | prepend: site.baseurl }}">People</a> &amp; <a href="{{ "/who/" | prepend: site.baseurl }}">projects</a> working on reproducible builds include:
         {% for project in site.data.projects %}
           <a href="{{ "/who" | prepend: site.baseurl }}#{{ project.name }}">{{ project.name }}</a>{% unless forloop.last %},{% endunless %}{% endfor %}.
 
