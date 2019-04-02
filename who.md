@@ -30,6 +30,8 @@ their users and developers.
 
 ## Sponsors
 
+If you are interested in the work of the Reproducible Builds project, please consider helping the Project by [making a fiscal donation]({{"/donate/" | prepend: site.baseurl }})!
+
 <div class="row bg-light p-md-4 p-sm-2 pt-5 pb-5">
     {% for x in site.data.sponsors %}
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-4">
