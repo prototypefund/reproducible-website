@@ -9,9 +9,8 @@ order: 6
 
 Every week we publish a weekly report on what we have been up to. ([RSS/Atom feed]({{ "/blog/index.rss" | prepend: site.baseurl }}))
 
-{% endif %}
-
 {% assign posts = site.blog | sort: 'week' | where_exp: 'item', 'item.published' | reverse %}
 
 {% for x in posts %}
 * [Week {{ x.week }}]({{ x.url | prepend: site.baseurl }})
+{% endfor %}
