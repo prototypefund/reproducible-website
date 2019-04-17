@@ -20,6 +20,8 @@ collections:
     output: true
   events:
     output: true
+  reports:
+    output: true
 
 exclude:
 - README

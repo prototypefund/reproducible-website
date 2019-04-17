@@ -11,8 +11,6 @@ import sys
 import time
 import yaml
 
-WEEK_1_END = 1430611200  # May 3 2015, 00:00 UTC, Sunday
-
 PROJECTS = (
     'diffoscope',
     'diffoscope-website',
@@ -29,9 +27,9 @@ def main(*args):
     for x in PROJECTS + ('reproducible-notes',):
         ensure_dir(sibling_repo_gitdir(x))
 
-    week = int(args[0]) if len(args) > 0 else prev_week()
+    today = datetime.datetime.utcnow()
 
-    data = get_data(week)
+    data = get_data(today.year, today.month)
 
     env = jinja2.Environment(
         loader=jinja2.FileSystemLoader(os.path.dirname(__file__))
@@ -43,11 +41,6 @@ def main(*args):
 
 def log(msg, *args, **kwargs):
     print("I: " + msg.format(*args, **kwargs), file=sys.stderr)
-
-
-def prev_week():
-    now = int(time.time())
-    return ((now - WEEK_1_END) // (7 * 24 * 3600) + 1)
 
 
 def sibling_repo_gitdir(path):
@@ -65,8 +58,8 @@ def ensure_dir(path):
         raise ValueError("not a directory: {}".format(path))
 
 
-def get_data(week, max_age=3600):
-    filename = '/tmp/generate-draft-{}.pickle'.format(week)
+def get_data(year, month, max_age=3600):
+    filename = '/tmp/generate-draft-{:04d}{:02d}.pickle'.format(year, month)
 
     try:
         mtime = os.path.getmtime(filename)
@@ -82,10 +75,13 @@ def get_data(week, max_age=3600):
 
     log("Getting new data")
 
-    week_end = WEEK_1_END + (week - 1) * 7 * 24 * 3600  # exclusive
-    week_start = week_end - 7 * 24 * 3600  # inclusive
+    month_start = datetime.date(year=year, month=month, day=1)
+    month_end = month_start.replace(day=calendar.monthlen(year, month))
 
-    data = {x: y(week_start, week_end) for x, y in (
+    month_start_ts = int(month_start.timestamp())
+    month_end_ts = int(month_end.timestamp())
+
+    data = {x: y(month_start_ts, month_end_ts) for x, y in (
         ('author', get_author),
         ('commits', get_commits),
         ('uploads', get_uploads),
@@ -97,10 +93,10 @@ def get_data(week, max_age=3600):
     )}
 
     data.update({
-        'week': week,
-        'week_start': datetime.datetime.utcfromtimestamp(week_start),
-        'week_end': datetime.datetime.utcfromtimestamp(week_end - 1),
         'projects': PROJECTS,
+        'title': month_start.strftime('Reproducible Builds in %B %Y'),
+        'title_year': '{:04d}'.format(year),
+        'title_month': '{:02d}'.format(month),
     })
 
     log("Saving cache to {}", filename)
@@ -111,27 +107,27 @@ def get_data(week, max_age=3600):
     return data
 
 
-def get_author(week_start, week_end):
+def get_author(month_start, month_end):
     return os.environ.get('DEBFULLNAME', 'FIXME')
 
 
-def get_ftbfs_bugs(week_start, week_end):
+def get_ftbfs_bugs(month_start, month_end):
     return bugs(
-        week_start,
-        week_end,
+        month_start,
+        month_end,
         "bugs_usertags.tag = '{}'".format('ftbfs'),
     )
 
 
-def get_patches(week_start, week_end):
+def get_patches(month_start, month_end):
     return bugs(
-        week_start,
-        week_end,
+        month_start,
+        month_end,
         "id IN (SELECT id FROM bugs_tags WHERE tag = 'patch')",
     )
 
 
-def bugs(week_start, week_end, extra="true"):
+def bugs(month_start, month_end, extra="true"):
     log("Querying UDD for usertagged bugs with filter: {}", extra)
 
     fields = (
@@ -156,12 +152,12 @@ def bugs(week_start, week_end, extra="true"):
             {extra}
         AND
             CAST(arrival AS DATE) BETWEEN
-            to_timestamp(@{week_start}) AND to_timestamp(@{week_end})
+            to_timestamp(@{month_start}) AND to_timestamp(@{month_end})
     """.format(**{
         'fields': ', '.join(fields),
         'extra': extra,
-        'week_start': week_start,
-        'week_end': week_end,
+        'month_start': month_start,
+        'month_end': month_end,
     })
 
     seen = set()
@@ -178,7 +174,7 @@ def bugs(week_start, week_end, extra="true"):
     }
 
 
-def get_uploads(week_start, week_end):
+def get_uploads(month_start, month_end):
     log("Querying UDD for uploads")
 
     fields = (
@@ -197,14 +193,14 @@ def get_uploads(week_start, week_end):
             source IN ({sources})
         AND
             CAST(date AS date) BETWEEN
-            to_timestamp(@{week_start}) AND to_timestamp(@{week_end})
+            to_timestamp(@{month_start}) AND to_timestamp(@{month_end})
         ORDER BY
             date
     """.format(**{
         'fields': ', '.join(fields),
         'sources': ', '.join("'{}'".format(x) for x in PROJECTS),
-        'week_start': week_start,
-        'week_end': week_end,
+        'month_start': month_start,
+        'month_end': month_end,
     }), fields)
 
     result = {}
@@ -234,16 +230,16 @@ def udd(query, fields):
     return data
 
 
-def get_commits(week_start, week_end):
-    return {x: commits(week_start, week_end, x) for x in PROJECTS}
+def get_commits(month_start, month_end):
+    return {x: commits(month_start, month_end, x) for x in PROJECTS}
 
 
-def get_issues_yml(week_start, week_end):
-    return commits(week_start, week_end, 'reproducible-notes', 'issues.yml')
+def get_issues_yml(month_start, month_end):
+    return commits(month_start, month_end, 'reproducible-notes', 'issues.yml')
 
 
-def get_packages_yml(week_start, week_end):
-    return commits(week_start, week_end, 'reproducible-notes', 'packages.yml')
+def get_packages_yml(month_start, month_end):
+    return commits(month_start, month_end, 'reproducible-notes', 'packages.yml')
 
 
 def open_packages_yml(date):
@@ -255,9 +251,9 @@ def open_packages_yml(date):
         stdout=subprocess.PIPE).stdout
 
 
-def get_packages_stats(week_start, week_end):
-    old = yaml.safe_load(open_packages_yml(week_start))
-    new = yaml.safe_load(open_packages_yml(week_end))
+def get_packages_stats(month_start, month_end):
+    old = yaml.safe_load(open_packages_yml(month_start))
+    new = yaml.safe_load(open_packages_yml(month_end))
 
     removed = set(old.keys()) - set(new.keys())
     added = set(new.keys()) - set(old.keys())
@@ -272,7 +268,7 @@ def get_packages_stats(week_start, week_end):
     }
 
 
-def commits(week_start, week_end, project, path='.'):
+def commits(month_start, month_end, project, path='.'):
     # Assume its in the parent dir
     git_dir = sibling_repo_gitdir(project)
 
@@ -282,8 +278,8 @@ def commits(week_start, week_end, project, path='.'):
         'git',
         'log',
         'origin/master',
-        '--since', '@{}'.format(week_start),
-        '--until', '@{}'.format(week_end),
+        '--since', '@{}'.format(month_start),
+        '--until', '@{}'.format(month_end),
         '--pretty=format:%an\t%h\t%s',
         '--no-merges',
         '--all',

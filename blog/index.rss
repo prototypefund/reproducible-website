@@ -12,18 +12,27 @@ layout: null
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
 
-    {% assign sorted = site.blog | sort: 'published' | reverse %}
-    {% for page in sorted limit:10 %}
-    {% if page.published %}
+    {% assign reports = site.reports | sort: 'year,month' | where_exp: 'item', 'item.published' | reverse %}
+
+    {% for x in reports limit:10 %}
       <item>
-        <title>Reproducible Builds: Weekly report #{{ page.week }}</title>
-        <pubDate>{{ page.published | date_to_rfc822 }}</pubDate>
-        <link>{{ page.url | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ page.url | prepend: site.url }}</guid>
-        <description>{{ page.content | xml_escape }}</description>
+        <title>{{ x.title }}</title>
+        <pubDate>{{ x.published | date_to_rfc822 }}</pubDate>
+        <link>{{ x.url | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ x.url | prepend: site.url }}</guid>
+        <description>{{ x.content | xml_escape }}</description>
       </item>
-    {% endif %}
     {% endfor %}
 
+    {% assign posts = site.blog | sort: 'published' | where_exp: 'item', 'item.published' | reverse %}
+    {% for x in posts limit:10 %}
+      <item>
+        <title>Reproducible Builds: Weekly report #{{ x.week }}</title>
+        <pubDate>{{ x.published | date_to_rfc822 }}</pubDate>
+        <link>{{ x.url | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ x.url | prepend: site.url }}</guid>
+        <description>{{ x.content | xml_escape }}</description>
+      </item>
+    {% endfor %}
   </channel>
 </rss>

@@ -1,0 +1,24 @@
+---
+layout: new/default
+---
+
+<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+
+<p>&larr; <a href="{{ "/reports/" | prepend: site.baseurl }}">View all monthly reports</a></p>
+
+{% unless page.published %}
+<div class="col-12 alert alert-warning" role="alert">
+  <strong>This is an unpublished draft report.</strong>
+  <a href="https://salsa.debian.org/reproducible-builds/reproducible-website.git/tree/_reports/{{ page.year }}{{ page.month }}.md">(source)</a>
+</div>
+{% endunless %}
+
+<hr>
+
+<div class="blog-post-content">
+  {{ content }}
+</div>
+
+<hr>
+
+<p>&larr; <a href="{{ "/reports/" | prepend: site.baseurl }}">View all monthly reports</a></p>

@@ -2,18 +2,20 @@
 
 set -eu
 
-WEEK="${1}"
+YEAR="${1}"
+MONTH="$(printf "%02d" "${2}")"
+TAG="${YEAR}${MONTH}"
 
-URL="https://reproducible-builds.org/blog/posts/${WEEK}/"
+URL="https://reproducible-builds.org/blog/reports/${YEAR}${MONTH}/"
 DATE="$(date --utc +'%Y-%m-%d %H:%M:%S')"
 
-if ! shift 1
+if ! shift 2
 then
-	echo "${0}: usage: ${0} <week>" >&2
+	echo "${0}: usage: ${0} <year> <month>" >&2
 	exit 2
 fi
 
-FILENAME="_blog/posts/${WEEK}.md"
+FILENAME="_reports/${TAG}.md"
 
 if grep -qs FIXME "${FILENAME}"
 then
@@ -23,7 +25,7 @@ fi
 
 if ! grep -qs 'published: ' "${FILENAME}"
 then
-	sed -i -e "s@^\(week: ${WEEK}\)@\1\npublished: ${DATE}@g" "${FILENAME}"
+	sed -i -e "s@^\(title: .*\)@\1\npublished: ${DATE}@g" "${FILENAME}"
 fi
 
 git add "${FILENAME}"
@@ -31,12 +33,12 @@ git add "${FILENAME}"
 if git commit -m "published as ${URL}"
 then
 	git log -1
-	git tag -s "${WEEK}" -m "Publish week ${WEEK}"
+	git tag -s "${TAG}" -m "Publish report for ${TAG}"
 
 	echo
 	echo "Now verify the results and run:"
 	echo
-	echo "  $ git push origin master && git push origin ${WEEK}"
+	echo "  $ git push origin master && git push origin ${TAG}"
 	echo
 
 	while true
@@ -46,7 +48,7 @@ then
 
 		case "${X}" in
 		Y|"")
-			git push origin master && git push origin ${WEEK}
+			git push origin master && git push origin ${TAG}
 			break
 			;;
 		N|n)
@@ -61,7 +63,7 @@ echo
 echo
 echo "After ensuring this has been published, Tweet this via:"
 echo
-echo "%tweet What happened in the @ReproBuilds effort between $(tr '\n' ' ' < "${FILENAME}" | sed -n -e 's@.* effort between \([^:]*\):.*@\1@p'): https://reproducible-builds.org/blog/posts/${WEEK}/"
+echo "%tweet Here's happened in the @ReproBuilds effort in the past month ${URL}"
 echo
 printf "Waiting for page to be published "
 while :
@@ -69,7 +71,7 @@ do
 	sleep 1
 	printf "."
 
-	if ! curl -qs "${URL}" 2>/dev/null | grep -qs "This is an unpublished draft post."
+	if ! curl -qs "${URL}" 2>/dev/null | grep -qs "This is an unpublished draft report."
 	then
 		break
 	fi
