@@ -12,12 +12,11 @@ order: 0
 
     <p class="lead mt-3 mt-md-5 mx-md-5 px-md-5">
         <strong>Reproducible builds</strong> are a set of software development
-        practices that create an independently-verifiable path from source
-        to binary&nbsp;code.
+        practices that create an independently-verifiable path from source code
+        to a specific binary artifact. Reproducible builds have many factors;
+        for more details, see the
 
-        <small class="d-none d-sm-inline">
-            (<a href="{{ "/docs/definition/" | prepend: site.baseurl }}">more</a>)
-        </small>
+            <a href="{{ "/docs/definition/" | prepend: site.baseurl }}">technical definition</a>.
     </p>
 </div>
 
