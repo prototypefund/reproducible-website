@@ -23,9 +23,9 @@ then
 	exit 2
 fi
 
-if ! grep -qs 'published: ' "${FILENAME}"
+if ! grep -qs 'draft: true' "${FILENAME}"
 then
-	sed -i -e "s@^\(title: .*\)@\1\npublished: ${DATE}@g" "${FILENAME}"
+	sed -i -e "s@^draft: true@draft: false\npublished: ${DATE}@g" "${FILENAME}"
 fi
 
 git add "${FILENAME}"

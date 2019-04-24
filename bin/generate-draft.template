@@ -3,6 +3,7 @@ layout: new/report
 year: "{{ title_year }}"
 month: "{{ title_month }}"
 title: "{{ title }}"
+draft: true
 ---
 
 * On [our mailing list](https://lists.reproducible-builds.org/pipermail/rb-general/) this month: FIXME
