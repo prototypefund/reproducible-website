@@ -4,9 +4,9 @@ set -eu
 
 YEAR="${1}"
 MONTH="$(printf "%02d" "${2}")"
-TAG="${YEAR}${MONTH}"
+TAG="${YEAR}-${MONTH}"
 
-URL="https://reproducible-builds.org/blog/reports/${YEAR}${MONTH}/"
+URL="https://reproducible-builds.org/blog/reports/${TAG}/"
 DATE="$(date --utc +'%Y-%m-%d %H:%M:%S')"
 
 if ! shift 2
