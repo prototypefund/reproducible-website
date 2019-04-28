@@ -1,6 +1,6 @@
 before_script:
   - apt-get -q update
-  - env DEBIAN_FRONTEND=noninteractive apt-get -q -y install jekyll
+  - env DEBIAN_FRONTEND=noninteractive apt-get -q -y install jekyll make
 
 test:
   image: debian:stable
