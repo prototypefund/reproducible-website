@@ -28,9 +28,10 @@ def main(*args):
     for x in PROJECTS + ('reproducible-notes',):
         ensure_dir(sibling_repo_gitdir(x))
 
-    today = datetime.datetime.utcnow()
+    previous_month = datetime.date.today().replace(day=1) - \
+        datetime.timedelta(days=1)
 
-    data = get_data(today.year, today.month)
+    data = get_data(previous_month.year, previous_month.month)
 
     env = jinja2.Environment(
         loader=jinja2.FileSystemLoader(os.path.dirname(__file__))
