@@ -76,8 +76,12 @@ def get_data(year, month, max_age=3600):
 
     log("Getting new data")
 
-    month_start = datetime.date(year=year, month=month, day=1)
-    month_end = month_start.replace(day=calendar.monthlen(year, month))
+    month_start = datetime.datetime(year=year, month=month, day=1)
+    month_end = month_start.replace(
+        day=calendar.monthlen(year, month),
+        hour=23,
+        minute=59
+    )
 
     month_start_ts = int(month_start.timestamp())
     month_end_ts = int(month_end.timestamp())
