@@ -11,9 +11,19 @@ main {
     max-width: 100%;
   }
 
+  img[src$="#left"] {
+    float: left;
+    margin-right: 2rem;
+  }
+
   img[src$="#center"] {
     margin: 2rem auto;
     display: block;
+  }
+
+  img[src$="#right"] {
+    float: right;
+    margin-left: 2rem;
   }
 
   blockquote {
