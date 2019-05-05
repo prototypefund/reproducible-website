@@ -23,7 +23,7 @@ then
 	exit 2
 fi
 
-if ! grep -qs 'draft: true' "${FILENAME}"
+if grep -qs 'draft: true' "${FILENAME}"
 then
 	sed -i -e "s@^draft: true@draft: false\npublished: ${DATE}@g" "${FILENAME}"
 fi
