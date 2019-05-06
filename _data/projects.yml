@@ -117,6 +117,8 @@
   resources:
   - name: openSUSE Reproducible Builds
     url: https://en.opensuse.org/openSUSE:Reproducible_Builds
+  - name: openSUSE blocking bug
+    url: https://bugzilla.opensuse.org/show_bug.cgi?id=1133809
 - name: OpenWrt
   url: https://openwrt.org/
   logo: openwrt.png
