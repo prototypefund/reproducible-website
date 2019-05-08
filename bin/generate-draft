@@ -19,6 +19,7 @@ PROJECTS = (
     'disorderfs',
     'reprotest',
     'trydiffoscope',
+    'try.diffoscope.org',
     'reproducible-website',
     'jenkins.debian.net',
 )
