@@ -21,6 +21,7 @@ PROJECTS = (
     'trydiffoscope',
     'try.diffoscope.org',
     'reproducible-website',
+    'rb-mailx-ansible',
     'jenkins.debian.net',
 )
 
