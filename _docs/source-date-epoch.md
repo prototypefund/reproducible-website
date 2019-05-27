@@ -190,13 +190,15 @@ if (source_date_epoch) {
 build_time = gmtime(&now);
 ```
 
-If you want less verbose code and are happy with the assumption, that the variable will contain a correct, positive integer in the `time_t` range, you can use
+If you want less verbose code and are happy with the assumptions stated below, you can use
 
 ```
 #include <stdlib.h>
 
 time_t now;
 char *source_date_epoch;
+/* This assumes that the SOURCE_DATE_EPOCH environment variable will contain
+   a correct, positive integer in the time_t range */
 if ((source_date_epoch = getenv("SOURCE_DATE_EPOCH")) == NULL ||
     (now = (time_t)strtoll(source_date_epoch, NULL, 10)) <= 0)
         time(&now);
