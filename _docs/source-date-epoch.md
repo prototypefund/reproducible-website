@@ -190,7 +190,7 @@ if (source_date_epoch) {
 build_time = gmtime(&now);
 ```
 
-If you want less verbose code and are happy with the assumtion, that the variable will contain a correct, positive integer in the `time_t` range, you can use
+If you want less verbose code and are happy with the assumption, that the variable will contain a correct, positive integer in the `time_t` range, you can use
 
 ```
 #include <stdlib.h>
