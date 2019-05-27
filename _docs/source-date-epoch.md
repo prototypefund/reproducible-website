@@ -154,6 +154,7 @@ endif ()
 ```
 #include <errno.h>
 #include <limits.h>
+#include <stdlib.h>
 
 struct tm *build_time;
 time_t now;
@@ -187,6 +188,18 @@ if (source_date_epoch) {
 	now = time(NULL);
 }
 build_time = gmtime(&now);
+```
+
+If you want less verbose code and are happy with the assumtion, that the variable will contain a correct, positive integer in the `time_t` range, you can use
+
+```
+#include <stdlib.h>
+
+time_t now;
+char *source_date_epoch;
+if ((source_date_epoch = getenv("SOURCE_DATE_EPOCH")) == NULL ||
+    (now = (time_t)strtoll(source_date_epoch, NULL, 10)) <= 0)
+        time(&now);
 ```
 
 ### C++
