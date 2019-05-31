@@ -4,7 +4,7 @@ layout: docs
 permalink: /docs/source-date-epoch/
 ---
 
-[S_D_E (for short) is a standard](https://reproducible-builds.org/specs/source-date-epoch/) that defines an environment variable `SOURCE_DATE_EPOCH` that distributions can set centrally, and have build tools consume this in order to produce reproducible output.
+`SOURCE_DATE_EPOCH` (or `S_D_E`]) [is a standardised environment variable](https://reproducible-builds.org/specs/source-date-epoch/) that distributions can set centrally and have build tools consume this in order to produce reproducible output.
 
 Before implementing this, you should scan through [our checklist](https://wiki.debian.org/ReproducibleBuilds/StandardEnvironmentVariables#Checklist) to see if you can avoid implementing it.
 
