@@ -10,7 +10,7 @@ draft: true
 
 As a quick recap, whilst anyone can inspect the source code of free software for malicious flaws, almost all software is distributed to end users pre-compiled. The motivation behind reproducible builds effort is to ensure no flaws have been introduced during this compilation process by promising identical results are always generated from a given source, thus allowing multiple third-parties to come to a consensus on whether a build was compromised.
 
-In this months's report, we will cover:
+In this month's report, we will cover:
 
 * **Media coverage** — *FIXME, etc.*
 * **Upstream news** — *FIXME, etc.*
