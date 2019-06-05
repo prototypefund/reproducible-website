@@ -95,8 +95,7 @@ For GNU systems:
 BUILD_DATE="$(date --utc --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y-%m-%d)"
 ```
 
-
-If you need to also support BSD date as well:
+If you need to support BSD date as well you should fallback to trying ther `-r seconds` timestamp variant:
 
 ```
 DATE_FMT="%Y-%m-%d"
