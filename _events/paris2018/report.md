@@ -2093,7 +2093,7 @@ Schema [tests.reproducible-builds.org/reproducibledb.html](https://tests.reprodu
 
 - debian-specific assumptions in schema (e.g. suite)
 
-- adding a distriubtion field to the reproducible build database
+- adding a distribution field to the reproducible build database
 (mattia)
 
 issues around go packaging:
