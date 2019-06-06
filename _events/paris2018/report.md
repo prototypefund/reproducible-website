@@ -2808,19 +2808,19 @@ someone vouches for the source code that is used by all rebuilders
 
 ## Resources
 
-[Rebuilder NYU (server)]([reproducible-builds.engineering.nyu.edu/)](https://reproducible-builds.engineering.nyu.edu/))
+[Rebuilder NYU (server)](https://reproducible-builds.engineering.nyu.edu/)
 
-[Rebuilder University Bergen (server)]([158.39.77.214)](http://158.39.77.214))
+[Rebuilder University Bergen (server)](http://158.39.77.214)
 
 [in-toto (website)](in-toto.io)
 
-[in-toto apt transport (repo)]([github.com/lukpueh/apt-transport-in-toto/tree/rebuild-checking)](https://github.com/lukpueh/apt-transport-in-toto/tree/rebuild-checking))
+[in-toto apt transport (repo)](https://github.com/lukpueh/apt-transport-in-toto/tree/rebuild-checking)
 
-[software transparency architecture]([arxiv.org/pdf/1711.07278)](https://arxiv.org/pdf/1711.07278))
+[software transparency architecture](https://arxiv.org/pdf/1711.07278)
 
-[software transparency at DebConf18]([debconf18.debconf.org/talks/104-software-transparency-package-security-beyond-signatures-and-reproducible-builds/)](https://debconf18.debconf.org/talks/104-software-transparency-package-security-beyond-signatures-and-reproducible-builds/))
+[software transparency at DebConf18](https://debconf18.debconf.org/talks/104-software-transparency-package-security-beyond-signatures-and-reproducible-builds/)
 
-[On Omitting Commits and Committing Omissions: Preventing Git Metadata Tampering That (Re)introduces Software Vulnerabilities]([www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/torres-arias)](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/torres-arias))
+[On Omitting Commits and Committing Omissions: Preventing Git Metadata Tampering That (Re)introduces Software Vulnerabilities](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/torres-arias)
 
 <a name="Toc11406_331763073"></a>
 #### Test infrastructure
