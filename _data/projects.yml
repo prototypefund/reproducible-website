@@ -20,6 +20,12 @@
   resources:
   - name: Gitian building guide
     url: https://github.com/bitcoin/bitcoin/blob/master/doc/gitian-building.md
+- name: Buildroot
+  url: https://buildroot.org/
+  logo: buildroot.png
+  resources:
+  - name: Wiki page
+    url: https://elinux.org/Buildroot:ReproducibleBuilds
 - name: coreboot
   url: https://www.coreboot.org/
   logo: coreboot.png
