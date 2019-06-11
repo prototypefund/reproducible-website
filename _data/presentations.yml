@@ -1,3 +1,13 @@
+- title: Bitcoin Build System Security
+  presented_by: Carl Dong
+  event:
+    url: https://breaking-bitcoin.com/
+    name: Breaking Bitcoin
+    date: 2019-06-08
+    location: Amsterdam, Netherlands
+  video:
+    youtube: I2iShmUTEl8
+
 - title: You think you're not a target? A tale of three developers…
   presented_by: Chris Lamb
   event:
