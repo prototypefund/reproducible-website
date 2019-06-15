@@ -490,6 +490,8 @@
     name: MiniDebConfCambridge 2015
     date: 2015-11-08
     location: Cambridge, United Kingdom
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2015/mini-debconf-cambridge/webm/beyond_reproducible_builds.webm
 
 - title: Reproducible Builds status update
   presented_by: Lunar, Holger Levsen, Chris Lamb
