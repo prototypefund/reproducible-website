@@ -517,6 +517,8 @@
     name: Libre Software Meeting 2015
     date: 2015-07-06
     location: Beauvais, France
+  video:
+    url: https://rmll.ubicast.tv/videos/compilations-reproductibles-dans-debian-et-partout-ailleurs/
   slides: https://reproducible-builds.org/_lfs/presentations/2015-07-06-LSM2015.pdf
 
 - title: Compilations reproductibles (French)
