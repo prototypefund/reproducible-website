@@ -158,6 +158,8 @@
     name: foss-north 2018
     date: 2018-04-23
     location: Gothenburg, Sweden
+  video:
+    youtube: ulTtifzOOjk
   slides: https://reproducible-builds.org/_lfs/presentations/2018-04-23-foss-north-can-your-diff-do-this.pdf
 
 - title: You think you're not a target? A tale of 3 developers…
