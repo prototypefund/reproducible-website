@@ -496,6 +496,9 @@
     date: 2015-08-20
     name: DebConf15
     location: Heidelberg, Germany
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2015/debconf15/Stretching_out_for_trustworthy_reproducible_builds_creating_bit_by_bit_identical_binaries.webm
+    subtitles: https://meetings-archive.debian.net/pub/debian-meetings/2015/debconf15/subtitles/english/Stretching_out_for_trustworthy_reproducible_builds_creating_bit_by_bit_identical_binaries.en.srt
 
 - title: How to make your software build reproducibly
   presented_by: Lunar
