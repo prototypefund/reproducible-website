@@ -365,6 +365,8 @@
     name: DevConf.cz
     date: 2017-01-27
     location: Brno, Czech Republic
+  video:
+    youtube: d8oEg0p6QLE
   slides: https://reproducible-builds.org/_lfs/presentations/2017-01-27-devconf.cz-reproducible-builds+fedora.pdf
 
 - title: "Reproducible Builds: Two years in the trenches"
