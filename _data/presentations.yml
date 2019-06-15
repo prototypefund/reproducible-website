@@ -434,6 +434,8 @@
     name: DebConf16
     date: 2016-07-07
     location: Cape Town, South Africa
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2016/debconf16/Reproducible_Builds_status_update.webm
 
 - title: Reproducible builds ecosystem
   presented_by: Holger Levsen
