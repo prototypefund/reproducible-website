@@ -526,6 +526,8 @@
     date: 2015-06-19
     name: PSES 2015
     location: Paris, France
+  video:
+    url: https://static.qth.fr/PSES2015/webm/PSES2015_compilations-reproductibles.webm
   slides: https://reproducible-builds.org/_lfs/presentations/2015-06-19-PSES2015.pdf
 
 - title: Reproducible Builds, a year later
