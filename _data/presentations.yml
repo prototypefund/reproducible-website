@@ -188,6 +188,8 @@
     name: LibrePlanet 2018
     date: 2018-03-24
     location: MIT, Cambridge, United States
+  video:
+    url: https://media.libreplanet.org/u/libreplanet/m/you-think-you-re-not-a-target-a-tale-of-three-developers/
   slides: https://reproducible-builds.org/_lfs/presentations/2018-03-24-libreplanet-2018.pdf
 
 - title: You think you're not a target? A tale of 3 developers…
