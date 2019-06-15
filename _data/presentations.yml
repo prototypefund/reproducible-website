@@ -555,6 +555,8 @@
     name: FOSDEM 2014
     date: 2014-02-01
     location: Brussels, Belgium
+  video:
+    url: http://video.fosdem.org/2014/H1302_Depage/Saturday/Reproducible_Builds_for_Debian.webm
   slides: https://reproducible-builds.org/_lfs/presentations/2014-02-01-FOSDEM14.pdf
 
 # From <https://wiki.debian.org/ReproducibleBuilds/About>, needs checking/syncing:
