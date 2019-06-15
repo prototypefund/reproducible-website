@@ -444,6 +444,8 @@
     name: openSUSE Conference 2016
     date: 2016-06-23
     location: Nürnberg, Germany
+  video:
+    youtube: 65eDYwNqW-I
   slides: https://reproducible-builds.org/_lfs/presentations/2016-06-23-openSUSE-Conference-2016.pdf
 
 - title: Reproducible Builds - fulfilling the original promise of free software
