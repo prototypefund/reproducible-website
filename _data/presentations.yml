@@ -535,6 +535,8 @@
     date: 2014-08-26
     name: DebConf14
     location: Portland, Oregon, United States
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2014/debconf14/webm/Reproducible_Builds_for_Debian_a_year_later.webm
   slides: https://reproducible-builds.org/_lfs/presentations/2014-08-26-DebConf14.pdf
 
 - title: "Reproducible Builds: Moving Beyond Single Points of Failure for Software Distribution"
