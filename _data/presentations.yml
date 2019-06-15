@@ -298,6 +298,7 @@
     url: https://www.ducc.it/
     name: Debian-Ubuntu Community Conference — Italia 2017
     location: Vicenza, Italy
+  slides: https://www.ducc.it/2017/programma/reproducible-builds-cosa-sono-e-perche-li-volete/slides.pdf
 
 - title: Reproducible Builds everywhere
   presented_by: Holger Levsen
