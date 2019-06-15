@@ -451,6 +451,8 @@
     date: 2016-03-18
     name: FOSSASIA 2016
     location: Singapore
+  video:
+    youtube: dYs-wWTSVRY
 
 - title: Reproducible Builds in FreeBSD
   presented_by: Ed Maste
