@@ -215,6 +215,8 @@
     name: linux.conf.au 2018
     date: 2018-01-24
     location: Sydney, Australia
+  video:
+    youtube: qWXjn3m33XI
   slides: https://reproducible-builds.org/_lfs/presentations/2018-01-24-linuxconfau-can-your-diff-do-this.pdf
 
 - title: You think you're not a target? A tale of 3 developers…
