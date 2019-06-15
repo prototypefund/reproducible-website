@@ -313,6 +313,8 @@
     name: foss-north 2017
     date: 2017-04-26
     location: Gothenburg, Sweden
+  video:
+    youtube: tLBDSRS7Ktc
 
 - title: You too can write reproducible software
   presented_by: Ximin Luo, Vagrant Cascadian &amp; Valerie Young
