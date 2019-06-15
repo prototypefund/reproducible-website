@@ -417,6 +417,8 @@
     name: MiniDebConf Cambridge 2016
     date: 2016-11-13
     location: Cambridge, United Kingdom
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2016/miniconf_cambridge16/reproducible_builds_status_update.webm
   slides: https://reproducible-builds.org/_lfs/presentations/2016-11-13-MiniDebConfCambridge/
 
 - title: Reproducible Builds
