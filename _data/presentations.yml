@@ -357,6 +357,8 @@
     url: http://events.linuxfoundation.org/events/embedded-linux-conference
     name: Embedded Linux Conference 2017
     location: Portland, Oregon, United States
+  video:
+    youtube: vEqph5qWv0A
 
 - title: Reproducible Builds and Fedora
   presented_by: Dennis Gilmore, Holger Levsen
