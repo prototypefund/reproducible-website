@@ -23,6 +23,7 @@ Find out how to contribute on our [Contribute]({{ "/contribute/" | prepend: site
 
 {% if x.video.url %}<a href="{{ x.video.url }}" class="btn btn-sm btn-outline-primary">Video</a>{% endif %}
 {% if x.video.youtube %}<a href="https://www.youtube.com/watch?v={{ x.video.youtube }}" class="btn btn-sm btn-outline-primary">YouTube</a>{% endif %}
+{% if x.video.subtitles %}<a href="{{ x.video.subtitles }}" class="btn btn-sm btn-outline-primary">Subtitles</a>{% endif %}
 {% if x.slides %}<a href="{{ x.slides }}" class="btn btn-sm btn-outline-primary">Slides</a>{% endif %}
 
 {% endfor %}
