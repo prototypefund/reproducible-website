@@ -1,3 +1,13 @@
+- title: Reproducible Builds aiming for bullseye
+  presented_by: Holger Levsen
+  event:
+    url: https://wiki.debian.org/DebianEvents/de/2019/MiniDebConfHamburg
+    name: MiniDebConf Hamburg 2019
+    date: 2019-06-08
+    location: Hamburg Germany
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2019/miniconf-hamburg/reproducible-builds.webm
+
 - title: Bitcoin Build System Security
   presented_by: Carl Dong
   event:
