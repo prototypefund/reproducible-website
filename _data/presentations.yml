@@ -1,3 +1,13 @@
+- title: Reproducible Builds aiming for bullseye
+  presented_by: Holger Levsen
+  event:
+    url: https://wiki.debian.org/DebianEvents/de/2019/MiniDebConfHamburg
+    name: MiniDebConf Hamburg 2019
+    date: 2019-06-08
+    location: Hamburg Germany
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2019/miniconf-hamburg/reproducible-builds.webm
+
 - title: Bitcoin Build System Security
   presented_by: Carl Dong
   event:
@@ -31,6 +41,8 @@
     name: SFScon
     date: 2018-11-16
     location: Bolzano, Italy
+  video:
+    url: https://vimeo.com/305193211
 
 - title: Reproducible Builds
   presented_by: Chris Lamb
@@ -141,6 +153,7 @@
   video:
     url: https://meetings-archive.debian.net/pub/debian-meetings/2018/miniconf-hamburg/2018-05-19/diffoscope.webm
     youtube: m9GN_f1WCAo
+    subtitles: https://meetings-archive.debian.net/pub/debian-meetings/2018/miniconf-hamburg/2018-05-19/subtitles/diffoscope.en.srt
 
 - title: You think you're not a target? A tale of 3 developers…
   presented_by: Chris Lamb
@@ -158,6 +171,8 @@
     name: foss-north 2018
     date: 2018-04-23
     location: Gothenburg, Sweden
+  video:
+    youtube: ulTtifzOOjk
   slides: https://reproducible-builds.org/_lfs/presentations/2018-04-23-foss-north-can-your-diff-do-this.pdf
 
 - title: You think you're not a target? A tale of 3 developers…
@@ -188,6 +203,8 @@
     name: LibrePlanet 2018
     date: 2018-03-24
     location: MIT, Cambridge, United States
+  video:
+    url: https://media.libreplanet.org/u/libreplanet/m/you-think-you-re-not-a-target-a-tale-of-three-developers/
   slides: https://reproducible-builds.org/_lfs/presentations/2018-03-24-libreplanet-2018.pdf
 
 - title: You think you're not a target? A tale of 3 developers…
@@ -215,6 +232,8 @@
     name: linux.conf.au 2018
     date: 2018-01-24
     location: Sydney, Australia
+  video:
+    youtube: qWXjn3m33XI
   slides: https://reproducible-builds.org/_lfs/presentations/2018-01-24-linuxconfau-can-your-diff-do-this.pdf
 
 - title: You think you're not a target? A tale of 3 developers…
@@ -298,6 +317,7 @@
     url: https://www.ducc.it/
     name: Debian-Ubuntu Community Conference — Italia 2017
     location: Vicenza, Italy
+  slides: https://www.ducc.it/2017/programma/reproducible-builds-cosa-sono-e-perche-li-volete/slides.pdf
 
 - title: Reproducible Builds everywhere
   presented_by: Holger Levsen
@@ -313,6 +333,8 @@
     name: foss-north 2017
     date: 2017-04-26
     location: Gothenburg, Sweden
+  video:
+    youtube: tLBDSRS7Ktc
 
 - title: You too can write reproducible software
   presented_by: Ximin Luo, Vagrant Cascadian &amp; Valerie Young
@@ -357,6 +379,8 @@
     url: http://events.linuxfoundation.org/events/embedded-linux-conference
     name: Embedded Linux Conference 2017
     location: Portland, Oregon, United States
+  video:
+    youtube: vEqph5qWv0A
 
 - title: Reproducible Builds and Fedora
   presented_by: Dennis Gilmore, Holger Levsen
@@ -365,6 +389,8 @@
     name: DevConf.cz
     date: 2017-01-27
     location: Brno, Czech Republic
+  video:
+    youtube: d8oEg0p6QLE
   slides: https://reproducible-builds.org/_lfs/presentations/2017-01-27-devconf.cz-reproducible-builds+fedora.pdf
 
 - title: "Reproducible Builds: Two years in the trenches"
@@ -417,6 +443,8 @@
     name: MiniDebConf Cambridge 2016
     date: 2016-11-13
     location: Cambridge, United Kingdom
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2016/miniconf_cambridge16/reproducible_builds_status_update.webm
   slides: https://reproducible-builds.org/_lfs/presentations/2016-11-13-MiniDebConfCambridge/
 
 - title: Reproducible Builds
@@ -434,6 +462,8 @@
     name: DebConf16
     date: 2016-07-07
     location: Cape Town, South Africa
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2016/debconf16/Reproducible_Builds_status_update.webm
 
 - title: Reproducible builds ecosystem
   presented_by: Holger Levsen
@@ -442,6 +472,8 @@
     name: openSUSE Conference 2016
     date: 2016-06-23
     location: Nürnberg, Germany
+  video:
+    youtube: 65eDYwNqW-I
   slides: https://reproducible-builds.org/_lfs/presentations/2016-06-23-openSUSE-Conference-2016.pdf
 
 - title: Reproducible Builds - fulfilling the original promise of free software
@@ -451,6 +483,8 @@
     date: 2016-03-18
     name: FOSSASIA 2016
     location: Singapore
+  video:
+    youtube: dYs-wWTSVRY
 
 - title: Reproducible Builds in FreeBSD
   presented_by: Ed Maste
@@ -488,6 +522,8 @@
     name: MiniDebConfCambridge 2015
     date: 2015-11-08
     location: Cambridge, United Kingdom
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2015/mini-debconf-cambridge/webm/beyond_reproducible_builds.webm
 
 - title: Reproducible Builds status update
   presented_by: Lunar, Holger Levsen, Chris Lamb
@@ -496,6 +532,9 @@
     date: 2015-08-20
     name: DebConf15
     location: Heidelberg, Germany
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2015/debconf15/Stretching_out_for_trustworthy_reproducible_builds_creating_bit_by_bit_identical_binaries.webm
+    subtitles: https://meetings-archive.debian.net/pub/debian-meetings/2015/debconf15/subtitles/english/Stretching_out_for_trustworthy_reproducible_builds_creating_bit_by_bit_identical_binaries.en.srt
 
 - title: How to make your software build reproducibly
   presented_by: Lunar
@@ -514,6 +553,8 @@
     name: Libre Software Meeting 2015
     date: 2015-07-06
     location: Beauvais, France
+  video:
+    url: https://rmll.ubicast.tv/videos/compilations-reproductibles-dans-debian-et-partout-ailleurs/
   slides: https://reproducible-builds.org/_lfs/presentations/2015-07-06-LSM2015.pdf
 
 - title: Compilations reproductibles (French)
@@ -523,6 +564,8 @@
     date: 2015-06-19
     name: PSES 2015
     location: Paris, France
+  video:
+    url: https://static.qth.fr/PSES2015/webm/PSES2015_compilations-reproductibles.webm
   slides: https://reproducible-builds.org/_lfs/presentations/2015-06-19-PSES2015.pdf
 
 - title: Reproducible Builds, a year later
@@ -532,6 +575,8 @@
     date: 2014-08-26
     name: DebConf14
     location: Portland, Oregon, United States
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2014/debconf14/webm/Reproducible_Builds_for_Debian_a_year_later.webm
   slides: https://reproducible-builds.org/_lfs/presentations/2014-08-26-DebConf14.pdf
 
 - title: "Reproducible Builds: Moving Beyond Single Points of Failure for Software Distribution"
@@ -540,7 +585,8 @@
     url: https://events.ccc.de/congress/2014/
     name: Chaos Communication Congress 2014
     location: Hamburg, Germany
-  video: https://media.ccc.de/v/31c3_-_6240_-_en_-_saal_g_-_201412271400_-_reproducible_builds_-_mike_perry_-_seth_schoen_-_hans_steiner
+  video:
+    url: https://media.ccc.de/v/31c3_-_6240_-_en_-_saal_g_-_201412271400_-_reproducible_builds_-_mike_perry_-_seth_schoen_-_hans_steiner
   slides: https://events.ccc.de/congress/2014/Fahrplan/system/attachments/2575/original/2014CCCReproducible.pdf
 
 - title: Reproducible builds for Debian... and more?
@@ -550,6 +596,8 @@
     name: FOSDEM 2014
     date: 2014-02-01
     location: Brussels, Belgium
+  video:
+    url: http://video.fosdem.org/2014/H1302_Depage/Saturday/Reproducible_Builds_for_Debian.webm
   slides: https://reproducible-builds.org/_lfs/presentations/2014-02-01-FOSDEM14.pdf
 
 # From <https://wiki.debian.org/ReproducibleBuilds/About>, needs checking/syncing:
