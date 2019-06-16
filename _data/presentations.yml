@@ -7,7 +7,7 @@
     location: Hamburg Germany
   video:
     url: https://meetings-archive.debian.net/pub/debian-meetings/2019/miniconf-hamburg/reproducible-builds.webm
-  slides: http://layer-acht.org/slides/2019-06-08-MiniDebConf-Hamburg/
+  slides: http://layer-acht.org/slides/2019-06-08-MiniDebConf-Hamburg--aiming-for-bullseye/
 
 - title: Bitcoin Build System Security
   presented_by: Carl Dong
