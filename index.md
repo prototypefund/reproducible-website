@@ -80,14 +80,12 @@ Learn more about [how to make your software build reproducibly…]({{ "/docs" | 
 ## News
 
 <ul class="list-unstyled">
-    {% assign by_week = site.blog | sort: "week" | reverse  %}
-    {% for page in by_week limit: 2 %}
-    {% if page.published %}
+    {% assign reports = site.reports | sort: 'year, month' | where: 'draft', 'false' | reverse %}
+    {% for x in reports limit: 2 %}
     <li>
-        <span class="text-muted">{{ page.published | date: "%b %-d, %Y" }}</span>:
-        <a href="{{ "/blog/posts/" | append: page.week | append: "/" | prepend: site.baseurl }}">Reproducible Builds: Weekly report #{{ page.week }}</a>
+        <span class="text-muted">{{ x.published | date: "%b %-d, %Y" }}</span>:
+        <a href="{{ x.url | prepend: site.baseurl }}">{{ x.title }}</a>
     </li>
-    {% endif %}
     {% endfor %}
 
     {% for post in site.posts limit: 3 %}
