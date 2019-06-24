@@ -1,9 +1,11 @@
 ---
-layout: page
+layout: new/default
 title: Help fund the Reproducible Builds effort&hellip;
 order: -1
 permalink: /funding/
 ---
+
+# Help fund the Reproducible Builds effort&hellip;
 
 **The Reproducible Builds effort needs your help to continue its work towards
 ensuring the security of computer systems of all shapes and sizes around the

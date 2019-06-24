@@ -1,42 +1,27 @@
 ---
-layout: page
+layout: new/default
 title: Documentation
 permalink: /docs/
 order: 1
 ---
 
-<div class="row">
-  <div class="four columns">&nbsp;</div>
-  <div class="eight columns text">
-    <p>
-      Getting <em>reproducible builds</em> for your software might be easier than
-      you think! But it might require small changes to your build system
-      and a strategy on how to enable others to recreate an environment in which
-      the builds can be reproduced.
-    </p>
-  </div>
-</div>
+<p>
+  Getting <em>reproducible builds</em> for your software might be easier than
+  you think! But it might require small changes to your build system
+  and a strategy on how to enable others to recreate an environment in which
+  the builds can be reproduced.
+</p>
 
-<div class="row" style="margin-top: 1rem;">
-  <div class="four columns title">
-    <h2>Tips & help</h2>
-  </div>
-  <div class="eight columns text doc-index">
-    {% for section in site.data.docs %}
-    <h4>{{ section.title }}</h4>
-    {% include docs_ul.html items=section.docs %}
-    {% endfor %}
-  </div>
-</div>
+<h2>Tips & help</h2>
 
-<div class="row">
-  <div class="four columns title">
-    <h2>Specifications</h2>
-  </div>
-  <div class="eight columns text">
-    <dl>
-      <dt><a href="/specs/source-date-epoch/"><tt>SOURCE_DATE_EPOCH</tt></a></dt>
-      <dd>Distribution-agnostic standard to provide a pre-defined timestamp to build systems</dd>
-    </dl>
-  </div>
-</div>
+{% for section in site.data.docs %}
+<h4>{{ section.title }}</h4>
+{% include docs_ul.html items=section.docs %}
+{% endfor %}
+
+<h2>Specifications</h2>
+
+<dl>
+  <dt><a href="/specs/source-date-epoch/"><tt>SOURCE_DATE_EPOCH</tt></a></dt>
+  <dd>Distribution-agnostic standard to provide a pre-defined timestamp to build systems</dd>
+</dl>
