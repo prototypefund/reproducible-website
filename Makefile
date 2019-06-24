@@ -12,3 +12,6 @@ lint:
 			echo "W: $$Y is using legacy layout '$$X'"; \
 		done \
 	done
+	@grep -rl "href=[\"']/" . | while read X; do \
+		echo "W: $$X is using URIs that are not using '{{ \"/foo\" | prepend: site.baseurl }}'"; \
+	done
