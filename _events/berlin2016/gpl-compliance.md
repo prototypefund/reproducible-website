@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: GPL compliance
 event: berlin2016
 order: 230

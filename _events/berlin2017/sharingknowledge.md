@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Sharing knowledge about reproducible builds
 event: berlin2017
 order: 15

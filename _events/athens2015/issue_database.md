@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Shared database of issues
 event: athens2015
 order: 90

@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Use cases
 event: berlin2016
 order: 220

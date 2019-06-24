@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Embedded / Coreboot
 event: berlin2016
 order: 70

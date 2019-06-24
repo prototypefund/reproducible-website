@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Agenda Brainstorming
 event: berlin2016
 order: 20

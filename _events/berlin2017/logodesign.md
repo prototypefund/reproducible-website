@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Brainstorming the reproducible builds logo design
 event: berlin2017
 order: 300

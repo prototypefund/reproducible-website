@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Reproducible images
 event: berlin2016
 order: 110

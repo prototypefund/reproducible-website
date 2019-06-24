@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Review of Debian .buildinfo file
 event: athens2015
 order: 130

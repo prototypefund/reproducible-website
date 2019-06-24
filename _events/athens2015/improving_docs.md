@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Improving the documentation
 event: athens2015
 order: 50

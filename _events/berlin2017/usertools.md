@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: End user tools - Which exist, which are still needed
 event: berlin2017
 order: 60

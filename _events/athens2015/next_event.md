@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Next Reproducible Builds event
 event: athens2015
 order: 160

@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Discussing the current status of .buildinfo files
 event: berlin2017
 order: 40

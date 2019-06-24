@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Binary Transparency II
 event: berlin2016
 order: 280

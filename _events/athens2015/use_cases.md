@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Use cases for reproducible builds
 event: athens2015
 order: 100

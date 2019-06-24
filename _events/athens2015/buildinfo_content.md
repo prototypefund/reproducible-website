@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: What should be in a build info file?
 event: athens2015
 order: 170

@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: diffoscope wishlist
 event: athens2015
 order: 80

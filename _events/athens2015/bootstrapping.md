@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Distribution/compiler bootstrapping
 event: athens2015
 order: 30

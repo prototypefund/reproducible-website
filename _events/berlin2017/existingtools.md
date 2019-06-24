@@ -1,5 +1,5 @@
 ---
-layout: event_detail
+layout: new/event_detail
 title: Reviewing existing reproducible builds tools
 event: berlin2017
 order: 30
