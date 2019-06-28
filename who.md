@@ -8,7 +8,7 @@ order: 5
 # Who is involved?
 
 Various free software projects are working on providing reproducible builds to
-their users and developers via the not-for-profit Reprodubible Builds project.
+their users and developers via the not-for-profit Reproducible Builds project.
 
 ## Core team
 
