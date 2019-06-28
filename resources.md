@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Talks & Resources
+title: Talks
 permalink: /resources/
-order: 2
+order: 3
 ---
 
 # Talks & Resources

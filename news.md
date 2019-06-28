@@ -2,7 +2,7 @@
 layout: default
 title: News
 permalink: /news/
-order: 8
+order: 1
 ---
 
 # News
