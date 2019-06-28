@@ -7,17 +7,31 @@ order: 8
 
 # News
 
-{% for post in site.posts %}
+<br>
 
-## [{{ post.title }}]({{ post.url | prepend: site.baseurl }})
+<ul class="list-unstyled">
+    {% for post in site.posts limit: 4 %}
+    <li>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <small class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</small>
+    </li>
+    {% endfor %}
+</ul>
 
-<span class="text-muted">
-{{ post.date | date: "%b %-d, %Y" }}
-</span>
+## Reports
 
-{{ post.excerpt }}
+Every month we publish a report on what we have been up to. ([RSS/Atom feed]({{ "/blog/index.rss" | prepend: site.baseurl }}))
 
-<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-outline-primary">
-    Read more…
-</a>
+{% assign reports = site.reports | sort: 'year, month' | where: 'draft', 'false' | reverse %}
+{% for x in reports %}
+* [{{ x.title }}]({{ x.url | prepend: site.baseurl }})
+{% endfor %}
+
+## Weekly reports
+
+We previously published weekly reports on what we have been up to:
+
+{% assign posts = site.blog | sort: 'published' | reverse %}
+{% for x in posts %}
+* [Week {{ x.week }}]({{ x.url | prepend: site.baseurl }})
 {% endfor %}
