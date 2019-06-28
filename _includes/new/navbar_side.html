@@ -4,7 +4,7 @@
     {% for page in sorted_pages %}
     {% if page.title and page.order >= 0 %}
     <li class="list-group-item rb-main-sidebar">
-      <a href="{{ page.url | prepend: site.baseurl }}" class="sidebar__link__darkGray">{{ page.title }}</a>
+      <a href="{{ page.url | prepend: site.baseurl }}" class="sidebar__link__darkGray {% if page.url == "/" %}never-active{% endif %}">{{ page.title }}</a>
     </li>
     {% endif %}
     {% endfor %}

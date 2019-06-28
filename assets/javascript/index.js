@@ -18,9 +18,9 @@
 $(document).ready(function () {
 	var listItems = $('.rb-main-sidebar');
 	$.each(listItems, function (key, litem) {
-			var aElement = $(this).children(litem)[0];
+			var aElement = $(this).children(litem).not('.never-active')[0];
 
-			if(aElement.href == document.URL.split('#')[0]) {
+			if(aElement && document.URL.split('#')[0].indexOf(aElement.href) === 0) {
 					$(litem).addClass('active');
 			}
 	});
