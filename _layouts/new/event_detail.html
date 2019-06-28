@@ -2,10 +2,91 @@
 layout: new/default
 ---
 
-{% include event_contents.html %}
+{% for site_page in site.events %}
+  {% assign event_name = site_page.url | split: "/" | last %}
+  {% if event_name == page.event %}
+    {% assign event_page = site_page %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% assign sorted_events = site.events | sort: 'order' %}
+<div class="hide-on-mobiles">
+  <aside>
+    <h4><a href="{{ event_page.url | prepend: site.baseurl }}">{{ event_page.title }}</a></h4>
+    <p>{{ event_page.event_date_string }}</p>
+    <ul>
+      {% for site_page in sorted_events %}
+        {% if site_page.order %}
+          {% assign dirs = site_page.url | split: "/" %}
+          {% if dirs[2] == event_name %}
+            {% if site_page.url == page.url %}
+              {% assign c = "current" %}
+            {% else %}
+              {% assign c = "" %}
+            {% endif %}
+            <li class="{{ c }}"><a href="{{ site_page.url | prepend: site.baseurl }}">{{ site_page.title }}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+</div>
+<div class="show-on-mobiles">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Navigate…</option>
+    <optgroup label="{{ event_page.title }}">
+      {% for site_page in sorted_events %}
+        {% if site_page.order %}
+          {% assign dirs = site_page.url | split: "/" %}
+          {% if dirs[2] == event_name %}
+            <option value="{{ site_page.url | prepend: site.baseurl }}">{{ site_page.title }}</option>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </optgroup>
+  </select>
+</div>
 
 <h1>{{ page.title }}</h1>
 
 {{ content }}
 
-{% include section_nav.html %}
+{% comment %}
+Map grabs the doc sections, giving us an array of arrays. Join, flattens all
+the items to a comma delimited string. Split turns it into an array again.
+{% endcomment %}
+{% assign docs = site.data.docs | map: 'docs' | join: ',' | split: ',' %}
+
+{% comment %}
+Because this is built for every page, lets find where we are in the ordered
+document list by comparing url strings. Then if there's something previous or
+next, lets build a link to it.
+{% endcomment %}
+
+{% for document in docs %}
+  {% assign document_url = document | prepend:"/docs/" | append:"/" %}
+  {% if document_url == page.url %}
+    <div class="section-nav">
+      <div>
+          {% if forloop.first %}
+            <span class="button prev disabled">Back</span>
+          {% else %}
+            {% assign previous = forloop.index0 | minus: 1 %}
+            {% assign previous_page = docs[previous] | prepend:"/docs/" | append:"/" %}
+            <a href="{{ previous_page | prepend:site.baseurl }}" class="button prev">Back</a>
+          {% endif %}
+      </div>
+      <div>
+          {% if forloop.last %}
+            <span class="button next disabled">Next</span>
+          {% else %}
+            {% assign next = forloop.index0 | plus: 1 %}
+            {% assign next_page = docs[next] | prepend:"/docs/" | append:"/" %}
+            <a href="{{ next_page | prepend:site.baseurl }}" class="button button-primary next">Next</a>
+          {% endif %}
+      </div>
+    </div>
+    <div class="clear"></div>
+    {% break %}
+  {% endif %}
+{% endfor %}
