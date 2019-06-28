@@ -7,19 +7,25 @@ order: 5
 
 # Who is involved?
 
-Various free software projects are working on providing reproducible builds to
-their users and developers via the not-for-profit Reproducible Builds project.
+Various free software projects are working on providing reproducible builds to their users and developers via the not-for-profit Reproducible Builds project.
+{: .lead}
 
-## Core team
+<div class="row">
+<div class="col-md-6" markdown="1">
 
-* [Chris Lamb](https://chris-lamb.co.uk) (*lamby*)
-* [Holger Levsen](http://layer-acht.org/thinking/) (*h01ger*)
-* [Mattia Rizzolo](https://mapreri.org/) (*mapreri*)
-* [Vagrant Cascadian](http://cascadia.debian.net/trenza/Journal/) (*vagrantc*)
+### Core team
 
-[Contact us!](mailto:contact@reproducible-builds.org)
+* [Chris Lamb](https://chris-lamb.co.uk) (`lamby`)
+* [Holger Levsen](http://layer-acht.org/thinking/) (`h01ger`)
+* [Mattia Rizzolo](https://mapreri.org/) (`mapreri`)
+* [Vagrant Cascadian](http://cascadia.debian.net/trenza/Journal/) (`vagrantc`)
 
-## Steering Committee
+[`contact@reproducible-builds.org`](mailto:contact@reproducible-builds.org)
+
+</div>
+<div class="col-md-6" markdown="1">
+
+### Steering Committee
 
 * [Allen Gunn](https://aspirationtech.org)
 * [Bdale Garbee](http://gag.com/bdale/)
@@ -28,9 +34,19 @@ their users and developers via the not-for-profit Reproducible Builds project.
 * [Mattia Rizzolo](https://mapreri.org/)
 * [Stefano Zacchiroli](https://upsilon.cc/)
 
+</div>
+</div>
+
 ## Sponsors
 
-If you are interested in the work of the Reproducible Builds project, please consider helping the Project by [making a fiscal donation]({{"/donate/" | prepend: site.baseurl }})!
+If you are interested in the work of the Reproducible Builds project, please consider [becoming a sponsor]({{"/sponsor/" | prepend: site.baseurl }}).
+{: .lead}
+
+[![Software Freedom Conservancy]({{ "/assets/images/who/conservancy.png#right" | prepend: site.baseurl }})](https://sfconservancy.org/)
+
+The Reproducible Builds project is a member of the [Software Freedom Conservancy]((https://sfconservancy.org/)), a [501(c)3](https://en.wikipedia.org/wiki/501(c)(3)_organization) non-profit organisation. The Conservancy has allowed us to pool organisational resources with other projects, such as Selenium, Inkscape, Samba, and Wine, in order to reduce the management overhead associated with creating our own, dedicated legal entity.
+
+The majority of sponsorship funds go directly towards supporting the Reproducible Builds project, such as development and server expenses. A small portion of the funds are set aside for the Conservancy to continue their work in supporting Reproducible Builds and other open source initiatives.
 
 <div class="row bg-light p-md-4 p-sm-2 pt-5 pb-5">
     {% for x in site.data.sponsors %}
@@ -46,11 +62,6 @@ If you are interested in the work of the Reproducible Builds project, please con
 
 <br>
 
-Fiscal sponsor:
-
-[![Software Freedom Conservancy]({{ "/assets/images/who/conservancy.png" | prepend: site.baseurl }})](https://sfconservancy.org/)
-
-Previous sponsors: [Core Infrastructure Initiative](https://www.coreinfrastructure.org/).
 
 ## Projects
 

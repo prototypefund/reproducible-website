@@ -309,4 +309,4 @@ script for more generic, Debian use cases
 
 Another way to help is to financially support our project. We welcome any
 kind of donation, of any size. Please see our
-[donation page]({{ "/donate/" | prepend: site.baseurl }}) for more information.
+[donation page]({{ "/sponsor/" | prepend: site.baseurl }}) for more information.
