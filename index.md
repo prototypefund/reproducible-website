@@ -5,7 +5,7 @@ title_head: Reproducible Builds &mdash; a set of software development practices 
 order: 0
 ---
 
-<div class="text-center mt-md-5">
+<div class="text-center mt-md-5 mb-4">
     <a href="{{ "/" | prepend: site.baseurl }}">
         <img class="img-fluid" src="{{ "/assets/images/logo-text.svg" | prepend: site.baseurl }}" alt="Reproducible Builds" style="height: 150px;" />
     </a>

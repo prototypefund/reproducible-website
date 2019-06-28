@@ -4,12 +4,14 @@
   <body>
     {% include navbar.html %}
 
-    <div class="row" style="height: 100%">
-      <main role="main" class="content-scroll p-5">
-        {{ content }}
+    <div class="container">
+      <div class="row" style="height: 100%">
+        <main role="main" class="content-scroll p-3 p-md-5">
+          {{ content }}
 
-        {% include footer.html %}
-      </main>
+          {% include footer.html %}
+        </main>
+        </div>
       </div>
     </div>
 
