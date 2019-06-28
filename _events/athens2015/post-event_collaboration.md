@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: Post-event collaboration
 event: athens2015
 order: 120

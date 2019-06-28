@@ -1,5 +1,5 @@
 ---
-layout: new/post
+layout: post
 title:  "A new homepage"
 date:   2015-10-16 14:06:41
 categories: org

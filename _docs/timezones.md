@@ -1,6 +1,6 @@
 ---
 title: Timezones
-layout: new/docs
+layout: docs
 permalink: /docs/timezones/
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: Design an ideal reproducibility testing tool
 event: athens2015
 order: 190

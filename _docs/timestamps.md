@@ -1,6 +1,6 @@
 ---
 title: Timestamps
-layout: new/docs
+layout: docs
 permalink: /docs/timestamps/
 ---
 

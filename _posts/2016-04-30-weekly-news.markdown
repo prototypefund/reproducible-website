@@ -1,5 +1,5 @@
 ---
-layout: new/post
+layout: post
 title:  "Reproducible weekly news"
 date:   2016-04-30 09:23:42
 categories: org

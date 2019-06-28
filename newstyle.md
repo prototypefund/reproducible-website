@@ -1,6 +1,6 @@
 ---
 title: Test
-layout: new/default
+layout: default
 ---
 
 # h1 Heading 8-)

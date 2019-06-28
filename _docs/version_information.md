@@ -1,6 +1,6 @@
 ---
 title: Version information
-layout: new/docs
+layout: docs
 permalink: /docs/version-information/
 ---
 

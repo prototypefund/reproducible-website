@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: Challenges with signed software
 event: athens2015
 order: 200

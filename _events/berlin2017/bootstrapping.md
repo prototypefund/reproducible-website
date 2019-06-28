@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: How bootstrapping relates to reproducible builds and how to improve it
 event: berlin2017
 order: 80

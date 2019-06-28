@@ -1,6 +1,6 @@
 ---
 title: JVM
-layout: new/docs
+layout: docs
 permalink: /docs/jvm/
 ---
 

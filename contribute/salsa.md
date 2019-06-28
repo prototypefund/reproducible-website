@@ -1,5 +1,5 @@
 ---
-layout: new/default
+layout: default
 title: How to join the Salsa group
 permalink: /contribute/salsa/
 order: -1

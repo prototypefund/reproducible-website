@@ -1,5 +1,5 @@
 ---
-layout: new/default
+layout: default
 title:  Who is involved?
 permalink: /who/
 order: 7

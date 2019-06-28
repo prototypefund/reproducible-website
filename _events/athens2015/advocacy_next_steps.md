@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: "Advocacy: next steps"
 event: athens2015
 order: 140

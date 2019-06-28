@@ -1,6 +1,6 @@
 ---
 title: Randomness
-layout: new/docs
+layout: docs
 permalink: /docs/randomness/
 ---
 

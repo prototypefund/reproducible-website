@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: Improving the Glasgow Haskell Compiler
 event: athens2015
 order: 70

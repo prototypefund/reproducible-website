@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: Controlling the build environment
 event: athens2015
 order: 20

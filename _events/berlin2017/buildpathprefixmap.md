@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: How to fix the current issues with BUILD_PATH_PREFIX_MAP?
 event: berlin2017
 order: 70

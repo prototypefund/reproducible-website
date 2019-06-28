@@ -1,5 +1,5 @@
 ---
-layout: new/default
+layout: default
 title: Help the Reproducible Builds effort!
 permalink: /donate/
 ---

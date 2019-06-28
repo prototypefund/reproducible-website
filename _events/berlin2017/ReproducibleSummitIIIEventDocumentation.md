@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: Reproducible Summit III event documentation
 event: berlin2017
 order: 05

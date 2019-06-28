@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: Agenda brainstorming
 event: berlin2017
 order: 20

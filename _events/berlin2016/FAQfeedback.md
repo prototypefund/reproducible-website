@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: FAQ Feedback
 event: berlin2016
 order: 195

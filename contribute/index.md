@@ -1,5 +1,5 @@
 ---
-layout: new/default
+layout: default
 title: Contribute
 permalink: /contribute/
 order: 5

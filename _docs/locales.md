@@ -1,6 +1,6 @@
 ---
 title: Locales
-layout: new/docs
+layout: docs
 permalink: /docs/locales/
 ---
 

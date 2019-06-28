@@ -1,5 +1,5 @@
 ---
-layout: new/default
+layout: default
 title: Events
 permalink: /events/
 order: 4

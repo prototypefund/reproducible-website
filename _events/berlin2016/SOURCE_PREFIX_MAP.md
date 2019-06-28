@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: SOURCE_PREFIX_MAP
 event: berlin2016
 order: 180

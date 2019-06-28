@@ -1,5 +1,5 @@
 ---
-layout: new/post
+layout: post
 title:  "Reproducible Builds Berlin meeting"
 date:   2016-12-13 09:23:42
 categories: org

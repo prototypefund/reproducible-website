@@ -1,6 +1,6 @@
 ---
 title: Buy-in
-layout: new/docs
+layout: docs
 permalink: /docs/buy-in/
 ---
 

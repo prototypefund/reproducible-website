@@ -1,5 +1,5 @@
 ---
-layout: new/default
+layout: default
 title: News
 permalink: /news/
 order: 8

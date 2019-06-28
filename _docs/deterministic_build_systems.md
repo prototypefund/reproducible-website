@@ -1,6 +1,6 @@
 ---
 title: Deterministic build systems
-layout: new/docs
+layout: docs
 permalink: /docs/deterministic-build-systems/
 ---
 

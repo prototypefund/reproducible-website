@@ -1,5 +1,5 @@
 ---
-layout: new/post
+layout: post
 title: "Reproducing R packages"
 date: 2017-05-03 12:37:58
 ---

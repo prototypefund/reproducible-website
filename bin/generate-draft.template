@@ -1,5 +1,5 @@
 ---
-layout: new/report
+layout: report
 year: "{{ title_year }}"
 month: "{{ title_month }}"
 title: "{{ title }}"

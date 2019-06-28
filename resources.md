@@ -1,5 +1,5 @@
 ---
-layout: new/default
+layout: default
 title: Talks & Resources
 permalink: /resources/
 order: 2

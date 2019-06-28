@@ -1,6 +1,6 @@
 ---
 title: Definition strategies
-layout: new/docs
+layout: docs
 permalink: /docs/definition-strategies/
 ---
 

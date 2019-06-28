@@ -1,6 +1,6 @@
 ---
 title: SOURCE_DATE_EPOCH
-layout: new/docs
+layout: docs
 permalink: /docs/source-date-epoch/
 ---
 

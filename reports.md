@@ -1,5 +1,5 @@
 ---
-layout: new/default
+layout: default
 title: Reports
 permalink: /reports/
 order: 6

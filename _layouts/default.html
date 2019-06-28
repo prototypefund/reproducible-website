@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  {% include new/head.html %}
+  {% include head.html %}
   <body>
-    {% include new/navbar.html %}
+    {% include navbar.html %}
 
     <div class="row" style="height: 100%">
       <div class="col-md-2 col-sm-3 d-none d-sm-block p-0">
-        {% include new/navbar_side.html sidebarClassName="rb-sidebar__1" %}
+        {% include navbar_side.html sidebarClassName="rb-sidebar__1" %}
       </div>
       <div class="col-md-10 col-xs-12 col-sm-9 p-0">
         <main role="main" class="content-scroll p-5" data-spy="scroll" data-target="#components-nav" data-offset="0">
           {{ content }}
 
-          {% include new/footer.html %}
+          {% include footer.html %}
         </main>
       </div>
     </div>
 
-    {% include new/scripts.html %}
+    {% include scripts.html %}
   </body>
 </html>

@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: Communicating reproducible builds to users
 event: athens2015
 order: 110

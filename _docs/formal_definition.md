@@ -1,6 +1,6 @@
 ---
 title: Formal definition
-layout: new/docs
+layout: docs
 permalink: /docs/formal-definition/
 ---
 

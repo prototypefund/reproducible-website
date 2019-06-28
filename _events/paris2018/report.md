@@ -1,5 +1,5 @@
 ---
-layout: new/default
+layout: default
 title: Paris 2018 report
 permalink: /events/paris2018/report/
 ---

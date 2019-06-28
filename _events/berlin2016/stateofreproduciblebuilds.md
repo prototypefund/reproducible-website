@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: State of Reproducible Builds
 event: berlin2016
 order: 290

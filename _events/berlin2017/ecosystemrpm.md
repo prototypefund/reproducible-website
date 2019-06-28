@@ -1,5 +1,5 @@
 ---
-layout: new/event_detail
+layout: event_detail
 title: What is the ecosystem around rpm?
 event: berlin2017
 order: 50

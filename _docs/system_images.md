@@ -1,6 +1,6 @@
 ---
 title: System images
-layout: new/docs
+layout: docs
 permalink: /docs/system-images/
 ---
 

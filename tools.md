@@ -1,5 +1,5 @@
 ---
-layout: new/default
+layout: default
 title: Tools
 permalink: /tools/
 order: 3

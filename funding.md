@@ -1,5 +1,5 @@
 ---
-layout: new/default
+layout: default
 title: Help fund the Reproducible Builds effort&hellip;
 order: -1
 permalink: /funding/
