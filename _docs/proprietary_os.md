@@ -1,6 +1,6 @@
 ---
 title: Proprietary operating systems
-layout: docs
+layout: new/docs
 permalink: /docs/proprietary-os/
 ---
 

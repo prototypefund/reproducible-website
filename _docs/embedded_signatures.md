@@ -1,6 +1,6 @@
 ---
 title: Embedded signatures
-layout: docs
+layout: new/docs
 permalink: /docs/embedded-signatures/
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: What's in a build environment?
-layout: docs
+layout: new/docs
 permalink: /docs/perimeter/
 ---
 

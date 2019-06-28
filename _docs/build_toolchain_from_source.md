@@ -1,6 +1,6 @@
 ---
 title: Building from source
-layout: docs
+layout: new/docs
 permalink: /docs/build-toolchain-from-source/
 ---
 

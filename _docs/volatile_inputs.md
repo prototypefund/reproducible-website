@@ -1,6 +1,6 @@
 ---
 title: Volatile inputs can disappear
-layout: docs
+layout: new/docs
 permalink: /docs/volatile-inputs/
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Recording the build environment
-layout: docs
+layout: new/docs
 permalink: /docs/recording/
 ---
 

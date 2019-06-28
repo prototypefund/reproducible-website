@@ -1,6 +1,6 @@
 ---
 title: Build path
-layout: docs
+layout: new/docs
 permalink: /docs/build-path/
 ---
 

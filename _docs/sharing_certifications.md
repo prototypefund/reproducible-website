@@ -1,6 +1,6 @@
 ---
 title: Sharing certifications
-layout: docs
+layout: new/docs
 permalink: /docs/sharing-certifications/
 ---
 

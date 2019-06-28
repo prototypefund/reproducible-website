@@ -1,6 +1,6 @@
 ---
 title: Archive metadata
-layout: docs
+layout: new/docs
 permalink: /docs/archives/
 ---
 

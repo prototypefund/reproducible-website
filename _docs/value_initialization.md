@@ -1,6 +1,6 @@
 ---
 title: Value initialization
-layout: docs
+layout: new/docs
 permalink: /docs/value-initialization/
 ---
 

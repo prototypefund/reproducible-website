@@ -1,6 +1,6 @@
 ---
 title: Virtual machine drivers
-layout: docs
+layout: new/docs
 permalink: /docs/virtual-machine-drivers/
 ---
 

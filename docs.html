@@ -1,27 +1,13 @@
 ---
-layout: new/default
+layout: new/docs
 title: Documentation
 permalink: /docs/
 order: 1
 ---
 
-<p>
+<p class="p-lg-4">
   Getting <em>reproducible builds</em> for your software might be easier than
   you think! But it might require small changes to your build system
   and a strategy on how to enable others to recreate an environment in which
   the builds can be reproduced.
 </p>
-
-<h2>Tips & help</h2>
-
-{% for section in site.data.docs %}
-<h4>{{ section.title }}</h4>
-{% include docs_ul.html items=section.docs %}
-{% endfor %}
-
-<h2>Specifications</h2>
-
-<dl>
-  <dt><a href="/specs/source-date-epoch/"><tt>SOURCE_DATE_EPOCH</tt></a></dt>
-  <dd>Distribution-agnostic standard to provide a pre-defined timestamp to build systems</dd>
-</dl>

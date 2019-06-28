@@ -1,6 +1,6 @@
 ---
 title: Cryptographic checksums
-layout: docs
+layout: new/docs
 permalink: /docs/checksums/
 ---
 

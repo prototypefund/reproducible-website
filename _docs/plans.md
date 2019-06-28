@@ -1,6 +1,6 @@
 ---
 title: Making plans
-layout: docs
+layout: new/docs
 permalink: /docs/plans/
 ---
 

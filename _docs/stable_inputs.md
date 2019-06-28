@@ -1,6 +1,6 @@
 ---
 title: Stable order for inputs
-layout: docs
+layout: new/docs
 permalink: /docs/stable-inputs/
 ---
 

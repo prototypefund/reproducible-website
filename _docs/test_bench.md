@@ -1,6 +1,6 @@
 ---
 title: Test bench
-layout: docs
+layout: new/docs
 permalink: /docs/test-bench/
 ---
 

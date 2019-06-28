@@ -1,0 +1,59 @@
+---
+layout: new/default
+---
+
+{% assign index_url = "/docs/" | prepend: site.baseurl %}
+
+{% if page.url != index_url %}
+<p class="d-lg-none">&larr; <a href="{{ index_url }}">Documentation index</a></p>
+{% endif %}
+
+<div class="row">
+  <div class="col-lg-9">
+    <h1 class="mb-4">{{ page.title }}</h1>
+
+    {{ content }}
+
+    {% if page.url != index_url %}
+      <hr class="my-5">
+
+      <p class="d-none">&larr; <a href="{{ index_url }}">Documentation index</a></p>
+    {% endif %}
+  </div>
+
+  <div class="col-lg-3">
+    {% if page.url != index_url %}
+    <p class="mt-5 d-lg-block"><a href="{{ index_url }}">Documentation home</a></p>
+    {% endif %}
+
+    {% for section in site.data.docs %}
+    <h5>{{ section.title }}</h5>
+
+    <ul class="list-unstyled">
+    {% for item in section.docs %}
+      {% assign item_url = item | prepend: "/docs/" | append:"/" %}
+
+      {% for p in site.docs %}
+        {% if p.url == item_url %}
+        <li>
+          {% if page.url == item_url %}
+          <strong>{{ p.title }}</strong>
+          {% else %}
+          <a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+          {% endif %}
+        </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    </ul>
+    {% endfor %}
+
+    <h5>Specifications</h5>
+
+    <ul class="list-unstyled">
+      <li>
+        <a href="/specs/source-date-epoch/"><tt>SOURCE_DATE_EPOCH</tt></a>
+      </li>
+    </ul>
+  </div>
+</div>

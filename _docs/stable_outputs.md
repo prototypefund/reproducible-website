@@ -1,6 +1,6 @@
 ---
 title: Stable order for outputs
-layout: docs
+layout: new/docs
 permalink: /docs/stable-outputs/
 ---
 
