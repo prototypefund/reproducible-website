@@ -9,18 +9,17 @@ permalink: /sponsor/
 The not-for-profit Reproducible Builds effort needs your help to continue its work towards ensuring the security of computer systems of all shapes and sizes around the world. We use any and all donated funds to ensure focused and intense work on ensuring this mission.
 {: .lead .pb-3}
 
-[![Software Freedom Conservancy]({{ "/assets/images/donate/conservancy.png#left" | prepend: site.baseurl }})](https://sfconservancy.org/)
+[![Software Freedom Conservancy]({{ "/assets/images/sponsor/conservancy.png#left" | prepend: site.baseurl }})](https://sfconservancy.org/)
 
-The Reproducible Builds project is a member of the [Software Freedom Conservancy]((https://sfconservancy.org/)), a 501(c)3 non-profit organisation. The Conservancy has allowed us to pool organisational resources with other projects, such as Selenium, Inkscape, Samba and Wine in order to reduce the management overhead associated with creating our own, dedicated legal entity.
+The Reproducible Builds project is a member of the [Software Freedom Conservancy]((https://sfconservancy.org/)), a 501(c)3 non-profit organisation. The Conservancy has allowed us to pool organisational resources with other projects such as Selenium, Inkscape, Samba and Wine in order to reduce the management overhead associated with creating our own, dedicated legal entity.
 
 ### Benefits of sponsorship
 
-* You (or your company) are contributing to an renowned & respected free/open source project.
+* You (or your company) are contributing to an renowned and respected free/open source project.
 * Community consciousness of your company (and its promotion of Reproducible Builds) will be increased in the minds of the wider community.
 * For corporate donations that equal or are more than the Platinum level, your logo will be placed on our site for one year.
-* For each six months of non-sponsorship, your logo will be moved to the next lowest sponsorship level. If your logo is in the Bronze level when this happens it will be removed.
-* People find out about Reproducible Builds first from our website; having a link from our website therefore will associate you and/or your company as a supporter of the Reproducible Builds project that our users love.
-* Contributions are tax-deductible.
+* People find out about Reproducible Builds first from our website; having a link from our website therefore will associate you and/or your company as a supporter of the well-known and respected Reproducible Builds project.
+* Contributions are tax-deductible to the extent permitted by law.
 
 Please see our list of [current sponsors]({{ "/who/" | prepend: site.baseurl }}).
 
@@ -45,6 +44,10 @@ Below are the names and amounts associated with levels of sponsorship (all value
 
 The Reproducible Builds project will naturally consider non-monetary donations to the project such as hardware or hosting where we will set a sponsorship level appropriately. (Please note that non-monetary donations may not be tax-deductible; to confirm, you should seek the advice of a qualified tax professional. In general, we suggest cash donations, as that process is much simpler.)
 
+## Contact
+
+Please contact us ([info@reproducible-builds.org](mailto:info@reproducible-builds.org)) for more information. Thank you for your consideration and we thank you in advance for your support.
+
 ## Paypal
 
 The easiest way to individually donate to the project is through [PayPal](https://www.paypal.com). You can use this button to donate to us:
@@ -52,7 +55,7 @@ The easiest way to individually donate to the project is through [PayPal](https:
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <input type="hidden" name="cmd" value="_s-xclick">
   <input type="hidden" name="hosted_button_id" value="9QA63APRU4TNE">
-  <input type="image" src="{{ "/assets/images/donate/paypal_donate.gif" | prepend: site.baseurl }}" border="0" name="submit" alt="Donate to Reproducible Builds via PayPal">
+  <input type="image" src="{{ "/assets/images/sponsor/paypal_donate.gif" | prepend: site.baseurl }}" border="0" name="submit" alt="Donate to Reproducible Builds via PayPal">
 </form>
 
 ## Other methods
@@ -71,10 +74,3 @@ should then be mailed to:
 Conservancy also accepts <a href="https://sfconservancy.org/donate/">other
 methods to receive donations</a>, including US cheques and wire transfers.
 If you are interested please get in touch with us!
-
-## Contact
-
-Please do not hesitate to contact us
-([info@reproducible-builds.org](mailto:info@reproducible-builds.org)) for more
-information. Thank you for your consideration and we thank you in advance for
-your support.
