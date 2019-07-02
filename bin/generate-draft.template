@@ -6,7 +6,7 @@ title: "Reproducible Builds in {{ month_year }}"
 draft: true
 ---
 
-**Welcome to the {{ month_year }} report from the [Reproducible Builds](https://reproducible-builds.org) project!** In our reports we outline the most important things which have been up to in and around the world of reproducible builds & secure toolchains over the past month.
+**Welcome to the {{ month_year }} report from the [Reproducible Builds](https://reproducible-builds.org) project!** In our reports we outline the most important things which we have been up to in and around the world of reproducible builds & secure toolchains over the past month.
 
 As a quick recap, whilst anyone can inspect the source code of free software for malicious flaws, almost all software is distributed to end users pre-compiled. The motivation behind reproducible builds effort is to ensure no flaws have been introduced during this compilation process by promising identical results are always generated from a given source, thus allowing multiple third-parties to come to a consensus on whether a build was compromised.
 
