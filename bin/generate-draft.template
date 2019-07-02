@@ -19,19 +19,27 @@ In this month's report, we will cover:
 * **Misc news** — *From our mailing list, etc.*
 * **Getting in touch** — *How to contribute, etc*
 
+If you are interested in contributing to our project, please visit our [*Contribute*](https://reproducible-builds.org/contribute/) page on our website.
+
 ---
 
 ## Media coverage
 
 * FIXME
 
+---
+
 ## Upstream news
 
-* {{ packages_stats['added'] }} reviews of Debian packages were added, {{ packages_stats['updated'] }} were updated and {{ packages_stats['removed'] }} were removed this month, adding to [our knowledge about identified issues](https://tests.reproducible-builds.org/debian/index_issues.html). FIXME issue types have been updated: {% for _, xs in issues_yml.items()|sort %}{% for x in xs %}[{{ x['title'] }}](https://salsa.debian.org/reproducible-builds/reproducible-notes/commit/{{ x['sha'] }}), {% endfor %}{% endfor %}
+* FIXME
+
+---
 
 ### Distribution work
 
 In Debian, ...
+
+* {{ packages_stats['added'] }} reviews of Debian packages were added, {{ packages_stats['updated'] }} were updated and {{ packages_stats['removed'] }} were removed this month, adding to [our knowledge about identified issues](https://tests.reproducible-builds.org/debian/index_issues.html). FIXME issue types have been updated: {% for _, xs in issues_yml.items()|sort %}{% for x in xs %}[{{ x['title'] }}](https://salsa.debian.org/reproducible-builds/reproducible-notes/commit/{{ x['sha'] }}), {% endfor %}{% endfor %}
 
 ---
 
@@ -50,7 +58,7 @@ In addition, build failure bugs were reported by:
 * {{ k }} ({{ v|length }}){% endfor %}{% endif %}
 
 {% for project in projects %}
-### {{ project }}
+#### {{ project }}
 {% for x in uploads[project] %}
 {{ project }} version `{{ x['version'] }}` was [uploaded to Debian {{ x['distribution'] }}](https://tracker.debian.org/pkg/{{ project }}?FIXME) by {{ x['signed_by_name'] }}. It [included contributions already covered in previous months](https://salsa.debian.org/reproducible-builds/{{ project }}/commits/{% if project != 'diffoscope' %}debian/{% endif %}{{ x['version'] }}) as well as new ones from:
 
@@ -62,21 +70,19 @@ In addition, build failure bugs were reported by:
 
 ---
 
-## **Misc news** — *From our mailing list, etc.*
+## Misc news
 
 * On [our mailing list](https://lists.reproducible-builds.org/pipermail/rb-general/) this month: FIXME
 
 ---
 
-## Getting in touch
-
-If you are interested in contributing the Reproducible Builds project, please visit our [Contribute](https://reproducible-builds.org/contribute/) page on our website. However, you can get in touch with us via:
-
- * Mailing list: [`rb-general`](https://lists.reproducible-builds.org/listinfo/rb-general)
+If you are interested in contributing the Reproducible Builds project, please visit our [*Contribute*](https://reproducible-builds.org/contribute/) page on our website. However, you can get in touch with us via:
 
  * IRC: `#reproducible-builds` on `irc.oftc.net`.
 
  * Twitter: [@ReproBuilds](https://twitter.com/ReproBuilds)
+
+ * Mailing list: [`rb-general@lists.reproducible-builds.org`](https://lists.reproducible-builds.org/listinfo/rb-general)
 
 <br>
 
