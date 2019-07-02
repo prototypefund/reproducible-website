@@ -102,7 +102,7 @@ def get_data(year, month, max_age=3600):
 
     data.update({
         'projects': PROJECTS,
-        'title': month_start.strftime('Reproducible Builds in %B %Y'),
+        'month_year': month_start.strftime('%B %Y'),
         'title_year': '{:04d}'.format(year),
         'title_month': '{:02d}'.format(month),
     })
