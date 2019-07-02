@@ -16,7 +16,7 @@ Please read our [SOURCE_DATE_EPOCH specification](https://reproducible-builds.or
 
 See [Standard Environment Variables](https://wiki.debian.org/ReproducibleBuilds/StandardEnvironmentVariables) for more detailed discussion of the rationales behind this mechanism.
 
-Below we also have [[#More_detailed_discussion|more detailed discussion]] about this specific variable, as well as documentation on [[#history-and-alternatives|history and alternative proposals]].
+Below we also have more detailed discussion about this specific variable, as well as documentation on history and alternative proposals.
 
 ## Setting the variable
 
@@ -337,7 +337,7 @@ NOTE: faketime BREAKS builds on some archs, for example hurd. See #778462 for de
 
 Sometimes developers of build tools do not want to support `SOURCE_DATE_EPOCH`, or they will tweak the suggestion to something related but different. We really do think the best approach is to use `SOURCE_DATE_EPOCH` exactly as-is described above in our proposal, without any variation. Here we explain our reasoning versus the arguments we have encountered.
 
-(See [[ReproducibleBuilds/StandardEnvironmentVariables#more-detailed-discussion|Standard Environment Variables]] for general arguments.)
+(See *Standard Environment Variables* for general arguments.)
 
 ### "Lying about the time" / "violates language spec"
 
