@@ -3170,7 +3170,7 @@ Links:
 Profile guided optimization are currently unreproducible and for Arch
 Linux enabled for some packages such as Firefox. Python.
 
-Bernard has written an example of unreproducible PGO, and has actually
+Bernhard has written an example of unreproducible PGO, and has actually
 fixed PGO issues for some packages.
 
 [build.opensuse.org/request/show/647618](https://build.opensuse.org/request/show/647618)
