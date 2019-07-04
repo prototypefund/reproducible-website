@@ -7,10 +7,8 @@ order: 1
 
 # News
 
-<br>
-
 <ul class="list-unstyled">
-    {% for post in site.posts limit: 4 %}
+    {% for post in site.posts limit: 3 %}
     <li>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <small class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</small>
