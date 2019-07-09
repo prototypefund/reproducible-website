@@ -103,8 +103,8 @@ be key in ensuring a reproducible "buster" becomes a reality.
 
 * Placement on the front page of `https://reproducible-builds.org` will be for donations that equal or are more than the *Platinum* level.
 * For donations that are equal to the *Gold* level, your logo will be placed on each page of the documentation hosted at `https://reproducible-builds.org/docs/`.
-* Logo placement is time-based, per category: the first to donate is at the top, with subsequent sponsors' logos placed in the order they donated. Position will be maintained as long as sponsorship is continued each year.
-* Logos on the front page will only be there for a year, starting from when your logo is put up on the page.
+* Logo placement is alphabetically ordered within each category. Position will be maintained as long as sponsorship is continued each year.
+* Logos on the front page will only be there for a year starting from when your logo is put up on the page.
 * Logos may be up to 468 pixels wide and 80 pixels tall. Platinum-level sponsors may be up to 600 pixels wide and 250 pixels tall.
 
 ### Levels
