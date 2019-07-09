@@ -68,7 +68,7 @@ The majority of sponsorship funds go directly towards supporting the Reproducibl
 <div class="row bg-light p-md-4 p-sm-2 pt-5 pb-5">
     {% assign xs = site.data.sponsors_nonfiscal | sort: 'name' %}
     {% for x in xs %}
-    <div class="col-xs-12 col-sm-6 mb-5">
+    <div class="col-xs-12 col-sm-4 mb-5">
         <div class="card text-center">
             <a href="{{ x.url }}" name="{{ x.name }}">
                 <img class="px-5 pt-5 pb-2" src="{{ x.logo | prepend: "/assets/images/who/" | prepend: site.baseurl }}" alt="{{ x.name }}">
