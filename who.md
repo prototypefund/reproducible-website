@@ -49,7 +49,8 @@ The Reproducible Builds project is a member of the [Software Freedom Conservancy
 The majority of sponsorship funds go directly towards supporting the Reproducible Builds project, such as development and server expenses. A small portion of the funds are set aside for the Conservancy to continue their work in supporting Reproducible Builds and other open source initiatives.
 
 <div class="row bg-light p-md-4 p-sm-2 pt-5 pb-5">
-    {% for x in site.data.sponsors %}
+    {% assign xs = site.data.sponsors | sort: 'name' %}
+    {% for x in xs %}
     <div class="col-xs-12 col-sm-6 mb-5">
         <div class="card text-center">
             <a href="{{ x.url }}" name="{{ x.name }}">
@@ -65,7 +66,8 @@ The majority of sponsorship funds go directly towards supporting the Reproducibl
 #### Non-fiscal sponsors
 
 <div class="row bg-light p-md-4 p-sm-2 pt-5 pb-5">
-    {% for x in site.data.sponsors_nonfiscal %}
+    {% assign xs = site.data.sponsors_nonfiscal | sort: 'name' %}
+    {% for x in xs %}
     <div class="col-xs-12 col-sm-6 mb-5">
         <div class="card text-center">
             <a href="{{ x.url }}" name="{{ x.name }}">
