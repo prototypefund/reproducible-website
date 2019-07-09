@@ -62,6 +62,23 @@ The majority of sponsorship funds go directly towards supporting the Reproducibl
 
 <br>
 
+#### Non-fiscal sponsors
+
+<div class="row bg-light p-md-4 p-sm-2 pt-5 pb-5">
+    {% for x in site.data.sponsors_nonfiscal %}
+    <div class="col-xs-12 col-sm-6 mb-5">
+        <div class="card text-center">
+            <a href="{{ x.url }}" name="{{ x.name }}">
+                <img class="px-5 pt-5 pb-2" src="{{ x.logo | prepend: "/assets/images/who/" | prepend: site.baseurl }}" alt="{{ x.name }}">
+            </a>
+            <div class="card-body">
+                <small class="text-muted">({{ x.description }})</small>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
 
 ## Projects
 
