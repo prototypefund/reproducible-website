@@ -31,3 +31,4 @@ Previously, since 2015, we published 206 weekly reports on what we had been up t
 
 {% assign posts = site.blog | sort: 'published' | reverse %}
 {% for x in posts %}<a href="{{ x.url | prepend: site.baseurl }}" class="btn btn-outline-primary btn-sm mr-1 mb-1">{{ x.week }}</a>{% endfor %}
+<a href="https://people.debian.org/~lunar/blog/posts/reproducible_builds_stretch_week_47/" class="btn btn-outline-primary btn-sm mr-1 mb-1">47</a>
