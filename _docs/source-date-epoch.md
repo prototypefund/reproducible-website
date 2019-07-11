@@ -87,6 +87,14 @@ import datetime
 build_date = datetime.datetime.utcfromtimestamp(int(os.environ.get('SOURCE_DATE_EPOCH', time.time())))
 ```
 
+or with less imports:
+
+```
+import os
+import time
+date_str = time.strftime("%Y-%m-%d", time.gmtime(int(os.environ.get('SOURCE_DATE_EPOCH', time.time()))))
+```
+
 ### Bash / POSIX shell
 
 For GNU systems:
