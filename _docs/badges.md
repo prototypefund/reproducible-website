@@ -22,10 +22,10 @@ publish artifacts yourself, the other levels come into play.
 | |B|S|G| |
 |-|-|-|-|-|
 |v|v|v|v|everything is set up so distributors can secure their pipeline|
-| |v|v|v|compromised build infrastructure will be detected|
+| |v|v|v|artifacts tainted by compromised build infrastructure will be detected|
 | |v|v|v|end-users can verify the artifacts (by rebuilding)|
 | | |v|v|end-users can verify the artifacts (by checking trusted attestations)|
-| | | |v|compromised distribution infrastructure will be detected|
+| | | |v|artifacts tainted by compromised distribution infrastructure will be detected|
 
 ## Requirements
 
