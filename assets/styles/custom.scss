@@ -41,6 +41,10 @@ main {
     color: inherit;
   }
 
+  td {
+    border: 1px solid #ddd;
+  }
+
   @media (min-width: 750px) {
     .blog-post-content {
       max-width: 750px;
