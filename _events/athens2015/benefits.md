@@ -14,7 +14,7 @@ What came during the discussion:
 
  * Faster development times:
    + Through caching of intermediate build products.
-   + In FreeBSD packages are rebuilt weekly and non-reproducible packages get reuploaded every time.
+   + In FreeBSD packages are rebuilt weekly and unreproducible packages get reuploaded every time.
  * Investigate whether the source changes are reflected in associated changes in the binary.
  * Validation of cross compilers (slow arches can be cross compiled).
  * Recreation of debug symbols at later times.

@@ -19,7 +19,7 @@ stripnondeterminism
 -------------------
 
 - runs after the build
-- remove known causes of non-reproducible
+- remove known causes of nondeterminism
 - e.g. jar's aren't reproducible and make it reproducible
 - remove several timestamp
 - should not exist by designed
@@ -104,9 +104,9 @@ reproshilds.io??
 - create a feedback api.
 - get badges
 
-The unreproducible packages
+The unreproducible package
 --------------------------
-have a package full of non-reproducible things
+have a package full of unreproducible things
 
 next sessions
 ------------

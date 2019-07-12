@@ -28,7 +28,7 @@ REPRODUCIBLE FILESYSTEM IMAGES (SEE ALSO: SQUASHFS)
  - Figure out how to build _ext4 images_ reproducibly (in a VM for extra credit) (2)
  - How do we reproduce higher level artifacts, livecds, containers, installers, etc. (2)
  - Determine relevance of reproducibility for non-executable file formats (1)
- - Brainstorm about non-reproducible VCS->tarball steps (e.g. autoconf, etc.)
+ - Brainstorm about unreproducible VCS->tarball steps (e.g. autoconf, etc.)
  - What do we use for base images? (2)
 
 BUILDINFO (GENERAL, DOC, ADVOCACY)

@@ -3333,7 +3333,7 @@ tl;dr;
 <a name="Toc11440_331763073"></a>
 #### Debugging for reproducibility issues
 
-We discussed the 10 known sources of indeterminism documented in
+We discussed the 10 known sources of nondeterminism documented in
 [github.com/bmwiedemann/theunreproduciblepackage/](https://github.com/bmwiedemann/theunreproduciblepackage/)
 
 and covered Bernhard's how-to-debug list:
@@ -3353,7 +3353,7 @@ and covered Bernhard's how-to-debug list:
     Makefile
 
 -   use difflog to see if something interesting happens related to
-    indeterministic files
+    nondeterministic files
 
 -   review relevant files (configure, Makefile,
     CMakeLists.txt, setup.py)
