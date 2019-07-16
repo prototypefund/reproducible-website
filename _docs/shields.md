@@ -1,25 +1,28 @@
 ---
-title: Badges
+title: Shields
 layout: docs
-permalink: /docs/badges/
+permalink: /docs/shields/
 ---
 
 When you have set up reproducible builds for your project, you can announce
-this by adding a 'badge' to your project page. We have badges for various
+this by adding a 'shield' to your project page. We have shields for various
 'levels' of reproducible builds support:
 
-* Plain
-* Bronze
-* Silver
-* Gold
+* ![Regular]({{ "/images/shields/shield.svg" | prepend: site.baseurl }})
+* ![Bronze]({{ "/images/shields/shield-bronze.svg" | prepend: site.baseurl }})
+* ![Silver]({{ "/images/shields/shield-silver.svg" | prepend: site.baseurl }})
+* ![Gold]({{ "/images/shields/shield-gold.svg" | prepend: site.baseurl }})
 
-'Plain' is the maximum level you can achieve when you leave it up to
+'Regular' is the maximum level you can achieve when you leave it up to
 distributors (e.g. Linux distributions) to create packaged artifacts. When you
 publish artifacts yourself, the other levels come into play.
+'Bronze' is achievable. For the 'Silver' and 'Gold' levels, infrastructure to
+share attestations is required. Such infrastructure is still in the prototype
+phase.
 
 ## Advantages
 
-| |B|S|G| |
+| |![Bronze]({{ "/images/shields/bronze-star.svg" | prepend: site.baseurl }})|![Silver]({{ "/images/shields/silver-star.svg" | prepend: site.baseurl }})|![Gold]({{ "/images/shields/gold-star.svg" | prepend: site.baseurl }})| |
 |-|-|-|-|-|
 |v|v|v|v|everything is set up so distributors can secure their pipeline|
 | |v|v|v|artifacts tainted by compromised build infrastructure will be detected|
@@ -29,7 +32,7 @@ publish artifacts yourself, the other levels come into play.
 
 ## Requirements
 
-| |B|S|G| |
+| |![Bronze]({{ "/images/shields/bronze-star.svg" | prepend: site.baseurl }})|![Silver]({{ "/images/shields/silver-star.svg" | prepend: site.baseurl }})|![Gold]({{ "/images/shields/gold-star.svg" | prepend: site.baseurl }})| |
 |-|-|-|-|-|
 |v|v|v|v|you have a [deterministic build system](plans.md#getting-a-deterministic-build-system)|
 | |v|v|v|artifacts you publish can be rebuilt and verified|
@@ -37,6 +40,7 @@ publish artifacts yourself, the other levels come into play.
 | |v|v|v|end-users can verify the published artifacts by rebuilding them themselves|
 | | |v|v|infrastructure is in place for end-users to share attestations|
 | | | |v|infrastructure is in place for end-users to automatically verify attestations when fetching the artifacts|
+
 
 When adding a badge, it is recommended that it links to:
 
