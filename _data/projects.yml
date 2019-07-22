@@ -154,7 +154,7 @@
   - name: Ticket
     url: https://labs.riseup.net/code/issues/5630
   - name: Mailing list
-    url: https://mailman.boum.org/listinfo/tails-dev/
+    url: https://tails.boum.org/about/contact/index.en.html#index3h2
   - name: Recording
     url: /docs/recording/#tails
 - name: Tor Browser
