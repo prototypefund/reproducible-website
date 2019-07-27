@@ -11,7 +11,7 @@ The not-for-profit Reproducible Builds effort needs your help to continue its wo
 
 [![Software Freedom Conservancy]({{ "/assets/images/sponsor/conservancy.png#left" | prepend: site.baseurl }})](https://sfconservancy.org/)
 
-The Reproducible Builds project is a member of the [Software Freedom Conservancy]((https://sfconservancy.org/)), a 501(c)3 non-profit organisation. The Conservancy has allowed us to pool organisational resources with other projects such as Selenium, Inkscape, Samba and Wine in order to reduce the management overhead associated with creating our own, dedicated legal entity.
+The Reproducible Builds project is a member of the [Software Freedom Conservancy](https://sfconservancy.org/), a 501(c)3 non-profit organisation. The Conservancy has allowed us to pool organisational resources with other projects such as Selenium, Inkscape, Samba and Wine in order to reduce the management overhead associated with creating our own, dedicated legal entity.
 
 ### About the project
 
