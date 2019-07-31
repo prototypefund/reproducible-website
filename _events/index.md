@@ -15,7 +15,7 @@ meeting's date and agenda. [Summaries and full text archives](http://meetbot.deb
 
 {% assign sorted_events = site.events | sort: 'event_date' | reverse %}
 {% for page in sorted_events %}
-{% if page.event_date_string %}
+{% if page.event_date_string and page.event_hide != true %}
 ## {{ page.title }}
 
 *{{ page.event_date_string }}* — {{ page.event_location }}
