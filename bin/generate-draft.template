@@ -8,7 +8,7 @@ draft: true
 
 **Welcome to the {{ month_year }} report from the [Reproducible Builds](https://reproducible-builds.org) project!** In our reports we outline the most important things that we have been up over the past month.
 
-As a quick recap, whilst anyone can inspect the source code of free software for malicious flaws, almost all software is distributed to end users pre-compiled. The motivation behind reproducible builds effort is to ensure no flaws have been introduced during this compilation process by promising identical results are always generated from a given source, thus allowing multiple third-parties to come to a consensus on whether a build was compromised.
+As a quick recap, whilst anyone can inspect the source code of free software for malicious flaws, almost all software is distributed to end users as pre-compiled binaries. The motivation behind the reproducible builds effort is to ensure no flaws have been introduced during this compilation process by promising identical results are always generated from a given source, thus allowing multiple third-parties to come to a consensus on whether a build was compromised.
 
 In this month's report, we will cover:
 
@@ -19,7 +19,7 @@ In this month's report, we will cover:
 * **Misc news** — *From our mailing list, etc.*
 * **Getting in touch** — *How to contribute, etc*
 
-If you are interested in contributing to our project, please visit our [*Contribute*](https://reproducible-builds.org/contribute/) page on our website.
+If you are interested in contributing to our project, please visit our [*Contribute*]({{ "/contribute/" | prepend: site.baseurl }}) page on our website.
 
 ---
 
@@ -88,4 +88,4 @@ If you are interested in contributing the Reproducible Builds project, please vi
 
 ---
 
-This month's report was written by {{ author }} & reviewed by a bunch of Reproducible Builds folks on IRC & the mailing lists.
+This month's report was written by {{ author }}. It was subsequently reviewed by a bunch of Reproducible Builds folks on IRC and the mailing list.
