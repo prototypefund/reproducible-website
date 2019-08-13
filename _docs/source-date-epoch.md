@@ -129,7 +129,7 @@ else
 endif
 ```
 
-''The above will work with either GNU or BSD date, and fallback to ignore SOURCE_DATE_EPOCH if both fails.''
+The above will work with either GNU or BSD date, and fallback to ignore `SOURCE_DATE_EPOCH` if both fails.
 
 ### CMake
 
@@ -154,7 +154,7 @@ else ()
 endif ()
 ```
 
-''The above will work only with GNU date. See POSIX shell example on how to support BSD date.''
+The above will work only with GNU date. See POSIX shell example on how to support BSD date.
 
 ### C
 
