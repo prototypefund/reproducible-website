@@ -18,7 +18,7 @@ Various free software projects are working on providing reproducible builds to t
 * [Chris Lamb](https://chris-lamb.co.uk) (`lamby`)
 * [Holger Levsen](http://layer-acht.org/thinking/) (`h01ger`)
 * [Mattia Rizzolo](https://mapreri.org/) (`mapreri`)
-* [Vagrant Cascadian](http://cascadia.debian.net/trenza/Journal/) (`vagrantc`)
+* [Vagrant Cascadian](https://www.aikidev.net/about/story/) (`vagrantc`)
 
 [`contact@reproducible-builds.org`](mailto:contact@reproducible-builds.org)
 
