@@ -6,11 +6,16 @@ title: "Reproducible Builds in {{ month_year }}"
 draft: true
 ---
 
-**Welcome to the {{ month_year }} report from the [Reproducible Builds](https://reproducible-builds.org) project!** In our reports we outline the most important things that we have been up over the past month.
+**Welcome to the {{ month_year }} report from the [Reproducible Builds](https://reproducible-builds.org) project!**
+{: .lead}
 
-As a quick recap, whilst anyone can inspect the source code of free software for malicious flaws, almost all software is distributed to end users as pre-compiled binaries. The motivation behind the reproducible builds effort is to ensure no flaws have been introduced during this compilation process by promising identical results are always generated from a given source, thus allowing multiple third-parties to come to a consensus on whether a build was compromised.
+[![]({{ "/images/reports/{{ title_year }}-{{ title_month }}/reproducible-builds.png#right" | prepend: site.baseurl }})](https://reproducible-builds.org/)
 
-In this month's report, we will cover:
+In these reports we outline the most important things that we have been up over the past month. As a quick recap, whilst anyone can inspect the source code of free software for malicious flaws, almost all software is distributed to end users as pre-compiled binaries.
+
+The motivation behind the reproducible builds effort is to ensure no flaws have been introduced during this compilation process by promising identical results are always generated from a given source, thus allowing multiple third-parties to come to a consensus on whether a build was compromised.
+
+In this month's report, we cover:
 
 * **Media coverage** — *FIXME, etc.*
 * **Upstream news** — *FIXME, etc.*
@@ -38,6 +43,10 @@ If you are interested in contributing to our project, please visit our [*Contrib
 ---
 
 ### Distribution work
+
+[![]({{ "/images/reports/{{ title_year }}-{{ title_month }}/opensuse.png#right" | prepend: site.baseurl }})](https://www.opensuse.org/)
+
+[![]({{ "/images/reports/{{ title_year }}-{{ title_month }}/debian.png#center" | prepend: site.baseurl }})](https://debian.org/)
 
 In Debian, ...
 
