@@ -53,9 +53,9 @@ to a consensus on a "correct" result, highlighting any deviations as suspect
 and worthy of scrutiny.
 
 This ability to notice if a developer has been compromised then
-deters such threats or attacks ocurring in the first place as any
+deters such threats or attacks occurring in the first place as any
 compromise would be quickly detected. This offers comfort to front-liners
-that they not only can be threatened, but they would not be co-erced into
+that they not only can be threatened, but they would not be coerced into
 exploiting or exposing their colleagues or end-users.
 
 [Several free software projects]({{ "/who/" | prepend: site.baseurl }})
