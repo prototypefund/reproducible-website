@@ -179,3 +179,11 @@
     url: https://lists.yoctoproject.org/listinfo/yocto
   - name: Binary Reproducibility is a feature
     url: https://www.yoctoproject.org/software-overview/features/
+- name: In-toto
+  url: https://in-toto.io
+  logo: in-toto.png
+  resources:
+  - name: In-toto apt transport repository
+    url: https://github.com/in-toto/apt-transport-in-toto
+  - name: In-toto debian rebuilder setup
+    url:  https://salsa.debian.org/reproducible-builds/debian-rebuilder-setup
