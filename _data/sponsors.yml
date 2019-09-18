@@ -1,3 +1,7 @@
+- name: Civil Infrastructure Plattform
+  url: https://www.cip-project.org/
+  logo: cip.svg
+
 - name: Google Open Source Office
   url: https://opensource.google.com/
   logo: google-open-source.png
