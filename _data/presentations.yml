@@ -16,6 +16,16 @@
     location: Sao Paulo, Brasil
   slides: https://cfp.linuxdev-br.net/media/There-and-Back-Again-Reproducibly-linuxdevbr.pdf
 
+- title: Reproducible Builds - aiming for bullseye
+  presented_by: Holger Levsen, Chris Lamb, Vagrant Cascadian
+  event:
+    url: https://debconf19.debconf.org/talks/30-reproducible-builds-aiming-for-bullseye/
+    name: DebConf19
+    date: 2019-07-21
+    location: Curitiba, Brasil
+  video:
+    url: https://meetings-archive.debian.net/pub/debian-meetings/2019/DebConf19/reproducible-builds-aiming-for-bullseye.webm
+
 - title: Reproducible Builds aiming for bullseye
   presented_by: Holger Levsen, Jelle van der Waa
   event:
