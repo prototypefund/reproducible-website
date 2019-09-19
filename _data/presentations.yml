@@ -1,3 +1,12 @@
+- title: There and back again, reproducibly!
+  presented_by: Vagrant Cascadian, Holger Levsen
+  event:
+    url: https://cfp.linuxdev-br.net/2019/talk/VH9CCY/
+    name: Linux Developer Conference Brazil 2019
+    date: 2019-08-04
+    location: Sao Paulo, Brasil
+  slides: https://cfp.linuxdev-br.net/media/There-and-Back-Again-Reproducibly-linuxdevbr.pdf
+
 - title: Reproducible Builds aiming for bullseye
   presented_by: Holger Levsen, Jelle van der Waa
   event:
