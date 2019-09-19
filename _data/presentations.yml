@@ -1,3 +1,12 @@
+- title: Reproducible Toolchains For the Win!
+  presented_by: Vagrant Cascadian
+  event:
+    url: https://gcc.gnu.org/wiki/cauldron2019#cauldron2019talks.Reproducible_Toolchains_For_The_Win
+    name: GNU Tools Cauldron 2019
+    date: 2019-09-13
+    location: Montréal, Canada
+  slides: https://www.aikidev.net/~vagrant/Reproducible-Toolchains-For-The-Win.pdf
+
 - title: There and back again, reproducibly!
   presented_by: Vagrant Cascadian, Holger Levsen
   event:
