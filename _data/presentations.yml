@@ -25,7 +25,7 @@
     location: Curitiba, Brasil
   video:
     url: https://meetings-archive.debian.net/pub/debian-meetings/2019/DebConf19/reproducible-builds-aiming-for-bullseye.webm
-  slides: http://layer-acht.org/slides/2019-07-21-DebConf19/
+  slides: http://layer-acht.org/slides/2019-07-21-DebConf19-RB-aiming-for-bullseye/
 
 - title: Reproducible Builds aiming for bullseye
   presented_by: Holger Levsen, Jelle van der Waa
