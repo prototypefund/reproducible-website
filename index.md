@@ -77,7 +77,7 @@ the original build**.
 
 Learn more about [how to make your software build reproducibly…]({{ "/docs" | prepend: site.baseurl }})
 
-## News
+## Recent monthly reports
 
 <ul class="list-unstyled">
     {% assign reports = site.reports | sort: 'year, month' | where: 'draft', 'false' | reverse %}
@@ -87,7 +87,12 @@ Learn more about [how to make your software build reproducibly…]({{ "/docs" | 
         <a href="{{ x.url | prepend: site.baseurl }}">{{ x.title }}</a>
     </li>
     {% endfor %}
+</ul>
+Explore older [reports]({{ "/reports" | prepend: site.baseurl }}).
 
+## Recent news
+
+<ul class="list-unstyled">
     {% for post in site.posts limit: 3 %}
     <li>
         <span class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>:
@@ -95,6 +100,7 @@ Learn more about [how to make your software build reproducibly…]({{ "/docs" | 
     </li>
     {% endfor %}
 </ul>
+Explore older [news]({{ "/news" | prepend: site.baseurl }}).
 
 <br>
 
