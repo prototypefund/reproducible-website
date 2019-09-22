@@ -7,11 +7,9 @@ order: 4
 
 # Events
 
-Irregular events are organized to exchange ideas about reproducible builds, get
+Events are organized to exchange ideas about reproducible builds, get
 a better understanding or cooperate on improving code or specifications.
 
-We meet on IRC twice a month; see the [mailing list](/resources/) for the next
-meeting's date and agenda. [Summaries and full text archives](http://meetbot.debian.net/reproducible-builds/) of previous meetings are automatically published.
 
 {% assign sorted_events = site.events | sort: 'event_date' | reverse %}
 {% for page in sorted_events %}
