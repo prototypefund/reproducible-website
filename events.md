@@ -2,7 +2,7 @@
 layout: default
 title: Events
 permalink: /events/
-order: 4
+order: 6
 ---
 
 # Events

@@ -2,7 +2,7 @@
 layout: default
 title: Talks
 permalink: /resources/
-order: 3
+order: 7
 ---
 
 # Talks & Resources

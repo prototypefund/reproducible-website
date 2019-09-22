@@ -2,7 +2,7 @@
 layout: default
 title: Contribute
 permalink: /contribute/
-order: 6
+order: 1
 ---
 
 # Contribute
