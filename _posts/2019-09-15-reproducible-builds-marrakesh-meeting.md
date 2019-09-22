@@ -11,7 +11,7 @@ Compared to previous summits the format will slightly change: this time, the thr
 
 Like last years at this now (up to) [eight-day event in Marakesh]({{ "/events/marakesh2019/" | prepend: site.baseurl }}) we will welcome both previous attendees and new projects alike. The participants will discuss, connect and exchange ideas in order to grow the reproducible builds effort. We will bring this space into life:
 
-![]({{ "/images/paris2018/salle-des-fetes.jpg" | prepend: site.baseurl }})
+ <img src="/images/marrakesh2019/IMG_20190311_090022.jpg" width="640px" />
 
 Whilst the exact content of the meeting will be shaped by the participants, the main goals will include:
 
