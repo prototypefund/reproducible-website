@@ -8,13 +8,14 @@ order: 5
 # News
 
 <ul class="list-unstyled">
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 7 %}
     <li>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <small class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</small>
     </li>
     {% endfor %}
 </ul>
+(See all news in the [news archive]({{ "/news-archive/" | prepend: site.baseurl }}).)
 
 ## Reports
 

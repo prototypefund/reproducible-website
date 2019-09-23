@@ -89,7 +89,7 @@ Learn more about [how to make your software build reproducibly…]({{ "/docs" | 
     {% endfor %}
 </ul>
 
-([See all]({{ "/news/" | prepend: site.baseurl }}))
+([See all]({{ "/news/" | prepend: site.baseurl }}).)
 
 ## Recent news
 
@@ -102,7 +102,7 @@ Learn more about [how to make your software build reproducibly…]({{ "/docs" | 
     {% endfor %}
 </ul>
 
-([See all]({{ "/news/" | prepend: site.baseurl }}))
+([See all]({{ "/news/" | prepend: site.baseurl }}).)
 
 <br>
 
