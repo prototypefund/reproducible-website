@@ -38,6 +38,16 @@
     url: https://meetings-archive.debian.net/pub/debian-meetings/2019/miniconf-hamburg/reproducible-builds.webm
   slides: http://layer-acht.org/slides/2019-06-08-MiniDebConf-Hamburg--aiming-for-bullseye/
 
+- title: Reproducible Builds in der Wirklichkeit
+  presented_by: Holger Levsen
+  event:
+    url: https://prototypefund.de/project/reproducible-builds-in-der-wirklichkeit/
+    name: Reproducible Builds in der Wirklichkeit
+    date: 2019-06-12
+    location: Berlin, Germany
+  video:
+    youtube: PSxm2DbDHG8
+
 - title: Bitcoin Build System Security
   presented_by: Carl Dong
   event:
