@@ -81,14 +81,15 @@ Learn more about [how to make your software build reproducibly…]({{ "/docs" | 
 
 <ul class="list-unstyled">
     {% assign reports = site.reports | sort: 'year, month' | where: 'draft', 'false' | reverse %}
-    {% for x in reports limit: 2 %}
+    {% for x in reports limit: 3 %}
     <li>
         <span class="text-muted">{{ x.published | date: "%b %-d, %Y" }}</span>:
         <a href="{{ x.url | prepend: site.baseurl }}">{{ x.title }}</a>
     </li>
     {% endfor %}
 </ul>
-Explore older [reports]({{ "/reports" | prepend: site.baseurl }}).
+
+([See all]({{ "/news/" | prepend: site.baseurl }}))
 
 ## Recent news
 
@@ -100,7 +101,8 @@ Explore older [reports]({{ "/reports" | prepend: site.baseurl }}).
     </li>
     {% endfor %}
 </ul>
-Explore older [news]({{ "/news" | prepend: site.baseurl }}).
+
+([See all]({{ "/news/" | prepend: site.baseurl }}))
 
 <br>
 
