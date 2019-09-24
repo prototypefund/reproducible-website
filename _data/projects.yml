@@ -20,6 +20,12 @@
   resources:
   - name: Gitian building guide
     url: https://github.com/bitcoin/bitcoin/blob/master/doc/gitian-building.md
+- name: BitShares
+  url: https://bitshares.org/
+  logo: bitshares.png
+  resources:
+  - name: Gitian README
+    url: https://github.com/bitshares/bitshares-gitian
 - name: Buildroot
   url: https://buildroot.org/
   logo: buildroot.png
