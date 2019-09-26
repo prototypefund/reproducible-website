@@ -292,6 +292,17 @@
    location: Raleigh, NC, United States
    url: https://allthingsopen.org/
 
+- title: Reproducible Builds - We Made Lots of Progress in Many Places, But We're Still Far From Our Goals of Changing the (Software) World
+  presented_by: Holger Levsen
+  event:
+    url: https://bornhack.dk/bornhack-2017/program/#/event/reproducible-builds
+    name: Bornhack 2017
+    date: 2017-08-27
+    location: Bornholm, Denmark
+  video:
+    youtube: CE7091U-u2I
+  slides: https://layer-acht.org/slides/2017-08-27-bornhack/
+
 - title: Reproducible Builds status update
   presented_by: Chris Lamb, Holger Levsen, Maria Glukhova, Steven Chamberlain, Vagrant Cascadian, Valerie Young & Ximin Luo
   event:
