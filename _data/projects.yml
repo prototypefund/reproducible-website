@@ -64,8 +64,10 @@
   resources:
   - name: Building Guide
     url: https://f-droid.org/wiki/page/Deterministic,_Reproducible_Builds
-  - name: Verification Server
+  - name: Verification Server Guide
     url: https://f-droid.org/wiki/page/Verification_Server
+  - name: f-droid.org verification server
+    url: https://verification.f-droid.org/
 - name: FreeBSD
   url: https://www.freebsd.org/
   logo: freebsd.png
