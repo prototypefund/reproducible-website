@@ -301,7 +301,7 @@
     location: Bornholm, Denmark
   video:
     youtube: CE7091U-u2I
-  slides: https://layer-acht.org/slides/2017-08-27-bornhack/
+  slides: http://layer-acht.org/slides/2017-08-27-bornhack/
 
 - title: Reproducible Builds status update
   presented_by: Chris Lamb, Holger Levsen, Maria Glukhova, Steven Chamberlain, Vagrant Cascadian, Valerie Young & Ximin Luo
