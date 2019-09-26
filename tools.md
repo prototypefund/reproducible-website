@@ -81,3 +81,7 @@ changing the source code, changed the generated binaries.
 
 * [reproducible-build-maven-plugin](https://zlika.github.io/reproducible-build-maven-plugin) for the [Apache Maven](https://maven.apache.org) build tool, popular with Java projects.
 * [sbt-reproducible-builds](https://github.com/raboof/sbt-reproducible-builds#readme) plugin for the [sbt](https://www.scala-sbt.org/) build tool, popular with [Scala](https://www.scala-lang.org/) projects.
+
+## Misc
+
+* [Style guide for reproducible-builds.org](https://reproducible-builds.org/style/) - this guide aims to provide standards, principles and components to design consistent views related to the Reproducible Builds project.
