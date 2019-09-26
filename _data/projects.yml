@@ -8,6 +8,8 @@
     url: https://wiki.archlinux.org/index.php/DeveloperWiki:ReproducibleBuilds
   - name: Recording
     url: /docs/recording/#arch-linux
+  - name: verification tool for users
+    url: https://github.com/archlinux/archlinux-repro
 - name: Baserock
   url: https://baserock.org/
   logo: baserock.png
