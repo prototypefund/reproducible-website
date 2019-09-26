@@ -5,6 +5,8 @@
     name: GNU Tools Cauldron 2019
     date: 2019-09-13
     location: Montréal, Canada
+  video:
+    url: https://www.youtube.com/watch?v=56nRFxA7lPY
   slides: https://www.aikidev.net/~vagrant/Reproducible-Toolchains-For-The-Win.pdf
 
 - title: There and back again, reproducibly!
