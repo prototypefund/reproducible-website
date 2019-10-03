@@ -9,7 +9,9 @@ draft: true
 **Welcome to the {{ month_year }} report from the [Reproducible Builds](https://reproducible-builds.org) project!**
 {: .lead}
 
+{% raw %}
 [![]({{ "/images/reports/{{ title_year }}-{{ title_month }}/reproducible-builds.png#right" | prepend: site.baseurl }})](https://reproducible-builds.org/)
+{% endraw %}
 
 In these reports we outline the most important things that we have been up over the past month. As a quick recap, whilst anyone can inspect the source code of free software for malicious flaws, almost all software is distributed to end users as pre-compiled binaries.
 
@@ -44,13 +46,15 @@ If you are interested in contributing to our project, please visit our [*Contrib
 
 ### Distribution work
 
+{% raw %}
 [![]({{ "/images/reports/{{ title_year }}-{{ title_month }}/opensuse.png#right" | prepend: site.baseurl }})](https://www.opensuse.org/)
 
 [![]({{ "/images/reports/{{ title_year }}-{{ title_month }}/debian.png#center" | prepend: site.baseurl }})](https://debian.org/)
+{% endraw %}
 
-In Debian, ...
+In Debian:
 
-* {{ packages_stats['added'] }} reviews of Debian packages were added, {{ packages_stats['updated'] }} were updated and {{ packages_stats['removed'] }} were removed this month, adding to [our knowledge about identified issues](https://tests.reproducible-builds.org/debian/index_issues.html). FIXME issue types have been updated: {% for _, xs in issues_yml.items()|sort %}{% for x in xs %}[{{ x['title'] }}](https://salsa.debian.org/reproducible-builds/reproducible-notes/commit/{{ x['sha'] }}), {% endfor %}{% endfor %}
+* {{ packages_stats['added'] }} reviews of Debian packages were added, {{ packages_stats['updated'] }} were updated and {{ packages_stats['removed'] }} were removed this month adding to [our knowledge about identified issues](https://tests.reproducible-builds.org/debian/index_issues.html). FIXME issue types have been updated: {% for _, xs in issues_yml.items()|sort %}{% for x in xs %}[{{ x['title'] }}](https://salsa.debian.org/reproducible-builds/reproducible-notes/commit/{{ x['sha'] }}), {% endfor %}{% endfor %}
 
 ---
 
