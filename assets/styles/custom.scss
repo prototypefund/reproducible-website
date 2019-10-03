@@ -1,5 +1,10 @@
 main {
+  hr {
+    clear: both;
+  }
+
   h1, h2, h3, h4, h5, h6 {
+    clear: both;
     margin-top: 2.5rem;
   }
 
@@ -15,6 +20,13 @@ main {
   img {
     max-width: 100%;
     padding-bottom: 0.5rem;
+  }
+
+  .blog-post-content {
+    li > p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: 750px) {
