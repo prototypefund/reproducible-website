@@ -111,10 +111,10 @@ be key in ensuring a reproducible "buster" becomes a reality.
 
 Below are the names and amounts associated with levels of sponsorship (all values in USD):
 
-* Platinum: $250,000
-* Gold: $100,000
-* Silver: $50,000
-* Bronze: $5,000
+* Platinum: $300,000
+* Gold: $125,000
+* Silver: $75,000
+* Bronze: $10,000
 
 ## Non-monetary Donations
 
