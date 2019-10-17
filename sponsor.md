@@ -142,9 +142,9 @@ Please make your check payable to "Software Freedom Conservancy, Inc." and to
 place "Directed donation: Reproducible Builds" in the memo field. Checks
 should then be mailed to:
 
-    Software Freedom Conservancy, Inc.<br>
-    137 Montague ST STE 380<br>
-    BROOKLYN, NY 11201<br>
+    Software Freedom Conservancy, Inc.
+    137 Montague ST STE 380
+    BROOKLYN, NY 11201
     USA
 
 Conservancy also accepts <a href="https://sfconservancy.org/donate/">other
