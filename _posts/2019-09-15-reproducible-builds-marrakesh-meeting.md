@@ -9,7 +9,7 @@ People interested in reproducible builds will meet again! This will be the fifth
 
 Compared to previous summits the format will slightly change: this time, the three core days will be surrounded by up to five days for hacking and further collaboration.
 
-Like last years at this now (up to) [eight-day event in Marakesh]({{ "/events/marakesh2019/" | prepend: site.baseurl }}) we will welcome both previous attendees and new projects alike. The participants will discuss, connect and exchange ideas in order to grow the reproducible builds effort. We will bring this space into life:
+Like last years at this now (up to) [eight-day event in Marakesh]({{ "/events/Marrakesh2019/" | prepend: site.baseurl }}) we will welcome both previous attendees and new projects alike. The participants will discuss, connect and exchange ideas in order to grow the reproducible builds effort. We will bring this space into life:
 
  <img src="/images/marrakesh2019/IMG_20190311_090022.jpg" width="640px" />
 
@@ -25,5 +25,5 @@ Whilst the exact content of the meeting will be shaped by the participants, the 
 
 Logs and minutes will be published after the meeting.
 
-Please [reach out]({{ "/events/marakesh2019" | prepend: site.baseurl }}) if you'd like to participate in hopefully interesting, inspiring and intense technical sessions about reproducible builds and beyond!
+Please [reach out]({{ "/events/Marrakesh2019" | prepend: site.baseurl }}) if you'd like to participate in hopefully interesting, inspiring and intense technical sessions about reproducible builds and beyond!
 
