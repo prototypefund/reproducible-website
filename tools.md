@@ -27,6 +27,7 @@ and [text](https://diffoscope.org/examples/igerman98_20131206-5.txt) output.
 <a href="https://salsa.debian.org/reproducible-builds/diffoscope/merge_requests" class="btn btn-outline-primary btn-sm">Merge requests</a>
 <a href="https://packages.debian.org/sid/diffoscope" class="btn btn-outline-primary btn-sm">Debian package</a>
 <a href="https://pypi.python.org/pypi/diffoscope" class="btn btn-outline-primary btn-sm">PyPI</a>
+<a href="https://archlinux.org/packages/community/x86_64/diffoscope" class="btn btn-outline-primary btn-sm">Arch Linux package</a>
 
 ### trydiffoscope
 
@@ -53,6 +54,7 @@ order in which directory entries are read.
 <a href="https://salsa.debian.org/reproducible-builds/disorderfs" class="btn btn-outline-primary btn-sm">Git</a>
 <a href="https://salsa.debian.org/reproducible-builds/disorderfs/merge_requests" class="btn btn-outline-primary btn-sm">Merge requests</a>
 <a href="https://packages.debian.org/sid/disorderfs" class="btn btn-outline-primary btn-sm">Debian package</a>
+<a href="https://archlinux.org/packages/community/x86_64/disorderfs" class="btn btn-outline-primary btn-sm">Arch Linux package</a>
 
 ## strip-nondeterminism
 
@@ -66,6 +68,7 @@ extensibility in mind.
 <a href="https://salsa.debian.org/reproducible-builds/strip-nondeterminism/issues" class="btn btn-outline-primary btn-sm">Issues</a>
 <a href="https://salsa.debian.org/reproducible-builds/strip-nondeterminism/merge_requests" class="btn btn-outline-primary btn-sm">Merge requests</a>
 <a href="https://packages.debian.org/sid/strip-nondeterminism" class="btn btn-outline-primary btn-sm">Debian package</a>
+<a href="https://archlinux.org/packages/community/any/strip-nondeterminism" class="btn btn-outline-primary btn-sm">Arch Linux package</a>
 
 ## reprotest
 
@@ -76,6 +79,7 @@ changing the source code, changed the generated binaries.
 <a href="https://salsa.debian.org/reproducible-builds/reprotest" class="btn btn-outline-primary btn-sm">Git</a>
 <a href="https://salsa.debian.org/reproducible-builds/reprotest/merge_requests" class="btn btn-outline-primary btn-sm">Merge requests</a>
 <a href="https://packages.debian.org/sid/reprotest" class="btn btn-outline-primary btn-sm">Debian package</a>
+<a href="https://archlinux.org/packages/community/any/reprotest" class="btn btn-outline-primary btn-sm">Arch Linux package</a>
 
 ## Other tools
 
