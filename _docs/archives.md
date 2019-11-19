@@ -166,3 +166,28 @@ or `objcopy`:
 The above does not fix [file ordering]({{ "/docs/stable-inputs/" | prepend: site.baseurl }}).
 
 [^distros-with-default]: Debian since [version 2.25-6](https://tracker.debian.org/news/675691)/stretch, Ubuntu since version 2.25-8ubuntu1/artful 17.10. It is the default for Fedora 22 and Fedora 23, but it seems this will be [reverted in Fedora 24](https://bugzilla.redhat.com/show_bug.cgi?id=1195883).
+
+Initramfs images
+----------------
+
+*cpio* archives are commonly used for initramfs images. The *cpio* header
+format (see `man 5 cpio`) can contain device and inode numbers, which whilst
+deterministic, can vary from system to system.
+
+One way to filter these is by piping through bsdtar.
+
+Example of non-deterministic code:
+```
+echo ucode.bin |
+    bsdcpio -o -H newc -R 0:0 > ucode.img
+```
+
+Example of deterministic code:
+```
+echo ucode.bin |
+    bsdtar --uid 0 --gid 0 -cnf - -T - |
+    bsdtar --null -cf - --format=newc @- > ucode.img
+```
+
+Note that other issues such as timestamps may still require rectification prior
+to archival.
