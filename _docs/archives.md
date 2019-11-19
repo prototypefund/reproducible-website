@@ -106,6 +106,15 @@ record 0 as values:
 $ tar --owner=0 --group=0 --numeric-owner -cf product.tar build
 {% endhighlight %}
 
+PAX headers
+-----------
+
+GNU tar defaults to the pax format and if `POSIXLY_CORRECT` is set, that adds files' ctime, atime and the PID of the tar process as non-deterministic metadata.
+
+To avoid this, either `unset POSIXLY_CORRECT` (only works with [tar>1.32](https://git.savannah.gnu.org/cgit/tar.git/commit/?id=ef0f882382f6)) or add to the tar call
+`--pax-option=exthdr.name=%d/PaxHeaders/%f,delete=atime,delete=ctime` or `--format=gnu` (both only available in GNU tar)
+or use `--format=ustar` if the limitations in that format are not a problem.
+
 Full example
 ------------
 
@@ -117,6 +126,7 @@ The recommended way to create a Tar archive is thus:
 $ tar --sort=name \
       --mtime="@${SOURCE_DATE_EPOCH}" \
       --owner=0 --group=0 --numeric-owner \
+      --pax-option=exthdr.name=%d/PaxHeaders/%f,delete=atime,delete=ctime \
       -cf product.tar build
 {% endhighlight %}
 </div>
