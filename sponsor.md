@@ -92,7 +92,7 @@ be key in ensuring a reproducible "buster" becomes a reality.
 ### Benefits of sponsorship
 
 * You (or your company) are contributing to a renowned and respected free/open source project.
-* Community consciousness of your company (and its promotion of Reproducible Builds) will be increased in the minds of the wider community.
+* Community consciousness of your company (and its promotion of Reproducible Builds) will be increased in the minds of the wider ecosystem.
 * For corporate donations that equal or are more than the Bronze level, your logo will be placed on our site for one year.
 * People find out about Reproducible Builds first from our website; having a link from our website therefore will associate you and/or your company as a supporter of the well-known and respected Reproducible Builds project.
 * Contributions are tax-deductible to the extent permitted by law.
