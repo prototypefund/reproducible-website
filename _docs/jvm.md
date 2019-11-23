@@ -98,7 +98,8 @@ You may discuss issues and fixes on [Reproducible Builds mailinglist]({{ "/docs/
 Reproducible Builds for Maven
 -----------------------------
 
-Getting reproducible builds with Maven requires configuration: see [https://reproducible-maven-builds.github.io/](https://reproducible-maven-builds.github.io/)
+Getting reproducible builds with Maven requires some plugins configuration: see
+[Maven - Guide to Configuring for Reproducible Builds](https://maven.apache.org/guides/mini/guide-reproducible-builds.html)
 for more details.
 
 ### source release archive
