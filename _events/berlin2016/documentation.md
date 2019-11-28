@@ -74,7 +74,7 @@ approaches that one takes are relevant.
 
  - Git repository on the bottom. markdown + jekyll. -> then one can send
 patches, pull requests or commit rights.
- - Proposal to mirror this one Github, so that people can easily edit
+ - Proposal to mirror this one GitHub, so that people can easily edit
 stuff and make pull requests -> but we also want mirroring :ho1ger:
  - This should then be mentioned on the website and mailing list! :ho1ger:
 

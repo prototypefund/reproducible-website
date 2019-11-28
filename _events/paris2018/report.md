@@ -1048,7 +1048,7 @@ Tasks:
 
 - where to display the reproducibility check? (ssl key)
 
-- Github badge? \"are we reproducible\"
+- GitHub badge? \"are we reproducible\"
 
 *
 
@@ -1075,10 +1075,10 @@ Tasks:
 
 (Before discussing UI, we should discuss the user stories)
 
-- Github badge, how can we solve solve/make this happen? (For example
+- GitHub badge, how can we solve solve/make this happen? (For example
 go binary
 
-downloaded from Github or have someone verify the build from
+downloaded from GitHub or have someone verify the build from
 
 r-b.orgs and show the task color)
 
@@ -1152,10 +1152,10 @@ TODO:
 
 - Identify user stories
 
-- Github badge, how can we solve solve/make this happen? (For example
+- GitHub badge, how can we solve solve/make this happen? (For example
 go binary
 
-downloaded from Github or have someone verify the build from
+downloaded from GitHub or have someone verify the build from
 
 r-b.orgs and show the task color)
 

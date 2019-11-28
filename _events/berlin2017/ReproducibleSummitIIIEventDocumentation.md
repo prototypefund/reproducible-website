@@ -1055,7 +1055,7 @@ We identified four clusters that marketing relates to: users, developers, manage
 
 - Microsoft, Oracle, Apple
 
-- Github, Gitlab, ... companies
+- GitHub, GitLab, ... companies
 
 
 ##### TOP THREE AUDIENCES TO FOCUS ON:
