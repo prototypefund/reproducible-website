@@ -135,6 +135,8 @@
     url: https://en.opensuse.org/openSUSE:Reproducible_Builds
   - name: openSUSE blocking bug
     url: https://bugzilla.opensuse.org/show_bug.cgi?id=1133809
+  - name: openSUSE r-b CI graph
+    url: http://rb.zq1.de/compare.factory/graph.png
 - name: OpenWrt
   url: https://openwrt.org/
   logo: openwrt.png
