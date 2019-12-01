@@ -246,7 +246,7 @@ ahead.
 
 -   How to automatically test GUI (OpenQA, dogtail)?
 
--   How to … OPAM? Ocaml package manager
+-   How to … OPAM? OCaml package manager
 
 -   How to organize an event
 

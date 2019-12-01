@@ -208,7 +208,7 @@ Compilers
 * Rush reproducibility patches (inc. buildpath indep debug info)
 * Popular toolchains (C++, Java) work reproductibly and support SOURCE_PREFIX_MAP
 * LLVM / CLANG on pair with GCC regarding reproducible "patches"
-* Ocaml has no more reproducibility issues
+* OCaml has no more reproducibility issues
 * Intentional nondeterminism patches
 Developer utilities
 * Git properties as "secure VCS" are analysed
