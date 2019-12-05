@@ -31,10 +31,10 @@ as separate `${artifactId}-${version}.buildinfo` file, with content in
 #### Work In Progress ####
 buildinfo.version=1.0-SNAPSHOT
 
-name=<name as in pom.xml>
-group-id=<groupId as in pom.xml>
-artifact-id=<artifactId as in pom.xml>
-version=<version as in pom.xml>
+name=<name of the artifact>
+group-id=<groupId as in repository's coordinates>
+artifact-id=<artifactId as in repository's coordinates>
+version=<version as in repository's coordinates>
 
 # source information for rebuilders, as source tarball artifact in repository and/or url and/or scm coordinates
 source.artifact=<groupId>:<artifactId>:<version>:<classifier>:<extension>
@@ -47,9 +47,9 @@ build-tool=<mvn|sbt|...>
 build.setup=<optional url of documentation explaining specific additional setup when necessary: will be enhanced in a future buildinfo format version>
 
 # effective recorded build environment information
-java.version=<full Java version taken from "java.version" system property>
-java.vendor=<full Java version taken from "java.vendor" system property>
-os.name=<Operating system name>
+java.version=<Java version taken from "java.version" system property>
+java.vendor=<Java vendor taken from "java.vendor" system property>
+os.name=<Operating System name taken from "os.name" system property>
 source.used=<artifact|url|scm, depending on which has been used for the build>
 
 # Each build tool or plugin is free to add additional entries to the buildinfo,
