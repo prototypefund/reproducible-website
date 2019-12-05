@@ -16,13 +16,13 @@ Buildinfo File
 --------------
 
 Whatever the build tool is, binary JVM artifacts are generally published in artifact repositories
-that use the Maven2 Repository Format (using groupId/artifactId/version coordinates)
+that use the Maven2 repository format (using groupId/artifactId/version coordinates)
 like [Maven Central](https://search.maven.org/) or [Google's Android Repository](https://dl.google.com/dl/android/maven2/index.html).
 
 Being able to rebuild artifacts published in these repositories will require some information: where to get the sources from,
 which environment to setup to rebuild the artifacts.
 
-This is the purpose of JVM Buildinfo files, that are expected to be published alongside artifacts
+This is the purpose of JVM Buildinfo files: they are expected to be published alongside artifacts
 as separate `${artifactId}-${version}.buildinfo` file, with content in
 [Java properties format](https://en.wikipedia.org/wiki/.properties):
 
@@ -32,9 +32,9 @@ as separate `${artifactId}-${version}.buildinfo` file, with content in
 buildinfo.version=1.0-SNAPSHOT
 
 name=<name of the artifact>
-group-id=<groupId as in repository's coordinates>
-artifact-id=<artifactId as in repository's coordinates>
-version=<version as in repository's coordinates>
+group-id=<groupId coordinates in repository>
+artifact-id=<artifactId coordinates in repository>
+version=<version coordinates in repository>
 
 # source information for rebuilders, as source tarball artifact in repository and/or url and/or scm coordinates
 source.artifact=<groupId>:<artifactId>:<version>:<classifier>:<extension>
