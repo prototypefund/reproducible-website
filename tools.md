@@ -9,7 +9,7 @@ order: 3
 
 <p class="lead">Several tools are available to make your life easier when working on reproducible builds.</p>
 
-[Signed tarballs are available](http://reproducible.alioth.debian.org/releases/).
+[Signed tarballs are available](https://reproducible-builds.org/_lfs/releases/).
 
 ## diffoscope
 
