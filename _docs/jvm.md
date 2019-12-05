@@ -22,8 +22,8 @@ like [Maven Central](https://search.maven.org/) or [Google's Android Repository]
 Being able to rebuild artifacts published in these repositories will require some information: where to get the sources from,
 which environment to setup to rebuild the artifacts.
 
-This is the puropse of JVM Buildinfo files that are expected to be published alongside artifacts
-as `${artifactId}-${version}.buildinfo`, in
+This is the purpose of JVM Buildinfo files, that are expected to be published alongside artifacts
+as separate `${artifactId}-${version}.buildinfo` file, with content in
 [Java properties format](https://en.wikipedia.org/wiki/.properties):
 
 
@@ -36,7 +36,7 @@ group-id=<groupId as in pom.xml>
 artifact-id=<artifactId as in pom.xml>
 version=<version as in pom.xml>
 
-# source information, as source tarball artifact in repository and/or url and/or scm coordinates
+# source information for rebuilders, as source tarball artifact in repository and/or url and/or scm coordinates
 source.artifact=<groupId>:<artifactId>:<version>:<classifier>:<extension>
 source.url=<url where to download official source tarball>
 source.scm.uri=<source control uri, typically corresponding to the project.scm.developerConnection or project.scm.connection in the pom.xml>
@@ -53,7 +53,7 @@ os.name=<Operating system name>
 source.used=<artifact|url|scm, depending on which has been used for the build>
 
 # Each build tool or plugin is free to add additional entries to the buildinfo,
-# both for build instructions and effective build environment.
+# both for build instructions and effective recorded build environment.
 # For example, the sbt plugin may add the following for Scala:
 sbt.version=1.2.3
 scala.version=2.12.6
