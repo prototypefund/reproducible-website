@@ -16,6 +16,7 @@ Buildinfo File
 --------------
 
 Whatever the build tool is, binary JVM artifacts are generally published in artifact repositories
+that use the Maven2 Repository Format (using groupId/artifactId/version coordinates)
 like [Maven Central](https://search.maven.org/) or [Google's Android Repository](https://dl.google.com/dl/android/maven2/index.html).
 
 Being able to rebuild artifacts published in these repositories will require some information: where to get the sources from,
@@ -45,8 +46,9 @@ source.scm.tag=<source control tag as in pom.xml>
 build-tool=<mvn|sbt|...>
 build.setup=<optional url of documentation explaining specific additional setup when necessary: will be enhanced in a future buildinfo format version>
 
-# effective build environment information
-java.version=<full Java version>
+# effective recorded build environment information
+java.version=<full Java version taken from "java.version" system property>
+java.vendor=<full Java version taken from "java.vendor" system property>
 os.name=<Operating system name>
 source.used=<artifact|url|scm, depending on which has been used for the build>
 
@@ -56,23 +58,24 @@ source.used=<artifact|url|scm, depending on which has been used for the build>
 sbt.version=1.2.3
 scala.version=2.12.6
 
-# and Maven could add data on rebuild instructions and effective environment:
+# and Maven could add data on rebuild instructions and effective recorded environment:
 mvn.rebuild-args=-Dmaven.test.skip package
 mvn.build-root=<groupId>:<artifactId>:<version>
-mvn.version=3.5.4
+mvn.version=Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
 
 # A buildinfo file can contain checksums for multiple output files, for
 # example for the main jar and the accompanying pom.xml (when generated):
-outputs.0.filename=<file name>
+outputs.0.filename=<file name in the repository, ${artifactId}-${version}[-${classifier}].${extension}>
 outputs.0.length=<file size>
-outputs.0.checksums.sha512=<sha512>
-outputs.1.filename=<file name>
+outputs.0.checksums.sha512=<sha512 lowercase>
+outputs.1.filename=<file name in the repository>
 outputs.1.length=<file size>
-outputs.1.checksums.sha512=<sha512>
+outputs.1.checksums.sha512=<sha512 lowercase>
 ...
 ```
 
 Notice that `${artifactId}-${version}-sources.jar` files published in Maven repositories are not buildable sources, but [sources for IDEs](https://central.sonatype.org/pages/requirements.html#supply-javadoc-and-sources).
+
 Source tarballs, intended for building, are not always published in repositories but only sometimes, with 2 classical naming conventions:
 - `${artifactId}-${version}-source-release.zip` (see [artifacts in Central providing such source tarballs](https://search.maven.org/search?q=l:source-release))
 - `${artifactId}-${version}-src.zip` (see [artifacts in Central providing such source tarballs](https://search.maven.org/search?q=l:src))
