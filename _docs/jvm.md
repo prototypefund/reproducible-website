@@ -9,7 +9,7 @@ see how-to [contribute]({{ "/contribute/" | prepend: site.baseurl }}).
 
 The JVM ecosystem provides many languages and build tools.
 Since the JVM is not reproducible-friendly from the beginning
--- jar/zip files, with files order and timestamp, are a first natural source of variation --,
+-- jar/zip files are a first natural source of variation, with files order and timestamp --,
 each build tool requires some work to provide Reproducible Builds.
 
 Buildinfo File
@@ -19,8 +19,8 @@ Whatever the build tool is, binary JVM artifacts are generally published in arti
 that use the Maven2 repository format (using groupId/artifactId/version coordinates)
 like [Maven Central](https://search.maven.org/) or [Google's Android Repository](https://dl.google.com/dl/android/maven2/index.html).
 
-Being able to rebuild artifacts published in these repositories will require some information: where to get the sources from,
-which environment to setup to rebuild the artifacts.
+Being able to rebuild artifacts published in these repositories will require some information: where to get the sources from?
+Which build environment to setup to rebuild the artifacts?
 
 This is the purpose of JVM Buildinfo files: they are expected to be published alongside artifacts
 as separate `${artifactId}-${version}.buildinfo` file, with content in
@@ -83,8 +83,13 @@ Source tarballs, intended for building, are not always published in repositories
 Auditing a Build
 ----------------
 
-As explained on top of this page, by default, jars  found in public repositories probably won't be reproducible. But you can try to rebuild them and
-measure how much they are not reproducible:
+Builds that are publishing a Buildinfo file are expected to be reproducible and the Buildinfo
+file is expected to contain everything required to rebuild and get the same output:
+if you find a Buildinfo file that is not sufficient to rebuild or you don't get the same result,
+please get in contact with the project to help improve reproducibility.
+
+Without Buildinfo file, as explained on top of this page, by default, jars  found in public repositories probably won't be reproducible.
+But you can try to rebuild them and measure how much they are not reproducible:
 
 1. download the jar from a public repository,
 2. determine which major version of JDK was used to produce it: usually, the full Java version is found in `META-INF/MANIFEST.MF` by running `unzip -p xxx.jar META-INF/MANIFEST.MF`
@@ -104,6 +109,9 @@ Reproducible Builds for Maven
 Getting reproducible builds with Maven requires some plugins configuration: see
 [Maven - Guide to Configuring for Reproducible Builds](https://maven.apache.org/guides/mini/guide-reproducible-builds.html)
 for more details.
+
+Work is in progress also with [maven-buildinfo-plugin](https://github.com/apache/maven-studies/tree/maven-buildinfo-plugin)
+to easily provide Buildinfo files once a build has been made reproducible.
 
 ### source release archive
 To create a source release archive, see [Apache Source Release Assembly Descriptor](https://maven.apache.org/apache-resource-bundles/#Source_Release_Assembly_Descriptor)
