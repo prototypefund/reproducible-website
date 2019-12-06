@@ -282,6 +282,16 @@ SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)
         (getenv "SOURCE_DATE_EPOCH"))))))
 ```
 
+### OCaml
+
+```
+let build_date =
+  try
+    float_of_string (Sys.getenv "SOURCE_DATE_EPOCH")
+  with
+    Not_found -> Unix.time ()
+```
+
 ### Javascript / node.js
 
 ```
