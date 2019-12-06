@@ -62,6 +62,7 @@ scala.version=2.12.6
 mvn.rebuild-args=-Dmaven.test.skip package
 mvn.build-root=<groupId>:<artifactId>:<version>
 mvn.version=Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+mvn.minimum.version=<minimum Maven version to rebuild if known>
 
 # A buildinfo file can contain checksums for multiple output files, for
 # example for the main jar and the accompanying pom.xml (when generated):
