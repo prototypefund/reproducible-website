@@ -8,7 +8,8 @@ order: 5
 # News
 
 <ul class="list-unstyled">
-    {% for post in site.posts limit: 7 %}
+    {% assign posts = site.posts | sort: 'year, month' | where: 'draft', 'false' | reverse %}
+    {% for post in posts limit: 7 %}
     <li>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <small class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</small>
