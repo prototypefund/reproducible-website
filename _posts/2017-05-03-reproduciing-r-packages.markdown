@@ -2,6 +2,7 @@
 layout: post
 title: "Reproducing R packages"
 date: 2017-05-03 12:37:58
+draft: false
 ---
 
 In the past couple of weeks, Ximin Luo worked on making R generate reproducible

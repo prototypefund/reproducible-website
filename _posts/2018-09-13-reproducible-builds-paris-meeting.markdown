@@ -3,6 +3,7 @@ layout: post
 title:  "Reproducible Builds Paris meeting"
 date:   2018-09-13 18:37:42
 categories: org
+draft: false
 ---
 
 People interested in reproducible builds will meet again! This will be the fourth summit following our [November 2017 summit in Berlin]({{ "/events/berlin2017/" | prepend: site.baseurl }}), the [December 2016 summit in Berlin]({{ "/events/berlin2016/" | prepend: site.baseurl }}) and our [December 2015 summit in Athens]({{ "/events/athens2015/" | prepend: site.baseurl }}).

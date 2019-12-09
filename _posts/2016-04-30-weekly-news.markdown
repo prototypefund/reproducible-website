@@ -3,6 +3,7 @@ layout: post
 title:  "Reproducible weekly news"
 date:   2016-04-30 09:23:42
 categories: org
+draft: false
 ---
 
 Since a year now the Debian reproducible builds folks have written a weekly

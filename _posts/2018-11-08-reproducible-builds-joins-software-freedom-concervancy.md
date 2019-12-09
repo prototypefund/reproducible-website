@@ -3,6 +3,7 @@ layout: post
 title:  "Reproducible Builds joins the Software Freedom Conservancy"
 date:   2018-11-08 13:00:00
 categories: org
+draft: false
 ---
 
 <h4 style="font-weight: normal;">&hellip; and receives US$300,000 donation from the Handshake Foundation.</h4>

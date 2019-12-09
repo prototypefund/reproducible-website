@@ -3,6 +3,7 @@ layout: post
 title:  "Reproducible Builds Announces a Crowd-funded Intel<sup>®</sup> 8086<sup>®</sup> Audit"
 date:   2019-04-01 00:00:01
 categories: org
+draft: false
 ---
 
 <h4 style="font-weight: normal;">… and proposes a patch to the Berne Convention on Copyright Law</h4>
