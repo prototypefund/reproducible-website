@@ -100,6 +100,11 @@ The majority of sponsorship funds go directly towards supporting the Reproducibl
                         <a href="{{ resource.url }}">{{ resource.name }}</a>
                     </li>
                 {% endfor %}
+                {% if project.tests %}
+                    <li class="list-group-item">
+                        <a href="{{ project.tests }}">Continuous tests</a>
+                    </li>
+                {% endif %}
             </ul>
         </div>
     </div>

@@ -1,5 +1,4 @@
 {% assign sorted_pages = site.pages | sort:"order" %}
 <p class="text-center">
 {% for page in sorted_pages %}{% if page.title and page.order > 0 %}<a class="btn btn-outline-primary m-2" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}{% endfor %}
-<a class="btn btn-outline-primary btn-sm m-2" href="https://tests.reproducible-builds.org/" target="_new">Testing framework</a>
 </p>

@@ -1,9 +1,8 @@
 - name: Arch Linux
   url: https://www.archlinux.org/
   logo: archlinux.png
+  tests: https://tests.reproducible-builds.org/archlinux/
   resources:
-  - name: Continuous tests
-    url: https://tests.reproducible-builds.org/archlinux/
   - name: Developer wiki page
     url: https://wiki.archlinux.org/index.php/DeveloperWiki:ReproducibleBuilds
   - name: Recording
@@ -37,17 +36,14 @@
 - name: coreboot
   url: https://www.coreboot.org/
   logo: coreboot.png
-  resources:
-  - name: Continuous tests
-    url: https://tests.reproducible-builds.org/coreboot/
+  tests: https://tests.reproducible-builds.org/coreboot/
 - name: Debian
   url: https://www.debian.org/
   logo: debian.png
+  tests: https://tests.reproducible-builds.org/debian/
   resources:
   - name: Wiki pages
     url: https://wiki.debian.org/ReproducibleBuilds
-  - name: Continuous tests
-    url: https://tests.reproducible-builds.org/debian/
   - name: Mailing list
     url: mailto:reproducible-builds@lists.alioth.debian.org
   - name: Recording
@@ -71,23 +67,21 @@
 - name: FreeBSD
   url: https://www.freebsd.org/
   logo: freebsd.png
+  tests: https://tests.reproducible-builds.org/freebsd/
   resources:
   - name: Base system
     url: https://wiki.freebsd.org/ReproducibleBuilds
   - name: Ports
     url: https://wiki.freebsd.org/PortsReproducibleBuilds
-  - name: Continuous tests
-    url: https://tests.reproducible-builds.org/freebsd/
   - name: Mailing list
     url: mailto:reproducibility@freebsd.org
 - name: Fedora
   url: https://fedoraproject.org/wiki/Fedora_Project_Wiki
   logo: fedora.png
+  tests: https://tests.reproducible-builds.org/fedora/
   resources:
   - name: Wiki pages
     url: https://fedoraproject.org/wiki/Reproducible_Builds
-  - name: Continuous tests
-    url: https://tests.reproducible-builds.org/fedora/
   - name: Helper scripts
     url: https://github.com/kholia/ReproducibleBuilds
 - name: GNU Guix
@@ -111,16 +105,15 @@
 - name: NetBSD
   url: https://www.netbsd.org/
   logo: netbsd.png
+  tests: https://tests.reproducible-builds.org/netbsd/
   resources:
-  - name: Continuous tests
-    url: https://tests.reproducible-builds.org/netbsd/
   - name: Notes on Reproducible Builds of NetBSD
     url: https://blog.netbsd.org/tnf/entry/netbsd_fully_reproducible_builds
 - name: NixOS
   url: https://nixos.org/
   logo: nixos.png
   resources:
-  - name: Continuous tests
+  - name: Continuous tests (external)
     url: https://r13y.com
   - name: "PR#2281: deterministic build"
     url: https://github.com/NixOS/nixpkgs/pull/2281
@@ -140,9 +133,8 @@
 - name: OpenWrt
   url: https://openwrt.org/
   logo: openwrt.png
+  tests: https://tests.reproducible-builds.org/openwrt/
   resources:
-  - name: Continuous tests
-    url: https://tests.reproducible-builds.org/openwrt/
 - name: Qubes OS
   url: https://www.qubes-os.org/
   logo: qubes.png
