@@ -161,7 +161,7 @@
   url: https://tails.boum.org/
   logo: tails.png
   resources:
-  - nane: Verifying a Tails image for reproducibility
+  - name: Verifying a Tails image for reproducibility
     url: https://tails.boum.org/contribute/build/reproducible/
   - name: Blueprint
     url: https://tails.boum.org/blueprint/reproducible_builds/
