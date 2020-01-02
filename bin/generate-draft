@@ -90,7 +90,7 @@ def get_data(year, month, max_age=3600):
     month_end_ts = int(month_end.timestamp())
 
     data = {x: y(month_start_ts, month_end_ts) for x, y in (
-        ('author', get_author),
+        ('authors', get_authors),
         ('commits', get_commits),
         ('uploads', get_uploads),
         ('patches', get_patches),
@@ -115,8 +115,25 @@ def get_data(year, month, max_age=3600):
     return data
 
 
-def get_author(month_start, month_end):
-    return os.environ.get('DEBFULLNAME', 'FIXME')
+def get_authors(month_start, month_end):
+    lines = subprocess.check_output((
+        'git',
+        'log',
+        '--pretty=format:"%an%x09"',
+        '_reports/{}-{:02d}.md'.format(month_start.year, month_start.month),
+    )).decode('utf-8')
+
+    authors = list(sorted(set(
+        x.replace('"', '').strip() for x in lines.splitlines()
+    )))
+
+    if len(authors) < 2:
+        return " and ".join(authors)
+
+    return "{} and {}".format(
+        ", ".join(authors[:-1]),
+        authors[-1],
+    )
 
 
 def get_ftbfs_bugs(month_start, month_end):
