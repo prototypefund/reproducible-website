@@ -13,32 +13,29 @@ import time
 import yaml
 
 PROJECTS = (
-    'diffoscope',
-    'diffoscope-website',
-    'strip-nondeterminism',
-    'disorderfs',
-    'reprotest',
-    'trydiffoscope',
-    'try.diffoscope.org',
-    'reproducible-website',
-    'rb-mailx-ansible',
-    'jenkins.debian.net',
+    "diffoscope",
+    "diffoscope-website",
+    "strip-nondeterminism",
+    "disorderfs",
+    "reprotest",
+    "trydiffoscope",
+    "try.diffoscope.org",
+    "reproducible-website",
+    "rb-mailx-ansible",
+    "jenkins.debian.net",
 )
 
 
 def main(*args):
-    for x in PROJECTS + ('reproducible-notes',):
+    for x in PROJECTS + ("reproducible-notes",):
         ensure_dir(sibling_repo_gitdir(x))
 
-    previous_month = datetime.date.today().replace(day=1) - \
-        datetime.timedelta(days=1)
+    previous_month = datetime.date.today().replace(day=1) - datetime.timedelta(days=1)
 
     data = get_data(previous_month.year, previous_month.month)
 
-    env = jinja2.Environment(
-        loader=jinja2.FileSystemLoader(os.path.dirname(__file__))
-    )
-    print(env.get_template('generate-draft.template').render(**data))
+    env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
+    print(env.get_template("generate-draft.template").render(**data))
 
     return 0
 
@@ -48,13 +45,13 @@ def log(msg, *args, **kwargs):
 
 
 def sibling_repo_gitdir(path):
-    toplevel = os.path.dirname(subprocess.check_output((
-        'git',
-        'rev-parse',
-        '--show-toplevel',
-    )).decode('utf-8'))
+    toplevel = os.path.dirname(
+        subprocess.check_output(("git", "rev-parse", "--show-toplevel",)).decode(
+            "utf-8"
+        )
+    )
 
-    return os.path.join(toplevel, path, '.git')
+    return os.path.join(toplevel, path, ".git")
 
 
 def ensure_dir(path):
@@ -63,7 +60,7 @@ def ensure_dir(path):
 
 
 def get_data(year, month, max_age=3600):
-    filename = '/tmp/generate-draft-{:04d}{:02d}.pickle'.format(year, month)
+    filename = "/tmp/generate-draft-{:04d}{:02d}.pickle".format(year, month)
 
     try:
         mtime = os.path.getmtime(filename)
@@ -72,7 +69,7 @@ def get_data(year, month, max_age=3600):
         if mtime > mtime_self and mtime >= time.time() - max_age:
             log("Using cache from {}", filename)
 
-            with open(filename, 'rb') as f:
+            with open(filename, "rb") as f:
                 return pickle.load(f)
     except (EOFError, OSError):
         pass
@@ -81,74 +78,68 @@ def get_data(year, month, max_age=3600):
 
     month_start = datetime.datetime(year=year, month=month, day=1)
     month_end = month_start.replace(
-        day=calendar.monthlen(year, month),
-        hour=23,
-        minute=59
+        day=calendar.monthlen(year, month), hour=23, minute=59
     )
 
     month_start_ts = int(month_start.timestamp())
     month_end_ts = int(month_end.timestamp())
 
-    data = {x: y(month_start_ts, month_end_ts) for x, y in (
-        ('authors', get_authors),
-        ('commits', get_commits),
-        ('uploads', get_uploads),
-        ('patches', get_patches),
-        ('ftbfs_bugs', get_ftbfs_bugs),
-        ('issues_yml', get_issues_yml),
-        ('packages_yml', get_packages_yml),
-        ('packages_stats', get_packages_stats),
-    )}
+    data = {
+        x: y(month_start_ts, month_end_ts)
+        for x, y in (
+            ("authors", get_authors),
+            ("commits", get_commits),
+            ("uploads", get_uploads),
+            ("patches", get_patches),
+            ("ftbfs_bugs", get_ftbfs_bugs),
+            ("issues_yml", get_issues_yml),
+            ("packages_yml", get_packages_yml),
+            ("packages_stats", get_packages_stats),
+        )
+    }
 
-    data.update({
-        'projects': PROJECTS,
-        'month_year': month_start.strftime('%B %Y'),
-        'title_year': '{:04d}'.format(year),
-        'title_month': '{:02d}'.format(month),
-    })
+    data.update(
+        {
+            "projects": PROJECTS,
+            "month_year": month_start.strftime("%B %Y"),
+            "title_year": "{:04d}".format(year),
+            "title_month": "{:02d}".format(month),
+        }
+    )
 
     log("Saving cache to {}", filename)
 
-    with open(filename, 'wb') as f:
+    with open(filename, "wb") as f:
         pickle.dump(data, f)
 
     return data
 
 
 def get_authors(month_start, month_end):
-    lines = subprocess.check_output((
-        'git',
-        'log',
-        '--pretty=format:"%an%x09"',
-        '_reports/{}-{:02d}.md'.format(month_start.year, month_start.month),
-    )).decode('utf-8')
+    lines = subprocess.check_output(
+        (
+            "git",
+            "log",
+            '--pretty=format:"%an%x09"',
+            "_reports/{}-{:02d}.md".format(month_start.year, month_start.month),
+        )
+    ).decode("utf-8")
 
-    authors = list(sorted(set(
-        x.replace('"', '').strip() for x in lines.splitlines()
-    )))
+    authors = list(sorted(set(x.replace('"', "").strip() for x in lines.splitlines())))
 
     if len(authors) < 2:
         return " and ".join(authors)
 
-    return "{} and {}".format(
-        ", ".join(authors[:-1]),
-        authors[-1],
-    )
+    return "{} and {}".format(", ".join(authors[:-1]), authors[-1],)
 
 
 def get_ftbfs_bugs(month_start, month_end):
-    return bugs(
-        month_start,
-        month_end,
-        "bugs_usertags.tag = '{}'".format('ftbfs'),
-    )
+    return bugs(month_start, month_end, "bugs_usertags.tag = '{}'".format("ftbfs"),)
 
 
 def get_patches(month_start, month_end):
     return bugs(
-        month_start,
-        month_end,
-        "id IN (SELECT id FROM bugs_tags WHERE tag = 'patch')",
+        month_start, month_end, "id IN (SELECT id FROM bugs_tags WHERE tag = 'patch')",
     )
 
 
@@ -156,12 +147,12 @@ def bugs(month_start, month_end, extra="true"):
     log("Querying UDD for usertagged bugs with filter: {}", extra)
 
     fields = (
-        'id',
-        'source',
-        'submitter',
-        'submitter_name',
-        'title',
-        'arrival',
+        "id",
+        "source",
+        "submitter",
+        "submitter_name",
+        "title",
+        "arrival",
     )
 
     sql = """
@@ -178,38 +169,39 @@ def bugs(month_start, month_end, extra="true"):
         AND
             CAST(arrival AS DATE) BETWEEN
             to_timestamp(@{month_start}) AND to_timestamp(@{month_end})
-    """.format(**{
-        'fields': ', '.join(fields),
-        'extra': extra,
-        'month_start': month_start,
-        'month_end': month_end,
-    })
+    """.format(
+        **{
+            "fields": ", ".join(fields),
+            "extra": extra,
+            "month_start": month_start,
+            "month_end": month_end,
+        }
+    )
 
     seen = set()
     result = {}
     for x in udd(sql, fields):
-        if x['id'] in seen:
+        if x["id"] in seen:
             continue
-        seen.add(x['id'])
+        seen.add(x["id"])
 
-        result.setdefault(x['submitter_name'], []).append(x)
+        result.setdefault(x["submitter_name"], []).append(x)
 
-    return {
-        x: list(sorted(y, key=lambda x: x['id'])) for x, y in result.items()
-    }
+    return {x: list(sorted(y, key=lambda x: x["id"])) for x, y in result.items()}
 
 
 def get_uploads(month_start, month_end):
     log("Querying UDD for uploads")
 
     fields = (
-        'source',
-        'version',
-        'distribution',
-        'signed_by_name',
+        "source",
+        "version",
+        "distribution",
+        "signed_by_name",
     )
 
-    data = udd("""
+    data = udd(
+        """
         SELECT
             {fields}
         FROM
@@ -221,29 +213,38 @@ def get_uploads(month_start, month_end):
             to_timestamp(@{month_start}) AND to_timestamp(@{month_end})
         ORDER BY
             date
-    """.format(**{
-        'fields': ', '.join(fields),
-        'sources': ', '.join("'{}'".format(x) for x in PROJECTS),
-        'month_start': month_start,
-        'month_end': month_end,
-    }), fields)
+    """.format(
+            **{
+                "fields": ", ".join(fields),
+                "sources": ", ".join("'{}'".format(x) for x in PROJECTS),
+                "month_start": month_start,
+                "month_end": month_end,
+            }
+        ),
+        fields,
+    )
 
     result = {}
     for x in data:
-        result.setdefault(x['source'], []).append(x)
+        result.setdefault(x["source"], []).append(x)
 
     return result
 
 
 def udd(query, fields):
-    lines = subprocess.check_output("""
+    lines = subprocess.check_output(
+        """
         echo "{}" | ssh quantz.debian.org psql --no-psqlrc service=udd
-    """.format(query), shell=True)
+    """.format(
+            query
+        ),
+        shell=True,
+    )
 
     data = []
 
     for line in lines.splitlines()[2:]:
-        split = line.decode('utf-8').split('|')
+        split = line.decode("utf-8").split("|")
 
         if len(split) != len(fields):
             continue
@@ -260,11 +261,11 @@ def get_commits(month_start, month_end):
 
 
 def get_issues_yml(month_start, month_end):
-    return commits(month_start, month_end, 'reproducible-notes', 'issues.yml')
+    return commits(month_start, month_end, "reproducible-notes", "issues.yml")
 
 
 def get_packages_yml(month_start, month_end):
-    return commits(month_start, month_end, 'reproducible-notes', 'packages.yml')
+    return commits(month_start, month_end, "reproducible-notes", "packages.yml")
 
 
 def open_packages_yml(date):
@@ -272,8 +273,9 @@ def open_packages_yml(date):
         "git show $(git rev-list -n1 --until @{0} "
         "origin/master):packages.yml".format(date),
         shell=True,
-        cwd=sibling_repo_gitdir('reproducible-notes'),
-        stdout=subprocess.PIPE).stdout
+        cwd=sibling_repo_gitdir("reproducible-notes"),
+        stdout=subprocess.PIPE,
+    ).stdout
 
 
 def get_packages_stats(month_start, month_end):
@@ -293,52 +295,54 @@ def get_packages_stats(month_start, month_end):
     }
 
 
-def commits(month_start, month_end, project, path='.'):
+def commits(month_start, month_end, project, path="."):
     # Assume its in the parent dir
     git_dir = sibling_repo_gitdir(project)
 
-    subprocess.check_call(('git', 'fetch', 'origin'), cwd=git_dir)
+    subprocess.check_call(("git", "fetch", "origin"), cwd=git_dir)
 
-    output = subprocess.check_output((
-        'git',
-        'log',
-        'origin/master',
-        '--since', '@{}'.format(month_start),
-        '--until', '@{}'.format(month_end),
-        '--pretty=format:%an\t%h\t%s',
-        '--no-merges',
-        '--all',
-        '--',
-        path,
-        ':(exclude,glob)_blog/posts/*.md',
-    ), cwd=git_dir).decode('utf-8')
+    output = subprocess.check_output(
+        (
+            "git",
+            "log",
+            "origin/master",
+            "--since",
+            "@{}".format(month_start),
+            "--until",
+            "@{}".format(month_end),
+            "--pretty=format:%an\t%h\t%s",
+            "--no-merges",
+            "--all",
+            "--",
+            path,
+            ":(exclude,glob)_blog/posts/*.md",
+        ),
+        cwd=git_dir,
+    ).decode("utf-8")
 
     result = collections.defaultdict(list)
     for x in output.splitlines():
-        author, sha, title = x.split('\t', 2)
+        author, sha, title = x.split("\t", 2)
 
-        for pattern in (
-            r'^dependabot$',
-        ):
+        for pattern in (r"^dependabot$",):
             if re.search(pattern, author) is not None:
                 continue
 
         for pattern in (
-            r'^--fix-deterministic$',
-            r'^Add missing usertagged bugs$',
-            r'^Remove archived bugs$',
-            r'^Release .* to Debian .*$',
+            r"^--fix-deterministic$",
+            r"^Add missing usertagged bugs$",
+            r"^Remove archived bugs$",
+            r"^Release .* to Debian .*$",
         ):
             if re.search(pattern, title) is not None:
                 continue
 
-        result[author].append({
-            'sha': sha,
-            'title': title.replace('_', '\_'),
-        })
+        result[author].append(
+            {"sha": sha, "title": title.replace("_", "\_"),}
+        )
 
     return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main(*sys.argv[1:]))
