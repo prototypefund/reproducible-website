@@ -4,7 +4,8 @@ title: Continuous tests
 permalink: /citests/
 order: 10
 ---
-## Continuous tests
+
+# Continuous tests
 
 <div markdown="1">
 The following projects are tested within the reproducible test infrastructure.
