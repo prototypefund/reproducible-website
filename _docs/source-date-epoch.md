@@ -319,6 +319,21 @@ end
 
 Note that Ruby's Datetime.strftime is locale-independent by default.
 
+### Scala
+
+To get milliseconds since Epoch:
+
+```scala
+sys.env.get("SOURCE_DATE_EPOCH").map(_.toLong * 1000)
+```
+
+To get a `java.util.Date`:
+
+```scala
+sys.env.get("SOURCE_DATE_EPOCH")
+  .map(sde => new java.util.Date(sde.toLong * 1000))
+```
+
 ### Last-resort using faketime
 
 ''As a last resort to be avoided where possible'' (e.g. if the upstream tool is too hard to patch, or too time-consuming for you right now to patch, or if they are being uncooperative or unresponsive), package maintainers may try something like the following:
