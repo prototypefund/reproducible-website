@@ -87,7 +87,7 @@ import datetime
 build_date = datetime.datetime.utcfromtimestamp(int(os.environ.get('SOURCE_DATE_EPOCH', time.time())))
 ```
 
-or with less imports:
+or with less imports, rendering to a string:
 
 ```
 import os
