@@ -29,11 +29,20 @@ Certain compiler flags can work around the issue:
    (available in all GCC versions, Clang 3.8)
  * [`-fmacro-prefix-map=OLD=NEW`](https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html#index-fmacro-prefix-map)
    is similar to `-fdebug-prefix-map`, but addresses irreproducibility due to
-   the use of `__FILE__` macros and alike.
-   (available since GCC 8, Clang support is [pending](https://bugs.llvm.org/show_bug.cgi?id=38135))
+   the use of `__FILE__` macros in `assert` calls for example.
+   (available since GCC 8 and [Clang 10](https://bugs.llvm.org/show_bug.cgi?id=38135))
  * `-ffile-prefix-map=OLD=NEW` is an alias for both `-fdebug-prefix-map` and
    `-fmacro-prefix-map`.
-   (available since GCC 8, Clang support is [pending](https://bugs.llvm.org/show_bug.cgi?id=38135))
+   (available since GCC 8 and [Clang 10](https://bugs.llvm.org/show_bug.cgi?id=38135))
+
+With dpkg >= 1.19.1, first shipped with Debian Buster, packages can enable the
+`-ffile-prefix-map=OLD=NEW` flag by adding the `fixfilepath` [build
+flag](https://manpages.debian.org/dpkg-buildflags.1) to their `debian/rules`
+file. For example:
+```
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all reproducible=+fixfilepath
+```
+
 
 Note that some packages save the compile options in the build output.
 
