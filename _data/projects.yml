@@ -79,6 +79,7 @@
   url: https://fedoraproject.org/wiki/Fedora_Project_Wiki
   logo: fedora.png
   tests: https://tests.reproducible-builds.org/fedora/
+  tests_disabled: true
   resources:
   - name: Wiki pages
     url: https://fedoraproject.org/wiki/Reproducible_Builds
