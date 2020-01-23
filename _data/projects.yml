@@ -1,3 +1,7 @@
+- name: Alpine Linux
+  url: https://alpinelinux.org/
+  logo: alpine.png
+  tests: https://tests.reproducible-builds.org/alpine/
 - name: Arch Linux
   url: https://www.archlinux.org/
   logo: archlinux.png
