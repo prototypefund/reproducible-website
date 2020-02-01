@@ -292,6 +292,14 @@ let build_date =
     Not_found -> Unix.time ()
 ```
 
+### Java / gradle
+
+```
+def buildDate = System.getenv("SOURCE_DATE_EPOCH") == null ?
+  new java.util.Date() :
+  new java.util.Date(1000 * Long.parseLong(System.getenv("SOURCE_DATE_EPOCH")))
+```
+
 ### Javascript / node.js
 
 ```
