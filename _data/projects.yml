@@ -52,7 +52,7 @@
     url: mailto:reproducible-builds@lists.alioth.debian.org
   - name: Recording
     url: /docs/recording/#debian
-  - name: Docker Images
+  - name: Docker Images (reproducible)
     url: https://debuerreotype.github.io/
 - name: ElectroBSD
   url: https://www.fabiankeil.de/gehacktes/electrobsd/
