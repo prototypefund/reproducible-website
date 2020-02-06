@@ -109,7 +109,7 @@ be key in ensuring a reproducible "buster" becomes a reality.
 
 ### Levels
 
-Below are the names and amounts associated with levels of sponsorship (all values in USD):
+Below are the names and amounts associated with levels of sponsorship (all values in USD and per year):
 
 * Platinum: $300,000
 * Gold: $125,000
