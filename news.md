@@ -22,10 +22,14 @@ order: 5
 
 Every month we publish a report on what we have been up to. ([RSS/Atom feed]({{ "/blog/index.rss" | prepend: site.baseurl }}))
 
-{% assign reports = site.reports | sort: 'year, month' | where: 'draft', 'false' | reverse %}
-{% for x in reports %}
-* [{{ x.title }}]({{ x.url | prepend: site.baseurl }})
-{% endfor %}
+<ul class="list-unstyled">
+    {% assign reports = site.reports | sort: 'year, month' | where: 'draft', 'false' | reverse %}
+    {% for x in reports %}
+    <li>
+        <a href="{{ x.url | prepend: site.baseurl }}">{{ x.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
 
 ## Weekly reports
 
