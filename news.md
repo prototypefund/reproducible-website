@@ -8,7 +8,7 @@ order: 5
 # News
 
 <ul class="list-unstyled">
-    {% assign posts = site.posts | sort: 'year, month' | where: 'draft', 'false' | reverse %}
+    {% assign posts = site.posts | sort: 'year, month' | where: 'draft', 'false' %}
     {% for post in posts limit: 7 %}
     <li>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
