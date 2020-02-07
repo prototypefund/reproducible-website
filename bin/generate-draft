@@ -328,6 +328,9 @@ def commits(month_start, month_end, project, path="."):
             if re.search(pattern, author) is not None:
                 continue
 
+        if author.startswith('"') and author.endswith('"'):
+            author = author[1:-1]
+
         skip = False
         for pattern in (
             r"^--fix-deterministic$",
