@@ -337,7 +337,7 @@ def commits(month_start, month_end, project, path="."):
             r"^Add missing usertagged bugs$",
             r"^Remove archived bugs$",
             r"^Release .* to Debian .*$",
-            r"^\d\d\d\d-\d\d[: ]",
+            r"^20\d\d-?\d\d[: ]",
             r"^published as https:",
             r"^release as \d",
             r"^release \d",
