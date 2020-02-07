@@ -328,6 +328,7 @@ def commits(month_start, month_end, project, path="."):
             if re.search(pattern, author) is not None:
                 continue
 
+        skip = False
         for pattern in (
             r"^--fix-deterministic$",
             r"^Add missing usertagged bugs$",
@@ -342,7 +343,11 @@ def commits(month_start, month_end, project, path="."):
             r"^pristine-tar data for ",
         ):
             if re.search(pattern, title, re.IGNORECASE) is not None:
-                continue
+                skip = True
+                break
+
+        if skip:
+            continue
 
         title = title.replace("_", "\_")
         if title.endswith("."):
