@@ -27,7 +27,7 @@ In this month's report, we cover:
 * **Getting in touch** — *How to contribute, etc*
 
 {% raw %}
-If you are interested in contributing to our project, please visit our [*Contribute*]({{ "/contribute/" | prepend: site.baseurl }}) page on our website.
+If you are interested in contributing to the project, please visit our [*Contribute*]({{ "/contribute/" | prepend: site.baseurl }}) page on our website.
 {% endraw %}
 
 ---
