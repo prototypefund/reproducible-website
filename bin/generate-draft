@@ -337,6 +337,9 @@ def commits(month_start, month_end, project, path="."):
             if re.search(pattern, title) is not None:
                 continue
 
+        if title.endswith("."):
+            title = title[:-1]
+
         result[author].append(
             {"sha": sha, "title": title.replace("_", "\_"),}
         )
