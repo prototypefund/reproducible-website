@@ -87,7 +87,6 @@ def get_data(year, month, max_age=3600):
     data = {
         x: y(month_start_ts, month_end_ts)
         for x, y in (
-            ("authors", get_authors),
             ("commits", get_commits),
             ("uploads", get_uploads),
             ("patches", get_patches),
@@ -100,6 +99,7 @@ def get_data(year, month, max_age=3600):
 
     data.update(
         {
+            "authors": get_authors(year, month),
             "projects": PROJECTS,
             "month_year": month_start.strftime("%B %Y"),
             "title_year": "{:04d}".format(year),
@@ -115,13 +115,13 @@ def get_data(year, month, max_age=3600):
     return data
 
 
-def get_authors(month_start, month_end):
+def get_authors(year, month):
     lines = subprocess.check_output(
         (
             "git",
             "log",
             '--pretty=format:"%an%x09"',
-            "_reports/{}-{:02d}.md".format(month_start.year, month_start.month),
+            "_reports/{}-{:02d}.md".format(year, month),
         )
     ).decode("utf-8")
 
