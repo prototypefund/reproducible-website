@@ -39,7 +39,7 @@ Various free software projects are working on providing reproducible builds to t
 
 ## Sponsors
 
-If you are interested in the work of the Reproducible Builds project, please consider [becoming a sponsor]({{"/sponsor/" | prepend: site.baseurl }}).
+If you are interested in the work of the Reproducible Builds project, please consider [becoming a sponsor]({{ "/sponsor/" | prepend: site.baseurl }}).
 {: .lead}
 
 [![Software Freedom Conservancy]({{ "/assets/images/who/conservancy.png#right" | prepend: site.baseurl }})](https://sfconservancy.org/)

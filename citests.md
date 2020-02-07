@@ -20,7 +20,7 @@ Click the different links to see current tests and results.
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                     <a href="{{ project.tests }}">
-                        <h4>{{project.name}}</h4>
+                        <h4>{{ project.name }}</h4>
                         <img class="card-img p-5" src="{{ project.logo | prepend: "/images/logos/" | prepend: site.baseurl }}">
                     </a>
                 </li>
@@ -45,7 +45,7 @@ The following projects are being tested outside the reproducible test infrastruc
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                     <a href="{{ project.tests }}">
-                        <h4>{{project.name}}</h4>
+                        <h4>{{ project.name }}</h4>
                         <img class="card-img p-5" src="{{ project.logo | prepend: "/images/logos/" | prepend: site.baseurl }}">
                     </a>
                 </li>
@@ -71,7 +71,7 @@ are disabled as they became unmaintained. Please contact us if you want to reviv
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                     <a href="{{ project.tests }}">
-                        <h4>{{project.name}}</h4>
+                        <h4>{{ project.name }}</h4>
                         <img class="card-img p-5" src="{{ project.logo | prepend: "/images/logos/" | prepend: site.baseurl }}">
                     </a>
                 </li>
