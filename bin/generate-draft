@@ -333,8 +333,15 @@ def commits(month_start, month_end, project, path="."):
             r"^Add missing usertagged bugs$",
             r"^Remove archived bugs$",
             r"^Release .* to Debian .*$",
+            r"^\d\d\d\d-\d\d[: ]",
+            r"^published as https:",
+            r"^release as \d",
+            r"^release \d",
+            r"^releasing package ",
+            r"^Open new changelog entry for version ",
+            r"^pristine-tar data for ",
         ):
-            if re.search(pattern, title) is not None:
+            if re.search(pattern, title, re.IGNORECASE) is not None:
                 continue
 
         title = title.replace("_", "\_")
