@@ -1518,7 +1518,7 @@ Can\'t be crowdsourced without trusting the crowd
 There are more and more architectures (x86, ARM, GPUs, FPGA, machine
 learning
 
-chips, DSPs, …) with interesting aspects that cause irreproducible
+chips, DSPs, …) with interesting aspects that cause unreproducible
 builds:
 
 * Instruction set differences (e.g. does the build machine have SSE4?)
@@ -1558,7 +1558,7 @@ insert/propagate a backdoor in the hardware?)
 
 Solutions:
 
-* Develop best practices for dealing with various irreproducibility
+* Develop best practices for dealing with various unreproducibility
 issues. For example, for races in builds, switch to build systems that
 provide proper isolation between build steps so there are no undeclared
 dependencies. For those stuck on older build system, can we provide

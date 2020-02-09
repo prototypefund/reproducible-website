@@ -1317,7 +1317,7 @@ dependencies are gotten from gradle.
 
 - build environments should be a minimal build environment indepdendent
 of the host system. It is recommended to have no network access, in
-order to ensure network inputs do not result in irreproducibility.
+order to ensure network inputs do not result in unreproducibility.
 
 #### What is needed to run rebuilders?
 

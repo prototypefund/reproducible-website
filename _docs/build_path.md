@@ -28,7 +28,7 @@ Certain compiler flags can work around the issue:
    can strip directory prefixes from debug info.
    (available in all GCC versions, Clang 3.8)
  * [`-fmacro-prefix-map=OLD=NEW`](https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html#index-fmacro-prefix-map)
-   is similar to `-fdebug-prefix-map`, but addresses irreproducibility due to
+   is similar to `-fdebug-prefix-map`, but addresses unreproducibility due to
    the use of `__FILE__` macros in `assert` calls for example.
    (available since GCC 8 and [Clang 10](https://bugs.llvm.org/show_bug.cgi?id=38135))
  * `-ffile-prefix-map=OLD=NEW` is an alias for both `-fdebug-prefix-map` and

@@ -368,7 +368,7 @@ that are setting the `wd` field.
 
 Then after some experimenting, we find that overwriting this in a different
 file (`src/library/tools/R/parseRd.R`) seems to work to get rid of this
-irreproducibility. (This may not be the best; our exact strategy is still being
+unreproducibility. (This may not be the best; our exact strategy is still being
 discussed with upstream, but at least we know which areas of the code are
 responsible.)
 
@@ -461,7 +461,7 @@ despite our patches, we just do the above process again:
     [.. source code of makeLazyLoadDB ..]
     }
 
-We know our irreproducibility is with the help files and not the main package,
+We know our unreproducibility is with the help files and not the main package,
 so `c` to skip this part:
 
     >>> c
