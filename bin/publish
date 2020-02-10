@@ -33,6 +33,7 @@ git add "${FILENAME}"
 if git commit -m "published as ${URL}"
 then
 	git log -1
+	git dag -d "${TAG}" || true
 	git tag -s "${TAG}" -m "Publish report for ${TAG}"
 
 	echo
