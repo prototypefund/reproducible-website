@@ -156,6 +156,23 @@ endif ()
 
 The above will work only with GNU date. See POSIX shell example on how to support BSD date.
 
+### Meson
+
+By deliberate design, [Meson does not provide access to environment variables in build files](https://github.com/mesonbuild/meson/issues/9#issuecomment-543780613) which makes accessing `SOURCE_DATE_EPOCH` troublesome.
+
+```
+date_exe = find_program('date')
+cmd = run_command('sh', '-c', 'echo $SOURCE_DATE_EPOCH')
+source_date_epoch = cmd.stdout().strip()
+if source_date_epoch == ''
+	source_date_epoch = run_command(date_exe, '+%s').stdout().strip()
+endif
+
+formatted_date = run_command(date_exe, '-u', '-d', '@' + source_date_epoch, '+%Y-%m-%d').stdout().strip()
+```
+
+The above will work only with GNU `date`. See the POSIX shell example on how to support BSD date variants.
+
 ### C
 
 ```
