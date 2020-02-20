@@ -2,3 +2,7 @@
   url: https://www.ionos.com/
   logo: oneandone-ionos.png
   description: Hosting services
+- name: Codethink
+  url: https://www.codethink.co.uk/
+  logo: codethink.svg
+  description: arm64 hardware and housing
