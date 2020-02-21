@@ -15,7 +15,7 @@ The Reproducible Builds project is a member of the [Software Freedom Conservancy
 
 ### About the project
 
-Whilst anyone can inspect the source code of free and open source software for
+Whilst anyone may inspect the source code of free and open source software for
 malicious flaws, most software is distributed pre-compiled to end users.
 
 The motivation behind the Reproducible Builds project is to permit verification

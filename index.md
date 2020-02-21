@@ -25,7 +25,7 @@ order: 0
 
 ## Why does it matter?
 
-Whilst anyone can inspect the source code of free and open source software for
+Whilst anyone may inspect the source code of free and open source software for
 malicious flaws, most software is distributed pre-compiled with no method to
 confirm whether they correspond.
 

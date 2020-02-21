@@ -13,7 +13,7 @@ draft: true
 [![]({{ "/images/reports/{{ title_year }}-{{ title_month }}/reproducible-builds.png#right" | prepend: site.baseurl }})](https://reproducible-builds.org/)
 {% endraw %}
 
-In these reports we outline the most important things that we have been up to over the past month. As a quick recap, whilst anyone can inspect the source code of free software for malicious flaws, almost all software is distributed to end users as pre-compiled binaries.
+In these reports we outline the most important things that we have been up to over the past month. As a quick recap, whilst anyone may inspect the source code of free software for malicious flaws, almost all software is distributed to end users as pre-compiled binaries.
 
 The motivation behind the reproducible builds effort is to ensure no flaws have been introduced during this compilation process by promising identical results are always generated from a given source, thus allowing multiple third-parties to come to a consensus on whether a build was compromised.
 
