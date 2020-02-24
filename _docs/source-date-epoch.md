@@ -137,8 +137,9 @@ The above will work with either GNU or BSD date, and fallback to ignore `SOURCE_
 STRING(TIMESTAMP BUILD_DATE "%Y-%m-%d" UTC)
 ```
 
-works with cmake >= 2.8.11 , but is only reproducible with cmake >= 3.8.0.
-If you do not have a modern cmake, but need reproducibility, you can use the less preferred variant:
+... works with CMake versions 2.8.11 and higher, but is only respects
+`SOURCE_DATE_EPOCH` since version 3.8.0. If you do not have a modern CMake but
+need reproducibility you can use the less-preferred variant:
 
 ```
 if (DEFINED ENV{SOURCE_DATE_EPOCH})
@@ -154,7 +155,8 @@ else ()
 endif ()
 ```
 
-The above will work only with GNU date. See POSIX shell example on how to support BSD date.
+The above will work only with GNU `date`. See the POSIX shell example on how to
+support BSD date.
 
 ### Meson
 
