@@ -137,7 +137,7 @@ The above will work with either GNU or BSD date, and fallback to ignore `SOURCE_
 STRING(TIMESTAMP BUILD_DATE "%Y-%m-%d" UTC)
 ```
 
-... works with CMake versions 2.8.11 and higher, but is only respects
+... works with CMake versions 2.8.11 and higher, but it only respects
 `SOURCE_DATE_EPOCH` since version 3.8.0. If you do not have a modern CMake but
 need reproducibility you can use the less-preferred variant:
 
