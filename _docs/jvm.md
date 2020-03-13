@@ -133,6 +133,13 @@ For multi-module builds, each produced artifact will have its
 own buildinfo file with `mvn.build-root` property defined, to know the root from which the
 rebuild must happen.
 
+Reproducible Builds for Gradle
+---------------------------
+
+Gradle supports [reproducible archives](https://docs.gradle.org/current/userguide/working_with_files.html#sec:reproducible_archives) as of v3.4
+
+Tasks which generate archives, such as ZIPs or JARs, can enforce preserved file timestamps and reproducible file order which fix two of the main sources of non-determinism in JVM artifacts.
+
 Reproducible Builds for sbt
 ---------------------------
 
