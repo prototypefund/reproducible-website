@@ -8,7 +8,6 @@ draft: true
 
 **Welcome to the {{ month_year }} report from the [Reproducible Builds](https://reproducible-builds.org) project!**
 {: .lead}
-
 {% raw %}
 [![]({{ "/images/reports/{{ title_year }}-{{ title_month }}/reproducible-builds.png#right" | prepend: site.baseurl }})](https://reproducible-builds.org/)
 {% endraw %}
@@ -25,9 +24,9 @@ In this month's report, we cover:
 * **Software development** — *FIXME, etc.*
 * **Misc news** — *From our mailing list, etc.*
 * **Getting in touch** — *How to contribute, etc*
-
 {% raw %}
 If you are interested in contributing to the project, please visit our [*Contribute*]({{ "/contribute/" | prepend: site.baseurl }}) page on our website.
+{: .small}
 {% endraw %}
 
 ---
@@ -106,3 +105,4 @@ If you are interested in contributing to the Reproducible Builds project, please
 ---
 
 This month's report was written by {{ authors }}. It was subsequently reviewed by a bunch of Reproducible Builds folks on IRC and the mailing list.
+{: .small}

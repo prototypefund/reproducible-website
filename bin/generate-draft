@@ -185,7 +185,11 @@ def bugs(month_start, month_end, extra="true"):
             continue
         seen.add(x["id"])
 
-        result.setdefault(x["submitter_name"], []).append(x)
+        k = x["submitter_name"]
+        if k.startswith('"') and k.endswith('"'):
+            k = k[1:-1]
+
+        result.setdefault(k, []).append(x)
 
     return {x: list(sorted(y, key=lambda x: x["id"])) for x, y in result.items()}
 
