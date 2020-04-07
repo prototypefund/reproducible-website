@@ -39,7 +39,7 @@ then
 	echo
 	echo "Now verify the results and run:"
 	echo
-	echo "  $ git push origin master && git push origin ${TAG}"
+	echo "  $ git push origin master && git push origin refs/tags/${TAG}"
 	echo
 
 	while true
@@ -49,7 +49,7 @@ then
 
 		case "${X}" in
 		Y|"")
-			git push origin master && git push origin ${TAG}
+			git push origin master && git push origin refs/tags/${TAG}
 			break
 			;;
 		N|n)
