@@ -13,19 +13,19 @@ The Reproducible Builds project is using *Salsa* to host most of its infrastruct
 
 To [contribute to the Reproducible Builds project](/contribute), please follow the following instructions:
 
-### 1. Visit the Debian GitLab self-service pages
+### 1. Visit the "Sign in" page
 
-First, visit **[signup.salsa.debian.org](http://signup.salsa.debian.org)** and select **Register guest account**:
+First, visit **[the sign in / register page](https://salsa.debian.org/users/sign_in)** and select the **Register** tab:
 
 ![](/images/contribute/salsa/01.png)
 
-### 2. Create a guest account on Salsa
+### 2. Create account
 
-Next, create your account. Note that your username will be suffixed with `-guest` to distinguish you from official Debian Developers.
+Next, create your account:
 
 ![](/images/contribute/salsa/02.png)
 
----
+<br>
 
 After registering, you should see the following screen:
 
@@ -37,11 +37,15 @@ You will have to confirm your email address to proceed. Check your email inbox a
 
 ![](/images/contribute/salsa/04.png)
 
+<br>
+
 ### 4. Log in to your new account
 
-Next, log in to your new account. **Remember that your username will be suffixed with `-guest`.**
+Next, log in to your new account.
 
 ![](/images/contribute/salsa/05.png)
+
+<br>
 
 ### 5. Join the *Reproducible Builds* group
 
@@ -59,15 +63,19 @@ After requesting access, you should see the following message:
 
 ### 6. Wait for confirmation
 
-Unfortunately you will have to wait for someone on the Reproducible Builds team to accept your request. You should receive an email once this occurs:
+Unfortunately you currently have to wait for someone already on the Reproducible Builds community to accept your request. You should receive an email once this occurs:
 
 ![](/images/contribute/salsa/08.png)
+
+<br>
 
 ### 7. Add an SSH key
 
 Finally, to push directly to our Git repositories you will need to add your SSH key to your *Salsa* account settings. You can do this by visiting **[salsa.debian.org/profile/keys](https://salsa.debian.org/profile/keys)**:
 
 ![](/images/contribute/salsa/09.png)
+
+<br>
 
 ### 8. Congratulations!
 

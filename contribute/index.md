@@ -7,22 +7,17 @@ order: 1
 
 # Contribute
 
+There are many ways to contribute to the Reproducible Builds project:
 
-## Get involved
+* Please join the [rb-general general mailing-list](https://lists.reproducible-builds.org/listinfo/rb-general).
 
-First, please join the [rb-general general mailing-list](https://lists.reproducible-builds.org/listinfo/rb-general).
-
-IRC discussions happen in the `#reproducible-builds` channel on [irc.oftc.net](https://www.oftc.net/).
-
-* [Join the Reproducible Builds group]({{ "/contribute/salsa/" | prepend: site.baseurl }})
-  on [Salsa](https://salsa.debian.org/) to contribute directly on our Git
-  repositories.
+* [Join the Reproducible Builds group](http://salsa.debian.org/reproducible-builds) on [Salsa](https://salsa.debian.org/) to contribute directly on our Git repositories. ([Full signup instructions]({{ "/contribute/salsa/" | prepend: site.baseurl }}))
 
 * Subscribe to the [reproducible-builds@lists.alioth.debian.org mailing list](https://lists.alioth.debian.org/mailman/listinfo/reproducible-builds)
   and/or other [reproducible builds](https://lists.reproducible-builds.org/)
   oriented lists.
 
-* Join the [#reproducible-builds IRC channel on OFTC](https://webchat.oftc.net/?channels=#reproducible-builds)
+* Join the [#reproducible-builds IRC channel on irc.oftc.net](https://webchat.oftc.net/?channels=#reproducible-builds)
   and possibly [#debian-reproducible](https://webchat.oftc.net/?channels=#debian-reproducible)
   too.
 
