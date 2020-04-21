@@ -4,6 +4,7 @@
   - buy-in
   - plans
   - test-bench
+  - publications
 - title: Achieve deterministic builds
   docs:
   - source-date-epoch
