@@ -20,7 +20,6 @@ Various free software projects are working on providing reproducible builds to t
 * [Mattia Rizzolo](https://mapreri.org/) (`mapreri`)
 * [Vagrant Cascadian](https://www.aikidev.net/about/story/) (`vagrantc`)
 
-[`contact@reproducible-builds.org`](mailto:contact@reproducible-builds.org)
 
 </div>
 <div class="col-md-6" markdown="1">
@@ -36,6 +35,10 @@ Various free software projects are working on providing reproducible builds to t
 
 </div>
 </div>
+
+<br>
+
+The prefered way to contact the team is to post to [our public mailing list, `rb-general`](https://lists.reproducible-builds.org/listinfo/rb-general). However, if you wish to contact the core team directly, please email [`contact@reproducible-builds.org`](mailto:contact@reproducible-builds.org).
 
 ## Sponsors
 
