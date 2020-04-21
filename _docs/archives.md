@@ -201,3 +201,7 @@ echo ucode.bin |
 
 Note that other issues such as timestamps may still require rectification prior
 to archival.
+
+## GNU Libtool
+
+[GNU Libtool](https://www.gnu.org/software/libtool/) prior to `74c8993c` (first included in version 2.2.7b) did not sort the find output. It appears that many packages (including all [GNU GCC](https://gcc.gnu.org/) versions so far) are bootstrapped with a version prior to this.
