@@ -17,7 +17,7 @@ order: 5
     {% endfor %}
 </ul>
 
-You can see all archived posts in [our news archive]({{ "/news-archive/" | prepend: site.baseurl }}).
+You can see all archived posts in [our news archive]({{ "/news/archive/" | prepend: site.baseurl }}).
 
 ## Reports
 

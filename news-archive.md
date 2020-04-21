@@ -1,7 +1,7 @@
 ---
 layout: default
 title: News archive
-permalink: /news-archive/
+permalink: /news/archive/
 ---
 
 # News archive
@@ -15,5 +15,3 @@ permalink: /news-archive/
     </li>
     {% endfor %}
 </ul>
-
-
