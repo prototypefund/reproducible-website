@@ -21,7 +21,7 @@ You can see all archived posts in [our news archive]({{ "/news/archive/" | prepe
 
 ## Reports
 
-Every month we publish a report on what we have been up to. ([RSS/Atom feed]({{ "/blog/index.rss" | prepend: site.baseurl }}))
+Every month we publish a report on what we have been up to.
 
 <ul class="list-unstyled">
     {% assign reports = site.reports | sort: 'year, month' | where: 'draft', 'false' | reverse %}
@@ -31,6 +31,8 @@ Every month we publish a report on what we have been up to. ([RSS/Atom feed]({{ 
     </li>
     {% endfor %}
 </ul>
+
+(An [RSS/Atom feed]({{ "/blog/index.rss" | prepend: site.baseurl }}) of these reports is available.)
 
 ## Weekly reports
 
