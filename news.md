@@ -1,6 +1,6 @@
 ---
 layout: default
-title: News
+title: News & reports
 permalink: /news/
 order: 5
 ---
