@@ -20,6 +20,7 @@
   - randomness
   - build-path
   - system-images
+  - jvm
 - title: Define a build environment
   docs:
   - perimeter
