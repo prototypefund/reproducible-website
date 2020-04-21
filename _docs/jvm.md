@@ -12,8 +12,7 @@ Since the JVM is not reproducible-friendly from the beginning
 -- jar/zip files are a first natural source of variation, with files order and timestamp --,
 each build tool requires some work to provide Reproducible Builds.
 
-Buildinfo File
---------------
+## `.buildinfo` file
 
 Whatever the build tool is, binary JVM artifacts are generally published in artifact repositories
 that use the Maven2 repository format (using groupId/artifactId/version coordinates)
@@ -81,8 +80,7 @@ Source tarballs, intended for building, are not always published in repositories
 - `${artifactId}-${version}-source-release.zip` (see [artifacts in Central providing such source tarballs](https://search.maven.org/search?q=l:source-release))
 - `${artifactId}-${version}-src.zip` (see [artifacts in Central providing such source tarballs](https://search.maven.org/search?q=l:src))
 
-Auditing a Build
-----------------
+## Auditing a Build
 
 Builds that are publishing a Buildinfo file are expected to be reproducible and the Buildinfo
 file is expected to contain everything required to rebuild and get the same output:
@@ -104,8 +102,7 @@ Notice that if you didn't use the same JDK major version, you'll see many differ
 Improving the build to get reproducible build will then be specific with each build tool.
 You may discuss issues and fixes on [Reproducible Builds mailinglist]({{ "/docs/contribute/" | prepend: site.baseurl }}).
 
-Reproducible Builds for Maven
------------------------------
+## Reproducible Builds for Maven
 
 Getting reproducible builds with Maven requires some plugins configuration: see
 [Maven - Guide to Configuring for Reproducible Builds](https://maven.apache.org/guides/mini/guide-reproducible-builds.html)
@@ -133,15 +130,13 @@ For multi-module builds, each produced artifact will have its
 own buildinfo file with `mvn.build-root` property defined, to know the root from which the
 rebuild must happen.
 
-Reproducible Builds for Gradle
----------------------------
+## Reproducible Builds for Gradle
 
 Gradle supports [reproducible archives](https://docs.gradle.org/current/userguide/working_with_files.html#sec:reproducible_archives) as of v3.4
 
 Tasks which generate archives, such as ZIPs or JARs, can enforce preserved file timestamps and reproducible file order which fix two of the main sources of non-determinism in JVM artifacts.
 
-Reproducible Builds for sbt
----------------------------
+## Reproducible Builds for `sbt`
 
 When using [sbt](https://www.scala-sbt.org/), a build tool popular with Scala
 projects, you can use the
